@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Center Hogar Quilmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+</head>
+<body class="product-page-body">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo_trans.png" alt="Center Hogar Quilmes" class="logo-img">
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <div class="user-options">
+                        <a href="presupuesto.html" class="user-link" title="Pedir presupuesto" aria-label="Pedir presupuesto">
+                            <span class="icon">📝</span>
+                            <span class="label">Pedir presupuesto</span>
+                        </a>
+                        <a href="contacto.html" class="cart-link" title="Contacto" aria-label="Contacto">
+                            <span class="icon">📱</span>
+                            <span class="label">Contacto</span>
+                        </a>
+                    </div>
+                    <button class="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+                </div>
+            </div>
+            <div class="search-bar">
+                <div class="search-bar-input-container">
+                    <input type="text" placeholder="Buscar productos..." id="searchInput" autocomplete="off">
+                    <button class="search-btn">
+                        <img src="images/lupa.png" alt="Buscar" class="search-icon">
+                    </button>
+                </div>
+                <div class="suggestions" id="suggestions" style="display: none;"></div>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="categoria.html?nombre=Cocinas">Cocinas</a></li>
+                    <li><a href="categoria.html?nombre=Heladeras">Heladeras</a></li>
+                    <li><a href="categoria.html?nombre=Televisores">Televisores</a></li>
+                    <li><a href="categoria.html?nombre=Celulares">Celulares</a></li>
+                    <li><a href="categoria.html?nombre=Hornos y microondas">Hornos y microondas</a></li>
+                    <li><a href="categoria.html?nombre=Lavarropas y secarropas">Lavarropas y secarropas</a></li>
+                    <li><a href="categoria.html?nombre=Pequeños electrodomésticos">Pequeños electrodomésticos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Details -->
+    <main class="container product-page">
+        <!-- Modal para ampliación de imágenes -->
+        <div class="image-modal" id="image-modal" style="display: none;">
+            <span class="modal-close">×</span>
+            <div class="modal-content">
+                <img id="modal-image" src="" alt="Producto ampliado">
+            </div>
+            <button class="modal-btn prev">❮</button>
+            <button class="modal-btn next">❯</button>
+        </div>
+        <div class="product-main">
+            <div class="image-container">
+                <div class="product-images">
+                    <div class="main-image-wrapper">
+                        <img id="main-image" src="" alt="Producto" class="main-image">
+                        <button class="carousel-btn prev">❮</button>
+                        <button class="carousel-btn next">❯</button>
+                    </div>
+                    <div class="thumbnail-gallery" id="thumbnail-gallery">
+                        <!-- Thumbnails se llenan con JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="product-info">
+                    <h1 id="product-name">Nombre del producto</h1>
+                    <p class="stock">Stock disponible</p>
+                    <a id="whatsapp-btn" href="#" class="buy-btn" target="_blank">Consultar</a>
+                    <div class="shipping">
+                        <p>Consultá costos de envio</p>
+                        <p>Normalmente se entrega de un dia para el otro</p>
+                    </div>
+                    <!-- Descripción movida aquí -->
+                    <div class="product-description">
+                        <h2>Descripción</h2>
+                        <p id="product-description">Descripción del producto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Características movidas aquí -->
+        <div class="product-features">
+            <h2>Características del producto</h2>
+            <ul id="product-features">
+                <!-- Se llenan con JavaScript -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Center Hogar Quilmes. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="terminos.html">Términos y condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="privacidad.html">Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Botón flotante para volver arriba -->
+    <button class="scroll-to-top" title="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <script src="productos.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Leer parámetros de la URL con manejo seguro
+            const urlParams = new URLSearchParams(window.location.search);
+            const nombre = urlParams.get('nombre') ? decodeURIComponent(urlParams.get('nombre')) : 'Producto';
+            const imagen = urlParams.get('imagen') ? decodeURIComponent(urlParams.get('imagen')) : 'images/nomedia_trans.png';
+            const imagenes = urlParams.get('imagenes') ? decodeURIComponent(urlParams.get('imagenes')).split(',') : [imagen];
+            const descripcion = urlParams.get('descripcion') ? decodeURIComponent(urlParams.get('descripcion')) : 'Descripción del producto.';
+            const caracteristicas = urlParams.get('caracteristicas') ? decodeURIComponent(urlParams.get('caracteristicas')).split(',') : ['Marca: [Marca]', 'Modelo: [Modelo]', 'Garantía: 1 año'];
+
+            // Depuración para verificar parámetros y productos
+            console.log('URL Params:', Object.fromEntries(urlParams));
+            console.log('Productos:', productos);
+
+            // Buscar el producto en productos.js con manejo de errores
+            const producto = productos && Array.isArray(productos) ? productos.find(p => p.nombre === nombre) : null;
+            const codigoProducto = producto ? producto.codigo : 'Código no disponible';
+            console.log('Producto encontrado:', producto);
+
+            // Actualizar contenido
+            document.getElementById('product-name').textContent = nombre;
+            document.getElementById('main-image').src = imagen;
+            document.getElementById('main-image').onerror = function () {
+                this.onerror = null;
+                this.src = 'images/nomedia_trans.png';
+            };
+            document.getElementById('product-description').innerHTML = descripcion;
+            document.querySelector('.stock').textContent = `Código: ${codigoProducto}`;
+
+            // Generar thumbnails
+            const thumbnailGallery = document.getElementById('thumbnail-gallery');
+            imagenes.forEach((img, index) => {
+                const thumbnail = document.createElement('img');
+                thumbnail.src = img;
+                thumbnail.alt = nombre;
+                thumbnail.onerror = function () {
+                    console.error(`Error al cargar la imagen de miniatura: ${img}`);
+                    this.onerror = null;
+                    this.src = 'images/nomedia_trans.png';
+                };
+                thumbnail.onclick = () => showImage(index);
+                if (index === 0) thumbnail.classList.add('active');
+                thumbnailGallery.appendChild(thumbnail);
+            });
+
+            // Generar características
+            const featuresList = document.getElementById('product-features');
+            featuresList.innerHTML = '';
+            caracteristicas.forEach(feature => {
+                const li = document.createElement('li');
+                li.textContent = feature;
+                featuresList.appendChild(li);
+            });
+
+            // Botón de WhatsApp
+            const numeroWhatsApp = '5491131680489';
+            const mensaje = `Hola, quiero un presupuesto para ${nombre}.`;
+            document.getElementById('whatsapp-btn').href = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}`;
+
+            // Navegación de imágenes
+            let currentImageIndex = 0;
+            const mainImage = document.getElementById('main-image');
+            const mainImageWrapper = document.querySelector('.main-image-wrapper');
+            const thumbnails = document.querySelectorAll('.thumbnail-gallery img');
+            const prevBtn = document.querySelector('.main-image-wrapper .carousel-btn.prev');
+            const nextBtn = document.querySelector('.main-image-wrapper .carousel-btn.next');
+
+            function showImage(index) {
+                if (index >= imagenes.length) {
+                    currentImageIndex = 0;
+                } else if (index < 0) {
+                    currentImageIndex = imagenes.length - 1;
+                } else {
+                    currentImageIndex = index;
+                }
+                console.log(`Cambiando a imagen ${currentImageIndex}: ${imagenes[currentImageIndex]}`);
+                mainImage.src = imagenes[currentImageIndex];
+
+                // Actualizar thumbnail activo
+                thumbnails.forEach((thumb, i) => {
+                    thumb.classList.toggle('active', i === currentImageIndex);
+                });
+            }
+
+            // Configurar botones de navegación (solo para escritorio)
+            if (prevBtn && nextBtn) {
+                if (imagenes.length > 1 && window.innerWidth > 768) {
+                    prevBtn.style.display = 'flex';
+                    nextBtn.style.display = 'flex';
+                } else {
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                }
+
+                prevBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    console.log('Clic en botón prev');
+                    showImage(currentImageIndex - 1);
+                });
+                nextBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    console.log('Clic en botón next');
+                    showImage(currentImageIndex + 1);
+                });
+
+                window.addEventListener('resize', () => {
+                    if (imagenes.length > 1 && window.innerWidth > 768) {
+                        prevBtn.style.display = 'flex';
+                        nextBtn.style.display = 'flex';
+                    } else {
+                        prevBtn.style.display = 'none';
+                        nextBtn.style.display = 'none';
+                    }
+                });
+            } else {
+                console.error('Carousel buttons not found');
+            }
+
+            // Modal
+            const modal = document.getElementById('image-modal');
+            const modalImage = document.getElementById('modal-image');
+            const modalClose = document.querySelector('.modal-close');
+            const modalPrev = document.querySelector('.modal-btn.prev');
+            const modalNext = document.querySelector('.modal-btn.next');
+
+            if (!modal || !modalImage || !modalClose || !modalPrev || !modalNext) {
+                console.error('Modal elements not found');
+                return;
+            }
+
+            // Abrir modal en escritorio (clic) y móvil (toque)
+            mainImage.addEventListener('click', (e) => {
+                if (window.innerWidth > 768) { // Solo para escritorio
+                    e.stopPropagation();
+                    console.log('Clic en imagen principal');
+                    modalImage.src = mainImage.src;
+                    modal.classList.add('active');
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; // Bloquear scroll
+                }
+            });
+
+            mainImage.addEventListener('touchend', (e) => {
+                if (window.innerWidth <= 768) { // Solo para móvil
+                    e.preventDefault(); // Evitar comportamientos predeterminados
+                    console.log('Toque en imagen principal');
+                    modalImage.src = mainImage.src;
+                    modal.classList.add('active');
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; // Bloquear scroll
+                }
+            });
+
+            modalClose.addEventListener('click', () => {
+                console.log('Clic en cerrar modal');
+                modal.classList.remove('active');
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restaurar scroll
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    console.log('Clic fuera del modal');
+                    modal.classList.remove('active');
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Restaurar scroll
+                }
+            });
+
+            modalPrev.addEventListener('click', () => {
+                console.log('Clic en modal prev');
+                showImage(currentImageIndex - 1);
+                modalImage.src = imagenes[currentImageIndex];
+            });
+
+            modalNext.addEventListener('click', () => {
+                console.log('Clic en modal next');
+                showImage(currentImageIndex + 1);
+                modalImage.src = imagenes[currentImageIndex];
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (modal.classList.contains('active')) {
+                    if (e.key === 'ArrowLeft') {
+                        console.log('Tecla izquierda en modal');
+                        showImage(currentImageIndex - 1);
+                        modalImage.src = imagenes[currentImageIndex];
+                    } else if (e.key === 'ArrowRight') {
+                        console.log('Tecla derecha en modal');
+                        showImage(currentImageIndex + 1);
+                        modalImage.src = imagenes[currentImageIndex];
+                    } else if (e.key === 'Escape') {
+                        console.log('Tecla Escape en modal');
+                        modal.classList.remove('active');
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto'; // Restaurar scroll
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+                            <!DOCTYPE html>
+                            <html lang="es">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Admin - Center Hogar Quilmes</title>
+                                <link rel="stylesheet" href="styles.css">
+                                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+                                <style>
+                                    .admin-container { max-width: 800px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+                                    .admin-container h2 { font-size: 24px; margin-bottom: 20px; text-align: center; }
+                                    .form-group { margin-bottom: 15px; }
+                                    .form-group label { display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+                                    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+                                    .form-group textarea { min-height: 100px; resize: vertical; }
+                                    .error { color: red; font-size: 14px; text-align: center; }
+                                    #login-section { display: block; }
+                                    #admin-section { display: none; }
+                                    #product-list { margin-top: 20px; }
+                                    #product-list li { margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 4px; }
+                                    .button-group { display: flex; gap: 10px; margin-top: 20px; justify-content: center; }
+                                    .btn-agregar { padding: 10px 20px; background: #28a745; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+                                    .btn-agregar:hover { background: #218838; }
+                                    .btn-exportar { padding: 10px 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+                                    .btn-exportar:hover { background: #0056b3; }
+                                    .btn-limpiar { padding: 10px 20px; background: #dc3545; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+                                    .btn-limpiar:hover { background: #c82333; }
+                                    .dynamic-fields { margin-top: 15px; }
+                                </style>
+                            </head>
+                            <body>
+                                <div class="container admin-container">
+                                    <div id="login-section">
+                                        <h2>Iniciar Sesión</h2>
+                                        <div class="form-group">
+                                            <label for="password">Contraseña</label>
+                                            <input type="password" id="password" placeholder="Ingresa la contraseña">
+                                        </div>
+                                        <button class="btn-exportar" onclick="login()">Ingresar</button>
+                                        <p id="login-error" class="error"></p>
+                                    </div>
+                                    <div id="admin-section">
+                                        <h2>Agregar Producto</h2>
+                                        <form id="product-form">
+                                            <div class="form-group">
+                                                <label for="categoria">Categoría</label>
+                                                <select id="categoria" name="categoria" required>
+                                                    <option value="" disabled selected>Selecciona una categoría</option>
+                                                    <option value="Cocinas">Cocinas</option>
+                                                    <option value="Heladeras">Heladeras</option>
+                                                    <option value="Televisores">Televisores</option>
+                                                    <option value="Celulares">Celulares</option>
+                                                    <option value="Hornos y microondas">Hornos y microondas</option>
+                                                    <option value="Lavarropas y secarropas">Lavarropas y secarropas</option>
+                                                    <option value="Pequeños electrodomésticos">Pequeños electrodomésticos</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="nombre">Nombre</label>
+                                                <input type="text" id="nombre" name="nombre" placeholder='TV LED Philips 32" Smart HD' required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="codigo">Código</label>
+                                                <input type="text" id="codigo" name="codigo" placeholder="2075320" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="imagen">Imagen Principal (images/... .webp)</label>
+                                                <input type="text" id="imagen" name="imagen" placeholder="tv_philips_32_1" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="imagenes">Imágenes Adicionales (images/... .webp, una por línea)</label>
+                                                <textarea id="imagenes" name="imagenes" placeholder="tv_philips_32_2\ntv_philips_32_3"></textarea>
+                                            </div>
+                                            <div class="dynamic-fields" id="dynamic-fields">
+                                                <!-- Campos dinámicos se generan aquí -->
+                                            </div>
+                                            <button type="submit" class="btn-agregar">Agregar Producto</button>
+                                            <p id="form-error" class="error"></p>
+                                        </form>
+                                        <div class="button-group">
+                                            <button class="btn-exportar" onclick="exportProducts()">Exportar productos.js</button>
+                                            <button class="btn-limpiar" onclick="clearProducts()">Limpiar Lista</button>
+                                        </div>
+                                        <h3>Productos Agregados</h3>
+                                        <ul id="product-list"></ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    // Definición de campos dinámicos por categoría
+                                    const categoryFields = {
+                                        "Televisores": [
+                                            { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: "32" },
+                                            { label: "Tipo de pantalla", name: "tipo_pantalla", type: "text", placeholder: "LED" },
+                                            { label: "Tipo de resolución", name: "resolucion", type: "text", placeholder: "HD" },
+                                            { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android TV" }
+                                        ],
+                                        "Heladeras": [
+                                            { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "185cm x 60cm x 67cm" },
+                                            { label: "Tipo de tecnología", name: "tecnologia", type: "select", options: ["Cíclica", "No frost"] },
+                                            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "300" },
+                                            { label: "Freezer", name: "freezer", type: "select", options: ["Sí", "No"] },
+                                            { label: "Dispenser de agua", name: "dispenser", type: "select", options: ["No", "Sí"] },
+                                            { label: "Inverter", name: "inverter", type: "select", options: ["Mo", "Sí"] },
+                                            { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+                                        ],
+                                        "Cocinas": [
+                                            { label: "Dimensiones (An x Al x Pr)", name: "dimensiones", type: "text", placeholder: "56cm x 85cm x 60cm" },
+                                            { label: "Válvula de seguridad", name: "valvula_seguridad", type: "select", options: ["Sí", "No"] },
+                                            { label: "Luz en el horno", name: "luz_horno", type: "select", options: ["Sí", "No"] },
+                                            { label: "Encendido eléctrico", name: "encendido_electrico", type: "select", options: ["Sí", "No"] },
+                                            { label: "Tipo de gas", name: "tipo_gas", type: "text", placeholder: "Multigas" },
+                                            { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+                                        ],
+                                        "Lavarropas y secarropas": [
+                                            { label: "Capacidad (kg)", name: "capacidad", type: "text", placeholder: "7" },
+                                            { label: "Tipo de lavado", name: "tipo_lavado", type: "select", options: ["Automático", "Semiautomático", "-"] },
+                                            { label: "Tipo de carga", name: "tipo_carga", type: "select", options: ["Frontal", "Superior"] },
+                                            { label: "Velocidad de centrifugado (RPM)", name: "centrifugado", type: "text", placeholder: "1000" },
+                                            { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
+                                            { label: "Secado a calor", name: "secado", type: "select", options: ["No", "Sí"] }
+                                        ],
+                                        "Celulares": [
+                                            { label: "Almacenamiento (GB)", name: "almacenamiento", type: "text", placeholder: "64" },
+                                            { label: "RAM (GB)", name: "ram", type: "text", placeholder: "4" },
+                                            { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: '6,7"' },
+                                            { label: "Camara trasera", name: "camarat", type: "text", placeholder: "32 Mpx" },
+                                            { label: "Camara frontal", name: "camaraf", type: "text", placeholder: "8 Mpx" },
+                                            { label: "Bateria", name: "bateria", type: "text", placeholder: "5.2 Ah" },
+                                            { label: "Red movil", name: "red", type: "select", options: ["4G", "5G"] },
+                                            { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android" }
+                                        ],
+                                        "Hornos y microondas": [
+                                            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "25" },
+                                            { label: "Tipo", name: "tipo", type: "select", options: ["Horno", "Microondas"] },
+                                            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "900" }
+                                        ],
+                                        "Pequeños electrodomésticos": [
+                                            { label: "Tipo", name: "tipo", type: "text", placeholder: "Pava eléctrica" },
+                                            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
+                                            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.7" }
+                                        ]
+                                    };
+
+                                    // Autenticación simple
+                                    function login() {
+                                        const password = document.getElementById('password').value;
+                                        if (password === 'admin123') {
+                                            document.getElementById('login-section').style.display = 'none';
+                                            document.getElementById('admin-section').style.display = 'block';
+                                            loadProducts();
+                                        } else {
+                                            document.getElementById('login-error').textContent = 'Contraseña incorrecta';
+                                        }
+                                    }
+
+                                    // Agregar evento para Enter en login
+                                    document.getElementById('password').addEventListener('keypress', (e) => {
+                                        if (e.key === 'Enter') login();
+                                    });
+
+                                    // Generar campos dinámicos según categoría
+                                    function generateDynamicFields(category) {
+                                        const dynamicFields = document.getElementById('dynamic-fields');
+                                        dynamicFields.innerHTML = ''; // Limpiar campos anteriores
+
+                                        if (!category || !categoryFields[category]) {
+                                            dynamicFields.innerHTML = '<p>Selecciona una categoría para ver los campos específicos.</p>';
+                                            return;
+                                        }
+
+                                        const fields = categoryFields[category];
+                                        fields.forEach(field => {
+                                            const formGroup = document.createElement('div');
+                                            formGroup.className = 'form-group';
+
+                                            const label = document.createElement('label');
+                                            label.textContent = field.label;
+                                            label.setAttribute('for', field.name);
+                                            formGroup.appendChild(label);
+
+                                            if (field.type === 'select') {
+                                                const select = document.createElement('select');
+                                                select.id = field.name;
+                                                select.name = field.name;
+                                                field.options.forEach(option => {
+                                                    const opt = document.createElement('option');
+                                                    opt.value = option;
+                                                    opt.textContent = option;
+                                                    select.appendChild(opt);
+                                                });
+                                                formGroup.appendChild(select);
+                                            } else {
+                                                const input = document.createElement(field.type === 'textarea' ? 'textarea' : 'input');
+                                                input.id = field.name;
+                                                input.name = field.name;
+                                                input.placeholder = field.placeholder;
+                                                if (field.type !== 'textarea') input.type = field.type;
+                                                formGroup.appendChild(input);
+                                            }
+
+                                            dynamicFields.appendChild(formGroup);
+                                        });
+                                    }
+
+                                    // Actualizar campos dinámicos al cambiar la categoría
+                                    document.getElementById('categoria').addEventListener('change', (e) => {
+                                        generateDynamicFields(e.target.value);
+                                    });
+
+                                    // Cargar productos desde localStorage
+                                    function loadProducts() {
+                                        const productos = JSON.parse(localStorage.getItem('productos') || '[]');
+                                        const productList = document.getElementById('product-list');
+                                        productList.innerHTML = '';
+                                        productos.forEach((producto, index) => {
+                                            const li = document.createElement('li');
+                                            li.textContent = `${producto.nombre} (${producto.categoria}) - Código: ${producto.codigo}`;
+                                            productList.appendChild(li);
+                                        });
+                                    }
+
+                                    // Guardar producto
+                                    document.getElementById('product-form').addEventListener('submit', (e) => {
+                                        e.preventDefault();
+                                        const categoria = document.getElementById('categoria').value;
+                                        const imagenInput = document.getElementById('imagen').value.trim();
+                                        const imagenesInput = document.getElementById('imagenes').value.split('\n').filter(line => line.trim() !== '');
+
+                                        // Agregar prefijo 'images/' y sufijo '.webp' a las imágenes
+                                        const imagen = imagenInput ? `images/${imagenInput}.webp` : '';
+                                        const imagenes = imagenesInput.map(img => `images/${img.trim()}.webp`);
+
+                                        const producto = {
+                                            categoria,
+                                            nombre: document.getElementById('nombre').value,
+                                            codigo: document.getElementById('codigo').value,
+                                            imagen,
+                                            imagenes,
+                                            descripcion: '',
+                                            caracteristicas: [
+                                                `Marca: ${document.getElementById('nombre').value.split(' ')[0] || 'Desconocida'}`,
+                                                `Modelo: ${document.getElementById('codigo').value}`,
+                                                'Garantía: 1 año'
+                                            ]
+                                        };
+
+                                        if (imagen && !producto.imagenes.includes(imagen)) {
+                                            producto.imagenes.unshift(imagen);
+                                        }
+
+                                        // Generar descripción a partir de campos dinámicos
+                                        const fields = categoryFields[categoria] || [];
+                                        let descripcionLines = [];
+                                        fields.forEach(field => {
+                                            const input = document.getElementById(field.name);
+                                            if (input && input.value) {
+                                                descripcionLines.push(`<strong>${field.label}:</strong> ${input.value}`);
+                                            }
+                                        });
+                                        producto.descripcion = descripcionLines.join('\n');
+
+                                        // Guardar en localStorage
+                                        const productos = JSON.parse(localStorage.getItem('productos') || '[]');
+                                        productos.push(producto);
+                                        localStorage.setItem('productos', JSON.stringify(productos));
+
+                                        // Actualizar lista y mostrar mensaje
+                                        loadProducts();
+                                        document.getElementById('form-error').textContent = 'Producto agregado con éxito';
+                                        document.getElementById('product-form').reset();
+                                        generateDynamicFields(''); // Resetear campos dinámicos
+                                    });
+
+                                    // Limpiar lista de productos
+                                    function clearProducts() {
+                                        localStorage.removeItem('productos');
+                                        loadProducts();
+                                        document.getElementById('form-error').textContent = 'Lista de productos limpiada';
+                                    }
+
+                                    // Formatear un valor como cadena JavaScript
+                                    function formatValue(value) {
+                                        if (Array.isArray(value)) {
+                                            return `[\n${value.map(item => `        "${item}"`).join(',\n')}\n    ]`;
+                                        } else if (typeof value === 'string') {
+                                            // Escapar comillas y reemplazar saltos de línea por \n
+                                            const escapedValue = value
+                                                .replace(/'/g, "\\'")
+                                                .replace(/\n/g, '\\n');
+                                            return `'${escapedValue}'`;
+                                        }
+                                        return `"${value}"`;
+                                    }
+
+                                    // Formatear un objeto producto como JavaScript
+                                    function formatProducto(producto, indent = '') {
+                                        return `{\n${indent}    categoria: "${producto.categoria}",\n${indent}    nombre: ${formatValue(producto.nombre)},\n${indent}    imagen: "${producto.imagen}",\n${indent}    imagenes: ${formatValue(producto.imagenes)},\n${indent}    descripcion: ${formatValue(producto.descripcion)},\n${indent}    codigo: "${producto.codigo}",\n${indent}    caracteristicas: ${formatValue(producto.caracteristicas)}\n${indent}}`;
+                                    }
+
+                                    // Exportar productos.js
+                                    function exportProducts() {
+                                        const productos = JSON.parse(localStorage.getItem('productos') || '[]');
+                                        const jsContent = `const productos = [\n${productos.map(p => `    ${formatProducto(p)}`).join(',\n')}\n];`;
+                                        const blob = new Blob([jsContent], { type: 'text/javascript' });
+                                        const url = URL.createObjectURL(blob);
+                                        const a = document.createElement('a');
+                                        a.href = url;
+                                        a.download = 'productos.js';
+                                        a.click();
+                                        URL.revokeObjectURL(url);
+                                    }
+
+                                    // Inicializar campos dinámicos al cargar la página
+                                    document.addEventListener('DOMContentLoaded', () => {
+                                        generateDynamicFields('');
+                                    });
+                                </script>
+                            </body>
+                            </html>

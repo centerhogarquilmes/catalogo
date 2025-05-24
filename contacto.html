@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos en Center Hogar Quilmes por teléfono, WhatsApp, email o visítanos en nuestro local.">
+    <meta name="keywords" content="contacto, Center Hogar Quilmes, electrodomésticos, Quilmes">
+    <title>Contacto - Center Hogar Quilmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo_trans.png" alt="Center Hogar Quilmes" class="logo-img">
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <div class="user-options">
+                        <a href="presupuesto.html" class="user-link" title="Pedir presupuesto" aria-label="Pedir presupuesto">
+                            <span class="icon">📝</span>
+                            <span class="label">Pedir presupuesto</span>
+                        </a>
+                        <a href="contacto.html" class="cart-link" title="Contacto" aria-label="Contacto">
+                            <span class="icon">📱</span>
+                            <span class="label">Contacto</span>
+                        </a>
+                    </div>
+                    <button class="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+                </div>
+            </div>
+            <div class="search-bar">
+                <div class="search-bar-input-container">
+                    <input type="text" placeholder="Buscar productos..." id="searchInput" autocomplete="off">
+                    <button class="search-btn">
+                        <img src="images/lupa.png" alt="Buscar" class="search-icon">
+                    </button>
+                </div>
+                <div class="suggestions" id="suggestions" style="display: none;"></div>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="categoria.html?nombre=Cocinas">Cocinas</a></li>
+                    <li><a href="categoria.html?nombre=Heladeras">Heladeras</a></li>
+                    <li><a href="categoria.html?nombre=Televisores">Televisores</a></li>
+                    <li><a href="categoria.html?nombre=Celulares">Celulares</a></li>
+                    <li><a href="categoria.html?nombre=Hornos y microondas">Hornos y microondas</a></li>
+                    <li><a href="categoria.html?nombre=Lavarropas y secarropas">Lavarropas y secarropas</a></li>
+                    <li><a href="categoria.html?nombre=Pequeños electrodomésticos">Pequeños electrodomésticos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container contact-page">
+        <section class="contact-section">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte. Puedes contactarnos por los siguientes medios:</p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>Teléfono</h3>
+                    <p><a href="tel:+541160640327">1160640327</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://api.whatsapp.com/send?phone=5491131680489&text=Hola,%20tengo%20una%20consulta" target="_blank">+5491131680489</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:chquilmes1260@gmail.com">chquilmes1260@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Dirección</h3>
+                    <p>Rivadavia 220, Quilmes, Buenos Aires</p>
+                    <a href="https://maps.google.com/?q=Rivadavia+220,+Quilmes" target="_blank" class="map-link">Ver en Google Maps</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Sábado: 9:00 - 20:00 hs</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Instagram</h3>
+                    <p><a href="https://www.instagram.com/centerhogarquilmes" target="_blank">@centerhogarquilmes</a></p>
+                </div>
+
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Center Hogar Quilmes. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="terminos.html">Términos y condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="privacidad.html">Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Botón flotante para volver arriba -->
+    <button class="scroll-to-top" title="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <script src="productos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

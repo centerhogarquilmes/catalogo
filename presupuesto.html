@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Hogar Quilmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo_trans.png" alt="Center Hogar Quilmes" class="logo-img">
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <div class="user-options">
+                        <a href="presupuesto.html" class="user-link" title="Pedir presupuesto" aria-label="Pedir presupuesto">
+                            <span class="icon">📝</span>
+                            <span class="label">Pedir presupuesto</span>
+                        </a>
+                        <a href="contacto.html" class="cart-link" title="Contacto" aria-label="Contacto">
+                            <span class="icon">📱</span>
+                            <span class="label">Contacto</span>
+                        </a>
+                    </div>
+                    <button class="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+                </div>
+            </div>
+            <div class="search-bar">
+                <div class="search-bar-input-container">
+                    <input type="text" placeholder="Buscar productos..." id="searchInput" autocomplete="off">
+                    <button class="search-btn">
+                        <img src="images/lupa.png" alt="Buscar" class="search-icon">
+                    </button>
+                </div>
+                <div class="suggestions" id="suggestions" style="display: none;"></div>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="categoria.html?nombre=Cocinas">Cocinas</a></li>
+                    <li><a href="categoria.html?nombre=Heladeras">Heladeras</a></li>
+                    <li><a href="categoria.html?nombre=Televisores">Televisores</a></li>
+                    <li><a href="categoria.html?nombre=Celulares">Celulares</a></li>
+                    <li><a href="categoria.html?nombre=Hornos y microondas">Hornos y microondas</a></li>
+                    <li><a href="categoria.html?nombre=Lavarropas y secarropas">Lavarropas y secarropas</a></li>
+                    <li><a href="categoria.html?nombre=Pequeños electrodomésticos">Pequeños electrodomésticos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container contact-page">
+        <section class="contact-section">
+            <h2>Contactanos</h2>
+            <p>Si te interesa alguno de nuestros productos, podés consultarnos precios y costos de envío:</p>
+
+            <!-- Nuevo Formulario -->
+        <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form id="contact-form" action="https://formspree.io/f/tu-id" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre (obligatorio)*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono (preferiblemente WhatsApp) *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (opcional)</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div> <p"<br>Al enviar tu mensaje aceptas las politicas de privacidad y das tu consentimiento para que Center Hogar Quilmes te contacte.</p> </div>
+                <button type="submit" class="buy-btn">Enviar Consulta</button>
+            </form>
+            <p id="form-message" style="display: none; color: #FF6200;"></p>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <p>© 2025 Center Hogar Quilmes. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="terminos.html">Términos y condiciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+        </ul>
+    </div>
+    </footer>
+
+<!-- Botón flotante para volver arriba -->
+<button class="scroll-to-top" title="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5"></path>
+        <path d="M5 12l7-7 7 7"></path>
+    </svg>
+</button>
+
+    <!-- Script -->
+<script src="productos.js"></script>
+<script src="scripts.js"></script>
+<script>
+    </body>
+    </html>
