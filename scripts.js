@@ -55,11 +55,15 @@ function setupSuggestions() {
 
     if (!searchInput || !suggestionsContainer) return;
 
+    // Crear lista de sugerencias incluyendo marcas y modelos
     const suggestionsList = [
         ...productos.map(producto => producto.nombre),
         ...new Set(productos.map(producto => producto.categoria)),
-        ...productos.filter(producto => producto.codigo).map(producto => producto.codigo)
-    ];
+        ...productos.filter(producto => producto.codigo).map(producto => producto.codigo),
+        ...productos.flatMap(producto => 
+            producto.caracteristicas ? producto.caracteristicas.filter(car => car.startsWith('Marca:') || car.startsWith('Modelo:')).map(car => car.split(': ')[1]) : []
+        )
+    ].filter(item => item); // Eliminar elementos undefined
 
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.trim().toLowerCase();
@@ -73,7 +77,7 @@ function setupSuggestions() {
         }
 
         const filteredSuggestions = suggestionsList.filter(item =>
-            item.toLowerCase().includes(query)
+            item && item.toLowerCase().includes(query)
         );
 
         if (filteredSuggestions.length === 0) {
@@ -94,6 +98,12 @@ function setupSuggestions() {
             });
             suggestionsContainer.appendChild(suggestionDiv);
         });
+
+        suggestionsContainer.style.display = 'block';
+        searchInput.style.borderBottomLeftRadius = '0';
+    });
+
+}
 
         suggestionsContainer.style.display = 'block';
         searchInput.style.borderBottomLeftRadius = '0';
