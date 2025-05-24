@@ -90,28 +90,43 @@
     <script src="productos.js"></script>
     <script src="scripts.js"></script>
     <script>
-        // Leer el término de búsqueda desde la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const query = urlParams.get('query') || '';
+    // Leer el término de búsqueda desde la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('query') || '';
 
-        // Actualizar el título con el término de búsqueda
-        document.getElementById('search-title').textContent = query ? `Resultados para "${query}"` : 'Resultados de Búsqueda';
+    // Actualizar el título con el término de búsqueda
+    document.getElementById('search-title').textContent = query ? `Resultados para "${query}"` : 'Resultados de Búsqueda';
 
-        // Filtrar productos por término de búsqueda
-        const productosFiltrados = productos.filter(producto => 
-            producto.nombre.toLowerCase().includes(query.toLowerCase()) ||
-            producto.descripcion.toLowerCase().includes(query.toLowerCase()) ||
-            producto.categoria.toLowerCase().includes(query.toLowerCase()) ||
-            (producto.codigo && producto.codigo.toLowerCase().includes(query.toLowerCase()))
+    // Normalizar el término de búsqueda
+    const normalizedQuery = query.trim().toLowerCase();
+
+    // Filtrar productos por término de búsqueda
+    const productosFiltrados = productos.filter(producto => {
+        // Buscar en nombre, descripción, categoría y código
+        const matchesBasicFields =
+            (producto.nombre && producto.nombre.toLowerCase().includes(normalizedQuery)) ||
+            (producto.descripcion && producto.descripcion.toLowerCase().includes(normalizedQuery)) ||
+            (producto.categoria && producto.categoria.toLowerCase().includes(normalizedQuery)) ||
+            (producto.codigo && producto.codigo.toLowerCase().includes(normalizedQuery));
+
+        // Buscar en características (marca y modelo)
+        const matchesCaracteristicas = producto.caracteristicas && producto.caracteristicas.some(car =>
+            car.toLowerCase().includes(normalizedQuery)
         );
 
-        // Generar las tarjetas de productos
-        const productGrid = document.getElementById('product-grid');
+        return matchesBasicFields || matchesCaracteristicas;
+    });
+
+    // Generar las tarjetas de productos
+    const productGrid = document.getElementById('product-grid');
+    if (productosFiltrados.length === 0) {
+        productGrid.innerHTML = '<p>No se encontraron productos para tu búsqueda.</p>';
+    } else {
         productosFiltrados.forEach(producto => {
             const card = document.createElement('div');
             card.className = 'product-card';
             card.innerHTML = `
-                <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
+                <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
                     <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                     <h3>${producto.nombre}</h3>
                     <p class="product-code">Código: ${producto.codigo}</p>
@@ -120,11 +135,7 @@
             `;
             productGrid.appendChild(card);
         });
-
-        // Si no hay resultados, mostrar mensaje
-        if (productosFiltrados.length === 0) {
-            productGrid.innerHTML = '<p>No se encontraron productos para tu búsqueda.</p>';
-        }
+    }
 </script>
 </body>
 </html>
