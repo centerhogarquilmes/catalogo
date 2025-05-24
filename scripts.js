@@ -103,12 +103,6 @@ function setupSuggestions() {
         searchInput.style.borderBottomLeftRadius = '0';
     });
 
-}
-
-        suggestionsContainer.style.display = 'block';
-        searchInput.style.borderBottomLeftRadius = '0';
-    });
-
     searchInput.addEventListener('keydown', (e) => {
         const suggestionItems = suggestionsContainer.querySelectorAll('div');
         if (suggestionItems.length === 0) return;
