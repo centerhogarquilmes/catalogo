@@ -31,8 +31,9 @@ const productos = [
         imagen: "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_1.webp",
         imagenes: [
             "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_1.webp",
-            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_2.png",
-            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_3.jpg"
+            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_2.webp",
+            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_3.webp",
+            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_4.webp"
         ],
         descripcion: "<strong>Dimensiones:</strong> 56cm (An) x  85cm (Al) x 60 cm (Pr).\n<strong>Válvula de seguridad:</strong> Sí.\n<strong>Hornallas:</strong> 3.\n<strong>Tipo de gas:</strong> Multigas.\n<strong>Eficiencia energética:</strong> Clase A.",
         codigo: "2074709",
