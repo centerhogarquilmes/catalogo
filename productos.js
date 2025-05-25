@@ -43,7 +43,7 @@ const productos = [
     {
         categoria: "Cocinas",
         nombre: "Cocina Escorial Master S2 Classic gn Negra",
-        imagen: "images/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
+        imagen: "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
         imagenes: [
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_2.webp",
