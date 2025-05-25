@@ -133,6 +133,7 @@
 </button>
 
     <!-- Script -->
+
 <script src="productos.js"></script>
 <script src="scripts.js"></script>
 <script>
@@ -200,7 +201,7 @@
 
     carouselSlides.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
-        stopAutoSlide(); // Pausar el deslizamiento automático al tocar
+        stopAutoSlide();
     });
 
     carouselSlides.addEventListener('touchmove', (e) => {
@@ -209,28 +210,26 @@
 
     carouselSlides.addEventListener('touchend', () => {
         const swipeDistance = touchEndX - touchStartX;
-        const swipeThreshold = 50; // Umbral de píxeles para considerar un deslizamiento
+        const swipeThreshold = 50;
 
         if (Math.abs(swipeDistance) > swipeThreshold) {
             if (swipeDistance > 0) {
-                // Deslizar a la derecha: diapositiva anterior
                 showSlide(currentSlide - 1);
             } else {
-                // Deslizar a la izquierda: diapositiva siguiente
                 showSlide(currentSlide + 1);
             }
         }
-        startAutoSlide(); // Reanudar el deslizamiento automático
+        startAutoSlide();
     });
 
     startAutoSlide();
 
     // Generar tarjetas de productos destacados dinámicamente
     const productGrid = document.querySelector('.product-grid');
-    productGrid.innerHTML = ''; // Limpiar cualquier contenido estático
+    productGrid.innerHTML = '';
     const productosDestacadosFiltrados = productos
         .filter(producto => productosDestacados.includes(producto.codigo))
-        .slice(0, 5); // Limitar a 5 productos
+        .slice(0, 5);
     productosDestacados.forEach(codigo => {
         if (!productos.some(producto => producto.codigo === codigo)) {
             console.warn(`El código ${codigo} en productosDestacados no coincide con ningún producto.`);
@@ -253,59 +252,6 @@
             productGrid.appendChild(card);
         });
     }
-
-    // Manejar la barra de búsqueda y sugerencias
-    document.getElementById('searchInput').addEventListener('input', function () {
-        const query = this.value.toLowerCase();
-        const suggestions = document.getElementById('suggestions');
-        suggestions.innerHTML = '';
-        suggestions.style.display = 'none';
-
-        if (query.length > 0) {
-            const filteredProducts = productos.filter(producto =>
-                producto.nombre.toLowerCase().includes(query) ||
-                producto.descripcion.toLowerCase().includes(query)
-            );
-
-            if (filteredProducts.length > 0) {
-                filteredProducts.slice(0, 5).forEach(producto => {
-                    const div = document.createElement('div');
-                    div.textContent = producto.nombre;
-                    div.addEventListener('click', () => {
-                        window.location.href = `producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}`;
-                    });
-                    suggestions.appendChild(div);
-                });
-                suggestions.style.display = 'block';
-            }
-        }
-    });
-
-    // Cerrar sugerencias al hacer clic fuera
-    document.addEventListener('click', function (e) {
-        const searchBar = document.querySelector('.search-bar');
-        if (!searchBar.contains(e.target)) {
-            document.getElementById('suggestions').style.display = 'none';
-        }
-    });
-
-    // Redirigir al hacer clic en el botón de búsqueda
-    document.querySelector('.search-btn').addEventListener('click', function () {
-        const query = document.getElementById('searchInput').value;
-        if (query) {
-            window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
-        }
-    });
-
-    // Redirigir al presionar Enter
-    document.getElementById('searchInput').addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            const query = this.value;
-            if (query) {
-                window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
-            }
-        }
-    });
 </script>
 </body>
 </html>

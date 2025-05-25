@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados de Búsqueda - Center Hogar Quilmes</title>
+    <title>Búsqueda - Center Hogar Quilmes</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -59,83 +59,197 @@
     <!-- Main Content -->
     <main class="container">
         <section class="catalog">
-            <h2 id="search-title">Resultados de Búsqueda</h2>
+            <h2 id="search-title">Resultados de búsqueda</h2>
             <div class="product-grid" id="product-grid">
-                <!-- Resultados se llenan con JavaScript -->
+                <!-- Productos se llenan con JavaScript -->
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-    <div class="container">
-        <p>© 2025 Center Hogar Quilmes. Todos los derechos reservados.</p>
-        <ul>
-            <li><a href="terminos.html">Términos y condiciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="privacidad.html">Privacidad</a></li>
-        </ul>
-    </div>
+        <div class="container">
+            <p>© 2025 Center Hogar Quilmes. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="terminos.html">Términos y condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="privacidad.html">Privacidad</a></li>
+            </ul>
+        </div>
     </footer>
 
     <!-- Botón flotante para volver arriba -->
-<button class="scroll-to-top" title="Volver arriba">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 19V5"></path>
-        <path d="M5 12l7-7 7 7"></path>
-    </svg> 
-</button>
+    <button class="scroll-to-top" title="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5"></path>
+            <path d="M5 12l7-7 7 7"></path>
+        </svg>
+    </button>
 
-
+    <!-- Scripts -->
     <script src="productos.js"></script>
     <script src="scripts.js"></script>
     <script>
-    // Leer el término de búsqueda desde la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const query = urlParams.get('query') || '';
+        // Normalizar texto para manejar acentos
+        function normalizeString(input) {
+            if (Array.isArray(input)) {
+                input = input.join(' ');
+            }
+            if (typeof input !== 'string') {
+                input = String(input || '');
+            }
+            return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        }
 
-    // Actualizar el título con el término de búsqueda
-    document.getElementById('search-title').textContent = query ? `Resultados para "${query}"` : 'Resultados de Búsqueda';
+        // Función para dividir el término de búsqueda en palabras clave
+        function getSearchKeywords(query) {
+            return query.trim().split(/\s+/).map(keyword => normalizeString(keyword)).filter(keyword => keyword.length > 0);
+        }
 
-    // Normalizar el término de búsqueda
-    const normalizedQuery = query.trim().toLowerCase();
+        // Función para verificar si un producto coincide con todas las palabras clave
+        function matchesKeywords(producto, keywords) {
+            const fields = [
+                normalizeString(producto.nombre),
+                normalizeString(producto.categoria),
+                normalizeString(producto.codigo || ''),
+                normalizeString(producto.descripcion),
+                normalizeString(producto.caracteristicas)
+            ].join(' ');
 
-    // Filtrar productos por término de búsqueda
-    const productosFiltrados = productos.filter(producto => {
-        // Buscar en nombre, descripción, categoría y código
-        const matchesBasicFields =
-            (producto.nombre && producto.nombre.toLowerCase().includes(normalizedQuery)) ||
-            (producto.descripcion && producto.descripcion.toLowerCase().includes(normalizedQuery)) ||
-            (producto.categoria && producto.categoria.toLowerCase().includes(normalizedQuery)) ||
-            (producto.codigo && producto.codigo.toLowerCase().includes(normalizedQuery));
+            return keywords.every(keyword => fields.includes(keyword));
+        }
 
-        // Buscar en características (marca y modelo)
-        const matchesCaracteristicas = producto.caracteristicas && producto.caracteristicas.some(car =>
-            car.toLowerCase().includes(normalizedQuery)
-        );
+        // Obtener el término de búsqueda desde la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('query') || '';
+        document.getElementById('search-title').textContent = query ? `Resultados de búsqueda para "${query}"` : 'Resultados de búsqueda';
+        document.getElementById('searchInput').value = query;
 
-        return matchesBasicFields || matchesCaracteristicas;
-    });
+        // Filtrar productos por todas las palabras clave
+        const keywords = getSearchKeywords(query);
+        const productosFiltrados = productos.filter(producto => matchesKeywords(producto, keywords));
 
-    // Generar las tarjetas de productos
-    const productGrid = document.getElementById('product-grid');
-    if (productosFiltrados.length === 0) {
-        productGrid.innerHTML = '<p>No se encontraron productos para tu búsqueda.</p>';
-    } else {
-        productosFiltrados.forEach(producto => {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            card.innerHTML = `
-                <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
-                    <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
-                    <h3>${producto.nombre}</h3>
-                    <p class="product-code">Código: ${producto.codigo}</p>
-                    <button class="buy-btn">Ver más</button>
-                </a>
-            `;
-            productGrid.appendChild(card);
+        // Generar las tarjetas de productos
+        const productGrid = document.getElementById('product-grid');
+        productGrid.innerHTML = ''; // Limpiar el grid antes de agregar productos
+        if (productosFiltrados.length === 0) {
+            productGrid.innerHTML = '<p>No se encontraron productos para la búsqueda.</p>';
+        } else {
+            productosFiltrados.forEach(producto => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
+                        <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                        <h3>${producto.nombre}</h3>
+                        <p class="product-code">Código: ${producto.codigo}</p>
+                        <button class="buy-btn">Ver más</button>
+                    </a>
+                `;
+                productGrid.appendChild(card);
+            });
+        }
+
+        // Configurar la barra de búsqueda y sugerencias
+        const searchInput = document.getElementById('searchInput');
+        const suggestionsContainer = document.getElementById('suggestions');
+        let selectedIndex = -1;
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim();
+            const keywords = getSearchKeywords(query);
+            suggestionsContainer.innerHTML = '';
+            selectedIndex = -1;
+
+            if (keywords.length === 0) {
+                suggestionsContainer.style.display = 'none';
+                searchInput.style.borderBottomLeftRadius = '4px';
+                return;
+            }
+
+            // Filtrar sugerencias por todas las palabras clave
+            const filteredSuggestions = productos.filter(producto => matchesKeywords(producto, keywords));
+
+            if (filteredSuggestions.length === 0) {
+                suggestionsContainer.style.display = 'none';
+                searchInput.style.borderBottomLeftRadius = '4px';
+                return;
+            }
+
+            // Mostrar hasta 5 sugerencias
+            filteredSuggestions.slice(0, 5).forEach((producto, index) => {
+                const suggestionDiv = document.createElement('div');
+                suggestionDiv.textContent = producto.nombre;
+                suggestionDiv.setAttribute('data-index', index);
+                suggestionDiv.addEventListener('click', () => {
+                    searchInput.value = producto.nombre;
+                    suggestionsContainer.style.display = 'none';
+                    searchInput.style.borderBottomLeftRadius = '4px';
+                    window.location.href = `producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}`;
+                });
+                suggestionsContainer.appendChild(suggestionDiv);
+            });
+
+            suggestionsContainer.style.display = 'block';
+            searchInput.style.borderBottomLeftRadius = '0';
         });
-    }
-</script>
+
+        searchInput.addEventListener('keydown', (e) => {
+            const suggestionItems = suggestionsContainer.querySelectorAll('div');
+            if (suggestionItems.length === 0) return;
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                selectedIndex = Math.min(selectedIndex + 1, suggestionItems.length - 1);
+                updateSelection();
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                selectedIndex = Math.max(selectedIndex - 1, -1);
+                updateSelection();
+            } else if (e.key === 'Enter' && selectedIndex >= 0) {
+                e.preventDefault();
+                const selectedSuggestion = suggestionItems[selectedIndex].textContent;
+                searchInput.value = selectedSuggestion;
+                suggestionsContainer.style.display = 'none';
+                searchInput.style.borderBottomLeftRadius = '4px';
+                const producto = productos.find(p => p.nombre === selectedSuggestion);
+                if (producto) {
+                    window.location.href = `producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}`;
+                }
+            } else if (e.key === 'Enter') {
+                const query = searchInput.value.trim();
+                if (query) {
+                    window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
+                }
+            }
+        });
+
+        function updateSelection() {
+            const suggestionItems = suggestionsContainer.querySelectorAll('div');
+            suggestionItems.forEach((item, index) => {
+                item.classList.toggle('selected', index === selectedIndex);
+            });
+            if (selectedIndex >= 0) {
+                suggestionItems[selectedIndex].scrollIntoView({ block: 'nearest' });
+            }
+        }
+
+        // Cerrar sugerencias al hacer clic fuera
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !suggestionsContainer.contains(e.target)) {
+                suggestionsContainer.style.display = 'none';
+                searchInput.style.borderBottomLeftRadius = '4px';
+                selectedIndex = -1;
+            }
+        });
+
+        // Redirigir al hacer clic en el botón de búsqueda
+        document.querySelector('.search-btn').addEventListener('click', () => {
+            const query = searchInput.value.trim();
+            if (query) {
+                window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
+            }
+        });
+    </script>
 </body>
 </html>

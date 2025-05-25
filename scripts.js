@@ -1,24 +1,12 @@
-function adjustContentMargin() {
-    const header = document.querySelector('.header');
-    const mainContent = document.querySelector('.banner') || 
-                        document.querySelector('.catalog') || 
-                        document.querySelector('.product-page') ||
-                        document.querySelector('.contact-page') ||
-                        document.querySelector('.legal-page');
-    const headerHeight = header.offsetHeight;
-    const isProductPage = document.body.classList.contains('product-page-body');
-
-    document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
-
-    if (mainContent) {
-        if (window.innerWidth > 768 && !isProductPage) {
-            mainContent.style.marginTop = `${headerHeight + 20}px`;
-        } else if (window.innerWidth <= 768) {
-            mainContent.style.marginTop = `${headerHeight}px`;
-        } else {
-            mainContent.style.marginTop = '0';
-        }
+// Normalizar texto para manejar acentos
+function normalizeString(input) {
+    if (Array.isArray(input)) {
+        input = input.join(' ');
     }
+    if (typeof input !== 'string') {
+        input = String(input || '');
+    }
+    return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
 
 // Funcionalidad de búsqueda
@@ -29,8 +17,11 @@ function setupSearch() {
     if (searchBtn) {
         searchBtn.addEventListener('click', () => {
             const query = searchInput.value.trim();
+            console.log('Búsqueda iniciada con query:', query); // Depuración
             if (query) {
                 window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
+            } else {
+                console.warn('El término de búsqueda está vacío');
             }
         });
     }
@@ -39,15 +30,18 @@ function setupSearch() {
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 const query = searchInput.value.trim();
+                console.log('Enter presionado con query:', query); // Depuración
                 if (query) {
                     window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
+                } else {
+                    console.warn('El término de búsqueda está vacío');
                 }
             }
         });
     }
 }
 
-// Funcionalidad de sugerencias con navegación por teclado
+// Resto de scripts.js (setupSuggestions, adjustContentMargin, etc.) sin cambios
 function setupSuggestions() {
     const searchInput = document.getElementById('searchInput');
     const suggestionsContainer = document.getElementById('suggestions');
@@ -55,18 +49,9 @@ function setupSuggestions() {
 
     if (!searchInput || !suggestionsContainer) return;
 
-    // Crear lista de sugerencias incluyendo marcas y modelos
-    const suggestionsList = [
-        ...productos.map(producto => producto.nombre),
-        ...new Set(productos.map(producto => producto.categoria)),
-        ...productos.filter(producto => producto.codigo).map(producto => producto.codigo),
-        ...productos.flatMap(producto => 
-            producto.caracteristicas ? producto.caracteristicas.filter(car => car.startsWith('Marca:') || car.startsWith('Modelo:')).map(car => car.split(': ')[1]) : []
-        )
-    ].filter(item => item); // Eliminar elementos undefined
-
     searchInput.addEventListener('input', () => {
-        const query = searchInput.value.trim().toLowerCase();
+        const query = searchInput.value.trim();
+        const queryNormalized = normalizeString(query);
         suggestionsContainer.innerHTML = '';
         selectedIndex = -1;
 
@@ -76,8 +61,12 @@ function setupSuggestions() {
             return;
         }
 
-        const filteredSuggestions = suggestionsList.filter(item =>
-            item && item.toLowerCase().includes(query)
+        // Filtrar productos por nombre, categoria, codigo y descripcion
+        const filteredSuggestions = productos.filter(producto =>
+            normalizeString(producto.nombre).includes(queryNormalized) ||
+            normalizeString(producto.categoria).includes(queryNormalized) ||
+            (producto.codigo && normalizeString(producto.codigo).includes(queryNormalized)) ||
+            normalizeString(producto.descripcion).includes(queryNormalized)
         );
 
         if (filteredSuggestions.length === 0) {
@@ -86,15 +75,16 @@ function setupSuggestions() {
             return;
         }
 
-        filteredSuggestions.forEach((suggestion, index) => {
+        // Mostrar hasta 5 sugerencias
+        filteredSuggestions.slice(0, 5).forEach((producto, index) => {
             const suggestionDiv = document.createElement('div');
-            suggestionDiv.textContent = suggestion;
+            suggestionDiv.textContent = producto.nombre;
             suggestionDiv.setAttribute('data-index', index);
             suggestionDiv.addEventListener('click', () => {
-                searchInput.value = suggestion;
+                searchInput.value = producto.nombre;
                 suggestionsContainer.style.display = 'none';
                 searchInput.style.borderBottomLeftRadius = '4px';
-                window.location.href = `busqueda.html?query=${encodeURIComponent(suggestion)}`;
+                window.location.href = `producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}`;
             });
             suggestionsContainer.appendChild(suggestionDiv);
         });
@@ -121,7 +111,10 @@ function setupSuggestions() {
             searchInput.value = selectedSuggestion;
             suggestionsContainer.style.display = 'none';
             searchInput.style.borderBottomLeftRadius = '4px';
-            window.location.href = `busqueda.html?query=${encodeURIComponent(selectedSuggestion)}`;
+            const producto = productos.find(p => p.nombre === selectedSuggestion);
+            if (producto) {
+                window.location.href = `producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}`;
+            }
         }
     });
 
@@ -144,7 +137,29 @@ function setupSuggestions() {
     });
 }
 
-// Funcionalidad del menú hamburguesa
+function adjustContentMargin() {
+    const header = document.querySelector('.header');
+    const mainContent = document.querySelector('.banner') || 
+                        document.querySelector('.catalog') || 
+                        document.querySelector('.product-page') ||
+                        document.querySelector('.contact-page') ||
+                        document.querySelector('.legal-page');
+    const headerHeight = header.offsetHeight;
+    const isProductPage = document.body.classList.contains('product-page-body');
+
+    document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+
+    if (mainContent) {
+        if (window.innerWidth > 768 && !isProductPage) {
+            mainContent.style.marginTop = `${headerHeight + 20}px`;
+        } else if (window.innerWidth <= 768) {
+            mainContent.style.marginTop = `${headerHeight}px`;
+        } else {
+            mainContent.style.marginTop = '0';
+        }
+    }
+}
+
 function setupMenuToggle() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -154,14 +169,12 @@ function setupMenuToggle() {
             navMenu.classList.toggle('active');
         });
 
-        // Cerrar el menú al hacer clic en un enlace
         navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
             });
         });
 
-        // Cerrar el menú al hacer clic fuera
         document.addEventListener('click', (e) => {
             if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
                 navMenu.classList.remove('active');
@@ -170,7 +183,6 @@ function setupMenuToggle() {
     }
 }
 
-// Funcionalidad del botón "Volver arriba"
 const scrollToTopBtn = document.querySelector('.scroll-to-top');
 
 if (scrollToTopBtn) {
@@ -190,7 +202,6 @@ if (scrollToTopBtn) {
     });
 }
 
-// Inicializar funcionalidades
 document.addEventListener('DOMContentLoaded', () => {
     adjustContentMargin();
     setupSearch();
@@ -199,3 +210,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('resize', adjustContentMargin);
+
