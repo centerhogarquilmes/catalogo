@@ -52,7 +52,7 @@ const productos = [
         ],
         descripcion: "<strong>Dimensiones:</strong> 56cm (An) x  95cm (Al) x 60 cm (Pr).\n<strong>Válvula de seguridad:</strong> Sí.\n<strong>Hornallas:</strong> 4.\n<strong>Tipo de gas:</strong> Natural.\n<strong>Eficiencia energética:</strong> Clase A.",
         codigo: "2073969",
-        caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
+        caracteristicas: ["Marca: Escorial", "Modelo: Master S2 Classic", "Garantía: 1 año"]
     },
 
     {
@@ -98,7 +98,7 @@ const productos = [
         ],
         descripcion: "<strong>Dimensiones:</strong> 51cm (An) x  85cm (Al) x 52 cm (Pr).\n<strong>Válvula de seguridad:</strong> Sí.\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Natural.\n<strong>Eficiencia energética:</strong> Clase A.",
         codigo: "2073930",
-        caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
+        caracteristicas: ["Marca: Escorial", "Modelo: PALACE CRISTAL", "Garantía: 1 año"]
     },
 
     {
@@ -153,9 +153,10 @@ const productos = [
     {
         categoria: "Cocinas",
         nombre: "Cocina Volcan 87643 55cm 4 horn. Blanca luz-enc.elec",
-        imagen: "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
+        imagen: "images/cocinas/Cocina_Volcan_87643_55cm_4_horn_Blanca_luz_enc_elec_1.webp",
         imagenes: [
-            "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
+            "images/cocinas/Cocina_Volcan_87643_55cm_4_horn_Blanca_luz_enc_elec_1.webp",
+            "images/cocinas/Cocina_Volcan_87643_55cm_4_horn_Blanca_luz_enc_elec_1.webp"
         ],
         descripcion: "<strong>Dimensiones:</strong> 56cm (An) x 86cm (Al) x 58cm (Pr).\n<strong>Válvula de seguridad:</strong> Sí.\n<strong>Luz en el horno:</strong> Sí.\n<strong>Encencido eléctrico:</strong> Sí.\n<strong>Tipo de gas:</strong> Multigas.\n<strong>Eficiencia energética:</strong> Clase A.",
         codigo: "2073893",
