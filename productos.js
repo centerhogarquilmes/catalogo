@@ -749,7 +749,7 @@ const productos = [
             "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_3.webp",
             "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_4.webp"
         ],
-        descripcion: "<strong>Dimensiones:</strong> 1.11m x 64.4cm.\n<strong>Tipo de pantalla:</strong> DLED.\n<strong>Tamaño de la pantalla:</strong> 50 pulgadas.\n<strong>Tipo de resolución:</strong> 4K.\n<strong>Sistema operativo:</strong> Android TV",
+        descripcion: '<strong>Dimensiones:</strong> 1.11m x 64.4cm.\n<strong>Tipo de pantalla:</strong> DLED.\n<strong>Tamaño de la pantalla:</strong> 50".\n<strong>Tipo de resolución:</strong> 4K.\n<strong>Sistema operativo:</strong> Android TV',
         codigo: "2074218",
         caracteristicas: ["Marca: Enova", "Modelo: TE50UA10", "Garantía: 1 año"]
     },
@@ -759,7 +759,7 @@ const productos = [
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
-        nombre: "TV LED ENOVA 32 smart HD Android",
+        nombre: 'TV LED ENOVA 32" smart HD Android',
         imagen: "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_1.webp",
         imagenes: [
               "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_1.webp",
@@ -774,7 +774,7 @@ const productos = [
       {
         categoria: "Tv y audio",
         subcategoria: "Tv",
-        nombre: "TV LED RCA 32 AND32Y Android",
+        nombre: 'TV LED RCA 32" AND32Y Android',
         codigo: "2073676",
         
         descripcion: '<strong>Pulgadas:</strong> 32".\n<strong>Tipo de pantalla:</strong> Led.\n<strong>Tipo de resolución:</strong> HD.\n<strong>Sistema operativo:</strong> Android TV.',
@@ -819,7 +819,7 @@ const productos = [
             "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_2.webp",
             "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_3.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 40.\n<strong>Tipo de pantalla:</strong> Led.\n<strong>Tipo de resolucion:</strong> HD.\n<strong>Sistema operativo:</strong> Android TV.',
+        descripcion: '<strong>Pulgadas:</strong> 40".\n<strong>Tipo de pantalla:</strong> Led.\n<strong>Tipo de resolucion:</strong> HD.\n<strong>Sistema operativo:</strong> Android TV.',
         codigo: "2075067",
         caracteristicas: [
             "Marca: RCA",
@@ -838,7 +838,7 @@ const productos = [
             "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_1.webp",
             "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_3.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 65\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+        descripcion: '<strong>Pulgadas:</strong> 65".\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
         codigo: "2075302",
         caracteristicas: [
             "Marca: ENOVA",
@@ -858,7 +858,7 @@ const productos = [
             "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_3.webp",
             "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_4.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 75\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+        descripcion: '<strong>Pulgadas:</strong> 75".\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
         codigo: "2074860",
         caracteristicas: [
             "Marca: ENOVA",
@@ -876,7 +876,7 @@ const productos = [
             "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_2.webp",
             "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_1.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 40\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Google TV',
+        descripcion: '<strong>Pulgadas:</strong> 40".\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Google TV',
         codigo: "2074810",
         caracteristicas: [
             "Marca: Kanji",
@@ -893,7 +893,7 @@ const productos = [
             "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_1.webp",
             "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_2.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> QLED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+        descripcion: '<strong>Pulgadas:</strong> 50".\n<strong>Tipo de pantalla:</strong> QLED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
         codigo: "2075193",
         caracteristicas: [
             "Marca: Kodak",
@@ -913,7 +913,7 @@ const productos = [
             "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_4.webp",
             "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_5.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 32\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+        descripcion: '<strong>Pulgadas:</strong> 32".\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
         codigo: "2075334",
         caracteristicas: [
             "Marca: Noblex",
@@ -933,7 +933,7 @@ const productos = [
             "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_4.webp",
             "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_5.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> GO',
+        descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> GO',
         codigo: "2075285",
         caracteristicas: [
             "Marca: Noblex",
@@ -951,7 +951,7 @@ const productos = [
             "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_2.webp",
             "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_3.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 58\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
+        descripcion: '<strong>Pulgadas:</strong> 58"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
         codigo: "2074829",
         caracteristicas: [
             "Marca: Noblex",
@@ -969,7 +969,7 @@ const productos = [
             "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_2.webp",
             "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_3.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 40\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Vidaa',
+        descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Vidaa',
         codigo: "2074975",
         caracteristicas: [
             "Marca: Philco",
@@ -987,7 +987,7 @@ const productos = [
             "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_2.webp",
             "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_3.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 32\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Titan OS',
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Titan OS',
         codigo: "2075320",
         caracteristicas: [
             "Marca: Philips",
@@ -1004,7 +1004,7 @@ const productos = [
             "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_1.webp",
             "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_2.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 32\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
         codigo: "2073676",
         caracteristicas: [
             "Marca: RCA",
@@ -1024,7 +1024,7 @@ const productos = [
             "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_4.webp",
             "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_5.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 32\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Tyzen',
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Tyzen',
         codigo: "2071627",
         caracteristicas: [
             "Marca: Samsung",
@@ -1043,7 +1043,7 @@ const productos = [
             "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_3.webp",
             "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_4.webp"
         ],
-        descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Tyzen',
+        descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Tyzen',
         codigo: "2075206",
         caracteristicas: [
             "Marca: Samsung",
