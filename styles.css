@@ -1401,45 +1401,21 @@ body {
 
 /* Estilos para el menú colapsable en móvil */
 @media (max-width: 768px) {
-    .nav-menu .has-submenu {
-        position: relative;
-    }
+    /* ... otros estilos existentes ... */
 
+    /* Ocultar submenús en móvil */
     .nav-menu .submenu {
-        display: none;
-        position: static;
-        background-color: #1a4971; /* Un tono ligeramente más claro para diferenciar */
-        width: 100%;
-        padding-left: 20px;
+        display: none !important; /* Oculta los submenús completamente */
     }
 
+    /* Evitar que las categorías con submenús sean colapsables */
     .nav-menu .has-submenu.active .submenu {
-        display: block;
+        display: none !important; /* Asegura que no se muestren al activar */
     }
 
-    .nav-menu .submenu li {
-        padding: 8px 0;
-        border-bottom: 1px solid #050d19;
-    }
-
-    .nav-menu .submenu li:last-child {
-        border-bottom: none;
-    }
-
-    .nav-menu .submenu a {
-        font-size: 14px;
-    }
-
-    /* Indicador visual para categorías con subcategorías */
+    /* Eliminar el indicador visual (flecha) en categorías con submenús */
     .nav-menu .has-submenu > a::after {
-        content: '▼';
-        font-size: 12px;
-        margin-left: 5px;
-        transition: transform 0.3s ease;
-    }
-
-    .nav-menu .has-submenu.active > a::after {
-        transform: rotate(180deg);
+        content: none; /* Elimina la flecha en móvil */
     }
 }
 

@@ -184,18 +184,26 @@ function setupMenuToggle() {
         });
 
         // Funcionalidad para submenús en móvil
-        const menuItemsWithSubmenu = navMenu.querySelectorAll('.has-submenu');
-        menuItemsWithSubmenu.forEach(item => {
-            const link = item.querySelector('a');
-            if (link) {
-                link.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault(); // Evita navegar al hacer clic en móvil
-                        item.classList.toggle('active');
-                    }
-                });
+        // Funcionalidad para submenús en móvil
+const menuItemsWithSubmenu = navMenu.querySelectorAll('.has-submenu');
+menuItemsWithSubmenu.forEach(item => {
+    const link = item.querySelector('a');
+    if (link) {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                // En móvil, navegar directamente a la categoría principal sin mostrar submenús
+                const href = link.getAttribute('href');
+                if (href) {
+                    window.location.href = href;
+                }
+            } else {
+                // En escritorio, mantener comportamiento original
+                e.preventDefault();
+                item.classList.toggle('active');
             }
         });
+    }
+});
     } else {
         console.error("No se encontraron los elementos menuToggle o navMenu");
     }
