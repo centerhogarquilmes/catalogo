@@ -183,7 +183,6 @@
 </button>
 
     <!-- Script -->
-
 <script src="productos.js"></script>
 <script src="scripts.js"></script>
 <script>
@@ -302,27 +301,6 @@
             productGrid.appendChild(card);
         });
     }
-
-    // Funcionalidad para submenús en móvil
-const menuItemsWithSubmenu = document.querySelectorAll('.nav-menu .has-submenu');
-
-menuItemsWithSubmenu.forEach(item => {
-    const link = item.querySelector('a');
-    link.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
-            e.preventDefault(); // Evita navegar al hacer clic en móvil
-            item.classList.toggle('active');
-        }
-    });
-});
-
-// Alternar menú hamburguesa
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
-
-menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
 </script>
 </body>
 </html>

@@ -169,17 +169,35 @@ function setupMenuToggle() {
             navMenu.classList.toggle('active');
         });
 
+        // Cerrar el menú al hacer clic en un enlace
         navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
             });
         });
 
+        // Cerrar el menú al hacer clic fuera
         document.addEventListener('click', (e) => {
             if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
                 navMenu.classList.remove('active');
             }
         });
+
+        // Funcionalidad para submenús en móvil
+        const menuItemsWithSubmenu = navMenu.querySelectorAll('.has-submenu');
+        menuItemsWithSubmenu.forEach(item => {
+            const link = item.querySelector('a');
+            if (link) {
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault(); // Evita navegar al hacer clic en móvil
+                        item.classList.toggle('active');
+                    }
+                });
+            }
+        });
+    } else {
+        console.error("No se encontraron los elementos menuToggle o navMenu");
     }
 }
 
@@ -210,4 +228,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('resize', adjustContentMargin);
-
