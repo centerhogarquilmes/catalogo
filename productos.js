@@ -792,7 +792,7 @@ const productos = [
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
-        nombre: "TV LED Philips 32\" Smart HD 32PHD6910/77 con Titan OS",
+        nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
         codigo: "2075320",
         descripcion: '<strong>Pulgadas:</strong> 32".\n<strong>Tipo de pantalla:</strong> Led.\n<strong>Tipo de resolución:</strong> HD.\n<strong>Sistema operativo:</strong> Titan OS.',
         imagen: "images/televisores/TV_LED _Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
