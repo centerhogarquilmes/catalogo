@@ -377,6 +377,110 @@ const productos = [
     ]
 },
 
+{
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Crivel HF-153 Spiedo',
+    imagen: "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 53\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> Sí',
+    codigo: "2072972",
+    caracteristicas: [
+        "Marca: Crivel",
+        "Modelo: 2072972",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Crivel HFS-153 rcl 2 anafes',
+    imagen: "images/horno/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_1.webp",
+        "images/horno/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_2.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 50\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> Sí',
+    codigo: "2072971",
+    caracteristicas: [
+        "Marca: Crivel",
+        "Modelo: 2072971",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Bgh BHE64M20A 64 lts',
+    imagen: "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_1.webp",
+        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_2.webp",
+        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_3.webp",
+        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_4.webp",
+        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_5.webp",
+        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 64\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2200\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> No',
+    codigo: "2073480",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2073480",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Bgh BHE30FN24T c/Airfryer 30lts 1600wts',
+    imagen: "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_1.webp",
+        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_2.webp",
+        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_3.webp",
+        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 30\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1600\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    codigo: "2075309",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2075309",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno eléctrico Ultracomb UC-110CLN 110lts Conveccion',
+    imagen: "images/horno/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_1.webp",
+    imagenes: [
+        "images/horno/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_1.webp",
+        "images/horno/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_2.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 110\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2400\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    codigo: "2074390",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2074390",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno Florencia de empotrar 7857F Eléctrico',
+    imagen: "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_1.webp",
+    imagenes: [
+        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_1.webp",
+        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_2.webp",
+        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_3.webp",
+        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 63\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2150\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    codigo: "2072768 ",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2072768 ",
+        "Garantía: 1 año"
+    ]
+},
+
 
 
 
