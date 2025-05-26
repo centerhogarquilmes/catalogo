@@ -1,319 +1,619 @@
-                            <!DOCTYPE html>
-                            <html lang="es">
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <title>Admin - Center Hogar Quilmes</title>
-                                <link rel="stylesheet" href="styles.css">
-                                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-                                <style>
-                                    .admin-container { max-width: 800px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-                                    .admin-container h2 { font-size: 24px; margin-bottom: 20px; text-align: center; }
-                                    .form-group { margin-bottom: 15px; }
-                                    .form-group label { display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px; }
-                                    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
-                                    .form-group textarea { min-height: 100px; resize: vertical; }
-                                    .error { color: red; font-size: 14px; text-align: center; }
-                                    #login-section { display: block; }
-                                    #admin-section { display: none; }
-                                    #product-list { margin-top: 20px; }
-                                    #product-list li { margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 4px; }
-                                    .button-group { display: flex; gap: 10px; margin-top: 20px; justify-content: center; }
-                                    .btn-agregar { padding: 10px 20px; background: #28a745; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
-                                    .btn-agregar:hover { background: #218838; }
-                                    .btn-exportar { padding: 10px 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
-                                    .btn-exportar:hover { background: #0056b3; }
-                                    .btn-limpiar { padding: 10px 20px; background: #dc3545; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
-                                    .btn-limpiar:hover { background: #c82333; }
-                                    .dynamic-fields { margin-top: 15px; }
-                                </style>
-                            </head>
-                            <body>
-                                <div class="container admin-container">
-                                    <div id="login-section">
-                                        <h2>Iniciar Sesión</h2>
-                                        <div class="form-group">
-                                            <label for="password">Contraseña</label>
-                                            <input type="password" id="password" placeholder="Ingresa la contraseña">
-                                        </div>
-                                        <button class="btn-exportar" onclick="login()">Ingresar</button>
-                                        <p id="login-error" class="error"></p>
-                                    </div>
-                                    <div id="admin-section">
-                                        <h2>Agregar Producto</h2>
-                                        <form id="product-form">
-                                            <div class="form-group">
-                                                <label for="categoria">Categoría</label>
-                                                <select id="categoria" name="categoria" required>
-                                                    <option value="" disabled selected>Selecciona una categoría</option>
-                                                    <option value="Cocinas">Cocinas</option>
-                                                    <option value="Heladeras">Heladeras</option>
-                                                    <option value="Televisores">Televisores</option>
-                                                    <option value="Celulares">Celulares</option>
-                                                    <option value="Hornos y microondas">Hornos y microondas</option>
-                                                    <option value="Lavarropas y secarropas">Lavarropas y secarropas</option>
-                                                    <option value="Pequeños electrodomésticos">Pequeños electrodomésticos</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nombre">Nombre</label>
-                                                <input type="text" id="nombre" name="nombre" placeholder='TV LED Philips 32" Smart HD' required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="codigo">Código</label>
-                                                <input type="text" id="codigo" name="codigo" placeholder="2075320" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="imagen">Imagen Principal (images/... .webp)</label>
-                                                <input type="text" id="imagen" name="imagen" placeholder="tv_philips_32_1" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="imagenes">Imágenes Adicionales (images/... .webp, una por línea)</label>
-                                                <textarea id="imagenes" name="imagenes" placeholder="tv_philips_32_2\ntv_philips_32_3"></textarea>
-                                            </div>
-                                            <div class="dynamic-fields" id="dynamic-fields">
-                                                <!-- Campos dinámicos se generan aquí -->
-                                            </div>
-                                            <button type="submit" class="btn-agregar">Agregar Producto</button>
-                                            <p id="form-error" class="error"></p>
-                                        </form>
-                                        <div class="button-group">
-                                            <button class="btn-exportar" onclick="exportProducts()">Exportar productos.js</button>
-                                            <button class="btn-limpiar" onclick="clearProducts()">Limpiar Lista</button>
-                                        </div>
-                                        <h3>Productos Agregados</h3>
-                                        <ul id="product-list"></ul>
-                                    </div>
-                                </div>
-                                <script>
-                                    // Definición de campos dinámicos por categoría
-                                    const categoryFields = {
-                                        "Televisores": [
-                                            { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: "32" },
-                                            { label: "Tipo de pantalla", name: "tipo_pantalla", type: "text", placeholder: "LED" },
-                                            { label: "Tipo de resolución", name: "resolucion", type: "text", placeholder: "HD" },
-                                            { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android TV" }
-                                        ],
-                                        "Heladeras": [
-                                            { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "185cm x 60cm x 67cm" },
-                                            { label: "Tipo de tecnología", name: "tecnologia", type: "select", options: ["Cíclica", "No frost"] },
-                                            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "300" },
-                                            { label: "Freezer", name: "freezer", type: "select", options: ["Sí", "No"] },
-                                            { label: "Dispenser de agua", name: "dispenser", type: "select", options: ["No", "Sí"] },
-                                            { label: "Inverter", name: "inverter", type: "select", options: ["Mo", "Sí"] },
-                                            { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
-                                        ],
-                                        "Cocinas": [
-                                            { label: "Dimensiones (An x Al x Pr)", name: "dimensiones", type: "text", placeholder: "56cm x 85cm x 60cm" },
-                                            { label: "Válvula de seguridad", name: "valvula_seguridad", type: "select", options: ["Sí", "No"] },
-                                            { label: "Luz en el horno", name: "luz_horno", type: "select", options: ["Sí", "No"] },
-                                            { label: "Encendido eléctrico", name: "encendido_electrico", type: "select", options: ["Sí", "No"] },
-                                            { label: "Tipo de gas", name: "tipo_gas", type: "text", placeholder: "Multigas" },
-                                            { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
-                                        ],
-                                        "Lavarropas y secarropas": [
-                                            { label: "Capacidad (kg)", name: "capacidad", type: "text", placeholder: "7" },
-                                            { label: "Tipo de lavado", name: "tipo_lavado", type: "select", options: ["Automático", "Semiautomático", "-"] },
-                                            { label: "Tipo de carga", name: "tipo_carga", type: "select", options: ["Frontal", "Superior"] },
-                                            { label: "Velocidad de centrifugado (RPM)", name: "centrifugado", type: "text", placeholder: "1000" },
-                                            { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
-                                            { label: "Secado a calor", name: "secado", type: "select", options: ["No", "Sí"] }
-                                        ],
-                                        "Celulares": [
-                                            { label: "Almacenamiento (GB)", name: "almacenamiento", type: "text", placeholder: "64" },
-                                            { label: "RAM (GB)", name: "ram", type: "text", placeholder: "4" },
-                                            { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: '6,7"' },
-                                            { label: "Camara trasera", name: "camarat", type: "text", placeholder: "32 Mpx" },
-                                            { label: "Camara frontal", name: "camaraf", type: "text", placeholder: "8 Mpx" },
-                                            { label: "Bateria", name: "bateria", type: "text", placeholder: "5.2 Ah" },
-                                            { label: "Red movil", name: "red", type: "select", options: ["4G", "5G"] },
-                                            { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android" }
-                                        ],
-                                        "Hornos y microondas": [
-                                            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "25" },
-                                            { label: "Tipo", name: "tipo", type: "select", options: ["Horno", "Microondas"] },
-                                            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "900" }
-                                        ],
-                                        "Pequeños electrodomésticos": [
-                                            { label: "Tipo", name: "tipo", type: "text", placeholder: "Pava eléctrica" },
-                                            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
-                                            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.7" }
-                                        ]
-                                    };
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Center Hogar Quilmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .admin-container { max-width: 800px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .admin-container h2 { font-size: 24px; margin-bottom: 20px; text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+        .form-group textarea { min-height: 100px; resize: vertical; }
+        .error { color: red; font-size: 14px; text-align: center; }
+        #login-section { display: block; }
+        #admin-section { display: none; }
+        #product-list { margin-top: 20px; }
+        #product-list li { margin-bottom: 10px; padding: 10px; background: #f9f9f9; border-radius: 4px; }
+        .button-group { display: flex; gap: 10px; margin-top: 20px; justify-content: center; }
+        .btn-agregar { padding: 10px 20px; background: #28a745; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        .btn-agregar:hover { background: #218838; }
+        .btn-exportar { padding: 10px 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        .btn-exportar:hover { background: #0056b3; }
+        .btn-limpiar { padding: 10px 20px; background: #dc3545; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        .btn-limpiar:hover { background: #c82333; }
+        .dynamic-fields { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container admin-container">
+        <div id="login-section">
+            <h2>Iniciar Sesión</h2>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingresa la contraseña">
+            </div>
+            <button class="btn-exportar" onclick="login()">Ingresar</button>
+            <p id="login-error" class="error"></p>
+        </div>
+        <div id="admin-section">
+    <h2>Agregar Producto</h2>
+    <form id="product-form">
+        <div class="form-group">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option value="Cocinas">Cocinas</option>
+                <option value="Heladeras">Heladeras</option>
+                <option value="Tv y Audio">Tv y Audio</option>
+                <option value="Tecnología">Tecnología</option>
+                <option value="Climatización">Climatización</option>
+                <option value="Lavado">Lavado</option>
+                <option value="Hornos, Microondas y Freidoras">Hornos, Microondas y Freidoras</option>
+                <option value="Pequeños Electrodomésticos">Pequeños Electrodomésticos</option>
+                <option value="Cuidado Personal">Cuidado Personal</option>
+            </select>
+        </div>
+        <div class="form-group" id="subcategoria-group" style="display: none;">
+            <label for="subcategoria">Subcategoría</label>
+            <select id="subcategoria" name="subcategoria">
+                <option value="" disabled selected>Selecciona una subcategoría</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder='Heladera Samsung RT29K577JS8 Silver No Fr 299lts' required>
+        </div>
+        <div class="form-group">
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" name="marca" placeholder="Samsung" required>
+        </div>
+        <div class="form-group">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo" placeholder="2075320" required>
+        </div>
+        <div class="form-group">
+            <label for="imagen">Imagen Principal (images/... .webp)</label>
+            <input type="text" id="imagen" name="imagen" placeholder="heladera_samsung_rt29_silver_1" required>
+        </div>
+        <div class="form-group">
+            <label for="imagenes">Imágenes Adicionales (images/... .webp, una por línea)</label>
+            <textarea id="imagenes" name="imagenes" placeholder="heladera_samsung_rt29_silver_2\nheladera_samsung_rt29_silver_3"></textarea>
+        </div>
+        <div class="dynamic-fields" id="dynamic-fields">
+            <!-- Campos dinámicos se generan aquí -->
+        </div>
+        <button type="submit" class="btn-agregar">Agregar Producto</button>
+        <p id="form-error" class="error"></p>
+    </form>
+    <div class="button-group">
+        <button class="btn-exportar" onclick="exportProducts()">Exportar productos.js</button>
+        <button class="btn-limpiar" onclick="clearProducts()">Limpiar Lista</button>
+    </div>
+    <h3>Productos Agregados</h3>
+    <ul id="product-list"></ul>
+</div>
+    </div>
+    <script>
+// Definición de categorías, subcategorías, carpetas y campos dinámicos
+const categoryFields = {
+    "Cocinas": {
+        subcategorias: [],
+        folder: "cocinas",
+        fields: [
+            { label: "Dimensiones (An x Al x Pr)", name: "dimensiones", type: "text", placeholder: "56cm x 85cm x 60cm" },
+            { label: "Válvula de seguridad", name: "valvula_seguridad", type: "select", options: ["Sí", "No"] },
+            { label: "Luz en el horno", name: "luz_horno", type: "select", options: ["Sí", "No"] },
+            { label: "Encendido eléctrico", name: "encendido_electrico", type: "select", options: ["Sí", "No"] },
+            { label: "Tipo de gas", name: "tipo_gas", type: "text", placeholder: "Multigas" },
+            { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+        ]
+    },
+    "Heladeras": {
+        subcategorias: ["Cíclica", "No frost"],
+        folder: "heladeras",
+        fields: [
+            { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "185cm x 60cm x 67cm" },
+            { label: "Tipo de tecnología", name: "tecnologia", type: "select", options: ["Cíclica", "No frost"] },
+            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "300" },
+            { label: "Freezer", name: "freezer", type: "select", options: ["Sí", "No"] },
+            { label: "Dispenser de agua", name: "dispenser", type: "select", options: ["No", "Sí"] },
+            { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
+            { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+        ]
+    },
+    "Tv y Audio": {
+        subcategorias: ["Tv", "Audio"],
+        folders: {
+            "Tv": "televisores",
+            "Audio": "audio"
+        },
+        fields: {
+            "Tv": [
+                { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: "32" },
+                { label: "Tipo de pantalla", name: "tipo_pantalla", type: "text", placeholder: "LED" },
+                { label: "Tipo de resolución", name: "resolucion", type: "text", placeholder: "HD" },
+                { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android TV" }
+            ],
+            "Audio": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "20" },
+                { label: "Tipo de conexión", name: "conexion", type: "select", options: ["Bluetooth", "AUX", "USB"] },
+                { label: "Portátil", name: "portatil", type: "select", options: ["Sí", "No"] }
+            ]
+        }
+    },
+    "Tecnología": {
+        subcategorias: ["Celulares", "Notebooks"],
+        folders: {
+            "Celulares": "celulares",
+            "Notebooks": "notebooks"
+        },
+        fields: {
+            "Celulares": [
+                { label: "Almacenamiento (GB)", name: "almacenamiento", type: "text", placeholder: "64" },
+                { label: "RAM (GB)", name: "ram", type: "text", placeholder: "4" },
+                { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: '6,7"' },
+                { label: "Cámara trasera", name: "camarat", type: "text", placeholder: "32 Mpx" },
+                { label: "Cámara frontal", name: "camaraf", type: "text", placeholder: "8 Mpx" },
+                { label: "Batería", name: "bateria", type: "text", placeholder: "5.2 Ah" },
+                { label: "Red móvil", name: "red", type: "select", options: ["4G", "5G"] },
+                { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android" }
+            ],
+            "Notebooks": [
+                { label: "Procesador", name: "procesador", type: "text", placeholder: "Intel Core i5" },
+                { label: "RAM (GB)", name: "ram", type: "text", placeholder: "8" },
+                { label: "Almacenamiento (GB)", name: "almacenamiento", type: "text", placeholder: "512 SSD" },
+                { label: "Tamaño de pantalla (pulgadas)", name: "pulgadas", type: "text", placeholder: "15.6" },
+                { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Windows 11" }
+            ]
+        }
+    },
+    "Climatización": {
+        subcategorias: ["Calefacción", "Ventilación", "Aires Acondicionados"],
+        folders: {
+            "Calefacción": "calefaccion",
+            "Ventilación": "ventilacion",
+            "Aires Acondicionados": "aires_acondicionados"
+        },
+        fields: {
+            "Calefacción": [
+                { label: "Tipo", name: "tipo", type: "select", options: ["Estufa", "Radiador", "Calefactor"] },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
+                { label: "Área de cobertura (m²)", name: "cobertura", type: "text", placeholder: "20" }
+            ],
+            "Ventilación": [
+                { label: "Tipo", name: "tipo", type: "select", options: ["Ventilador de pie", "Ventilador de mesa", "Ventilador de pared"] },
+                { label: "Diámetro (cm)", name: "diametro", type: "text", placeholder: "40" },
+                { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" }
+            ],
+            "Aires Acondicionados": [
+                { label: "Capacidad (BTU)", name: "capacidad", type: "text", placeholder: "12000" },
+                { label: "Tipo", name: "tipo", type: "select", options: ["Split", "Ventana", "Portátil"] },
+                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
+                { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+            ]
+        }
+    },
+    "Lavado": {
+        subcategorias: ["Lavarropas", "Lavasecarropas", "Secarropas", "Planchas"],
+        folders: {
+            "Lavarropas": "lavarropas",
+            "Lavasecarropas": "lavasecarropas",
+            "Secarropas": "secarropas",
+            "Planchas": "planchas"
+        },
+        fields: {
+            "Lavarropas": [
+                { label: "Capacidad (kg)", name: "capacidad", type: "text", placeholder: "7" },
+                { label: "Tipo de lavado", name: "tipo_lavado", type: "select", options: ["Automático", "Semiautomático"] },
+                { label: "Tipo de carga", name: "tipo_carga", type: "select", options: ["Frontal", "Superior"] },
+                { label: "Velocidad de centrifugado (RPM)", name: "centrifugado", type: "text", placeholder: "1000" },
+                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] }
+            ],
+            "Lavasecarropas": [
+                { label: "Capacidad lavado (kg)", name: "capacidad_lavado", type: "text", placeholder: "8" },
+                { label: "Capacidad secado (kg)", name: "capacidad_secado", type: "text", placeholder: "5" },
+                { label: "Tipo de carga", name: "tipo_carga", type: "select", options: ["Frontal", "Superior"] },
+                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] }
+            ],
+            "Secarropas": [
+                { label: "Capacidad (kg)", name: "capacidad", type: "text", placeholder: "7" },
+                { label: "Tipo de secado", name: "tipo_secado", type: "select", options: ["Centrifugado", "Calor"] },
+                { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+            ],
+            "Planchas": [
+                { label: "Tipo", name: "tipo", type: "select", options: ["Plancha a vapor", "Plancha en seco"] },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "1200" },
+                { label: "Capacidad de agua (ml)", name: "capacidad_agua", type: "text", placeholder: "200" }
+            ]
+        }
+    },
+    "Hornos, Microondas y Freidoras": {
+    subcategorias: [],
+    folder: ["hornos", "microondas", "freidoras"], // Usar el tipo seleccionado como carpeta
+    fields: [
+        { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "25" },
+        { label: "Tipo", name: "tipo", type: "select", options: ["Horno", "Microondas", "Freidora"], default: "Horno" },
+        { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "900" },
+        { label: "Anafes", name: "anafes", type: "select", options: ["No", "Sí"], conditional: { field: "tipo", value: "Horno" } },             
+        { label: "Spiedo", name: "spiedo", type: "select", options: ["No", "Sí"], conditional: { field: "tipo", value: "Horno" } }
+    ]
+},
+    "Pequeños Electrodomésticos": {
+        subcategorias: ["Batidoras", "Licuadoras", "Multiprocesadoras", "Mixers", "Pavas Eléctricas", "Cafeteras", "Tostadoras", "Sandwicheras", "Exprimidores y Jugueras", "Picadoras"],
+        folders: {
+            "Batidoras": "batidoras",
+            "Licuadoras": "licuadoras",
+            "Multiprocesadoras": "multiprocesadoras",
+            "Mixers": "mixers",
+            "Pavas Eléctricas": "pavas_electricas",
+            "Cafeteras": "cafeteras",
+            "Tostadoras": "tostadoras",
+            "Sandwicheras": "sandwicheras",
+            "Exprimidores y Jugueras": "exprimidores_jugueras",
+            "Picadoras": "picadoras"
+        },
+        fields: {
+            "Batidoras": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "500" },
+                { label: "Velocidades", name: "velocidades", type: "text", placeholder: "5" },
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.5" }
+            ],
+            "Licuadoras": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "600" },
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.5" },
+                { label: "Cuchillas desmontables", name: "cuchillas", type: "select", options: ["Sí", "No"] }
+            ],
+            "Multiprocesadoras": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "750" },
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "2" },
+                { label: "Funciones", name: "funciones", type: "text", placeholder: "Picar, triturar, mezclar" }
+            ],
+            "Mixers": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "400" },
+                { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" },
+                { label: "Accesorios incluidos", name: "accesorios", type: "text", placeholder: "Batidor, picador" }
+            ],
+            "Pavas Eléctricas": [
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.7" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
+                { label: "Apagado automático", name: "apagado_auto", type: "select", options: ["Sí", "No"] }
+            ],
+            "Cafeteras": [
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.2" },
+                { label: "Tipo", name: "tipo", type: "select", options: ["Filtro", "Cápsulas", "Espresso"] },
+                { label: "Presión (bar)", name: "presion", type: "text", placeholder: "15" }
+            ],
+            "Tostadoras": [
+                { label: "Ranuras", name: "ranuras", type: "text", placeholder: "2" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "800" },
+                { label: "Niveles de tostado", name: "niveles_tostado", type: "text", placeholder: "7" }
+            ],
+            "Sandwicheras": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "700" },
+                { label: "Capacidad (sandwiches)", name: "capacidad", type: "text", placeholder: "2" },
+                { label: "Placas antiadherentes", name: "placas", type: "select", options: ["Sí", "No"] }
+            ],
+            "Exprimidores y Jugueras": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "400" },
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1" },
+                { label: "Tipo", name: "tipo", type: "select", options: ["Exprimidor", "Juguera"] }
+            ],
+            "Picadoras": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "500" },
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1" },
+                { label: "Cuchillas desmontables", name: "cuchillas", type: "select", options: ["Sí", "No"] }
+            ]
+        }
+    },
+    "Cuidado Personal": {
+        subcategorias: ["Planchas de Pelo", "Secadores de Pelo", "Cortadoras de Pelo y Barba"],
+        folders: {
+            "Planchas de Pelo": "planchas_pelo",
+            "Secadores de Pelo": "secadores_pelo",
+            "Cortadoras de Pelo y Barba": "cortadoras_pelo_barba"
+        },
+        fields: {
+            "Planchas de Pelo": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "45" },
+                { label: "Material de placas", name: "material", type: "text", placeholder: "Cerámica" },
+                { label: "Temperatura máxima (°C)", name: "temperatura", type: "text", placeholder: "230" }
+            ],
+            "Secadores de Pelo": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
+                { label: "Velocidades", name: "velocidades", type: "text", placeholder: "2" },
+                { label: "Niveles de calor", name: "niveles_calor", type: "text", placeholder: "3" }
+            ],
+            "Cortadoras de Pelo y Barba": [
+                { label: "Tipo", name: "tipo", type: "select", options: ["Cortadora de pelo", "Cortadora de barba", "Multifunción"] },
+                { label: "Autonomía (min)", name: "autonomia", type: "text", placeholder: "60" },
+                { label: "Cuchillas", name: "cuchillas", type: "text", placeholder: "Acero inoxidable" }
+            ]
+        }
+    }
+};
 
-                                    // Autenticación simple
-                                    function login() {
-                                        const password = document.getElementById('password').value;
-                                        if (password === 'admin123') {
-                                            document.getElementById('login-section').style.display = 'none';
-                                            document.getElementById('admin-section').style.display = 'block';
-                                            loadProducts();
-                                        } else {
-                                            document.getElementById('login-error').textContent = 'Contraseña incorrecta';
-                                        }
-                                    }
+// Autenticación simple
+function login() {
+    const password = document.getElementById('password').value;
+    if (password === 'admin123') {
+        document.getElementById('login-section').style.display = 'none';
+        document.getElementById('admin-section').style.display = 'block';
+        loadProducts();
+    } else {
+        document.getElementById('login-error').textContent = 'Contraseña incorrecta';
+    }
+}
 
-                                    // Agregar evento para Enter en login
-                                    document.getElementById('password').addEventListener('keypress', (e) => {
-                                        if (e.key === 'Enter') login();
-                                    });
+// Agregar evento para Enter en login
+document.getElementById('password').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') login();
+});
 
-                                    // Generar campos dinámicos según categoría
-                                    function generateDynamicFields(category) {
-                                        const dynamicFields = document.getElementById('dynamic-fields');
-                                        dynamicFields.innerHTML = ''; // Limpiar campos anteriores
+// Actualizar subcategorías según la categoría seleccionada
+function updateSubcategories(category) {
+    const subcategoriaSelect = document.getElementById('subcategoria');
+    const subcategoriaGroup = document.getElementById('subcategoria-group');
+    subcategoriaSelect.innerHTML = '<option value="" disabled selected>Selecciona una subcategoría</option>';
 
-                                        if (!category || !categoryFields[category]) {
-                                            dynamicFields.innerHTML = '<p>Selecciona una categoría para ver los campos específicos.</p>';
-                                            return;
-                                        }
+    if (category && categoryFields[category].subcategorias.length > 0) {
+        subcategoriaGroup.style.display = 'block';
+        categoryFields[category].subcategorias.forEach(subcat => {
+            const option = document.createElement('option');
+            option.value = subcat;
+            option.textContent = subcat;
+            subcategoriaSelect.appendChild(option);
+        });
+    } else {
+        subcategoriaGroup.style.display = 'none';
+    }
+}
 
-                                        const fields = categoryFields[category];
-                                        fields.forEach(field => {
-                                            const formGroup = document.createElement('div');
-                                            formGroup.className = 'form-group';
+// Actualizar placeholders de los campos de imagen
+function updateImagePlaceholders(category, subcategoria) {
+    const imagenInput = document.getElementById('imagen');
+    const imagenesTextarea = document.getElementById('imagenes');
+    let folder;
 
-                                            const label = document.createElement('label');
-                                            label.textContent = field.label;
-                                            label.setAttribute('for', field.name);
-                                            formGroup.appendChild(label);
+    if (categoryFields[category]) {
+        if (subcategoria && categoryFields[category].folders && categoryFields[category].folders[subcategoria]) {
+            folder = categoryFields[category].folders[subcategoria];
+        } else if (category === "Hornos, Microondas y Freidoras" && subcategoria) {
+            // Para Hornos, Microondas y Freidoras, usar el tipo seleccionado como carpeta
+            const tipoInput = document.getElementById('tipo');
+            folder = tipoInput && tipoInput.value ? tipoInput.value.toLowerCase().replace(' ', '_') : 'hornos';
+        } else {
+            folder = categoryFields[category].folder || category.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
+        }
+    } else {
+        folder = 'images';
+    }
 
-                                            if (field.type === 'select') {
-                                                const select = document.createElement('select');
-                                                select.id = field.name;
-                                                select.name = field.name;
-                                                field.options.forEach(option => {
-                                                    const opt = document.createElement('option');
-                                                    opt.value = option;
-                                                    opt.textContent = option;
-                                                    select.appendChild(opt);
-                                                });
-                                                formGroup.appendChild(select);
-                                            } else {
-                                                const input = document.createElement(field.type === 'textarea' ? 'textarea' : 'input');
-                                                input.id = field.name;
-                                                input.name = field.name;
-                                                input.placeholder = field.placeholder;
-                                                if (field.type !== 'textarea') input.type = field.type;
-                                                formGroup.appendChild(input);
-                                            }
+    imagenInput.placeholder = `images/${folder}/nombre_imagen`;
+    imagenesTextarea.placeholder = `images/${folder}/nombre_imagen_2\nimages/${folder}/nombre_imagen_3`;
+}
 
-                                            dynamicFields.appendChild(formGroup);
-                                        });
-                                    }
+// Generar campos dinámicos según categoría y subcategoría
+function generateDynamicFields(category, subcategoria) {
+    const dynamicFields = document.getElementById('dynamic-fields');
+    dynamicFields.innerHTML = ''; // Limpiar campos anteriores
 
-                                    // Actualizar campos dinámicos al cambiar la categoría
-                                    document.getElementById('categoria').addEventListener('change', (e) => {
-                                        generateDynamicFields(e.target.value);
-                                    });
+    if (!category || !categoryFields[category]) {
+        dynamicFields.innerHTML = '<p>Selecciona una categoría para ver los campos específicos.</p>';
+        updateImagePlaceholders(category, subcategoria);
+        return;
+    }
 
-                                    // Cargar productos desde localStorage
-                                    function loadProducts() {
-                                        const productos = JSON.parse(localStorage.getItem('productos') || '[]');
-                                        const productList = document.getElementById('product-list');
-                                        productList.innerHTML = '';
-                                        productos.forEach((producto, index) => {
-                                            const li = document.createElement('li');
-                                            li.textContent = `${producto.nombre} (${producto.categoria}) - Código: ${producto.codigo}`;
-                                            productList.appendChild(li);
-                                        });
-                                    }
+    const fields = categoryFields[category].fields[subcategoria] || categoryFields[category].fields || [];
 
-                                    // Guardar producto
-                                    document.getElementById('product-form').addEventListener('submit', (e) => {
-                                        e.preventDefault();
-                                        const categoria = document.getElementById('categoria').value;
-                                        const imagenInput = document.getElementById('imagen').value.trim();
-                                        const imagenesInput = document.getElementById('imagenes').value.split('\n').filter(line => line.trim() !== '');
+    // Obtener el valor actual del campo "tipo" si ya existe
+    let tipoValue = '';
+    const existingTipoInput = document.getElementById('tipo');
+    if (existingTipoInput) {
+        tipoValue = existingTipoInput.value;
+    }
 
-                                        // Agregar prefijo 'images/' y sufijo '.webp' a las imágenes
-                                        const imagen = imagenInput ? `images/${imagenInput}.webp` : '';
-                                        const imagenes = imagenesInput.map(img => `images/${img.trim()}.webp`);
+    fields.forEach(field => {
+        // Verificar si el campo es condicional y si se cumple la condición
+        if (field.conditional && field.conditional.field === 'tipo' && field.conditional.value !== tipoValue) {
+            return; // No renderizar el campo si no se cumple la condición
+        }
 
-                                        const producto = {
-                                            categoria,
-                                            nombre: document.getElementById('nombre').value,
-                                            codigo: document.getElementById('codigo').value,
-                                            imagen,
-                                            imagenes,
-                                            descripcion: '',
-                                            caracteristicas: [
-                                                `Marca: ${document.getElementById('nombre').value.split(' ')[0] || 'Desconocida'}`,
-                                                `Modelo: ${document.getElementById('codigo').value}`,
-                                                'Garantía: 1 año'
-                                            ]
-                                        };
+        const formGroup = document.createElement('div');
+        formGroup.className = 'form-group';
 
-                                        if (imagen && !producto.imagenes.includes(imagen)) {
-                                            producto.imagenes.unshift(imagen);
-                                        }
+        const label = document.createElement('label');
+        label.textContent = field.label;
+        label.setAttribute('for', field.name);
+        formGroup.appendChild(label);
 
-                                        // Generar descripción a partir de campos dinámicos
-                                        const fields = categoryFields[categoria] || [];
-                                        let descripcionLines = [];
-                                        fields.forEach(field => {
-                                            const input = document.getElementById(field.name);
-                                            if (input && input.value) {
-                                                descripcionLines.push(`<strong>${field.label}:</strong> ${input.value}`);
-                                            }
-                                        });
-                                        producto.descripcion = descripcionLines.join('\n');
+        if (field.type === 'select') {
+            const select = document.createElement('select');
+            select.id = field.name;
+            select.name = field.name;
+            field.options.forEach(option => {
+                const opt = document.createElement('option');
+                opt.value = option;
+                opt.textContent = option;
+                // Establecer la opción por defecto si existe
+                if (field.default && option === field.default && !tipoValue) {
+                    opt.selected = true;
+                    if (field.name === 'tipo') {
+                        tipoValue = option; // Actualizar tipoValue para condicionales
+                    }
+                }
+                select.appendChild(opt);
+            });
+            // Agregar evento change para el campo tipo
+            if (field.name === 'tipo' && category === "Hornos, Microondas y Freidoras") {
+                select.addEventListener('change', () => {
+                    updateImagePlaceholders(category, subcategoria);
+                    // Actualizar solo los campos dinámicos
+                    generateDynamicFields(category, subcategoria);
+                });
+            }
+            formGroup.appendChild(select);
+        } else {
+            const input = document.createElement(field.type === 'textarea' ? 'textarea' : 'input');
+            input.id = field.name;
+            input.name = field.name;
+            input.placeholder = field.placeholder;
+            if (field.type !== 'textarea') input.type = field.type;
+            formGroup.appendChild(input);
+        }
 
-                                        // Guardar en localStorage
-                                        const productos = JSON.parse(localStorage.getItem('productos') || '[]');
-                                        productos.push(producto);
-                                        localStorage.setItem('productos', JSON.stringify(productos));
+        dynamicFields.appendChild(formGroup);
+    });
 
-                                        // Actualizar lista y mostrar mensaje
-                                        loadProducts();
-                                        document.getElementById('form-error').textContent = 'Producto agregado con éxito';
-                                        document.getElementById('product-form').reset();
-                                        generateDynamicFields(''); // Resetear campos dinámicos
-                                    });
+    updateImagePlaceholders(category, subcategoria);
+}
 
-                                    // Limpiar lista de productos
-                                    function clearProducts() {
-                                        localStorage.removeItem('productos');
-                                        loadProducts();
-                                        document.getElementById('form-error').textContent = 'Lista de productos limpiada';
-                                    }
+// Actualizar campos dinámicos al cambiar la categoría o subcategoría
+document.getElementById('categoria').addEventListener('change', (e) => {
+    const categoria = e.target.value;
+    updateSubcategories(categoria);
+    generateDynamicFields(categoria, '');
+});
 
-                                    // Formatear un valor como cadena JavaScript
-                                    function formatValue(value) {
-                                        if (Array.isArray(value)) {
-                                            return `[\n${value.map(item => `        "${item}"`).join(',\n')}\n    ]`;
-                                        } else if (typeof value === 'string') {
-                                            // Escapar comillas y reemplazar saltos de línea por \n
-                                            const escapedValue = value
-                                                .replace(/'/g, "\\'")
-                                                .replace(/\n/g, '\\n');
-                                            return `'${escapedValue}'`;
-                                        }
-                                        return `"${value}"`;
-                                    }
+document.getElementById('subcategoria').addEventListener('change', (e) => {
+    const categoria = document.getElementById('categoria').value;
+    const subcategoria = e.target.value;
+    generateDynamicFields(categoria, subcategoria);
+});
 
-                                    // Formatear un objeto producto como JavaScript
-                                    function formatProducto(producto, indent = '') {
-                                        return `{\n${indent}    categoria: "${producto.categoria}",\n${indent}    nombre: ${formatValue(producto.nombre)},\n${indent}    imagen: "${producto.imagen}",\n${indent}    imagenes: ${formatValue(producto.imagenes)},\n${indent}    descripcion: ${formatValue(producto.descripcion)},\n${indent}    codigo: "${producto.codigo}",\n${indent}    caracteristicas: ${formatValue(producto.caracteristicas)}\n${indent}}`;
-                                    }
+// Cargar productos desde localStorage
+function loadProducts() {
+    const productos = JSON.parse(localStorage.getItem('productos') || '[]');
+    const productList = document.getElementById('product-list');
+    productList.innerHTML = '';
+    productos.forEach((producto, index) => {
+        const li = document.createElement('li');
+        li.textContent = `${producto.nombre} (${producto.categoria}${producto.subcategoria ? ' - ' + producto.subcategoria : ''}) - Código: ${producto.codigo}`;
+        productList.appendChild(li);
+    });
+}
 
-                                    // Exportar productos.js
-                                    function exportProducts() {
-                                        const productos = JSON.parse(localStorage.getItem('productos') || '[]');
-                                        const jsContent = `const productos = [\n${productos.map(p => `    ${formatProducto(p)}`).join(',\n')}\n];`;
-                                        const blob = new Blob([jsContent], { type: 'text/javascript' });
-                                        const url = URL.createObjectURL(blob);
-                                        const a = document.createElement('a');
-                                        a.href = url;
-                                        a.download = 'productos.js';
-                                        a.click();
-                                        URL.revokeObjectURL(url);
-                                    }
+// Guardar producto
+document.getElementById('product-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const categoria = document.getElementById('categoria').value;
+    const subcategoria = document.getElementById('subcategoria').value || '';
+    const marca = document.getElementById('marca').value.trim();
+    const imagenInput = document.getElementById('imagen').value.trim();
+    const imagenesInput = document.getElementById('imagenes').value.split('\n').filter(line => line.trim() !== '');
 
-                                    // Inicializar campos dinámicos al cargar la página
-                                    document.addEventListener('DOMContentLoaded', () => {
-                                        generateDynamicFields('');
-                                    });
-                                </script>
-                            </body>
-                            </html>
+    // Determinar la carpeta para las imágenes
+    let folder;
+    if (categoryFields[categoria]) {
+        if (subcategoria && categoryFields[categoria].folders && categoryFields[categoria].folders[subcategoria]) {
+            folder = categoryFields[categoria].folders[subcategoria];
+        } else if (categoria === "Hornos, Microondas y Freidoras") {
+            const tipoInput = document.getElementById('tipo');
+            folder = tipoInput && tipoInput.value ? tipoInput.value.toLowerCase().replace(' ', '_') : 'hornos';
+        } else {
+            folder = categoryFields[categoria].folder || categoria.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
+        }
+    } else {
+        folder = 'images';
+    }
+
+    // Agregar prefijo 'images/<folder>/' y sufijo '.webp' a las imágenes
+    const imagen = imagenInput ? `images/${folder}/${imagenInput}.webp` : '';
+    const imagenes = imagenesInput.map(img => `images/${folder}/${img.trim()}.webp`);
+
+    const producto = {
+        categoria,
+        subcategoria: subcategoria || undefined, // Solo incluir si no está vacío
+        nombre: document.getElementById('nombre').value,
+        codigo: document.getElementById('codigo').value,
+        imagen,
+        imagenes,
+        descripcion: '',
+        caracteristicas: [
+            `Marca: ${marca || 'Desconocida'}`,
+            `Modelo: ${document.getElementById('codigo').value}`,
+            'Garantía: 1 año'
+        ]
+    };
+
+    if (imagen && !producto.imagenes.includes(imagen)) {
+        producto.imagenes.unshift(imagen);
+    }
+
+    // Generar descripción a partir de campos dinámicos
+    const fields = categoryFields[categoria].fields[subcategoria] || categoryFields[categoria].fields || [];
+    let descripcionLines = [];
+    fields.forEach(field => {
+        const input = document.getElementById(field.name);
+        if (input && input.value) {
+            descripcionLines.push(`<strong>${field.label}:</strong> ${input.value}`);
+        }
+    });
+    producto.descripcion = descripcionLines.join('\n');
+
+    // Guardar en localStorage
+    const productos = JSON.parse(localStorage.getItem('productos') || '[]');
+    productos.push(producto);
+    localStorage.setItem('productos', JSON.stringify(productos));
+
+    // Actualizar lista y mostrar mensaje
+    loadProducts();
+    document.getElementById('form-error').textContent = 'Producto agregado con éxito';
+    document.getElementById('product-form').reset();
+    document.getElementById('subcategoria-group').style.display = 'none';
+    generateDynamicFields(''); // Resetear campos dinámicos
+});
+
+// Limpiar lista de productos
+function clearProducts() {
+    localStorage.removeItem('productos');
+    loadProducts();
+    document.getElementById('form-error').textContent = 'Lista de productos limpiada';
+}
+
+// Formatear un valor como cadena JavaScript
+function formatValue(value) {
+    if (Array.isArray(value)) {
+        return `[\n${value.map(item => `        "${item}"`).join(',\n')}\n    ]`;
+    } else if (typeof value === 'string') {
+        const escapedValue = value
+            .replace(/'/g, "\\'")
+            .replace(/\n/g, '\\n');
+        return `'${escapedValue}'`;
+    }
+    return `"${value}"`;
+}
+
+// Formatear un objeto producto como JavaScript
+function formatProducto(producto, indent = '') {
+    let output = `{\n${indent}    categoria: "${producto.categoria}",\n`;
+    if (producto.subcategoria) {
+        output += `${indent}    subcategoria: "${producto.subcategoria}",\n`;
+    }
+    output += `${indent}    nombre: ${formatValue(producto.nombre)},\n${indent}    imagen: "${producto.imagen}",\n${indent}    imagenes: ${formatValue(producto.imagenes)},\n${indent}    descripcion: ${formatValue(producto.descripcion)},\n${indent}    codigo: "${producto.codigo}",\n${indent}    caracteristicas: ${formatValue(producto.caracteristicas)}\n${indent}}`;
+    return output;
+}
+
+// Exportar productos.js
+function exportProducts() {
+    const productos = JSON.parse(localStorage.getItem('productos') || '[]');
+    const jsContent = `const productos = [\n${productos.map(p => `    ${formatProducto(p)}`).join(',\n')}\n];`;
+    const blob = new Blob([jsContent], { type: 'text/javascript' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'productos.js';
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+// Inicializar campos dinámicos al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    generateDynamicFields('');
+});
+</script>
+</body>
+</html>

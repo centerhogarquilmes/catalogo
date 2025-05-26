@@ -10,6 +10,12 @@ const productosDestacados = [
 const productos = [
 
 
+
+
+
+
+
+
     /////---------- Cocinas ----------/////
     {
         categoria: "Cocinas",
@@ -239,6 +245,158 @@ const productos = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /////---------- Hornos, microondas y freidoras ----------/////
+ 
+
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Ultracomb UC36B 36 lts 1200w',
+    imagen: "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_1.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_2.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_3.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_4.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_5.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 36\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1200\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    codigo: "2074311",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2074311",
+        "Garantía: 1 año"
+    ]
+},
+
+{
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Tramontina 55LHEG 55 lts Silver Cook',
+    imagen: "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_1.webp",
+        "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_2.webp",
+        "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 55\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    codigo: "2074970",
+    caracteristicas: [
+        "Marca: Tramontina",
+        "Modelo: 2074970",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno Electrico Neba NH52SHPN 52 lts negro',
+    imagen: "images/horno/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_1.webp",
+    imagenes: [
+        "images/horno/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_1.webp",
+        "images/horno/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_2.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 52\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2030\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    codigo: "2074163",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2074163",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Ultracomb UC-45CN 45lts',
+    imagen: "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_1.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_2.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_3.webp",
+        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 45\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1600\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    codigo: "2073936",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2073936",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Bgh BHE35S22A c/anafe 35lts 1600wts',
+    imagen: "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_1.webp",
+        "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_2.webp",
+        "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 35\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1600\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> No',
+    codigo: "2075307",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2075307",
+        "Garantía: 1 año"
+    ]
+},
+
+
+{
+    categoria: "Hornos, Microondas y Freidoras",
+    nombre: 'Horno electrico Crivel HF-153 Spiedo',
+    imagen: "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp",
+    imagenes: [
+        "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 53\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> Sí',
+    codigo: "2072972",
+    caracteristicas: [
+        "Marca: Crivel",
+        "Modelo: 2072972",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /////---------- Heladeras ----------/////
     {
         categoria: "Heladeras",
@@ -447,6 +605,20 @@ const productos = [
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
