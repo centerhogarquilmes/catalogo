@@ -272,6 +272,7 @@ const productos = [
 
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Ultracomb UC36B 36 lts 1200w',
     imagen: "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_1.webp",
     imagenes: [
@@ -293,6 +294,7 @@ const productos = [
 
 {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Tramontina 55LHEG 55 lts Silver Cook',
     imagen: "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_1.webp",
     imagenes: [
@@ -310,6 +312,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno Electrico Neba NH52SHPN 52 lts negro',
     imagen: "images/horno/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_1.webp",
     imagenes: [
@@ -326,6 +329,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Ultracomb UC-45CN 45lts',
     imagen: "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_1.webp",
     imagenes: [
@@ -344,6 +348,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Bgh BHE35S22A c/anafe 35lts 1600wts',
     imagen: "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_1.webp",
     imagenes: [
@@ -363,6 +368,7 @@ const productos = [
 
 {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Crivel HF-153 Spiedo',
     imagen: "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp",
     imagenes: [
@@ -379,6 +385,7 @@ const productos = [
 
 {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Crivel HF-153 Spiedo',
     imagen: "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp",
     imagenes: [
@@ -394,6 +401,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Crivel HFS-153 rcl 2 anafes',
     imagen: "images/horno/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_1.webp",
     imagenes: [
@@ -410,6 +418,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Bgh BHE64M20A 64 lts',
     imagen: "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_1.webp",
     imagenes: [
@@ -430,6 +439,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno electrico Bgh BHE30FN24T c/Airfryer 30lts 1600wts',
     imagen: "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_1.webp",
     imagenes: [
@@ -448,6 +458,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno eléctrico Ultracomb UC-110CLN 110lts Conveccion',
     imagen: "images/horno/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_1.webp",
     imagenes: [
@@ -464,6 +475,7 @@ const productos = [
 },
     {
     categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Horno",
     nombre: 'Horno Florencia de empotrar 7857F Eléctrico',
     imagen: "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_1.webp",
     imagenes: [
