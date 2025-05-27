@@ -44,13 +44,7 @@
             </div>
             <nav class="nav-menu" id="nav-menu">
                 <ul>
-                    <li class="has-submenu">
-                        <a href="categoria.html?nombre=Cocinas">Cocinas</a>
-                        <ul class="submenu">
-                            <li><a href="categoria.html?nombre=Cocinas&subcategoria=Domestica">Doméstica</a></li>
-                            <li><a href="categoria.html?nombre=Cocinas&subcategoria=Industrial">Industrial</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="categoria.html?nombre=Cocinas">Cocinas</a></li>
                     <li><a href="categoria.html?nombre=Heladeras">Heladeras</a></li>
                     <li class="has-submenu">
                         <a href="categoria.html?nombre=Tv y audio">Tv y audio</a>
@@ -209,9 +203,14 @@
                 "Eficiencia energética"
             ],
             "cocinas": [
-                "Tipo de cocina",
-                "Cantidad de hornallas",
-                "Material"
+                "Tipo de uso",
+                "Dimensiones",
+                "Material",
+                "Tipo de gas",
+                "Encendido eléctrico",
+                "Válvula de seguridad",
+                "Luz en el horno",
+                "Hornallas"
             ],
             "heladeras": [
                 "Dimensiones",    
@@ -324,7 +323,7 @@
         if (valoresUnicos.length === 0) return;
 
         // Ordenar valores numéricos para "Capacidad (litros)", "Capacidad" y "Pulgadas" de menor a mayor
-        if (atributo === 'Capacidad (litros)' || atributo === 'Capacidad' || atributo === 'Pulgadas'|| atributo === 'Capacidad (kg)' || atributo === 'Inverter' || atributo === 'Potencia (W)'|| atributo === 'Velocidad de centrifugado (RPM)'  || atributo === 'Dimensiones' )  {
+        if (atributo === 'Capacidad (litros)' || atributo === 'Capacidad' || atributo === 'Pulgadas'|| atributo === 'Capacidad (kg)' || atributo === 'Hornallas' || atributo === 'Inverter' || atributo === 'Potencia (W)'|| atributo === 'Velocidad de centrifugado (RPM)'  || atributo === 'Dimensiones' )  {
             valoresUnicos.sort((a, b) => {
                 // Extraer el número (eliminando "Litros", "pulgadas" u otras unidades)
                 const numA = parseFloat(a.replace(/[^\d.]/g, '')) || 0;
