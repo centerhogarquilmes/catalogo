@@ -1434,7 +1434,7 @@ const productos = [
     descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
     codigo: "2074797",
     caracteristicas: [
-        "Marca: nOBLEX",
+        "Marca: Noblex",
         "Modelo: 2074797",
         "Garantía: 1 año"
     ]
