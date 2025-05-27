@@ -41,7 +41,7 @@ const productos = [
             "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_3.webp",
             "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_4.webp"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x  56 x 60\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 3\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x  56 x 60\n<strong>Encendido eléctrico:</strong> No\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 3\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2074709",
         caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
@@ -56,7 +56,7 @@ const productos = [
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_3.webp",
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_4.webp"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073969",
         caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
@@ -73,7 +73,7 @@ const productos = [
             "images/cocinas/cocina_candor_negra4.jpg",
             "images/cocinas/cocina_candor_negra5.jpg"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2072621",
         caracteristicas: ["Marca: Escorial", "Modelo: Candor Black", "Garantía: 1 año"]
     },
@@ -89,7 +89,7 @@ const productos = [
             "images/cocinas/cocina_escorial_master_classic4.jpg",
             "images/cocinas/cocina_escorial_master_classic5.jpg",
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073930",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
@@ -102,7 +102,7 @@ const productos = [
             "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x  51 x 52\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 85 x  51 x 52\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "15760",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
@@ -119,7 +119,7 @@ const productos = [
             "images/cocinas/cocina-escorial-master-classic-ge-inox4.jpg",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075088",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
@@ -135,7 +135,7 @@ const productos = [
             "images/cocinas/Cocina_Florencia_5518F _Inox_4.webp",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase AA",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 85 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase AA",
         codigo: "2071810 ",
         caracteristicas: ["Marca: Florencia", "Modelo: 5518F", "Garantía: 1 año"]
     },
@@ -151,7 +151,7 @@ const productos = [
             "images/cocinas/cocina-escorial-master-style-multigas-bca3.jpg",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 93 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 93 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073910",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Style", "Garantía: 1 año"]
     },
@@ -163,7 +163,7 @@ const productos = [
         imagenes: [
             "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073893",
         caracteristicas: ["Marca: Volcan", "Modelo: 87643", "Garantía: 1 año"]
     },
@@ -175,7 +175,7 @@ const productos = [
         imagenes: [
             "images/cocinas/Cocina_Volcan_87644_55cm_4_horn_Blanca_sin_luz.webp",
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2074783",
         caracteristicas: ["Marca: Volcan", "Modelo: 87644", "Garantía: 1 año"]
     },
@@ -191,7 +191,7 @@ const productos = [
             "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 4.webp",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073914",
         caracteristicas: ["Marca: Volcan", "Modelo: 87673", "Garantía: 1 año"]
     },
@@ -207,7 +207,7 @@ const productos = [
             "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800014.webp",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2074224",
         caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
@@ -236,6 +236,330 @@ const productos = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+    /////---------- Televisores ----------/////
+    {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED ENOVA 50" smart (TE50UA10) 4K UHD Android',
+        imagen: "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_1.webp",
+        imagenes: [
+            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_1.webp",
+            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_2.webp",
+            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_3.webp",
+            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_4.webp"
+        ],
+        descripcion: '<strong>Dimensiones:</strong> 1.11m x 64.4cm\n<strong>Tipo de pantalla:</strong> LED\n<strong>Pulgadas:</strong> 50"\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
+        codigo: "2074218",
+        caracteristicas: ["Marca: Enova", "Modelo: TE50UA10", "Garantía: 1 año"]
+    },
+
+
+    
+    {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED ENOVA 32" smart HD Android',
+        imagen: "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_1.webp",
+        imagenes: [
+              "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_1.webp",
+              "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_2.webp"
+            ],
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+        codigo: "2073755",
+        caracteristicas: [
+          "Marca: Enova", "Modelo: Te32ha10", "Garantía: 1 año"
+        ]
+      },
+      {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED RCA 32" AND32Y Android',
+        codigo: "2073676",
+        
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+        imagen: "images/televisores/TV_LED_RCA_32_AND32Y_Android_1.webp",
+        imagenes: [
+          "images/televisores/TV_LED_RCA_32_AND32Y_Android_1.webp",
+          "images/televisores/TV_LED_RCA_32_AND32Y_Android_2.webp",
+          "images/televisores/TV_LED_RCA_32_AND32Y_Android_3.webp"
+        ],
+        caracteristicas: [ "Marca: RCA", "Modelo: AND32Y", "Garantía: 1 año"
+        ]
+        
+      },
+
+    {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
+        codigo: "2075320",
+        imagen: "images/televisores/TV_LED _Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
+        imagenes: [
+          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
+          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_2.webp",
+          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_3.webp",
+          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_4.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Titan OS',
+        caracteristicas: [
+          "Marca: Philips",
+          "Modelo: 32PHD6910/77 ",
+          "Garantía: 1 año"
+        ]
+      },
+
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED RCA 40" R40AND-F Smart c/ Android',
+        imagen: "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_1.webp",
+            "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_2.webp",
+            "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_3.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolucion:</strong> FHD\n<strong>Sistema operativo:</strong> Android TV',
+        codigo: "2075067",
+        caracteristicas: [
+            "Marca: RCA",
+            "Modelo: R40AND-F",
+            "Garantía: 1 año"
+        ]
+    },
+
+    {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED ENOVA 65" smart 4K UHD Google Tv',
+        imagen: "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_2.webp",
+        imagenes: [
+            "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_2.webp",
+            "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_1.webp",
+            "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_3.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 65"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+        codigo: "2075302",
+        caracteristicas: [
+            "Marca: ENOVA",
+            "Modelo: 2075302",
+            "Garantía: 1 año"
+        ]
+    },
+
+    {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED ENOVA 75" smart 4K UHD Android/Google tv',
+        imagen: "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_1.webp",
+            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_2.webp",
+            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_3.webp",
+            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_4.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 75"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+        codigo: "2074860",
+        caracteristicas: [
+            "Marca: ENOVA",
+            "Modelo: 2074860",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Kanji 40" (7635718719284) HD Smart Google Tv',
+        imagen: "images/televisores/TV_LED_Kanji 40_7635718719284_HD_Smart_Google_Tv_3.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_3.webp",
+            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_2.webp",
+            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_1.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Google TV',
+        codigo: "2074810",
+        caracteristicas: [
+            "Marca: Kanji",
+            "Modelo: 2074810",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Kodak 50" QLED 4K Smart Google tv',
+        imagen: "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_1.webp",
+            "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_2.webp"
+        ],
+        descripcion: '<strong>Dimesiones:</strong> 1,50cm ancho x 100cm alto 23cm prof"\n<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> QLED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+        codigo: "2075193",
+        caracteristicas: [
+            "Marca: Kodak",
+            "Modelo: 2075193",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Noblex 32" DR/DV32X7080 Android Tv',
+        imagen: "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_1.webp",
+            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_2.webp",
+            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_3.webp",
+            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_4.webp",
+            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_5.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+        codigo: "2075334",
+        caracteristicas: [
+            "Marca: Noblex",
+            "Modelo: 2075334",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Noblex 50" DR50X8580 Smart Google tv',
+        imagen: "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_1.webp",
+            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_2.webp",
+            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_3.webp",
+            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_4.webp",
+            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_5.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+        codigo: "2075285",
+        caracteristicas: [
+            "Marca: Noblex",
+            "Modelo: 2075285",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Noblex 58" DB58X7550 Android 4K',
+        imagen: "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_1.webp",
+            "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_2.webp",
+            "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_3.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 58"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
+        codigo: "2074829",
+        caracteristicas: [
+            "Marca: Noblex",
+            "Modelo: 2074829",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Philco 40" PLD40HS24 SMART TV Vidaa',
+        imagen: "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_1.webp",
+            "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_2.webp",
+            "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_3.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Vidaa',
+        codigo: "2074975",
+        caracteristicas: [
+            "Marca: Philco",
+            "Modelo: 2074975",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
+        imagen: "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
+            "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_2.webp",
+            "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_3.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Titan OS',
+        codigo: "2075320",
+        caracteristicas: [
+            "Marca: Philips",
+            "Modelo: 2075320",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED RCA 32" AND32Y/C/R32AND-F  Android Smart',
+        imagen: "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_1.webp",
+            "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_2.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+        codigo: "2073676",
+        caracteristicas: [
+            "Marca: RCA",
+            "Modelo: 2073676",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Samsung 32" UN32T4300AG  SMART HD',
+        imagen: "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_1.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_1.webp",
+            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_2.webp",
+            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_3.webp",
+            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_4.webp",
+            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_5.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Tyzen',
+        codigo: "2071627",
+        caracteristicas: [
+            "Marca: Samsung",
+            "Modelo: 2071627",
+            "Garantía: 1 año"
+        ]
+    },
+        {
+        categoria: "Tv y audio",
+        subcategoria: "Tv",
+        nombre: 'TV LED Samsung 50" LH50BECHVGGZB  Smart UHD Bussines Crystal 4K',
+        imagen: "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_2.webp",
+        imagenes: [
+            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_2.webp",
+            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_1.webp",
+            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_3.webp",
+            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_4.webp"
+        ],
+        descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Tyzen',
+        codigo: "2075206",
+        caracteristicas: [
+            "Marca: Samsung",
+            "Modelo: 2075206",
+            "Garantía: 1 año"
+        ]
+    },
 
 
 
@@ -1016,320 +1340,6 @@ const productos = [
 
 
     
-    /////---------- Televisores ----------/////
-    {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED ENOVA 50" smart (TE50UA10) 4K UHD Android',
-        imagen: "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_1.webp",
-        imagenes: [
-            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_1.webp",
-            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_2.webp",
-            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_3.webp",
-            "images/televisores/tv_led_enova_50_smart_te50ua10_4k_uhd_android_4.webp"
-        ],
-        descripcion: '<strong>Dimensiones:</strong> 1.11m x 64.4cm.\n<strong>Tipo de pantalla:</strong> DLED\n<strong>Pulgadas:</strong> 50"\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
-        codigo: "2074218",
-        caracteristicas: ["Marca: Enova", "Modelo: TE50UA10", "Garantía: 1 año"]
-    },
-
-
-    
-    {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED ENOVA 32" smart HD Android',
-        imagen: "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_1.webp",
-        imagenes: [
-              "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_1.webp",
-              "images/televisores/TV_LED_ENOVA_32_smart_HD_Android_2.webp"
-            ],
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> Led\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
-        codigo: "2073755",
-        caracteristicas: [
-          "Marca: Enova", "Modelo: Te32ha10", "Garantía: 1 año"
-        ]
-      },
-      {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED RCA 32" AND32Y Android',
-        codigo: "2073676",
-        
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> Led\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
-        imagen: "images/televisores/TV_LED_RCA_32_AND32Y_Android_1.webp",
-        imagenes: [
-          "images/televisores/TV_LED_RCA_32_AND32Y_Android_1.webp",
-          "images/televisores/TV_LED_RCA_32_AND32Y_Android_2.webp",
-          "images/televisores/TV_LED_RCA_32_AND32Y_Android_3.webp"
-        ],
-        caracteristicas: [ "Marca: RCA", "Modelo: AND32Y", "Garantía: 1 año"
-        ]
-        
-      },
-
-    {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
-        codigo: "2075320",
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> Led\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Titan OS',
-        imagen: "images/televisores/TV_LED _Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
-        imagenes: [
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_2.webp",
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_3.webp",
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_4.webp"
-        ],
-        caracteristicas: [
-          "Marca: Philips",
-          "Modelo: 32PHD6910/77 ",
-          "Garantía: 1 año"
-        ]
-      },
-
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED RCA 40" R40AND-F Smart c/ Android',
-        imagen: "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_1.webp",
-            "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_2.webp",
-            "images/televisores/TV_LED_RCA_40_R40AND_F_Smart_c_Android_3.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> Led\n<strong>Tipo de resolucion:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
-        codigo: "2075067",
-        caracteristicas: [
-            "Marca: RCA",
-            "Modelo: R40AND-F",
-            "Garantía: 1 año"
-        ]
-    },
-
-    {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED ENOVA 65" smart 4K UHD Google Tv',
-        imagen: "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_2.webp",
-        imagenes: [
-            "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_2.webp",
-            "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_1.webp",
-            "images/televisores/TV_LED_ENOVA_65_smart_4K_UHD_Google_Tv_3.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 65"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
-        codigo: "2075302",
-        caracteristicas: [
-            "Marca: ENOVA",
-            "Modelo: 2075302",
-            "Garantía: 1 año"
-        ]
-    },
-
-    {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED ENOVA 75" smart 4K UHD Android/Google tv',
-        imagen: "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_1.webp",
-            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_2.webp",
-            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_3.webp",
-            "images/televisores/TV_LED_ENOVA_75_smart_4K_UHD_Android_Google_tv_4.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 75"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
-        codigo: "2074860",
-        caracteristicas: [
-            "Marca: ENOVA",
-            "Modelo: 2074860",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Kanji 40" (7635718719284) HD Smart Google Tv',
-        imagen: "images/televisores/TV_LED_Kanji 40_7635718719284_HD_Smart_Google_Tv_3.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_3.webp",
-            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_2.webp",
-            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_1.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Google TV',
-        codigo: "2074810",
-        caracteristicas: [
-            "Marca: Kanji",
-            "Modelo: 2074810",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Kodak 50" QLED 4K Smart Google tv',
-        imagen: "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_1.webp",
-            "images/televisores/TV_LED_Kodak_50_QLED_4K_Smart_Google_tv_2.webp"
-        ],
-        descripcion: '<strong>Dimesiones:</strong> 1,50cm ancho x 100cm alto 23cm prof"\n<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> QLED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
-        codigo: "2075193",
-        caracteristicas: [
-            "Marca: Kodak",
-            "Modelo: 2075193",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Noblex 32" DR/DV32X7080 Android Tv',
-        imagen: "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_1.webp",
-            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_2.webp",
-            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_3.webp",
-            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_4.webp",
-            "images/televisores/TV_LED_Noblex_32_DR_DV32X7080_Android_Tv_5.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
-        codigo: "2075334",
-        caracteristicas: [
-            "Marca: Noblex",
-            "Modelo: 2075334",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Noblex 50" DR50X8580 Smart Google tv',
-        imagen: "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_1.webp",
-            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_2.webp",
-            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_3.webp",
-            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_4.webp",
-            "images/televisores/TV_LED_Noblex_50_DR50X8580_Smart_Google_tv_5.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
-        codigo: "2075285",
-        caracteristicas: [
-            "Marca: Noblex",
-            "Modelo: 2075285",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Noblex 58" DB58X7550 Android 4K',
-        imagen: "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_1.webp",
-            "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_2.webp",
-            "images/televisores/TV_LED_Noblex_58_DB58X7550_Android_4K_3.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 58"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
-        codigo: "2074829",
-        caracteristicas: [
-            "Marca: Noblex",
-            "Modelo: 2074829",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Philco 40" PLD40HS24 SMART TV Vidaa',
-        imagen: "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_1.webp",
-            "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_2.webp",
-            "images/televisores/TV_LED_Philco_40_PLD40HS24_SMART_TV_Vidaa_3.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Vidaa',
-        codigo: "2074975",
-        caracteristicas: [
-            "Marca: Philco",
-            "Modelo: 2074975",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
-        imagen: "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
-            "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_2.webp",
-            "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_3.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Titan OS',
-        codigo: "2075320",
-        caracteristicas: [
-            "Marca: Philips",
-            "Modelo: 2075320",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED RCA 32" AND32Y/C/R32AND-F  Android Smart',
-        imagen: "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_1.webp",
-            "images/televisores/TV_LED_RCA_32_AND32Y_C_R32AND_F _Android_Smart_2.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
-        codigo: "2073676",
-        caracteristicas: [
-            "Marca: RCA",
-            "Modelo: 2073676",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Samsung 32" UN32T4300AG  SMART HD',
-        imagen: "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_1.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_1.webp",
-            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_2.webp",
-            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_3.webp",
-            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_4.webp",
-            "images/televisores/TV_LED_Samsung_32_UN32T4300AG _SMART_HD_5.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Tyzen',
-        codigo: "2071627",
-        caracteristicas: [
-            "Marca: Samsung",
-            "Modelo: 2071627",
-            "Garantía: 1 año"
-        ]
-    },
-        {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Samsung 50" LH50BECHVGGZB  Smart UHD Bussines Crystal 4K',
-        imagen: "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_2.webp",
-        imagenes: [
-            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_2.webp",
-            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_1.webp",
-            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_3.webp",
-            "images/televisores/TV_LED_Samsung_50_LH50BECHVGGZB _Smart_UHD_Bussines_Crystal_4K_4.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Tyzen',
-        codigo: "2075206",
-        caracteristicas: [
-            "Marca: Samsung",
-            "Modelo: 2075206",
-            "Garantía: 1 año"
-        ]
-    },
 
 
 
@@ -1346,32 +1356,313 @@ const productos = [
             "images/celulares/LIBERADO_Motorola_MOTO_E15_XT2523-8_2_64gb_2.webp",
             "images/celulares/LIBERADO_Motorola_MOTO_E15_XT2523-8_2_64gb_3.webp"
         ],
-        descripcion: "Celular Motorola liberado con 64GB de almacenamiento.",
+        descripcion:'<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 32 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Bateria:</strong> 5.2 Ah\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong>Android 14 GO Edition',
         codigo: "2075246",
         caracteristicas: ["Marca: Motorola", "Modelo: XT2523-8", "Garantía: 1 año"]
     },
 
+    
+
     {
-        categoria: "Tecnologia",
-        subcategoria: "Celulares",
-        nombre: 'LIBERADO Motorola Moto E13 2/64GB',
-        imagen: "images/celulares/LIBERADO_Motorola_Moto_E13_2_64GB_1.webp",
-        imagenes: [
-            "images/celulares/LIBERADO_Motorola_Moto_E13_2_64GB_1.webp",
-            "images/celulares/LIBERADO_Motorola_Moto_E13_2_64GB_2.webp",
-            "images/celulares/LIBERADO_Motorola_Moto_E13_2_64GB_3.webp"
-        ],
-        descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.5"\n<strong>Camara trasera:</strong> 13 Mpx\n<strong>Camara frontal:</strong> 5 Mpx\n<strong>Bateria:</strong> 5 Ah\n<strong>Red movil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
-        codigo: "2074414",
-        caracteristicas: [
-            "Marca: Motorola",
-            "Modelo: 2074414",
-            "Garantía: 1 año"
-        ]
-    },
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Noblex N52 6.5" 2/64GB Negro',
+    imagen: "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_1.webp",
+        "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
+    codigo: "2074907 ",
+    caracteristicas: [
+        "Marca: Noblex",
+        "Modelo: 2074907 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Moto E 13 2gb/64gb',
+    imagen: "images/celulares/liberado_moto_e_13_2_64_1.webp",
+    imagenes: [
+        "images/celulares/liberado_moto_e_13_2_64_1.webp",
+        "images/celulares/liberado_moto_e_13_2_64_2.webp",
+        "images/celulares/liberado_moto_e_13_2_64_3.webp",
+        "images/celulares/liberado_moto_e_13_2_64_4.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
+    codigo: "2074414",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2074414",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Motorola Moto E14 2/64GB',
+    imagen: "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_1.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_2.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_3.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_4.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_5.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_6.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_7.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_8.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong>Android 14 GO Edition',
+    codigo: "2075006 ",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2075006 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Noblex N62 6.5" 4/64GB Negro',
+    imagen: "images/celulares/LIBERADO_Noblex_N62_6_5_4_64GB_Negro_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Noblex_N62_6_5_4_64GB_Negro_1.webp",
+        "images/celulares/LIBERADO_Noblex_N62_6_5_4_64GB_Negro_2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
+    codigo: "2074797",
+    caracteristicas: [
+        "Marca: nOBLEX",
+        "Modelo: 2074797",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Motorola G05 (XT2523-2) 4/64gb',
+    imagen: "images/celulares/LIBERADO_Motorola_G05 _XT2523_2_4_64gb_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Motorola_G05 _XT2523_2_4_64gb_1.webp",
+        "images/celulares/LIBERADO_Motorola_G05 _XT2523_2_4_64gb_2.webp",
+        "images/celulares/LIBERADO_Motorola_G05 _XT2523_2_4_64gb_3.webp",
+        "images/celulares/LIBERADO_Motorola_G05 _XT2523_2_4_64gb_4.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 15',
+    codigo: "2075247",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2075247",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Samsung A05 4/64GB',
+    imagen: "images/celulares/LIBERADO_samsung_a_05_4_64_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_samsung_a_05_4_64_1.webp",
+        "images/celulares/LIBERADO_samsung_a_05_4_64_2.webp",
+        "images/celulares/LIBERADO_samsung_a_05_4_64_3.webp",
+        "images/celulares/LIBERADO_samsung_a_05_4_64_4.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 11',
+    codigo: "2075005",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2075005",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Motorola Moto G14 4/128GB',
+    imagen: "images/celulares/LIBERADO_Motorola_Moto_G14_4_128GB_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Motorola_Moto_G14_4_128GB_1.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_G14_4_128GB_2.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_G14_4_128GB_3.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_G14_4_128GB_4.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2074637",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2074637",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Motorola G15 (XT2521-2) 4/128gb',
+    imagen: "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_1.webp",
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_2.webp",
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_3.webp",
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_4.webp",
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_5.webp",
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_6.webp",
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_7.webp",
+        "images/celulares/LIBERADO_Motorola_G15 _XT2521_2_4_128gb_8.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> Sí\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 15',
+    codigo: "2075248",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2075248",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Samsung A06 4/64GB',
+    imagen: "images/celulares/LIBERADO_Samsung_A06_4_64GB_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Samsung_A06_4_64GB_1.webp",
+        "images/celulares/LIBERADO_Samsung_A06_4_64GB_2.webp",
+        "images/celulares/LIBERADO_Samsung_A06_4_64GB_3.webp",
+        "images/celulares/LIBERADO_Samsung_A06_4_64GB_4.webp",
+        "images/celulares/LIBERADO_Samsung_A06_4_64GB_5.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5 Mpx\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2075140",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2075140",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Motorola Moto G23 4/128GB',
+    imagen: "images/celulares/LIBERADO_Motorola_Moto_G23_4_128GB_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Motorola_Moto_G23_4_128GB_1.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_G23_4_128GB_2.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_G23_4_128GB_3.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_G23_4_128GB_4.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2074747",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2074747",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Noblex B30 6.5" 6/128GB Negro',
+    imagen: "images/celulares/LIBERADO_Noblex_B30_6_5_6_128GB_Negro_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Noblex_B30_6_5_6_128GB_Negro_1.webp",
+        "images/celulares/LIBERADO_Noblex_B30_6_5_6_128GB_Negro_2.webp",
+        "images/celulares/LIBERADO_Noblex_B30_6_5_6_128GB_Negro_3.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 6\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2074804",
+    caracteristicas: [
+        "Marca: Noblex",
+        "Modelo: 2074804",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Zte Blade V50 4/256GB 6.75" (8550-F)',
+    imagen: "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_1.webp",
+        "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_2.webp",
+        "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_3.webp",
+        "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_4.webp",
+        "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_5.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2074836",
+    caracteristicas: [
+        "Marca: ZTE",
+        "Modelo: 2074836",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Samsung A16 4/128GB',
+    imagen: "images/celulares/LIBERADO_Samsung_A16_4_128GB_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Samsung_A16_4_128GB_1.webp",
+        "images/celulares/LIBERADO_Samsung_A16_4_128GB_2.webp",
+        "images/celulares/LIBERADO_Samsung_A16_4_128GB_3.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> Sí\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2075291",
+    caracteristicas: [
+        "Marca: sAMSUNG",
+        "Modelo: 2075291",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Samsung A26 8/256GB',
+    imagen: "images/celulares/LIBERADO_Samsung_A26_8_256GB_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Samsung_A26_8_256GB_1.webp",
+        "images/celulares/LIBERADO_Samsung_A26_8_256GB_2.webp",
+        "images/celulares/LIBERADO_Samsung_A26_8_256GB_3.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 8\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 5G\n<strong>Sistema operativo:</strong> Android 14',
+    codigo: "2075292",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2075292",
+        "Garantía: 1 año"
+    ]
+},
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     /////---------- Pequeños Electrodomesticos ----------/////
          
