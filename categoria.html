@@ -188,13 +188,16 @@
                 "Tipo de resolución",
                 "Dimensiones",
                 "Tipo de pantalla",
-                "Sistema operativo",
-                "Smart TV"
+                "Sistema operativo"
             ],
             "tecnologia": [
                 "Sistema operativo",
                 "Almacenamiento",
                 "Bateria",
+                "NFC",
+                "Cámara trasera",
+                "Cámara frontal",
+                "Red móvil",
                 "RAM (GB)"
             ],
             "climatizacion": [
@@ -323,7 +326,7 @@
         if (valoresUnicos.length === 0) return;
 
         // Ordenar valores numéricos para "Capacidad (litros)", "Capacidad" y "Pulgadas" de menor a mayor
-        if (atributo === 'Capacidad (litros)' || atributo === 'Capacidad' || atributo === 'Pulgadas'|| atributo === 'Capacidad (kg)' || atributo === 'Hornallas' || atributo === 'Inverter' || atributo === 'Potencia (W)'|| atributo === 'Velocidad de centrifugado (RPM)'  || atributo === 'Dimensiones' )  {
+        if (atributo === 'Capacidad (litros)' || atributo === 'Capacidad' || atributo === 'Sistema operativo'|| atributo === 'Pulgadas'|| atributo === 'Capacidad (kg)' || atributo === 'Hornallas' || atributo === 'Inverter' || atributo === 'Potencia (W)'|| atributo === 'Cámara trasera' || atributo === 'Cámara frontal' || atributo === 'Velocidad de centrifugado (RPM)'  || atributo === 'Dimensiones' )  {
             valoresUnicos.sort((a, b) => {
                 // Extraer el número (eliminando "Litros", "pulgadas" u otras unidades)
                 const numA = parseFloat(a.replace(/[^\d.]/g, '')) || 0;
