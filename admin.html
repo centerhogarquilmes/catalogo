@@ -104,10 +104,11 @@ const categoryFields = {
         subcategorias: [],
         folder: "cocinas",
         fields: [
-            { label: "Dimensiones (An x Al x Pr)", name: "dimensiones", type: "text", placeholder: "56cm x 85cm x 60cm" },
+            { label: "Tipo de uso", name: "tipo de uso", type: "select", options: ["Domestica", "Industrial"] },
+            { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "85 x 56 x 60" },
             { label: "Válvula de seguridad", name: "valvula_seguridad", type: "select", options: ["Sí", "No"] },
-            { label: "Luz en el horno", name: "luz_horno", type: "select", options: ["Sí", "No"] },
-            { label: "Encendido eléctrico", name: "encendido_electrico", type: "select", options: ["Sí", "No"] },
+            { label: "Luz en el horno", name: "luz_horno", type: "select", options: ["No", "Sí"] },
+            { label: "Encendido eléctrico", name: "encendido_electrico", type: "select", options: ["No", "Sí"] },
             { label: "Tipo de gas", name: "tipo_gas", type: "text", placeholder: "Multigas" },
             { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
         ]
