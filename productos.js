@@ -1372,7 +1372,7 @@ const productos = [
         "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_1.webp",
         "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_2.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
     codigo: "2074907 ",
     caracteristicas: [
         "Marca: Noblex",
@@ -1391,7 +1391,7 @@ const productos = [
         "images/celulares/liberado_moto_e_13_2_64_3.webp",
         "images/celulares/liberado_moto_e_13_2_64_4.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
     codigo: "2074414",
     caracteristicas: [
         "Marca: Motorola",
@@ -1414,7 +1414,7 @@ const productos = [
         "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_7.webp",
         "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_8.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong>Android 14 GO Edition',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong>Android 14 GO Edition',
     codigo: "2075006 ",
     caracteristicas: [
         "Marca: Motorola",
@@ -1431,7 +1431,7 @@ const productos = [
         "images/celulares/LIBERADO_Noblex_N62_6_5_4_64GB_Negro_1.webp",
         "images/celulares/LIBERADO_Noblex_N62_6_5_4_64GB_Negro_2.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13 GO',
     codigo: "2074797",
     caracteristicas: [
         "Marca: Noblex",
@@ -1450,7 +1450,7 @@ const productos = [
         "images/celulares/LIBERADO_Motorola_G05 _XT2523_2_4_64gb_3.webp",
         "images/celulares/LIBERADO_Motorola_G05 _XT2523_2_4_64gb_4.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 15',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.7\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 15',
     codigo: "2075247",
     caracteristicas: [
         "Marca: Motorola",
@@ -1469,7 +1469,7 @@ const productos = [
         "images/celulares/LIBERADO_samsung_a_05_4_64_3.webp",
         "images/celulares/LIBERADO_samsung_a_05_4_64_4.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 11',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 11',
     codigo: "2075005",
     caracteristicas: [
         "Marca: Samsung",
@@ -1488,7 +1488,7 @@ const productos = [
         "images/celulares/LIBERADO_Motorola_Moto_G14_4_128GB_3.webp",
         "images/celulares/LIBERADO_Motorola_Moto_G14_4_128GB_4.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6.5"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
     codigo: "2074637",
     caracteristicas: [
         "Marca: Motorola",
@@ -1531,7 +1531,7 @@ const productos = [
         "images/celulares/LIBERADO_Samsung_A06_4_64GB_4.webp",
         "images/celulares/LIBERADO_Samsung_A06_4_64GB_5.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5 Mpx\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5 Mpx\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
     codigo: "2075140",
     caracteristicas: [
         "Marca: Samsung",
@@ -1550,7 +1550,7 @@ const productos = [
         "images/celulares/LIBERADO_Motorola_Moto_G23_4_128GB_3.webp",
         "images/celulares/LIBERADO_Motorola_Moto_G23_4_128GB_4.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6.5"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
     codigo: "2074747",
     caracteristicas: [
         "Marca: Motorola",
@@ -1568,7 +1568,7 @@ const productos = [
         "images/celulares/LIBERADO_Noblex_B30_6_5_6_128GB_Negro_2.webp",
         "images/celulares/LIBERADO_Noblex_B30_6_5_6_128GB_Negro_3.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 6\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 6\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
     codigo: "2074804",
     caracteristicas: [
         "Marca: Noblex",
@@ -1588,7 +1588,7 @@ const productos = [
         "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_4.webp",
         "images/celulares/LIBERADO_Zte_Blade_V50_4_256GB_6_75_8550_F_5.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
     codigo: "2074836",
     caracteristicas: [
         "Marca: ZTE",
@@ -1624,7 +1624,7 @@ const productos = [
         "images/celulares/LIBERADO_Samsung_A26_8_256GB_2.webp",
         "images/celulares/LIBERADO_Samsung_A26_8_256GB_3.webp"
     ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 8\n<strong>NFC:</strong> No\n<strong>Pulgadas:</strong> 6.7\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 5G\n<strong>Sistema operativo:</strong> Android 14',
+    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 8\n<strong>Pulgadas:</strong> 6.7\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 5G\n<strong>Sistema operativo:</strong> Android 14',
     codigo: "2075292",
     caracteristicas: [
         "Marca: Samsung",
