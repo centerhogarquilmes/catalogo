@@ -1609,7 +1609,7 @@ const productos = [
     descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>NFC:</strong> Sí\n<strong>Pulgadas:</strong> 6.7"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>Batería:</strong> 5.2\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
     codigo: "2075291",
     caracteristicas: [
-        "Marca: sAMSUNG",
+        "Marca: Samsung",
         "Modelo: 2075291",
         "Garantía: 1 año"
     ]
