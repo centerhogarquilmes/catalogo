@@ -383,22 +383,6 @@ const productos = [
     ]
 },
 
-{
-    categoria: "Hornos, Microondas y Freidoras",
-    subcategoria: "Horno",
-    nombre: 'Horno electrico Crivel HF-153 Spiedo',
-    imagen: "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp",
-    imagenes: [
-        "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp"
-    ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 53\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> Sí',
-    codigo: "2072972",
-    caracteristicas: [
-        "Marca: Crivel",
-        "Modelo: 2072972",
-        "Garantía: 1 año"
-    ]
-},
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Horno",
