@@ -129,28 +129,34 @@
             <!-- Formulario -->
             <div class="contact-form">
                 <h3>Envíanos un mensaje</h3>
-                <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nombre (obligatorio)*</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Teléfono (preferiblemente WhatsApp) *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email (opcional)</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje *</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <div>
-                        <p><br>Al enviar tu mensaje aceptas las políticas de privacidad y das tu consentimiento para que Center Hogar Quilmes te contacte.</p>
-                    </div>
-                    <button type="submit" class="buy-btn">Enviar Consulta</button>
-                </form>
+                <form id="contact-form">
+    <div class="form-group">
+        <label for="name">Nombre (obligatorio)*</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email (opcional)</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="phone">Teléfono (opcional, para contacto por WhatsApp)</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+        <label for="message">Mensaje *</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    <div>
+        <p><br>Al enviar tu mensaje aceptas las políticas de privacidad y das tu consentimiento para que Center Hogar Quilmes te contacte.</p>
+    </div>
+    <button type="submit" class="buy-btn">Enviar Consulta</button>
+</form>
+<p id="form-message" style="display: none; color: #FF6200;"></p>
+
+<p>¿No usas WhatsApp? <a href="mailto:chquilmes1260@gmail.com?subject=Consulta%20desde%20Center%20Hogar%20Quilmes">Contáctanos por correo</a></p>
+
+<p id="form-message" style="display: none; color: #FF6200;"></p>
+                <p id="form-message" style="display: none; color: #FF6200;"></p>
                 <p id="form-message" style="display: none; color: #FF6200;"></p>
             </div>
         </section>
