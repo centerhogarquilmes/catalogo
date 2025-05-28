@@ -1406,15 +1406,36 @@ body {
     /* Asegurar que .nav-menu sea visible cuando está activo */
     .nav-menu {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed; /* Cambiado de absolute a fixed para mejor control */
+        top: var(--header-height); /* Usa la variable del header height */
         left: 0;
         width: 100%;
         background-color: #02366e;
         padding: 10px 0;
         z-index: 1000;
+        max-height: calc(100vh - var(--header-height) - 80px); /* Limita la altura */
+        overflow-y: auto; /* Habilita el desplazamiento vertical */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        scrollbar-width: thin; /* Para Firefox */
+        scrollbar-color: #FF6200 #1a4971; /* Color de la barra */
     }
+    @media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: fixed; /* Cambiado de absolute a fixed para mejor control */
+        top: var(--header-height); /* Usa la variable del header height */
+        left: 0;
+        width: 100%;
+        background-color: #02366e;
+        padding: 10px 0;
+        z-index: 1000;
+        max-height: calc(100vh - var(--header-height) - 80px); /* Limita la altura */
+        overflow-y: auto; /* Habilita el desplazamiento vertical */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        scrollbar-width: thin; /* Para Firefox */
+        scrollbar-color: #FF6200 #1a4971; /* Color de la barra */
+    }
+
     .nav-menu.active {
         display: block;
     }
@@ -1435,23 +1456,21 @@ body {
         border-bottom: none;
     }
 
-   /* Estilos generales para el menú (afuera del media query) */
-.nav-menu a {
-    color: #FFFFFF; /* Color inicial: blanco */
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease; /* Suavizar el cambio de color */
-}
+    .nav-menu a {
+        font-size: 16px;
+        color: #FFFFFF;
+        display: block;
+    }
 
     .nav-menu a:hover {
-        color: #fffefd;
+        color: #FF6200;
     }
-    /* Estilos para categorías con submenús en móvil */
+
+    /* Estilos para categorías con submenús */
     .nav-menu .has-submenu {
         position: relative;
     }
 
-    /* Indicador visual (flecha) para categorías con submenús */
     .nav-menu .has-submenu > a::after {
         content: '↴';
         position: absolute;
@@ -1459,21 +1478,22 @@ body {
         font-size: 12px;
         transition: transform 0.5s ease;
     }
+
     .nav-menu .has-submenu.active > a::after {
         transform: rotate(180deg);
     }
 
-    /* Estilos para el submenú en móvil */
     .nav-menu .submenu {
-        display: none !important; /* Aumentar prioridad temporalmente */
+        display: none;
         position: static;
-        background-color: #36618f00;
+        background-color: transparent;
         padding: 0 0 0 30px;
         box-shadow: none;
         border-radius: 0;
     }
+
     .nav-menu .submenu.active {
-        display: block !important; /* Aumentar prioridad temporalmente */
+        display: block;
     }
 
     .nav-menu .submenu li {
@@ -1494,7 +1514,24 @@ body {
         color: #FF6200;
     }
 
-    
+    /* Estilizar la barra de desplazamiento para navegadores WebKit (Chrome, Safari) */
+    .nav-menu::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .nav-menu::-webkit-scrollbar-track {
+        background: #1a4971;
+        border-radius: 4px;
+    }
+
+    .nav-menu::-webkit-scrollbar-thumb {
+        background: #FF6200;
+        border-radius: 4px;
+    }
+
+    .nav-menu::-webkit-scrollbar-thumb:hover {
+        background: #E55A00;
+    }
 }
 
 .breadcrumbs {
