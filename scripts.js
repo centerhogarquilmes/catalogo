@@ -166,44 +166,86 @@ function setupMenuToggle() {
 
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', () => {
+            console.log('Menú principal toggled:', navMenu.classList.contains('active') ? 'Cerrando' : 'Abriendo');
             navMenu.classList.toggle('active');
         });
 
-        // Cerrar el menú al hacer clic en un enlace
+        // Unificar el manejo de clics en todos los enlaces del menú
         navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
+            link.addEventListener('click', (e) => {
+                const parentLi = link.parentElement;
+                const isSubmenuLink = parentLi.classList.contains('has-submenu');
+                const isSubcategoryLink = link.parentElement.parentElement.classList.contains('submenu');
+
+                console.log('Clic en enlace:', link.textContent, {
+                    isSubmenuLink,
+                    isSubcategoryLink,
+                    windowWidth: window.innerWidth
+                });
+
+                if (window.innerWidth <= 768) {
+                    if (isSubmenuLink) {
+                        // Manejar el submenú (abrir/cerrar)
+                        e.preventDefault();
+                        const submenu = parentLi.querySelector('.submenu');
+                        if (submenu) {
+                            const isSubmenuOpen = submenu.classList.contains('active');
+                            console.log('Estado del submenú:', isSubmenuOpen ? 'Abierto' : 'Cerrado');
+
+                            if (!isSubmenuOpen) {
+                                // Abrir el submenú
+                                console.log('Abriendo submenú para:', link.textContent);
+                                parentLi.classList.add('active');
+                                submenu.classList.add('active');
+
+                                // Cerrar otros submenús abiertos
+                                const menuItemsWithSubmenu = navMenu.querySelectorAll('.has-submenu');
+                                menuItemsWithSubmenu.forEach(otherItem => {
+                                    if (otherItem !== parentLi) {
+                                        otherItem.classList.remove('active');
+                                        const otherSubmenu = otherItem.querySelector('.submenu');
+                                        if (otherSubmenu) {
+                                            otherSubmenu.classList.remove('active');
+                                        }
+                                    }
+                                });
+                            } else {
+                                // Cerrar el submenú
+                                console.log('Cerrando submenú para:', link.textContent);
+                                parentLi.classList.remove('active');
+                                submenu.classList.remove('active');
+                            }
+                        } else {
+                            console.warn('No se encontró submenú para:', link.textContent);
+                        }
+                    } else if (isSubcategoryLink) {
+                        // Cerrar el menú principal al seleccionar una subcategoría
+                        console.log('Seleccionada subcategoría:', link.textContent, 'Cerrando menú principal');
+                        navMenu.classList.remove('active');
+                    } else {
+                        // Cerrar el menú principal al seleccionar una categoría sin submenú
+                        console.log('Seleccionada categoría sin submenú:', link.textContent, 'Cerrando menú principal');
+                        navMenu.classList.remove('active');
+                    }
+                }
             });
         });
 
-        // Cerrar el menú al hacer clic fuera
+        // Cerrar el menú principal y todos los submenús al hacer clic fuera
         document.addEventListener('click', (e) => {
             if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                console.log('Clic fuera del menú, cerrando menú principal y submenús');
                 navMenu.classList.remove('active');
+                const menuItemsWithSubmenu = navMenu.querySelectorAll('.has-submenu');
+                menuItemsWithSubmenu.forEach(item => {
+                    item.classList.remove('active');
+                    const submenu = item.querySelector('.submenu');
+                    if (submenu) {
+                        submenu.classList.remove('active');
+                    }
+                });
             }
         });
-
-        // Funcionalidad para submenús en móvil
-        // Funcionalidad para submenús en móvil
-const menuItemsWithSubmenu = navMenu.querySelectorAll('.has-submenu');
-menuItemsWithSubmenu.forEach(item => {
-    const link = item.querySelector('a');
-    if (link) {
-        link.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                // En móvil, navegar directamente a la categoría principal sin mostrar submenús
-                const href = link.getAttribute('href');
-                if (href) {
-                    window.location.href = href;
-                }
-            } else {
-                // En escritorio, mantener comportamiento original
-                e.preventDefault();
-                item.classList.toggle('active');
-            }
-        });
-    }
-});
     } else {
         console.error("No se encontraron los elementos menuToggle o navMenu");
     }
@@ -236,3 +278,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('resize', adjustContentMargin);
+
+function setupFilters() {
+    const filterFloat = document.querySelector('.filter-float');
+    const filters = document.querySelector('.filters');
+
+    if (filterFloat && filters) {
+        filterFloat.addEventListener('click', () => {
+            console.log('Clic en botón flotante de filtros:', filters.classList.contains('active') ? 'Cerrando filtros' : 'Abriendo filtros');
+            filters.classList.toggle('active');
+            filterFloat.classList.toggle('active'); // Agregar o quitar clase .active
+        });
+
+        // Cerrar el panel de filtros al hacer clic fuera
+        document.addEventListener('click', (e) => {
+            if (!filters.contains(e.target) && !filterFloat.contains(e.target) && filters.classList.contains('active')) {
+                console.log('Clic fuera del panel de filtros, cerrando filtros');
+                filters.classList.remove('active');
+                filterFloat.classList.remove('active'); // Quitar clase .active
+            }
+        });
+    } else {
+        console.error("No se encontraron los elementos filterFloat o filters");
+    }
+}
+
+// Llamar a la función al cargar el DOM
+document.addEventListener('DOMContentLoaded', () => {
+    setupFilters();
+    // Otras funciones como setupMenuToggle() ya deberían estar aquí
+});
