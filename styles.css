@@ -2015,7 +2015,7 @@ body {
         width: 75%;
         max-height: 400px;
         background-color: #FFFFFF;
-        z-index: 990; /* Debajo de .filter-float, encima de otros elementos */
+        z-index: 1000; /* Debajo de .filter-float, encima de otros elementos */
         transform: translateY(50px) scale(0.1); /* Inicia pequeño y desplazado */
         opacity: 0; /* Inicia invisible */
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
