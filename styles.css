@@ -1959,7 +1959,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 1200;
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }

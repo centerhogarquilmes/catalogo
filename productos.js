@@ -26,7 +26,7 @@ const productos = [
             "images/cocinas/cocina_escorial_candor2.webp",
             "images/cocinas/cocina_escorial_candor3.webp"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x 51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encendido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x 51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "18079",
         caracteristicas: ["Marca: Escorial", "Modelo: Candor", "Garantía: 1 año"]
     },
@@ -41,7 +41,7 @@ const productos = [
             "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_3.webp",
             "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_4.webp"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x  56 x 60\n<strong>Encendido eléctrico:</strong> No\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 3\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x  56 x 60\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 3\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2074709",
         caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
@@ -56,7 +56,7 @@ const productos = [
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_3.webp",
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_4.webp"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073969",
         caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
@@ -73,7 +73,7 @@ const productos = [
             "images/cocinas/cocina_candor_negra4.jpg",
             "images/cocinas/cocina_candor_negra5.jpg"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2072621",
         caracteristicas: ["Marca: Escorial", "Modelo: Candor Black", "Garantía: 1 año"]
     },
@@ -89,7 +89,7 @@ const productos = [
             "images/cocinas/cocina_escorial_master_classic4.jpg",
             "images/cocinas/cocina_escorial_master_classic5.jpg",
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073930",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
@@ -119,7 +119,7 @@ const productos = [
             "images/cocinas/cocina-escorial-master-classic-ge-inox4.jpg",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075088",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
@@ -135,7 +135,7 @@ const productos = [
             "images/cocinas/Cocina_Florencia_5518F _Inox_4.webp",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 85 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase AA",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase AA",
         codigo: "2071810 ",
         caracteristicas: ["Marca: Florencia", "Modelo: 5518F", "Garantía: 1 año"]
     },
@@ -175,7 +175,7 @@ const productos = [
         imagenes: [
             "images/cocinas/Cocina_Volcan_87644_55cm_4_horn_Blanca_sin_luz.webp",
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2074783",
         caracteristicas: ["Marca: Volcan", "Modelo: 87644", "Garantía: 1 año"]
     },
@@ -191,7 +191,7 @@ const productos = [
             "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 4.webp",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> No\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073914",
         caracteristicas: ["Marca: Volcan", "Modelo: 87673", "Garantía: 1 año"]
     },
@@ -224,7 +224,7 @@ const productos = [
 
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> No\n<strong>Encencido eléctrico:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073292",
         caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
@@ -820,7 +820,7 @@ const productos = [
             "images/heladeras/heladera_samsung_rt29_silver_no_fr_290lts_cdisp1.webp",
             "images/heladeras/heladera_samsung_rt29_silver_no_fr_290lts_cdisp2.webp"
         ],
-        descripcion: "<strong>Dimensiones:</strong> 163 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad:</strong> 347 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 163 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 347 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073101",
         caracteristicas: ["Marca: Samsung", "Modelo: RT29K577JS8", "Garantía: 1 año"]
     },
@@ -835,7 +835,7 @@ const productos = [
             "images/heladeras/Heladera_Gafa_HGNW3900P_No_Frost_347lts_Plata_dispenser2.webp",
             "images/heladeras/Heladera_Gafa_HGNW3900P_No_Frost_347lts_Plata_dispenser3.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 184 x 61 x 62.1\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad:</strong> 347 Litros\n<strong>Freezer:</strong> Sí.\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 184 x 61 x 62\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 347 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075205",
         caracteristicas: ["Marca: Gafa", "Modelo: HGNW3900P", "Garantía: 1 año"]
     },
@@ -850,7 +850,7 @@ const productos = [
             "images/heladeras/Heladera_Neba_A_128B_Ciclica_2_frios_128_Lts_Blanca_2.webp",
             "images/heladeras/Heladera_Neba_A_128B_Ciclica_2_frios_128_Lts_Blanca_3.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 81 x 57 x 60 \n<strong>Tipo de tecnologia:</strong> Cíclica\n\n<strong>Inverter:</strong> No\n<strong>Capacidad:</strong> 128 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 81 x 57 x 60\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 128 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073986",
         caracteristicas: ["Marca: Neba", "Modelo: A 128B", "Garantía: 1 año"]
     },
@@ -864,7 +864,7 @@ const productos = [
             "images/heladeras/Heladera_Neba_A_280_Ciclica_2_frios_280_Lts_2.webp",
             "images/heladeras/Heladera_Neba_A_280_Ciclica_2_frios_280_Lts_3.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 152 x 57 x 60 \n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Inverter:</strong> No\n<strong>Capacidad:</strong> 280 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 152 x 57 x 60\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 280 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "22566",
         caracteristicas: ["Marca: Gafa", "Modelo: HGNW3900P", "Garantía: 1 año"]
     },
@@ -879,7 +879,7 @@ const productos = [
             "images/heladeras/Heladera-Neba-H-300BL-Top-Mount-294lts-Blanca_3.webp",
             "images/heladeras/Heladera-Neba-H-300BL-Top-Mount-294lts-Blanca_4.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 170 x 65 x 54\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Inverter:</strong> No\n<strong>Capacidad:</strong> 294 Litros\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 170 x 65 x 54\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 294 Litros\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2074983",
         caracteristicas: ["Marca: Neba", "Modelo: H-300BL", "Garantía: 1 año"]
     },
@@ -895,7 +895,7 @@ const productos = [
             "images/heladeras/Heladera_Philco_PHCT302X_Top_Mount_298Lts_Inox_ciclica_4.webp",
             "images/heladeras/Heladera_Philco_PHCT302X_Top_Mount_298Lts_Inox_ciclica_5.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 176 x 55 x 60\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Inverter:</strong> No\n<strong>Capacidad:</strong> 298 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 176 x 55 x 60\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 298 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075258",
         caracteristicas: ["Marca: Philco", "Modelo: PHCT302X", "Garantía: 1 año"]
     },
@@ -911,7 +911,7 @@ const productos = [
             "images/heladeras/Heladera_Philco_PHCT341B]_ciclica_340Lts_Blanca_3.webp",
             "images/heladeras/Heladera_Philco_PHCT341B]_ciclica_340Lts_Blanca_4.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 185 x 61 x 62\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Inverter:</strong> No\n<strong>Capacidad:</strong> 347 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 185 x 61 x 62\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 347 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075205",
         caracteristicas: ["Marca: Philco", "Modelo: PHCT341B", "Garantía: 1 año"]
     },
@@ -927,7 +927,7 @@ const productos = [
             "images/heladeras/Heladera_Samsung_RB31FSRNDSA_328lts_Silver_2.webp",
             "images/heladeras/Heladera_Samsung_RB31FSRNDSA_328lts_Silver_4.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 185 x 60 x 68\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> No\n<strong>Capacidad:</strong> 328 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A+",
+        descripcion: "<strong>Dimensiones:</strong> 185 x 60 x 68\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 328 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+",
         codigo: "2074199",
         caracteristicas: ["Marca: Samsung", "Modelo: RB31FSRNDSA", "Garantía: 1 año"]
     },
@@ -943,7 +943,7 @@ const productos = [
             "images/heladeras/Heladera_Samsung_RT32k5070S8_Silver_No_Fr_321lts_3.webp",
             "images/heladeras/Heladera_Samsung_RT32k5070S8_Silver_No_Fr_321lts_4.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 171 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad:</strong> 269 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A+",
+        descripcion: "<strong>Dimensiones:</strong> 171 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 269 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+",
         codigo: "2072958",
         caracteristicas: ["Marca: Samsung", "Modelo: RT32k5070S8", "Garantía: 1 año"]
     },
@@ -959,7 +959,7 @@ const productos = [
             "images/heladeras/Heladera_Samsung_RT29K507JS8_Silver_No_Fr_290lts_sin_dispenser_3.webp",
             "images/heladeras/Heladera_Samsung_RT29K507JS8_Silver_No_Fr_290lts_sin_dispenser_4.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 163 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad:</strong> 290 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 163 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 290 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2074499",
         caracteristicas: ["Marca: Samsung", "Modelo: RT29K507JS8", "Garantía: 1 año"]
     },
@@ -975,7 +975,7 @@ const productos = [
             "images/heladeras/Heladera_Samsung_RT32K5070WW_NoFr_321lts_Bl_s_disp_3.webp",
             "images/heladeras/Heladera_Samsung_RT32K5070WW_NoFr_321lts_Bl_s_disp_4.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 171 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad:</strong> 321 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 171 x 60 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 321 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2072527",
         caracteristicas: ["Marca: Samsung", "Modelo: RT32K5070WW", "Garantía: 1 año"]
     },
@@ -993,7 +993,7 @@ const productos = [
             "images/heladeras/Heladera_Whirlpool_WRE57CK_Inverter_449lts_No_Frost_Platinum_5.webp",
             "images/heladeras/Heladera_Whirlpool_WRE57CK_Inverter_449lts_No_Frost_Platinum_6.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 185 x 70 x 76 \n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad:</strong> 449 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> No\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 185 x 70 x 76 \n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 449 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075208",
         caracteristicas: ["Marca: Whirlpool", "Modelo: WRE57CK", "Garantía: 1 año"]
     },
@@ -1010,7 +1010,7 @@ const productos = [
             "images/heladeras/Heladera_Samsung_RT42DG6730B1_No_Frost_424_lts_bruto_Black_Dispenser_Inverter_3.webp",
             "images/heladeras/Heladera_Samsung_RT42DG6730B1_No_Frost_424_lts_bruto_Black_Dispenser_Inverter_4.webp",
         ],
-        descripcion: "<strong>Dimensiones:</strong> 178 x 70 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad:</strong> 424 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Dimensiones:</strong> 178 x 70 x 67\n<strong>Tipo de tecnologia:</strong> No Frost\n<strong>Inverter:</strong> Sí\n<strong>Capacidad (Litros):</strong> 424 Litros\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075161",
         caracteristicas: ["Marca: Samsung", "Modelo: RT42DG6730B1", "Garantía: 1 año"]
     },
@@ -1987,6 +1987,451 @@ const productos = [
         "Modelo: 2073214",
         "Garantía: 1 año"
     ]
-}
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /////---------- Termotanques ----------/////
+            /////---------- Gas ----------/////
+
+
+
+
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Escorial 45LTS',
+    imagen: "images/gas/Termot_Escorial_45LTS_1.webp",
+    imagenes: [
+        "images/gas/Termot_Escorial_45LTS_1.webp",
+        "images/gas/Termot_Escorial_45LTS_2.webp",
+        "images/gas/Termot_Escorial_45LTS_3.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 60 x 42\n<strong>Capacidad (Litros):</strong> 45\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2068932",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2068932",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Señorial Zafiro 030 Lts mg pie/col A.recup. 330000',
+    imagen: "images/gas/Termot_Señorial_Zafiro_030_Lts_mg_pie_col_a_recup_330000_1.webp",
+    imagenes: [
+        "images/gas/Termot_Señorial_Zafiro_030_Lts_mg_pie_col_a_recup_330000_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 61 x 36\n<strong>Capacidad (Litros):</strong> 30\n<strong>Conexiones:</strong> Ambos\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2073040",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073040",
+        "Garantía: 1 año"
+    ]
+},
+    
+    
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Señorial Zafiro 085 Lts mg pie/col 330002',
+    imagen: "images/gas/Termot_Señorial_Zafiro_085_Lts_mg_pie_col_330002_1.webp",
+    imagenes: [
+        "images/gas/Termot_Señorial_Zafiro_085_Lts_mg_pie_col_330002_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 110 x 41\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 4400\n<strong>Eficiencia energética:</strong> Clase D',
+    codigo: "2073037",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073037",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Ecotermo 45Lts GN Populi TE1052022',
+    imagen: "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_1.webp",
+    imagenes: [
+        "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_1.webp",
+        "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_2.webp",
+        "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_3.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 72 x 43\n<strong>Capacidad (Litros):</strong> 45\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 3600\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2072108",
+    caracteristicas: [
+        "Marca: Ecotermo",
+        "Modelo: 2072108",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot Sherman 50 lts pie multigas carga sup',
+    imagen: "images/gas/Termot_sherman_50_lts_pie_multigas_carga_sup_1.webp",
+    imagenes: [
+        "images/gas/Termot_sherman_50_lts_pie_multigas_carga_sup_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 82 x 45\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 3500\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2079072",
+    caracteristicas: [
+        "Marca: Sherman",
+        "Modelo: 2079072",
+        "Garantía: 1 año"
+    ]
+},
+    
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Señorial Zafiro 050 Lts mg pie/col A.recup. 330001',
+    imagen: "images/gas/Termot_Señorial_Zafiro_050_Lts_mg_pie_col_A_recup_330001_1.webp",
+    imagenes: [
+        "images/gas/Termot_Señorial_Zafiro_050_Lts_mg_pie_col_A_recup_330001_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 92 x 36\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Ambos\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 4300\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2073041",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073041",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Señorial Family 085 Lts mg pie/col 330008',
+    imagen: "images/gas/Termot_Señorial_Family_085_Lts_mg_pie_col_330008_1.webp",
+    imagenes: [
+        "images/gas/Termot_Señorial_Family_085_Lts_mg_pie_col_330008_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 110 x 41\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 4000\n<strong>Eficiencia energética:</strong> Clase D',
+    codigo: "2073164",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073164",
+        "Garantía: 1 año"
+    ]
+},
+    
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Señorial Zafiro 120 mg 118lts apoyar 330003',
+    imagen: "images/gas/Termot_Señorial_Zafiro_120_mg_118lts_apoyar_330003_1.webp",
+    imagenes: [
+        "images/gas/Termot_Señorial_Zafiro_120_mg_118lts_apoyar_330003_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 146 x 41\n<strong>Capacidad (Litros):</strong> 120\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 4500\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2073038",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073038",
+        "Garantía: 1 año"
+    ]
+},
+   
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Señorial Zafiro 160 Lts mg apoyar 330012',
+    imagen: "images/gas/Termot_Señorial_Zafiro_160_Lts_mg_apoyar_330012_1.webp",
+    imagenes: [
+        "images/gas/Termot_Señorial_Zafiro_160_Lts_mg_apoyar_330012_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 153 x 33\n<strong>Capacidad (Litros):</strong> 160\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 4300\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2073039",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073039",
+        "Garantía: 1 año"
+    ]
+},
+    
+    
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Ecotermo 53 Lts. Alta recup. C/Sup. GN TE4052522',
+    imagen: "images/gas/Termot_Ecotermo_53_Lts._Alta_recup_C_Sup_GN_TE4052522_1.webp",
+    imagenes: [
+        "images/gas/Termot_Ecotermo_53_Lts._Alta_recup_C_Sup_GN_TE4052522_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 76 x 42\n<strong>Capacidad (Litros):</strong> 53\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 6400\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2072050",
+    caracteristicas: [
+        "Marca: Ecotermo",
+        "Modelo: 2072050",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Saiar 80lts pie multigas carga sup.',
+    imagen: "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_1.webp",
+    imagenes: [
+        "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_1.webp",
+        "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_2.webp",
+        "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_3.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 106 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 6900\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2079065",
+    caracteristicas: [
+        "Marca: Saiar",
+        "Modelo: 2079065",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Saiar 80lts colgar multigas carga inferior',
+    imagen: "images/gas/Termot_Saiar_80lts_colgar_multigas_carga_inferior_1.webp",
+    imagenes: [
+        "images/gas/Termot_Saiar_80lts_colgar_multigas_carga_inferior_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 67 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Potencia:</strong> 5000\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2079069",
+    caracteristicas: [
+        "Marca: Saiar",
+        "Modelo: 2079069",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Rheem 80 lts pie carga sup. GN Blanco (tpg080gnrh)',
+    imagen: "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_1.webp",
+    imagenes: [
+        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_1.webp",
+        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_2.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 106 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 6000\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2074364",
+    caracteristicas: [
+        "Marca: Rheem",
+        "Modelo: 2074364",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Eskabe AQUAPIU H360 Gas A. recup Hybrid4 360lts/hs vert',
+    imagen: "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_1.webp",
+    imagenes: [
+        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_1.webp",
+        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_2.webp",
+        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_3.webp",
+        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_4.webp",
+        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_5.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 83 x 45\n<strong>Capacidad (Litros):</strong> 40\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 10000\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2075133",
+    caracteristicas: [
+        "Marca: Eskabe",
+        "Modelo: 2075133",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques",
+    subcategoria: "Gas",
+    nombre: 'Termot. Rheem 80 lts pie carga sup. GN Gris (tgnp080rh)',
+    imagen: "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_1.webp",
+    imagenes: [
+        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_1.webp",
+        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_2.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 109 x 42\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 5500\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "17114",
+    caracteristicas: [
+        "Marca: Rheem",
+        "Modelo: 17114",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
+
+        /////---------- Electrico ----------/////
+
+
+{
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Señorial Zafiro TESZP-20 20lts electrico',
+    imagen: "images/electrico/Termot_Señorial_Zafiro_TESZP_20_20lts_electrico_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Señorial_Zafiro_TESZP_20_20lts_electrico_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 33 x 41\n<strong>Capacidad (Litros):</strong> 20\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase E',
+    codigo: "2075242",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2075242",
+        "Garantía: 1 año"
+    ]
+},
+{
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Señorial Family 090 Lts Elec pie/col A. recup 330010',
+    imagen: "images/electrico/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_1.webp",
+        "images/electrico/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_2.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 105 x 41\n<strong>Capacidad (Litros):</strong> 90\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase D',
+    codigo: "2073045",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073045",
+        "Garantía: 1 año"
+    ]
+},
+
+{
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Saiar 55 lts electrico TEPC055ESARIK2',
+    imagen: "images/electrico/Termot_Saiar_55_lts_electrico_TEPC055ESARIK2_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Saiar_55_lts_electrico_TEPC055ESARIK2_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 58 x 45\n<strong>Capacidad (Litros):</strong> 55\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "17005",
+    caracteristicas: [
+        "Marca: Saiar",
+        "Modelo: 17005",
+        "Garantía: 1 año"
+    ]
+},
+
+{
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Ecotermo 70Lts Electrico Populi Carga Sup.',
+    imagen: "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_1.webp",
+        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_2.webp",
+        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_3.webp",
+        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_4.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 98 x 63\n<strong>Capacidad (Litros):</strong> 70\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Potencia:</strong> 5600\n<strong>Eficiencia energética:</strong> Clase D',
+    codigo: "2072245",
+    caracteristicas: [
+        "Marca: Ecotermo",
+        "Modelo: 2072245",
+        "Garantía: 1 año"
+    ]
+},
+
+{
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Señorial Zafiro 095 Lts Elec col. entr. sup.330006',
+    imagen: "images/electrico/Termot_Señorial_Zafiro_095_Lts_Elec_col_entr_sup_330006_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Señorial_Zafiro_095_Lts_Elec_col_entr_sup_330006_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 93 x 41\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2073044",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073044",
+        "Garantía: 1 año"
+    ]
+},
+{
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Señorial Zafiro 65 elec 50lts col. entr. sup. 330005',
+    imagen: "images/electrico/Termot_Señorial_Zafiro_65_elec_50lts_col_entr_sup_330005_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Señorial_Zafiro_65_elec_50lts_col_entr_sup_330005_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 64 x 41\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase E',
+    codigo: "2073043",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073043",
+        "Garantía: 1 año"
+    ]
+},
+{
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Escorial EL-90 90lts Electrico',
+    imagen: "images/electrico/Termot_Escorial_EL_90_90lts_Electrico_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Escorial_EL_90_90lts_Electrico_1.webp",
+        "images/electrico/Termot_Escorial_EL_90_90lts_Electrico_2.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 92 x 43\n<strong>Capacidad (Litros):</strong> 90\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2071220",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2071220",
+        "Garantía: 1 año"
+    ]
+},
+
+    {
+    categoria: "Termotanques",
+    subcategoria: "Eléctrico",
+    nombre: 'Termot. Señorial Zafiro 40 elec 30lts col. entr. sup. 330004',
+    imagen: "images/electrico/Termot_Señorial_Zafiro_40_elec_30lts_col_entr_sup_330004_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Señorial_Zafiro_40_elec_30lts_col_entr_sup_330004_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 43 x 41\n<strong>Capacidad (Litros):</strong> 30\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase E',
+    codigo: "2073042",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073042",
+        "Garantía: 1 año"
+    ]
+},
+
+ {
+    categoria: "Termotanques",
+    subcategoria: "Electrico",
+    nombre: 'Termot. Sherman 85 Eléctrico TECC085ESHK2',
+    imagen: "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
+    imagenes: [
+        "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
+        "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_2.webp"
+    ],
+    descripcion: '<strong>Dimensiones:</strong> 51 x 45\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "21205",
+    caracteristicas: [
+        "Marca: Sherman",
+        "Modelo: 21205",
+        "Garantía: 1 año"
+    ]
+},
+
 
 ];

@@ -45,17 +45,8 @@
         <div class="form-group">
             <label for="categoria">Categoría</label>
             <select id="categoria" name="categoria" required>
-                <option value="" disabled selected>Selecciona una categoría</option>
-                <option value="Cocinas">Cocinas</option>
-                <option value="Heladeras">Heladeras</option>
-                <option value="Tv y Audio">Tv y Audio</option>
-                <option value="Tecnología">Tecnología</option>
-                <option value="Climatización">Climatización</option>
-                <option value="Lavado">Lavado</option>
-                <option value="Hornos, Microondas y Freidoras">Hornos, Microondas y Freidoras</option>
-                <option value="Pequeños Electrodomésticos">Pequeños Electrodomésticos</option>
-                <option value="Cuidado Personal">Cuidado Personal</option>
-            </select>
+    <option value="" disabled selected>Selecciona una categoría</option>
+</select>
         </div>
         <div class="form-group" id="subcategoria-group" style="display: none;">
             <label for="subcategoria">Subcategoría</label>
@@ -233,6 +224,25 @@ const categoryFields = {
             ]
         }
     },
+
+    "Termotanques": {
+    subcategorias: ["Gas", "Eléctrico", "Dual"],
+    folders: {
+        "Gas": "gas",
+        "Eléctrico": "electrico",
+        "Dual": "dual"
+    },
+    fields: [
+        { label: "Dimensiones", name: "dimensiones", type: "text", placeholder: "Alto x ancho" },
+        { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "80" },
+        { label: "Conexiones" , name: "conexiones", type: "select" , options: ["Superior", "Inferior", "Ambos"]},
+        { label: "Alta recuperación", name: "alta_recuperacion", type: "select", options: ["No", "Sí"] },
+        { label: "Colgar o apoyar", name: "colgar_apoyar", type: "select", options: ["Colgar", "Apoyar", "Ambos"] },
+        { label: "Potencia" , name: "potencia" , type: "text" , placeholder: "1500"},
+        { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase E", "Clase D", "Clase C", "Clase B", "Clase A"] }
+    ]
+},
+
     "Hornos, Microondas y Freidoras": {
     subcategorias: [],
     folder: ["hornos", "microondas", "freidoras"], // Usar el tipo seleccionado como carpeta
@@ -614,6 +624,23 @@ function exportProducts() {
 
 // Inicializar campos dinámicos al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
+    generateDynamicFields('');
+});
+
+// Poblar el selector de categorías dinámicamente
+function populateCategories() {
+    const categoriaSelect = document.getElementById('categoria');
+    Object.keys(categoryFields).forEach(categoria => {
+        const option = document.createElement('option');
+        option.value = categoria;
+        option.textContent = categoria;
+        categoriaSelect.appendChild(option);
+    });
+}
+
+// Llamar a la función al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    populateCategories();
     generateDynamicFields('');
 });
 </script>
