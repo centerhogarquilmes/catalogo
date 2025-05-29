@@ -133,22 +133,22 @@
                 <img src="carrusel/creditos_personales.webp" alt="Creditos personales" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
             </div>
             <div class="slide">
-                <img src="carrusel/Tarjeta_Naranja_2025.webp" alt="9 Cuotas Sin Interes" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                <img src="carrusel/Tarjeta_Naranja_2025.webp" alt="9 Cuotas Sin Interes" loading="lazy" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
             </div>
             <div class="slide">
-                <img src="carrusel/termotanques_descuento_20.jpg" alt="Termotanques Descuento" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                <img src="carrusel/termotanques_descuento_20.jpg" alt="Termotanques Descuento" loading="lazy" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
             </div>
             <div class="slide">
-                <img src="carrusel//HeladeraSamsungRT42_cuota_simple.webp" alt="Heladera Samsung RT42" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                <img src="carrusel/HeladeraSamsungRT42_cuota_simple.webp" alt="Heladera Samsung RT42" loading="lazy" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
             </div>
             <div class="slide">
-                <img src="carrusel/kohinoor_banner.webp" alt="Kohinoor Banner" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                <img src="carrusel/kohinoor_banner.webp" alt="Kohinoor Banner" loading="lazy" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
             </div>
             <div class="slide">
-                <img src="carrusel/pava_noulinex_cuota_simple.webp" alt="Kohinoor Banner" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                <img src="carrusel/pava_noulinex_cuota_simple.webp" alt="Kohinoor Banner" loading="lazy" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
             </div>
             <div class="slide">
-                <img src="carrusel/Lavarropas_BGH.webp" alt="Kohinoor Banner" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                <img src="carrusel/Lavarropas_BGH.webp" alt="Kohinoor Banner" loading="lazy" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
             </div>
         </div>
         <button class="carousel-btn prev">❮</button>
@@ -288,33 +288,36 @@
     startAutoSlide();
 
     // Generar tarjetas de productos destacados dinámicamente
-    const productGrid = document.querySelector('.product-grid');
-    productGrid.innerHTML = '';
-    const productosDestacadosFiltrados = productos
-        .filter(producto => productosDestacados.includes(producto.codigo))
-        .slice(0, 5);
-    productosDestacados.forEach(codigo => {
-        if (!productos.some(producto => producto.codigo === codigo)) {
-            console.warn(`El código ${codigo} en productosDestacados no coincide con ningún producto.`);
-        }
-    });
-    if (productosDestacadosFiltrados.length === 0) {
-        productGrid.innerHTML = '<p>No se encontraron productos destacados.</p>';
-    } else {
-        productosDestacadosFiltrados.forEach(producto => {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            card.innerHTML = `
-                <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&imagen=${producto.imagen}&imagenes=${producto.imagenes.join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
-                    <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+const productGrid = document.querySelector('.product-grid');
+productGrid.innerHTML = '';
+const productosDestacadosFiltrados = productos
+    .filter(producto => productosDestacados.includes(producto.codigo))
+    .slice(0, 5);
+productosDestacados.forEach(codigo => {
+    if (!productos.some(producto => producto.codigo === codigo)) {
+        console.warn(`El código ${codigo} en productosDestacados no coincide con ningún producto.`);
+    }
+});
+if (productosDestacadosFiltrados.length === 0) {
+    productGrid.innerHTML = '<p>No se encontraron productos destacados.</p>';
+} else {
+    productosDestacadosFiltrados.forEach(producto => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+            <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
+                <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+                <div class="text-container">
                     <h3>${producto.nombre}</h3>
                     <p class="product-code">Código: ${producto.codigo}</p>
                     <button class="buy-btn">Ver más</button>
-                </a>
-            `;
-            productGrid.appendChild(card);
-        });
-    }
+                </div>
+            </a>
+        `;
+        productGrid.appendChild(card);
+    });
+}
+
 </script>
 </body>
 </html>

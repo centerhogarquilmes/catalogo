@@ -339,6 +339,14 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.product-card .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+    }
+
 .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -2151,13 +2159,15 @@ body {
     .product-card {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra contenido dentro de la tarjeta */
+        align-items: center;
         padding: 10px;
         border-radius: 6px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        width: 100%; /* Asegura que la tarjeta ocupe el ancho disponible */
-        max-width: 300px; /* Limita el ancho máximo para mejor estética */
+        width: 100%;
+        max-width: 300px;
         box-sizing: border-box;
+        min-height: 220px;
+        justify-content: space-between;
     }
 
     .product-grid.grid-view .product-card {
@@ -2207,14 +2217,18 @@ body {
         font-size: 13px;
         padding: 8px;
         width: 100%;
-        max-width: 150px; /* Limita el ancho del botón */
-        align-self: center; /* Centra el botón */
+        max-width: 150px;
+        align-self: center;
+        background-color: #02366e;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
     }
 
     .product-grid.grid-view .product-card .buy-btn {
         font-size: 12px;
         padding: 6px;
-        
     }
 
     /* Ajustes para tarjetas en vista lista */
