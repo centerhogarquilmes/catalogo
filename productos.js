@@ -1305,7 +1305,7 @@ const productos = [
             "images/lavarropas/Lavarropas_Columbia_LSC7000_Semiautomatico_7_kg_4.webp",
             "images/lavarropas/Lavarropas_Columbia_LSC7000_Semiautomatico_7_kg_5.webp"
         ],
-        descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Semiautomático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 0\n<strong>Inverter:</strong> No\n<strong>Secado a calor:</strong> No',
+        descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Semiautomático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 0\n<strong>Inverter:</strong> No\n<strong>Secado a calor:</strong> No',
         codigo: "2072095",
         caracteristicas: [
             "Marca: Columbia",
