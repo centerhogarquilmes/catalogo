@@ -665,7 +665,7 @@ body {
         position: absolute;
         top: 20px;
         right: 20px; /* Ajustado para mejor visibilidad en móvil */
-        color: #FFFFFF;
+        color: #ff6200;
         font-size: 30px; /* Ligeramente más pequeño para móvil */
         cursor: pointer;
         z-index: 2100;
@@ -733,7 +733,11 @@ body {
     margin-bottom: 15px;
 }
 
-
+.stock {
+    color: #ff6200;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
 .buy-btn {
     background-color: #02366e;
