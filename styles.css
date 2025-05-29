@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Eliminar el resaltado táctil azul en móviles */
+* {
+    -webkit-tap-highlight-color: transparent; /* Desactiva el resaltado azul */
+}
 
 body {
     font-family: 'Roboto', sans-serif;
