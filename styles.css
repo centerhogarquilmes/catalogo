@@ -2218,12 +2218,12 @@ body {
     }
 
     .product-card img {
-        max-height: 100px; /* Reducir tamaño de imagen en móvil */
+        max-height: 150px; /* Reducir tamaño de imagen en móvil */
         width: auto;
     }
 
     .product-grid.grid-view .product-card img {
-        max-height: 70px; /* Ajuste para mosaico */
+        max-height: 100px; /* Ajuste para mosaico */
     }
 
       .product-card h3 {
@@ -2297,8 +2297,8 @@ body {
     }
      
      .product-grid.list-view .product-card img {
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: 150px;
         object-fit: contain;
         flex-shrink: 0; /* Evita que la imagen se deforme */
     }
