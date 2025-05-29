@@ -364,6 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSuggestions();
     setupMenuToggle();
     setupFilters();
+    setupViewToggle(); // Nueva función
 
     const form = document.getElementById('contact-form');
     if (form) {
@@ -374,3 +375,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', adjustContentMargin);
 });
+
+
+function setupViewToggle() {
+    const viewToggle = document.getElementById('view-toggle');
+    const productGrid = document.getElementById('product-grid');
+    const gridBtn = document.querySelector('.view-btn.grid-view');
+    const listBtn = document.querySelector('.view-btn.list-view');
+
+    if (viewToggle && productGrid && gridBtn && listBtn) {
+        // Establecer vista mosaico como predeterminada en móvil
+        const defaultView = localStorage.getItem('preferredView') || 'grid';
+        productGrid.classList.remove('grid-view', 'list-view'); // Limpiar clases
+        productGrid.classList.add(defaultView + '-view');
+        if (defaultView === 'grid') {
+            gridBtn.classList.add('active');
+            listBtn.classList.remove('active');
+        } else {
+            listBtn.classList.add('active');
+            gridBtn.classList.remove('active');
+        }
+
+        gridBtn.addEventListener('click', () => {
+            console.log('Cambiando a vista en mosaico');
+            productGrid.classList.remove('list-view');
+            productGrid.classList.add('grid-view');
+            gridBtn.classList.add('active');
+            listBtn.classList.remove('active');
+            localStorage.setItem('preferredView', 'grid');
+        });
+
+        listBtn.addEventListener('click', () => {
+            console.log('Cambiando a vista en lista');
+            productGrid.classList.remove('grid-view');
+            productGrid.classList.add('list-view');
+            listBtn.classList.add('active');
+            gridBtn.classList.remove('active');
+            localStorage.setItem('preferredView', 'list');
+        });
+
+        // Forzar actualización de estilos al cargar
+        window.dispatchEvent(new Event('resize'));
+    } else {
+        console.warn('No se encontraron los elementos para el toggle de vista');
+    }
+}

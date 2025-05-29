@@ -2091,3 +2091,260 @@ body {
     right: 20px;
     z-index: 1000; /* Igual que .filter-float */
 }
+
+/* View Toggle Buttons */
+.view-toggle {
+    display: none; /* Oculto por defecto, visible solo en móvil */
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.view-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.view-btn svg {
+    display: block;
+    stroke: #333333;
+}
+
+.view-btn:hover {
+    background-color: #F5F5F5;
+    border-color: #FF6200;
+}
+
+.view-btn.active {
+    background-color: #FF6200;
+    border-color: #FF6200;
+}
+
+.view-btn.active svg {
+    stroke: #FFFFFF;
+}
+
+/* Ajustes para product-grid y product-card en móvil */
+@media (max-width: 768px) {
+    .view-toggle {
+        display: block; /* Mostrar botones en móvil */
+    }
+
+    .product-grid {
+        display: flex;
+        flex-direction: column; /* Por defecto, vista en lista */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+        gap: 15px;
+    }
+
+    .product-grid.grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Mosaico en móvil */
+        gap: 10px;
+        align-items: center; /* Centra las tarjetas en el grid */
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra contenido dentro de la tarjeta */
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        width: 100%; /* Asegura que la tarjeta ocupe el ancho disponible */
+        max-width: 300px; /* Limita el ancho máximo para mejor estética */
+        box-sizing: border-box;
+    }
+
+    .product-grid.grid-view .product-card {
+        padding: 8px;
+    }
+
+    .product-card img {
+        max-height: 80px; /* Reducir tamaño de imagen en móvil */
+        width: auto;
+    }
+
+    .product-grid.grid-view .product-card img {
+        max-height: 70px; /* Ajuste para mosaico */
+    }
+
+      .product-card h3 {
+        font-size: 14px;
+        margin: 8px 0;
+        text-align: center;
+        white-space: normal; /* Permitir saltos de línea */
+        overflow: hidden;
+        line-height: 1.4; /* Mejorar legibilidad */
+        max-height: 4.8em; /* Hasta 3 líneas (1.4em * 3) */
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limitar a 3 líneas */
+        -webkit-box-orient: vertical;
+    }
+    
+     .product-grid.grid-view .product-card h3 {
+        font-size: 13px;
+        max-height: 4.2em; /* Ajuste para mosaico, 3 líneas */
+        -webkit-line-clamp: 3;
+    }
+
+     .product-card .product-code {
+        font-size: 12px;
+        color: #666666;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .product-grid.grid-view .product-card .product-code {
+        font-size: 11px;
+    }
+
+    .product-card .buy-btn {
+        font-size: 13px;
+        padding: 8px;
+        width: 100%;
+        max-width: 150px; /* Limita el ancho del botón */
+        align-self: center; /* Centra el botón */
+    }
+
+    .product-grid.grid-view .product-card .buy-btn {
+        font-size: 12px;
+        padding: 6px;
+        
+    }
+
+    /* Ajustes para tarjetas en vista lista */
+    .product-grid.list-view .product-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; /* Alinea elementos internos a la izquierda */
+        gap: 10px;
+        padding: 10px;
+        width: 90%; /* Limita el ancho para centrado visual */
+        max-width: 400px; /* Máximo ancho para evitar estiramiento */
+        margin: 0 auto; /* Centra la tarjeta horizontalmente */
+        box-sizing: border-box;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    .product-grid.list-view .product-card .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1; /* Ocupa el espacio disponible */
+    }
+     
+     .product-grid.list-view .product-card img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        flex-shrink: 0; /* Evita que la imagen se deforme */
+    }
+
+    .product-grid.list-view .product-card h3 {
+        font-size: 14px;
+        text-align: center; /* Alineación a la izquierda para vista lista */
+        white-space: normal;
+        max-height: 4.8em; /* Hasta 3 líneas */
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .product-grid.list-view .product-card .product-code {
+        font-size: 12px;
+        text-align: center;
+        color: #666666;
+    }
+
+
+    .product-grid.list-view .product-card .buy-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+        width: auto;
+        align-self: center; /* Botón alineado a la izquierda */
+        background-color: #02366e;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+     /* Centrar el contenedor product-grid en vista lista */
+    .product-grid.list-view {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra las tarjetas horizontalmente */
+        gap: 15px;
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+}
+
+/* Asegurar que el diseño de escritorio no cambie */
+@media (min-width: 769px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .product-card img {
+        max-height: 100px;
+        width: auto;
+    }
+
+    @media (max-width: 768px) {
+    .product-grid.list-view .product-card .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1; /* Ocupa el espacio disponible */
+    }
+
+    .product-grid.list-view .product-card .buy-btn {
+        align-self: center; /* Alinear el botón a la izquierda en vista lista */
+    }
+    .product-card h3 {
+        font-size: 14px;
+        margin: 8px 0;
+        text-align: center;
+        white-space: normal; /* Permitir saltos de línea */
+        overflow: visible; /* Mostrar todo el texto */
+        text-overflow: initial; /* Desactivar elipsis */
+        line-height: 1.4; /* Mejorar legibilidad */
+        max-height: 3.6em; /* Limitar a ~2 líneas */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    .product-grid.grid-view .product-card h3 {
+        font-size: 13px;
+        max-height: 3.4em; /* Ajuste para mosaico */
+    }
+
+}
+
+    .product-card .product-code {
+        font-size: 14px;
+    }
+
+    .product-card .buy-btn {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+}

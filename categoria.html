@@ -145,6 +145,23 @@
                 </div>
                 <div class="results">
                     <h2 id="category-title">Productos</h2>
+                        <div class="view-toggle" id="view-toggle">
+                            <button class="view-btn grid-view active" data-view="grid" title="Vista en mosaico" aria-label="Vista en mosaico">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </button>
+                            <button class="view-btn list-view" data-view="list" title="Vista en lista" aria-label="Vista en lista">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
                     <div class="active-filters" id="active-filters">
                         <!-- Filtros activos se muestran aquí -->
                     </div>
@@ -536,17 +553,19 @@
             `;
         } else {
             productosFiltrados.forEach(producto => {
-                const card = document.createElement('div');
-                card.className = 'product-card';
-                card.innerHTML = `
-                    <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
-                        <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
-                        <h3>${producto.nombre}</h3>
-                        <p class="product-code">Código: ${producto.codigo}</p>
-                        <button class="buy-btn">Ver más</button>
-                    </a>
-                `;
-                productGrid.appendChild(card);
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+        <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
+            <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
+            <div class="text-container">
+                <h3>${producto.nombre}</h3>
+                <p class="product-code">Código: ${producto.codigo}</p>
+                <button class="buy-btn">Ver más</button>
+            </div>
+        </a>
+    `;
+    productGrid.appendChild(card);
             });
         }
 
