@@ -6,14 +6,7 @@ const productosDestacados = [
     "2074218", // TV LED ENOVA 50" smart
     "2075246"  // Motorola MOTO E15
 ];
-
 const productos = [
-
-
-
-
-
-
 
 
     /////---------- Cocinas ----------/////
@@ -30,7 +23,6 @@ const productos = [
         codigo: "18079",
         caracteristicas: ["Marca: Escorial", "Modelo: Candor", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Florencia 5507F 3 Hornallas",
@@ -45,7 +37,6 @@ const productos = [
         codigo: "2074709",
         caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Escorial Master S2 Classic gn Negra",
@@ -60,7 +51,6 @@ const productos = [
         codigo: "2073969",
         caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Escorial Candor Black",
@@ -77,7 +67,6 @@ const productos = [
         codigo: "2072621",
         caracteristicas: ["Marca: Escorial", "Modelo: Candor Black", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Escorial Master Classic",
@@ -93,7 +82,6 @@ const productos = [
         codigo: "2073930",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Escorial PALACE CRISTAL LX",
@@ -106,7 +94,6 @@ const productos = [
         codigo: "15760",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Escorial Master Classic ge Inox",
@@ -123,7 +110,6 @@ const productos = [
         codigo: "2075088",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Florencia 5518F - Inox.",
@@ -139,7 +125,6 @@ const productos = [
         codigo: "2071810 ",
         caracteristicas: ["Marca: Florencia", "Modelo: 5518F", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Escorial Master Style Multigas Bca.",
@@ -155,7 +140,6 @@ const productos = [
         codigo: "2073910",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Style", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Volcan 87643 55cm 4 horn. Blanca luz-enc.elec",
@@ -167,7 +151,6 @@ const productos = [
         codigo: "2073893",
         caracteristicas: ["Marca: Volcan", "Modelo: 87643", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Volcan 87644 55cm 4 horn. Blanca sin luz",
@@ -179,7 +162,6 @@ const productos = [
         codigo: "2074783",
         caracteristicas: ["Marca: Volcan", "Modelo: 87644", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Volcan 87673 55cm 4 horn. inox",
@@ -195,7 +177,6 @@ const productos = [
         codigo: "2073914",
         caracteristicas: ["Marca: Volcan", "Modelo: 87673", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Morelli Industrial Saho Kuro 550 p/v-r/a 180001",
@@ -211,7 +192,6 @@ const productos = [
         codigo: "2074224",
         caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
-
     {
         categoria: "Cocinas",
         nombre: "Cocina Morelli Industrial Jitaku/saho 820 18062 5 horn. inox",
@@ -262,9 +242,6 @@ const productos = [
         codigo: "2074218",
         caracteristicas: ["Marca: Enova", "Modelo: TE50UA10", "Garantía: 1 año"]
     },
-
-
-    
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
@@ -279,8 +256,8 @@ const productos = [
         caracteristicas: [
           "Marca: Enova", "Modelo: Te32ha10", "Garantía: 1 año"
         ]
-      },
-      {
+    },
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED RCA 32" AND32Y Android',
@@ -296,8 +273,7 @@ const productos = [
         caracteristicas: [ "Marca: RCA", "Modelo: AND32Y", "Garantía: 1 año"
         ]
         
-      },
-
+    },
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
@@ -316,9 +292,8 @@ const productos = [
           "Modelo: 32PHD6910/77 ",
           "Garantía: 1 año"
         ]
-      },
-
-        {
+    },
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED RCA 40" R40AND-F Smart c/ Android',
@@ -336,7 +311,6 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
@@ -355,7 +329,6 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
@@ -375,7 +348,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Kanji 40" (7635718719284) HD Smart Google Tv',
@@ -393,7 +366,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Kodak 50" QLED 4K Smart Google tv',
@@ -410,7 +383,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Noblex 32" DR/DV32X7080 Android Tv',
@@ -430,7 +403,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Noblex 50" DR50X8580 Smart Google tv',
@@ -450,7 +423,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Noblex 58" DB58X7550 Android 4K',
@@ -468,7 +441,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Philco 40" PLD40HS24 SMART TV Vidaa',
@@ -486,7 +459,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
@@ -504,7 +477,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED RCA 32" AND32Y/C/R32AND-F  Android Smart',
@@ -521,7 +494,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Samsung 32" UN32T4300AG  SMART HD',
@@ -541,7 +514,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Tv y audio",
         subcategoria: "Tv",
         nombre: 'TV LED Samsung 50" LH50BECHVGGZB  Smart UHD Bussines Crystal 4K',
@@ -577,218 +550,402 @@ const productos = [
 
 
 
-   /////---------- Hornos, microondas y freidoras ----------/////
- 
 
+    /////---------- Hornos, microondas y freidoras ----------/////
+         /////---------- Hornos ----------/////
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno electrico Ultracomb UC36B 36 lts 1200w',
-    imagen: "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_1.webp",
+    imagen: "images/hornos/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_1.webp",
     imagenes: [
-        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_1.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_2.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_3.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_4.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_5.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_6.webp"
+        "images/hornos/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_1.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_2.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_3.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_4.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_5.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC36B_36_lts_1200w_6.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 36\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1200\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 36\n<strong>Potencia (W):</strong> 1200\n<strong>Convector:</strong> Sí',
     codigo: "2074311",
     caracteristicas: [
         "Marca: Ultracomb",
         "Modelo: 2074311",
         "Garantía: 1 año"
     ]
-},
-
-{
+    },
+    {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno electrico Tramontina 55LHEG 55 lts Silver Cook',
-    imagen: "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_1.webp",
+    imagen: "images/hornos/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_1.webp",
     imagenes: [
-        "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_1.webp",
-        "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_2.webp",
-        "images/horno/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_3.webp"
+        "images/hornos/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_1.webp",
+        "images/hornos/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_2.webp",
+        "images/hornos/Horno_electrico_Tramontina_55LHEG_55_lts_Silver_Cook_3.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 55\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 55\n<strong>Potencia (W):</strong> 2000\n<strong>Convector:</strong> Sí',
     codigo: "2074970",
     caracteristicas: [
         "Marca: Tramontina",
         "Modelo: 2074970",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno Electrico Neba NH52SHPN 52 lts negro',
-    imagen: "images/horno/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_1.webp",
+    imagen: "images/hornos/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_1.webp",
     imagenes: [
-        "images/horno/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_1.webp",
-        "images/horno/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_2.webp"
+        "images/hornos/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_1.webp",
+        "images/hornos/Horno_Electrico_Neba_NH52SHPN_52_lts_negro_2.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 52\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2030\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 52\n<strong>Potencia (W):</strong> 2030\n\n<strong>Convector:</strong> Sí',
     codigo: "2074163",
     caracteristicas: [
         "Marca: Neba",
         "Modelo: 2074163",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno electrico Ultracomb UC-45CN 45lts',
-    imagen: "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_1.webp",
+    imagen: "images/hornos/Horno_electrico_Ultracomb_UC_45CN_45lts_1.webp",
     imagenes: [
-        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_1.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_2.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_3.webp",
-        "images/horno/Horno_electrico_Ultracomb_UC_45CN_45lts_4.webp"
+        "images/hornos/Horno_electrico_Ultracomb_UC_45CN_45lts_1.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC_45CN_45lts_2.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC_45CN_45lts_3.webp",
+        "images/hornos/Horno_electrico_Ultracomb_UC_45CN_45lts_4.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 45\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1600\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 45\n<strong>Potencia (W):</strong> 1600\n<strong>Convector:</strong> Sí',
     codigo: "2073936",
     caracteristicas: [
         "Marca: Ultracomb",
         "Modelo: 2073936",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno electrico Bgh BHE35S22A c/anafe 35lts 1600wts',
-    imagen: "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_1.webp",
+    imagen: "images/hornos/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_1.webp",
     imagenes: [
-        "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_1.webp",
-        "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_2.webp",
-        "images/horno/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_3.webp"
+        "images/hornos/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_1.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_2.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE35S22A_c_anafe_35lts_1600wts_3.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 35\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1600\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 35\n<strong>Potencia (W):</strong> 1600\n<strong>Anafes:</strong> Sí\n<strong>Convector:</strong> Sí',
     codigo: "2075307",
     caracteristicas: [
         "Marca: BGH",
         "Modelo: 2075307",
         "Garantía: 1 año"
     ]
-},
-
-
-{
-    categoria: "Hornos, Microondas y Freidoras",
-    subcategoria: "Hornos",
-    nombre: 'Horno electrico Crivel HF-153 Spiedo',
-    imagen: "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp",
-    imagenes: [
-        "images/horno/Horno_electrico_Crivel_HF_153_Spiedo_1.webp"
-    ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 53\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> Sí',
-    codigo: "2072972",
-    caracteristicas: [
-        "Marca: Crivel",
-        "Modelo: 2072972",
-        "Garantía: 1 año"
-    ]
-},
-
+    },
+    {
+        categoria: "Hornos, Microondas y Freidoras",
+        subcategoria: "Hornos",
+        nombre: 'Horno electrico Crivel HF-153 Spiedo',
+        imagen: "images/hornos/Horno_electrico_Crivel_HF_153_Spiedo_1.webp",
+        imagenes: [
+            "images/hornos/Horno_electrico_Crivel_HF_153_Spiedo_1.webp"
+        ],
+        descripcion: '<strong>Capacidad (Litros):</strong> 53\n<strong>Potencia (W):</strong> 2000\n<strong>Spiedo:</strong> Sí\n<strong>Convector:</strong> Sí',
+        codigo: "2072972",
+        caracteristicas: [
+            "Marca: Crivel",
+            "Modelo: 2072972",
+            "Garantía: 1 año"
+        ]
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno electrico Crivel HFS-153 rcl 2 anafes',
-    imagen: "images/horno/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_1.webp",
+    imagen: "images/hornos/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_1.webp",
     imagenes: [
-        "images/horno/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_1.webp",
-        "images/horno/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_2.webp"
+        "images/hornos/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_1.webp",
+        "images/hornos/Horno_electrico_Crivel_HFS_153_rcl_2_anafes_2.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 50\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> Sí',
+    descripcion: '<strong>Capacidad (Litros):</strong> 50\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> Sí\n<strong>Convector:</strong> Sí',
     codigo: "2072971",
     caracteristicas: [
         "Marca: Crivel",
         "Modelo: 2072971",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno electrico Bgh BHE64M20A 64 lts',
-    imagen: "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_1.webp",
+    imagen: "images/hornos/Horno_electrico_Bgh_BHE64M20A_64_lts_1.webp",
     imagenes: [
-        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_1.webp",
-        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_2.webp",
-        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_3.webp",
-        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_4.webp",
-        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_5.webp",
-        "images/horno/Horno_electrico_Bgh_BHE64M20A_64_lts_6.webp"
+        "images/hornos/Horno_electrico_Bgh_BHE64M20A_64_lts_1.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE64M20A_64_lts_2.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE64M20A_64_lts_3.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE64M20A_64_lts_4.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE64M20A_64_lts_5.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE64M20A_64_lts_6.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 64\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2200\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 64\n<strong>Potencia (W):</strong> 2200\n<strong>Anafes:</strong> Sí\n<strong>Convector:</strong> Sí',
     codigo: "2073480",
     caracteristicas: [
         "Marca: BGH",
         "Modelo: 2073480",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno electrico Bgh BHE30FN24T c/Airfryer 30lts 1600wts',
-    imagen: "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_1.webp",
+    imagen: "images/hornos/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_1.webp",
     imagenes: [
-        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_1.webp",
-        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_2.webp",
-        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_3.webp",
-        "images/horno/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_4.webp"
+        "images/hornos/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_1.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_2.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_3.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE30FN24T_c_Airfryer_30lts_1600wts_4.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 30\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1600\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 30\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 1600',
     codigo: "2075309",
     caracteristicas: [
         "Marca: BGH",
         "Modelo: 2075309",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno eléctrico Ultracomb UC-110CLN 110lts Conveccion',
-    imagen: "images/horno/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_1.webp",
+    imagen: "images/hornos/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_1.webp",
     imagenes: [
-        "images/horno/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_1.webp",
-        "images/horno/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_2.webp"
+        "images/hornos/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_1.webp",
+        "images/hornos/Horno_eléctrico_Ultracomb_UC_110CLN_110lts_Conveccion_2.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 110\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2400\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 110\n<strong>Potencia (W):</strong> 2400\n<strong>Convector:</strong> Sí',
     codigo: "2074390",
     caracteristicas: [
         "Marca: Ultracomb",
         "Modelo: 2074390",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Hornos, Microondas y Freidoras",
     subcategoria: "Hornos",
     nombre: 'Horno Florencia de empotrar 7857F Eléctrico',
-    imagen: "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_1.webp",
+    imagen: "images/hornos/Horno_Florencia_de_empotrar_7857F_Eléctrico_1.webp",
     imagenes: [
-        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_1.webp",
-        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_2.webp",
-        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_3.webp",
-        "images/horno/Horno_Florencia_de_empotrar_7857F_Eléctrico_4.webp"
+        "images/hornos/Horno_Florencia_de_empotrar_7857F_Eléctrico_1.webp",
+        "images/hornos/Horno_Florencia_de_empotrar_7857F_Eléctrico_2.webp",
+        "images/hornos/Horno_Florencia_de_empotrar_7857F_Eléctrico_3.webp",
+        "images/hornos/Horno_Florencia_de_empotrar_7857F_Eléctrico_4.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 63\n<strong>Tipo:</strong> Horno\n<strong>Potencia (W):</strong> 2150\n<strong>Anafes:</strong> No\n<strong>Spiedo:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 63\nstrong>Potencia (W):</strong> 2150\n<strong>Convector:</strong> Sí',
     codigo: "2072768 ",
     caracteristicas: [
         "Marca: Florencia",
         "Modelo: 2072768 ",
         "Garantía: 1 año"
     ]
-},
+    },
 
 
+    /////---------- Microondas ----------/////
 
+
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Kanji 23lts digital',
+    imagen: "images/microondas/Microondas_Kanji_23lts_digital_4.webp",
+    imagenes: [
+        "images/microondas/Microondas_Kanji_23lts_digital_4.webp",
+        "images/microondas/Microondas_Kanji_23lts_digital_1.webp",
+        "images/microondas/Microondas_Kanji_23lts_digital_2.webp",
+        "images/microondas/Microondas_Kanji_23lts_digital_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 23\n<strong>Potencia (W):</strong> 1000\n<strong>Tipo de control:</strong> Digital',
+    codigo: "2075166",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075166",
+        "Garantía: 1 año"
+    ]
+    },
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Bgh B120DN 20lts digital 700Wts Negro',
+    imagen: "images/microondas/Microondas_Bgh_B120DN_20lts_digital_700Wts_Negro_1.webp",
+    imagenes: [
+        "images/microondas/Microondas_Bgh_B120DN_20lts_digital_700Wts_Negro_1.webp",
+        "images/microondas/Microondas_Bgh_B120DN_20lts_digital_700Wts_Negro_2.webp",
+        "images/microondas/Microondas_Bgh_B120DN_20lts_digital_700Wts_Negro_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 20\n<strong>Potencia (W):</strong> 700',
+    codigo: "2073917",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2073917",
+        "Garantía: 1 año"
+    ]
+    },
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Tramontina Glass Cook 20 lts MCM Silver-Negro',
+    imagen: "images/microondas/Microondas_Tramontina_Glass_Cook_20_lts_MCM_Silver_Negro_1.webp",
+    imagenes: [
+        "images/microondas/Microondas_Tramontina_Glass_Cook_20_lts_MCM_Silver_Negro_1.webp",
+        "images/microondas/Microondas_Tramontina_Glass_Cook_20_lts_MCM_Silver_Negro_2.webp",
+        "images/microondas/Microondas_Tramontina_Glass_Cook_20_lts_MCM_Silver_Negro_3.webp",
+        "images/microondas/Microondas_Tramontina_Glass_Cook_20_lts_MCM_Silver_Negro_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 20\n<strong>Potencia (W):</strong> 700',
+    codigo: "2075023",
+    caracteristicas: [
+        "Marca: Tramontina",
+        "Modelo: 2075023",
+        "Garantía: 1 año"
+    ]
+    },
+
+
+    /////---------- Freidoras ----------/////
+
+
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora kanji de aire 1802 7.5lts 1800wts',
+    imagen: "images/freidoras/Freidora_kanji_de_aire_1802_7_5lts_1800wts_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_kanji_de_aire_1802_7_5lts_1800wts_1.webp",
+        "images/freidoras/Freidora_kanji_de_aire_1802_7_5lts_1800wts_2.webp",
+        "images/freidoras/Freidora_kanji_de_aire_1802_7_5lts_1800wts_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 7,5\n<strong>Potencia (W):</strong> 1800\n<strong>Tipo de control:</strong> Digital',
+    codigo: "2075198",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075198",
+        "Garantía: 1 año"
+    ]
+    },
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Kanji de aire 10 lts digital',
+    imagen: "images/freidoras/Freidora_Kanji_de_aire_10_lts_digital_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_Kanji_de_aire_10_lts_digital_1.webp",
+        "images/freidoras/Freidora_Kanji_de_aire_10_lts_digital_2.webp",
+        "images/freidoras/Freidora_Kanji_de_aire_10_lts_digital_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 10\n<strong>Potencia (W):</strong> 1800',
+    codigo: "2075197",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075197",
+        "Garantía: 1 año"
+    ]
+    },
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Moulinex AF203158 Fry Uno 1.8lts plast wht',
+    imagen: "images/freidoras/Freidora_Moulinex_AF203158_Fry_Uno_1_8lts_plast_wht_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_Moulinex_AF203158_Fry_Uno_1_8lts_plast_wht_1.webp",
+        "images/freidoras/Freidora_Moulinex_AF203158_Fry_Uno_1_8lts_plast_wht_2.webp",
+        "images/freidoras/Freidora_Moulinex_AF203158_Fry_Uno_1_8lts_plast_wht_3.webp",
+        "images/freidoras/Freidora_Moulinex_AF203158_Fry_Uno_1_8lts_plast_wht_4.webp",
+        "images/freidoras/Freidora_Moulinex_AF203158_Fry_Uno_1_8lts_plast_wht_5.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.8\n<strong>Potencia (W):</strong> 1600',
+    codigo: "2073798",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2073798",
+        "Garantía: 1 año"
+    ]
+    },
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora por aire Yelmo FR7309 5 lts 1400w',
+    imagen: "images/freidoras/Freidora_por_aire_Yelmo_FR7309_5_lts_1400w_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_por_aire_Yelmo_FR7309_5_lts_1400w_1.webp",
+        "images/freidoras/Freidora_por_aire_Yelmo_FR7309_5_lts_1400w_2.webp",
+        "images/freidoras/Freidora_por_aire_Yelmo_FR7309_5_lts_1400w_3.webp",
+        "images/freidoras/Freidora_por_aire_Yelmo_FR7309_5_lts_1400w_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 5\n<strong>Potencia (W):</strong> 1400',
+    codigo: "2075092",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2075092",
+        "Garantía: 1 año"
+    ]
+    },
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora por aire Yelmo FR7311 Dig 7 lts 1700w',
+    imagen: "images/freidoras/Freidora_por_aire_Yelmo_FR7311_Dig_7_lts_1700w_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_por_aire_Yelmo_FR7311_Dig_7_lts_1700w_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 7\n<strong>Potencia (W):</strong> 1700',
+    codigo: "2075280",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2075280",
+        "Garantía: 1 año"
+    ]
+    },
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Steel Home sin aceite Kentuchy 5lts 1500w digital',
+    imagen: "images/freidoras/Freidora_Steel_Home_sin_aceite_Kentuchy_5lts_1500w_digital_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_Steel_Home_sin_aceite_Kentuchy_5lts_1500w_digital_1.webp",
+        "images/freidoras/Freidora_Steel_Home_sin_aceite_Kentuchy_5lts_1500w_digital_2.webp",
+        "images/freidoras/Freidora_Steel_Home_sin_aceite_Kentuchy_5lts_1500w_digital_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 5\n<strong>Potencia (W):</strong> 1500',
+    codigo: "2075303",
+    caracteristicas: [
+        "Marca: Steel Home",
+        "Modelo: 2075303",
+        "Garantía: 1 año"
+    ]
+    },   
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Steel Home sin aceite Oregon 8lts 1700w digital',
+    imagen: "images/freidoras/Freidora_Steel_Home_sin_aceite_Oregon_8lts_1700w_digital_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_Steel_Home_sin_aceite_Oregon_8lts_1700w_digital_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 8\n<strong>Potencia (W):</strong> 1700',
+    codigo: "2075305",
+    caracteristicas: [
+        "Marca: Steel Home",
+        "Modelo: 2075305",
+        "Garantía: 1 año"
+    ]
+    },
 
 
 
@@ -824,7 +981,6 @@ const productos = [
         codigo: "2073101",
         caracteristicas: ["Marca: Samsung", "Modelo: RT29K577JS8", "Garantía: 1 año"]
     },
-
     {
         categoria: "heladeras",
         subcategoria: "No frost",
@@ -839,7 +995,6 @@ const productos = [
         codigo: "2075205",
         caracteristicas: ["Marca: Gafa", "Modelo: HGNW3900P", "Garantía: 1 año"]
     },
-
     {
         categoria: "heladeras",
         subcategoria: "Ciclica",
@@ -899,7 +1054,6 @@ const productos = [
         codigo: "2075258",
         caracteristicas: ["Marca: Philco", "Modelo: PHCT302X", "Garantía: 1 año"]
     },
-
     {
         categoria: "heladeras",
         subcategoria: "Ciclica",
@@ -915,7 +1069,6 @@ const productos = [
         codigo: "2075205",
         caracteristicas: ["Marca: Philco", "Modelo: PHCT341B", "Garantía: 1 año"]
     },
-
     {
         categoria: "heladeras",
         subcategoria: "No frost",
@@ -931,7 +1084,6 @@ const productos = [
         codigo: "2074199",
         caracteristicas: ["Marca: Samsung", "Modelo: RB31FSRNDSA", "Garantía: 1 año"]
     },
-
     {
         categoria: "heladeras",
         subcategoria: "No frost",
@@ -947,7 +1099,6 @@ const productos = [
         codigo: "2072958",
         caracteristicas: ["Marca: Samsung", "Modelo: RT32k5070S8", "Garantía: 1 año"]
     },
-    
     {
         categoria: "heladeras",
         subcategoria: "No frost",
@@ -963,7 +1114,6 @@ const productos = [
         codigo: "2074499",
         caracteristicas: ["Marca: Samsung", "Modelo: RT29K507JS8", "Garantía: 1 año"]
     },
-    
     {
         categoria: "heladeras",
         subcategoria: "No frost",
@@ -979,7 +1129,6 @@ const productos = [
         codigo: "2072527",
         caracteristicas: ["Marca: Samsung", "Modelo: RT32K5070WW", "Garantía: 1 año"]
     },
-    
     {
         categoria: "heladeras",
         subcategoria: "No frost",
@@ -997,8 +1146,6 @@ const productos = [
         codigo: "2075208",
         caracteristicas: ["Marca: Whirlpool", "Modelo: WRE57CK", "Garantía: 1 año"]
     },
-
-
     {
         categoria: "heladeras",
         subcategoria: "No frost",
@@ -1014,16 +1161,6 @@ const productos = [
         codigo: "2075161",
         caracteristicas: ["Marca: Samsung", "Modelo: RT42DG6730B1", "Garantía: 1 año"]
     },
-
-
-
-    
-
-
-
-
-
-
 
 
 
@@ -1043,6 +1180,7 @@ const productos = [
 
 
     /////---------- Lavarropas ----------/////
+
     {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
@@ -1060,9 +1198,6 @@ const productos = [
         codigo: "2075251",
         caracteristicas: ["Marca: Enova", "Modelo: EWMF-B7", "Garantía: 1 año"]
     },
-
-    
-
     {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
@@ -1082,7 +1217,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas BGH Inverter 8kg 1400 rpm Blanco c/frontal BWFI08W24AR',
@@ -1100,7 +1235,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas BGH Inverter 6kg 1000 rpm Silver c/frontal BWFI06S24AR',
@@ -1119,7 +1254,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Columbia LSC10000 Semiautomatico 10 kg',
@@ -1139,7 +1274,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         subcategoria: "Lavarropas",
@@ -1158,7 +1293,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Columbia LSC7000 Semiautomatico 7 kg',
@@ -1178,7 +1313,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Columbia LSC7001 Semiautomatico 7 kg c/bomba',
@@ -1196,7 +1331,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Drean GOLD BLUE 10.6 ECO +',
@@ -1218,7 +1353,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Patrick LTPK67SB 6kg c/s semiauto.',
@@ -1239,7 +1374,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Samsung WA85C5441BWUBG c/sup 8.5 kg 700 rpm Blanco Inverter',
@@ -1261,7 +1396,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Samsung WW70AA46BX 7 kg 1400 rpm Inox',
@@ -1281,7 +1416,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavarropas",
         nombre: 'Lavarropas Steel Home LRSH56SB0 Redondo 5kg 6 programas',
@@ -1297,7 +1432,7 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
-        {
+    {
         categoria: "Lavado",
         subcategoria: "Lavasecarropas",
         nombre: 'Lavasecarropas Samsung WD95A4453BWUBG 9.5kg Blanco',
@@ -1338,14 +1473,8 @@ const productos = [
 
 
 
-
-    
-
-
-
-
-
     /////---------- Celulares ----------/////
+
     {
         categoria: "Tecnologia",
         subcategoria: "Celulares",
@@ -1360,9 +1489,6 @@ const productos = [
         codigo: "2075246",
         caracteristicas: ["Marca: Motorola", "Modelo: XT2523-8", "Garantía: 1 año"]
     },
-
-    
-
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1379,7 +1505,7 @@ const productos = [
         "Modelo: 2074907 ",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1398,7 +1524,7 @@ const productos = [
         "Modelo: 2074414",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1421,7 +1547,7 @@ const productos = [
         "Modelo: 2075006 ",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1438,7 +1564,7 @@ const productos = [
         "Modelo: 2074797",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1457,7 +1583,7 @@ const productos = [
         "Modelo: 2075247",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1476,7 +1602,7 @@ const productos = [
         "Modelo: 2075005",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1495,7 +1621,7 @@ const productos = [
         "Modelo: 2074637",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1518,7 +1644,7 @@ const productos = [
         "Modelo: 2075248",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1538,7 +1664,7 @@ const productos = [
         "Modelo: 2075140",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1557,7 +1683,7 @@ const productos = [
         "Modelo: 2074747",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1575,7 +1701,7 @@ const productos = [
         "Modelo: 2074804",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1595,7 +1721,7 @@ const productos = [
         "Modelo: 2074836",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1613,7 +1739,7 @@ const productos = [
         "Modelo: 2075291",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
@@ -1631,7 +1757,7 @@ const productos = [
         "Modelo: 2075292",
         "Garantía: 1 año"
     ]
-},
+    },
 
 
 
@@ -1649,26 +1775,10 @@ const productos = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     /////---------- Pequeños Electrodomesticos ----------/////
          
          /////---------- Pavas Electricas ----------/////
-
-
 
     {
     categoria: "pequeños electrodomesticos",
@@ -1688,7 +1798,7 @@ const productos = [
         "Modelo: 2075235",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1707,7 +1817,7 @@ const productos = [
         "Modelo: 2075236 ",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1725,7 +1835,7 @@ const productos = [
         "Modelo: 2071746",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1742,7 +1852,7 @@ const productos = [
         "Modelo: 2074904 ",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1764,7 +1874,7 @@ const productos = [
         "Modelo: 2073516 ",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1781,7 +1891,7 @@ const productos = [
         "Modelo: 2072885",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1799,7 +1909,7 @@ const productos = [
         "Modelo: 2072883",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1820,7 +1930,7 @@ const productos = [
         "Modelo: 2075300",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1839,7 +1949,7 @@ const productos = [
         "Modelo: 2075295",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "Pavas electricas",
@@ -1859,23 +1969,13 @@ const productos = [
         "Modelo: 20065",
         "Garantía: 1 año"
     ]
-},
+    },
 
-
-
-
-
-
-
-
-
-
- /////---------- Pequeños Electrodomesticos ----------/////
          
          /////---------- Cafeteras ----------/////
 
 
-{
+    {
     categoria: "pequeños electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Atma CA8143N/P de filtro 1.25lts Negra',
@@ -1893,9 +1993,8 @@ const productos = [
         "Modelo: 2071662",
         "Garantía: 1 año"
     ]
-},
-
-{
+    },
+    {
     categoria: "pequeños electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800 Filtro negra 6 tazas',
@@ -1912,10 +2011,8 @@ const productos = [
         "Modelo: 2072257",
         "Garantía: 1 año"
     ]
-},
-
-
-{
+    },
+    {
     categoria: "pequeños electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800S',
@@ -1930,7 +2027,7 @@ const productos = [
         "Modelo: 2072258",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "cafeteras",
@@ -1949,7 +2046,7 @@ const productos = [
         "Modelo: 2072848",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "cafeteras",
@@ -1968,7 +2065,7 @@ const productos = [
         "Modelo: 2075244",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "pequeños electrodomesticos",
     subcategoria: "cafeteras",
@@ -1987,7 +2084,10 @@ const productos = [
         "Modelo: 2073214",
         "Garantía: 1 año"
     ]
-},
+    },
+
+
+
 
 
 
@@ -2004,10 +2104,8 @@ const productos = [
 
 
         /////---------- Termotanques ----------/////
+
             /////---------- Gas ----------/////
-
-
-
 
     {
     categoria: "Termotanques",
@@ -2026,7 +2124,7 @@ const productos = [
         "Modelo: 2068932",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2042,9 +2140,7 @@ const productos = [
         "Modelo: 2073040",
         "Garantía: 1 año"
     ]
-},
-    
-    
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2060,7 +2156,7 @@ const productos = [
         "Modelo: 2073037",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2078,7 +2174,7 @@ const productos = [
         "Modelo: 2072108",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2094,8 +2190,7 @@ const productos = [
         "Modelo: 2079072",
         "Garantía: 1 año"
     ]
-},
-    
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2111,7 +2206,7 @@ const productos = [
         "Modelo: 2073041",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2127,8 +2222,7 @@ const productos = [
         "Modelo: 2073164",
         "Garantía: 1 año"
     ]
-},
-    
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2144,8 +2238,7 @@ const productos = [
         "Modelo: 2073038",
         "Garantía: 1 año"
     ]
-},
-   
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2161,9 +2254,7 @@ const productos = [
         "Modelo: 2073039",
         "Garantía: 1 año"
     ]
-},
-    
-    
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2179,7 +2270,7 @@ const productos = [
         "Modelo: 2072050",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2197,7 +2288,7 @@ const productos = [
         "Modelo: 2079065",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2213,7 +2304,7 @@ const productos = [
         "Modelo: 2079069",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2230,7 +2321,7 @@ const productos = [
         "Modelo: 2074364",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2250,7 +2341,7 @@ const productos = [
         "Modelo: 2075133",
         "Garantía: 1 año"
     ]
-},
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Gas",
@@ -2267,17 +2358,12 @@ const productos = [
         "Modelo: 17114",
         "Garantía: 1 año"
     ]
-},
-
-
-
-
-
+    },
 
         /////---------- Electrico ----------/////
 
 
-{
+    {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
     nombre: 'Termot. Señorial Zafiro TESZP-20 20lts electrico',
@@ -2292,8 +2378,8 @@ const productos = [
         "Modelo: 2075242",
         "Garantía: 1 año"
     ]
-},
-{
+    },
+    {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
     nombre: 'Termot. Señorial Family 090 Lts Elec pie/col A. recup 330010',
@@ -2309,9 +2395,8 @@ const productos = [
         "Modelo: 2073045",
         "Garantía: 1 año"
     ]
-},
-
-{
+    },
+    {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
     nombre: 'Termot. Saiar 55 lts electrico TEPC055ESARIK2',
@@ -2326,9 +2411,8 @@ const productos = [
         "Modelo: 17005",
         "Garantía: 1 año"
     ]
-},
-
-{
+    },
+    {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
     nombre: 'Termot. Ecotermo 70Lts Electrico Populi Carga Sup.',
@@ -2346,9 +2430,8 @@ const productos = [
         "Modelo: 2072245",
         "Garantía: 1 año"
     ]
-},
-
-{
+    },
+    {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
     nombre: 'Termot. Señorial Zafiro 095 Lts Elec col. entr. sup.330006',
@@ -2363,8 +2446,8 @@ const productos = [
         "Modelo: 2073044",
         "Garantía: 1 año"
     ]
-},
-{
+    },
+    {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
     nombre: 'Termot. Señorial Zafiro 65 elec 50lts col. entr. sup. 330005',
@@ -2379,8 +2462,8 @@ const productos = [
         "Modelo: 2073043",
         "Garantía: 1 año"
     ]
-},
-{
+    },
+    {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
     nombre: 'Termot. Escorial EL-90 90lts Electrico',
@@ -2396,8 +2479,7 @@ const productos = [
         "Modelo: 2071220",
         "Garantía: 1 año"
     ]
-},
-
+    },
     {
     categoria: "Termotanques",
     subcategoria: "Eléctrico",
@@ -2413,9 +2495,8 @@ const productos = [
         "Modelo: 2073042",
         "Garantía: 1 año"
     ]
-},
-
- {
+    },
+    {
     categoria: "Termotanques",
     subcategoria: "Electrico",
     nombre: 'Termot. Sherman 85 Eléctrico TECC085ESHK2',
@@ -2431,7 +2512,9 @@ const productos = [
         "Modelo: 21205",
         "Garantía: 1 año"
     ]
-},
+    },
+
+
 
 
 ];

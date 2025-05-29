@@ -95,11 +95,12 @@ const categoryFields = {
         subcategorias: [],
         folder: "cocinas",
         fields: [
-            { label: "Tipo de uso", name: "tipo de uso", type: "select", options: ["Domestica", "Industrial"] },
+            { label: "Tipo de uso", name: "tipo_uso", type: "select", options: ["Domestica", "Industrial"] },
             { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "85 x 56 x 60" },
             { label: "Válvula de seguridad", name: "valvula_seguridad", type: "select", options: ["Sí", "No"] },
-            { label: "Luz en el horno", name: "luz_horno", type: "select", options: ["No", "Sí"] },
-            { label: "Encendido eléctrico", name: "encendido_electrico", type: "select", options: ["No", "Sí"] },
+            { label: "Luz en el horno", name: "luz_horno", type: "checkbox" }, // Changed to checkbox
+            { label: "Encendido eléctrico", name: "encendido_electrico", type: "checkbox" }, // Changed to checkbox
+            { label: "Timer", name: "timer", type: "checkbox" }, // New checkbox field
             { label: "Tipo de gas", name: "tipo_gas", type: "text", placeholder: "Multigas" },
             { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
         ]
@@ -112,8 +113,8 @@ const categoryFields = {
             { label: "Tipo de tecnología", name: "tecnologia", type: "select", options: ["Cíclica", "No frost"] },
             { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "300" },
             { label: "Freezer", name: "freezer", type: "select", options: ["Sí", "No"] },
-            { label: "Dispenser de agua", name: "dispenser", type: "select", options: ["No", "Sí"] },
-            { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
+            { label: "Dispenser de agua", name: "dispenser", type: "checkbox" }, // Changed to checkbox
+            { label: "Inverter", name: "inverter", type: "checkbox" }, // Changed to checkbox
             { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
         ]
     },
@@ -204,13 +205,13 @@ const categoryFields = {
                 { label: "Tipo de lavado", name: "tipo_lavado", type: "select", options: ["Automático", "Semiautomático"] },
                 { label: "Tipo de carga", name: "tipo_carga", type: "select", options: ["Frontal", "Superior"] },
                 { label: "Velocidad de centrifugado (RPM)", name: "centrifugado", type: "text", placeholder: "1000" },
-                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] }
+                { label: "Inverter", name: "inverter", type: "checkbox" } // Changed to checkbox
             ],
             "Lavasecarropas": [
                 { label: "Capacidad lavado (kg)", name: "capacidad_lavado", type: "text", placeholder: "8" },
                 { label: "Capacidad secado (kg)", name: "capacidad_secado", type: "text", placeholder: "5" },
                 { label: "Tipo de carga", name: "tipo_carga", type: "select", options: ["Frontal", "Superior"] },
-                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] }
+                { label: "Inverter", name: "inverter", type: "checkbox" } // Changed to checkbox
             ],
             "Secarropas": [
                 { label: "Capacidad (kg)", name: "capacidad", type: "text", placeholder: "7" },
@@ -244,16 +245,32 @@ const categoryFields = {
 },
 
     "Hornos, Microondas y Freidoras": {
-    subcategorias: [],
-    folder: ["hornos", "microondas", "freidoras"], // Usar el tipo seleccionado como carpeta
-    fields: [
-        { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "25" },
-        { label: "Tipo", name: "tipo", type: "select", options: ["Horno", "Microondas", "Freidora"], default: "Horno" },
-        { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "900" },
-        { label: "Anafes", name: "anafes", type: "select", options: ["No", "Sí"], conditional: { field: "tipo", value: "Horno" } },             
-        { label: "Spiedo", name: "spiedo", type: "select", options: ["No", "Sí"], conditional: { field: "tipo", value: "Horno" } }
-    ]
-},
+        subcategorias: ["Hornos", "Microondas", "Freidoras"],
+        folders: {
+            "Hornos": "hornos",
+            "Microondas": "microondas",
+            "Freidoras": "freidoras"
+        },
+        fields: {
+            "Hornos": [
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "25" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "900" },
+                { label: "Anafes", name: "anafes", type: "checkbox" }, // Changed to checkbox
+                { label: "Spiedo", name: "spiedo", type: "checkbox" }, // Changed to checkbox
+                { label: "Grill", name: "grill", type: "checkbox" }, // New checkbox field
+                { label: "Conveccion", name: "conveccion", type: "checkbox" } // New checkbox field
+            ],
+            "Microondas": [
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "25" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "900" },
+                { label: "Grill", name: "grill", type: "checkbox" } // New checkbox field
+            ],
+            "Freidoras": [
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "25" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "900" }
+            ]
+        }
+    },
     "Pequeños Electrodomésticos": {
         subcategorias: ["Batidoras", "Licuadoras", "Multiprocesadoras", "Mixers", "Pavas Eléctricas", "Cafeteras", "Tostadoras", "Sandwicheras", "Exprimidores y Jugueras", "Picadoras"],
         folders: {
@@ -272,11 +289,13 @@ const categoryFields = {
             "Batidoras": [
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "500" },
                 { label: "Velocidades", name: "velocidades", type: "text", placeholder: "5" },
-                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.5" }
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.5" },
+                { label: "Bowl", name: "bowl", type: "checkbox" } // New checkbox field
             ],
             "Licuadoras": [
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "600" },
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.5" },
+                { label: "Jarra de vidrio", name: "jarra_vidrio", type: "checkbox" }, // New checkbox field
                 { label: "Cuchillas desmontables", name: "cuchillas", type: "select", options: ["Sí", "No"] }
             ],
             "Multiprocesadoras": [
@@ -292,7 +311,8 @@ const categoryFields = {
             "Pavas Eléctricas": [
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.7" },
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
-                { label: "Apagado automático", name: "apagado_auto", type: "select", options: ["Sí", "No"] }
+                { label: "Apagado automático", name: "apagado_auto", type: "select", options: ["Sí", "No"] },
+                { label: "Corte para mate", name: "corte_mate", type: "checkbox" } // New checkbox field
             ],
             "Cafeteras": [
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.2" },
@@ -421,19 +441,7 @@ function generateDynamicFields(category, subcategoria) {
 
     const fields = categoryFields[category].fields[subcategoria] || categoryFields[category].fields || [];
 
-    // Obtener el valor actual del campo "tipo" si ya existe
-    let tipoValue = '';
-    const existingTipoInput = document.getElementById('tipo');
-    if (existingTipoInput) {
-        tipoValue = existingTipoInput.value;
-    }
-
     fields.forEach(field => {
-        // Verificar si el campo es condicional y si se cumple la condición
-        if (field.conditional && field.conditional.field === 'tipo' && field.conditional.value !== tipoValue) {
-            return; // No renderizar el campo si no se cumple la condición
-        }
-
         const formGroup = document.createElement('div');
         formGroup.className = 'form-group';
 
@@ -450,24 +458,15 @@ function generateDynamicFields(category, subcategoria) {
                 const opt = document.createElement('option');
                 opt.value = option;
                 opt.textContent = option;
-                // Establecer la opción por defecto si existe
-                if (field.default && option === field.default && !tipoValue) {
-                    opt.selected = true;
-                    if (field.name === 'tipo') {
-                        tipoValue = option; // Actualizar tipoValue para condicionales
-                    }
-                }
                 select.appendChild(opt);
             });
-            // Agregar evento change para el campo tipo
-            if (field.name === 'tipo' && category === "Hornos, Microondas y Freidoras") {
-                select.addEventListener('change', () => {
-                    updateImagePlaceholders(category, subcategoria);
-                    // Actualizar solo los campos dinámicos
-                    generateDynamicFields(category, subcategoria);
-                });
-            }
             formGroup.appendChild(select);
+        } else if (field.type === 'checkbox') {
+            const input = document.createElement('input');
+            input.type = 'checkbox';
+            input.id = field.name;
+            input.name = field.name;
+            formGroup.appendChild(input);
         } else {
             const input = document.createElement(field.type === 'textarea' ? 'textarea' : 'input');
             input.id = field.name;
@@ -522,9 +521,6 @@ document.getElementById('product-form').addEventListener('submit', (e) => {
     if (categoryFields[categoria]) {
         if (subcategoria && categoryFields[categoria].folders && categoryFields[categoria].folders[subcategoria]) {
             folder = categoryFields[categoria].folders[subcategoria];
-        } else if (categoria === "Hornos, Microondas y Freidoras") {
-            const tipoInput = document.getElementById('tipo');
-            folder = tipoInput && tipoInput.value ? tipoInput.value.toLowerCase().replace(' ', '_') : 'hornos';
         } else {
             folder = categoryFields[categoria].folder || categoria.toLowerCase().replace(/ /g, '_').replace(/,/g, '');
         }
@@ -538,7 +534,7 @@ document.getElementById('product-form').addEventListener('submit', (e) => {
 
     const producto = {
         categoria,
-        subcategoria: subcategoria || undefined, // Solo incluir si no está vacío
+        subcategoria: subcategoria || undefined,
         nombre: document.getElementById('nombre').value,
         codigo: document.getElementById('codigo').value,
         imagen,
@@ -560,8 +556,14 @@ document.getElementById('product-form').addEventListener('submit', (e) => {
     let descripcionLines = [];
     fields.forEach(field => {
         const input = document.getElementById(field.name);
-        if (input && input.value) {
-            descripcionLines.push(`<strong>${field.label}:</strong> ${input.value}`);
+        if (input) {
+            if (field.type === 'checkbox') {
+                if (input.checked) {
+                    descripcionLines.push(`<strong>${field.label}:</strong> Sí`);
+                }
+            } else if (input.value) {
+                descripcionLines.push(`<strong>${field.label}:</strong> ${input.value}`);
+            }
         }
     });
     producto.descripcion = descripcionLines.join('\n');
