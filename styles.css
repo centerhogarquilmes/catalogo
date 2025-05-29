@@ -1427,11 +1427,11 @@ body {
         flex-direction: column;
         gap: 15px;
         text-align: left;
-        padding: 0 15px;
+        padding: 1 7px;
     }
 
     .nav-menu li {
-        padding: 7px 0;
+        padding: 1px 0;
         border-bottom: 0.3px solid #1a4971;
     }
 
@@ -1502,7 +1502,7 @@ body {
 
     .nav-menu .has-submenu.active {
         background-color: #032747a6; /* Fondo más oscuro para la categoría activa */
-        transition: background-color 1s ease; /* Transición suave */
+        transition: background-color 0.5s ease; /* Transición suave */
     }
 
     
