@@ -2297,8 +2297,8 @@ body {
     }
      
      .product-grid.list-view .product-card img {
-        width: 200px;
-        height: 200px;
+        width: 800;
+        height: 800px;
         object-fit: contain;
         flex-shrink: 0; /* Evita que la imagen se deforme */
     }
