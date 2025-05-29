@@ -1781,8 +1781,8 @@ const productos = [
          /////---------- Pavas Electricas ----------/////
 
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD469590 1lts 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD469590_1lts_2200w_1.webp",
     imagenes: [
@@ -1791,7 +1791,7 @@ const productos = [
         "images/pavas_electricas/Pava_Electrica_Philips_HD469590_1lts_2200w_3.webp",
         "images/pavas_electricas/Pava_Electrica_Philips_HD469590_1lts_2200w_4.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1\n<strong>Potencia (W):</strong> 2200\n<strong>Apagado automático:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1\n<strong>Potencia (W):</strong> 2200',
     codigo: "2075235",
     caracteristicas: [
         "Marca: Philips",
@@ -1800,8 +1800,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD9368/90 Negra Temp Para Mate 1.7L 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_1.webp",
     imagenes: [
@@ -1810,7 +1810,7 @@ const productos = [
         "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_3.webp",
         "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_4.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200\n<strong>Apagado automático:</strong> Sí',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200\n<strong>Corte automático:</strong> Sí',
     codigo: "2075236 ",
     caracteristicas: [
         "Marca: Philips",
@@ -1819,8 +1819,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava electrica Ultracomb PE 4909 1.7Lts, 2200w',
     imagen: "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4909_1_7Lts_2200w_1.webp",
     imagenes: [
@@ -1828,7 +1828,7 @@ const productos = [
         "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4909_1_7Lts_2200w_2.webp",
         "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4909_1_7Lts_2200w_3.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200\n<strong>Apagado automático:</strong> Sí',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200\n<strong>Corte automático:</strong> Sí',
     codigo: "2071746",
     caracteristicas: [
         "Marca: Ultracomb",
@@ -1837,15 +1837,15 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Kanji KJH-PE15005S Hervidora alum/plast',
     imagen: "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_1.webp",
     imagenes: [
         "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_1.webp",
         "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_2.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 2\n<strong>Potencia (W):</strong> 1500\n<strong>Apagado automático:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 2\n<strong>Potencia (W):</strong> 1500',
     codigo: "2074904 ",
     caracteristicas: [
         "Marca: Kanji",
@@ -1854,8 +1854,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Moulinex BY3975AR Mate',
     imagen: "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_1.webp",
     imagenes: [
@@ -1867,7 +1867,7 @@ const productos = [
         "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_6.webp",
         "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_7.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1\n<strong>Potencia (W):</strong> 2400\n<strong>Apagado automático:</strong> Sí',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1\n<strong>Potencia (W):</strong> 2400\n<strong>Corte automático:</strong> Sí',
     codigo: "2073516 ",
     caracteristicas: [
         "Marca: Moulinex",
@@ -1876,15 +1876,15 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Oster 4970 negra o Blanca con Regulador',
     imagen: "images/pavas_electricas/Pava_Oster_4970_negra_o_Blanca_con_Regulador_1.webp",
     imagenes: [
         "images/pavas_electricas/Pava_Oster_4970_negra_o_Blanca_con_Regulador_1.webp",
         "images/pavas_electricas/Pava_Oster_4970_negra_o_Blanca_con_Regulador_2.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 1850\n<strong>Apagado automático:</strong> Sí',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 1850\n<strong>Corte automático:</strong> Sí',
     codigo: "2072885",
     caracteristicas: [
         "Marca: Oster",
@@ -1893,8 +1893,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Peabody PE-KV8215S 1.7L inox',
     imagen: "images/pavas_electricas/Pava_Peabody_PE_KV8215S_1_7L_inox_1.webp",
     imagenes: [
@@ -1902,7 +1902,7 @@ const productos = [
         "images/pavas_electricas/Pava_Peabody_PE_KV8215S_1_7L_inox_2.webp",
         "images/pavas_electricas/Pava_Peabody_PE_KV8215S_1_7L_inox_3.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200\n<strong>Apagado automático:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200',
     codigo: "2072883",
     caracteristicas: [
         "Marca: Peabody",
@@ -1911,8 +1911,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Philco PEPH1182IP c/corte 1.8lts 1500w',
     imagen: "images/pavas_electricas/Pava_Philco_PEPH1182IP_c_corte_1_8lts_1500w_1.webp",
     imagenes: [
@@ -1923,7 +1923,7 @@ const productos = [
         "images/pavas_electricas/Pava_Philco_PEPH1182IP_c_corte_1_8lts_1500w_5.webp",
         "images/pavas_electricas/Pava_Philco_PEPH1182IP_c_corte_1_8lts_1500w_6.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1.8\n<strong>Potencia (W):</strong> 1500\n<strong>Apagado automático:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.8\n<strong>Potencia (W):</strong> 1500',
     codigo: "2075300",
     caracteristicas: [
         "Marca: Philco",
@@ -1932,8 +1932,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Whitenblack WBAPWB17 Hervidora 1.7lts 2000w',
     imagen: "images/pavas_electricas/Pava_Whitenblack_WBAPWB17_Hervidora_1_7lts_2000w_1.webp",
     imagenes: [
@@ -1942,7 +1942,7 @@ const productos = [
         "images/pavas_electricas/Pava_Whitenblack_WBAPWB17_Hervidora_1_7lts_2000w_3.webp",
         "images/pavas_electricas/Pava_Whitenblack_WBAPWB17_Hervidora_1_7lts_2000w_4.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2000\n<strong>Apagado automático:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2000',
     codigo: "2075295",
     caracteristicas: [
         "Marca: Whitenblack",
@@ -1951,8 +1951,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
-    subcategoria: "Pavas electricas",
+    categoria: "pequenos electrodomesticos",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Yelmo PE 3900',
     imagen: "images/pavas_electricas/Pava_Yelmo_PE_3900_1.webp",
     imagenes: [
@@ -1962,7 +1962,7 @@ const productos = [
         "images/pavas_electricas/Pava_Yelmo_PE_3900_4.webp",
         "images/pavas_electricas/Pava_Yelmo_PE_3900_5.webp"
     ],
-    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200\n<strong>Apagado automático:</strong> No',
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200',
     codigo: "20065",
     caracteristicas: [
         "Marca: Yelmo",
@@ -1976,7 +1976,7 @@ const productos = [
 
 
     {
-    categoria: "pequeños electrodomesticos",
+    categoria: "pequenos electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Atma CA8143N/P de filtro 1.25lts Negra',
     imagen: "images/cafeteras/Cafetera_Atma_CA8143N_P_de_filtro_1_25lts_Negra_1.webp",
@@ -1995,7 +1995,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
+    categoria: "pequenos electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800 Filtro negra 6 tazas',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800_Filtro_negra_6_tazas_1.webp",
@@ -2013,7 +2013,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
+    categoria: "pequenos electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800S',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800S_1.webp",
@@ -2029,7 +2029,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
+    categoria: "pequenos electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Moulinex FG320558 CAFECITY NEGRA ( GS )',
     imagen: "images/cafeteras/Cafetera_Moulinex_FG320558_CAFECITY_NEGRA _GS _1.webp",
@@ -2048,7 +2048,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
+    categoria: "pequenos electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Philips HD746100 jarra 1.2lts antigoteo',
     imagen: "images/cafeteras/Cafetera_Philips_HD746100_jarra_1_2lts_antigoteo_1.webp",
@@ -2067,7 +2067,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños electrodomesticos",
+    categoria: "pequenos electrodomesticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Smartlife SL-CM9402 1.5Lts',
     imagen: "images/cafeteras/Cafetera_Smartlife_SL_CM9402_1_5Lts_1.webp",
@@ -2085,6 +2085,51 @@ const productos = [
         "Garantía: 1 año"
     ]
     },
+
+
+    /////---------- Tostadoras ----------/////
+
+    {
+    categoria: "pequeños electrodomesticos",
+    subcategoria: "tostadoras",
+    nombre: 'Tostador Electrolux ETS11 Inox 8 niv. descongela',
+    imagen: "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_1.webp",
+    imagenes: [
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_1.webp",
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_2.webp",
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_3.webp",
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_4.webp",
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_5.webp",
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_6.webp",
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_7.webp",
+        "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_8.webp"
+    ],
+    descripcion: '<strong>Ranuras:</strong> 2\n<strong>Potencia (W):</strong> 800\n<strong>Niveles de tostado:</strong> 8',
+    codigo: "2075203",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2075203",
+        "Garantía: 1 año"
+    ]
+},
+{
+    categoria: "pequeños electrodomesticos",
+    subcategoria: "tostadoras",
+    nombre: 'Tostador Kanji TM1400 para 4 panes',
+    imagen: "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_1.webp",
+    imagenes: [
+        "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_1.webp",
+        "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_2.webp",
+        "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_3.webp"
+    ],
+    descripcion: '<strong>Ranuras:</strong> 2\n<strong>Potencia (W):</strong> 1200\n<strong>Niveles de tostado:</strong> 6',
+    codigo: "2072260",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2072260",
+        "Garantía: 1 año"
+    ]
+},
 
 
 

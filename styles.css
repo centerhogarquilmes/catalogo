@@ -323,29 +323,39 @@ body {
     color: #333333;
 }
 
+/* Contenedor de la cuadrícula de productos */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Ajustado para un ancho más consistente */
     gap: 20px;
+    padding: 20px;
 }
 
+
+/* Tarjeta de producto */
 .product-card {
     background-color: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 300px; /* Altura fija para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido */
     padding: 15px;
-    overflow: visible;
+    overflow: hidden; /* Evita desbordamiento */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Contenedor de texto */
 .product-card .text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 1;
-        width: 100%;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Crece para llenar el espacio disponible */
+    width: 100%;
+    padding-top: 10px;
+}
 
 .product-card:hover {
     transform: scale(1.05);
@@ -354,22 +364,42 @@ body {
 
 .product-card a {
     text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permite que el enlace ocupe todo el espacio */
 }
 
+/* Imagen de la tarjeta */
 .product-card img {
     width: 100%;
-    height: auto;
-    max-height: 100px;
-    object-fit: contain;
+    height: 120px; /* Altura fija para la imagen */
+    object-fit: contain; /* Mantiene proporciones sin recortar */
     display: block;
     margin: 0 auto;
 }
 
+/* Título del producto */
 .product-card h3 {
     font-size: 16px;
-    margin: 10px 0;
+    margin: 0 0 8px 0;
     color: #333333;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a 2 líneas */
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+    max-height: 2.8em; /* 2 líneas de 1.4em */
 }
+
+/* Código del producto */
+.product-card .product-code {
+    font-size: 14px;
+    color: #ff6200;
+    margin: 0 0 8px 0;
+}
+
 
 .product-card h3 a {
     text-decoration: none;
@@ -380,6 +410,19 @@ body {
     color: #FF6200;
 }
 
+/* Botón "Ver más" */
+.product-card .buy-btn {
+    background-color: #02366e;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto; /* Empuja el botón al fondo */
+    font-size: 14px;
+    text-align: center;
+}
 .buy-btn {
     background-color: #FF6200;
     color: white;
@@ -2164,9 +2207,9 @@ body {
         border-radius: 6px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
         box-sizing: border-box;
-        min-height: 220px;
+        min-height: 200px;
         justify-content: space-between;
     }
 
@@ -2175,7 +2218,7 @@ body {
     }
 
     .product-card img {
-        max-height: 80px; /* Reducir tamaño de imagen en móvil */
+        max-height: 100px; /* Reducir tamaño de imagen en móvil */
         width: auto;
     }
 

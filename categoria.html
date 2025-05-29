@@ -93,18 +93,18 @@
                 <li><a href="categoria.html?nombre=Termotanques&subcategoria=Dual">Dual</a></li>
             </ul>
         </li><li class="has-submenu">
-            <a href="categoria.html?nombre=Pequeños electrodomesticos">Pequeños</a>
+            <a href="categoria.html?nombre=Pequeños Electrodomésticos">Pequeños</a>
             <ul class="submenu">
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Batidoras">Batidoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Licuadoras">Licuadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Multiprocesadoras">Multiprocesadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Mixers">Mixers</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Pavas electricas">Pavas Eléctricas</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Cafeteras">Cafeteras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Tostadoras">Tostadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Sandwicheras">Sandwicheras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subCategoria=Exprimidores y jugueras">Exprimidores y Jugueras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Picadoras">Picadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Batidoras">Batidoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Licuadoras">Licuadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Multiprocesadoras">Multiprocesadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Mixers">Mixers</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Pavas Eléctricas">Pavas Eléctricas</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Cafeteras">Cafeteras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Tostadoras">Tostadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Sandwicheras">Sandwicheras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subCategoria=Exprimidores y jugueras">Exprimidores y Jugueras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños Electrodomésticos&subcategoria=Picadoras">Picadoras</a></li>
             </ul>
         </li>
         <li class="has-submenu">
@@ -276,12 +276,23 @@
             "Potencia",
             "Eficiencia energética"
         ],
-        "pequeños electrodomesticos": [
-            "Tipo de equipo",
-            "Capacidad (Litros)",
-            "Potencia (W)",
-            "Apagado automatico"
+        "pequenos electrodomesticos": {
+                "pavas electricas": [
+                    "Capacidad (Litros)",
+                    "Potencia (W)",
+                    "Corte automático"
         ],
+                "cafeteras": [
+                    "Capacidad (Litros)",
+                    "Tipo",
+                    "Potencia (W)"
+        ],
+                "tostadoras": [
+                    "Ranuras",
+                    "Potencia (W)",
+                    "Niveles de tostado"
+        ]
+    },
         "cuidado personal": [
             "Tipo de equipo",
             "Uso recomendado",
@@ -328,20 +339,32 @@
     const urlParams = new URLSearchParams(window.location.search);
     const categoria = urlParams.get('nombre') || '';
     const subcategoria = urlParams.get('subcategoria') || '';
-
+    console.log('URL Parameters - Categoria:', categoria, 'Subcategoria:', subcategoria);
+    
     // Obtener marcas únicas para la categoría y subcategoría seleccionadas
-    let marcas = [];
-    if (categoria) {
-        let productosFiltrados = productos.filter(p => normalizeString(p.categoria) === normalizeString(categoria));
-        if (subcategoria) {
-            productosFiltrados = productosFiltrados.filter(p => normalizeString(p.subcategoria) === normalizeString(subcategoria));
-        }
-        marcas = [...new Set(
-            productosFiltrados
-                .map(p => p.caracteristicas.find(c => c.startsWith('Marca: '))?.replace('Marca: ', ''))
-                .filter(m => m)
-        )];
+    // Obtener marcas únicas para la categoría y subcategoría seleccionadas
+let marcas = [];
+if (categoria) {
+    let productosFiltrados = productos.filter(p => {
+        const categoriaNormalizada = normalizeString(p.categoria);
+        const categoriaBuscada = normalizeString(categoria);
+        console.log('Comparando categoría:', categoriaNormalizada, 'con', categoriaBuscada);
+        return categoriaNormalizada === categoriaBuscada;
+    });
+    if (subcategoria) {
+        productosFiltrados = productosFiltrados.filter(p => {
+            const subcategoriaNormalizada = normalizeString(p.subcategoria);
+            const subcategoriaBuscada = normalizeString(subcategoria);
+            console.log('Comparando subcategoría:', subcategoriaNormalizada, 'con', subcategoriaBuscada);
+            return subcategoriaNormalizada === subcategoriaBuscada;
+        });
     }
+    marcas = [...new Set(
+        productosFiltrados
+            .map(p => p.caracteristicas.find(c => c.startsWith('Marca: '))?.replace('Marca: ', ''))
+            .filter(m => m)
+    )];
+}
 
     // Poblar el selector de marcas
     const filterMarca = document.getElementById('filter-marca');
@@ -354,83 +377,103 @@
 
     // Generar filtros dinámicos según la categoría y subcategoría seleccionadas
     function updateDynamicFilters(categoria, subcategoria) {
-        const dynamicFiltersContainer = document.getElementById('dynamic-filters');
-        dynamicFiltersContainer.innerHTML = '';
+    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    dynamicFiltersContainer.innerHTML = '';
 
-        const categoriaNormalizada = normalizeString(categoria);
-        if (!categoriaNormalizada || !atributosPorCategoria[categoriaNormalizada]) {
-            return;
+    const categoriaNormalizada = normalizeString(categoria);
+    const subcategoriaNormalizada = normalizeString(subcategoria);
+    console.log('Accediendo a atributosPorCategoria con:', categoriaNormalizada, subcategoriaNormalizada);
+    let atributosFiltrables = [];
+
+    if (categoriaNormalizada && atributosPorCategoria[categoriaNormalizada]) {
+        if (subcategoriaNormalizada && typeof atributosPorCategoria[categoriaNormalizada] === 'object' && !Array.isArray(atributosPorCategoria[categoriaNormalizada])) {
+            atributosFiltrables = atributosPorCategoria[categoriaNormalizada][subcategoriaNormalizada] || [];
+            console.log('Atributos para subcategoría:', atributosFiltrables);
+        } else {
+            atributosFiltrables = Array.isArray(atributosPorCategoria[categoriaNormalizada]) ? atributosPorCategoria[categoriaNormalizada] : [];
+            console.log('Atributos para categoría (sin subcategoría):', atributosFiltrables);
         }
-
-        const atributosFiltrables = atributosPorCategoria[categoriaNormalizada];
-        let productosFiltradosPorCategoria = productos.filter(p => normalizeString(p.categoria) === categoriaNormalizada);
-        if (subcategoria) {
-            productosFiltradosPorCategoria = productosFiltradosPorCategoria.filter(p => normalizeString(p.subcategoria) === normalizeString(subcategoria));
-        }
-
-        atributosFiltrables.forEach(atributo => {
-            let valoresUnicos = [...new Set(
-                productosFiltradosPorCategoria
-                    .map(p => {
-                        const atributos = parsearDescripcion(p.descripcion);
-                        return atributos[atributo];
-                    })
-                    .filter(v => v && v !== '-' && v !== '0')
-            )];
-
-            if (valoresUnicos.length === 0) return;
-
-            // Ordenar valores numéricos para atributos específicos
-            if (atributo === 'Capacidad (Litros)' || atributo === 'Capacidad' || atributo === 'Pulgadas' || atributo === 'Capacidad (kg)' || atributo === 'Potencia' || atributo === 'Potencia (W)' || atributo === 'Velocidad de centrifugado (RPM)' || atributo === 'Cámara trasera' || atributo === 'Cámara frontal' || atributo === 'Hornallas') {
-                valoresUnicos.sort((a, b) => {
-                    const numA = parseFloat(a.replace(/[^\d.]/g, '')) || 0;
-                    const numB = parseFloat(b.replace(/[^\d.]/g, '')) || 0;
-                    return numA - numB; // Changed to ascending order for consistency
-                });
-            } else {
-                // Ordenar alfabéticamente para todos los demás atributos
-                valoresUnicos.sort((a, b) => a.localeCompare(b));
-            }
-
-            const filterGroup = document.createElement('div');
-            filterGroup.className = 'filter-group collapsible-filter';
-
-            const filterHeader = document.createElement('h4');
-            filterHeader.textContent = atributo;
-            filterHeader.className = 'collapsible-header';
-            filterHeader.addEventListener('click', () => {
-                filterHeader.classList.toggle('active');
-                filterContent.style.display = filterHeader.classList.contains('active') ? 'block' : 'none';
-            });
-
-            const filterContent = document.createElement('div');
-            filterContent.className = 'collapsible-content';
-            filterContent.style.display = 'none';
-
-            valoresUnicos.forEach(valor => {
-                const label = document.createElement('label');
-                label.className = 'filter-option';
-
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.name = `filter-${normalizeString(atributo)}`;
-                checkbox.value = valor;
-                checkbox.className = 'filter-checkbox';
-                checkbox.addEventListener('change', filtrarProductos);
-
-                const span = document.createElement('span');
-                span.textContent = valor;
-
-                label.appendChild(checkbox);
-                label.appendChild(span);
-                filterContent.appendChild(label);
-            });
-
-            filterGroup.appendChild(filterHeader);
-            filterGroup.appendChild(filterContent);
-            dynamicFiltersContainer.appendChild(filterGroup);
-        });
     }
+
+    if (atributosFiltrables.length === 0) {
+        console.log('No se encontraron atributos filtrables para', categoriaNormalizada, subcategoriaNormalizada);
+        return;
+    }
+    let productosFiltradosPorCategoria = productos.filter(p => normalizeString(p.categoria) === categoriaNormalizada);
+    if (subcategoria) {
+        productosFiltradosPorCategoria = productosFiltradosPorCategoria.filter(p => normalizeString(p.subcategoria) === normalizeString(subcategoria));
+    }
+
+    atributosFiltrables.forEach(atributo => {
+        let valoresUnicos = [...new Set(
+            productosFiltradosPorCategoria
+                .map(p => {
+                    const atributos = parsearDescripcion(p.descripcion);
+                    return atributos[atributo];
+                })
+                .filter(v => v && v !== '-' && v !== '0')
+        )];
+
+        if (valoresUnicos.length === 0) return;
+
+        // Ordenar valores numéricos para atributos específicos
+        if (atributo === 'Capacidad (Litros)' || atributo === 'Capacidad' || atributo === 'Pulgadas' || atributo === 'Capacidad (kg)' || atributo === 'Potencia' || atributo === 'Potencia (W)' || atributo === 'Velocidad de centrifugado (RPM)' || atributo === 'Cámara trasera' || atributo === 'Cámara frontal' || atributo === 'Hornallas' || atributo === 'Presión (bar)' || atributo === 'Niveles de tostado') {
+            valoresUnicos.sort((a, b) => {
+                const numA = parseFloat(a.replace(/[^\d.]/g, '')) || 0;
+                const numB = parseFloat(b.replace(/[^\d.]/g, '')) || 0;
+                return numA - numB;
+            });
+        } else {
+            valoresUnicos.sort((a, b) => a.localeCompare(b));
+        }
+
+        const filterGroup = document.createElement('div');
+        filterGroup.className = 'filter-group collapsible-filter';
+
+        const filterHeader = document.createElement('h4');
+        filterHeader.textContent = atributo;
+        filterHeader.className = 'collapsible-header';
+        filterHeader.addEventListener('click', () => {
+            filterHeader.classList.toggle('active');
+            filterContent.style.display = filterHeader.classList.contains('active') ? 'block' : 'none';
+        });
+
+        const filterContent = document.createElement('div');
+        filterContent.className = 'collapsible-content';
+        filterContent.style.display = 'none';
+
+        valoresUnicos.forEach(valor => {
+            const label = document.createElement('label');
+            label.className = 'filter-option';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.name = `filter-${normalizeString(atributo)}`;
+            checkbox.value = valor;
+            checkbox.className = 'filter-checkbox';
+            checkbox.addEventListener('change', filtrarProductos);
+
+            const span = document.createElement('span');
+            span.textContent = valor;
+
+            label.appendChild(checkbox);
+            label.appendChild(span);
+            filterContent.appendChild(label);
+        });
+
+        filterGroup.appendChild(filterHeader);
+        filterGroup.appendChild(filterContent);
+        dynamicFiltersContainer.appendChild(filterGroup);
+
+
+        console.log('Categoria normalizada:', categoriaNormalizada);
+console.log('Subcategoria normalizada:', normalizeString(subcategoria));
+console.log('Atributos filtrables:', atributosFiltrables);
+    });
+
+    
+}
+
 
     // Actualizar título de la categoría
     let title = 'Productos';
