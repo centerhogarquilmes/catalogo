@@ -1425,7 +1425,7 @@ body {
 
     .nav-menu ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         text-align: left;
         padding: 0 15px;
     }
@@ -1457,14 +1457,16 @@ body {
 
     /* Indicador visual (flecha) para categorías con submenús */
     .nav-menu .has-submenu > a::after {
-        content: '↴';
+        content: '↵';
         position: absolute;
         right: 15px;
-        font-size: 12px;
+        font-size: 20px;
         transition: transform 0.5s ease;
     }
     .nav-menu .has-submenu.active > a::after {
         transform: rotate(180deg);
+        color: #FF6200; /* Color cuando el submenú está abierto */
+        transition: color 0.5s ease;
     }
 
     /* Estilos para el submenú en móvil */
@@ -1472,7 +1474,7 @@ body {
         display: none !important; /* Aumentar prioridad temporalmente */
         position: static;
         background-color: #36618f00;
-        padding: 0 0 0 30px;
+        padding: 6 0 0 6px;
         box-shadow: none;
         border-radius: 0;
     }
@@ -1481,7 +1483,7 @@ body {
     }
 
     .nav-menu .submenu li {
-        padding: 7px 0;
+        padding: 10px 2;
         border-bottom: 0.1px solid #71a1ee42;
     }
 
@@ -1490,12 +1492,17 @@ body {
     }
 
     .nav-menu .submenu a {
-        font-size: 14px;
-        color: #FFFFFF;
+        font-size: 11.5px;
+        color: #b1b1b1;
     }
 
     .nav-menu .submenu a:hover {
         color: #FF6200;
+    }
+
+    .nav-menu .has-submenu.active {
+        background-color: #032747a6; /* Fondo más oscuro para la categoría activa */
+        transition: background-color 1s ease; /* Transición suave */
     }
 
     
