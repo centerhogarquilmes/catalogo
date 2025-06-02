@@ -2562,4 +2562,452 @@ const productos = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /////---------- Calefaccion Electrica----------/////
+
+
+      {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion electrica",
+    nombre: 'Calefactor Whitenblack infrarojo WBCIWB02 500/1000W',
+    imagen: "images/estufas/Calefactor_Whitenblack_infrarojo_WBCIWB02_500_1000W_1.webp",
+    imagenes: [
+        "images/estufas/Calefactor_Whitenblack_infrarojo_WBCIWB02_500_1000W_1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1000\n<strong>Cantidad de velas:</strong> 2',
+    codigo: "2074790",
+    caracteristicas: [
+        "Marca: Whitenblack",
+        "Modelo: 2074790",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion electrica",
+    nombre: 'Calefactor Whitenblack WBCIWB05 infrarrojo Negro 700/1400w',
+    imagen: "images/estufas/Calefactor_Whitenblack_WBCIWB05_infrarrojo_Negro_700_1400w_1.webp",
+    imagenes: [
+        "images/estufas/Calefactor_Whitenblack_WBCIWB05_infrarrojo_Negro_700_1400w_1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Cantidad de velas:</strong> 3',
+    codigo: "2075286",
+    caracteristicas: [
+        "Marca: Whitenblack",
+        "Modelo: 2075286",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion electrica",
+    nombre: 'Calefactor Whitenblack WBPVWB01 pie/pared 600/1200w',
+    imagen: "images/convectores/Calefactor_Whitenblack_WBPVWB01_pie_pared_600_1200w_1.webp",
+    imagenes: [
+        "images/convectores/Calefactor_Whitenblack_WBPVWB01_pie_pared_600_1200w_1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1200',
+    codigo: "2075284",
+    caracteristicas: [
+        "Marca: Whitenblack",
+        "Modelo: 2075284",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion electrica",
+    nombre: 'Calefactor Crivel E15/Q-3 Infrarrojo Fijo 1400 W',
+    imagen: "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_1.webp",
+    imagenes: [
+        "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_1.webp",
+        "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_2.webp",
+        "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Cantidad de velas:</strong> 3\n<strong>Giratoria:</strong> Sí',
+    codigo: "2071916",
+    caracteristicas: [
+        "Marca: Crivel",
+        "Modelo: 2071916",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion electrica",
+    nombre: 'Calefactor Crivel/Steel home E22/Q3-Ost Oscilante Con Turbo Infrarrojo 700/1400Wts',
+    imagen: "images/estufas/Crivel_Steel_home_E22_Q3_Ost_Oscilante_Con_Turbo_700_1400Wts_1.webp",
+    imagenes: [
+        "images/estufas/Crivel_Steel_home_E22_Q3_Ost_Oscilante_Con_Turbo_700_1400Wts_1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Cantidad de velas:</strong> 3\n<strong>Giratoria:</strong> Sí',
+    codigo: "2071918",
+    caracteristicas: [
+        "Marca: Crivel",
+        "Modelo: 2071918",
+        "Garantía: 1 año"
+    ]
+},
+
+{
+    categoria: "Climatización",
+    subcategoria: "Calefaccion electrica",
+    nombre: 'Calefactor Liliana CV027 vertical cuarzo Infrarrojo',
+    imagen: "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_1.webp",
+    imagenes: [
+        "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_1.webp",
+        "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_2.webp",
+        "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1200\n<strong>Cantidad de velas:</strong> 2',
+    codigo: "2074413",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2074413",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Emege Euro 2135 T/B MG 3500 kcal',
+    imagen: "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_1.webp",
+        "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_2.webp",
+        "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_3.webp",
+        "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_4.webp",
+        "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_5.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 3500\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "14691",
+    caracteristicas: [
+        "Marca: Emege",
+        "Modelo: 14691",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Emege Euro 3130 S/S MG 3000 kcal',
+    imagen: "images/calefactor_a_gas/Calefactor_Emege_Euro_3130_S_S_MG_3000_kcal_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Emege_Euro_3130_S_S_MG_3000_kcal_1.webp",
+        "images/calefactor_a_gas/Calefactor_Emege_Euro_3130_S_S_MG_3000_kcal_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Gas natural',
+    codigo: "9422",
+    caracteristicas: [
+        "Marca: Emege",
+        "Modelo: 9422",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Emege Euro 3150 S/S MG 5000 kcal',
+    imagen: "images/calefactor_a_gas/Calefactor_Emege_Euro_3150_S_S_MG_5000_kcal_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Emege_Euro_3150_S_S_MG_5000_kcal_1.webp",
+        "images/calefactor_a_gas/Calefactor_Emege_Euro_3150_S_S_MG_5000_kcal_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Gas natural',
+    codigo: "9421",
+    caracteristicas: [
+        "Marca: Emege",
+        "Modelo: 9421",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Emege Patagonia 9130SCE multigas 3000 kcal',
+    imagen: "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9130SCE_multigas_3000_kcal_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9130SCE_multigas_3000_kcal_1.webp",
+        "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9130SCE_multigas_3000_kcal_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Gas natural',
+    codigo: "2074210",
+    caracteristicas: [
+        "Marca: Emege",
+        "Modelo: 2074210",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Emege Patagonia 9150SCE multigas 5000 kcal',
+    imagen: "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9150SCE_multigas_5000_kcal_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9150SCE_multigas_5000_kcal_1.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2074211",
+    caracteristicas: [
+        "Marca: Emege",
+        "Modelo: 2074211",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Eskabe S21 Minic 3.0 Aroma Marfil',
+    imagen: "images/calefactor_a_gas/Calefactor_Eskabe_S21__3_0__Marfil_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21__3_0__Marfil_1.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21__3_0__Marfil_2.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21__3_0__Marfil_3.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "17802 ",
+    caracteristicas: [
+        "Marca: Eskabe",
+        "Modelo: 17802 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Eskabe S21 Minic 5.0 Aroma Marfil',
+    imagen: "images/calefactor_a_gas/Calefactor_Eskabe_S21_Minic_5_0_Aroma_Marfil_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_Minic_5_0_Aroma_Marfil_1.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_Minic_5_0_Aroma_Marfil_2.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_Minic_5_0_Aroma_Marfil_3.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "17803 ",
+    caracteristicas: [
+        "Marca: Eskabe",
+        "Modelo: 17803 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Eskabe S21 MINIC 8.0 Aroma Marfil',
+    imagen: "images/calefactor_a_gas/Calefactor_Eskabe_S21_MINIC_8_0_Aroma_Marfil_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_MINIC_8_0_Aroma_Marfil_1.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_MINIC_8_0_Aroma_Marfil_2.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_MINIC_8_0_Aroma_Marfil_3.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 8000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "18626",
+    caracteristicas: [
+        "Marca: Eskabe",
+        "Modelo: 18626",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Eskabe S21 T/B 4800 GN',
+    imagen: "images/calefactor_a_gas/Calefactor_Eskabe_T_B_4800_GN_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Eskabe_T_B_4800_GN_1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2073652",
+    caracteristicas: [
+        "Marca: Eskabe",
+        "Modelo: 2073652",
+        "Garantía: 1 año"
+    ]
+},
+    
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Orbis 4024NON 2700C S/ Salida Frente vidrio',
+    imagen: "images/calefactor_a_gas/Calefactor_Orbis_4024NON_2700C_S_Salida_Frente_vidrio_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Orbis_4024NON_2700C_S_Salida_Frente_vidrio_1.webp",
+        "images/calefactor_a_gas/Calefactor_Orbis_4024NON_2700C_S_Salida_Frente_vidrio_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 2700\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2074293",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 2074293",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Orbis 4040GO/4044 S/V 4200C Ods Gris',
+    imagen: "images/calefactor_a_gas/Calefactor_Orbis_4040GO_4044_S_V_4200C_Ods_Gris_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Orbis_4040GO_4044_S_V_4200C_Ods_Gris_1.webp",
+        "images/calefactor_a_gas/Calefactor_Orbis_4040GO_4044_S_V_4200C_Ods_Gris_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 4200\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2069694",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 2069694",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Orbis 4126NON 2500C T/B Frente Vidrio',
+    imagen: "images/calefactor_a_gas/Calefactor_Orbis_4126NON_2500C_T_B_Frente_Vidrio_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Orbis_4126NON_2500C_T_B_Frente_Vidrio_1.webp",
+        "images/calefactor_a_gas/Calefactor_Orbis_4126NON_2500C_T_B_Frente_Vidrio_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 2500\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2074304",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 2074304",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Orbis 4146NON 3800C T/B Frente Vidrio',
+    imagen: "images/calefactor_a_gas/Calefactor_Orbis_4146NON_3800C_T_B_Frente_Vidrio_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Orbis_4146NON_3800C_T_B_Frente_Vidrio_1.webp",
+        "images/calefactor_a_gas/Calefactor_Orbis_4146NON_3800C_T_B_Frente_Vidrio_2.webp",
+        "images/calefactor_a_gas/Calefactor_Orbis_4146NON_3800C_T_B_Frente_Vidrio_3.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 3800\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2074295",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 2074295",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Orbis 4166NON 5000C T/B Frente Vidrio',
+    imagen: "images/calefactor_a_gas/Calefactor_Orbis_4166NON_5000C_T_B_Frente_Vidrio_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Orbis_4166NON_5000C_T_B_Frente_Vidrio_1.webp",
+        "images/calefactor_a_gas/Calefactor_Orbis_4166NON_5000C_T_B_Frente_Vidrio_2.webp",
+        "images/calefactor_a_gas/Calefactor_Orbis_4166NON_5000C_T_B_Frente_Vidrio_3.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2074303",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 2074303",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Volcan 2500 42512/42516 Gris Sin salida',
+    imagen: "images/calefactor_a_gas/Calefactor_Volcan_2500_42512_42516_Gris_Sin_salida_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Volcan_2500_42512_42516_Gris_Sin_salida_1.webp",
+        "images/calefactor_a_gas/Calefactor_Volcan_2500_42512_42516_Gris_Sin_salida_2.webp",
+        "images/calefactor_a_gas/Calefactor_Volcan_2500_42512_42516_Gris_Sin_salida_3.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 2500\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "14554",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 14554",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Volcan T/B 2000 42312/42316 Gris',
+    imagen: "images/calefactor_a_gas/Calefactor_Volcan_T_B_2000_42312_42316_Gris_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Volcan_T_B_2000_42312_42316_Gris_1.webp",
+        "images/calefactor_a_gas/Calefactor_Volcan_T_B_2000_42312_42316_Gris_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 2000\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "14556",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 14556",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Volcan T/B 3800 43712/43716',
+    imagen: "images/calefactor_a_gas/Calefactor_Volcan_T_B_3800_43712_43716_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Volcan_T_B_3800_43712_43716_1.webp",
+        "images/calefactor_a_gas/Calefactor_Volcan_T_B_3800_43712_43716_2.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 3800\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "14201",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 14201",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefaccion a gas",
+    nombre: 'Calefactor Volcan T/B 5700 46312/6 GRIS',
+    imagen: "images/calefactor_a_gas/Calefactor_Volcan_T_B_5700_46312_6_GRIS_1.webp",
+    imagenes: [
+        "images/calefactor_a_gas/Calefactor_Volcan_T_B_5700_46312_6_GRIS_1.webp"
+    ],
+    descripcion: '<strong>Potencia (Kcal):</strong> 5700\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "14202",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 14202",
+        "Garantía: 1 año"
+    ]
+},
+  
+
 ];
