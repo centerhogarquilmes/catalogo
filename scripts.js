@@ -10,7 +10,8 @@ function normalizeString(input) {
 }
 // Contador de visitas y clics por producto
 function setupTracking() {
-    console.log('setupTracking ejecutado');
+    console.log('setupTracking ejecutado en', window.location.href);
+    // Contador de visitas por página
     let visitas = JSON.parse(localStorage.getItem('visitas')) || {};
     const pagePath = window.location.pathname.split('/').pop() || 'index.html';
     let pageKey = pagePath;
@@ -21,23 +22,70 @@ function setupTracking() {
         pageKey = `categoria_${categoria}${subcategoria ? `_sub_${subcategoria}` : ''}`;
     }
     visitas[pageKey] = (visitas[pageKey] || 0) + 1;
-    localStorage.setItem('visitas', JSON.stringify(visitas));
-    console.log('Visita registrada. Total para', pageKey, ':', visitas[pageKey]);
-}
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Scripts cargado');
-    setupTracking();
-});
+    try {
+        localStorage.setItem('visitas', JSON.stringify(visitas));
+        console.log('Visita registrada para', pageKey, ':', visitas[pageKey], 'localStorage:', localStorage.getItem('visitas'));
+    } catch (e) {
+        console.error('Error al guardar en localStorage:', e);
+    }
 
-    // Rastrear clics en el botón "Consultar" en producto.html
+    // Contador de visitas por producto
+    let visitasProductos = JSON.parse(localStorage.getItem('visitasProductos')) || {};
+    if (pagePath === 'producto.html') {
+        const productName = urlParams.get('nombre') || 'Producto sin nombre';
+        if (productName) {
+            visitasProductos[productName] = (visitasProductos[productName] || 0) + 1;
+            try {
+                localStorage.setItem('visitasProductos', JSON.stringify(visitasProductos));
+                console.log('Visita a producto registrada para', productName, ':', visitasProductos[productName], 'localStorage:', localStorage.getItem('visitasProductos'));
+            } catch (e) {
+                console.error('Error al guardar en localStorage:', e);
+            }
+        }
+    }
+
+    // Contador de clics
+    let clicsProductos = JSON.parse(localStorage.getItem('clicsProductos')) || {};
+    function registrarClic(producto) {
+        clicsProductos[producto] = (clicsProductos[producto] || 0) + 1;
+        try {
+            localStorage.setItem('clicsProductos', JSON.stringify(clicsProductos));
+            console.log('Clic registrado para', producto, ':', clicsProductos[producto], 'localStorage:', localStorage.getItem('clicsProductos'));
+        } catch (e) {
+            console.error('Error al guardar en localStorage:', e);
+        }
+    }
+
+    // Clics en productos
+    const productCards = document.querySelectorAll('.product-card a, .product-card .buy-btn');
+    console.log('Elementos para clics encontrados:', productCards.length);
+    productCards.forEach(element => {
+        element.addEventListener('click', () => {
+            const productContainer = element.closest('.product-card');
+            const productName = productContainer.querySelector('h3')?.textContent.trim() || 'Producto sin nombre';
+            console.log('Clic detectado en', productName);
+            registrarClic(productName);
+        });
+    });
+
+    // Clics en consultar
     const whatsappBtn = document.getElementById('whatsapp-btn');
     if (whatsappBtn) {
         whatsappBtn.addEventListener('click', () => {
             const productName = document.getElementById('product-name')?.textContent.trim() || 'Producto sin nombre';
+            console.log('Consulta detectada para', productName);
             registrarClic(`Consulta_${productName}`);
-            console.log(`Consulta registrada para: ${productName}`);
         });
+    } else {
+        console.log('Botón whatsapp-btn no encontrado');
     }
+}
+
+// Asegurar que se ejecute
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Scripts cargado en', window.location.href);
+    setupTracking();
+});
 
 
 // Funcionalidad de búsqueda
