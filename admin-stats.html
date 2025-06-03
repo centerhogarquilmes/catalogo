@@ -353,7 +353,7 @@
             // Calcular tiempo promedio global
             let totalTiempo = Object.values(tiempoProductos).reduce((sum, val) => sum + val, 0);
             let tiempoPromedioGlobal = totalVisitasProductos > 0 ? (totalTiempo / totalVisitasProductos).toFixed(1) : 0;
-            document.getElementById('tiempo-promedio').textContent = ${tiempoPromedioGlobal} s;
+            document.getElementById('tiempo-promedio').textContent = `${tiempoPromedioGlobal} s`;
 
             // Cargar clics y consultas
             let clicsProductos = JSON.parse(localStorage.getItem('clicsProductos')) || {};
@@ -396,7 +396,7 @@
             // Llenar tabla de productos
             for (let producto in productosStats) {
                 let tr = document.createElement('tr');
-                tr.innerHTML = <td>${producto}</td><td>${productosStats[producto].visitas}</td><td>${productosStats[producto].clics}</td><td>${productosStats[producto].consultas}</td><td>${productosStats[producto].tiempoPromedio}</td>;
+                tr.innerHTML = `<td>${producto}</td><td>${productosStats[producto].visitas}</td><td>${productosStats[producto].clics}</td><td>${productosStats[producto].consultas}</td><td>${productosStats[producto].tiempoPromedio}</td>`;
                 productosList.appendChild(tr);
             }
 
@@ -432,7 +432,7 @@
             let csv = 'Producto,Visitas,Clics,Consultas,Tiempo Promedio (s)\n';
             for (let producto in productosStats) {
                 const { visitas, clics, consultas, tiempoPromedio } = productosStats[producto];
-                csv += ${producto},${visitas},${clics},${consultas},${tiempoPromedio}\n;
+                csv += `${producto},${visitas},${clics},${consultas},${tiempoPromedio}\n`;
             }
 
             const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
@@ -468,7 +468,7 @@
             const tbody = table.querySelector('tbody');
             const rows = Array.from(tbody.querySelectorAll('tr'));
             const isNumeric = colIndex > 0;
-            const order = table.querySelector(th:nth-child(${colIndex + 1}) i).classList.contains('fa-sort-up') ? 'desc' : 'asc';
+            const order = table.querySelector(`th:nth-child(${colIndex + 1}) i`).classList.contains('fa-sort-up') ? 'desc' : 'asc';
 
             rows.sort((a, b) => {
                 let valA = a.cells[colIndex].textContent;
@@ -485,8 +485,8 @@
             rows.forEach(row => tbody.appendChild(row));
 
             table.querySelectorAll('th i').forEach(icon => icon.className = 'fas fa-sort');
-            const icon = table.querySelector(th:nth-child(${colIndex + 1}) i);
-            icon.className = fas fa-sort-${order === 'asc' ? 'up' : 'down'};
+            const icon = table.querySelector(`th:nth-child(${colIndex + 1}) i`);
+            icon.className = `fas fa-sort-${order === 'asc' ? 'up' : 'down'}`;
         }
     </script>
 </body>

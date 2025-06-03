@@ -166,31 +166,53 @@ const categoryFields = {
         }
     },
     "Climatización": {
-        subcategorias: ["Calefacción", "Ventilación", "Aires Acondicionados"],
-        folders: {
-            "Calefacción": "calefaccion",
-            "Ventilación": "ventilacion",
-            "Aires Acondicionados": "aires_acondicionados"
-        },
-        fields: {
-            "Calefacción": [
-                { label: "Tipo", name: "tipo", type: "select", options: ["Estufa", "Radiador", "Calefactor"] },
-                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
-                { label: "Área de cobertura (m²)", name: "cobertura", type: "text", placeholder: "20" }
-            ],
-            "Ventilación": [
-                { label: "Tipo", name: "tipo", type: "select", options: ["Ventilador de pie", "Ventilador de mesa", "Ventilador de pared"] },
-                { label: "Diámetro (cm)", name: "diametro", type: "text", placeholder: "40" },
-                { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" }
-            ],
-            "Aires Acondicionados": [
-                { label: "Capacidad (BTU)", name: "capacidad", type: "text", placeholder: "12000" },
-                { label: "Tipo", name: "tipo", type: "select", options: ["Split", "Ventana", "Portátil"] },
-                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
-                { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
-            ]
-        }
+    subcategorias: ["Estufa", "Caloventor", "Convector", "Radiador", "Ventilación", "Aires Acondicionados"],
+    folders: {
+        "Estufa": "estufas",
+        "Caloventor": "caloventores",
+        "Convector": "convectores",
+        "Radiador": "radiadores",
+        "Ventilación": "ventilacion",
+        "Aires Acondicionados": "aires_acondicionados"
     },
+    fields: {
+        "Estufa": [
+            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
+            { label: "Cantidad de velas", name: "cantidad_velas", type: "text", placeholder: "3" },
+            { label: "Giratoria", name: "giratoria", type: "checkbox" },
+            { label: "Área de cobertura (m²)", name: "cobertura", type: "text", placeholder: "20" },
+            { label: "Tipo de gas", name: "tipo_gas", type: "select", options: ["Gas natural", "Gas envasado"] }
+        ],
+        "Caloventor": [
+            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
+            { label: "Split", name: "split", type: "checkbox" },
+            { label: "Área de cobertura (m²)", name: "cobertura", type: "text", placeholder: "15" },
+            { label: "Velocidades", name: "velocidades", type: "text", placeholder: "2" }
+        ],
+        "Convector": [
+            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
+            { label: "Forzador", name: "forzador", type: "checkbox" },
+            { label: "Área de cobertura (m²)", name: "cobertura", type: "text", placeholder: "20" },
+            { label: "Tipo de gas", name: "tipo_gas", type: "select", options: ["Gas natural", "Gas envasado"] }
+        ],
+        "Radiador": [
+            { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "1500" },
+            { label: "Área de cobertura (m²)", name: "cobertura", type: "text", placeholder: "15" },
+            { label: "Cantidad de elementos", name: "cantidad_elementos", type: "text", placeholder: "7" }
+        ],
+        "Ventilación": [
+            { label: "Tipo", name: "tipo", type: "select", options: ["Ventilador de pie", "Ventilador de mesa", "Ventilador de pared"] },
+            { label: "Diámetro (cm)", name: "diametro", type: "text", placeholder: "40" },
+            { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" }
+        ],
+        "Aires Acondicionados": [
+            { label: "Capacidad (BTU)", name: "capacidad", type: "text", placeholder: "12000" },
+            { label: "Tipo", name: "tipo", type: "select", options: ["Split", "Ventana", "Portátil"] },
+            { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
+            { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+        ]
+    }
+},
     "Lavado": {
         subcategorias: ["Lavarropas", "Lavasecarropas", "Secarropas", "Planchas"],
         folders: {
