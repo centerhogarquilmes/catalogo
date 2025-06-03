@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Center Hogar Quilmes</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        .btn-danger:hover {
+            background: #c82333;
+        }
+        .refresh-info {
+            font-size: 0.85em;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        .card h2 {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .summary-item {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        .summary-item h3 {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .summary-item p {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #007bff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            font-weight: 500;
+            cursor: pointer;
+            user-select: none;
+        }
+        th:hover {
+            background: #f8f9fa;
+        }
+        th i {
+            margin-left: 5px;
+        }
+        canvas {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .login-form h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .controls {
+                justify-content: center;
+            }
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="login" class="login-form">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button class="btn btn-primary" onclick="login()">Entrar</button>
+    </div>
+    <div id="stats-container" class="container hidden">
+        <div class="header">
+            <h1>Dashboard - Center Hogar Quilmes</h1>
+            <div class="controls">
+                <button class="btn btn-primary" onclick="loadStats()"><i class="fas fa-sync-alt"></i> Refrescar</button>
+                <button class="btn btn-danger" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
+            </div>
+        </div>
+        <p class="refresh-info">Datos actualizados cada 5 minutos</p>
+        <div class="dashboard">
+            <div class="card">
+                <h2><i class="fas fa-chart-line"></i> Resumen</h2>
+                <div class="summary">
+                    <div class="summary-item">
+                        <h3>Visitas Totales</h3>
+                        <p id="total-visitas">0</p>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Clics Totales</h3>
+                        <p id="total-clics">0</p>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Consultas Totales</h3>
+                        <p id="total-consultas">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2><i class="fas fa-chart-bar"></i> Visitas por Página</h2>
+                <canvas id="visitasChart"></canvas>
+            </div>
+            <div class="card">
+                <h2><i class="fas fa-mouse-pointer"></i> Productos Más Clickeados</h2>
+                <table id="clicsTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('clicsTable', 0)">Producto <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('clicsTable', 1)">Clics <i class="fas fa-sort"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="clics"></tbody>
+                </table>
+            </div>
+            <div class="card">
+                <h2><i class="fas fa-comment-dots"></i> Consultas por Producto</h2>
+                <table id="consultasTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('consultasTable', 0)">Producto <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('consultasTable', 1)">Consultas <i class="fas fa-sort"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="consultas"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Configuración
+        const REFRESH_INTERVAL = 5 * 60 * 1000; // 5 minutos
+        const SESSION_DURATION = 60 * 60 * 1000; // 1 hora
+
+        // Verificar sesión al cargar
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Página cargada, verificando sesión...');
+            if (isSessionValid()) {
+                showStats();
+                startAutoRefresh();
+            } else {
+                showLogin();
+            }
+        });
+
+        // Validar sesión
+        function isSessionValid() {
+            const session = JSON.parse(localStorage.getItem('session')) || {};
+            if (session.isAuthenticated) {
+                const now = new Date().getTime();
+                return now < session.expiresAt;
+            }
+            return false;
+        }
+
+        // Iniciar sesión
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === '' && password === '') {
+                const now = new Date().getTime();
+                const session = {
+                    isAuthenticated: true,
+                    expiresAt: now + SESSION_DURATION
+                };
+                localStorage.setItem('session', JSON.stringify(session));
+                console.log('Sesión iniciada, mostrando estadísticas...');
+                showStats();
+                startAutoRefresh();
+            } else {
+                alert('Usuario o contraseña incorrectos');
+            }
+        }
+
+        // Cerrar sesión
+        function logout() {
+            localStorage.removeItem('session');
+            console.log('Sesión cerrada');
+            showLogin();
+            stopAutoRefresh();
+        }
+
+        // Mostrar formulario de login
+        function showLogin() {
+            document.getElementById('login').classList.remove('hidden');
+            document.getElementById('stats-container').classList.add('hidden');
+        }
+
+        // Mostrar estadísticas
+        function showStats() {
+            document.getElementById('login').classList.add('hidden');
+            document.getElementById('stats-container').classList.remove('hidden');
+            loadStats();
+        }
+
+        // Cargar estadísticas
+        function loadStats() {
+            console.log('Cargando estadísticas...');
+            const clicsList = document.getElementById('clics');
+            const consultasList = document.getElementById('consultas');
+            clicsList.innerHTML = '';
+            consultasList.innerHTML = '';
+
+            // Cargar visitas
+            let visitas = JSON.parse(localStorage.getItem('visitas')) || {};
+            console.log('Visitas cargadas:', visitas);
+            let totalVisitas = Object.values(visitas).reduce((sum, val) => sum + val, 0);
+            document.getElementById('total-visitas').textContent = totalVisitas;
+
+            // Cargar clics y consultas
+            let clicsProductos = JSON.parse(localStorage.getItem('clicsProductos')) || {};
+            console.log('Clics cargados:', clicsProductos);
+            let totalClics = 0;
+            let totalConsultas = 0;
+            for (let producto in clicsProductos) {
+                let tr = document.createElement('tr');
+                let name = producto.startsWith('Consulta_') ? producto.replace('Consulta_', '') : producto;
+                tr.innerHTML = `<td>${name}</td><td>${clicsProductos[producto]}</td>`;
+                if (producto.startsWith('Consulta_')) {
+                    consultasList.appendChild(tr);
+                    totalConsultas += clicsProductos[producto];
+                } else {
+                    clicsList.appendChild(tr);
+                    totalClics += clicsProductos[producto];
+                }
+            }
+            document.getElementById('total-clics').textContent = totalClics;
+            document.getElementById('total-consultas').textContent = totalConsultas;
+
+            // Actualizar gráfico
+            const ctx = document.getElementById('visitasChart').getContext('2d');
+            if (window.visitasChart && typeof window.visitasChart.destroy === 'function') {
+                console.log('Destruyendo gráfico anterior');
+                window.visitasChart.destroy();
+            }
+            console.log('Creando nuevo gráfico');
+            window.visitasChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(visitas),
+                    datasets: [{
+                        label: 'Visitas por Página',
+                        data: Object.values(visitas),
+                        backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                        borderColor: 'rgba(0, 123, 255, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: { y: { beginAtZero: true } },
+                    plugins: {
+                        legend: { display: true },
+                        title: { display: true, text: 'Visitas por Página' }
+                    }
+                }
+            });
+        }
+
+        // Iniciar refresco automático
+        let refreshInterval;
+        function startAutoRefresh() {
+            loadStats();
+            refreshInterval = setInterval(() => {
+                if (isSessionValid()) {
+                    loadStats();
+                    console.log('Estadísticas actualizadas automáticamente');
+                } else {
+                    stopAutoRefresh();
+                    showLogin();
+                }
+            }, REFRESH_INTERVAL);
+        }
+
+        // Detener refresco automático
+        function stopAutoRefresh() {
+            clearInterval(refreshInterval);
+        }
+
+        // Ordenar tablas
+        function sortTable(tableId, colIndex) {
+            const table = document.getElementById(tableId);
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const isNumeric = colIndex === 1;
+            const order = table.querySelector(`th:nth-child(${colIndex + 1}) i`).classList.contains('fa-sort-up') ? 'desc' : 'asc';
+
+            rows.sort((a, b) => {
+                let valA = a.cells[colIndex].textContent;
+                let valB = b.cells[colIndex].textContent;
+                if (isNumeric) {
+                    valA = parseInt(valA);
+                    valB = parseInt(valB);
+                    return order === 'asc' ? valA - valB : valB - valA;
+                }
+                return order === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+            });
+
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+
+            // Actualizar iconos
+            table.querySelectorAll('th i').forEach(icon => icon.className = 'fas fa-sort');
+            const icon = table.querySelector(`th:nth-child(${colIndex + 1}) i`);
+            icon.className = `fas fa-sort-${order === 'asc' ? 'up' : 'down'}`;
+        }
+    </script>
+</body>
+</html>

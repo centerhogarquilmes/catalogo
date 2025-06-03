@@ -8,6 +8,58 @@ function normalizeString(input) {
     }
     return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
+// Contador de visitas y clics por producto
+function setupTracking() {
+    // Contador de visitas
+    let visitas = JSON.parse(localStorage.getItem('visitas')) || {};
+    const pagePath = window.location.pathname.split('/').pop() || 'index.html';
+    let pageKey = pagePath;
+    
+    // En categoria.html, incluir categoría y subcategoría en la clave
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoria = urlParams.get('nombre') || '';
+    const subcategoria = urlParams.get('subcategoria') || '';
+    if (pagePath === 'categoria.html' && categoria) {
+        pageKey = `categoria_${categoria}${subcategoria ? `_sub_${subcategoria}` : ''}`;
+    }
+    
+    visitas[pageKey] = (visitas[pageKey] || 0) + 1;
+    localStorage.setItem('visitas', JSON.stringify(visitas));
+    console.log('Visita registrada. Total para', pageKey, ':', visitas[pageKey]);
+
+    // Contador de clics por producto
+    let clicsProductos = JSON.parse(localStorage.getItem('clicsProductos')) || {};
+    function registrarClic(producto) {
+        clicsProductos[producto] = (clicsProductos[producto] || 0) + 1;
+        localStorage.setItem('clicsProductos', JSON.stringify(clicsProductos));
+        console.log(`Clic registrado para: ${producto}. Total: ${clicsProductos[producto]}`);
+    }
+
+    // Rastrear clics en index.html y categoria.html
+    const productCards = document.querySelectorAll('.product-card a, .product-card .buy-btn');
+    productCards.forEach(element => {
+        element.addEventListener('click', () => {
+            // Obtener el nombre del producto desde el enlace o el h3 dentro de product-card
+            const productContainer = element.closest('.product-card');
+            const productName = productContainer.querySelector('h3')?.textContent.trim() || 'Producto sin nombre';
+            if (productName) {
+                registrarClic(productName);
+            } else {
+                console.warn('No se pudo identificar el producto para el clic:', element);
+            }
+        });
+    });
+
+    // Rastrear clics en el botón "Consultar" en producto.html
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    if (whatsappBtn) {
+        whatsappBtn.addEventListener('click', () => {
+            const productName = document.getElementById('product-name')?.textContent.trim() || 'Producto sin nombre';
+            registrarClic(`Consulta_${productName}`);
+            console.log(`Consulta registrada para: ${productName}`);
+        });
+    }
+}
 
 // Funcionalidad de búsqueda
 function setupSearch() {
