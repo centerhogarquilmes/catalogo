@@ -200,6 +200,10 @@
                         <p id="total-visitas">0</p>
                     </div>
                     <div class="summary-item">
+                        <h3>Visitas a Productos</h3>
+                        <p id="total-visitas-productos">0</p>
+                    </div>
+                    <div class="summary-item">
                         <h3>Clics Totales</h3>
                         <p id="total-clics">0</p>
                     </div>
@@ -212,6 +216,18 @@
             <div class="card">
                 <h2><i class="fas fa-chart-bar"></i> Visitas por Página</h2>
                 <canvas id="visitasChart"></canvas>
+            </div>
+            <div class="card">
+                <h2><i class="fas fa-eye"></i> Productos Más Vistos</h2>
+                <table id="visitasProductosTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('visitasProductosTable', 0)">Producto <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('visitasProductosTable', 1)">Visitas <i class="fas fa-sort"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="visitasProductos"></tbody>
+                </table>
             </div>
             <div class="card">
                 <h2><i class="fas fa-mouse-pointer"></i> Productos Más Clickeados</h2>
@@ -241,7 +257,7 @@
     </div>
     <script>
         // Configuración
-        const REFRESH_INTERVAL = 1 * 60 * 1000 ; // 1 minuto
+        const REFRESH_INTERVAL = 1 * 60 * 1000; // 1 minuto
         const SESSION_DURATION = 60 * 60 * 1000; // 1 hora
 
         // Verificar sesión al cargar
@@ -269,7 +285,7 @@
         function login() {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            if (username === 'centerq' && password === 'centerhquilmes') {
+            if (username === 'admin' && password === 'miClave123') {
                 const now = new Date().getTime();
                 const session = {
                     isAuthenticated: true,
@@ -308,16 +324,29 @@
         // Cargar estadísticas
         function loadStats() {
             console.log('Cargando estadísticas...');
+            const visitasProductosList = document.getElementById('visitasProductos');
             const clicsList = document.getElementById('clics');
             const consultasList = document.getElementById('consultas');
+            visitasProductosList.innerHTML = '';
             clicsList.innerHTML = '';
             consultasList.innerHTML = '';
 
-            // Cargar visitas
+            // Cargar visitas por página
             let visitas = JSON.parse(localStorage.getItem('visitas')) || {};
             console.log('Visitas cargadas:', visitas);
             let totalVisitas = Object.values(visitas).reduce((sum, val) => sum + val, 0);
             document.getElementById('total-visitas').textContent = totalVisitas;
+
+            // Cargar visitas por producto
+            let visitasProductos = JSON.parse(localStorage.getItem('visitasProductos')) || {};
+            console.log('Visitas a productos cargadas:', visitasProductos);
+            let totalVisitasProductos = Object.values(visitasProductos).reduce((sum, val) => sum + val, 0);
+            document.getElementById('total-visitas-productos').textContent = totalVisitasProductos;
+            for (let producto in visitasProductos) {
+                let tr = document.createElement('tr');
+                tr.innerHTML = `<td>${producto}</td><td>${visitasProductos[producto]}</td>`;
+                visitasProductosList.appendChild(tr);
+            }
 
             // Cargar clics y consultas
             let clicsProductos = JSON.parse(localStorage.getItem('clicsProductos')) || {};
