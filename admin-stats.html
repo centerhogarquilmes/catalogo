@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Center Hogar Quilmes</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -71,6 +70,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            margin-bottom: 20px; /* Espacio debajo del dashboard */
         }
         .card {
             background: white;
@@ -111,31 +111,41 @@
             font-weight: 700;
             color: #007bff;
         }
-        table {
+        .table-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px; /* Espacio arriba de la tabla */
+            width: 100%;
+        }
+        .table-card table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
         }
-        th, td {
+        .table-card th, .table-card td {
             padding: 10px;
             text-align: left;
             border-bottom: 1px solid #eee;
         }
-        th {
+        .table-card th:first-child, .table-card td:first-child {
+            width: 40%; /* Columna "Producto" más ancha para nombres largos */
+            overflow-wrap: break-word; /* Ajusta el texto largo */
+        }
+        .table-card th {
             font-weight: 500;
             cursor: pointer;
             user-select: none;
         }
-        th:hover {
+        .table-card th:hover {
             background: #f8f9fa;
         }
-        th i {
+        .table-card th i {
             margin-left: 5px;
         }
-        canvas {
-            max-width: 100%;
-            margin: 0 auto;
-            display: block;
+        .table-container {
+            overflow-x: auto; /* Scroll horizontal en pantallas pequeñas */
         }
         .login-form {
             max-width: 400px;
@@ -187,6 +197,7 @@
             <h1>Dashboard - Center Hogar Quilmes</h1>
             <div class="controls">
                 <button class="btn btn-primary" onclick="loadStats()"><i class="fas fa-sync-alt"></i> Refrescar</button>
+                <button class="btn btn-primary" onclick="exportToCSV()"><i class="fas fa-download"></i> Exportar CSV</button>
                 <button class="btn btn-danger" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
             </div>
         </div>
@@ -196,13 +207,26 @@
                 <h2><i class="fas fa-chart-line"></i> Resumen</h2>
                 <div class="summary">
                     <div class="summary-item">
-                        <h3>Visitas Totales</h3>
+                        <h3>Visitas a Inicio</h3>
                         <p id="total-visitas">0</p>
                     </div>
                     <div class="summary-item">
                         <h3>Visitas a Productos</h3>
                         <p id="total-visitas-productos">0</p>
                     </div>
+                    <div class="summary-item">
+                        <h3>Visitas Móviles</h3>
+                        <p id="visitas-moviles">0</p>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Visitas Escritorio</h3>
+                        <p id="visitas-escritorio">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2><i class="fas fa-box-open"></i> Resumen de Interacciones</h2>
+                <div class="summary">
                     <div class="summary-item">
                         <h3>Clics Totales</h3>
                         <p id="total-clics">0</p>
@@ -211,46 +235,27 @@
                         <h3>Consultas Totales</h3>
                         <p id="total-consultas">0</p>
                     </div>
+                    <div class="summary-item">
+                        <h3>Tiempo Promedio</h3>
+                        <p id="tiempo-promedio">0 s</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <h2><i class="fas fa-chart-bar"></i> Visitas por Página</h2>
-                <canvas id="visitasChart"></canvas>
-            </div>
-            <div class="card">
-                <h2><i class="fas fa-eye"></i> Productos Más Vistos</h2>
-                <table id="visitasProductosTable">
+        </div>
+        <div class="table-card">
+            <h2><i class="fas fa-box-open"></i> Estadísticas de Productos</h2>
+            <div class="table-container">
+                <table id="productosTable">
                     <thead>
                         <tr>
-                            <th onclick="sortTable('visitasProductosTable', 0)">Producto <i class="fas fa-sort"></i></th>
-                            <th onclick="sortTable('visitasProductosTable', 1)">Visitas <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('productosTable', 0)">Producto <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('productosTable', 1)">Visitas <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('productosTable', 2)">Clics <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('productosTable', 3)">Consultas <i class="fas fa-sort"></i></th>
+                            <th onclick="sortTable('productosTable', 4)">Tiempo Promedio (s) <i class="fas fa-sort"></i></th>
                         </tr>
                     </thead>
-                    <tbody id="visitasProductos"></tbody>
-                </table>
-            </div>
-            <div class="card">
-                <h2><i class="fas fa-mouse-pointer"></i> Productos Más Clickeados</h2>
-                <table id="clicsTable">
-                    <thead>
-                        <tr>
-                            <th onclick="sortTable('clicsTable', 0)">Producto <i class="fas fa-sort"></i></th>
-                            <th onclick="sortTable('clicsTable', 1)">Clics <i class="fas fa-sort"></i></th>
-                        </tr>
-                    </thead>
-                    <tbody id="clics"></tbody>
-                </table>
-            </div>
-            <div class="card">
-                <h2><i class="fas fa-comment-dots"></i> Consultas por Producto</h2>
-                <table id="consultasTable">
-                    <thead>
-                        <tr>
-                            <th onclick="sortTable('consultasTable', 0)">Producto <i class="fas fa-sort"></i></th>
-                            <th onclick="sortTable('consultasTable', 1)">Consultas <i class="fas fa-sort"></i></th>
-                        </tr>
-                    </thead>
-                    <tbody id="consultas"></tbody>
+                    <tbody id="productos"></tbody>
                 </table>
             </div>
         </div>
@@ -285,7 +290,7 @@
         function login() {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            if (username === 'centerh' && password === 'centerhquilmes') {
+            if (username === 'centerq' && password === 'centerhquilmes') {
                 const now = new Date().getTime();
                 const session = {
                     isAuthenticated: true,
@@ -324,77 +329,117 @@
         // Cargar estadísticas
         function loadStats() {
             console.log('Cargando estadísticas...');
-            const visitasProductosList = document.getElementById('visitasProductos');
-            const clicsList = document.getElementById('clics');
-            const consultasList = document.getElementById('consultas');
-            visitasProductosList.innerHTML = '';
-            clicsList.innerHTML = '';
-            consultasList.innerHTML = '';
+            const productosList = document.getElementById('productos');
+            productosList.innerHTML = '';
 
-            // Cargar visitas por página
+            // Cargar visitas a index.html
             let visitas = JSON.parse(localStorage.getItem('visitas')) || {};
             console.log('Visitas cargadas:', visitas);
-            let totalVisitas = Object.values(visitas).reduce((sum, val) => sum + val, 0);
+            let totalVisitas = visitas['index.html'] || 0;
             document.getElementById('total-visitas').textContent = totalVisitas;
 
-            // Cargar visitas por producto
+            // Cargar visitas por dispositivo
+            let visitasPorDispositivo = JSON.parse(localStorage.getItem('visitasPorDispositivo')) || {};
+            document.getElementById('visitas-moviles').textContent = visitasPorDispositivo['mobile'] || 0;
+            document.getElementById('visitas-escritorio').textContent = visitasPorDispositivo['desktop'] || 0;
+
+            // Cargar visitas y tiempo por producto
             let visitasProductos = JSON.parse(localStorage.getItem('visitasProductos')) || {};
+            let tiempoProductos = JSON.parse(localStorage.getItem('tiempoProductos')) || {};
             console.log('Visitas a productos cargadas:', visitasProductos);
             let totalVisitasProductos = Object.values(visitasProductos).reduce((sum, val) => sum + val, 0);
             document.getElementById('total-visitas-productos').textContent = totalVisitasProductos;
-            for (let producto in visitasProductos) {
-                let tr = document.createElement('tr');
-                tr.innerHTML = `<td>${producto}</td><td>${visitasProductos[producto]}</td>`;
-                visitasProductosList.appendChild(tr);
-            }
+
+            // Calcular tiempo promedio global
+            let totalTiempo = Object.values(tiempoProductos).reduce((sum, val) => sum + val, 0);
+            let tiempoPromedioGlobal = totalVisitasProductos > 0 ? (totalTiempo / totalVisitasProductos).toFixed(1) : 0;
+            document.getElementById('tiempo-promedio').textContent = ${tiempoPromedioGlobal} s;
 
             // Cargar clics y consultas
             let clicsProductos = JSON.parse(localStorage.getItem('clicsProductos')) || {};
             console.log('Clics cargados:', clicsProductos);
             let totalClics = 0;
             let totalConsultas = 0;
+
+            // Combinar datos de productos
+            let productosStats = {};
+            // Agregar visitas y tiempo
+            for (let producto in visitasProductos) {
+                const visitas = visitasProductos[producto] || 0;
+                const tiempoTotal = tiempoProductos[producto] || 0;
+                const tiempoPromedio = visitas > 0 ? (tiempoTotal / visitas).toFixed(1) : 0;
+                productosStats[producto] = {
+                    visitas,
+                    clics: 0,
+                    consultas: 0,
+                    tiempoPromedio
+                };
+            }
+            // Agregar clics y consultas
             for (let producto in clicsProductos) {
-                let tr = document.createElement('tr');
                 let name = producto.startsWith('Consulta_') ? producto.replace('Consulta_', '') : producto;
-                tr.innerHTML = `<td>${name}</td><td>${clicsProductos[producto]}</td>`;
                 if (producto.startsWith('Consulta_')) {
-                    consultasList.appendChild(tr);
+                    if (!productosStats[name]) {
+                        productosStats[name] = { visitas: 0, clics: 0, consultas: 0, tiempoPromedio: 0 };
+                    }
+                    productosStats[name].consultas = clicsProductos[producto];
                     totalConsultas += clicsProductos[producto];
                 } else {
-                    clicsList.appendChild(tr);
+                    if (!productosStats[name]) {
+                        productosStats[name] = { visitas: 0, clics: 0, consultas: 0, tiempoPromedio: 0 };
+                    }
+                    productosStats[name].clics = clicsProductos[producto];
                     totalClics += clicsProductos[producto];
                 }
             }
+
+            // Llenar tabla de productos
+            for (let producto in productosStats) {
+                let tr = document.createElement('tr');
+                tr.innerHTML = <td>${producto}</td><td>${productosStats[producto].visitas}</td><td>${productosStats[producto].clics}</td><td>${productosStats[producto].consultas}</td><td>${productosStats[producto].tiempoPromedio}</td>;
+                productosList.appendChild(tr);
+            }
+
             document.getElementById('total-clics').textContent = totalClics;
             document.getElementById('total-consultas').textContent = totalConsultas;
+        }
 
-            // Actualizar gráfico
-            const ctx = document.getElementById('visitasChart').getContext('2d');
-            if (window.visitasChart && typeof window.visitasChart.destroy === 'function') {
-                console.log('Destruyendo gráfico anterior');
-                window.visitasChart.destroy();
+        // Exportar a CSV
+        function exportToCSV() {
+            let productosStats = {};
+            let visitasProductos = JSON.parse(localStorage.getItem('visitasProductos')) || {};
+            let tiempoProductos = JSON.parse(localStorage.getItem('tiempoProductos')) || {};
+            let clicsProductos = JSON.parse(localStorage.getItem('clicsProductos')) || {};
+
+            for (let producto in visitasProductos) {
+                const visitas = visitasProductos[producto] || 0;
+                const tiempoTotal = tiempoProductos[producto] || 0;
+                const tiempoPromedio = visitas > 0 ? (tiempoTotal / visitas).toFixed(1) : 0;
+                productosStats[producto] = { visitas, clics: 0, consultas: 0, tiempoPromedio };
             }
-            console.log('Creando nuevo gráfico');
-            window.visitasChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: Object.keys(visitas),
-                    datasets: [{
-                        label: 'Visitas por Página',
-                        data: Object.values(visitas),
-                        backgroundColor: 'rgba(0, 123, 255, 0.5)',
-                        borderColor: 'rgba(0, 123, 255, 1)',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: { y: { beginAtZero: true } },
-                    plugins: {
-                        legend: { display: true },
-                        title: { display: true, text: 'Visitas por Página' }
-                    }
+
+            for (let producto in clicsProductos) {
+                let name = producto.startsWith('Consulta_') ? producto.replace('Consulta_', '') : producto;
+                if (producto.startsWith('Consulta_')) {
+                    if (!productosStats[name]) productosStats[name] = { visitas: 0, clics: 0, consultas: 0, tiempoPromedio: 0 };
+                    productosStats[name].consultas = clicsProductos[producto];
+                } else {
+                    if (!productosStats[name]) productosStats[name] = { visitas: 0, clics: 0, consultas: 0, tiempoPromedio: 0 };
+                    productosStats[name].clics = clicsProductos[producto];
                 }
-            });
+            }
+
+            let csv = 'Producto,Visitas,Clics,Consultas,Tiempo Promedio (s)\n';
+            for (let producto in productosStats) {
+                const { visitas, clics, consultas, tiempoPromedio } = productosStats[producto];
+                csv += ${producto},${visitas},${clics},${consultas},${tiempoPromedio}\n;
+            }
+
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'estadisticas_productos.csv';
+            link.click();
         }
 
         // Iniciar refresco automático
@@ -422,15 +467,15 @@
             const table = document.getElementById(tableId);
             const tbody = table.querySelector('tbody');
             const rows = Array.from(tbody.querySelectorAll('tr'));
-            const isNumeric = colIndex === 1;
-            const order = table.querySelector(`th:nth-child(${colIndex + 1}) i`).classList.contains('fa-sort-up') ? 'desc' : 'asc';
+            const isNumeric = colIndex > 0;
+            const order = table.querySelector(th:nth-child(${colIndex + 1}) i).classList.contains('fa-sort-up') ? 'desc' : 'asc';
 
             rows.sort((a, b) => {
                 let valA = a.cells[colIndex].textContent;
                 let valB = b.cells[colIndex].textContent;
                 if (isNumeric) {
-                    valA = parseInt(valA);
-                    valB = parseInt(valB);
+                    valA = parseFloat(valA);
+                    valB = parseFloat(valB);
                     return order === 'asc' ? valA - valB : valB - valA;
                 }
                 return order === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
@@ -439,10 +484,9 @@
             tbody.innerHTML = '';
             rows.forEach(row => tbody.appendChild(row));
 
-            // Actualizar iconos
             table.querySelectorAll('th i').forEach(icon => icon.className = 'fas fa-sort');
-            const icon = table.querySelector(`th:nth-child(${colIndex + 1}) i`);
-            icon.className = `fas fa-sort-${order === 'asc' ? 'up' : 'down'}`;
+            const icon = table.querySelector(th:nth-child(${colIndex + 1}) i);
+            icon.className = fas fa-sort-${order === 'asc' ? 'up' : 'down'};
         }
     </script>
 </body>
