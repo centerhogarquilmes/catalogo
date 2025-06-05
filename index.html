@@ -198,97 +198,98 @@
 </button>
 
     <!-- Script -->
+<script src="precios.js"></script>
 <script src="productos.js"></script>
 <script src="scripts.js"></script>
 <script>
-    // Funcionalidad del carrusel
-    const slides = document.querySelectorAll('.slide');
-    const indicators = document.querySelectorAll('.indicator');
-    const prevBtn = document.querySelector('.carousel-btn.prev');
-    const nextBtn = document.querySelector('.carousel-btn.next');
-    const carouselSlides = document.querySelector('.carousel-slides');
-    let currentSlide = 0;
-    const totalSlides = slides.length;
-    let autoSlideInterval;
+// Funcionalidad del carrusel
+const slides = document.querySelectorAll('.slide');
+const indicators = document.querySelectorAll('.indicator');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+const carouselSlides = document.querySelector('.carousel-slides');
+let currentSlide = 0;
+const totalSlides = slides.length;
+let autoSlideInterval;
 
-    function showSlide(index) {
-        if (index >= totalSlides) {
-            currentSlide = 0;
-        } else if (index < 0) {
-            currentSlide = totalSlides - 1;
-        } else {
-            currentSlide = index;
-        }
-
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === currentSlide);
-        });
-
-        indicators.forEach((indicator, i) => {
-            indicator.classList.toggle('active', i === currentSlide);
-        });
+function showSlide(index) {
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
     }
 
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(() => {
-            showSlide(currentSlide + 1);
-        }, 5000);
-    }
-
-    function stopAutoSlide() {
-        clearInterval(autoSlideInterval);
-    }
-
-    prevBtn.addEventListener('click', () => {
-        stopAutoSlide();
-        showSlide(currentSlide - 1);
-        startAutoSlide();
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentSlide);
     });
 
-    nextBtn.addEventListener('click', () => {
-        stopAutoSlide();
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === currentSlide);
+    });
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
         showSlide(currentSlide + 1);
-        startAutoSlide();
-    });
+    }, 5000);
+}
 
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => {
-            stopAutoSlide();
-            showSlide(index);
-            startAutoSlide();
-        });
-    });
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
 
-    // Deslizamiento táctil para cambiar diapositivas
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    carouselSlides.addEventListener('touchstart', (e) => {
-        touchStartX = e.touches[0].clientX;
-        stopAutoSlide();
-    });
-
-    carouselSlides.addEventListener('touchmove', (e) => {
-        touchEndX = e.touches[0].clientX;
-    });
-
-    carouselSlides.addEventListener('touchend', () => {
-        const swipeDistance = touchEndX - touchStartX;
-        const swipeThreshold = 50;
-
-        if (Math.abs(swipeDistance) > swipeThreshold) {
-            if (swipeDistance > 0) {
-                showSlide(currentSlide - 1);
-            } else {
-                showSlide(currentSlide + 1);
-            }
-        }
-        startAutoSlide();
-    });
-
+prevBtn.addEventListener('click', () => {
+    stopAutoSlide();
+    showSlide(currentSlide - 1);
     startAutoSlide();
+});
 
-    // Generar tarjetas de productos destacados dinámicamente
+nextBtn.addEventListener('click', () => {
+    stopAutoSlide();
+    showSlide(currentSlide + 1);
+    startAutoSlide();
+});
+
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        stopAutoSlide();
+        showSlide(index);
+        startAutoSlide();
+    });
+});
+
+// Deslizamiento táctil para cambiar diapositivas
+let touchStartX = 0;
+let touchEndX = 0;
+
+carouselSlides.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    stopAutoSlide();
+});
+
+carouselSlides.addEventListener('touchmove', (e) => {
+    touchEndX = e.touches[0].clientX;
+});
+
+carouselSlides.addEventListener('touchend', () => {
+    const swipeDistance = touchEndX - touchStartX;
+    const swipeThreshold = 50;
+
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+        if (swipeDistance > 0) {
+            showSlide(currentSlide - 1);
+        } else {
+            showSlide(currentSlide + 1);
+        }
+    }
+    startAutoSlide();
+});
+
+startAutoSlide();
+
+// Generar tarjetas de productos destacados dinámicamente
 const productGrid = document.querySelector('.product-grid');
 productGrid.innerHTML = '';
 const productosDestacadosFiltrados = productos
@@ -303,6 +304,10 @@ if (productosDestacadosFiltrados.length === 0) {
     productGrid.innerHTML = '<p>No se encontraron productos destacados.</p>';
 } else {
     productosDestacadosFiltrados.forEach(producto => {
+        // Obtener precio desde precios.js
+        const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible' };
+        const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Precio no disponible';
+
         const card = document.createElement('div');
         card.className = 'product-card';
         card.innerHTML = `
@@ -311,6 +316,7 @@ if (productosDestacadosFiltrados.length === 0) {
                 <div class="text-container">
                     <h3>${producto.nombre}</h3>
                     <p class="product-code">Código: ${producto.codigo}</p>
+                    <p class="product-price">Precio: ${precioTexto}</p>
                     <button class="buy-btn">Ver más</button>
                 </div>
             </a>
@@ -318,7 +324,6 @@ if (productosDestacadosFiltrados.length === 0) {
         productGrid.appendChild(card);
     });
 }
-
 </script>
 </body>
 </html>

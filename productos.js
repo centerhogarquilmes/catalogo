@@ -49,7 +49,7 @@ const productos = [
         ],
         descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073969",
-        caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
+        caracteristicas: ["Marca: Escorial", "Modelo: 5507F", "Garantía: 1 año"]
     },
     {
         categoria: "Cocinas",
@@ -92,7 +92,7 @@ const productos = [
         ],
         descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 85 x  51 x 52\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "15760",
-        caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
+        caracteristicas: ["Marca: Escorial", "Modelo: PALACE CRISTAL", "Garantía: 1 año"]
     },
     {
         categoria: "Cocinas",

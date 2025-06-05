@@ -1,11 +1,8 @@
 /* Reset and general styles */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* Eliminar el resaltado táctil azul en móviles */
-* {
     -webkit-tap-highlight-color: transparent; /* Desactiva el resaltado azul */
 }
 
@@ -265,8 +262,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.20);
-    color: #FFFFFF;
+    color: #ff6200;
     border: none;
     padding: 10px;
     width: 40px;
@@ -290,7 +286,7 @@ body {
 }
 
 .carousel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* Indicadores */
@@ -586,7 +582,7 @@ body {
         position: absolute;
         top: 20px;
         right: 30px;
-        color: #FFFFFF;
+        color: #ff6200;
         font-size: 40px;
         cursor: pointer;
         z-index: 2100;
@@ -680,7 +676,6 @@ body {
         top: 50%;
         transform: translateY(-50%);
         color: #ff6200;
-        background-color: #ffffff00;
         border: none;
         padding: 10px;
         width: 40px; /* Ligeramente más pequeño para móvil */
@@ -2393,4 +2388,17 @@ body {
         padding: 10px;
         width: 100%;
     }
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #02366e;
+    text-align: center;
+    margin: 5px 0;
+}
+.product-stock {
+    font-size: 14px;
+    color: #ff6200;
+    margin: 5px 0;
 }

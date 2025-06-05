@@ -191,208 +191,233 @@
         </svg>
     </button>
 
-    <script src="productos.js"></script>
-    <script src="scripts.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Leer parámetros de la URL con manejo seguro
-            const urlParams = new URLSearchParams(window.location.search);
-            const nombre = urlParams.get('nombre') ? decodeURIComponent(urlParams.get('nombre')) : 'Producto';
-            const imagen = urlParams.get('imagen') ? decodeURIComponent(urlParams.get('imagen')) : 'images/nomedia_trans.png';
-            const imagenes = urlParams.get('imagenes') ? decodeURIComponent(urlParams.get('imagenes')).split(',') : [imagen];
-            const descripcion = urlParams.get('descripcion') ? decodeURIComponent(urlParams.get('descripcion')) : 'Descripción del producto.';
-            const caracteristicas = urlParams.get('caracteristicas') ? decodeURIComponent(urlParams.get('caracteristicas')).split(',') : ['Marca: [Marca]', 'Modelo: [Modelo]', 'Garantía: 1 año'];
+<script src="precios.js"></script>
+<script src="productos.js"></script>
+<script src="scripts.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Leer parámetros de la URL con manejo seguro
+    const urlParams = new URLSearchParams(window.location.search);
+    const nombre = urlParams.get('nombre') ? decodeURIComponent(urlParams.get('nombre')) : 'Producto';
+    const imagen = urlParams.get('imagen') ? decodeURIComponent(urlParams.get('imagen')) : 'images/nomedia.jpg';
+    const imagenes = urlParams.get('imagenes') ? decodeURIComponent(urlParams.get('imagenes')).split(',').filter(img => img) : [imagen];
+    const descripcion = urlParams.get('descripcion') ? decodeURIComponent(urlParams.get('descripcion')) : 'Descripción del producto.';
+    const caracteristicas = urlParams.get('caracteristicas') ? decodeURIComponent(urlParams.get('caracteristicas')).split(',').filter(c => c) : ['Marca: [Marca]', 'Modelo: [Modelo]', 'Garantía: 1 año'];
 
-            // Depuración para verificar parámetros y productos
-            console.log('URL Params:', Object.fromEntries(urlParams));
-            console.log('Productos:', productos);
+    // Buscar el producto en productos.js con manejo de errores
+    const producto = productos && Array.isArray(productos) ? productos.find(p => p.nombre === nombre) : null;
+    const codigoProducto = producto ? producto.codigo : 0;
 
-            // Buscar el producto en productos.js con manejo de errores
-            const producto = productos && Array.isArray(productos) ? productos.find(p => p.nombre === nombre) : null;
-            const codigoProducto = producto ? producto.codigo : 'Código no disponible';
-            console.log('Producto encontrado:', producto);
+    // Obtener datos dinámicos de precios.js
+    const datosDinamicos = precios && precios[codigoProducto] ? precios[codigoProducto] : { stock: 0, precio_tarjeta: 'No disponible' };
+    const stockTexto = datosDinamicos.stock > 0 ? `Stock disponible: ${datosDinamicos.stock} unidades` : 'Sin stock';
+    const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Precio no disponible';
 
-            // Actualizar contenido
-            document.getElementById('product-name').textContent = nombre;
-            document.getElementById('main-image').src = imagen;
-            document.getElementById('main-image').onerror = function () {
+    // Actualizar contenido
+    const productName = document.getElementById('product-name');
+    const mainImage = document.getElementById('main-image');
+    const productDescription = document.getElementById('product-description');
+    if (productName) productName.innerHTML = nombre;
+    if (mainImage) {
+        mainImage.src = imagen;
+        mainImage.alt = nombre;
+        mainImage.onerror = function () {
+            this.onerror = null;
+            this.src = 'images/nomedia.jpg';
+        };
+    }
+    if (productDescription) productDescription.innerHTML = descripcion.replace(/\n/g, '<br>'); // Renderizar saltos de línea como <br>
+
+    // Mostrar stock y código
+    const stockElement = document.querySelector('.stock');
+    if (stockElement) stockElement.innerHTML = `${stockTexto} | Código: ${codigoProducto}`;
+
+    // Agregar precio al DOM
+    const productInfo = document.querySelector('.product-info');
+    const shipping = document.querySelector('.shipping');
+    if (productInfo && shipping) {
+        const precioElement = document.createElement('p');
+        precioElement.className = 'product-price';
+        precioElement.innerHTML = `Precio de lista: ${precioTexto}`;
+        productInfo.insertBefore(precioElement, shipping);
+    }
+
+    // Generar thumbnails
+    const thumbnailGallery = document.getElementById('thumbnail-gallery');
+    if (thumbnailGallery) {
+        imagenes.forEach((img, index) => {
+            const thumbnail = document.createElement('img');
+            thumbnail.src = img;
+            thumbnail.alt = `${nombre} - Imagen ${index + 1}`;
+            thumbnail.onerror = function () {
+                console.error(`Error al cargar la imagen de la miniatura: ${img}`);
                 this.onerror = null;
-                this.src = 'images/nomedia_trans.png';
+                this.src = 'images/nomedia.jpg';
             };
-            document.getElementById('product-description').innerHTML = descripcion;
-            document.querySelector('.stock').textContent = `Código: ${codigoProducto}`;
+            thumbnail.onclick = () => showImage(index);
+            if (index === 0) thumbnail.classList.add('active');
+            thumbnailGallery.appendChild(thumbnail);
+        });
+    }
 
-            // Generar thumbnails
-            const thumbnailGallery = document.getElementById('thumbnail-gallery');
-            imagenes.forEach((img, index) => {
-                const thumbnail = document.createElement('img');
-                thumbnail.src = img;
-                thumbnail.alt = nombre;
-                thumbnail.onerror = function () {
-                    console.error(`Error al cargar la imagen de miniatura: ${img}`);
-                    this.onerror = null;
-                    this.src = 'images/nomedia_trans.png';
-                };
-                thumbnail.onclick = () => showImage(index);
-                if (index === 0) thumbnail.classList.add('active');
-                thumbnailGallery.appendChild(thumbnail);
-            });
+    // Generar características
+    const featuresList = document.getElementById('product-features');
+    if (featuresList) {
+        featuresList.innerHTML = '';
+        caracteristicas.forEach(feature => {
+            const li = document.createElement('li');
+            li.textContent = feature;
+            featuresList.appendChild(li);
+        });
+    }
 
-            // Generar características
-            const featuresList = document.getElementById('product-features');
-            featuresList.innerHTML = '';
-            caracteristicas.forEach(feature => {
-                const li = document.createElement('li');
-                li.textContent = feature;
-                featuresList.appendChild(li);
-            });
+    // Botón de WhatsApp
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    if (whatsappBtn) {
+        const numeroWhatsApp = '5491131680489';
+        const mensaje = `Hola, quiero un presupuesto para ${nombre}.`;
+        whatsappBtn.href = `https://api.whatsapp.com/send?phone=${encodeURIComponent(numeroWhatsApp)}&text=${encodeURIComponent(mensaje)}`;
+    }
 
-            // Botón de WhatsApp
-            const numeroWhatsApp = '5491131680489';
-            const mensaje = `Hola, quiero un presupuesto para ${nombre}.`;
-            document.getElementById('whatsapp-btn').href = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}`;
+    // Navegación de imágenes
+    let currentImageIndex = 0;
+    const prevBtn = document.querySelector('.main-image-wrapper .carousel-btn.prev');
+    const nextBtn = document.querySelector('.main-image-wrapper .carousel-btn.next');
 
-            // Navegación de imágenes
-            let currentImageIndex = 0;
-            const mainImage = document.getElementById('main-image');
-            const mainImageWrapper = document.querySelector('.main-image-wrapper');
-            const thumbnails = document.querySelectorAll('.thumbnail-gallery img');
-            const prevBtn = document.querySelector('.main-image-wrapper .carousel-btn.prev');
-            const nextBtn = document.querySelector('.main-image-wrapper .carousel-btn.next');
+    function showImage(index) {
+        if (index >= imagenes.length) {
+            currentImageIndex = 0;
+        } else if (index < 0) {
+            currentImageIndex = imagenes.length - 1;
+        } else {
+            currentImageIndex = index;
+        }
+        console.log(`Cambiando a imagen ${currentImageIndex}: ${imagenes[currentImageIndex]}`);
+        if (mainImage) mainImage.src = imagenes[currentImageIndex];
 
-            function showImage(index) {
-                if (index >= imagenes.length) {
-                    currentImageIndex = 0;
-                } else if (index < 0) {
-                    currentImageIndex = imagenes.length - 1;
-                } else {
-                    currentImageIndex = index;
-                }
-                console.log(`Cambiando a imagen ${currentImageIndex}: ${imagenes[currentImageIndex]}`);
-                mainImage.src = imagenes[currentImageIndex];
+        // Actualizar el thumbnail activo
+        const thumbnails = thumbnailGallery ? thumbnailGallery.querySelectorAll('img') : [];
+        thumbnails.forEach((thumb, i) => {
+            thumb.classList.toggle('active', i === currentImageIndex);
+        });
+    }
 
-                // Actualizar thumbnail activo
-                thumbnails.forEach((thumb, i) => {
-                    thumb.classList.toggle('active', i === currentImageIndex);
-                });
-            }
+    // Configurar botones de navegación
+    if (prevBtn && nextBtn) {
+        if (imagenes.length > 1 && window.innerWidth > 768) {
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+        } else {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        }
 
-            // Configurar botones de navegación (solo para escritorio)
-            if (prevBtn && nextBtn) {
-                if (imagenes.length > 1 && window.innerWidth > 768) {
-                    prevBtn.style.display = 'flex';
-                    nextBtn.style.display = 'flex';
-                } else {
-                    prevBtn.style.display = 'none';
-                    nextBtn.style.display = 'none';
-                }
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            console.log('Clic en el botón prev');
+            showImage(currentImageIndex - 1);
+        });
 
-                prevBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    console.log('Clic en botón prev');
-                    showImage(currentImageIndex - 1);
-                });
-                nextBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    console.log('Clic en botón next');
-                    showImage(currentImageIndex + 1);
-                });
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            console.log('Clic en el botón next');
+            showImage(currentImageIndex + 1);
+        });
 
-                window.addEventListener('resize', () => {
-                    if (imagenes.length > 1 && window.innerWidth > 768) {
-                        prevBtn.style.display = 'flex';
-                        nextBtn.style.display = 'flex';
-                    } else {
-                        prevBtn.style.display = 'none';
-                        nextBtn.style.display = 'none';
-                    }
-                });
+        window.addEventListener('resize', () => {
+            if (imagenes.length > 1 && window.innerWidth > 768) {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
             } else {
-                console.error('Carousel buttons not found');
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
             }
+        });
+    }
 
-            // Modal
-            const modal = document.getElementById('image-modal');
-            const modalImage = document.getElementById('modal-image');
-            const modalClose = document.querySelector('.modal-close');
-            const modalPrev = document.querySelector('.modal-btn.prev');
-            const modalNext = document.querySelector('.modal-btn.next');
+    // Modal
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalCloseModal = document.querySelector('.modal-close');
+    const modalPrev = document.querySelector('.modal-btn.prev');
+    const modalNext = document.querySelector('.modal-btn.next');
 
-            if (!modal || !modalImage || !modalClose || !modalPrev || !modalNext) {
-                console.error('Modal elements not found');
-                return;
+    if (!modal || !modalImage || !modalCloseModal || !modalPrev || !modalNext) {
+        console.error('Elementos del modal no encontrados');
+        return;
+    }
+
+    if (mainImage) {
+        mainImage.addEventListener('click', (e) => {
+            if (window.innerWidth > 768) {
+                e.stopPropagation();
+                console.log('Clic en la imagen principal');
+                modalImage.src = mainImage.src;
+                modal.classList.add('active');
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Corregir 'background' por 'overflow'
             }
+        });
 
-            // Abrir modal en escritorio (clic) y móvil (toque)
-            mainImage.addEventListener('click', (e) => {
-                if (window.innerWidth > 768) { // Solo para escritorio
-                    e.stopPropagation();
-                    console.log('Clic en imagen principal');
-                    modalImage.src = mainImage.src;
-                    modal.classList.add('active');
-                    modal.style.display = 'flex';
-                    document.body.style.overflow = 'hidden'; // Bloquear scroll
-                }
-            });
+        mainImage.addEventListener('touchend', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                console.log('Toque en la imagen principal');
+                modalImage.src = mainImage.src;
+                modal.classList.add('active');
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    }
 
-            mainImage.addEventListener('touchend', (e) => {
-                if (window.innerWidth <= 768) { // Solo para móvil
-                    e.preventDefault(); // Evitar comportamientos predeterminados
-                    console.log('Toque en imagen principal');
-                    modalImage.src = mainImage.src;
-                    modal.classList.add('active');
-                    modal.style.display = 'flex';
-                    document.body.style.overflow = 'hidden'; // Bloquear scroll
-                }
-            });
+    modalCloseModal.addEventListener('click', () => {
+        console.log('Clic en cerrar el modal');
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
 
-            modalClose.addEventListener('click', () => {
-                console.log('Clic en cerrar modal');
-                modal.classList.remove('active');
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Restaurar scroll
-            });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            console.log('Clic fuera del modal');
+            modal.classList.remove('active');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
 
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    console.log('Clic fuera del modal');
-                    modal.classList.remove('active');
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto'; // Restaurar scroll
-                }
-            });
+    modalPrev.addEventListener('click', () => {
+        console.log('Clic en modal prev');
+        showImage(currentImageIndex - 1);
+        modalImage.src = imagenes[currentImageIndex];
+    });
 
-            modalPrev.addEventListener('click', () => {
-                console.log('Clic en modal prev');
+    modalNext.addEventListener('click', () => {
+        console.log('Clic en modal next');
+        showImage(currentImageIndex + 1);
+        modalImage.src = imagenes[currentImageIndex];
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (modal.classList.contains('active')) {
+            if (e.key === 'ArrowLeft') {
+                console.log('Tecla izquierda en el modal');
                 showImage(currentImageIndex - 1);
                 modalImage.src = imagenes[currentImageIndex];
-            });
-
-            modalNext.addEventListener('click', () => {
-                console.log('Clic en modal next');
+            } else if (e.key === 'ArrowRight') {
+                console.log('Tecla derecha en el modal');
                 showImage(currentImageIndex + 1);
                 modalImage.src = imagenes[currentImageIndex];
-            });
-
-            document.addEventListener('keydown', (e) => {
-                if (modal.classList.contains('active')) {
-                    if (e.key === 'ArrowLeft') {
-                        console.log('Tecla izquierda en modal');
-                        showImage(currentImageIndex - 1);
-                        modalImage.src = imagenes[currentImageIndex];
-                    } else if (e.key === 'ArrowRight') {
-                        console.log('Tecla derecha en modal');
-                        showImage(currentImageIndex + 1);
-                        modalImage.src = imagenes[currentImageIndex];
-                    } else if (e.key === 'Escape') {
-                        console.log('Tecla Escape en modal');
-                        modal.classList.remove('active');
-                        modal.style.display = 'none';
-                        document.body.style.overflow = 'auto'; // Restaurar scroll
-                    }
-                }
-            });
-        });
-    </script>
+            } else if (e.key === 'Escape') {
+                console.log('Tecla Escape en el modal');
+                modal.classList.remove('active');
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    });
+});
+</script>
 </body>
 </html>
