@@ -20,11 +20,11 @@ const precios = {
     "precio_tarjeta": 309909.0
   },
   "17799": {
-    "stock": 1,
+    "stock": 2,
     "precio_tarjeta": 334559.0
   },
   "17802": {
-    "stock": 1,
+    "stock": 2,
     "precio_tarjeta": 279889.0
   },
   "17803": {
@@ -32,7 +32,7 @@ const precios = {
     "precio_tarjeta": 332309.0
   },
   "18626": {
-    "stock": 1,
+    "stock": 2,
     "precio_tarjeta": 387479.0
   },
   "2069694": {
@@ -76,7 +76,7 @@ const precios = {
     "precio_tarjeta": 321319.0
   },
   "2074413": {
-    "stock": 2,
+    "stock": 1,
     "precio_tarjeta": 31919.0
   },
   "2074790": {
@@ -84,7 +84,7 @@ const precios = {
     "precio_tarjeta": 29999.0
   },
   "2075284": {
-    "stock": 4,
+    "stock": 3,
     "precio_tarjeta": 89999.0
   },
   "2075286": {
@@ -502,5 +502,69 @@ const precios = {
   "2075206": {
     "stock": 2,
     "precio_tarjeta": 897579.0
+  },
+  "2069004": {
+    "stock": 1,
+    "precio_tarjeta": 346799.0
+  },
+  "13970": {
+    "stock": 2,
+    "precio_tarjeta": 17899.0
+  },
+  "13975": {
+    "stock": 1,
+    "precio_tarjeta": 19879.0
+  },
+  "13971": {
+    "stock": 1,
+    "precio_tarjeta": 23629.0
+  },
+  "2073651": {
+    "stock": 2,
+    "precio_tarjeta": 396699.0
+  },
+  "17800": {
+    "stock": 1,
+    "precio_tarjeta": 396699.0
+  },
+  "2070229": {
+    "stock": 2,
+    "precio_tarjeta": 417309.0
+  },
+  "17801": {
+    "stock": 1,
+    "precio_tarjeta": 503299.0
+  },
+  "2073652": {
+    "stock": 2,
+    "precio_tarjeta": 503299.0
+  },
+  "17442": {
+    "stock": 1,
+    "precio_tarjeta": 540499.0
+  },
+  "2075133": {
+    "stock": 1,
+    "precio_tarjeta": 667149.0
+  },
+  "22651": {
+    "stock": 1,
+    "precio_tarjeta": 744499.0
+  },
+  "2073574": {
+    "stock": 1,
+    "precio_tarjeta": 834719.0
+  },
+  "17529": {
+    "stock": 1,
+    "precio_tarjeta": 898249.0
+  },
+  "2073860": {
+    "stock": 1,
+    "precio_tarjeta": 988239.0
+  },
+  "20002": {
+    "stock": 1,
+    "precio_tarjeta": 1233069.0
   }
 };
