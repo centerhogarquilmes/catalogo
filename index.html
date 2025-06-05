@@ -306,7 +306,7 @@ if (productosDestacadosFiltrados.length === 0) {
     productosDestacadosFiltrados.forEach(producto => {
         // Obtener precio desde precios.js
         const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible' };
-        const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Precio no disponible';
+        const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Consultar precio';
 
         const card = document.createElement('div');
         card.className = 'product-card';

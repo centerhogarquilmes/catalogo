@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Obtener datos dinámicos de precios.js
     const datosDinamicos = precios && precios[codigoProducto] ? precios[codigoProducto] : { stock: 0, precio_tarjeta: 'No disponible' };
     const stockTexto = datosDinamicos.stock > 0 ? `Stock disponible: ${datosDinamicos.stock} unidades` : 'Sin stock';
-    const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Precio no disponible';
+    const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Consultar precio';
 
     // Actualizar contenido
     const productName = document.getElementById('product-name');

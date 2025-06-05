@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Búsqueda - Center Hogar Quilmes</title>
+    <title>Categoría - Center Hogar Quilmes</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -63,7 +63,7 @@
         <li class="has-submenu">
             <a href="categoria.html?nombre=Climatizacion">Climatización</a>
             <ul class="submenu">
-                <li><a href="categoria.html?nombre=Climatizacion&subcategoria=Calefaccion electica">Calefacción eléctrica</a></li>
+                <li><a href="categoria.html?nombre=Climatizacion&subcategoria=Calefaccion electrica">Calefacción eléctrica</a></li>
                 <li><a href="categoria.html?nombre=Climatizacion&subcategoria=Calefaccion a gas">Calefacción a gas</a></li>
                 <li><a href="categoria.html?nombre=Climatizacion&subcategoria=Ventilacion">Ventilación</a></li>
                 <li><a href="categoria.html?nombre=Climatizacion&subcategoria=Aires acondicionados">Aires Acondicionados</a></li>
@@ -120,33 +120,59 @@
 </nav>
         </div>
     </header>
-  
+
     <!-- Main Content -->
     <main class="container">
-    <section class="catalog">
-        <h2 id="search-title">Resultados de búsqueda</h2>
-        <div class="view-toggle" id="view-toggle">
-            <button class="view-btn grid-view active" data-view="grid" title="Vista en mosaico" aria-label="Vista en mosaico">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                </svg>
-            </button>
-            <button class="view-btn list-view" data-view="list" title="Vista en lista" aria-label="Vista en lista">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
-        </div>
-        <div class="product-grid" id="product-grid">
-            <!-- Productos se llenan con JavaScript -->
-        </div>
-    </section>
-</main>
+        <section class="catalog">
+            <div class="search-container">
+                <div class="filter-panel">
+                    <button class="filter-toggle" aria-label="Abrir filtros">Filtros ☰</button>
+                    <div class="filters" id="filters">
+                        <h3>Filtros</h3>
+                        <div class="filter-group">
+                            <h4>Marca</h4>
+                            <select id="filter-marca">
+                                <option value="">Todas</option>
+                                <!-- Opciones generadas dinámicamente -->
+                            </select>
+                        </div>
+                        <div id="dynamic-filters">
+                            <!-- Filtros dinámicos se generan aquí -->
+                        </div>
+                        <div class="filter-buttons">
+                            <button class="clear-filters buy-btn">Limpiar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="results">
+                    <h2 id="category-title">Productos</h2>
+                        <div class="view-toggle" id="view-toggle">
+                            <button class="view-btn grid-view active" data-view="grid" title="Vista en mosaico" aria-label="Vista en mosaico">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </button>
+                            <button class="view-btn list-view" data-view="list" title="Vista en lista" aria-label="Vista en lista">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    <div class="active-filters" id="active-filters">
+                        <!-- Filtros activos se muestran aquí -->
+                    </div>
+                    <div class="product-grid" id="product-grid">
+                        <!-- Productos se llenan con JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -160,6 +186,18 @@
         </div>
     </footer>
 
+    <!-- Botón flotante para filtros -->
+<button class="filter-float" title="Abrir filtros" aria-label="Abrir filtros">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="6" x2="20" y2="6"></line>
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="18" x2="20" y2="18"></line>
+        <circle cx="8" cy="6" r="1"></circle>
+        <circle cx="8" cy="12" r="1"></circle>
+        <circle cx="8" cy="18" r="1"></circle>
+    </svg>
+</button>
+
     <!-- Botón flotante para volver arriba -->
     <button class="scroll-to-top" title="Volver arriba">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -169,55 +207,406 @@
     </button>
 
     <!-- Scripts -->
-    <script src="productos.js"></script>
-    <script src="scripts.js"></script>
-    <script>
-    // Normalizar texto para manejar acentos
-    function normalizeString(input) {
-        if (Array.isArray(input)) {
-            input = input.join(' ');
+    <script src="precios.js"></script>
+<script src="productos.js"></script>
+<script src="scripts.js"></script>
+<script>
+// Definir atributos filtrables por categoría
+const atributosPorCategoria = {
+    "lavado": [
+        "Tipo de lavado",
+        "Capacidad (kg)",
+        "Inverter",
+        "Velocidad de centrifugado (RPM)",
+        "Tipo de carga"
+    ],
+    "tv y audio": [
+        "Pulgadas",
+        "Tipo de resolución",
+        "Dimensiones",
+        "Tipo de pantalla",
+        "Sistema operativo"
+    ],
+    "tecnologia": [
+        "Sistema operativo",
+        "Almacenamiento",
+        "Bateria",
+        "NFC",
+        "Cámara trasera",
+        "Cámara frontal",
+        "Red móvil",
+        "RAM (GB)"
+    ],
+    "climatizacion": {
+        "calefaccion electrica": [
+            "Potencia (W)",
+            "Cantidad de velas",
+            "Giratoria"
+        ],
+        "calefaccion a gas": [
+            "Potencia (Kcal)",
+            "Tipo",
+            "Tipo de gas",
+            "Tipo"
+        ]
+    },
+    "cocinas": [
+        "Tipo de uso",
+        "Dimensiones",
+        "Material",
+        "Tipo de gas",
+        "Encendido eléctrico",
+        "Válvula de seguridad",
+        "Luz en el horno",
+        "Hornallas"
+    ],
+    "heladeras": [
+        "Dimensiones",
+        "Capacidad (Litros)",
+        "Tipo de tecnologia",
+        "Inverter",
+        "Dispenser de agua",
+        "Tipo de heladera",
+        "Eficiencia energética"
+    ],
+    "hornos, microondas y freidoras": [
+        "Convector",
+        "Anafes",
+        "Spiedo",
+        "Grill",
+        "Capacidad (litros)",
+        "Potencia (W)"
+    ],
+    "termotanques": [
+        "Dimensiones",
+        "Capacidad (Litros)",
+        "Conexiones",
+        "Alta recuperación",
+        "Colgar o apoyar",
+        "Potencia",
+        "Eficiencia energética"
+    ],
+    "pequenos electrodomesticos": {
+        "pavas electricas": [
+            "Capacidad (Litros)",
+            "Potencia (W)",
+            "Corte automático"
+        ],
+        "cafeteras": [
+            "Capacidad (Litros)",
+            "Tipo",
+            "Potencia (W)"
+        ],
+        "tostadoras": [
+            "Ranuras",
+            "Potencia (W)",
+            "Niveles de tostado"
+        ]
+    },
+    "cuidado personal": [
+        "Tipo de equipo",
+        "Uso recomendado",
+        "Potencia (W)"
+    ]
+};
+
+// Función para parsear el campo descripción y convertirlo en un objeto de atributos
+function parsearDescripcion(descripcion) {
+    const atributos = {};
+    if (!descripcion) return atributos;
+
+    const lineas = descripcion.split('\n');
+    lineas.forEach(linea => {
+        const match = linea.match(/<strong>([^:]+):<\/strong>\s*(.+)/);
+        if (match) {
+            const clave = match[1].trim();
+            const valor = match[2].trim();
+            atributos[clave] = valor;
         }
-        if (typeof input !== 'string') {
-            input = String(input || '');
+    });
+
+    // Inferir "Smart TV" basado en "Sistema operativo"
+    if (atributos["Sistema operativo"]) {
+        const sistemasSmart = ["Android TV", "Google TV", "Titan OS", "Tyzen", "Vidaa", "GO"];
+        atributos["Smart TV"] = sistemasSmart.includes(atributos["Sistema operativo"]) ? "Sí" : "No";
+    }
+
+    return atributos;
+}
+
+// Normalizar texto para manejar acentos y mayúsculas/minúsculas
+function normalizeString(input) {
+    if (Array.isArray(input)) {
+        input = input.join(' ');
+    }
+    if (typeof input !== 'string') {
+        input = String(input || '');
+    }
+    return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+// Obtener parámetros de la URL
+const urlParams = new URLSearchParams(window.location.search);
+const categoria = urlParams.get('nombre') || '';
+const subcategoria = urlParams.get('subcategoria') || '';
+console.log('URL Parameters - Categoria:', categoria, 'Subcategoria:', subcategoria);
+
+// Obtener marcas únicas para la categoría y subcategoría seleccionadas
+let marcas = [];
+if (categoria) {
+    let productosFiltrados = productos.filter(p => {
+        const categoriaNormalizada = normalizeString(p.categoria);
+        const categoriaBuscada = normalizeString(categoria);
+        console.log('Comparando categoría:', categoriaNormalizada, 'con', categoriaBuscada);
+        return categoriaNormalizada === categoriaBuscada;
+    });
+    if (subcategoria) {
+        productosFiltrados = productosFiltrados.filter(p => {
+            const subcategoriaNormalizada = normalizeString(p.subcategoria);
+            const subcategoriaBuscada = normalizeString(subcategoria);
+            console.log('Comparando subcategoría:', subcategoriaNormalizada, 'con', subcategoriaBuscada);
+            return subcategoriaNormalizada === subcategoriaBuscada;
+        });
+    }
+    marcas = [...new Set(
+        productosFiltrados
+            .map(p => p.caracteristicas.find(c => c.startsWith('Marca: '))?.replace('Marca: ', ''))
+            .filter(m => m)
+    )];
+}
+
+// Poblar el selector de marcas
+const filterMarca = document.getElementById('filter-marca');
+marcas.forEach(marca => {
+    const option = document.createElement('option');
+    option.value = marca;
+    option.textContent = marca;
+    filterMarca.appendChild(option);
+});
+
+// Generar filtros dinámicos según la categoría y subcategoría seleccionadas
+function updateDynamicFilters(categoria, subcategoria) {
+    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    dynamicFiltersContainer.innerHTML = '';
+
+    const categoriaNormalizada = normalizeString(categoria);
+    const subcategoriaNormalizada = normalizeString(subcategoria);
+    console.log('Accediendo a atributosPorCategoria con:', categoriaNormalizada, subcategoriaNormalizada);
+    let atributosFiltrables = [];
+
+    if (categoriaNormalizada && atributosPorCategoria[categoriaNormalizada]) {
+        if (subcategoriaNormalizada && typeof atributosPorCategoria[categoriaNormalizada] === 'object' && !Array.isArray(atributosPorCategoria[categoriaNormalizada])) {
+            atributosFiltrables = atributosPorCategoria[categoriaNormalizada][subcategoriaNormalizada] || [];
+            console.log('Atributos para subcategoría:', atributosFiltrables);
+        } else {
+            atributosFiltrables = Array.isArray(atributosPorCategoria[categoriaNormalizada]) ? atributosPorCategoria[categoriaNormalizada] : [];
+            console.log('Atributos para categoría (sin subcategoría):', atributosFiltrables);
         }
-        return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     }
 
-    // Función para dividir el término de búsqueda en palabras clave
-    function getSearchKeywords(query) {
-        return query.trim().split(/\s+/).map(keyword => normalizeString(keyword)).filter(keyword => keyword.length > 0);
+    if (atributosFiltrables.length === 0) {
+        console.log('No se encontraron atributos filtrables para', categoriaNormalizada, subcategoriaNormalizada);
+        return;
+    }
+    let productosFiltradosPorCategoria = productos.filter(p => normalizeString(p.categoria) === categoriaNormalizada);
+    if (subcategoria) {
+        productosFiltradosPorCategoria = productosFiltradosPorCategoria.filter(p => normalizeString(p.subcategoria) === normalizeString(subcategoria));
     }
 
-    // Función para verificar si un producto coincide con todas las palabras clave
-    function matchesKeywords(producto, keywords) {
-        const fields = [
-            normalizeString(producto.nombre),
-            normalizeString(producto.categoria),
-            normalizeString(producto.codigo || ''),
-            normalizeString(producto.descripcion),
-            normalizeString(producto.caracteristicas)
-        ].join(' ');
+    atributosFiltrables.forEach(atributo => {
+        let valoresUnicos = [...new Set(
+            productosFiltradosPorCategoria
+                .map(p => {
+                    const atributos = parsearDescripcion(p.descripcion);
+                    return atributos[atributo];
+                })
+                .filter(v => v && v !== '-' && v !== '0')
+        )];
 
-        return keywords.every(keyword => fields.includes(keyword));
+        if (valoresUnicos.length === 0) return;
+
+        // Ordenar valores numéricos para atributos específicos
+        if (atributo === 'Capacidad (Litros)' || atributo === 'Capacidad' || atributo === 'Pulgadas' || atributo === 'Capacidad (kg)' || 
+            atributo === 'Potencia' || atributo === 'Potencia (W)' || atributo === 'Velocidad de centrifugado (RPM)' || 
+            atributo === 'Cámara trasera' || atributo === 'Cámara frontal' || atributo === 'Hornallas' || 
+            atributo === 'Presión (bar)' || atributo === 'Niveles de tostado') {
+            valoresUnicos.sort((a, b) => {
+                const numA = parseFloat(a.replace(/[^\d.]/g, '')) || 0;
+                const numB = parseFloat(b.replace(/[^\d.]/g, '')) || 0;
+                return numA - numB;
+            });
+        } else {
+            valoresUnicos.sort((a, b) => a.localeCompare(b));
+        }
+
+        const filterGroup = document.createElement('div');
+        filterGroup.className = 'filter-group collapsible-filter';
+
+        const filterHeader = document.createElement('h4');
+        filterHeader.textContent = atributo;
+        filterHeader.className = 'collapsible-header';
+        filterHeader.addEventListener('click', () => {
+            filterHeader.classList.toggle('active');
+            filterContent.style.display = filterHeader.classList.contains('active') ? 'block' : 'none';
+        });
+
+        const filterContent = document.createElement('div');
+        filterContent.className = 'collapsible-content';
+        filterContent.style.display = 'none';
+
+        valoresUnicos.forEach(valor => {
+            const label = document.createElement('label');
+            label.className = 'filter-option';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.name = `filter-${normalizeString(atributo)}`;
+            checkbox.value = valor;
+            checkbox.className = 'filter-checkbox';
+            checkbox.addEventListener('change', filtrarProductos);
+
+            const span = document.createElement('span');
+            span.textContent = valor;
+
+            label.appendChild(checkbox);
+            label.appendChild(span);
+            filterContent.appendChild(label);
+        });
+
+        filterGroup.appendChild(filterHeader);
+        filterGroup.appendChild(filterContent);
+        dynamicFiltersContainer.appendChild(filterGroup);
+    });
+}
+
+// Actualizar título de la categoría
+let title = 'Productos';
+if (subcategoria) {
+    title = `Productos en ${subcategoria}`;
+} else if (categoria) {
+    title = `Productos en ${categoria}`;
+}
+document.getElementById('category-title').textContent = title;
+
+// Función para mostrar los filtros activos
+function mostrarFiltrosActivos() {
+    const activeFiltersContainer = document.getElementById('active-filters');
+    activeFiltersContainer.innerHTML = '';
+
+    // Marca
+    if (filterMarca.value) {
+        const chip = document.createElement('div');
+        chip.className = 'filter-chip';
+        chip.innerHTML = `
+            <span>Marca: ${filterMarca.value}</span>
+            <button data-filter="marca">×</button>
+        `;
+        activeFiltersContainer.appendChild(chip);
     }
 
-    // Obtener el término de búsqueda desde la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const query = urlParams.get('query') || '';
-    document.getElementById('search-title').textContent = query ? `Resultados de búsqueda para "${query}"` : 'Resultados de búsqueda';
-    document.getElementById('searchInput').value = query;
+    // Filtros dinámicos (solo checkboxes)
+    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    const filterGroups = dynamicFiltersContainer.querySelectorAll('.filter-group');
+    filterGroups.forEach(group => {
+        const atributo = group.querySelector('.collapsible-header').textContent;
+        const checkboxes = group.querySelectorAll('.filter-checkbox:checked');
+        checkboxes.forEach(checkbox => {
+            const valor = checkbox.value;
+            const chip = document.createElement('div');
+            chip.className = 'filter-chip';
+            chip.innerHTML = `
+                <span>${atributo}: ${valor}</span>
+                <button data-filter="dynamic" data-atributo="${atributo}" data-valor="${valor}">×</button>
+            `;
+            activeFiltersContainer.appendChild(chip);
+        });
+    });
 
-    // Filtrar productos por todas las palabras clave
-    const keywords = getSearchKeywords(query);
-    const productosFiltrados = productos.filter(producto => matchesKeywords(producto, keywords));
+    // Agregar evento para eliminar filtros
+    activeFiltersContainer.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+            const filterType = button.dataset.filter;
+            if (filterType === 'marca') {
+                filterMarca.value = '';
+            } else if (filterType === 'dynamic') {
+                const atributo = button.dataset.atributo;
+                const valor = button.dataset.valor;
+                const checkbox = document.querySelector(`input[name="filter-${normalizeString(atributo)}"][value="${valor}"]`);
+                if (checkbox) {
+                    checkbox.checked = false;
+                }
+            }
+            filtrarProductos();
+        });
+    });
+}
 
-    // Generar las tarjetas de productos
+// Configurar eventos
+filterMarca.addEventListener('change', filtrarProductos);
+
+// Limpiar filtros
+document.querySelector('.clear-filters').addEventListener('click', () => {
+    filterMarca.value = '';
+    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    const checkboxes = dynamicFiltersContainer.querySelectorAll('.filter-checkbox:checked');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    history.replaceState(null, '', `categoria.html?nombre=${encodeURIComponent(categoria)}${subcategoria ? `&subcategoria=${encodeURIComponent(subcategoria)}` : ''}`);
+    filtrarProductos();
+});
+
+// Función para filtrar productos
+function filtrarProductos() {
+    let productosFiltrados = productos;
+
+    if (categoria) {
+        productosFiltrados = productosFiltrados.filter(producto => normalizeString(producto.categoria) === normalizeString(categoria));
+    }
+
+    if (subcategoria) {
+        productosFiltrados = productosFiltrados.filter(producto => normalizeString(producto.subcategoria) === normalizeString(subcategoria));
+    }
+
+    const marca = filterMarca.value;
+    if (marca) {
+        productosFiltrados = productosFiltrados.filter(producto => 
+            producto.caracteristicas.some(c => c === `Marca: ${marca}`)
+        );
+    }
+
+    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    const filterGroups = dynamicFiltersContainer.querySelectorAll('.filter-group');
+    filterGroups.forEach(group => {
+        const checkboxes = group.querySelectorAll('.filter-checkbox:checked');
+        if (checkboxes.length > 0) {
+            const atributo = group.querySelector('.collapsible-header').textContent;
+            const valoresSeleccionados = Array.from(checkboxes).map(checkbox => checkbox.value);
+            productosFiltrados = productosFiltrados.filter(producto => {
+                const atributos = parsearDescripcion(producto.descripcion);
+                const valorAtributo = atributos[atributo];
+                return valorAtributo && valoresSeleccionados.includes(valorAtributo);
+            });
+        }
+    });
+
+    console.log(`Productos filtrados para categoría "${categoria}" y subcategoría "${subcategoria}":`, productosFiltrados.length);
+
     const productGrid = document.getElementById('product-grid');
-    productGrid.innerHTML = ''; // Limpiar el grid antes de agregar productos
+    productGrid.innerHTML = '';
     if (productosFiltrados.length === 0) {
-        productGrid.innerHTML = '<p>No se encontraron productos para la búsqueda.</p>';
+        productGrid.innerHTML = `
+            <div class="no-results">
+                <img src="images/nomedia_trans.png" alt="No se encontraron resultados">
+                <p>No se han encontrado resultados</p>
+            </div>
+        `;
     } else {
         productosFiltrados.forEach(producto => {
+            // Obtener precio desde precios.js
+            const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible' };
+            const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Consultar precio';
+
             const card = document.createElement('div');
             card.className = 'product-card';
             card.innerHTML = `
@@ -226,6 +615,7 @@
                     <div class="text-container">
                         <h3>${producto.nombre}</h3>
                         <p class="product-code">Código: ${producto.codigo}</p>
+                        <p class="product-price">Precio: ${precioTexto}</p>
                         <button class="buy-btn">Ver más</button>
                     </div>
                 </a>
@@ -234,134 +624,21 @@
         });
     }
 
-    // Alternancia entre vistas
-    const gridBtn = document.querySelector('.view-btn.grid-view');
-    const listBtn = document.querySelector('.view-btn.list-view');
+    const params = new URLSearchParams();
+    if (categoria) params.set('nombre', categoria);
+    if (subcategoria) params.set('subcategoria', subcategoria);
+    if (marca) params.set('marca', marca);
+    history.replaceState(null, '', `categoria.html?${params.toString()}`);
 
-    if (productGrid && gridBtn && listBtn) {
-        // Asegurar vista mosaico por defecto
-        productGrid.classList.remove('list-view');
-        gridBtn.classList.add('active');
-        listBtn.classList.remove('active');
-        console.log('Vista inicial: mosaico');
+    // Mostrar filtros activos
+    mostrarFiltrosActivos();
+}
 
-        gridBtn.addEventListener('click', () => {
-            productGrid.classList.remove('list-view');
-            gridBtn.classList.add('active');
-            listBtn.classList.remove('active');
-            console.log('Vista cambiada a: mosaico');
-        });
+// Inicializar filtros dinámicos
+updateDynamicFilters(categoria, subcategoria);
 
-        listBtn.addEventListener('click', () => {
-            productGrid.classList.add('list-view');
-            listBtn.classList.add('active');
-            gridBtn.classList.remove('active');
-            console.log('Vista cambiada a: lista');
-        });
-    } else {
-        console.error('Error: No se encontraron productGrid, gridBtn o listBtn');
-    }
-
-    // Configurar la barra de búsqueda y sugerencias
-    const searchInput = document.getElementById('searchInput');
-    const suggestionsContainer = document.getElementById('suggestions');
-    let selectedIndex = -1;
-
-    searchInput.addEventListener('input', () => {
-        const query = searchInput.value.trim();
-        const keywords = getSearchKeywords(query);
-        suggestionsContainer.innerHTML = '';
-        selectedIndex = -1;
-
-        if (keywords.length === 0) {
-            suggestionsContainer.style.display = 'none';
-            searchInput.style.borderBottomLeftRadius = '4px';
-            return;
-        }
-
-        // Filtrar sugerencias por todas las palabras clave
-        const filteredSuggestions = productos.filter(producto => matchesKeywords(producto, keywords));
-
-        if (filteredSuggestions.length === 0) {
-            suggestionsContainer.style.display = 'none';
-            searchInput.style.borderBottomLeftRadius = '4px';
-            return;
-        }
-
-        // Mostrar hasta 5 sugerencias
-        filteredSuggestions.slice(0, 5).forEach((producto, index) => {
-            const suggestionDiv = document.createElement('div');
-            suggestionDiv.textContent = producto.nombre;
-            suggestionDiv.setAttribute('data-index', index);
-            suggestionDiv.addEventListener('click', () => {
-                searchInput.value = producto.nombre;
-                suggestionsContainer.style.display = 'none';
-                searchInput.style.borderBottomLeftRadius = '4px';
-                window.location.href = `producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}`;
-            });
-            suggestionsContainer.appendChild(suggestionDiv);
-        });
-
-        suggestionsContainer.style.display = 'block';
-        searchInput.style.borderBottomLeftRadius = '0';
-    });
-
-    searchInput.addEventListener('keydown', (e) => {
-        const suggestionItems = suggestionsContainer.querySelectorAll('div');
-        if (suggestionItems.length === 0) return;
-
-        if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            selectedIndex = Math.min(selectedIndex + 1, suggestionItems.length - 1);
-            updateSelection();
-        } else if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            selectedIndex = Math.max(selectedIndex - 1, -1);
-            updateSelection();
-        } else if (e.key === 'Enter' && selectedIndex >= 0) {
-            e.preventDefault();
-            const selectedSuggestion = suggestionItems[selectedIndex].textContent;
-            searchInput.value = selectedSuggestion;
-            suggestionsContainer.style.display = 'none';
-            searchInput.style.borderBottomLeftRadius = '4px';
-            const producto = productos.find(p => p.nombre === selectedSuggestion);
-            if (producto) {
-                window.location.href = `producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}`;
-            }
-        } else if (e.key === 'Enter') {
-            const query = searchInput.value.trim();
-            if (query) {
-                window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
-            }
-        }
-    });
-
-    function updateSelection() {
-        const suggestionItems = suggestionsContainer.querySelectorAll('div');
-        suggestionItems.forEach((item, index) => {
-            item.classList.toggle('selected', index === selectedIndex);
-        });
-        if (selectedIndex >= 0) {
-            suggestionItems[selectedIndex].scrollIntoView({ block: 'nearest' });
-        }
-    }
-
-    // Cerrar sugerencias al hacer clic fuera
-    document.addEventListener('click', (e) => {
-        if (!searchInput.contains(e.target) && !suggestionsContainer.contains(e.target)) {
-            suggestionsContainer.style.display = 'none';
-            searchInput.style.borderBottomLeftRadius = '4px';
-            selectedIndex = -1;
-        }
-    });
-
-    // Redirigir al hacer clic en el botón de búsqueda
-    document.querySelector('.search-btn').addEventListener('click', () => {
-        const query = searchInput.value.trim();
-        if (query) {
-            window.location.href = `busqueda.html?query=${encodeURIComponent(query)}`;
-        }
-    });
+// Ejecutar filtrado inicial
+filtrarProductos();
 </script>
 </body>
 </html>
