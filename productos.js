@@ -3413,9 +3413,8 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
-  
+    {
 
-];
 
         categoria: "Tv y audio",
         subcategoria: "Tv",
