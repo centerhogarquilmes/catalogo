@@ -377,7 +377,7 @@ const precios = {
   },
   "2075371": {
     "stock": 1,
-    "precio_tarjeta": 727999.0
+    "precio_tarjeta": 724989.0
   },
   "2073611": {
     "stock": 1,
@@ -405,11 +405,11 @@ const precios = {
   },
   "2075324": {
     "stock": 1,
-    "precio_tarjeta": 183299.0
+    "precio_tarjeta": 179249.0
   },
   "2074339": {
     "stock": 1,
-    "precio_tarjeta": 974999.0
+    "precio_tarjeta": 978899.0
   },
   "2073917": {
     "stock": 1,
@@ -566,5 +566,89 @@ const precios = {
   "20002": {
     "stock": 1,
     "precio_tarjeta": 1233069.0
+  },
+  "2075295": {
+    "stock": 1,
+    "precio_tarjeta": 23999.0
+  },
+  "2074904": {
+    "stock": 1,
+    "precio_tarjeta": 31899.0
+  },
+  "2075300": {
+    "stock": 2,
+    "precio_tarjeta": 36899.0
+  },
+  "2071746": {
+    "stock": 1,
+    "precio_tarjeta": 39999.0
+  },
+  "2071349": {
+    "stock": 1,
+    "precio_tarjeta": 41999.0
+  },
+  "20065": {
+    "stock": 3,
+    "precio_tarjeta": 46889.0
+  },
+  "2072802": {
+    "stock": 1,
+    "precio_tarjeta": 56999.0
+  },
+  "2075235": {
+    "stock": 2,
+    "precio_tarjeta": 57699.0
+  },
+  "2072885": {
+    "stock": 1,
+    "precio_tarjeta": 67199.0
+  },
+  "2073516": {
+    "stock": 1,
+    "precio_tarjeta": 72199.0
+  },
+  "2075236": {
+    "stock": 1,
+    "precio_tarjeta": 83199.0
+  },
+  "2072883": {
+    "stock": 3,
+    "precio_tarjeta": 84999.0
+  },
+  "2073798": {
+    "stock": 1,
+    "precio_tarjeta": 99989.0
+  },
+  "2075092": {
+    "stock": 2,
+    "precio_tarjeta": 131989.0
+  },
+  "2075197": {
+    "stock": 1,
+    "precio_tarjeta": 181989.0
+  },
+  "2075198": {
+    "stock": 1,
+    "precio_tarjeta": 156899.0
+  },
+  "2075280": {
+    "stock": 1,
+    "precio_tarjeta": 151899.0
+  },
+  "2075303": {
+    "stock": 1,
+    "precio_tarjeta": 105919.0
+  },
+  "2075305": {
+    "stock": 1,
+    "precio_tarjeta": 139999.0
+  },
+  "2075364": {
+    "stock": 1,
+    "precio_tarjeta": 188999.0
+  },
+  "2075365": {
+    "stock": 1,
+    "precio_tarjeta": 249999.0
   }
 };
