@@ -122,7 +122,7 @@ const productos = [
 
         ],
         descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase AA",
-        codigo: "2071810 ",
+        codigo: "2071810",
         caracteristicas: ["Marca: Florencia", "Modelo: 5518F", "Garantía: 1 año"]
     },
     {
@@ -748,10 +748,10 @@ const productos = [
         "images/hornos/Horno_Florencia_de_empotrar_7857F_Eléctrico_4.webp"
     ],
     descripcion: '<strong>Capacidad (Litros):</strong> 63\nstrong>Potencia (W):</strong> 2150\n<strong>Convector:</strong> Sí',
-    codigo: "2072768 ",
+    codigo: "2072768",
     caracteristicas: [
         "Marca: Florencia",
-        "Modelo: 2072768 ",
+        "Modelo: 2072768",
         "Garantía: 1 año"
     ]
     },
@@ -1811,10 +1811,10 @@ const productos = [
         "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_4.webp"
     ],
     descripcion: '<strong>Capacidad (Litros):</strong> 1.7\n<strong>Potencia (W):</strong> 2200\n<strong>Corte automático:</strong> Sí',
-    codigo: "2075236 ",
+    codigo: "2075236",
     caracteristicas: [
         "Marca: Philips",
-        "Modelo: 2075236 ",
+        "Modelo: 2075236",
         "Garantía: 1 año"
     ]
     },
@@ -1846,10 +1846,10 @@ const productos = [
         "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_2.webp"
     ],
     descripcion: '<strong>Capacidad (Litros):</strong> 2\n<strong>Potencia (W):</strong> 1500',
-    codigo: "2074904 ",
+    codigo: "2074904",
     caracteristicas: [
         "Marca: Kanji",
-        "Modelo: 2074904 ",
+        "Modelo: 2074904",
         "Garantía: 1 año"
     ]
     },
@@ -1868,10 +1868,10 @@ const productos = [
         "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_7.webp"
     ],
     descripcion: '<strong>Capacidad (Litros):</strong> 1\n<strong>Potencia (W):</strong> 2400\n<strong>Corte automático:</strong> Sí',
-    codigo: "2073516 ",
+    codigo: "2073516",
     caracteristicas: [
         "Marca: Moulinex",
-        "Modelo: 2073516 ",
+        "Modelo: 2073516",
         "Garantía: 1 año"
     ]
     },
@@ -2116,10 +2116,10 @@ const productos = [
     categoria: "pequeños electrodomesticos",
     subcategoria: "tostadoras",
     nombre: 'Tostador Kanji TM1400 para 4 panes',
-    imagen: "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_1.webp",
+    imagen: "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_2.webp",
     imagenes: [
-        "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_1.webp",
         "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_2.webp",
+        "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_1.webp",
         "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_3.webp"
     ],
     descripcion: '<strong>Ranuras:</strong> 2\n<strong>Potencia (W):</strong> 1200\n<strong>Niveles de tostado:</strong> 6',
@@ -2229,10 +2229,10 @@ const productos = [
         "images/gas/Termot_sherman_50_lts_pie_multigas_carga_sup_1.webp"
     ],
     descripcion: '<strong>Dimensiones:</strong> 82 x 45\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 3500\n<strong>Eficiencia energética:</strong> Clase C',
-    codigo: "2079072",
+    codigo: "2069072",
     caracteristicas: [
         "Marca: Sherman",
-        "Modelo: 2079072",
+        "Modelo: 2069072",
         "Garantía: 1 año"
     ]
     },
@@ -2327,10 +2327,10 @@ const productos = [
         "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_3.webp"
     ],
     descripcion: '<strong>Dimensiones:</strong> 106 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 6900\n<strong>Eficiencia energética:</strong> Clase B',
-    codigo: "2079065",
+    codigo: "2069065",
     caracteristicas: [
         "Marca: Saiar",
-        "Modelo: 2079065",
+        "Modelo: 2069065",
         "Garantía: 1 año"
     ]
     },
@@ -2343,10 +2343,10 @@ const productos = [
         "images/gas/Termot_Saiar_80lts_colgar_multigas_carga_inferior_1.webp"
     ],
     descripcion: '<strong>Dimensiones:</strong> 67 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Potencia:</strong> 5000\n<strong>Eficiencia energética:</strong> Clase B',
-    codigo: "2079069",
+    codigo: "2069069",
     caracteristicas: [
         "Marca: Saiar",
-        "Modelo: 2079069",
+        "Modelo: 2069069",
         "Garantía: 1 año"
     ]
     },
@@ -2544,17 +2544,17 @@ const productos = [
     {
     categoria: "Termotanques",
     subcategoria: "Electrico",
-    nombre: 'Termot. Sherman 85 Eléctrico TECC085ESHK2',
+    nombre: 'Termot. Sherman 85 electrico Pie',
     imagen: "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
     imagenes: [
         "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
         "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_2.webp"
     ],
     descripcion: '<strong>Dimensiones:</strong> 51 x 45\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase C',
-    codigo: "21205",
+    codigo: "2073600",
     caracteristicas: [
         "Marca: Sherman",
-        "Modelo: 21205",
+        "Modelo: 2073600",
         "Garantía: 1 año"
     ]
     },
