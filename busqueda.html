@@ -207,7 +207,7 @@
     </button>
 
     <!-- Scripts -->
-    <script src="precios.js"></script>
+<script src="precios.js"></script>
 <script src="productos.js"></script>
 <script src="scripts.js"></script>
 <script>
@@ -286,7 +286,7 @@ const atributosPorCategoria = {
         "Potencia",
         "Eficiencia energética"
     ],
-    "pequenos electrodomesticos": {
+    "pequeños electrodomesticos": {
         "pavas electricas": [
             "Capacidad (Litros)",
             "Potencia (W)",
@@ -345,38 +345,28 @@ function normalizeString(input) {
     return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
 
+// Obtener elementos del DOM
+const searchInput = document.getElementById('searchInput');
+const searchBtn = document.querySelector('.search-btn');
+const suggestionsContainer = document.getElementById('suggestions');
+const filterMarca = document.getElementById('filter-marca');
+const productGrid = document.getElementById('product-grid');
+const categoryTitle = document.getElementById('category-title');
+const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+const activeFiltersContainer = document.getElementById('active-filters');
+
 // Obtener parámetros de la URL
 const urlParams = new URLSearchParams(window.location.search);
-const categoria = urlParams.get('nombre') || '';
-const subcategoria = urlParams.get('subcategoria') || '';
-console.log('URL Parameters - Categoria:', categoria, 'Subcategoria:', subcategoria);
+let searchQuery = urlParams.get('q') || urlParams.get('query') || ''; // Soporte para ambos parámetros
+searchInput.value = searchQuery;
+console.log('Parámetro inicial de búsqueda:', searchQuery);
 
-// Obtener marcas únicas para la categoría y subcategoría seleccionadas
-let marcas = [];
-if (categoria) {
-    let productosFiltrados = productos.filter(p => {
-        const categoriaNormalizada = normalizeString(p.categoria);
-        const categoriaBuscada = normalizeString(categoria);
-        console.log('Comparando categoría:', categoriaNormalizada, 'con', categoriaBuscada);
-        return categoriaNormalizada === categoriaBuscada;
-    });
-    if (subcategoria) {
-        productosFiltrados = productosFiltrados.filter(p => {
-            const subcategoriaNormalizada = normalizeString(p.subcategoria);
-            const subcategoriaBuscada = normalizeString(subcategoria);
-            console.log('Comparando subcategoría:', subcategoriaNormalizada, 'con', subcategoriaBuscada);
-            return subcategoriaNormalizada === subcategoriaBuscada;
-        });
-    }
-    marcas = [...new Set(
-        productosFiltrados
-            .map(p => p.caracteristicas.find(c => c.startsWith('Marca: '))?.replace('Marca: ', ''))
-            .filter(m => m)
-    )];
-}
-
-// Poblar el selector de marcas
-const filterMarca = document.getElementById('filter-marca');
+// Obtener marcas únicas de todos los productos
+const marcas = [...new Set(
+    productos
+        .map(p => p.caracteristicas.find(c => c.startsWith('Marca: '))?.replace('Marca: ', ''))
+        .filter(m => m)
+)];
 marcas.forEach(marca => {
     const option = document.createElement('option');
     option.value = marca;
@@ -384,42 +374,32 @@ marcas.forEach(marca => {
     filterMarca.appendChild(option);
 });
 
-// Generar filtros dinámicos según la categoría y subcategoría seleccionadas
-function updateDynamicFilters(categoria, subcategoria) {
-    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+// Generar filtros dinámicos según los productos filtrados
+function updateDynamicFilters(productosFiltrados) {
+    console.log('Ejecutando updateDynamicFilters con', productosFiltrados.length, 'productos');
     dynamicFiltersContainer.innerHTML = '';
-
-    const categoriaNormalizada = normalizeString(categoria);
-    const subcategoriaNormalizada = normalizeString(subcategoria);
-    console.log('Accediendo a atributosPorCategoria con:', categoriaNormalizada, subcategoriaNormalizada);
+    const categoriasUnicas = [...new Set(productosFiltrados.map(p => normalizeString(p.categoria)))];
     let atributosFiltrables = [];
 
-    if (categoriaNormalizada && atributosPorCategoria[categoriaNormalizada]) {
-        if (subcategoriaNormalizada && typeof atributosPorCategoria[categoriaNormalizada] === 'object' && !Array.isArray(atributosPorCategoria[categoriaNormalizada])) {
-            atributosFiltrables = atributosPorCategoria[categoriaNormalizada][subcategoriaNormalizada] || [];
-            console.log('Atributos para subcategoría:', atributosFiltrables);
-        } else {
-            atributosFiltrables = Array.isArray(atributosPorCategoria[categoriaNormalizada]) ? atributosPorCategoria[categoriaNormalizada] : [];
-            console.log('Atributos para categoría (sin subcategoría):', atributosFiltrables);
+    categoriasUnicas.forEach(categoria => {
+        if (atributosPorCategoria[categoria]) {
+            if (typeof atributosPorCategoria[categoria] === 'object' && !Array.isArray(atributosPorCategoria[categoria])) {
+                Object.values(atributosPorCategoria[categoria]).forEach(subAttrs => {
+                    atributosFiltrables.push(...subAttrs);
+                });
+            } else {
+                atributosFiltrables.push(...atributosPorCategoria[categoria]);
+            }
         }
-    }
+    });
+    atributosFiltrables = [...new Set(atributosFiltrables)];
 
-    if (atributosFiltrables.length === 0) {
-        console.log('No se encontraron atributos filtrables para', categoriaNormalizada, subcategoriaNormalizada);
-        return;
-    }
-    let productosFiltradosPorCategoria = productos.filter(p => normalizeString(p.categoria) === categoriaNormalizada);
-    if (subcategoria) {
-        productosFiltradosPorCategoria = productosFiltradosPorCategoria.filter(p => normalizeString(p.subcategoria) === normalizeString(subcategoria));
-    }
+    if (atributosFiltrables.length === 0) return;
 
     atributosFiltrables.forEach(atributo => {
         let valoresUnicos = [...new Set(
-            productosFiltradosPorCategoria
-                .map(p => {
-                    const atributos = parsearDescripcion(p.descripcion);
-                    return atributos[atributo];
-                })
+            productosFiltrados
+                .map(p => parsearDescripcion(p.descripcion)[atributo])
                 .filter(v => v && v !== '-' && v !== '0')
         )];
 
@@ -463,7 +443,10 @@ function updateDynamicFilters(categoria, subcategoria) {
             checkbox.name = `filter-${normalizeString(atributo)}`;
             checkbox.value = valor;
             checkbox.className = 'filter-checkbox';
-            checkbox.addEventListener('change', filtrarProductos);
+            checkbox.addEventListener('change', () => {
+                console.log('Filtro dinámico cambiado:', atributo, valor);
+                filtrarProductos();
+            });
 
             const span = document.createElement('span');
             span.textContent = valor;
@@ -479,18 +462,53 @@ function updateDynamicFilters(categoria, subcategoria) {
     });
 }
 
-// Actualizar título de la categoría
-let title = 'Productos';
-if (subcategoria) {
-    title = `Productos en ${subcategoria}`;
-} else if (categoria) {
-    title = `Productos en ${categoria}`;
+// Actualizar título según la búsqueda
+function updateTitle() {
+    let title = searchQuery ? `Resultados para "${searchQuery}"` : 'Buscar Productos';
+    categoryTitle.textContent = title;
+    console.log('Título actualizado:', title);
 }
-document.getElementById('category-title').textContent = title;
+updateTitle();
+
+// Función para mostrar sugerencias
+function mostrarSugerencias() {
+    const query = normalizeString(searchInput.value);
+    suggestionsContainer.innerHTML = '';
+    suggestionsContainer.style.display = 'none';
+
+    if (query.length < 2) return;
+
+    const productosSugeridos = productos
+        .filter(producto => {
+            const nombre = normalizeString(producto.nombre);
+            const descripcion = normalizeString(producto.descripcion);
+            const caracteristicas = normalizeString(producto.caracteristicas);
+            return nombre.includes(query) || descripcion.includes(query) || caracteristicas.includes(query);
+        })
+        .slice(0, 5);
+
+    if (productosSugeridos.length === 0) return;
+
+    productosSugeridos.forEach(producto => {
+        const suggestion = document.createElement('div');
+        suggestion.className = 'suggestion-item';
+        suggestion.textContent = producto.nombre;
+        suggestion.addEventListener('click', () => {
+            console.log('Sugerencia seleccionada:', producto.nombre);
+            searchInput.value = producto.nombre;
+            searchQuery = producto.nombre;
+            suggestionsContainer.style.display = 'none';
+            updateTitle();
+            filtrarProductos();
+        });
+        suggestionsContainer.appendChild(suggestion);
+    });
+
+    suggestionsContainer.style.display = 'block';
+}
 
 // Función para mostrar los filtros activos
 function mostrarFiltrosActivos() {
-    const activeFiltersContainer = document.getElementById('active-filters');
     activeFiltersContainer.innerHTML = '';
 
     // Marca
@@ -504,8 +522,7 @@ function mostrarFiltrosActivos() {
         activeFiltersContainer.appendChild(chip);
     }
 
-    // Filtros dinámicos (solo checkboxes)
-    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    // Filtros dinámicos
     const filterGroups = dynamicFiltersContainer.querySelectorAll('.filter-group');
     filterGroups.forEach(group => {
         const atributo = group.querySelector('.collapsible-header').textContent;
@@ -525,6 +542,7 @@ function mostrarFiltrosActivos() {
     // Agregar evento para eliminar filtros
     activeFiltersContainer.querySelectorAll('button').forEach(button => {
         button.addEventListener('click', () => {
+            console.log('Eliminando filtro:', button.dataset.filter);
             const filterType = button.dataset.filter;
             if (filterType === 'marca') {
                 filterMarca.value = '';
@@ -532,50 +550,44 @@ function mostrarFiltrosActivos() {
                 const atributo = button.dataset.atributo;
                 const valor = button.dataset.valor;
                 const checkbox = document.querySelector(`input[name="filter-${normalizeString(atributo)}"][value="${valor}"]`);
-                if (checkbox) {
-                    checkbox.checked = false;
-                }
+                if (checkbox) checkbox.checked = false;
             }
             filtrarProductos();
         });
     });
 }
 
-// Configurar eventos
-filterMarca.addEventListener('change', filtrarProductos);
-
-// Limpiar filtros
-document.querySelector('.clear-filters').addEventListener('click', () => {
-    filterMarca.value = '';
-    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
-    const checkboxes = dynamicFiltersContainer.querySelectorAll('.filter-checkbox:checked');
-    checkboxes.forEach(checkbox => {
-        checkbox.checked = false;
-    });
-    history.replaceState(null, '', `categoria.html?nombre=${encodeURIComponent(categoria)}${subcategoria ? `&subcategoria=${encodeURIComponent(subcategoria)}` : ''}`);
-    filtrarProductos();
-});
-
 // Función para filtrar productos
 function filtrarProductos() {
+    console.log('Ejecutando filtrarProductos con searchQuery:', searchQuery);
     let productosFiltrados = productos;
 
-    if (categoria) {
-        productosFiltrados = productosFiltrados.filter(producto => normalizeString(producto.categoria) === normalizeString(categoria));
-    }
+    // Filtrar por término de búsqueda
+if (searchQuery) {
+    const queryNormalizada = normalizeString(searchQuery);
+    productosFiltrados = productosFiltrados.filter(producto => {
+        const nombre = normalizeString(producto.nombre);
+        const descripcion = normalizeString(producto.descripcion);
+        const caracteristicas = normalizeString(producto.caracteristicas);
+        const codigo = normalizeString(producto.codigo || ''); // Incluir el código
+        return nombre.includes(queryNormalizada) || 
+               descripcion.includes(queryNormalizada) || 
+               caracteristicas.includes(queryNormalizada) || 
+               codigo.includes(queryNormalizada);
+    });
+    console.log('Productos tras búsqueda:', productosFiltrados.length);
+}
 
-    if (subcategoria) {
-        productosFiltrados = productosFiltrados.filter(producto => normalizeString(producto.subcategoria) === normalizeString(subcategoria));
-    }
-
+    // Filtrar por marca
     const marca = filterMarca.value;
     if (marca) {
         productosFiltrados = productosFiltrados.filter(producto => 
             producto.caracteristicas.some(c => c === `Marca: ${marca}`)
         );
+        console.log('Productos tras filtro de marca:', productosFiltrados.length);
     }
 
-    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    // Filtrar por atributos dinámicos
     const filterGroups = dynamicFiltersContainer.querySelectorAll('.filter-group');
     filterGroups.forEach(group => {
         const checkboxes = group.querySelectorAll('.filter-checkbox:checked');
@@ -587,12 +599,11 @@ function filtrarProductos() {
                 const valorAtributo = atributos[atributo];
                 return valorAtributo && valoresSeleccionados.includes(valorAtributo);
             });
+            console.log(`Productos tras filtro ${atributo}:`, productosFiltrados.length);
         }
     });
 
-    console.log(`Productos filtrados para categoría "${categoria}" y subcategoría "${subcategoria}":`, productosFiltrados.length);
-
-    const productGrid = document.getElementById('product-grid');
+    // Mostrar productos
     productGrid.innerHTML = '';
     if (productosFiltrados.length === 0) {
         productGrid.innerHTML = `
@@ -603,19 +614,24 @@ function filtrarProductos() {
         `;
     } else {
         productosFiltrados.forEach(producto => {
-            // Obtener precio desde precios.js
-            const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible' };
-            const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Consultar precio';
+            // Obtener datos desde precios.js
+            const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
+            const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
+            const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
+            // Modificar esta línea si cambia el porcentaje de Pre. ant. imp. nac. (actualmente 0.8265)
+            const precioAntesImpuestos = precioLista ? `$${(precioLista * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
+            const isAgotado = datosDinamicos.stock_sucursal + datosDinamicos.stock_deposito === 0;
 
             const card = document.createElement('div');
-            card.className = 'product-card';
+            card.className = `product-card ${isAgotado ? 'agotado' : ''}`;
             card.innerHTML = `
                 <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
+                    ${isAgotado ? '<span class="agotado-label">Agotado</span>' : ''}
                     <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                     <div class="text-container">
                         <h3>${producto.nombre}</h3>
-                        <p class="product-code">Código: ${producto.codigo}</p>
-                        <p class="product-price">Precio: ${precioTexto}</p>
+                        <p class="product-price">Precio de lista: ${precioTextoLista}</p>
+                        <p class="product-price-before-tax">Pre. ant. imp. nac.: ${precioAntesImpuestos}</p>
                         <button class="buy-btn">Ver más</button>
                     </div>
                 </a>
@@ -624,20 +640,74 @@ function filtrarProductos() {
         });
     }
 
+    // Actualizar URL usando 'q' para consistencia
     const params = new URLSearchParams();
-    if (categoria) params.set('nombre', categoria);
-    if (subcategoria) params.set('subcategoria', subcategoria);
-    if (marca) params.set('marca', marca);
-    history.replaceState(null, '', `categoria.html?${params.toString()}`);
+    if (searchQuery) params.set('q', searchQuery);
+    history.replaceState(null, '', `busqueda.html?${params.toString()}`);
+    console.log('URL actualizada:', window.location.href);
 
     // Mostrar filtros activos
     mostrarFiltrosActivos();
+
+    // Actualizar filtros dinámicos
+    setTimeout(() => updateDynamicFilters(productosFiltrados), 0);
 }
 
-// Inicializar filtros dinámicos
-updateDynamicFilters(categoria, subcategoria);
+// Configurar eventos de búsqueda
+let isProcessingSearch = false; // Evitar recargas múltiples
+searchInput.addEventListener('input', () => {
+    console.log('Input en searchInput:', searchInput.value);
+    if (!isProcessingSearch) mostrarSugerencias();
+});
+searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter' && !isProcessingSearch) {
+        console.log('Enter presionado con:', searchInput.value);
+        isProcessingSearch = true;
+        searchQuery = searchInput.value.trim();
+        updateTitle();
+        filtrarProductos();
+        suggestionsContainer.style.display = 'none';
+        setTimeout(() => isProcessingSearch = false, 100); // Desbloquear tras un breve delay
+        e.preventDefault(); // Prevenir redirección de scripts.js
+    }
+});
+searchBtn.addEventListener('click', (e) => {
+    if (!isProcessingSearch) {
+        console.log('Botón de búsqueda clickeado con:', searchInput.value);
+        isProcessingSearch = true;
+        searchQuery = searchInput.value.trim();
+        updateTitle();
+        filtrarProductos();
+        suggestionsContainer.style.display = 'none';
+        setTimeout(() => isProcessingSearch = false, 100);
+        e.preventDefault(); // Prevenir redirección de scripts.js
+    }
+});
+
+// Cerrar sugerencias al hacer clic fuera
+document.addEventListener('click', (e) => {
+    if (!suggestionsContainer.contains(e.target) && e.target !== searchInput) {
+        suggestionsContainer.style.display = 'none';
+    }
+});
+
+// Configurar eventos de filtros
+filterMarca.addEventListener('change', () => {
+    console.log('Filtro de marca cambiado:', filterMarca.value);
+    filtrarProductos();
+});
+document.querySelector('.clear-filters').addEventListener('click', () => {
+    console.log('Limpiando filtros');
+    filterMarca.value = '';
+    const checkboxes = dynamicFiltersContainer.querySelectorAll('.filter-checkbox:checked');
+    checkboxes.forEach(checkbox => checkbox.checked = false);
+    searchQuery = searchInput.value.trim(); // Mantener la búsqueda
+    updateTitle();
+    filtrarProductos();
+});
 
 // Ejecutar filtrado inicial
+console.log('Filtrado inicial con searchQuery:', searchQuery);
 filtrarProductos();
 </script>
 </body>
