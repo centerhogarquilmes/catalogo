@@ -1,57 +1,66 @@
 import csv
 import json
-import os
+import re
 
-# Rutas de los archivos
-csv_file = "productos.csv"  # Cambia esto si el CSV tiene otro nombre o ruta
-output_file = "precios.js"  # Archivo de salida
+csv_file = "productos.csv"
+output_file = "precios.js"
 
-# Leer el CSV
+SUCURSAL_LOCAL = "QUILMES"
+
 precios = {}
+
 try:
-    with open(csv_file, newline='', encoding='utf-8') as csvfile:
-        # Mostrar la primera línea para depuración
-        first_line = csvfile.readline()
-        csvfile.seek(0)  # Volver al inicio del archivo
-        print("Primera línea del CSV:", repr(first_line))
+    with open(csv_file, newline='', encoding='windows-1252') as csvfile:
+        reader = csv.reader(csvfile, delimiter=';')
 
-        # Usar punto y coma como delimitador
-        reader = csv.DictReader(csvfile, delimiter=';', quotechar='"')
-        print("Encabezados detectados:", reader.fieldnames)
-
-        # Verificar que los encabezados esperados estén presentes
-        required_fields = {'Artículo', 'Saldo disponible', 'Precio tarjeta'}
-        if not required_fields.issubset(reader.fieldnames):
-            missing = required_fields - set(reader.fieldnames)
-            raise ValueError(f"Faltan los encabezados requeridos: {missing}")
-
-        # Procesar las filas
+        headers = next(reader)
         for row in reader:
-            try:
-                codigo = row['Artículo'].strip()
-                stock = int(row['Saldo disponible'].strip())
-                precio_tarjeta = float(row['Precio tarjeta'].strip())
-                precios[codigo] = {
-                    "stock": stock,
-                    "precio_tarjeta": precio_tarjeta
-                }
-                print(f"Procesado producto {codigo}: stock={stock}, precio={precio_tarjeta}")
-            except (ValueError, KeyError) as e:
-                print(f"Error procesando el producto {row.get('Artículo', 'desconocido')}: {e}")
+            # Ignorar líneas que contienen cabeceras repetidas
+            if "Saldo disponible" in row or len(row) < 7:
+                continue
 
-    # Generar el archivo precios.js
+            try:
+                codigo = row[0].strip()
+                sucursal = row[3].strip().upper()
+                saldo_str = row[4].strip()
+                precio_str = row[6].strip()
+
+                # Limpiar campos
+                saldo_str = saldo_str.replace(",", "").strip()
+                precio_str = precio_str.replace(".", "").replace(",", ".").strip()
+                precio_str = re.split(r'[\r\n"]', precio_str)[0].strip()  # Cortar múltiples valores
+
+                if not saldo_str or not precio_str:
+                    continue
+
+                stock = int(saldo_str)
+                precio = float(precio_str)
+
+                if codigo not in precios:
+                    precios[codigo] = {
+                        "stock_sucursal": 0,
+                        "stock_deposito": 0,
+                        "precio_tarjeta": precio
+                    }
+                else:
+                    precios[codigo]["precio_tarjeta"] = precio  # actualizar siempre
+
+                if sucursal == SUCURSAL_LOCAL:
+                    precios[codigo]["stock_sucursal"] += stock
+                else:
+                    precios[codigo]["stock_deposito"] += stock
+
+            except Exception as e:
+                print(f"[❌] Error en fila: {row} -> {e}")
+
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("const precios = ")
         json.dump(precios, f, ensure_ascii=False, indent=2)
         f.write(";")
-    print(f"Archivo {output_file} generado exitosamente.")
-    print(f"Productos procesados: {len(precios)}")
+
+    print(f"[✅] Archivo '{output_file}' generado con {len(precios)} productos.")
 
 except FileNotFoundError:
-    print(f"Error: No se encontró el archivo {csv_file}.")
-except UnicodeDecodeError:
-    print(f"Error: No se pudo decodificar el archivo {csv_file}. Intenta con otra codificación (por ejemplo, latin-1).")
-except ValueError as e:
-    print(f"Error en el formato del CSV: {e}")
+    print(f"[❌] Archivo no encontrado: {csv_file}")
 except Exception as e:
-    print(f"Error inesperado: {e}")
+    print(f"[❌] Error inesperado: {e}")

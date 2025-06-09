@@ -304,19 +304,24 @@ if (productosDestacadosFiltrados.length === 0) {
     productGrid.innerHTML = '<p>No se encontraron productos destacados.</p>';
 } else {
     productosDestacadosFiltrados.forEach(producto => {
-        // Obtener precio desde precios.js
-        const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible' };
-        const precioTexto = datosDinamicos.precio_tarjeta !== 'No disponible' ? `$${parseFloat(datosDinamicos.precio_tarjeta).toLocaleString('es-AR')}` : 'Consultar precio';
+        // Obtener datos desde precios.js
+        const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
+        const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
+        const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
+        // Modificar esta línea si cambia el porcentaje de Pre. ant. imp. nac. (actualmente 0.8265)
+        const precioAntesImpuestos = precioLista ? `$${(precioLista * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
+        const isAgotado = datosDinamicos.stock_sucursal + datosDinamicos.stock_deposito === 0;
 
         const card = document.createElement('div');
-        card.className = 'product-card';
+        card.className = `product-card ${isAgotado ? 'agotado' : ''}`;
         card.innerHTML = `
             <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
+                ${isAgotado ? '<span class="agotado-label">Agotado</span>' : ''}
                 <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                 <div class="text-container">
                     <h3>${producto.nombre}</h3>
-                    <p class="product-code">Código: ${producto.codigo}</p>
-                    <p class="product-price">Precio: ${precioTexto}</p>
+                    <p class="product-price">Precio de lista: ${precioTextoLista}</p>
+                    <p class="product-price-before-tax">Pre. ant. imp. nac.: ${precioAntesImpuestos}</p>
                     <button class="buy-btn">Ver más</button>
                 </div>
             </a>
