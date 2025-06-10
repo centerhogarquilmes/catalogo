@@ -2508,7 +2508,7 @@ font-size: 0.8rem;
 }
 .product-price-before-tax {
 font-size: 0.7rem;
-    color: #333;
+    color: #4358ab84;
     text-align: center;
     margin: 1px 0;
     font-weight: bold; /* Opcional para destacar el código */
@@ -2527,8 +2527,8 @@ font-size: 0.7rem;
 }
 
 .product-price-anterior {
-    font-size: 1rem;
-    color: #7f8c8d;
+    font-size: 0.2rem;
+    color: #4358ab84;
     text-decoration: none;
     margin: 0.5rem 0 0;
 }
@@ -2595,7 +2595,7 @@ font-size: 1rem;
 .product-cuota {
     display: flex;
     align-items: center; /* Alinear verticalmente el texto y la imagen */
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #333;
     margin: 5px 0;
 }
@@ -2621,6 +2621,52 @@ font-size: 1rem;
     }
 
     .product-cuota {
-        font-size: 1rem; /* Ajustar tamaño de fuente en móviles */
+        font-size: 0.8rem; /* Ajustar tamaño de fuente en móviles */
     }
 }
+
+.consulta-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.consulta-btn:hover {
+    background-color: #7a0000;
+    transition: 0.5s;
+}
+.contado-btn {
+    background-color: #02366e;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.contado-btn:hover {
+    background-color: #ff6200;
+    transition: 0.5s;
+}
+

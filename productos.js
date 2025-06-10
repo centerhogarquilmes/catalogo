@@ -260,23 +260,6 @@ const productos = [
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
-        nombre: 'TV LED RCA 32" AND32Y Android',
-        codigo: "2073676",
-        
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
-        imagen: "images/televisores/TV_LED_RCA_32_AND32Y_Android_1.webp",
-        imagenes: [
-          "images/televisores/TV_LED_RCA_32_AND32Y_Android_1.webp",
-          "images/televisores/TV_LED_RCA_32_AND32Y_Android_2.webp",
-          "images/televisores/TV_LED_RCA_32_AND32Y_Android_3.webp"
-        ],
-        caracteristicas: [ "Marca: RCA", "Modelo: AND32Y", "Garantía: 1 año"
-        ]
-        
-    },
-    {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
         nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
         codigo: "2075320",
         imagen: "images/televisores/TV_LED _Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",

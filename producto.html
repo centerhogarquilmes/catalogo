@@ -143,7 +143,8 @@
                 <div class="product-info">
                     <h1 id="product-name">Nombre del producto</h1>
                     <p class="stock">Stock disponible</p>
-                    <a id="whatsapp-btn" href="#" class="buy-btn" target="_blank">Consultar</a>
+                    <a id="whatsapp-contado" href="#" class="contado-btn" target="_blank">Consultar</a>
+                    <a id="whatsapp-consulta" href="#" class="consulta-btn" target="_blank">DESCUENTOS AL CONTADO</a>
                     <div class="shipping">
                         <p>Consultá costos de envio</p>
                         <p>Normalmente se entrega de un dia para el otro</p>
@@ -321,10 +322,15 @@ if (cuotas.length) {
         feats.appendChild(li);
     });
 
-    const wa = document.getElementById('whatsapp-btn');
-    const msg = `Hola, quiero un presupuesto para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
+    const wa = document.getElementById('whatsapp-consulta');
+    const msg = `Hola, quiero un presupuesto al contado para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
     wa.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(msg)}`;
+    const wat = document.getElementById('whatsapp-contado');
+    const mssg = `Hola, quiero info acerca de ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
+    wat.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(mssg)}`;
+    
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // Solo ejecutar si estamos en la página de producto
