@@ -2556,10 +2556,71 @@ font-size: 0.7rem;
 }
 
 .product-page .product-price-anterior {
-font-size: 1.1rem;
-    color: #333;
-    text-align: center;
-    margin: 10px 0;
+font-size: 1rem;
+    color: #33333379;
+    text-align: left;
+    margin: 0px 1;
     font-weight: bold; /* Opcional para destacar el código *//
     
+}
+/* Iconos de tarjetas de crédito en cuotas */
+/* Iconos de tarjetas de crédito en cuotas */
+.cuota-card-icon {
+    width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
+    height: 1rem; /* Altura consistente con la fuente */
+    vertical-align: middle; /* Alinear con el texto */
+    
+    display: inline-block; /* Comportarse como parte del texto */
+    object-fit: contain; /* Evitar distorsiones, mantener proporciones */
+}
+
+/* Ajustes específicos para cada imagen */
+.cuota-card-icon-3-6 {
+    /* La imagen de 3 y 6 cuotas ya se ve bien, no necesita ajustes adicionales */
+}
+
+.cuota-card-icon-9 {
+    width: 10.5rem; /* Ajustar ligeramente si es más ancha o angosta */
+    height: 1.1rem; /* Ajustar altura para igualar visualmente */
+    margin-right: 0.5rem; /* Espacio entre el texto y la imagen */
+}
+
+.cuota-card-icon-12 {
+    width: 10rem; /* Ajustar ligeramente si es más ancha o angosta */
+    height: 1rem; /* Ajustar altura para igualar visualmente */
+    margin-right: 0.5rem; /* Espacio entre el texto y la imagen */
+}
+
+/* Ajustar el contenedor de cuotas para mejor alineación */
+.product-cuota {
+    display: flex;
+    align-items: center; /* Alinear verticalmente el texto y la imagen */
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .cuota-card-icon {
+        width: 4.5rem; /* Ligeramente más pequeño en móviles */
+        height: 1rem;
+        
+    }
+
+    .cuota-card-icon-9 {
+        width: 4.5rem; /* Ajustar para móviles */
+        height: 1rem;
+        
+    }
+
+    .cuota-card-icon-12 {
+        width: 3.5rem; /* Ajustar para móviles */
+        height: 1rem;
+        
+    }
+
+    .product-cuota {
+        font-size: 1rem; /* Ajustar tamaño de fuente en móviles */
+    }
 }
