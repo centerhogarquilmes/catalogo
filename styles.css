@@ -2603,7 +2603,7 @@ font-size: 1rem;
 /* Responsividad para móviles */
 @media (max-width: 768px) {
     .cuota-card-icon {
-        width: 4.5rem; /* Ligeramente más pequeño en móviles */
+        width: 5rem; /* Ligeramente más pequeño en móviles */
         height: 1rem;
         
     }
@@ -2615,7 +2615,7 @@ font-size: 1rem;
     }
 
     .cuota-card-icon-12 {
-        width: 3.5rem; /* Ajustar para móviles */
+        width: 4rem; /* Ajustar para móviles */
         height: 1rem;
         
     }
