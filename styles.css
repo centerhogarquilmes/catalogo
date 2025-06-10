@@ -2470,7 +2470,7 @@ font-size: 0.8rem;
 }
 
 .agotado-label {
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 10px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -2484,7 +2484,7 @@ font-size: 0.8rem;
 }
 
 .product-card.agotado {
-    opacity: 0.8; /* Ligera opacidad para indicar que está agotado */
+    opacity: 1; /* Ligera opacidad para indicar que está agotado */
 }
 
 @media (max-width: 768px) {
