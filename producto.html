@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- Header -->
+    <body class="product-page">
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -119,6 +120,7 @@
     </ul>
 </nav>
         </div>
+        </body>
     </header>
     <!-- Product Details -->
     <main class="container product-page">
@@ -175,84 +177,150 @@
     <!-- Script personalizado para mostrar precios y stock -->
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // Leer parámetros
-        const urlParams = new URLSearchParams(window.location.search);
-        const nombre = urlParams.get('nombre') ? decodeURIComponent(urlParams.get('nombre')) : '';
-        const imagen = urlParams.get('imagen') ? decodeURIComponent(urlParams.get('imagen')) : '';
-        const imagenes = urlParams.get('imagenes') ? decodeURIComponent(urlParams.get('imagenes')).split(',').filter(i=>i) : [];
-        const descripcion = urlParams.get('descripcion') ? decodeURIComponent(urlParams.get('descripcion')) : '';
-        const caracteristicas = urlParams.get('caracteristicas') ? decodeURIComponent(urlParams.get('caracteristicas')).split(',').filter(c=>c) : [];
-        const codigoParam = urlParams.get('codigo');
+    const urlParams = new URLSearchParams(window.location.search);
+    const nombre = urlParams.get('nombre') ? decodeURIComponent(urlParams.get('nombre')) : '';
+    const imagen = urlParams.get('imagen') ? decodeURIComponent(urlParams.get('imagen')) : '';
+    const imagenes = urlParams.get('imagenes') ? decodeURIComponent(urlParams.get('imagenes')).split(',').filter(i => i) : [];
+    const descripcion = urlParams.get('descripcion') ? decodeURIComponent(urlParams.get('descripcion')) : '';
+    const caracteristicas = urlParams.get('caracteristicas') ? decodeURIComponent(urlParams.get('caracteristicas')).split(',').filter(c => c) : [];
+    const codigoParam = urlParams.get('codigo');
 
-        // Datos estáticos
-        const producto = productos.find(p => p.nombre === nombre) || productos.find(p => p.codigo === codigoParam);
-        const codigo = codigoParam || (producto ? producto.codigo : '');
+    const producto = productos.find(p => p.nombre === nombre) || productos.find(p => p.codigo === codigoParam);
+    const codigo = codigoParam || (producto ? producto.codigo : '');
 
-        // Datos dinámicos
-        const datos = precios[codigo] || { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
-        const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
-        const precioTexto = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
-        const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
-        const depositoTexto = datos.stock_deposito > 0 ? datos.stock_deposito + ' unidades' : 'Sin stock';
+    if (!codigo) {
+        alert("No se pudo obtener el código del producto.");
+        return;
+    }
 
-        // Actualizar contenido
-        document.getElementById('product-name').textContent = producto.nombre;
-        document.getElementById('product-description').innerHTML = descripcion.replace(/\n/g,'<br>');
-        document.querySelector('.stock').textContent = '';
+    const datos = precios[codigo] || { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
+    const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
+    const precioTexto = precioLista ? `$${precioLista.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
+    const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
+    const depositoTexto = datos.stock_deposito > 0 ? datos.stock_deposito + ' unidades' : 'Sin stock';
 
-        // Mostrar código
-        const wrapper = document.getElementById('product-name').parentElement;
-        const codigoEl = document.createElement('p');
-        codigoEl.className = 'product-code';
-        codigoEl.textContent = 'Código: ' + codigo;
-        wrapper.appendChild(codigoEl);
+    // Calcular Pre.ant.imp.nac como precio_tarjeta / 1.21
+    const precioAnterior = precioLista ? precioLista / 1.21 : null;
+    const precioAnteriorTexto = precioAnterior ? `$${precioAnterior.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
 
-        // Insertar precio y stocks
-        const info = document.querySelector('.product-info');
-        const before = document.querySelector('.shipping');
+    // Calcular precios en cuotas
+    const cuotas = precioLista ? [
+        { cuotas: 3, texto: '3 Cuotas sin interés', precio: precioLista / 3 },
+        { cuotas: 6, texto: '6 Cuotas sin interés', precio: precioLista / 6 },
+        { cuotas: 9, texto: '9 Cuotas sin interés', precio: precioLista / 9 },
+        { cuotas: 12, texto: '12 Cuotas fijas', precio: (precioLista * 1.05) / 12 } // 5% de interés
+    ] : [];
 
-        const precioEl = document.createElement('p');
-        precioEl.className = 'product-price';
-        precioEl.textContent = 'Precio de lista: ' + precioTexto;
-        info.insertBefore(precioEl, before);
+    document.getElementById('product-name').textContent = producto ? producto.nombre : 'Producto no encontrado';
+    document.getElementById('product-description').innerHTML = descripcion.replace(/\n/g, '<br>');
+    document.querySelector('.stock').textContent = '';
 
-        const stockSucEl = document.createElement('p');
-        stockSucEl.className = 'product-stock-sucursal';
-        stockSucEl.textContent = 'Stock en sucursal: ' + sucursalTexto;
-        info.insertBefore(stockSucEl, before);
+    // Insertar el código del producto justo después del nombre del producto
+    const productName = document.getElementById('product-name');
+    const codigoEl = document.createElement('p');
+    codigoEl.className = 'product-code';
+    codigoEl.textContent = 'Código: ' + codigo;
+    productName.insertAdjacentElement('afterend', codigoEl);
 
-        const stockDepEl = document.createElement('p');
-        stockDepEl.className = 'product-stock-deposito';
-        stockDepEl.textContent = 'Stock en depósito: ' + depositoTexto;
-        info.insertBefore(stockDepEl, before);
+    const info = document.querySelector('.product-info');
+    const before = document.querySelector('.shipping');
 
-        // Imágenes
-        const mainImg = document.getElementById('main-image');
-        if (imagenes.length) {
-            mainImg.src = imagenes[0];
-            mainImg.alt = producto.nombre;
-        }
-        const thumb = document.getElementById('thumbnail-gallery');
-        thumb.innerHTML = '';
-        imagenes.forEach((src,i) => {
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = producto.nombre + ' ' + (i+1);
-            img.className = i===0 ? 'active' : '';
-            img.onclick = () => mainImg.src = src;
-            thumb.appendChild(img);
+    // Crear contenedor para los precios
+    const preciosContainer = document.createElement('div');
+    preciosContainer.className = 'precios-container';
+
+    // Insertar precio de lista
+    const precioEl = document.createElement('p');
+    precioEl.className = 'product-price';
+    precioEl.textContent = 'Precio de lista: ' + precioTexto;
+    preciosContainer.appendChild(precioEl);
+
+    // Insertar precio anterior si existe
+    if (precioAnteriorTexto) {
+        const precioAntEl = document.createElement('p');
+        precioAntEl.className = 'product-price-anterior';
+        precioAntEl.textContent = 'Pre.ant.imp.nac: ' + precioAnteriorTexto;
+        preciosContainer.appendChild(precioAntEl);
+    }
+
+    // Insertar precios en cuotas si hay precio disponible
+    if (cuotas.length) {
+        cuotas.forEach(cuota => {
+            const cuotaEl = document.createElement('p');
+            cuotaEl.className = `product-cuota product-cuota-${cuota.cuotas}`;
+            cuotaEl.textContent = `${cuota.texto}: $${cuota.precio.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            preciosContainer.appendChild(cuotaEl);
         });
+    }
 
-        // Características
-        const feats = document.getElementById('product-features');
-        feats.innerHTML = '';
-        caracteristicas.forEach(f => { const li = document.createElement('li'); li.textContent = f; feats.appendChild(li); });
+    // Insertar el contenedor de precios antes del elemento 'shipping'
+    info.insertBefore(preciosContainer, before);
 
-        // WhatsApp
-        const wa = document.getElementById('whatsapp-btn');
-        const msg = `Hola, quiero un presupuesto para ${producto.nombre} (Código ${codigo}).`;
-        wa.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(msg)}`;
+    // Insertar stock
+    const stockSucEl = document.createElement('p');
+    stockSucEl.className = 'product-stock-sucursal';
+    stockSucEl.textContent = 'Stock en sucursal: ' + sucursalTexto;
+    info.insertBefore(stockSucEl, before);
+
+    const stockDepEl = document.createElement('p');
+    stockDepEl.className = 'product-stock-deposito';
+    stockDepEl.textContent = 'Stock en depósito: ' + depositoTexto;
+    info.insertBefore(stockDepEl, before);
+
+    const mainImg = document.getElementById('main-image');
+    if (imagenes.length) {
+        mainImg.src = imagenes[0];
+        mainImg.alt = producto ? producto.nombre : '';
+    }
+    const thumb = document.getElementById('thumbnail-gallery');
+    thumb.innerHTML = '';
+    imagenes.forEach((src, i) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = (producto ? producto.nombre : 'Imagen') + ' ' + (i + 1);
+        img.className = i === 0 ? 'active' : '';
+        img.onclick = () => mainImg.src = src;
+        thumb.appendChild(img);
     });
+
+    const feats = document.getElementById('product-features');
+    feats.innerHTML = '';
+    caracteristicas.forEach(f => {
+        const li = document.createElement('li');
+        li.textContent = f;
+        feats.appendChild(li);
+    });
+
+    const wa = document.getElementById('whatsapp-btn');
+    const msg = `Hola, quiero un presupuesto para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
+    wa.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(msg)}`;
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Solo ejecutar si estamos en la página de producto
+    if (document.body.classList.contains('product-page')) {
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Scroll hacia abajo: ocultar header parcialmente
+            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
+                header.classList.add('hidden');
+                header.classList.remove('show'); // Asegurar que no tenga la clase partial
+            }
+            // Scroll hacia arriba: mostrar header parcialmente
+            else if (currentScroll < lastScrollTop) {
+                header.classList.remove('hidden'); // Quitar clase hidden
+                header.classList.add('show'); // Añadir clase partial
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evitar valores negativos
+        });
+    }
+});
+
     </script>
 </body>
 </html>
