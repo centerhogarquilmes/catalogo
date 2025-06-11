@@ -2687,6 +2687,10 @@ font-size: 1rem;
 .home-categories {
     position: relative;
 }
+/* Quitar subrayado de los enlaces en el carrusel de categorías */
+.home-categories-item a {
+    text-decoration: none;
+}
 
 .home-categories-item {
     text-align: center;
@@ -2695,6 +2699,10 @@ font-size: 1rem;
 
 .home-categories-item:hover {
     transform: scale(1.05);
+    background-color: #a3d0ff55;
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home-categories-img {
@@ -2706,11 +2714,17 @@ font-size: 1rem;
 }
 
 .home-categories-name {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    color: #333;
+    text-decoration: none !important;
+    color: #02366e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
     margin-top: 10px;
     text-transform: uppercase;
+    text-decoration: none !important;
 }
 
 .owl-nav {
@@ -2772,5 +2786,11 @@ font-size: 1rem;
 
     .owl-next {
         margin-right: -10px;
+    }
+    /*Desactivar efecto hover en dispositivos móviles */
+    .home-categories-item:hover {
+        transform: none;
+        background-color: transparent;
+        box-shadow: none;
     }
 }
