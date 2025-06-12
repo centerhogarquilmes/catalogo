@@ -2588,23 +2588,7 @@ font-size: 1rem;
     /* La imagen de 3 y 6 cuotas ya se ve bien, no necesita ajustes adicionales */
 }
 
-.cuota-card-icon-9 {
-    width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
-    height: 1rem; /* Altura consistente con la fuente */
-    vertical-align: middle; /* Alinear con el texto */
-    
-    display: inline-block; /* Comportarse como parte del texto */
-    object-fit: contain; /* Evitar distorsiones, mantener proporciones */
-}
 
-.cuota-card-icon-12 {
-    width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
-    height: 1rem; /* Altura consistente con la fuente */
-    vertical-align: middle; /* Alinear con el texto */
-    
-    display: inline-block; /* Comportarse como parte del texto */
-    object-fit: contain; /* Evitar distorsiones, mantener proporciones */
-}
 /* Ajustar el contenedor de cuotas para mejor alineación */
 .product-cuota {
     display: flex;
@@ -2622,17 +2606,6 @@ font-size: 1rem;
         
     }
 
-    .cuota-card-icon-9 {
-        width: 5rem; /* Ajustar para móviles */
-        height: 1rem;
-        
-    }
-
-    .cuota-card-icon-12 {
-        width: 5rem; /* Ajustar para móviles */
-        height: 1rem;
-        
-    }
 
     .product-cuota {
         font-size: 0.8rem; /* Ajustar tamaño de fuente en móviles */
