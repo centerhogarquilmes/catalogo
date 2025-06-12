@@ -2589,17 +2589,22 @@ font-size: 1rem;
 }
 
 .cuota-card-icon-9 {
-    width: 10.5rem; /* Ajustar ligeramente si es más ancha o angosta */
-    height: 1.1rem; /* Ajustar altura para igualar visualmente */
-    margin-right: 0.5rem; /* Espacio entre el texto y la imagen */
+    width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
+    height: 1rem; /* Altura consistente con la fuente */
+    vertical-align: middle; /* Alinear con el texto */
+    
+    display: inline-block; /* Comportarse como parte del texto */
+    object-fit: contain; /* Evitar distorsiones, mantener proporciones */
 }
 
 .cuota-card-icon-12 {
-    width: 10rem; /* Ajustar ligeramente si es más ancha o angosta */
-    height: 1rem; /* Ajustar altura para igualar visualmente */
-    margin-right: 0.5rem; /* Espacio entre el texto y la imagen */
+    width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
+    height: 1rem; /* Altura consistente con la fuente */
+    vertical-align: middle; /* Alinear con el texto */
+    
+    display: inline-block; /* Comportarse como parte del texto */
+    object-fit: contain; /* Evitar distorsiones, mantener proporciones */
 }
-
 /* Ajustar el contenedor de cuotas para mejor alineación */
 .product-cuota {
     display: flex;
@@ -2612,19 +2617,19 @@ font-size: 1rem;
 /* Responsividad para móviles */
 @media (max-width: 768px) {
     .cuota-card-icon {
-        width: 5.3rem; /* Ligeramente más pequeño en móviles */
+        width: 5rem; /* Ligeramente más pequeño en móviles */
         height: 1rem;
         
     }
 
     .cuota-card-icon-9 {
-        width: 4rem; /* Ajustar para móviles */
+        width: 5rem; /* Ajustar para móviles */
         height: 1rem;
         
     }
 
     .cuota-card-icon-12 {
-        width: 4.3rem; /* Ajustar para móviles */
+        width: 5rem; /* Ajustar para móviles */
         height: 1rem;
         
     }
