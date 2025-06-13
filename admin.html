@@ -26,6 +26,7 @@
         .btn-limpiar { padding: 10px 20px; background: #dc3545; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
         .btn-limpiar:hover { background: #c82333; }
         .dynamic-fields { margin-top: 15px; }
+        .checkbox { text-align: left;}    
     </style>
 </head>
 <body>
@@ -184,9 +185,9 @@ const categoryFields = {
                 { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" }
             ],
             "Aires Acondicionados": [
-                { label: "Capacidad (BTU)", name: "capacidad", type: "text", placeholder: "12000" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "12000" },
                 { label: "Tipo", name: "tipo", type: "select", options: ["Split", "Ventana", "Portátil"] },
-                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
+                { label: "Inverter", name: "inverter", type: "checkbox" },
                 { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
             ]
         }
