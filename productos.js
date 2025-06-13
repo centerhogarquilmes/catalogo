@@ -2116,6 +2116,166 @@ const productos = [
 
 
 
+    /////---------- Tostadoras ----------/////
+
+
+ {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Yelmo BM-1608',
+    imagen: "images/batidoras/Batidora_Yelmo_BM_160_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Yelmo_BM_160_1.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_8.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_2.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_3.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_4.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_5.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_6.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_7.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Velocidades:</strong> 7\n<strong>Accesorios incluidos:</strong> Amasador',
+    codigo: "2073210",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2073210",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Steel Home Planetaria BP/BR1200 6v. 1200w. 5 lts Blanca/Negra',
+    imagen: "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
+        "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_2.webp",
+        "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1200\n<strong>Velocidades:</strong> 6\n<strong>Capacidad (Litros):</strong> 5\n<strong>Accesorios incluidos:</strong> Bowl, Amasador, Mezclador',
+    codigo: "2073537",
+    caracteristicas: [
+        "Marca: Steel Home",
+        "Modelo: 2073537",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Moulinex QA710858 Planetaria Inspirart 500w 220v 5v',
+    imagen: "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_2.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_3.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_4.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Velocidades:</strong> 5\n<strong>Capacidad (Litros):</strong> 3.2\n<strong>Accesorios incluidos:</strong> Bowl',
+    codigo: "2073643",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2073643",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Kanji de mano KJH-BL0300HMB01R con bowl 300wts 2lts',
+    imagen: "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_2.webp",
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_3.webp",
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Velocidades:</strong> 7\n<strong>Capacidad (Litros):</strong> 2\n<strong>Accesorios incluidos:</strong> Bowl, Amasador',
+    codigo: "2073788",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2073788",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Moulinex SX1505AR 220v de mano roja',
+    imagen: "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_2.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_3.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_4.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 250\n<strong>Velocidades:</strong> 3',
+    codigo: "2074367",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2074367",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Atma de mano BM8738AP 300W 5 vel. c/ turbo',
+    imagen: "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
+        "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_2.webp",
+        "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Velocidades:</strong> 5\n<strong>Accesorios incluidos:</strong> Amasador',
+    codigo: "2074566",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2074566",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Westinghouse planetaria WH-BL0800HB02 Gris',
+    imagen: "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
+        "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_2.webp",
+        "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 800\n<strong>Velocidades:</strong> 3\n<strong>Capacidad (Litros):</strong> 4\n<strong>Accesorios incluidos:</strong> Bowl, Amasador, Mezclador',
+    codigo: "2074902",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2074902",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Whitenblack WBABWB01 300w 5v. batidor/amasador',
+    imagen: "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
+    imagenes: [
+        "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
+        "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_2.webp",
+        "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 450\n<strong>Velocidades:</strong> 5\n<strong>Accesorios incluidos:</strong> Amasador',
+    codigo: "2075298",
+    caracteristicas: [
+        "Marca: Whitenblack",
+        "Modelo: 2075298",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
 
 
 
@@ -2670,7 +2830,8 @@ const productos = [
 
 
 
-        /////---------- Gas ----------/////
+
+
 
 
 
@@ -2990,135 +3151,6 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /////---------- Aires Acondicionados ----------/////
-
-
-{
-    categoria: "Climatización",
-    subcategoria: "Aires Acondicionados",
-    nombre: 'Acond. Enova Split 6500 kw 5590fg',
-    imagen: "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_1.webp",
-    imagenes: [
-        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_1.webp",
-        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_2.webp",
-        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_3.webp",
-        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_4.webp",
-        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_5.webp",
-        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_6.webp"
-    ],
-    descripcion: '<strong>Potencia (W):</strong> 6500\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
-    codigo: "2075293",
-    caracteristicas: [
-        "Marca: Enova",
-        "Modelo: 2075293",
-        "Garantía: 1 año"
-    ]
-},
-    {
-    categoria: "Climatización",
-    subcategoria: "Aires Acondicionados",
-    nombre: 'Acond. Kanji Portatil KJH-AA2900 F/C',
-    imagen: "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_1.webp",
-    imagenes: [
-        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_1.webp",
-        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_2.webp",
-        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_3.webp",
-        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_4.webp",
-        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_5.webp"
-    ],
-    descripcion: '<strong>Potencia (W):</strong> 2900\n<strong>Tipo:</strong> Portátil\n<strong>Eficiencia energética:</strong> Clase A',
-    codigo: "2075012",
-    caracteristicas: [
-        "Marca: Kanji",
-        "Modelo: 2075012",
-        "Garantía: 1 año"
-    ]
-},
-    {
-    categoria: "Climatización",
-    subcategoria: "Aires Acondicionados",
-    nombre: 'Acond. Midea MSAGFC-12H-01F 3430W/2950kcal F/C split',
-    imagen: "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_1.webp",
-    imagenes: [
-        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_1.webp",
-        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_2.webp",
-        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_3.webp",
-        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_4.webp"
-    ],
-    descripcion: '<strong>Potencia (W):</strong> 3430\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A+',
-    codigo: "2074423",
-    caracteristicas: [
-        "Marca: Midea",
-        "Modelo: 2074423",
-        "Garantía: 1 año"
-    ]
-},
-    {
-    categoria: "Climatización",
-    subcategoria: "Aires Acondicionados",
-    nombre: 'Acond. RCA Split 3200w Inverter RP3200INV-F-SK',
-    imagen: "images/aires_acondicionados/Acond_RCA_Split_3200w_Inverter_RP3200INV_F_SK_1.webp",
-    imagenes: [
-        "images/aires_acondicionados/Acond_RCA_Split_3200w_Inverter_RP3200INV_F_SK_1.webp",
-        "images/aires_acondicionados/Acond_RCA_Split_3200w_Inverter_RP3200INV_F_SK_2.webp"
-    ],
-    descripcion: '<strong>Potencia (W):</strong> 3200\n<strong>Tipo:</strong> Split\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
-    codigo: "2075250",
-    caracteristicas: [
-        "Marca: RCA",
-        "Modelo: 2075250",
-        "Garantía: 1 año"
-    ]
-},
-    {
-    categoria: "Climatización",
-    subcategoria: "Aires Acondicionados",
-    nombre: 'Acond. RCA RE3300FC 3300W F/C Split',
-    imagen: "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_1.webp",
-    imagenes: [
-        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_1.webp",
-        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_2.webp",
-        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_3.webp",
-        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_4.webp",
-        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_5.webp"
-    ],
-    descripcion: '<strong>Potencia (W):</strong> 3300\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
-    codigo: "2074591",
-    caracteristicas: [
-        "Marca: RCA",
-        "Modelo: 2074591",
-        "Garantía: 1 año"
-    ]
-},
-    {
-    categoria: "Climatización",
-    subcategoria: "Aires Acondicionados",
-    nombre: 'Acond. SURREY split 3430W f/c (2950Kcal/h) 553GFQ1201F',
-    imagen: "images/aires_acondicionados/Acond_SURREY_split_3430W_f_c _2950Kcal_h_553GFQ1201F_1.webp",
-    imagenes: [
-        "images/aires_acondicionados/Acond_SURREY_split_3430W_f_c _2950Kcal_h_553GFQ1201F_1.webp"
-    ],
-    descripcion: '<strong>Potencia (W):</strong> 3430\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A+',
-    codigo: "21279",
-    caracteristicas: [
-        "Marca: Surrey",
-        "Modelo: 21279",
-        "Garantía: 1 año"
-    ]
-}
   
 
 ];
