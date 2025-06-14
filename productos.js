@@ -208,6 +208,137 @@ const productos = [
         codigo: "2073292",
         caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Florencia 5417/5517 FEL negra',
+    imagen: "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_1.webp",
+        "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_2.webp",
+        "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_3.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 86 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2070485",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2070485",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Escorial PALACE CRISTAL Negra LX GE',
+    imagen: "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_1.webp",
+        "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_2.webp",
+        "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_3.webp",
+        "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 50 52\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072493",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2072493",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Florencia 5538F Inox c/ enc.',
+    imagen: "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_1.webp",
+        "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_2.webp",
+        "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_3.webp",
+        "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_4.webp",
+        "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_5.webp",
+        "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_6.webp",
+        "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_7.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072633",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2072633",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial Zafira 600',
+    imagen: "images/cocinas/cocina_morelli_industrial_zafira_600_1.webp",
+    imagenes: [
+        "images/cocinas/cocina_morelli_industrial_zafira_600_1.webp",
+        "images/cocinas/cocina_morelli_industrial_zafira_600_2.webp",
+        "images/cocinas/cocina_morelli_industrial_zafira_600_3.webp",
+        "images/cocinas/cocina_morelli_industrial_zafira_600_4.webp",
+        "images/cocinas/cocina_morelli_industrial_zafira_600_5.webp",
+        "images/cocinas/cocina_morelli_industrial_zafira_600_6.webp",
+        "images/cocinas/cocina_morelli_industrial_zafira_600_7.webp",
+        "images/cocinas/cocina_morelli_industrial_zafira_600_8.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 60 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072699",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2072699",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial Zafira 550',
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_1.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_2.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_3.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072700",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2072700",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Morelli 550 Saho 18045 acero inox',
+    imagen: "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_1.webp",
+        "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_2.webp",
+        "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_3.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072962",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2072962",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Florencia 8638 E Electrica c/anafe 3 focos Inox',
+    imagen: "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_1.webp",
+        "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_2.webp",
+        "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_3.webp",
+        "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_4.webp",
+        "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Electrica\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074225",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2074225",
+        "Garantía: 1 año"
+    ]
+}
 
 
 
@@ -1759,13 +1890,13 @@ const productos = [
 
 
 
-    /////---------- Pequeños Electrodomesticos ----------/////
+    /////---------- Pequeños Electrodomésticos ----------/////
          
-         /////---------- Pavas Electricas ----------/////
+         /////---------- pavas eléctricas ----------/////
 
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Electrica Philips HD469590 1lts 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD469590_1lts_2200w_1.webp",
     imagenes: [
@@ -1783,8 +1914,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Electrica Philips HD9368/90 Negra Temp Para Mate 1.7L 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_1.webp",
     imagenes: [
@@ -1802,8 +1933,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava electrica Ultracomb PE 4909 1.7Lts, 2200w',
     imagen: "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4909_1_7Lts_2200w_1.webp",
     imagenes: [
@@ -1820,8 +1951,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Kanji KJH-PE15005S Hervidora alum/plast',
     imagen: "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_1.webp",
     imagenes: [
@@ -1837,8 +1968,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Moulinex BY3975AR Mate',
     imagen: "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_1.webp",
     imagenes: [
@@ -1859,8 +1990,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Oster 4970 negra o Blanca con Regulador',
     imagen: "images/pavas_electricas/Pava_Oster_4970_negra_o_Blanca_con_Regulador_1.webp",
     imagenes: [
@@ -1876,8 +2007,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Peabody PE-KV8215S 1.7L inox',
     imagen: "images/pavas_electricas/Pava_Peabody_PE_KV8215S_1_7L_inox_1.webp",
     imagenes: [
@@ -1894,8 +2025,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Philco PEPH1182IP c/corte 1.8lts 1500w',
     imagen: "images/pavas_electricas/Pava_Philco_PEPH1182IP_c_corte_1_8lts_1500w_1.webp",
     imagenes: [
@@ -1915,8 +2046,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Whitenblack WBAPWB17 Hervidora 1.7lts 2000w',
     imagen: "images/pavas_electricas/Pava_Whitenblack_WBAPWB17_Hervidora_1_7lts_2000w_1.webp",
     imagenes: [
@@ -1934,8 +2065,8 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
-    subcategoria: "pavas electricas",
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "pavas eléctricas",
     nombre: 'Pava Yelmo PE 3900',
     imagen: "images/pavas_electricas/Pava_Yelmo_PE_3900_1.webp",
     imagenes: [
@@ -1959,7 +2090,7 @@ const productos = [
 
 
     {
-    categoria: "pequenos electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Atma CA8143N/P de filtro 1.25lts Negra',
     imagen: "images/cafeteras/Cafetera_Atma_CA8143N_P_de_filtro_1_25lts_Negra_1.webp",
@@ -1978,7 +2109,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800 Filtro negra 6 tazas',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800_Filtro_negra_6_tazas_1.webp",
@@ -1996,7 +2127,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800S',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800S_1.webp",
@@ -2012,7 +2143,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Moulinex FG320558 CAFECITY NEGRA ( GS )',
     imagen: "images/cafeteras/Cafetera_Moulinex_FG320558_CAFECITY_NEGRA _GS _1.webp",
@@ -2031,7 +2162,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Philips HD746100 jarra 1.2lts antigoteo',
     imagen: "images/cafeteras/Cafetera_Philips_HD746100_jarra_1_2lts_antigoteo_1.webp",
@@ -2050,7 +2181,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequenos electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Smartlife SL-CM9402 1.5Lts',
     imagen: "images/cafeteras/Cafetera_Smartlife_SL_CM9402_1_5Lts_1.webp",
@@ -2073,7 +2204,7 @@ const productos = [
     /////---------- Tostadoras ----------/////
 
     {
-    categoria: "pequeños electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "tostadoras",
     nombre: 'Tostador Electrolux ETS11 Inox 8 niv. descongela',
     imagen: "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_1.webp",
@@ -2096,7 +2227,7 @@ const productos = [
     ]
 },
 {
-    categoria: "pequeños electrodomesticos",
+    categoria: "Pequeños Electrodomésticos",
     subcategoria: "tostadoras",
     nombre: 'Tostador Kanji TM1400 para 4 panes',
     imagen: "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_2.webp",
