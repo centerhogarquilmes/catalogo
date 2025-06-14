@@ -338,7 +338,7 @@ const productos = [
         "Modelo: 2074225",
         "Garantía: 1 año"
     ]
-}
+},
 
 
 
