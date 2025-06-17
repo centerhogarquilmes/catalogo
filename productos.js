@@ -217,7 +217,7 @@ const productos = [
         "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_2.webp",
         "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_3.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 86 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 86 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2070485",
     caracteristicas: [
         "Marca: Florencia",
@@ -235,7 +235,7 @@ const productos = [
         "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_3.webp",
         "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_4.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 50 52\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 50 52\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072493",
     caracteristicas: [
         "Marca: Escorial",
@@ -256,7 +256,7 @@ const productos = [
         "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_6.webp",
         "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_7.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072633",
     caracteristicas: [
         "Marca: Florencia",
@@ -331,7 +331,7 @@ const productos = [
         "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_4.webp",
         "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_5.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Electrica\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Electrica\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2074225",
     caracteristicas: [
         "Marca: Florencia",
@@ -2247,7 +2247,7 @@ const productos = [
 
 
 
-    /////---------- Tostadoras ----------/////
+    /////---------- Batidoras ----------/////
 
 
  {
@@ -2401,6 +2401,222 @@ const productos = [
     caracteristicas: [
         "Marca: Whitenblack",
         "Modelo: 2075298",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
+
+    /////---------- Batidoras ----------/////
+
+
+
+
+
+{
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Liliana AL900/AL100 Jarra 1.5Lts',
+    imagen: "images/licuadoras/Licuadora_Liliana_AL900_AL100_Jarra_1_5Lts_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Liliana_AL900_AL100_Jarra_1_5Lts_1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Capacidad (Litros):</strong> 1.5\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2071432",
+    caracteristicas: [
+        "Marca: Lliliana",
+        "Modelo: 2071432",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Moulinex LM2701AR Optimix Blanca 2lts 550Wts 2 Vel. + pulsador',
+    imagen: "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_1.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_2.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_3.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_4.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 550\n<strong>Capacidad (Litros):</strong> 2\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2071582",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2071582",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Yelmo LC 1009 1.5L',
+    imagen: "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_1.webp",
+        "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_2.webp",
+        "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_3.webp",
+        "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 650\n<strong>Capacidad (Litros):</strong> 1.5\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2073165",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2073165",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Electrolux BLL19 1.5Lts 600Wts',
+    imagen: "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_1.webp",
+        "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_2.webp",
+        "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_3.webp",
+        "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 600\n<strong>Capacidad (Litros):</strong> 1.5\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2073775",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2073775",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Black & Decker BL1001-AR 500w 2lts',
+    imagen: "images/licuadoras/Licuadora_Black_&_Decker_BL1001_AR_500w_2lts_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Black_&_Decker_BL1001_AR_500w_2lts_1.webp",
+        "images/licuadoras/Licuadora_Black_&_Decker_BL1001_AR_500w_2lts_2.webp",
+        "images/licuadoras/Licuadora_Black_&_Decker_BL1001_AR_500w_2lts_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Capacidad (Litros):</strong> 2\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2073928",
+    caracteristicas: [
+        "Marca: Black & Decker",
+        "Modelo: 2073928",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Moulinex LM270558 Optimix Plus Blender Red 2lts 220v',
+    imagen: "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_1.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_2.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_3.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_4.webp",
+        "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 550\n<strong>Capacidad (Litros):</strong> 2\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2074190",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2074190",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Atma de vaso LV24C0AP 500w 1.25lts Celeste',
+    imagen: "images/licuadoras/Licuadora_Atma_de_vasoLV24C0AP_500w_1_25lts_Celeste_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Atma_de_vasoLV24C0AP_500w_1_25lts_Celeste_1.webp",
+        "images/licuadoras/Licuadora_Atma_de_vasoLV24C0AP_500w_1_25lts_Celeste_2.webp",
+        "images/licuadoras/Licuadora_Atma_de_vasoLV24C0AP_500w_1_25lts_Celeste_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Capacidad (Litros):</strong> 1.25\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075062",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075062",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Philco LV24BOPHP 1.25Lts 450W',
+    imagen: "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_1.webp",
+        "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_2.webp",
+        "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_3.webp",
+        "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 450\n<strong>Capacidad (Litros):</strong> 1.25\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075080",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075080",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Atma de vaso LV24W0AP 1.25lts',
+    imagen: "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_1.webp",
+        "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_2.webp",
+        "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_3.webp",
+        "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Capacidad (Litros):</strong> 1.25\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075225",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075225",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Whitenblack WBALWB15 1.5lts 2v. + pulsador',
+    imagen: "images/licuadoras/Licuadora_Whitenblack_WBALWB15_1_5lts_2v_pulsador_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Whitenblack_WBALWB15_1_5lts_2v_pulsador_1.webp",
+        "images/licuadoras/Licuadora_Whitenblack_WBALWB15_1_5lts_2v_pulsador_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 400\n<strong>Capacidad (Litros):</strong> 1.5\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075296",
+    caracteristicas: [
+        "Marca: Whitenblack",
+        "Modelo: 2075296",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Liliana AL340 Glasslic Al340 1.5lts 850w Jarra Vidrio',
+    imagen: "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_1.webp",
+        "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_2.webp",
+        "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_3.webp",
+        "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 850\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075382",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075382",
         "Garantía: 1 año"
     ]
 },
