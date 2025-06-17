@@ -2620,7 +2620,197 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
+{
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Licuadoras",
+    nombre: 'Licuadora Ultracomb LC 2203 Mixer To Go',
+    imagen: "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_1.webp",
+    imagenes: [
+        "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_1.webp",
+        "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_2.webp",
+        "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_3.webp",
+        "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_4.webp",
+        "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 350\n<strong>Capacidad (Litros):</strong> 0.6\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2073166",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2073166",
+        "Garantía: 1 año"
+    ]
+},
 
+
+
+
+       /////---------- Mixers ----------/////
+
+
+
+{
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Atma LMAT8528RE 600w 2v. 5 en 1 Roja',
+    imagen: "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_1.webp",
+        "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_2.webp",
+        "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_3.webp",
+        "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 600\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Batidor, Picador, Espumador ',
+    codigo: "2075322",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075322",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Batidora Black & Decker Mixer HB1002-AR 500W c/ vaso',
+    imagen: "images/mixers/Batidora_Black &_Decker_Mixer_HB1002_AR_500W_c_vaso_1.webp",
+    imagenes: [
+        "images/mixers/Batidora_Black &_Decker_Mixer_HB1002_AR_500W_c_vaso_1.webp",
+        "images/mixers/Batidora_Black &_Decker_Mixer_HB1002_AR_500W_c_vaso_2.webp",
+        "images/mixers/Batidora_Black &_Decker_Mixer_HB1002_AR_500W_c_vaso_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Vaso',
+    codigo: "2073792",
+    caracteristicas: [
+        "Marca: Black & Decker",
+        "Modelo: 2073792",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Electrolux Efficient IBA30 850w pie metalico',
+    imagen: "images/mixers/Mixer_Electrolux_Efficient_IBA30_850w_pie_metalico_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Electrolux_Efficient_IBA30_850w_pie_metalico_1.webp",
+        "images/mixers/Mixer_Electrolux_Efficient_IBA30_850w_pie_metalico_2.webp",
+        "images/mixers/Mixer_Electrolux_Efficient_IBA30_850w_pie_metalico_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 850\n<strong>Velocidades:</strong> 3\n<strong>Accesorios incluidos:</strong> Vaso',
+    codigo: "2074748",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2074748",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Electrolux EIB20 Efficient 600ml 600W 3 en 1',
+    imagen: "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_1.webp",
+        "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_2.webp",
+        "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_3.webp",
+        "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_4.webp",
+        "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_5.webp",
+        "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 600\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Vaso, Batidor, Picador',
+    codigo: "2075317",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2075317",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Liliana AH 300 2v. 450w. vaso 900cc',
+    imagen: "images/mixers/Mixer_Liliana_AH_300_2v_450w_vaso_900cc_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Liliana_AH_300_2v_450w_vaso_900cc_1.webp",
+        "images/mixers/Mixer_Liliana_AH_300_2v_450w_vaso_900cc_2.webp",
+        "images/mixers/Mixer_Liliana_AH_300_2v_450w_vaso_900cc_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 450\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Vaso',
+    codigo: "2074796",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2074796",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Liliana AH150 850W Fastmix Negro 220v-240v',
+    imagen: "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_1.webp",
+        "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_2.webp",
+        "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_3.webp",
+        "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 850\n<strong>Velocidades:</strong> 5\n<strong>Accesorios incluidos:</strong> Vaso, Batidor, Picador, Accesorio para puré',
+    codigo: "2075331",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075331",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Moulinex DD1238AR Turbomix Negro inox 350w 3 en 1',
+    imagen: "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
+        "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 350\n<strong>Velocidades:</strong> 1\n<strong>Accesorios incluidos:</strong> Vaso, Batidor, Picador',
+    codigo: "2074785",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2074785",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Philips HR253050 ProMix Daily Collection 400w Turbo',
+    imagen: "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
+        "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 350\n<strong>Velocidades:</strong> 1',
+    codigo: "2075237",
+    caracteristicas: [
+        "Marca: Philips",
+        "Modelo: 2075237",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños Electrodomésticos",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Moulinex DD12A1AR Turbomix blanco 350w pie plastico',
+    imagen: "images/mixers/Mixer_Moulinex_DD12A1AR_Turbomix_blanco_350w_pie_plastico_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Moulinex_DD12A1AR_Turbomix_blanco_350w_pie_plastico_1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 350\n<strong>Velocidades:</strong> 1\n<strong>Accesorios incluidos:</strong> Vaso',
+    codigo: "2075229",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2075229",
+        "Garantía: 1 año"
+    ]
+},
 
 
 
