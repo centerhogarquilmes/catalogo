@@ -2254,16 +2254,16 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Yelmo BM-1608',
-    imagen: "images/Batidoras/Batidora_Yelmo_BM_160_1.webp",
+    imagen: "images/batidoras/Batidora_Yelmo_BM_160_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Yelmo_BM_160_1.webp",
-        "images/Batidoras/Batidora_Yelmo_BM_160_8.webp",
-        "images/Batidoras/Batidora_Yelmo_BM_160_2.webp",
-        "images/Batidoras/Batidora_Yelmo_BM_160_3.webp",
-        "images/Batidoras/Batidora_Yelmo_BM_160_4.webp",
-        "images/Batidoras/Batidora_Yelmo_BM_160_5.webp",
-        "images/Batidoras/Batidora_Yelmo_BM_160_6.webp",
-        "images/Batidoras/Batidora_Yelmo_BM_160_7.webp"
+        "images/batidoras/Batidora_Yelmo_BM_160_1.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_8.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_2.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_3.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_4.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_5.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_6.webp",
+        "images/batidoras/Batidora_Yelmo_BM_160_7.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Velocidades:</strong> 7\n<strong>Accesorios incluidos:</strong> Amasador',
     codigo: "2073210",
@@ -2277,11 +2277,11 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Steel Home Planetaria BP/BR1200 6v. 1200w. 5 lts Blanca/Negra',
-    imagen: "images/Batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
+    imagen: "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
-        "images/Batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_2.webp",
-        "images/Batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_3.webp"
+        "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
+        "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_2.webp",
+        "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_3.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 1200\n<strong>Velocidades:</strong> 6\n<strong>Capacidad (Litros):</strong> 5\n<strong>Accesorios incluidos:</strong> Bowl, Amasador, Mezclador',
     codigo: "2073537",
@@ -2295,13 +2295,13 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Moulinex QA710858 Planetaria Inspirart 500w 220v 5v',
-    imagen: "images/Batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
+    imagen: "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
-        "images/Batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_2.webp",
-        "images/Batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_3.webp",
-        "images/Batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_4.webp",
-        "images/Batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_5.webp"
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_2.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_3.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_4.webp",
+        "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_5.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Velocidades:</strong> 5\n<strong>Capacidad (Litros):</strong> 3.2\n<strong>Accesorios incluidos:</strong> Bowl',
     codigo: "2073643",
@@ -2315,12 +2315,12 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Kanji de mano KJH-BL0300HMB01R con bowl 300wts 2lts',
-    imagen: "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
+    imagen: "images/Batidoras/batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
-        "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_2.webp",
-        "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_3.webp",
-        "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_4.webp"
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_2.webp",
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_3.webp",
+        "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_4.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Velocidades:</strong> 7\n<strong>Capacidad (Litros):</strong> 2\n<strong>Accesorios incluidos:</strong> Bowl, Amasador',
     codigo: "2073788",
@@ -2334,13 +2334,13 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Moulinex SX1505AR 220v de mano roja',
-    imagen: "images/Batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
+    imagen: "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
-        "images/Batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_2.webp",
-        "images/Batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_3.webp",
-        "images/Batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_4.webp",
-        "images/Batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_5.webp"
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_2.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_3.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_4.webp",
+        "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_5.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 250\n<strong>Velocidades:</strong> 3',
     codigo: "2074367",
@@ -2354,11 +2354,11 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Atma de mano BM8738AP 300W 5 vel. c/ turbo',
-    imagen: "images/Batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
+    imagen: "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
-        "images/Batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_2.webp",
-        "images/Batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_3.webp"
+        "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
+        "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_2.webp",
+        "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_3.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Velocidades:</strong> 5\n<strong>Accesorios incluidos:</strong> Amasador',
     codigo: "2074566",
@@ -2372,11 +2372,11 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Westinghouse planetaria WH-BL0800HB02 Gris',
-    imagen: "images/Batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
+    imagen: "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
-        "images/Batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_2.webp",
-        "images/Batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_3.webp"
+        "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
+        "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_2.webp",
+        "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_3.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 800\n<strong>Velocidades:</strong> 3\n<strong>Capacidad (Litros):</strong> 4\n<strong>Accesorios incluidos:</strong> Bowl, Amasador, Mezclador',
     codigo: "2074902",
@@ -2390,11 +2390,11 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Whitenblack WBABWB01 300w 5v. batidor/amasador',
-    imagen: "images/Batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
+    imagen: "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
     imagenes: [
-        "images/Batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
-        "images/Batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_2.webp",
-        "images/Batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_3.webp"
+        "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
+        "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_2.webp",
+        "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_3.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 450\n<strong>Velocidades:</strong> 5\n<strong>Accesorios incluidos:</strong> Amasador',
     codigo: "2075298",
@@ -2410,7 +2410,7 @@ const productos = [
 
 
 
-    /////---------- Batidoras ----------/////
+    /////---------- Licuadoras ----------/////
 
 
 
