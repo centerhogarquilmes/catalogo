@@ -2315,7 +2315,7 @@ const productos = [
     categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Kanji de mano KJH-BL0300HMB01R con bowl 300wts 2lts',
-    imagen: "images/Batidoras/batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
+    imagen: "images/batidoras/batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
     imagenes: [
         "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
         "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_2.webp",
