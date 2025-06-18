@@ -90,18 +90,18 @@
                 <li><a href="categoria.html?nombre=Termotanques&subcategoria=Dual">Dual</a></li>
             </ul>
         </li><li class="has-submenu">
-            <a href="categoria.html?nombre=Pequeños electrodomesticos">Pequeños</a>
+            <a href="categoria.html?nombre=Pequeños">Pequeños</a>
             <ul class="submenu">
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Batidoras">Batidoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Licuadoras">Licuadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Multiprocesadoras">Multiprocesadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Mixers">Mixers</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Pavas electricas">Pavas Eléctricas</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Cafeteras">Cafeteras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Tostadoras">Tostadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Sandwicheras">Sandwicheras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subCategoria=Exprimidores y jugueras">Exprimidores y Jugueras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños electrodomesticos&subcategoria=Picadoras">Picadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=batidoras">Batidoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=licuadoras">Licuadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=multiprocesadoras">Multiprocesadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=mixers">Mixers</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=pavas electricas">Pavas eléctricas</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=cafeteras">Cafeteras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=tostadoras">Tostadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=sandwicheras">Sandwicheras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=exprimidores y jugueras">Exprimidores y Jugueras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=picadoras">Picadoras</a></li>
             </ul>
         </li>
         <li class="has-submenu">
@@ -172,15 +172,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>© 2025 Center Hogar Quilmes. Todos los derechos reservados.</p>
-            <ul>
-                <li><a href="terminos.html">Términos y condiciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="privacidad.html">Privacidad</a></li>
-                <li><a href="garantia.html">Políticas de garantías</a></li>
-            </ul>
-        </div>
+    <div class="container">
+        <p>© 2025 Center Hogar Quilmes. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="terminos.html">Términos y condiciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="garantia.html">Políticas de garantías</a></li>
+        </ul>
+    </div>
     </footer>
 
     <!-- Botón flotante para filtros -->
@@ -234,24 +234,16 @@ const atributosPorCategoria = {
         "Red móvil",
         "RAM (GB)"
     ],
-    "climatizacion": {
-        "calefaccion electrica": [
-            "Potencia (W)",
-            "Cantidad de velas",
-            "Giratoria"
-        ],
-        "calefaccion a gas": [
-            "Potencia (Kcal)",
-            "Tipo",
-            "Tipo de gas",
-            "Tipo"
-        ],
-        "aires acondicionados": [
-            "Potencia (W)",
-            "Inverter",
-            "Tipo"
-        ],
-    },
+    "climatizacion": [
+        "Potencia (W)",
+        "Cantidad de velas",
+        "Giratoria",
+        "Potencia (Kcal)",
+        "Tipo de gas",
+        "Inverter",
+        "Tipo"
+    ],
+    
     "cocinas": [
         "Tipo de uso",
         "Dimensiones",
@@ -288,23 +280,22 @@ const atributosPorCategoria = {
         "Potencia",
         "Eficiencia energética"
     ],
-    "pequeños electrodomesticos": {
-        "pavas electricas": [
-            "Capacidad (Litros)",
-            "Potencia (W)",
-            "Corte automático"
-        ],
-        "cafeteras": [
-            "Capacidad (Litros)",
-            "Tipo",
-            "Potencia (W)"
-        ],
-        "tostadoras": [
-            "Ranuras",
-            "Potencia (W)",
-            "Niveles de tostado"
-        ]
-    },
+    "pequeños": [
+        "Capacidad (Litros)",
+        "Potencia (W)",
+        "Corte automático",
+        "Capacidad (Litros)",
+        "Tipo",
+        "Velocidades",
+        "Accesorios incluidos",
+        "Cuchillas desmontables",
+        "Ranuras",
+        "Niveles de tostado",
+        "Placas antiadherentes",
+        "Funciones"
+    ],
+    
+    
     "cuidado personal": [
         "Tipo de equipo",
         "Uso recomendado",
@@ -393,26 +384,50 @@ function updateDynamicFilters(categoria, subcategoria) {
 
     const categoriaNormalizada = normalizeString(categoria);
     const subcategoriaNormalizada = normalizeString(subcategoria);
-    console.log('Accediendo a atributosPorCategoria con:', categoriaNormalizada, subcategoriaNormalizada);
-    let atributosFiltrables = [];
+    console.log('=== Inicio de updateDynamicFilters ===');
+    console.log('Categoría:', categoria, '→ Normalizada:', categoriaNormalizada);
+    console.log('Subcategoría:', subcategoria, '→ Normalizada:', subcategoriaNormalizada);
 
+    let atributosFiltrables = [];
     if (categoriaNormalizada && atributosPorCategoria[categoriaNormalizada]) {
+        console.log('Categoría encontrada en atributosPorCategoria:', categoriaNormalizada);
         if (subcategoriaNormalizada && typeof atributosPorCategoria[categoriaNormalizada] === 'object' && !Array.isArray(atributosPorCategoria[categoriaNormalizada])) {
             atributosFiltrables = atributosPorCategoria[categoriaNormalizada][subcategoriaNormalizada] || [];
-            console.log('Atributos para subcategoría:', atributosFiltrables);
+            console.log('Atributos para subcategoría:', subcategoriaNormalizada, '→', atributosFiltrables);
         } else {
             atributosFiltrables = Array.isArray(atributosPorCategoria[categoriaNormalizada]) ? atributosPorCategoria[categoriaNormalizada] : [];
             console.log('Atributos para categoría (sin subcategoría):', atributosFiltrables);
         }
+    } else {
+        console.error('Categoría NO encontrada en atributosPorCategoria:', categoriaNormalizada);
+        console.log('Claves disponibles en atributosPorCategoria:', Object.keys(atributosPorCategoria));
+        return;
     }
 
     if (atributosFiltrables.length === 0) {
-        console.log('No se encontraron atributos filtrables para', categoriaNormalizada, subcategoriaNormalizada);
+        console.warn('No se encontraron atributos filtrables para:', { categoriaNormalizada, subcategoriaNormalizada });
         return;
     }
-    let productosFiltradosPorCategoria = productos.filter(p => normalizeString(p.categoria) === categoriaNormalizada);
+
+    let productosFiltradosPorCategoria = productos.filter(p => {
+        const catNorm = normalizeString(p.categoria);
+        console.log('Producto:', p.nombre, 'Categoría:', p.categoria, '→ Normalizada:', catNorm);
+        return catNorm === categoriaNormalizada;
+    });
+    console.log('Productos filtrados por categoría:', productosFiltradosPorCategoria.map(p => p.nombre));
+
     if (subcategoria) {
-        productosFiltradosPorCategoria = productosFiltradosPorCategoria.filter(p => normalizeString(p.subcategoria) === normalizeString(subcategoria));
+        productosFiltradosPorCategoria = productosFiltradosPorCategoria.filter(p => {
+            const subcatNorm = normalizeString(p.subcategoria);
+            console.log('Producto:', p.nombre, 'Subcategoría:', p.subcategoria, '→ Normalizada:', subcatNorm);
+            return subcatNorm === subcategoriaNormalizada;
+        });
+        console.log('Productos filtrados por subcategoría:', productosFiltradosPorCategoria.map(p => p.nombre));
+    }
+
+    if (productosFiltradosPorCategoria.length === 0) {
+        console.warn('No se encontraron productos para:', { categoriaNormalizada, subcategoriaNormalizada });
+        return;
     }
 
     atributosFiltrables.forEach(atributo => {
@@ -420,17 +435,23 @@ function updateDynamicFilters(categoria, subcategoria) {
             productosFiltradosPorCategoria
                 .map(p => {
                     const atributos = parsearDescripcion(p.descripcion);
+                    console.log('Producto:', p.nombre, 'Atributos parseados:', atributos);
                     return atributos[atributo];
                 })
                 .filter(v => v && v !== '-' && v !== '0')
         )];
+        console.log('Valores únicos para atributo', atributo, ':', valoresUnicos);
 
-        if (valoresUnicos.length === 0) return;
+        if (valoresUnicos.length === 0) {
+            console.log('No hay valores únicos para el atributo:', atributo);
+            return;
+        }
 
         // Ordenar valores numéricos para atributos específicos
         if (atributo === 'Capacidad (Litros)' || atributo === 'Capacidad' || atributo === 'Pulgadas' || atributo === 'Capacidad (kg)' || 
             atributo === 'Potencia' || atributo === 'Potencia (W)' || atributo === 'Velocidad de centrifugado (RPM)' || 
             atributo === 'Cámara trasera' || atributo === 'Cámara frontal' || atributo === 'Hornallas' || 
+            atributo === 'Corte automático' || atributo === 'Tipo' || atributo === 'Colgar o apoyar' || 
             atributo === 'Presión (bar)' || atributo === 'Niveles de tostado') {
             valoresUnicos.sort((a, b) => {
                 const numA = parseFloat(a.replace(/[^\d.]/g, '')) || 0;
@@ -465,7 +486,10 @@ function updateDynamicFilters(categoria, subcategoria) {
             checkbox.name = `filter-${normalizeString(atributo)}`;
             checkbox.value = valor;
             checkbox.className = 'filter-checkbox';
-            checkbox.addEventListener('change', filtrarProductos);
+            checkbox.addEventListener('change', () => {
+                console.log('Checkbox cambiado:', atributo, valor);
+                filtrarProductos();
+            });
 
             const span = document.createElement('span');
             span.textContent = valor;
@@ -478,7 +502,9 @@ function updateDynamicFilters(categoria, subcategoria) {
         filterGroup.appendChild(filterHeader);
         filterGroup.appendChild(filterContent);
         dynamicFiltersContainer.appendChild(filterGroup);
+        console.log('Filtro generado para atributo:', atributo);
     });
+    console.log('=== Fin de updateDynamicFilters ===');
 }
 
 // Actualizar título de la categoría

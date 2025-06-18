@@ -1890,13 +1890,13 @@ const productos = [
 
 
 
-    /////---------- Pequeños Electrodomésticos ----------/////
+    /////---------- Pequeños ----------/////
          
-         /////---------- pavas eléctricas ----------/////
+         /////---------- pavas electricas ----------/////
 
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD469590 1lts 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD469590_1lts_2200w_1.webp",
     imagenes: [
@@ -1914,8 +1914,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD9368/90 Negra Temp Para Mate 1.7L 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_1.webp",
     imagenes: [
@@ -1933,8 +1933,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava electrica Ultracomb PE 4909 1.7Lts, 2200w',
     imagen: "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4909_1_7Lts_2200w_1.webp",
     imagenes: [
@@ -1951,8 +1951,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Kanji KJH-PE15005S Hervidora alum/plast',
     imagen: "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_1.webp",
     imagenes: [
@@ -1968,8 +1968,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Moulinex BY3975AR Mate',
     imagen: "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_1.webp",
     imagenes: [
@@ -1990,8 +1990,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Oster 4970 negra o Blanca con Regulador',
     imagen: "images/pavas_electricas/Pava_Oster_4970_negra_o_Blanca_con_Regulador_1.webp",
     imagenes: [
@@ -2007,8 +2007,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Peabody PE-KV8215S 1.7L inox',
     imagen: "images/pavas_electricas/Pava_Peabody_PE_KV8215S_1_7L_inox_1.webp",
     imagenes: [
@@ -2025,8 +2025,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Philco PEPH1182IP c/corte 1.8lts 1500w',
     imagen: "images/pavas_electricas/Pava_Philco_PEPH1182IP_c_corte_1_8lts_1500w_1.webp",
     imagenes: [
@@ -2046,8 +2046,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Whitenblack WBAPWB17 Hervidora 1.7lts 2000w',
     imagen: "images/pavas_electricas/Pava_Whitenblack_WBAPWB17_Hervidora_1_7lts_2000w_1.webp",
     imagenes: [
@@ -2065,8 +2065,8 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "pavas eléctricas",
+    categoria: "Pequeños",
+    subcategoria: "pavas electricas",
     nombre: 'Pava Yelmo PE 3900',
     imagen: "images/pavas_electricas/Pava_Yelmo_PE_3900_1.webp",
     imagenes: [
@@ -2090,7 +2090,7 @@ const productos = [
 
 
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Atma CA8143N/P de filtro 1.25lts Negra',
     imagen: "images/cafeteras/Cafetera_Atma_CA8143N_P_de_filtro_1_25lts_Negra_1.webp",
@@ -2109,7 +2109,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800 Filtro negra 6 tazas',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800_Filtro_negra_6_tazas_1.webp",
@@ -2127,7 +2127,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800S',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800S_1.webp",
@@ -2143,7 +2143,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Moulinex FG320558 CAFECITY NEGRA ( GS )',
     imagen: "images/cafeteras/Cafetera_Moulinex_FG320558_CAFECITY_NEGRA _GS _1.webp",
@@ -2162,7 +2162,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Philips HD746100 jarra 1.2lts antigoteo',
     imagen: "images/cafeteras/Cafetera_Philips_HD746100_jarra_1_2lts_antigoteo_1.webp",
@@ -2181,7 +2181,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Smartlife SL-CM9402 1.5Lts',
     imagen: "images/cafeteras/Cafetera_Smartlife_SL_CM9402_1_5Lts_1.webp",
@@ -2204,7 +2204,7 @@ const productos = [
     /////---------- Tostadoras ----------/////
 
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "tostadoras",
     nombre: 'Tostador Electrolux ETS11 Inox 8 niv. descongela',
     imagen: "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_1.webp",
@@ -2227,7 +2227,7 @@ const productos = [
     ]
 },
 {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "tostadoras",
     nombre: 'Tostador Kanji TM1400 para 4 panes',
     imagen: "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_2.webp",
@@ -2247,12 +2247,12 @@ const productos = [
 
 
 
-    /////---------- Batidoras ----------/////
+    /////---------- batidoras ----------/////
 
 
  {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Yelmo BM-1608',
     imagen: "images/batidoras/Batidora_Yelmo_BM_160_1.webp",
     imagenes: [
@@ -2274,8 +2274,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Steel Home Planetaria BP/BR1200 6v. 1200w. 5 lts Blanca/Negra',
     imagen: "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
     imagenes: [
@@ -2292,8 +2292,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Moulinex QA710858 Planetaria Inspirart 500w 220v 5v',
     imagen: "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
     imagenes: [
@@ -2312,8 +2312,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Kanji de mano KJH-BL0300HMB01R con bowl 300wts 2lts',
     imagen: "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
     imagenes: [
@@ -2331,8 +2331,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Moulinex SX1505AR 220v de mano roja',
     imagen: "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
     imagenes: [
@@ -2351,8 +2351,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Atma de mano BM8738AP 300W 5 vel. c/ turbo',
     imagen: "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
     imagenes: [
@@ -2369,8 +2369,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Westinghouse planetaria WH-BL0800HB02 Gris',
     imagen: "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
     imagenes: [
@@ -2387,8 +2387,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
-    subcategoria: "Batidoras",
+    categoria: "Pequeños",
+    subcategoria: "batidoras",
     nombre: 'Batidora Whitenblack WBABWB01 300w 5v. batidor/amasador',
     imagen: "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
     imagenes: [
@@ -2410,14 +2410,14 @@ const productos = [
 
 
 
-    /////---------- Batidoras ----------/////
+    /////---------- batidoras ----------/////
 
 
 
 
 
 {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Liliana AL900/AL100 Jarra 1.5Lts',
     imagen: "images/licuadoras/Licuadora_Liliana_AL900_AL100_Jarra_1_5Lts_1.webp",
@@ -2427,13 +2427,13 @@ const productos = [
     descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Capacidad (Litros):</strong> 1.5\n<strong>Cuchillas desmontables:</strong> Sí',
     codigo: "2071432",
     caracteristicas: [
-        "Marca: Lliliana",
+        "Marca: Liliana",
         "Modelo: 2071432",
         "Garantía: 1 año"
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Moulinex LM2701AR Optimix Blanca 2lts 550Wts 2 Vel. + pulsador',
     imagen: "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_1.webp",
@@ -2453,7 +2453,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Yelmo LC 1009 1.5L',
     imagen: "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_1.webp",
@@ -2472,7 +2472,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Electrolux BLL19 1.5Lts 600Wts',
     imagen: "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_1.webp",
@@ -2491,7 +2491,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Black & Decker BL1001-AR 500w 2lts',
     imagen: "images/licuadoras/Licuadora_Black_&_Decker_BL1001_AR_500w_2lts_1.webp",
@@ -2509,7 +2509,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Moulinex LM270558 Optimix Plus Blender Red 2lts 220v',
     imagen: "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_1.webp",
@@ -2529,7 +2529,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Atma de vaso LV24C0AP 500w 1.25lts Celeste',
     imagen: "images/licuadoras/Licuadora_Atma_de_vasoLV24C0AP_500w_1_25lts_Celeste_1.webp",
@@ -2547,7 +2547,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Philco LV24BOPHP 1.25Lts 450W',
     imagen: "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_1.webp",
@@ -2566,7 +2566,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Atma de vaso LV24W0AP 1.25lts',
     imagen: "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_1.webp",
@@ -2585,7 +2585,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Whitenblack WBALWB15 1.5lts 2v. + pulsador',
     imagen: "images/licuadoras/Licuadora_Whitenblack_WBALWB15_1_5lts_2v_pulsador_1.webp",
@@ -2602,7 +2602,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Liliana AL340 Glasslic Al340 1.5lts 850w Jarra Vidrio',
     imagen: "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_1.webp",
@@ -2621,7 +2621,7 @@ const productos = [
     ]
 },
 {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Ultracomb LC 2203 Mixer To Go',
     imagen: "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_1.webp",
@@ -2649,7 +2649,7 @@ const productos = [
 
 
 {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Atma LMAT8528RE 600w 2v. 5 en 1 Roja',
     imagen: "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_1.webp",
@@ -2668,7 +2668,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Batidora Black & Decker Mixer HB1002-AR 500W c/ vaso',
     imagen: "images/mixers/Batidora_Black &_Decker_Mixer_HB1002_AR_500W_c_vaso_1.webp",
@@ -2686,7 +2686,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Electrolux Efficient IBA30 850w pie metalico',
     imagen: "images/mixers/Mixer_Electrolux_Efficient_IBA30_850w_pie_metalico_1.webp",
@@ -2704,7 +2704,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Electrolux EIB20 Efficient 600ml 600W 3 en 1',
     imagen: "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_1.webp",
@@ -2725,7 +2725,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Liliana AH 300 2v. 450w. vaso 900cc',
     imagen: "images/mixers/Mixer_Liliana_AH_300_2v_450w_vaso_900cc_1.webp",
@@ -2743,7 +2743,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Liliana AH150 850W Fastmix Negro 220v-240v',
     imagen: "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_1.webp",
@@ -2762,7 +2762,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Moulinex DD1238AR Turbomix Negro inox 350w 3 en 1',
     imagen: "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
@@ -2779,7 +2779,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Philips HR253050 ProMix Daily Collection 400w Turbo',
     imagen: "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
@@ -2796,7 +2796,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños Electrodomésticos",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Moulinex DD12A1AR Turbomix blanco 350w pie plastico',
     imagen: "images/mixers/Mixer_Moulinex_DD12A1AR_Turbomix_blanco_350w_pie_plastico_1.webp",

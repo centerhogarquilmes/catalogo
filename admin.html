@@ -26,7 +26,10 @@
         .btn-limpiar { padding: 10px 20px; background: #dc3545; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
         .btn-limpiar:hover { background: #c82333; }
         .dynamic-fields { margin-top: 15px; }
-        .checkbox { text-align: left;}    
+        .checkbox-group {display: flex; flex-direction: column;text-align: left;align-items: baseline; gap: 5px; margin-top: 5px;}
+        .checkbox-item {display: flex; align-items:baseline; align-content: center; gap: 5px;}
+        .checkbox-item input[type="checkbox"] { margin: 0;}
+        .checkbox-item label { font-size: 14px; margin: 0; white-space: nowrap; } /* Agregar white-space: nowrap */
     </style>
 </head>
 <body>
@@ -96,7 +99,7 @@ const categoryFields = {
         subcategorias: [],
         folder: "cocinas",
         fields: [
-            { label: "Tipo de uso", name: "tipo_uso", type: "select", options: ["Doméstico", "Industrial"] },
+            { label: "Tipo de uso", name: "tipo_uso", type: "select", options: ["Domestica", "Industrial"] },
             { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "85 x 56 x 60" },
             { label: "Válvula de seguridad", name: "valvula_seguridad", type: "select", options: ["Sí", "No"] },
             { label: "Luz en el horno", name: "luz_horno", type: "checkbox" }, // Changed to checkbox
@@ -185,9 +188,9 @@ const categoryFields = {
                 { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" }
             ],
             "Aires Acondicionados": [
-                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "12000" },
+                { label: "Capacidad (BTU)", name: "capacidad", type: "text", placeholder: "12000" },
                 { label: "Tipo", name: "tipo", type: "select", options: ["Split", "Ventana", "Portátil"] },
-                { label: "Inverter", name: "inverter", type: "checkbox" },
+                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
                 { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
             ]
         }
@@ -272,14 +275,14 @@ const categoryFields = {
             ]
         }
     },
-    "Pequeños Electrodomésticos": {
-        subcategorias: ["Batidoras", "Licuadoras", "Multiprocesadoras", "Mixers", "Pavas Eléctricas", "Cafeteras", "Tostadoras", "Sandwicheras", "Exprimidores y Jugueras", "Picadoras"],
+    "Pequeños": {
+        subcategorias: ["batidoras", "Licuadoras", "Multiprocesadoras", "Mixers", "pavas electricas", "Cafeteras", "Tostadoras", "Sandwicheras", "Exprimidores y Jugueras", "Picadoras"],
         folders: {
-            "Batidoras": "batidoras",
+            "batidoras": "batidoras",
             "Licuadoras": "licuadoras",
             "Multiprocesadoras": "multiprocesadoras",
             "Mixers": "mixers",
-            "Pavas Eléctricas": "pavas_electricas",
+            "pavas electricas": "pavas_electricas",
             "Cafeteras": "cafeteras",
             "Tostadoras": "tostadoras",
             "Sandwicheras": "sandwicheras",
@@ -287,11 +290,16 @@ const categoryFields = {
             "Picadoras": "picadoras"
         },
         fields: {
-            "Batidoras": [
+            "batidoras": [
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "500" },
                 { label: "Velocidades", name: "velocidades", type: "text", placeholder: "5" },
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.5" },
-                { label: "Bowl", name: "bowl", type: "checkbox" } // New checkbox field
+                { 
+                label: "Accesorios incluidos", 
+                name: "accesorios", 
+                type: "checkbox-group", 
+                options: ["Bowl","Amasador", "Emulsionador", "Picador de carne", "Mezclador"] 
+            },
             ],
             "Licuadoras": [
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "600" },
@@ -309,7 +317,7 @@ const categoryFields = {
                 { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" },
                 { label: "Accesorios incluidos", name: "accesorios", type: "text", placeholder: "Batidor, picador" }
             ],
-            "Pavas Eléctricas": [
+            "pavas electricas": [
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.7" },
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
                 { label: "Apagado automático", name: "apagado_auto", type: "select", options: ["Sí", "No"] },
@@ -372,7 +380,7 @@ const categoryFields = {
 // Autenticación simple
 function login() {
     const password = document.getElementById('password').value;
-    if (password === 'admin123') {
+    if (password === '') {
         document.getElementById('login-section').style.display = 'none';
         document.getElementById('admin-section').style.display = 'block';
         loadProducts();
@@ -468,6 +476,29 @@ function generateDynamicFields(category, subcategoria) {
             input.id = field.name;
             input.name = field.name;
             formGroup.appendChild(input);
+        } else if (field.type === 'checkbox-group') {
+            // Crear un contenedor para los checkboxes
+            const checkboxContainer = document.createElement('div');
+            checkboxContainer.className = 'checkbox-group';
+            field.options.forEach(option => {
+                const checkboxWrapper = document.createElement('div');
+                checkboxWrapper.className = 'checkbox-item';
+                
+                const input = document.createElement('input');
+                input.type = 'checkbox';
+                input.id = `${field.name}_${option.toLowerCase().replace(/ /g, '_')}`;
+                input.name = `${field.name}[]`; // Usar [] para permitir múltiples valores
+                input.value = option;
+                
+                const optionLabel = document.createElement('label');
+                optionLabel.setAttribute('for', input.id);
+                optionLabel.textContent = option;
+                
+                checkboxWrapper.appendChild(input);
+                checkboxWrapper.appendChild(optionLabel);
+                checkboxContainer.appendChild(checkboxWrapper);
+            });
+            formGroup.appendChild(checkboxContainer);
         } else {
             const input = document.createElement(field.type === 'textarea' ? 'textarea' : 'input');
             input.id = field.name;
@@ -557,14 +588,18 @@ document.getElementById('product-form').addEventListener('submit', (e) => {
     let descripcionLines = [];
     fields.forEach(field => {
         const input = document.getElementById(field.name);
-        if (input) {
-            if (field.type === 'checkbox') {
-                if (input.checked) {
-                    descripcionLines.push(`<strong>${field.label}:</strong> Sí`);
-                }
-            } else if (input.value) {
-                descripcionLines.push(`<strong>${field.label}:</strong> ${input.value}`);
+        if (field.type === 'checkbox') {
+            if (input && input.checked) {
+                descripcionLines.push(`<strong>${field.label}:</strong> Sí`);
             }
+        } else if (field.type === 'checkbox-group') {
+            const checkboxes = document.querySelectorAll(`input[name="${field.name}[]"]:checked`);
+            const selectedOptions = Array.from(checkboxes).map(checkbox => checkbox.value);
+            if (selectedOptions.length > 0) {
+                descripcionLines.push(`<strong>${field.label}:</strong> ${selectedOptions.join(', ')}`);
+            }
+        } else if (input && input.value) {
+            descripcionLines.push(`<strong>${field.label}:</strong> ${input.value}`);
         }
     });
     producto.descripcion = descripcionLines.join('\n');
