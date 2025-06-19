@@ -3,7 +3,7 @@ const productosDestacados = [
     "18079",   // Cocina Escorial Candor Blanca
     "2073101", // Heladera Samsung RT29K577JS8
     "2075251", // Lavarropas ENOVA EWMF-B7
-    "2074218", // TV LED ENOVA 50" smart
+    "2075206", // TV LED Samsung 50"" LH50BECHVGGZB (BONO $48500) Smart UHD Bussines Crystal 4K
     "2075246"  // Motorola MOTO E15
 ];
 const productos = [

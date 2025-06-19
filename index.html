@@ -95,11 +95,11 @@
         </li><li class="has-submenu">
             <a href="categoria.html?nombre=Pequeños">Pequeños</a>
             <ul class="submenu">
-                <li><a href="categoria.html?nombre=Pequeños&subcategoria=Batidoras">Batidoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=batidoras">batidoras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Licuadoras">Licuadoras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Multiprocesadoras">Multiprocesadoras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Mixers">Mixers</a></li>
-                <li><a href="categoria.html?nombre=Pequeños&subcategoria=Pavas eléctricas">Pavas eléctricas</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=pavas electricas">pavas electricas</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Cafeteras">Cafeteras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Tostadoras">Tostadoras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Sandwicheras">Sandwicheras</a></li>
@@ -360,6 +360,7 @@ carouselSlides.addEventListener('touchend', () => {
 startAutoSlide();
 
 // Generar tarjetas de productos destacados dinámicamente
+// Generar tarjetas de productos destacados dinámicamente
 const productGrid = document.querySelector('.product-grid');
 productGrid.innerHTML = '';
 const productosDestacadosFiltrados = productos
@@ -378,7 +379,6 @@ if (productosDestacadosFiltrados.length === 0) {
         const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
         const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
         const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
-        // Modificar esta línea si cambia el porcentaje de Pre. ant. imp. nac. (actualmente 0.8265)
         const precioAntesImpuestos = precioLista ? `$${(precioLista * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
         const isAgotado = datosDinamicos.stock_sucursal + datosDinamicos.stock_deposito === 0;
 
@@ -387,6 +387,7 @@ if (productosDestacadosFiltrados.length === 0) {
         card.innerHTML = `
             <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
                 ${isAgotado ? '<span class="agotado-label">Agotado</span>' : ''}
+                <span class="offer-label">Oferta del mes</span> <!-- Etiqueta de Oferta -->
                 <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                 <div class="text-container">
                     <h3>${producto.nombre}</h3>
