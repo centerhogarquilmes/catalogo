@@ -1891,7 +1891,122 @@ const productos = [
 
 
     /////---------- Pequeños ----------/////
-         
+/////---------- Multiprocesadoras ----------/////
+
+    {
+    categoria: "Pequeños",
+    subcategoria: "Multiprocesadoras",
+    nombre: 'Multiprocesadora Whitenblack WBAMWB01 650W 3v+puls. cuchilla acero',
+    imagen: "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB01_650W_3v_puls_cuchilla_acero_1.webp",
+    imagenes: [
+        "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB01_650W_3v_puls_cuchilla_acero_1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 650\n<strong>Capacidad (Litros):</strong> 1\n<strong>Funciones:</strong> Picar, Amasar, Rallar, Rebanar, Emulsionar.',
+    codigo: "2075265",
+    caracteristicas: [
+        "Marca: Whitenblack",
+        "Modelo: 2075265",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Multiprocesadoras",
+    nombre: 'Multiprocesadora Whitenblack WBAMWB02 650W + licuadora jarra 1.8lts 3v+puls. cuchilla acero',
+    imagen: "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB02_650W_licuadora_jarra_1_8lts_3v_puls_cuchilla_acero_1.webp",
+    imagenes: [
+        "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB02_650W_licuadora_jarra_1_8lts_3v_puls_cuchilla_acero_1.webp",
+        "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB02_650W_licuadora_jarra_1_8lts_3v_puls_cuchilla_acero_2.webp",
+        "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB02_650W_licuadora_jarra_1_8lts_3v_puls_cuchilla_acero_3.webp",
+        "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB02_650W_licuadora_jarra_1_8lts_3v_puls_cuchilla_acero_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 650\n<strong>Capacidad (Litros):</strong> 1L (vaso procesador), 1,8L (vaso licuador)\n<strong>Funciones:</strong> Picar, Amasar, Rallar, Rebanar, Emulsionar, Licuar.',
+    codigo: "2075266",
+    caracteristicas: [
+        "Marca: Whitenblack",
+        "Modelo: 2075266",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Multiprocesadoras",
+    nombre: 'MultiProcesadora Atma LP8426NAP 9 en 1 650w 2vel + pulsador',
+    imagen: "images/multiprocesadoras/MultiProcesadora_Atma_LP8426NAP_9_en_1_650w_2vel_pulsador_1.webp",
+    imagenes: [
+        "images/multiprocesadoras/MultiProcesadora_Atma_LP8426NAP_9_en_1_650w_2vel_pulsador_1.webp",
+        "images/multiprocesadoras/|MultiProcesadora_Atma_LP8426NAP_9_en_1_650w_2vel_pulsador_2.webp",
+        "images/multiprocesadoras/MultiProcesadora_Atma_LP8426NAP_9_en_1_650w_2vel_pulsador_3.webp",
+        "images/multiprocesadoras/MultiProcesadora_Atma_LP8426NAP_9_en_1_650w_2vel_pulsador_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 650\n<strong>Capacidad (Litros):</strong> 1,2L (vaso procesador), 1,8L (vaso licuador)\n<strong>Funciones:</strong> Picar, Emulsionar, Rallar, Amasar, Rebanar, Exprimir, Licuar, Moler.',
+    codigo: "2075257",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075257",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Multiprocesadoras",
+    nombre: 'MultiProcesadora Electrolux FPA25 750wts 2v c/jarra licuadora 2lts',
+    imagen: "images/multiprocesadoras/MultiProcesadora_Electrolux_FPA25_750wts_2v_c_jarra_licuadora_2lts_1.webp",
+    imagenes: [
+        "images/multiprocesadoras/MultiProcesadora_Electrolux_FPA25_750wts_2v_c_jarra_licuadora_2lts_1.webp",
+        "images/multiprocesadoras/MultiProcesadora_Electrolux_FPA25_750wts_2v_c_jarra_licuadora_2lts_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 750\n<strong>Capacidad (Litros):</strong> 1,2L (vaso procesador), 2L (vaso licuador)\n<strong>Funciones:</strong> Cortar, Rallar, Rebanar, Desmenuzar, Emulsionar y Mezclar.',
+    codigo: "2074540",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2074540",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Multiprocesadoras",
+    nombre: 'Procesadora Liliana AM 780 Fullprossesor 750W',
+    imagen: "images/multiprocesadoras/Procesadora_Liliana_AM_780_Fullprossesor_750W_1.webp",
+    imagenes: [
+        "images/multiprocesadoras/Procesadora_Liliana_AM_780_Fullprossesor_750W_1.webp",
+        "images/multiprocesadoras/Procesadora_Liliana_AM_780_Fullprossesor_750W_2.webp",
+        "images/multiprocesadoras/Procesadora_Liliana_AM_780_Fullprossesor_750W_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 750\n<strong>Capacidad (Litros):</strong> 1.2L (vaso procesador),  2L (vaso licuador)\n<strong>Funciones:</strong> Amasa, Bate, Emulsiona, Exprime, Licúa, Pica, Ralla, Rebana.',
+    codigo: "2071835",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2071835",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Multiprocesadoras",
+    nombre: 'Procesadora Liliana AM730 Experty 700w c/jarra lic. 2lts',
+    imagen: "images/multiprocesadoras/Procesadora_Liliana_AM730_Experty_700w_c_jarra_lic_2lts_1.webp",
+    imagenes: [
+        "images/multiprocesadoras/Procesadora_Liliana_AM730_Experty_700w_c_jarra_lic_2lts_1.webp",
+        "images/multiprocesadoras/Procesadora_Liliana_AM730_Experty_700w_c_jarra_lic_2lts_2.webp",
+        "images/multiprocesadoras/Procesadora_Liliana_AM730_Experty_700w_c_jarra_lic_2lts_3.webp",
+        "images/multiprocesadoras/Procesadora_Liliana_AM730_Experty_700w_c_jarra_lic_2lts_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 700\n<strong>Capacidad (Litros):</strong> 1L (vaso procesador), 2L (vaso licuador)\n<strong>Funciones:</strong> Amasar, Batir, Licuar, Picar, Rallar, Rebanar.',
+    codigo: "2074042",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2074042",
+        "Garantía: 1 año"
+    ]
+},
+    
+
+
+
+
+
          /////---------- pavas electricas ----------/////
 
     {
