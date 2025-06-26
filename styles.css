@@ -67,18 +67,7 @@ body {
     
 }
 
-/* Header */
-.header {
-    background: linear-gradient(90deg, #02366e 0%, #000f1d 100%); /* Degradado de azul oscuro a azul medio */
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-    
-}
+
 .header-content {
     display: flex;
     align-items: center;
@@ -125,22 +114,33 @@ body {
 
     .header {
         padding: 10px 0; /* Aumentar padding para más espacio */
-        --header-height: 80px; /* Ajustar altura en móvil para incluir margen */
+        --header-height: 100px; /* Ajustar altura en móvil para incluir margen */
+        
     }
     .header-content {
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 5px 10px;
         position: relative;
         margin-top: 25px; /* Margen superior consistente */
+        justify-content: space-between; /* Distribuir elementos */
+        padding: 0 10px;
+        flex-wrap: nowrap; /* Evitar que los elementos se envuelvan */
+        gap: 0; /* Eliminar espacio innecesario */
+        height: 80px; /* Asegurar espacio suficiente */
+        margin-top: 0; /* Eliminar margen superior innecesario */
+    }
+    /* Ajustes adicionales para evitar conflictos */
+    .header-content > * {
+        flex-shrink: 0; /* Evitar que los elementos se compriman */
     }
 
     .logo {
-        position: absolute;
+        position: absolute; /* Mantener centrado */
         left: 50%;
         transform: translateX(-50%); /* Centra el logo */
-        padding: 5px 10px;
+        order: 2; /* Centro lógico */
+        padding: 0;
+        z-index: 1; /* Asegurar que no interfiera con otros elementos */
         
     }
 
@@ -149,14 +149,16 @@ body {
     }
 
     .header-actions {
-        position: absolute;
-        left: 10px; /* Menú a la izquierda */
-        display: flex;
         align-items: center;
+        position: static; /* Quitar posicionamiento absoluto */
+        display: flex;
+        order: 1; /* Asegurar que esté a la izquierda */
     }
 
     .menu-toggle {
         display: flex; /* Mostrar en móvil */
+        order: 1; /* A la izquierda */
+        margin-left: 0px; /* Pequeño ajuste para alinear visualmente */
     }
 
     .nav-menu {
@@ -193,11 +195,7 @@ body {
 }
 
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .header-actions {
     display: flex;
@@ -1348,16 +1346,9 @@ font-size: 0.8rem;
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header {
-        padding: 5px 0;
-    }
+    
 
-    .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px 10px;
-    }
+   
      /* Compensar el espacio del menú hamburguesa con un elemento vacío */
     .header-content::after {
         content: '';
@@ -3113,6 +3104,7 @@ font-size: 1rem;
     align-items: flex-end;
     gap: 5px;
     margin-right: 15px;
+    
 }
 
 .contact-item {
@@ -3147,11 +3139,71 @@ font-size: 1rem;
 
 @media (max-width: 768px) {
     .header-contact {
-        align-items: left;
-        margin-right: 0;
+        align-items: flex-end; /* Alinear a la derecha */
+        position: static; /* Quitar alineación izquierda forzada */
+        display: flex;
+        order: 3; /* A la derecha */
+        margin-right: 0px;
+        justify-content: center;
+        gap: 5px; /* Espacio entre ítemes de contacto */
+        flex-direction: column; /* Contacto en columna */
+        align-items: flex-end; /* Alinear a la derecha */
+        z-index: 1; /* Asegurar visibilidad */
     }
 
     .contact-item {
-        font-size: 1px;
+        font-size: 8px; /* Tamaño legible pero compacto */
+        color: #12b50c;
+        display: flex;
+        align-items: right;
+        justify-content: flex-end; /* Asegurar alineación derecha */
+        
     }
+    .contact-item a {
+        color: #12b50c;
+    }
+    .contact-item a:hover {
+        color: #12b50c;
+        
+    }
+
+    .contact-icon {
+        width: 11px; /* Tamaño del ícono, ajustar si es necesario */
+        height: 16px;
+        margin-right: 5px;
+    }
+
+    /* Ajustar la barra de búsqueda para que no interfiera */
+    .search-bar {
+        width: 100%;
+        margin: 40px auto 5px; /* Mantener debajo del header */
+        padding: 0;
+    }
+
+    /* Ocultar user-options si no son necesarios en el header */
+    .user-options {
+        display: none; /* Comentar si quieres mantenerlos */
+    }
+
+    /* Asegurar que el menú desplegable no se vea afectado */
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background-color: #02366e;
+        padding: 10px 0;
+        z-index: 1000;
+        max-height: calc(100vh - var(--header-height));
+        overflow-y: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    
+
 }
