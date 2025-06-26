@@ -3149,7 +3149,7 @@ font-size: 1rem;
         flex-direction: column; /* Contacto en columna */
         align-items: flex-end; /* Alinear a la derecha */
         z-index: 1; /* Asegurar visibilidad */
-        margin-top: 50px;
+        
     }
 
     .contact-item {
@@ -3162,8 +3162,9 @@ font-size: 1rem;
     }
     .contact-item a {
         color: #12b50c;
-        font-size: 10px; /* Tamaño legible pero compacto */
+        font-size: 15px; /* Tamaño legible pero compacto */
         margin-right: 5px;
+        
     }
     .contact-item a:hover {
         color: #12b50c;
