@@ -114,7 +114,7 @@ body {
 
     .header {
         padding: 10px 0; /* Aumentar padding para más espacio */
-        --header-height: 100px; /* Ajustar altura en móvil para incluir margen */
+        --header-height: 10px; /* Ajustar altura en móvil para incluir margen */
         
     }
     .header-content {
@@ -145,7 +145,7 @@ body {
     }
 
     .logo-img {
-        width: 80px;
+        width: 100px;
     }
 
     .header-actions {
@@ -212,7 +212,7 @@ body {
 .search-bar {
     position: relative;
     flex-grow: 1;
-    margin: 0 20px;
+    margin: 0 10px;
     display: flex;
     align-items: center;
     
@@ -3144,23 +3144,26 @@ font-size: 1rem;
         display: flex;
         order: 3; /* A la derecha */
         margin-right: 0px;
-        justify-content: center;
+        justify-content: right;
         gap: 5px; /* Espacio entre ítemes de contacto */
         flex-direction: column; /* Contacto en columna */
         align-items: flex-end; /* Alinear a la derecha */
         z-index: 1; /* Asegurar visibilidad */
+        margin-top: 50px;
     }
 
     .contact-item {
-        font-size: 8px; /* Tamaño legible pero compacto */
         color: #12b50c;
         display: flex;
         align-items: right;
         justify-content: flex-end; /* Asegurar alineación derecha */
         
+        
     }
     .contact-item a {
         color: #12b50c;
+        font-size: 10px; /* Tamaño legible pero compacto */
+        margin-right: 5px;
     }
     .contact-item a:hover {
         color: #12b50c;
@@ -3169,8 +3172,8 @@ font-size: 1rem;
 
     .contact-icon {
         width: 11px; /* Tamaño del ícono, ajustar si es necesario */
-        height: 16px;
-        margin-right: 5px;
+        height: 11px;
+        margin-right: 0px;
     }
 
     /* Ajustar la barra de búsqueda para que no interfiera */
