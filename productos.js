@@ -1956,6 +1956,10 @@ const productos = [
 
 
 
+    
+
+
+
 
 
 
@@ -3557,7 +3561,7 @@ const productos = [
 
 
 
-
+/////---------- Calefaccion gas ----------/////
 
 
 
@@ -3879,4 +3883,182 @@ const productos = [
 },
   
 
+
+
+
+/////---------- Aires acondicionados ----------/////
+
+{
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. RCA Split 5300 kw Inverter RINV5300FC Eficiencia A',
+    imagen: "images/aires_acondicionados/Acond_RCA_Split_5300_kw_Inverter_RINV5300FC_Eficiencia_A_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_RCA_Split_5300_kw_Inverter_RINV5300FC_Eficiencia_A_1.webp",
+        "images/aires_acondicionados/Acond_RCA_Split_5300_kw_Inverter_RINV5300FC_Eficiencia_A_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 5300\n<strong>Tipo:</strong> Split\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072586",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2072586",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Tcl Split 3300 kw Elite On/Off',
+    imagen: "images/aires_acondicionados/Acond_Tcl_Split_3300_kw_Elite_On_Off_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_Tcl_Split_3300_kw_Elite_On_Off_1.webp",
+        "images/aires_acondicionados/Acond_Tcl_Split_3300_kw_Elite_On_Off_2.webp",
+        "images/aires_acondicionados/Acond_Tcl_Split_3300_kw_Elite_On_Off_3.webp",
+        "images/aires_acondicionados/Acond_Tcl_Split_3300_kw_Elite_On_Off_4.webp",
+        "images/aires_acondicionados/Acond_Tcl_Split_3300_kw_Elite_On_Off_5.webp",
+        "images/aires_acondicionados/Acond_Tcl_Split_3300_kw_Elite_On_Off_6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3300\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073556",
+    caracteristicas: [
+        "Marca: TCL",
+        "Modelo: 2073556",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Midea Split 2730 kw MSAGFC-09H-01F 2348Kcal',
+    imagen: "images/aires_acondicionados/Acond_Midea_Split_2730_kw_MSAGFC_09H_01F_2348Kcal_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_Midea_Split_2730_kw_MSAGFC_09H_01F_2348Kcal_1.webp",
+        "images/aires_acondicionados/Acond_Midea_Split_2730_kw_MSAGFC_09H_01F_2348Kcal_2.webp",
+        "images/aires_acondicionados/Acond_Midea_Split_2730_kw_MSAGFC_09H_01F_2348Kcal_3.webp",
+        "images/aires_acondicionados/Acond_Midea_Split_2730_kw_MSAGFC_09H_01F_2348Kcal_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2730\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2074422",
+    caracteristicas: [
+        "Marca: Midea",
+        "Modelo: 2074422",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Midea MSAGFC-12H-01F 3430W/2950kcal F/C split',
+    imagen: "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_1.webp",
+        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_2.webp",
+        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_3.webp",
+        "images/aires_acondicionados/Acond_Midea_MSAGFC_12H_01F_3430W_2950kcal_F_C_split_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3430\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2074423",
+    caracteristicas: [
+        "Marca: Midea",
+        "Modelo: 2074423",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. RCA RE3300FC 3300W F/C Split',
+    imagen: "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_1.webp",
+        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_2.webp",
+        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_3.webp",
+        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_4.webp",
+        "images/aires_acondicionados/Acond_RCA_RE3300FC_3300W_F_C_Split_5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3300\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074591",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2074591",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Kanji Portatil 2900 kw KJH-AA2900',
+    imagen: "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_1.webp",
+        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_2.webp",
+        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_3.webp",
+        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_4.webp",
+        "images/aires_acondicionados/Acond_Kanji_Portatil_KJH_AA2900_F_C_5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2900\n<strong>Tipo:</strong> Portátil\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075012",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075012",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. RCA Split 3200w Inverter RP3200INV-F-SK',
+    imagen: "images/aires_acondicionados/Acond_RCA_Split_3200w_Inverter_RP3200INV_F_SK_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_RCA_Split_3200w_Inverter_RP3200INV_F_SK_1.webp",
+        "images/aires_acondicionados/Acond_RCA_Split_3200w_Inverter_RP3200INV_F_SK_2.webp",
+        "images/aires_acondicionados/Acond_RCA_Split_3200w_Inverter_RP3200INV_F_SK_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3200\n<strong>Tipo:</strong> Split\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075250",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2075250",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Enova Split 6500 kw 5590fg',
+    imagen: "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_1.webp",
+        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_2.webp",
+        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_3.webp",
+        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_4.webp",
+        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_5.webp",
+        "images/aires_acondicionados/Acond_Enova_Split_6500_kw_5590fg_6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 6500\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075293",
+    caracteristicas: [
+        "Marca: Enova",
+        "Modelo: 2075293",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. SURREY Split 3430 kw 2950Kcal/h',
+    imagen: "images/aires_acondicionados/Acond_SURREY_Split_3430_kw_2950Kcal_h_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_SURREY_Split_3430_kw_2950Kcal_h_1.webp",
+        "images/aires_acondicionados/Acond_SURREY_Split_3430_kw_2950Kcal_h_3.webp",
+        "images/aires_acondicionados/Acond_SURREY_Split_3430_kw_2950Kcal_h_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3430\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "21279",
+    caracteristicas: [
+        "Marca: Surrey",
+        "Modelo: 21279",
+        "Garantía: 1 año"
+    ]
+},
 ];
