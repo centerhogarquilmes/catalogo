@@ -1,10 +1,10 @@
 // Arreglo de productos destacados (códigos de los productos)
 const productosDestacados = [
-    "18079",   // Cocina Escorial Candor Blanca
+    "2075206", // TV LED Samsung 50"" LH50BECHVGGZB (BONO $48500) Smart UHD Bussines Crystal 4K
     "2073101", // Heladera Samsung RT29K577JS8
     "2075251", // Lavarropas ENOVA EWMF-B7
-    "2075206", // TV LED Samsung 50"" LH50BECHVGGZB (BONO $48500) Smart UHD Bussines Crystal 4K
-    "2075246"  // Motorola MOTO E15
+    "2075406", // Cocina Morelli Industrial 550 Ex Acero 16374 Multigrill
+    "2075092"  // Freidora por aire Yelmo FR7309 5 lts 1400w
 ];
 const productos = [
 
@@ -336,6 +336,79 @@ const productos = [
     caracteristicas: [
         "Marca: Florencia",
         "Modelo: 2074225",
+        "Garantía: 1 año"
+    ]
+},
+{
+    categoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Carli/Plancha Doble Horno R/A P/C 4449',
+    imagen: "images/cocinas/Cocina_Usman_Industrial_Carli_Plancha_Doble_Horno_R_A_P_C_4449_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Usman_Industrial_Carli_Plancha_Doble_Horno_R_A_P_C_4449_1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 85 62\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074513",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2074513",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Kanji electrica negra 4 anafes 50x50x89 1300/1500w',
+    imagen: "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_1.webp",
+        "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_2.webp",
+        "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_3.webp",
+        "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_4.webp",
+        "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_5.webp",
+        "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_6.webp",
+        "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_7.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 50 85 50\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Eléctrica\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075129",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075129",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Florencia 5416F/5516F',
+    imagen: "images/cocinas/Cocina_Florencia_5416F_5516F_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5416F_5516F_1.webp",
+        "images/cocinas/Cocina_Florencia_5416F_5516F_2.webp",
+        "images/cocinas/Cocina_Florencia_5416F_5516F_3.webp",
+        "images/cocinas/Cocina_Florencia_5416F_5516F_4.webp",
+        "images/cocinas/Cocina_Florencia_5416F_5516F_5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "21554",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 21554",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial 550 Ex Acero 16374 Multigrill',
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_1.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_2.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_3.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075406",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2075406",
         "Garantía: 1 año"
     ]
 },
