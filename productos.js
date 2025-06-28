@@ -1253,7 +1253,7 @@ const productos = [
             "images/heladeras/Heladera_Philco_PHCT341B]_ciclica_340Lts_Blanca_4.webp",
         ],
         descripcion: "<strong>Dimensiones:</strong> 185 x 61 x 62\n<strong>Tipo de tecnologia:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 347 Litros\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2075205",
+        codigo: "2074136",
         caracteristicas: ["Marca: Philco", "Modelo: PHCT341B", "Garantía: 1 año"]
     },
     {
