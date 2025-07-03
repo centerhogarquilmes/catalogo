@@ -2773,7 +2773,7 @@ font-size: 1rem;
     font-weight: bold; /* Opcional para destacar el código *//
     
 }
-/* Iconos de tarjetas de crédito en cuotas */
+
 /* Iconos de tarjetas de crédito en cuotas */
 .cuota-card-icon {
     width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
@@ -2784,10 +2784,7 @@ font-size: 1rem;
     object-fit: contain; /* Evitar distorsiones, mantener proporciones */
 }
 
-/* Ajustes específicos para cada imagen */
-.cuota-card-icon-3-6 {
-    /* La imagen de 3 y 6 cuotas ya se ve bien, no necesita ajustes adicionales */
-}
+
 
 
 /* Ajustar el contenedor de cuotas para mejor alineación */
