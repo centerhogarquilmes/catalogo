@@ -143,10 +143,12 @@ const categoryFields = {
         }
     },
     "Tecnología": {
-        subcategorias: ["Celulares", "Notebooks"],
+        subcategorias: ["Celulares", "Notebooks", "Tablets", "Impresoras"],
         folders: {
             "Celulares": "celulares",
-            "Notebooks": "notebooks"
+            "Tablets": "tablets",
+            "Notebooks": "notebooks",
+            "Impresoras": "impresoras"
         },
         fields: {
             "Celulares": [
@@ -159,6 +161,24 @@ const categoryFields = {
                 { label: "Batería", name: "bateria", type: "text", placeholder: "5.2 Ah" },
                 { label: "Red móvil", name: "red", type: "select", options: ["4G", "5G"] },
                 { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android" }
+            ],
+            "Tablets": [
+                { label: "Almacenamiento (GB)", name: "almacenamiento", type: "text", placeholder: "64" },
+                { label: "RAM (GB)", name: "ram", type: "text", placeholder: "4" },
+                { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: '6,7"' },
+                { label: "Cámara trasera", name: "camarat", type: "text", placeholder: "32 Mpx" },
+                { label: "Cámara frontal", name: "camaraf", type: "text", placeholder: "8 Mpx" },
+                { label: "Red móvil", name: "red", type: "checkbox" }, // Changed to checkbox
+                { label: "Sistema operativo", name: "sistema_operativo", type: "text", placeholder: "Android" }
+            ],
+
+            "Impresoras": [
+                { label: "Tipo de tinta", name: "tinta",  type: "select", options: ["Tanque", "Cartuchos", "Laser", "Toner"] },
+                { label: "WIFI", name: "wifi", type: "checkbox" }, // Changed to checkbox
+                { label: "Scanner", name: "scanner", type: "checkbox" }, // Changed to checkbox
+                { label: "Fotocopias", name: "fotocopias", type: "checkbox" }, // Changed to checkbox
+                { label: "Capacidad máxima de hojas", name: "capacidad_maxima", type: "text", placeholder: "100" },
+                { label: "Tipo de impresión", name: "impresion",  type: "select", options: ["Color", "Negro"] }
             ],
             "Notebooks": [
                 { label: "Procesador", name: "procesador", type: "text", placeholder: "Intel Core i5" },
@@ -188,9 +208,9 @@ const categoryFields = {
                 { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" }
             ],
             "Aires Acondicionados": [
-                { label: "Capacidad (BTU)", name: "capacidad", type: "text", placeholder: "12000" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "12000" },
                 { label: "Tipo", name: "tipo", type: "select", options: ["Split", "Ventana", "Portátil"] },
-                { label: "Inverter", name: "inverter", type: "select", options: ["No", "Sí"] },
+                { label: "Inverter", name: "inverter", type: "checkbox" }, // Changed to checkbox
                 { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
             ]
         }
