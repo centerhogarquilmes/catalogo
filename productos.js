@@ -1949,6 +1949,53 @@ const productos = [
 
 
 
+
+
+    /////---------- Tablets ----------/////
+
+
+
+    {
+    categoria: "Tecnología",
+    subcategoria: "Tablets",
+    nombre: 'Tablet Philco TP7A464 7" 4/64GB',
+    imagen: "images/tablets/Tablet_Philco_TP7A464_7_4_64GB_1.webp",
+    imagenes: [
+        "images/tablets/Tablet_Philco_TP7A464_7_4_64GB_1.webp",
+        "images/tablets/Tablet_Philco_TP7A464_7_4_64GB_2.webp",
+        "images/tablets/Tablet_Philco_TP7A464_7_4_64GB_3.webp",
+        "images/tablets/Tablet_Philco_TP7A464_7_4_64GB_4.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 7\n<strong>Cámara trasera:</strong> 2 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2075427",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075427",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Tablets",
+    nombre: 'Tablet Enova 10" Wifi 2/32gb 2+5mp android 13',
+    imagen: "images/tablets/Tablet_Enova_10_Wifi_2_32gb_5mp_android_13_1.webp",
+    imagenes: [
+        "images/tablets/Tablet_Enova_10_Wifi_2_32gb_5mp_android_13_1.webp",
+        "images/tablets/Tablet_Enova_10_Wifi_2_32gb_5mp_android_13_2.webp",
+        "images/tablets/Tablet_Enova_10_Wifi_2_32gb_5mp_android_13_3.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 32\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 10\n<strong>Cámara trasera:</strong> 5 Mpx\n<strong>Cámara frontal:</strong> 2 Mpx\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2075428",
+    caracteristicas: [
+        "Marca: Enova",
+        "Modelo: 2075428",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
     
     
     /////---------- Impresoras ----------/////
