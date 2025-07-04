@@ -2091,6 +2091,77 @@ const productos = [
 
 
 
+    /////---------- Notebooks ----------/////
+
+
+
+
+
+
+
+{
+    categoria: "Tecnología",
+    subcategoria: "Notebooks",
+    nombre: 'Notebook Enova 15.6" Ryzen 5 8/240GB SSD W11',
+    imagen: "images/notebooks/Notebook_Enova_15_6_Ryzen_5_8_240GB_SSD_W11_1.webp",
+    imagenes: [
+        "images/notebooks/Notebook_Enova_15_6_Ryzen_5_8_240GB_SSD_W11_1.webp",
+        "images/notebooks/Notebook_Enova_15_6_Ryzen_5_8_240GB_SSD_W11_2.webp",
+        "images/notebooks/Notebook_Enova_15_6_Ryzen_5_8_240GB_SSD_W11_3.webp",
+        "images/notebooks/Notebook_Enova_15_6_Ryzen_5_8_240GB_SSD_W11_4.webp",
+        "images/notebooks/Notebook_Enova_15_6_Ryzen_5_8_240GB_SSD_W11_5.webp"
+    ],
+    descripcion: '<strong>Procesador:</strong> Ryzen 5\n<strong>RAM (GB):</strong> 8\n<strong>Almacenamiento (GB):</strong> 240 SSD\n<strong>Tamaño de pantalla (pulgadas):</strong> 15,6"\n<strong>Sistema operativo:</strong> Windows 11',
+    codigo: "2075429",
+    caracteristicas: [
+        "Marca: Enova",
+        "Modelo: 2075429",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Notebooks",
+    nombre: 'Notebook Enova Core i5 8/240 SSD 14" W11 Gen',
+    imagen: "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_1.webp",
+    imagenes: [
+        "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_1.webp",
+        "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_2.webp",
+        "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_3.webp",
+        "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_4.webp",
+        "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_5.webp",
+        "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_6.webp",
+        "images/notebooks/Notebook_Enova_Core_i5_8_240_SSD_14W11_Gen_7.webp"
+    ],
+    descripcion: '<strong>Procesador:</strong> Intel Core I5\n<strong>RAM (GB):</strong> 8\n<strong>Almacenamiento (GB):</strong> 240 SSD\n<strong>Tamaño de pantalla (pulgadas):</strong> 14"\n<strong>Sistema operativo:</strong> Windows 11',
+    codigo: "2074476",
+    caracteristicas: [
+        "Marca: Enova",
+        "Modelo: 2074476",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Notebooks",
+    nombre: 'Notebook EXO Core i5 8/480 SSD 15.6" Smartpro Q15-5385 W11 13va',
+    imagen: "images/notebooks/Notebook_EXO_Core_i5_8_480_SSD_15_6_Smartpro_Q15_5385_W11_13va_1.webp",
+    imagenes: [
+        "images/notebooks/Notebook_EXO_Core_i5_8_480_SSD_15_6_Smartpro_Q15_5385_W11_13va_1.webp",
+        "images/notebooks/Notebook_EXO_Core_i5_8_480_SSD_15_6_Smartpro_Q15_5385_W11_13va_2.webp",
+        "images/notebooks/Notebook_EXO_Core_i5_8_480_SSD_15_6_Smartpro_Q15_5385_W11_13va_3.webp"
+    ],
+    descripcion: '<strong>Procesador:</strong> Intel Core I5\n<strong>RAM (GB):</strong> 8\n<strong>Almacenamiento (GB):</strong> 480 SSD\n<strong>Tamaño de pantalla (pulgadas):</strong> 15,6"\n<strong>Sistema operativo:</strong> Windows 11',
+    codigo: "2075228",
+    caracteristicas: [
+        "Marca: Exo",
+        "Modelo: 2075228",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
 
 
 
