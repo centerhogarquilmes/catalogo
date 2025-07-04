@@ -1949,12 +1949,93 @@ const productos = [
 
 
 
+    
+    
+    /////---------- Impresoras ----------/////
 
 
 
 
-
-
+{
+    categoria: "Tecnología",
+    subcategoria: "Impresoras",
+    nombre: 'Impresora Epson L3210 Multifuncion',
+    imagen: "images/impresoras/Impresora_Epson_L3210_Multifuncion_1.webp",
+    imagenes: [
+        "images/impresoras/Impresora_Epson_L3210_Multifuncion_1.webp",
+        "images/impresoras/Impresora_Epson_L3210_Multifuncion_2.webp",
+        "images/impresoras/Impresora_Epson_L3210_Multifuncion_3.webp",
+        "images/impresoras/Impresora_Epson_L3210_Multifuncion_4.webp",
+        "images/impresoras/Impresora_Epson_L3210_Multifuncion_5.webp",
+        "images/impresoras/Impresora_Epson_L3210_Multifuncion_6.webp"
+    ],
+    descripcion: '<strong>Tipo de tinta:</strong> Tanque\n<strong>Scanner:</strong> Sí\n<strong>Fotocopias:</strong> Sí\n<strong>Capacidad máxima de hojas:</strong> 100\n<strong>Tipo de impresión:</strong> Color',
+    codigo: "2073547",
+    caracteristicas: [
+        "Marca: Epson",
+        "Modelo: 2073547",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Impresoras",
+    nombre: 'Impresora Epson L3250 Multifuncion Wifi',
+    imagen: "images/impresoras/Impresora_Epson_L3250_Multifuncion_Wifi_1.webp",
+    imagenes: [
+        "images/impresoras/Impresora_Epson_L3250_Multifuncion_Wifi_1.webp",
+        "images/impresoras/Impresora_Epson_L3250_Multifuncion_Wifi_2.webp",
+        "images/impresoras/Impresora_Epson_L3250_Multifuncion_Wifi_3.webp",
+        "images/impresoras/Impresora_Epson_L3250_Multifuncion_Wifi_4.webp",
+        "images/impresoras/Impresora_Epson_L3250_Multifuncion_Wifi_5.webp"
+    ],
+    descripcion: '<strong>Tipo de tinta:</strong> Tanque\n<strong>WIFI:</strong> Sí\n<strong>Scanner:</strong> Sí\n<strong>Fotocopias:</strong> Sí\n<strong>Capacidad máxima de hojas:</strong> 100\n<strong>Tipo de impresión:</strong> Color',
+    codigo: "2073548",
+    caracteristicas: [
+        "Marca: Epson",
+        "Modelo: 2073548",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Impresoras",
+    nombre: 'Impresora Epson M1120 Mono Ecotank wifi inalambrica',
+    imagen: "images/impresoras/Impresora_Epson_M1120_Mono_Ecotank_wifi_inalambrica_1.webp",
+    imagenes: [
+        "images/impresoras/Impresora_Epson_M1120_Mono_Ecotank_wifi_inalambrica_1.webp",
+        "images/impresoras/Impresora_Epson_M1120_Mono_Ecotank_wifi_inalambrica_2.webp",
+        "images/impresoras/Impresora_Epson_M1120_Mono_Ecotank_wifi_inalambrica_3.webp",
+        "images/impresoras/Impresora_Epson_M1120_Mono_Ecotank_wifi_inalambrica_4.webp",
+        "images/impresoras/Impresora_Epson_M1120_Mono_Ecotank_wifi_inalambrica_5.webp"
+    ],
+    descripcion: '<strong>Tipo de tinta:</strong> Tanque\n<strong>WIFI:</strong> Sí\n<strong>Capacidad máxima de hojas:</strong> 100\n<strong>Tipo de impresión:</strong> Negro',
+    codigo: "21287",
+    caracteristicas: [
+        "Marca: Epson",
+        "Modelo: 21287",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Impresoras",
+    nombre: 'Impresora Epson L 1250 Ecotank wifi inalambrica',
+    imagen: "images/impresoras/Impresora_Epson_L_1250_Ecotank_wifi_inalambrica_1.webp",
+    imagenes: [
+        "images/impresoras/Impresora_Epson_L_1250_Ecotank_wifi_inalambrica_1.webp",
+        "images/impresoras/Impresora_Epson_L_1250_Ecotank_wifi_inalambrica_2.webp",
+        "images/impresoras/Impresora_Epson_L_1250_Ecotank_wifi_inalambrica_3.webp",
+        "images/impresoras/Impresora_Epson_L_1250_Ecotank_wifi_inalambrica_4.webp"
+    ],
+    descripcion: '<strong>Tipo de tinta:</strong> Tanque\n<strong>WIFI:</strong> Sí\n<strong>Capacidad máxima de hojas:</strong> 100\n<strong>Tipo de impresión:</strong> Color',
+    codigo: "2074859",
+    caracteristicas: [
+        "Marca: Epson",
+        "Modelo: 2074859",
+        "Garantía: 1 año"
+    ]
+},
 
     
 
