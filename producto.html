@@ -238,10 +238,10 @@
 
     // Calcular precios en cuotas
     const cuotas = precioLista ? [
-        { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista * 0.94) / 3}, // Descuento del 6%
-        { cuotas: 6, texto: '6 Cuotas sin interés', precio:  (precioLista * 0.98) / 6 }, // Descuento del 2%
-        { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista * 1.03) / 9 },// Interés del 3%
-        { cuotas: 12, texto: '12 Cuotas fijas', precio: (precioLista * 1.07) / 12 }// Interés del 7%
+        { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista  / 3)}, // Descuento del 0%
+        { cuotas: 6, texto: '6 Cuotas sin interés', precio:  (precioLista / 6 )}, // Descuento del 0%
+        { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista  / 9) },// Interés del 0%
+        { cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista  / 12) }// Interés del 0%
     ] : [];
 
     document.getElementById('product-name').textContent = producto ? producto.nombre : 'Producto no encontrado';
