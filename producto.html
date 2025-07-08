@@ -266,7 +266,7 @@
     if (isProductoDestacado) {
         const discountLabel = document.createElement('p');
         discountLabel.className = 'discount-label';
-        discountLabel.textContent = '25% OFF';
+        discountLabel.textContent = '25% OFF CONTADO';
         codigoEl.insertAdjacentElement('afterend', discountLabel);
     }
 
@@ -337,8 +337,8 @@
     // Insert discounted price if applicable
     if (isProductoDestacado && precioTextoConDescuento) {
         const precioDescuentoEl = document.createElement('p');
-        precioDescuentoEl.className = 'product-price-discount discount-price';
-        precioDescuentoEl.textContent = 'Promo semanal: ' + precioTextoConDescuento;
+        precioDescuentoEl.className = 'product-price discount-price';
+        precioDescuentoEl.textContent = 'Oferta de la semana: ' + precioTextoConDescuento;
         preciosContainer.appendChild(precioDescuentoEl);
     }
 
@@ -414,6 +414,28 @@
     const wat = document.getElementById('whatsapp-contado');
     const mssg = `Hola, quiero info acerca de ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
     wat.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(mssg)}`;
+});
+
+// Scroll behavior for header
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.body.classList.contains('product-page')) {
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
+                header.classList.add('hidden');
+                header.classList.remove('show');
+            } else if (currentScroll < lastScrollTop) {
+                header.classList.remove('hidden');
+                header.classList.add('show');
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    }
 });
 
 // Scroll behavior for header
