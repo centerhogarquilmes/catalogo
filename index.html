@@ -256,10 +256,15 @@
         </div>
     </div>
 </section>
+<section>
+    <div class="ofertas_banner">
+        <img src="images/ofertas_del_dia.webp" alt="Kohinoor Banner" loading="lazy" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
 
+    </div>
+</section>
         <!-- Product Catalog -->
 <section class="catalog">
-    <h2>Destacados del mes</h2>
+    <h2>Descuentos de hasta el 25% al contado en los siguientes productos seleccionados:</h2>
     <div class="product-grid">
         <!-- Las tarjetas se generarán con JavaScript -->
     </div>
@@ -384,17 +389,18 @@ carouselSlides.addEventListener('touchend', () => {
 startAutoSlide();
 
 // Generar tarjetas de productos destacados dinámicamente
-// Generar tarjetas de productos destacados dinámicamente
 const productGrid = document.querySelector('.product-grid');
 productGrid.innerHTML = '';
 const productosDestacadosFiltrados = productos
     .filter(producto => productosDestacados.includes(producto.codigo))
-    .slice(0, 5);
+    
+
 productosDestacados.forEach(codigo => {
     if (!productos.some(producto => producto.codigo === codigo)) {
         console.warn(`El código ${codigo} en productosDestacados no coincide con ningún producto.`);
     }
 });
+
 if (productosDestacadosFiltrados.length === 0) {
     productGrid.innerHTML = '<p>No se encontraron productos destacados.</p>';
 } else {
@@ -403,7 +409,14 @@ if (productosDestacadosFiltrados.length === 0) {
         const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
         const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
         const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
-        const precioAntesImpuestos = precioLista ? `$${(precioLista * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
+        
+        // Calcular precio con 25% de descuento
+        const precioConDescuento = precioLista ? precioLista * 0.75 : null;
+        const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR')}` : 'Consultar precio';
+        
+        // Calcular precio antes de impuestos basado en el precio con descuento
+        const precioAntesImpuestos = precioConDescuento ? `$${(precioConDescuento * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
+        
         const isAgotado = datosDinamicos.stock_sucursal + datosDinamicos.stock_deposito === 0;
 
         const card = document.createElement('div');
@@ -411,11 +424,13 @@ if (productosDestacadosFiltrados.length === 0) {
         card.innerHTML = `
             <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
                 ${isAgotado ? '<span class="agotado-label">Agotado</span>' : ''}
-                <span class="offer-label">Oferta del mes</span> <!-- Etiqueta de Oferta -->
+                
+                <span class="discount-label">25% OFF</span> <!-- Nueva etiqueta de descuento -->
                 <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                 <div class="text-container">
                     <h3>${producto.nombre}</h3>
-                    <p class="product-price">Precio de lista: ${precioTextoLista}</p>
+                    <p class="product-price original-price">Precio de lista: ${precioTextoLista}</p>
+                    <p class="product-price discount-price">Contado: ${precioTextoConDescuento}</p>
                     <p class="product-price-before-tax">Pre. ant. imp. nac.: ${precioAntesImpuestos}</p>
                     <button class="buy-btn">Ver detalles</button>
                 </div>

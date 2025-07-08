@@ -1,10 +1,23 @@
 // Arreglo de productos destacados (códigos de los productos)
 const productosDestacados = [
-    "2075206", // TV LED Samsung 50"" LH50BECHVGGZB (BONO $48500) Smart UHD Bussines Crystal 4K
-    "2073101", // Heladera Samsung RT29K577JS8
-    "2075251", // Lavarropas ENOVA EWMF-B7
-    "2075406", // Cocina Morelli Industrial 550 Ex Acero 16374 Multigrill
-    "2075092"  // Freidora por aire Yelmo FR7309 5 lts 1400w
+    "2075334", // TV LED Noblex 32" DR32X7080 Android Tv
+    "2075321", // TV LED Philips 43" Smart HD 43PFD6910/77 con Titan OS
+    "2075334", // TV LED Noblex 32" DR32X7080 Android Tv
+    "14202", // Calefactor Volcan T/B 5700 46312/6 GRIS
+    "2075320",  // TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS
+    "2075207", //TV LED RCA 55" G55P6UHD-F Google 4K Smart
+    "2075435", //TV LED Aoc 43" 43S5135/77G Smart tv Roku
+    "2075434", //TV LED Aoc 32" 32S5135/77G Smart tv Roku
+    "2074860", //TV LED ENOVA 75" smart 4K UHD Android
+    "2075285", //TV LED Noblex 50" DR50X8580 Smart Google tv
+    "2075388", //TV LED RCA 55" QL55TH200-F QLED Google 4K Smart
+    "2073755", //TV LED ENOVA 32" smart HD Android
+    "2075302", //TV LED ENOVA 65" smart 4K UHD Google Tv
+    "2075302", //TV LED ENOVA 65" smart 4K UHD Google Tv
+    "2075067", //TV LED RCA 40" R40AND-F Smart c/ Android
+    "2074829", //TV LED Noblex 58" DB58X7550 Android 4K
+    "2075463" //TV LED RCA 65" C65AND-F Smart HD Android
+
 ];
 const productos = [
 

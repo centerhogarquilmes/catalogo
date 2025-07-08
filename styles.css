@@ -3221,7 +3221,128 @@ font-size: 1rem;
 
 }
 
+/* Estilo para la etiqueta de descuento */
+.product-card .discount-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 1;
+}
 
+/* Estilo para el precio original (tachado) */
+.product-card .original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 
+/* Estilo para el precio con descuento (destacado) */
+.product-card .discount-price {
+    color: #ff6200;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
+/* Ajuste para el precio antes de impuestos */
+.product-card .product-price-before-tax {
+    color: #666;
+    font-size: 12px;
+}
 
+/* Asegurar que las etiquetas no se superpongan */
+.product-card .offer-label {
+    top: 50px; /* Ajustar posición para no superponerse con discount-label */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .product-card .discount-label {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+    .product-card .original-price {
+        font-size: 12px;
+    }
+    .product-card .discount-price {
+        font-size: 16px;
+    }
+    .product-card .product-price-before-tax {
+        font-size: 10px;
+    }
+}
+/* Discount label for product page */
+.product-info .discount-label {
+    background-color: #e91e63;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* Original price (strikethrough) */
+.product-info .original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Discounted price (highlighted) */
+.product-info .discount-price {
+    color: #ff0000;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Price before taxes */
+.product-info .product-price-anterior {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Installment prices */
+.product-info .product-cuota {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Stock info */
+.product-info .product-stock-sucursal,
+.product-info .product-stock-deposito {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-info .discount-label {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+    .product-info .original-price {
+        font-size: 14px;
+    }
+    .product-info .discount-price {
+        font-size: 18px;
+    }
+    .product-info .product-price-anterior {
+        font-size: 12px;
+    }
+    .product-info .product-cuota {
+        font-size: 12px;
+    }
+}

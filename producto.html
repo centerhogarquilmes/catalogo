@@ -229,106 +229,126 @@
     const datos = precios[codigo] || { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
     const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
     const precioTexto = precioLista ? `$${precioLista.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
+
+    // Check if the product is in productosDestacados for 25% discount
+    const isProductoDestacado = productosDestacados.includes(codigo);
+    const precioConDescuento = isProductoDestacado && precioLista ? precioLista * 0.75 : null;
+    const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
+
+    // Calculate price before national taxes (based on discounted price if applicable, otherwise original price)
+    const precioBase = precioConDescuento || precioLista;
+    const precioAnterior = precioBase ? precioBase / 1.21 : null;
+    const precioAnteriorTexto = precioAnterior ? `$${precioAnterior.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
+
+    // Calculate installment prices based on original list price
+    const cuotas = precioLista ? [
+        { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista / 3) },
+        { cuotas: 6, texto: '6 Cuotas sin interés', precio: (precioLista / 6) },
+        { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista / 9) },
+        { cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista / 12) }
+    ] : [];
+
     const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
     const depositoTexto = datos.stock_deposito > 0 ? datos.stock_deposito + ' unidades' : 'Sin stock';
-
-    // Calcular Pre.ant.imp.nac como precio_tarjeta / 1.21
-    const precioAnterior = precioLista ? precioLista / 1.21 : null;
-    const precioAnteriorTexto = precioAnterior ? `$${precioAnterior.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
-
-    // Calcular precios en cuotas
-    const cuotas = precioLista ? [
-        { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista  / 3)}, // Descuento del 0%
-        { cuotas: 6, texto: '6 Cuotas sin interés', precio:  (precioLista / 6 )}, // Descuento del 0%
-        { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista  / 9) },// Interés del 0%
-        { cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista  / 12) }// Interés del 0%
-    ] : [];
 
     document.getElementById('product-name').textContent = producto ? producto.nombre : 'Producto no encontrado';
     document.getElementById('product-description').innerHTML = descripcion.replace(/\n/g, '<br>');
     document.querySelector('.stock').textContent = '';
 
-    // Insertar el código del producto justo después del nombre del producto
+    // Insert product code
     const productName = document.getElementById('product-name');
     const codigoEl = document.createElement('p');
     codigoEl.className = 'product-code';
     codigoEl.textContent = 'Código: ' + codigo;
     productName.insertAdjacentElement('afterend', codigoEl);
 
-    
-    // Insertar el botón de compartir después del código del producto
-const shareButton = document.createElement('button');
-shareButton.className = 'share-btn';
-shareButton.title = 'Compartir producto';
-shareButton.innerHTML = `
-    <img src="images/share-icon.png" alt="Compartir" class="icon-share-icon" style="vertical-align: middle;">`;
-codigoEl.insertAdjacentElement('afterend', shareButton);
+    // Insert discount label for highlighted products
+    if (isProductoDestacado) {
+        const discountLabel = document.createElement('p');
+        discountLabel.className = 'discount-label';
+        discountLabel.textContent = '25% OFF';
+        codigoEl.insertAdjacentElement('afterend', discountLabel);
+    }
+
+    // Insert share button
+    const shareButton = document.createElement('button');
+    shareButton.className = 'share-btn';
+    shareButton.title = 'Compartir producto';
+    shareButton.innerHTML = `
+        <img src="images/share-icon.png" alt="Compartir" class="icon-share-icon" style="vertical-align: middle;">`;
+    codigoEl.insertAdjacentElement('afterend', shareButton);
 
     async function shortenUrl(longUrl) {
-    const apiKey = '183d0cce9061cf282361fe75d4b4978ccea3dfdc'; // Reemplaza con tu API Key
-    const response = await fetch(`https://api-ssl.bitly.com/v4/shorten`, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ long_url: longUrl })
-    });
-    const data = await response.json();
-    return data.link;
-}
-
-shareButton.addEventListener('click', async () => {
-    const shareData = {
-        title: producto ? producto.nombre : 'Producto',
-        text: `¡Mira este producto de Center Hogar Quilmes! ${producto ? producto.nombre : ''} (Código: ${codigoParam})\nPrecio: ${precioTexto}\n`,
-        url: await shortenUrl(window.location.href) // Acorta la URL
-    };
-
-    try {
-        if (navigator.share) {
-            await navigator.share(shareData);
-        } else {
-            const fallbackShare = document.createElement('div');
-            fallbackShare.className = 'share-fallback';
-            fallbackShare.innerHTML = `
-                <div class="share-fallback-content">
-                    <h3>Compartir producto</h3>
-                    <button onclick="window.open('https://api.whatsapp.com/send?text=${encodeURIComponent(shareData.text + shareData.url)}', '_blank')">Compartir por WhatsApp</button>
-                    <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + shareData.url)}'">Compartir por Email</button>
-                    <button onclick="navigator.clipboard.writeText('${shareData.url}').then(() => alert('Enlace copiado al portapapeles'))">Copiar enlace</button>
-                    <button onclick="this.parentElement.parentElement.remove()">Cerrar</button>
-                </div>
-            `;
-            document.body.appendChild(fallbackShare);
-        }
-    } catch (err) {
-        console.error('Error al compartir:', err);
+        const apiKey = '183d0cce9061cf282361fe75d4b4978ccea3dfdc';
+        const response = await fetch(`https://api-ssl.bitly.com/v4/shorten`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${apiKey}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ long_url: longUrl })
+        });
+        const data = await response.json();
+        return data.link;
     }
-});
+
+    shareButton.addEventListener('click', async () => {
+        const shareData = {
+            title: producto ? producto.nombre : 'Producto',
+            text: `¡Mira este producto de Center Hogar Quilmes! ${producto ? producto.nombre : ''} (Código: ${codigo})\nPrecio: ${precioTexto}${isProductoDestacado ? `\nPrecio con descuento: ${precioTextoConDescuento}` : ''}\n`,
+            url: await shortenUrl(window.location.href)
+        };
+
+        try {
+            if (navigator.share) {
+                await navigator.share(shareData);
+            } else {
+                const fallbackShare = document.createElement('div');
+                fallbackShare.className = 'share-fallback';
+                fallbackShare.innerHTML = `
+                    <div class="share-fallback-content">
+                        <h3>Compartir producto</h3>
+                        <button onclick="window.open('https://api.whatsapp.com/send?text=${encodeURIComponent(shareData.text + shareData.url)}', '_blank')">Compartir por WhatsApp</button>
+                        <button onclick="window.location.href='mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + shareData.url)}'">Compartir por Email</button>
+                        <button onclick="navigator.clipboard.writeText('${shareData.url}').then(() => alert('Enlace copiado al portapapeles'))">Copiar enlace</button>
+                        <button onclick="this.parentElement.parentElement.remove()">Cerrar</button>
+                    </div>
+                `;
+                document.body.appendChild(fallbackShare);
+            }
+        } catch (err) {
+            console.error('Error al compartir:', err);
+        }
+    });
 
     const info = document.querySelector('.product-info');
     const before = document.querySelector('.shipping');
 
-    // Crear contenedor para los precios
+    // Create price container
     const preciosContainer = document.createElement('div');
     preciosContainer.className = 'precios-container';
 
-    // Insertar precio de lista
+    // Insert list price
     const precioEl = document.createElement('p');
-    precioEl.className = 'product-price';
+    precioEl.className = `product-price ${isProductoDestacado ? 'original-price' : ''}`;
     precioEl.textContent = 'Precio de lista: ' + precioTexto;
     preciosContainer.appendChild(precioEl);
 
-    // Insertar precio anterior si existe
-    if (precioAnteriorTexto) {
-        const precioAntEl = document.createElement('p');
-        precioAntEl.className = 'product-price-anterior';
-        precioAntEl.textContent = 'Pre.ant.imp.nac: ' + precioAnteriorTexto;
-        preciosContainer.appendChild(precioAntEl);
+    // Insert discounted price if applicable
+    if (isProductoDestacado && precioTextoConDescuento) {
+        const precioDescuentoEl = document.createElement('p');
+        precioDescuentoEl.className = 'product-price-discount discount-price';
+        precioDescuentoEl.textContent = 'Promo semanal: ' + precioTextoConDescuento;
+        preciosContainer.appendChild(precioDescuentoEl);
     }
 
-    // Insertar precios en cuotas si hay precio disponible
+    // Insert price before taxes
+    const precioAntEl = document.createElement('p');
+    precioAntEl.className = 'product-price-anterior';
+    precioAntEl.textContent = 'Pre.ant.imp.nac: ' + precioAnteriorTexto;
+    preciosContainer.appendChild(precioAntEl);
+
+    // Insert installment prices
     if (cuotas.length) {
         cuotas.forEach(cuota => {
             const cuotaEl = document.createElement('p');
@@ -350,10 +370,10 @@ shareButton.addEventListener('click', async () => {
         });
     }
 
-    // Insertar el contenedor de precios antes del elemento 'shipping'
+    // Insert price container before shipping
     info.insertBefore(preciosContainer, before);
 
-    // Insertar stock
+    // Insert stock
     const stockSucEl = document.createElement('p');
     stockSucEl.className = 'product-stock-sucursal';
     stockSucEl.textContent = 'Stock en sucursal: ' + sucursalTexto;
@@ -389,11 +409,33 @@ shareButton.addEventListener('click', async () => {
     });
 
     const wa = document.getElementById('whatsapp-consulta');
-    const msg = `Hola, quiero un presupuesto al contado para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
+    const msg = `Hola, quiero un presupuesto al contado para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo})${isProductoDestacado ? ' con 25% de descuento' : ''}.`;
     wa.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(msg)}`;
     const wat = document.getElementById('whatsapp-contado');
     const mssg = `Hola, quiero info acerca de ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
     wat.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(mssg)}`;
+});
+
+// Scroll behavior for header
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.body.classList.contains('product-page')) {
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
+                header.classList.add('hidden');
+                header.classList.remove('show');
+            } else if (currentScroll < lastScrollTop) {
+                header.classList.remove('hidden');
+                header.classList.add('show');
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    }
 });
 
 
