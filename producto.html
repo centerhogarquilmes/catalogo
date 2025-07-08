@@ -335,7 +335,7 @@ shareButton.addEventListener('click', async () => {
             cuotaEl.className = `product-cuota product-cuota-${cuota.cuotas}`;
             let imgSrc, imgClass;
             if (cuota.cuotas === 3 || cuota.cuotas === 6 || cuota.cuotas === 9 || cuota.cuotas === 12) {
-                imgSrc = 'images/tarjetas_de_credito.png';
+                imgSrc = 'images/tarjetas_de_credito_2.png';
                 imgClass = 'cuota-card-icon';
             }
             cuotaEl.textContent = `${cuota.texto}: $${cuota.precio.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
