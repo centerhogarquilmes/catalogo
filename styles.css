@@ -3343,3 +3343,35 @@ font-size: 1rem;
         font-size: 12px;
     }
 }
+/* Catalog Header and Banner */
+.catalog-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catalog-banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .catalog-header {
+        margin-bottom: 15px;
+    }
+    .catalog-banner {
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-header {
+        margin-bottom: 10px;
+    }
+    .catalog-banner {
+        width: 100%;
+    }
+}
