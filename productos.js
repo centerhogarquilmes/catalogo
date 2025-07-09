@@ -1492,6 +1492,191 @@ const productos = [
         caracteristicas: ["Marca: Samsung", "Modelo: RT42DG6730B1", "Garantía: 1 año"]
     },
 
+    {
+    categoria: "Heladeras",
+    subcategoria: "Cíclica",
+    nombre: 'Heladera Telefunken TFK-HF50B Frigobar 50 lts Blanca/Negro',
+    imagen: "images/heladeras/Heladera_Telefunken_TFK_HF50B_Frigobar_50_lts_Blanca_Negro_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Telefunken_TFK_HF50B_Frigobar_50_lts_Blanca_Negro_1.webp",
+        "images/heladeras/Heladera_Telefunken_TFK_HF50B_Frigobar_50_lts_Blanca_Negro_2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 51 x 45,8 x 45\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 50\n<strong>Freezer:</strong> No\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075201",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075201",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Neba H-240YAC Top Mount 239lts Acero',
+    imagen: "images/heladeras/Heladera_Neba_H_240YAC_Top_Mount_239lts_Acero_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Neba_H_240YAC_Top_Mount_239lts_Acero_1.webp",
+        "images/heladeras/Heladera_Neba_H_240YAC_Top_Mount_239lts_Acero_2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 142 x 56 x 54\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 239\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074981",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2074981",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Drean HDR280F00B/HDR280F30PB/50B/50PB blanca 277lts ciclica',
+    imagen: "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_1.webp",
+        "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_2.webp",
+        "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_3.webp",
+        "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_4.webp",
+        "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_5.webp",
+        "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_6.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 161 x 55 x 69\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 277\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074112",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2074112",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Gafa HGNF251B No Frost 262L Inverter Blanca',
+    imagen: "images/heladeras/Heladera_Gafa_HGNF251B_No_Frost_262L_Inverter_Blanca_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Gafa_HGNF251B_No_Frost_262L_Inverter_Blanca_1.webp",
+        "images/heladeras/Heladera_Gafa_HGNF251B_No_Frost_262L_Inverter_Blanca_2.webp",
+        "images/heladeras/Heladera_Gafa_HGNF251B_No_Frost_262L_Inverter_Blanca_3.webp",
+        "images/heladeras/Heladera_Gafa_HGNF251B_No_Frost_262L_Inverter_Blanca_4.webp",
+        "images/heladeras/Heladera_Gafa_HGNF251B_No_Frost_262L_Inverter_Blanca_5.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 167 x 54,5 x 56\n<strong>Tipo de tecnología:</strong> No frost\n<strong>Capacidad (Litros):</strong> 262\n<strong>Freezer:</strong> Sí\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2075383",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2075383",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Philco PHNT324BDI Top Mount 324Lts No Frost Inverter Blanca',
+    imagen: "images/heladeras/Heladera_Philco_PHNT324BDI_Top_Mount_324Lts_No_Frost_Inverter_Blanca_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Philco_PHNT324BDI_Top_Mount_324Lts_No_Frost_Inverter_Blanca_1.webp",
+        "images/heladeras/Heladera_Philco_PHNT324BDI_Top_Mount_324Lts_No_Frost_Inverter_Blanca_2.webp",
+        "images/heladeras/Heladera_Philco_PHNT324BDI_Top_Mount_324Lts_No_Frost_Inverter_Blanca_3.webp",
+        "images/heladeras/Heladera_Philco_PHNT324BDI_Top_Mount_324Lts_No_Frost_Inverter_Blanca_4.webp",
+        "images/heladeras/Heladera_Philco_PHNT324BDI_Top_Mount_324Lts_No_Frost_Inverter_Blanca_5.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 169 x 64 x 59,5\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 324\n<strong>Freezer:</strong> Sí\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075425",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075425",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Gafa HGF368AFB 334Lts Extra freezer 76lts Blanca',
+    imagen: "images/heladeras/Heladera_Gafa_HGF368AFB_334Lts_Extra_freezer_76lts_Blanca_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Gafa_HGF368AFB_334Lts_Extra_freezer_76lts_Blanca_1.webp",
+        "images/heladeras/Heladera_Gafa_HGF368AFB_334Lts_Extra_freezer_76lts_Blanca_2.webp",
+        "images/heladeras/Heladera_Gafa_HGF368AFB_334Lts_Extra_freezer_76lts_Blanca_3.webp",
+        "images/heladeras/Heladera_Gafa_HGF368AFB_334Lts_Extra_freezer_76lts_Blanca_4.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 161 x 61,4 x 62,1\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 334\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074053",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2074053",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Electrolux HENI3000P NO FROST Plata 260 lts Inverter',
+    imagen: "images/heladeras/Heladera_Electrolux_HENI3000P_NO_FROST_Plata_260_lts_Inverter_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Electrolux_HENI3000P_NO_FROST_Plata_260_lts_Inverter_1.webp",
+        "images/heladeras/Heladera_Electrolux_HENI3000P_NO_FROST_Plata_260_lts_Inverter_2.webp",
+        "images/heladeras/Heladera_Electrolux_HENI3000P_NO_FROST_Plata_260_lts_Inverter_3.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 152 x 61,3 x 68,3\n<strong>Tipo de tecnología:</strong> No frost\n<strong>Capacidad (Litros):</strong> 260\n<strong>Freezer:</strong> Sí\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2074450",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2074450",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Telefunken EX-395 Exhibidora vertical',
+    imagen: "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_1.webp",
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_2.webp",
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_3.webp",
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_4.webp",
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_5.webp",
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_6.webp",
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_7.webp",
+        "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_8.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 196 x 63 x 64,5\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 395\n<strong>Freezer:</strong> No\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075130",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075130",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Electrolux HENI3900P No Frost Plata 353 lts Inverter',
+    imagen: "images/heladeras/Heladera_Electrolux_HENI3900P_No_Frost_Plata_353_lts_Inverter_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Electrolux_HENI3900P_No_Frost_Plata_353_lts_Inverter_1.webp",
+        "images/heladeras/Heladera_Electrolux_HENI3900P_No_Frost_Plata_353_lts_Inverter_2.webp",
+        "images/heladeras/Heladera_Electrolux_HENI3900P_No_Frost_Plata_353_lts_Inverter_3.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 184 x 61,3 x 68,3\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 353\n<strong>Freezer:</strong> Sí\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2074501",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2074501",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Whirlpool WRE44BK 397 lts Evox',
+    imagen: "images/heladeras/Heladera_Whirlpool_WRE44BK_397_lts_Evox_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Whirlpool_WRE44BK_397_lts_Evox_1.webp",
+        "images/heladeras/Heladera_Whirlpool_WRE44BK_397_lts_Evox_2.webp",
+        "images/heladeras/Heladera_Whirlpool_WRE44BK_397_lts_Evox_3.webp",
+        "images/heladeras/Heladera_Whirlpool_WRE44BK_397_lts_Evox_4.webp",
+        "images/heladeras/Heladera_Whirlpool_WRE44BK_397_lts_Evox_5.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 184 x 62,1 x 71,3\n<strong>Tipo de tecnología:</strong> No frost\n<strong>Capacidad (Litros):</strong> 397\n<strong>Freezer:</strong> Sí\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2075290",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2075290",
+        "Garantía: 1 año"
+    ]
+},
+
 
 
 
