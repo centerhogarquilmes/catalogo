@@ -474,25 +474,7 @@ const productos = [
           "Marca: Enova", "Modelo: Te32ha10", "Garantía: 1 año"
         ]
     },
-    {
-        categoria: "Tv y audio",
-        subcategoria: "Tv",
-        nombre: 'TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS',
-        codigo: "2075320",
-        imagen: "images/televisores/TV_LED _Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
-        imagenes: [
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_1.webp",
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_2.webp",
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_3.webp",
-          "images/televisores/TV_LED_Philips_32_Smart_HD_32PHD6910_77_con_Titan_OS_4.webp"
-        ],
-        descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Titan OS',
-        caracteristicas: [
-          "Marca: Philips",
-          "Modelo: 32PHD6910/77 ",
-          "Garantía: 1 año"
-        ]
-    },
+    
     {
         categoria: "Tv y audio",
         subcategoria: "Tv",
@@ -733,6 +715,154 @@ const productos = [
             "Garantía: 1 año"
         ]
     },
+
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Aoc 32" 32S5135/77G Smart tv Roku',
+    imagen: "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_1.webp",
+        "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_2.webp",
+        "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_3.webp",
+        "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_4.webp",
+        "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_5.webp",
+        "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_6.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Roku TV',
+    codigo: "2075434",
+    caracteristicas: [
+        "Marca: AOC",
+        "Modelo: 2075434",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Aoc 43" 43S5135/77G Smart tv Roku',
+    imagen: "images/televisores/TV_LED_Aoc_43_43S5135_77G_Smart_tv_Roku_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_Aoc_43_43S5135_77G_Smart_tv_Roku_1.webp",
+        "images/televisores/TV_LED_Aoc_43_43S5135_77G_Smart_tv_Roku_2.webp",
+        "images/televisores/TV_LED_Aoc_43_43S5135_77G_Smart_tv_Roku_3.webp",
+        "images/televisores/TV_LED_Aoc_43_43S5135_77G_Smart_tv_Roku_4.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 43"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Roku TV',
+    codigo: "2075435",
+    caracteristicas: [
+        "Marca: AOC",
+        "Modelo: 2075435",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Noblex 43" DR/DV43X7180 Smart Android',
+    imagen: "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_1.webp",
+        "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_2.webp",
+        "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_3.webp",
+        "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_4.webp",
+        "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_5.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 43\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Android TV',
+    codigo: "2075335",
+    caracteristicas: [
+        "Marca: Noblex",
+        "Modelo: 2075335",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Philips 43" Smart HD 43PFD6910/77 con Titan OS',
+    imagen: "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_1.webp",
+        "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_2.webp",
+        "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_3.webp",
+        "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_4.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 43\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Titan OS',
+    codigo: "2075321",
+    caracteristicas: [
+        "Marca: Philips",
+        "Modelo: 2075321",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Philips 50" Smart 50PUD7309/77 4K con Titan OS',
+    imagen: "images/televisores/TV_LED_Philips_50_Smart_50PUD7309_77_4K_con_Titan_OS_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_Philips_50_Smart_50PUD7309_77_4K_con_Titan_OS_1.webp",
+        "images/televisores/TV_LED_Philips_50_Smart_50PUD7309_77_4K_con_Titan_OS_2.webp",
+        "images/televisores/TV_LED_Philips_50_Smart_50PUD7309_77_4K_con_Titan_OS_3.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Titan OS',
+    codigo: "2075436",
+    caracteristicas: [
+        "Marca: Philips",
+        "Modelo: 2075436",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Philips 55" Smart 55PUD7309/77 4K con Titan OS',
+    imagen: "images/televisores/TV_LED_Philips_55_Smart_55PUD7309_77_4K_con_Titan_OS_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_Philips_55_Smart_55PUD7309_77_4K_con_Titan_OS_1.webp",
+        "images/televisores/TV_LED_Philips_55_Smart_55PUD7309_77_4K_con_Titan_OS_2.webp",
+        "images/televisores/TV_LED_Philips_55_Smart_55PUD7309_77_4K_con_Titan_OS_3.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 55\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Titan OS',
+    codigo: "2075437",
+    caracteristicas: [
+        "Marca: Philips",
+        "Modelo: 2075437",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED RCA 55" G55P6UHD-F Google 4K Smart',
+    imagen: "images/televisores/TV_LED_RCA_55_G55P6UHD_F_Google_4K_Smart_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_RCA_55_G55P6UHD_F_Google_4K_Smart_1.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 55\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2075207",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2075207",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED RCA 55" QL55TH200-F QLED Google 4K Smart',
+    imagen: "images/televisores/TV_LED_RCA_55_QL55TH200_F_QLED_Google_4K_Smart_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_RCA_55_QL55TH200_F_QLED_Google_4K_Smart_1.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 55"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2075388",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2075388",
+        "Garantía: 1 año"
+    ]
+},
 
 
 
