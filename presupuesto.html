@@ -106,12 +106,11 @@
             </ul>
         </li>
         <li class="has-submenu">
-            <a href="categoria.html?nombre=Termotanques">Termotanques<br>y calefones</a>
+            <a href="categoria.html?nombre=Termotanques y calefones">Termotanques<br>y calefones</a>
             <ul class="submenu">
-                <li><a href="categoria.html?nombre=Termotanques&subcategoria=Gas">Gas</a></li>
-                <li><a href="categoria.html?nombre=Termotanques&subcategoria=Eléctrico">Eléctrico</a></li>
-                <li><a href="categoria.html?nombre=Termotanques&subcategoria=Dual">Dual</a></li>
-                <li><a href="categoria.html?nombre=Termotanques&subcategoria=Calefones">Calefones</a></li>
+                
+                <li><a href="categoria.html?nombre=Termotanques y calefones&subcategoria=Termotanques">Termotanques</a></li>
+                <li><a href="categoria.html?nombre=Termotanques y calefones&subcategoria=Calefones">Calefones</a></li>
             </ul>
         </li><li class="has-submenu">
             <a href="categoria.html?nombre=Pequeños">Pequeños<br>electrodomésticos</a>
@@ -148,33 +147,37 @@
 
             <!-- Formulario -->
             <div class="contact-form">
-                <h3>Envíanos un mensaje</h3>
-                <form id="contact-form">
-    <div class="form-group">
-        <label for="name">Nombre (obligatorio)*</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email (opcional)</label>
-        <input type="email" id="email" name="email">
-    </div>
-    <div class="form-group">
-        <label for="phone">Teléfono (opcional, para contacto por WhatsApp)</label>
-        <input type="tel" id="phone" name="phone">
-    </div>
-    <div class="form-group">
-        <label for="message">Mensaje *</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-    <div>
-        <p><br>Al enviar tu mensaje aceptas las políticas de privacidad y das tu consentimiento para que Center Hogar Quilmes te contacte.</p>
-    </div>
-    <button type="submit" class="buy-btn">Enviar Consulta</button>
-</form>
-<p id="form-message" style="display: none; color: #FF6200;"></p>
-
-<p>¿No usas WhatsApp? <a href="mailto:chquilmes1260@gmail.com?subject=Consulta%20desde%20Center%20Hogar%20Quilmes">Contáctanos por correo</a></p>
-
+    <h3>Generar Presupuesto</h3>
+    <form id="budget-form">
+        <div class="form-group">
+            <label for="code">Código del Producto (obligatorio)*</label>
+            <input type="text" id="code" name="code" required>
+            <p id="product-info" style="color: #333; margin-top: 5px;"></p> <!-- Mostrará el producto encontrado -->
+        </div>
+        <div class="form-group">
+            <label for="phone">Teléfono (obligatorio, para enviar el presupuesto por WhatsApp)*</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" placeholder="Ej: 5491131680489" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Nombre del Cliente (opcional)</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="observations">Observaciones</label>
+            <textarea id="observations" name="observations"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="seller">Vendedor (obligatorio)*</label>
+            <input type="text" id="seller" name="seller" required>
+        </div>
+        <div>
+            <p><br>Al enviar tu mensaje aceptas las políticas de privacidad y das tu consentimiento para que Center Hogar Quilmes te contacte.</p>
+        </div>
+        <button type="submit" class="buy-btn">Enviar Presupuesto</button>
+    </form>
+    <p id="form-message" style="display: none; color: #FF6200;"></p>
+    <p>¿No usas WhatsApp? <a href="mailto:chquilmes1260@gmail.com?subject=Consulta%20desde%20Center%20Hogar%20Quilmes">Contáctanos por correo</a></p>
+</div>
 <p id="form-message" style="display: none; color: #FF6200;"></p>
                 <p id="form-message" style="display: none; color: #FF6200;"></p>
                 <p id="form-message" style="display: none; color: #FF6200;"></p>
@@ -206,5 +209,116 @@
     <!-- Scripts -->
     <script src="productos.js"></script>
     <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script>
+
+    let products = [];
+
+async function loadProducts() {
+    try {
+        const response = await fetch('/productos.csv'); // Archivo en la raíz del proyecto
+        const csvText = await response.text();
+        products = parseCSV(csvText);
+        console.log('Productos cargados:', products);
+    } catch (error) {
+        console.error('Error al cargar productos:', error);
+    }
+}
+
+function parseCSV(csvText) {
+    const lines = csvText.trim().split('\n');
+    const headers = lines[0].split(';').map(header => header.replace(/"/g, '').trim());
+    const result = [];
+    
+    for (let i = 1; i < lines.length; i++) {
+        const data = lines[i].split(';').map(item => item.replace(/"/g, '').trim());
+        result.push({
+            code: data[0], // Artículo
+            description: data[1], // Descripción
+            price: parseFloat(data[6]) // Precio tarjeta
+        });
+    }
+    
+    return result;
+}
+
+function findProductByCode(code) {
+    return products.find(product => product.code === code);
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Cargar productos al iniciar
+    loadProducts();
+
+    // Validar código del producto en tiempo real
+    const codeInput = document.getElementById('code');
+    const productInfo = document.getElementById('product-info');
+    codeInput.addEventListener('input', () => {
+        const code = codeInput.value.trim();
+        if (code) {
+            const product = findProductByCode(code);
+            if (product) {
+                productInfo.textContent = `Producto: ${product.description} - Precio: $${product.price.toLocaleString('es-AR')}`;
+                productInfo.style.color = '#333';
+            } else {
+                productInfo.textContent = 'Producto no encontrado';
+                productInfo.style.color = '#FF6200';
+            }
+        } else {
+            productInfo.textContent = '';
+        }
+    });
+
+    // Manejar el envío del formulario
+    const form = document.getElementById('budget-form');
+    const formMessage = document.getElementById('form-message');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const code = document.getElementById('code').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const observations = document.getElementById('observations').value.trim();
+        const seller = document.getElementById('seller').value.trim();
+
+        // Validar el código del producto
+        const product = findProductByCode(code);
+        if (!product) {
+            formMessage.textContent = 'Por favor, ingrese un código de producto válido.';
+            formMessage.style.display = 'block';
+            return;
+        }
+
+        // Formatear el mensaje para WhatsApp
+        let message = `Presupuesto de Center Hogar Quilmes\n\n` +
+                     (name ? `Cliente: ${name}\n` : '') +
+                     `Producto: ${product.description}\n` +
+                     `Código: ${code}\n` +
+                     `Precio: $${product.price.toLocaleString('es-AR')}\n` +
+                     (observations ? `Observaciones: ${observations}\n` : '') +
+                     `Vendedor: ${seller}`;
+
+        // Codificar el mensaje para la URL
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedMessage}`;
+
+        // Redirigir a WhatsApp
+        window.open(whatsappUrl, '_blank');
+
+        // Mostrar mensaje de éxito
+        formMessage.textContent = 'Presupuesto enviado correctamente a WhatsApp.';
+        formMessage.style.display = 'block';
+        formMessage.style.color = '#28a745';
+
+        // Limpiar el formulario
+        form.reset();
+        productInfo.textContent = '';
+    });
+});
+
+
+</script>
 </body>
 </html>

@@ -1971,6 +1971,235 @@ const productos = [
         ]
     },
 
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Telefunken TFK-WMCFSL 6kg Inverter Silver carga frontal',
+    imagen: "images/lavarropas/Lavarropas_Telefunken_TFK_WMCFSL_6kg_Inverter_Silver_carga_frontal_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Telefunken_TFK_WMCFSL_6kg_Inverter_Silver_carga_frontal_1.webp",
+        "images/lavarropas/Lavarropas_Telefunken_TFK_WMCFSL_6kg_Inverter_Silver_carga_frontal_2.webp",
+        "images/lavarropas/Lavarropas_Telefunken_TFK_WMCFSL_6kg_Inverter_Silver_carga_frontal_3.webp",
+        "images/lavarropas/Lavarropas_Telefunken_TFK_WMCFSL_6kg_Inverter_Silver_carga_frontal_4.webp",
+        "images/lavarropas/Lavarropas_Telefunken_TFK_WMCFSL_6kg_Inverter_Silver_carga_frontal_5.webp",
+        "images/lavarropas/Lavarropas_Telefunken_TFK_WMCFSL_6kg_Inverter_Silver_carga_frontal_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 931\n<strong>Inverter:</strong> Sí',
+    codigo: "2075386",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075386",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Gafa Digi Fit Blanco 6.5 kg 760rpm c/s',
+    imagen: "images/lavarropas/Lavarropas_Gafa_Digi_Fit_Blanco_6_5_kg_760rpm_c_s_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Gafa_Digi_Fit_Blanco_6_5_kg_760rpm_c_s_1.webp",
+        "images/lavarropas/Lavarropas_Gafa_Digi_Fit_Blanco_6_5_kg_760rpm_c_s_2.webp",
+        "images/lavarropas/Lavarropas_Gafa_Digi_Fit_Blanco_6_5_kg_760rpm_c_s_3.webp",
+        "images/lavarropas/Lavarropas_Gafa_Digi_Fit_Blanco_6_5_kg_760rpm_c_s_4.webp",
+        "images/lavarropas/Lavarropas_Gafa_Digi_Fit_Blanco_6_5_kg_760rpm_c_s_5.webp",
+        "images/lavarropas/Lavarropas_Gafa_Digi_Fit_Blanco_6_5_kg_760rpm_c_s_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 760',
+    codigo: "2073611",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2073611",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Kanji KJH-WMCFSL 8kg Inverter carga frontal Silver',
+    imagen: "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_1.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_2.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_3.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_4.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_5.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_6.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_7.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_8.webp",
+        "images/lavarropas/Lavarropas_Kanji_KJH_WMCFSL_8kg_Inverter_carga_frontal_Silver_9.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2075439",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075439",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Gafa Fuzzy Fit Blanco 7 kg 760 rpm',
+    imagen: "images/lavarropas/Lavarropas_Gafa_Fuzzy_Fit_Blanco_7_kg_760_rpm_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Gafa_Fuzzy_Fit_Blanco_7_kg_760_rpm_1.webp",
+        "images/lavarropas/Lavarropas_Gafa_Fuzzy_Fit_Blanco_7_kg_760_rpm_2.webp",
+        "images/lavarropas/Lavarropas_Gafa_Fuzzy_Fit_Blanco_7_kg_760_rpm_3.webp",
+        "images/lavarropas/Lavarropas_Gafa_Fuzzy_Fit_Blanco_7_kg_760_rpm_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 760',
+    codigo: "2073587",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2073587",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean Concept Neo Fuzzy 658 Blanco 6.5kg',
+    imagen: "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_1.webp",
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_2.webp",
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_3.webp",
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_4.webp",
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_5.webp",
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_6.webp",
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_7.webp",
+        "images/lavarropas/Lavarropas_Drean_Concept_Neo_Fuzzy_658_Blanco_6_5kg_8.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 658',
+    codigo: "2074736",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2074736",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Midea MF100W60/T-A1 c/frontal 6kg 1000rpm Gris',
+    imagen: "images/lavarropas/Lavarropas_Midea_MF100W60_T_A1_c_frontal_6kg_1000rpm_Gris_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Midea_MF100W60_T_A1_c_frontal_6kg_1000rpm_Gris_1.webp",
+        "images/lavarropas/Lavarropas_Midea_MF100W60_T_A1_c_frontal_6kg_1000rpm_Gris_2.webp",
+        "images/lavarropas/Lavarropas_Midea_MF100W60_T_A1_c_frontal_6kg_1000rpm_Gris_3.webp",
+        "images/lavarropas/Lavarropas_Midea_MF100W60_T_A1_c_frontal_6kg_1000rpm_Gris_4.webp",
+        "images/lavarropas/Lavarropas_Midea_MF100W60_T_A1_c_frontal_6kg_1000rpm_Gris_5.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000',
+    codigo: "2075375",
+    caracteristicas: [
+        "Marca: Midea",
+        "Modelo: 2075375",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Bgh Inverter 6Kg 1000RPM Blanco c/frontal BWFI06W24AR',
+    imagen: "images/lavarropas/Lavarropas_Bgh_Inverter_6Kg_1000RPM_Blanco_c_frontal_BWFI06W24AR_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Bgh_Inverter_6Kg_1000RPM_Blanco_c_frontal_BWFI06W24AR_1.webp",
+        "images/lavarropas/Lavarropas_Bgh_Inverter_6Kg_1000RPM_Blanco_c_frontal_BWFI06W24AR_2.webp",
+        "images/lavarropas/Lavarropas_Bgh_Inverter_6Kg_1000RPM_Blanco_c_frontal_BWFI06W24AR_3.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2075353",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2075353",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean LFDR0609LB0 c/frontal 6kg 900rpm Blanco',
+    imagen: "images/lavarropas/Lavarropas_Drean_LFDR0609LB0_c_frontal_6kg_900rpm_Blanco_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Drean_LFDR0609LB0_c_frontal_6kg_900rpm_Blanco_1.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0609LB0_c_frontal_6kg_900rpm_Blanco_2.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0609LB0_c_frontal_6kg_900rpm_Blanco_3.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0609LB0_c_frontal_6kg_900rpm_Blanco_4.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0609LB0_c_frontal_6kg_900rpm_Blanco_5.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0609LB0_c_frontal_6kg_900rpm_Blanco_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 900',
+    codigo: "2075371",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075371",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WW65A4000EE 6.5kg 1000 rpm Blanco',
+    imagen: "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_1.webp",
+        "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_2.webp",
+        "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_3.webp",
+        "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_4.webp",
+        "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_5.webp",
+        "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_6.webp",
+        "images/lavarropas/Lavarropas_Samsung_WW65A4000EE_6_5kg_1000_rpm_Blanco_7.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2074290",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074290",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Whirlpool WW09HBB 9Kg. Carga Sup. 740rpm',
+    imagen: "images/lavarropas/Lavarropas_Whirlpool_WW09HBB_9Kg_Carga_Sup_740rpm_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Whirlpool_WW09HBB_9Kg_Carga_Sup_740rpm_1.webp",
+        "images/lavarropas/Lavarropas_Whirlpool_WW09HBB_9Kg_Carga_Sup_740rpm_2.webp",
+        "images/lavarropas/Lavarropas_Whirlpool_WW09HBB_9Kg_Carga_Sup_740rpm_3.webp",
+        "images/lavarropas/Lavarropas_Whirlpool_WW09HBB_9Kg_Carga_Sup_740rpm_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 9\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 740',
+    codigo: "2074977",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2074977",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Whirlpool WNQ80AB 1200 RPM 8 KG Blanco inverter c/frontal',
+    imagen: "images/lavarropas/Lavarropas_Whirlpool_WNQ80AB_1200_RPM_8_KG_Blanco_inverter_c_frontal_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Whirlpool_WNQ80AB_1200_RPM_8_KG_Blanco_inverter_c_frontal_1.webp",
+        "images/lavarropas/Lavarropas_Whirlpool_WNQ80AB_1200_RPM_8_KG_Blanco_inverter_c_frontal_2.webp",
+        "images/lavarropas/Lavarropas_Whirlpool_WNQ80AB_1200_RPM_8_KG_Blanco_inverter_c_frontal_3.webp",
+        "images/lavarropas/Lavarropas_Whirlpool_WNQ80AB_1200_RPM_8_KG_Blanco_inverter_c_frontal_4.webp",
+        "images/lavarropas/Lavarropas_Whirlpool_WNQ80AB_1200_RPM_8_KG_Blanco_inverter_c_frontal_5.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1200\n<strong>Inverter:</strong> Sí',
+    codigo: "2074339",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2074339",
+        "Garantía: 1 año"
+    ]
+},
+
 
 
 
@@ -3553,16 +3782,16 @@ const productos = [
             /////---------- Gas ----------/////
 
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Escorial 45LTS',
-    imagen: "images/gas/Termot_Escorial_45LTS_1.webp",
+    imagen: "images/termotanques/Termot_Escorial_45LTS_1.webp",
     imagenes: [
-        "images/gas/Termot_Escorial_45LTS_1.webp",
-        "images/gas/Termot_Escorial_45LTS_2.webp",
-        "images/gas/Termot_Escorial_45LTS_3.webp"
+        "images/termotanques/Termot_Escorial_45LTS_1.webp",
+        "images/termotanques/Termot_Escorial_45LTS_2.webp",
+        "images/termotanques/Termot_Escorial_45LTS_3.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 60 x 42\n<strong>Capacidad (Litros):</strong> 45\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 60 x 42\n<strong>Capacidad (Litros):</strong> 45\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2068932",
     caracteristicas: [
         "Marca: Escorial",
@@ -3571,14 +3800,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 030 Lts mg pie/col A.recup. 330000',
-    imagen: "images/gas/Termot_Señorial_Zafiro_030_Lts_mg_pie_col_a_recup_330000_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_030_Lts_mg_pie_col_a_recup_330000_1.webp",
     imagenes: [
-        "images/gas/Termot_Señorial_Zafiro_030_Lts_mg_pie_col_a_recup_330000_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_030_Lts_mg_pie_col_a_recup_330000_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 61 x 36\n<strong>Capacidad (Litros):</strong> 30\n<strong>Conexiones:</strong> Ambos\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase B',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 61 x 36\n<strong>Capacidad (Litros):</strong> 30\n<strong>Conexiones:</strong> Ambos\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase B',
     codigo: "2073040",
     caracteristicas: [
         "Marca: Señorial",
@@ -3587,14 +3816,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 085 Lts mg pie/col 330002',
-    imagen: "images/gas/Termot_Señorial_Zafiro_085_Lts_mg_pie_col_330002_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_085_Lts_mg_pie_col_330002_1.webp",
     imagenes: [
-        "images/gas/Termot_Señorial_Zafiro_085_Lts_mg_pie_col_330002_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_085_Lts_mg_pie_col_330002_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 110 x 41\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 4400\n<strong>Eficiencia energética:</strong> Clase D',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 110 x 41\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase D',
     codigo: "2073037",
     caracteristicas: [
         "Marca: Señorial",
@@ -3603,16 +3832,16 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Ecotermo 45Lts GN Populi TE1052022',
-    imagen: "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_1.webp",
+    imagen: "images/termotanques/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_1.webp",
     imagenes: [
-        "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_1.webp",
-        "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_2.webp",
-        "images/gas/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_3.webp"
+        "images/termotanques/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_1.webp",
+        "images/termotanques/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_2.webp",
+        "images/termotanques/Termot_Ecotermo_45Lts_GN_Populi_TE1052022_3.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 72 x 43\n<strong>Capacidad (Litros):</strong> 45\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 3600\n<strong>Eficiencia energética:</strong> Clase B',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 72 x 43\n<strong>Capacidad (Litros):</strong> 45\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase B',
     codigo: "2072108",
     caracteristicas: [
         "Marca: Ecotermo",
@@ -3621,14 +3850,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot Sherman 50 lts pie multigas carga sup',
-    imagen: "images/gas/Termot_sherman_50_lts_pie_multigas_carga_sup_1.webp",
+    imagen: "images/termotanques/Termot_sherman_50_lts_pie_multigas_carga_sup_1.webp",
     imagenes: [
-        "images/gas/Termot_sherman_50_lts_pie_multigas_carga_sup_1.webp"
+        "images/termotanques/Termot_sherman_50_lts_pie_multigas_carga_sup_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 82 x 45\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 3500\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 82 x 45\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2069072",
     caracteristicas: [
         "Marca: Sherman",
@@ -3637,14 +3866,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 050 Lts mg pie/col A.recup. 330001',
-    imagen: "images/gas/Termot_Señorial_Zafiro_050_Lts_mg_pie_col_A_recup_330001_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_050_Lts_mg_pie_col_A_recup_330001_1.webp",
     imagenes: [
-        "images/gas/Termot_Señorial_Zafiro_050_Lts_mg_pie_col_A_recup_330001_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_050_Lts_mg_pie_col_A_recup_330001_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 92 x 36\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Ambos\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 4300\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 92 x 36\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Ambos\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2073041",
     caracteristicas: [
         "Marca: Señorial",
@@ -3653,14 +3882,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Family 085 Lts mg pie/col 330008',
-    imagen: "images/gas/Termot_Señorial_Family_085_Lts_mg_pie_col_330008_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Family_085_Lts_mg_pie_col_330008_1.webp",
     imagenes: [
-        "images/gas/Termot_Señorial_Family_085_Lts_mg_pie_col_330008_1.webp"
+        "images/termotanques/Termot_Señorial_Family_085_Lts_mg_pie_col_330008_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 110 x 41\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 4000\n<strong>Eficiencia energética:</strong> Clase D',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 110 x 41\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase D',
     codigo: "2073164",
     caracteristicas: [
         "Marca: Señorial",
@@ -3669,14 +3898,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 120 mg 118lts apoyar 330003',
-    imagen: "images/gas/Termot_Señorial_Zafiro_120_mg_118lts_apoyar_330003_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_120_mg_118lts_apoyar_330003_1.webp",
     imagenes: [
-        "images/gas/Termot_Señorial_Zafiro_120_mg_118lts_apoyar_330003_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_120_mg_118lts_apoyar_330003_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 146 x 41\n<strong>Capacidad (Litros):</strong> 120\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 4500\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 146 x 41\n<strong>Capacidad (Litros):</strong> 120\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2073038",
     caracteristicas: [
         "Marca: Señorial",
@@ -3685,14 +3914,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 160 Lts mg apoyar 330012',
-    imagen: "images/gas/Termot_Señorial_Zafiro_160_Lts_mg_apoyar_330012_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_160_Lts_mg_apoyar_330012_1.webp",
     imagenes: [
-        "images/gas/Termot_Señorial_Zafiro_160_Lts_mg_apoyar_330012_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_160_Lts_mg_apoyar_330012_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 153 x 33\n<strong>Capacidad (Litros):</strong> 160\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 4300\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 153 x 33\n<strong>Capacidad (Litros):</strong> 160\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2073039",
     caracteristicas: [
         "Marca: Señorial",
@@ -3701,14 +3930,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Ecotermo 53 Lts. Alta recup. C/Sup. GN TE4052522',
-    imagen: "images/gas/Termot_Ecotermo_53_Lts._Alta_recup_C_Sup_GN_TE4052522_1.webp",
+    imagen: "images/termotanques/Termot_Ecotermo_53_Lts._Alta_recup_C_Sup_GN_TE4052522_1.webp",
     imagenes: [
-        "images/gas/Termot_Ecotermo_53_Lts._Alta_recup_C_Sup_GN_TE4052522_1.webp"
+        "images/termotanques/Termot_Ecotermo_53_Lts._Alta_recup_C_Sup_GN_TE4052522_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 76 x 42\n<strong>Capacidad (Litros):</strong> 53\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 6400\n<strong>Eficiencia energética:</strong> Clase B',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 76 x 42\n<strong>Capacidad (Litros):</strong> 53\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase B',
     codigo: "2072050",
     caracteristicas: [
         "Marca: Ecotermo",
@@ -3717,16 +3946,16 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Saiar 80lts pie multigas carga sup.',
-    imagen: "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_1.webp",
+    imagen: "images/termotanques/Termot_Saiar_80lts_pie_multigas_carga_sup_1.webp",
     imagenes: [
-        "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_1.webp",
-        "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_2.webp",
-        "images/gas/Termot_Saiar_80lts_pie_multigas_carga_sup_3.webp"
+        "images/termotanques/Termot_Saiar_80lts_pie_multigas_carga_sup_1.webp",
+        "images/termotanques/Termot_Saiar_80lts_pie_multigas_carga_sup_2.webp",
+        "images/termotanques/Termot_Saiar_80lts_pie_multigas_carga_sup_3.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 106 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 6900\n<strong>Eficiencia energética:</strong> Clase B',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 106 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase B',
     codigo: "2069065",
     caracteristicas: [
         "Marca: Saiar",
@@ -3735,14 +3964,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Saiar 80lts colgar multigas carga inferior',
-    imagen: "images/gas/Termot_Saiar_80lts_colgar_multigas_carga_inferior_1.webp",
+    imagen: "images/termotanques/Termot_Saiar_80lts_colgar_multigas_carga_inferior_1.webp",
     imagenes: [
-        "images/gas/Termot_Saiar_80lts_colgar_multigas_carga_inferior_1.webp"
+        "images/termotanques/Termot_Saiar_80lts_colgar_multigas_carga_inferior_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 67 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Potencia:</strong> 5000\n<strong>Eficiencia energética:</strong> Clase B',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 67 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase B',
     codigo: "2069069",
     caracteristicas: [
         "Marca: Saiar",
@@ -3751,15 +3980,15 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Rheem 80 lts pie carga sup. GN Blanco (tpg080gnrh)',
-    imagen: "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_1.webp",
+    imagen: "images/termotanques/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_1.webp",
     imagenes: [
-        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_1.webp",
-        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_2.webp"
+        "images/termotanques/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_1.webp",
+        "images/termotanques/Termot_Rheem_80_lts_pie_carga_sup_GN_Blanco_tpg080gnrh_2.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 106 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 6000\n<strong>Eficiencia energética:</strong> Clase B',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 106 x 45\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase B',
     codigo: "2074364",
     caracteristicas: [
         "Marca: Rheem",
@@ -3768,18 +3997,18 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Eskabe AQUAPIU H360 Gas A. recup Hybrid4 360lts/hs vert',
-    imagen: "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_1.webp",
+    imagen: "images/termotanques/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_1.webp",
     imagenes: [
-        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_1.webp",
-        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_2.webp",
-        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_3.webp",
-        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_4.webp",
-        "images/gas/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_5.webp"
+        "images/termotanques/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_1.webp",
+        "images/termotanques/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_2.webp",
+        "images/termotanques/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_3.webp",
+        "images/termotanques/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_4.webp",
+        "images/termotanques/Termot_Eskabe_AQUAPIU_H360_Gas_A_recup_Hybrid4_360lts_hs_vert_5.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 83 x 45\n<strong>Capacidad (Litros):</strong> 40\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 10000\n<strong>Eficiencia energética:</strong> Clase B',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 83 x 45\n<strong>Capacidad (Litros):</strong> 40\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase B',
     codigo: "2075133",
     caracteristicas: [
         "Marca: Eskabe",
@@ -3788,15 +4017,15 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Gas",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Rheem 80 lts pie carga sup. GN Gris (tgnp080rh)',
-    imagen: "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_1.webp",
+    imagen: "images/termotanques/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_1.webp",
     imagenes: [
-        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_1.webp",
-        "images/gas/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_2.webp"
+        "images/termotanques/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_1.webp",
+        "images/termotanques/Termot_Rheem_80_lts_pie_carga_sup_GN_Gris_tgnp080rh_2.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 109 x 42\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 5500\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 109 x 42\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "17114",
     caracteristicas: [
         "Marca: Rheem",
@@ -3809,14 +4038,14 @@ const productos = [
 
 
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro TESZP-20 20lts electrico',
-    imagen: "images/electrico/Termot_Señorial_Zafiro_TESZP_20_20lts_electrico_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_TESZP_20_20lts_electrico_1.webp",
     imagenes: [
-        "images/electrico/Termot_Señorial_Zafiro_TESZP_20_20lts_electrico_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_TESZP_20_20lts_electrico_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 33 x 41\n<strong>Capacidad (Litros):</strong> 20\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase E',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 33 x 41\n<strong>Capacidad (Litros):</strong> 20\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase E',
     codigo: "2075242",
     caracteristicas: [
         "Marca: Señorial",
@@ -3825,15 +4054,15 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Family 090 Lts Elec pie/col A. recup 330010',
-    imagen: "images/electrico/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_1.webp",
     imagenes: [
-        "images/electrico/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_1.webp",
-        "images/electrico/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_2.webp"
+        "images/termotanques/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_1.webp",
+        "images/termotanques/Termot_Señorial_Family_090_Lts_Elec_pie_col_A_recup_330010_2.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 105 x 41\n<strong>Capacidad (Litros):</strong> 90\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase D',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 105 x 41\n<strong>Capacidad (Litros):</strong> 90\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase D',
     codigo: "2073045",
     caracteristicas: [
         "Marca: Señorial",
@@ -3842,14 +4071,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Saiar 55 lts electrico TEPC055ESARIK2',
-    imagen: "images/electrico/Termot_Saiar_55_lts_electrico_TEPC055ESARIK2_1.webp",
+    imagen: "images/termotanques/Termot_Saiar_55_lts_electrico_TEPC055ESARIK2_1.webp",
     imagenes: [
-        "images/electrico/Termot_Saiar_55_lts_electrico_TEPC055ESARIK2_1.webp"
+        "images/termotanques/Termot_Saiar_55_lts_electrico_TEPC055ESARIK2_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 58 x 45\n<strong>Capacidad (Litros):</strong> 55\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 58 x 45\n<strong>Capacidad (Litros):</strong> 55\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "17005",
     caracteristicas: [
         "Marca: Saiar",
@@ -3858,17 +4087,17 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Ecotermo 70Lts Electrico Populi Carga Sup.',
-    imagen: "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_1.webp",
+    imagen: "images/termotanques/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_1.webp",
     imagenes: [
-        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_1.webp",
-        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_2.webp",
-        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_3.webp",
-        "images/electrico/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_4.webp"
+        "images/termotanques/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_1.webp",
+        "images/termotanques/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_2.webp",
+        "images/termotanques/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_3.webp",
+        "images/termotanques/Termot_Ecotermo_70Lts_Electrico_Populi_Carga_Sup_4.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 98 x 63\n<strong>Capacidad (Litros):</strong> 70\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Potencia:</strong> 5600\n<strong>Eficiencia energética:</strong> Clase D',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 98 x 63\n<strong>Capacidad (Litros):</strong> 70\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase D',
     codigo: "2072245",
     caracteristicas: [
         "Marca: Ecotermo",
@@ -3877,14 +4106,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 095 Lts Elec col. entr. sup.330006',
-    imagen: "images/electrico/Termot_Señorial_Zafiro_095_Lts_Elec_col_entr_sup_330006_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_095_Lts_Elec_col_entr_sup_330006_1.webp",
     imagenes: [
-        "images/electrico/Termot_Señorial_Zafiro_095_Lts_Elec_col_entr_sup_330006_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_095_Lts_Elec_col_entr_sup_330006_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 93 x 41\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 93 x 41\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2073044",
     caracteristicas: [
         "Marca: Señorial",
@@ -3893,14 +4122,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 65 elec 50lts col. entr. sup. 330005',
-    imagen: "images/electrico/Termot_Señorial_Zafiro_65_elec_50lts_col_entr_sup_330005_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_65_elec_50lts_col_entr_sup_330005_1.webp",
     imagenes: [
-        "images/electrico/Termot_Señorial_Zafiro_65_elec_50lts_col_entr_sup_330005_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_65_elec_50lts_col_entr_sup_330005_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 64 x 41\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase E',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 64 x 41\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase E',
     codigo: "2073043",
     caracteristicas: [
         "Marca: Señorial",
@@ -3909,15 +4138,15 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Escorial EL-90 90lts Electrico',
-    imagen: "images/electrico/Termot_Escorial_EL_90_90lts_Electrico_1.webp",
+    imagen: "images/termotanques/Termot_Escorial_EL_90_90lts_Electrico_1.webp",
     imagenes: [
-        "images/electrico/Termot_Escorial_EL_90_90lts_Electrico_1.webp",
-        "images/electrico/Termot_Escorial_EL_90_90lts_Electrico_2.webp"
+        "images/termotanques/Termot_Escorial_EL_90_90lts_Electrico_1.webp",
+        "images/termotanques/Termot_Escorial_EL_90_90lts_Electrico_2.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 92 x 43\n<strong>Capacidad (Litros):</strong> 90\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 92 x 43\n<strong>Capacidad (Litros):</strong> 90\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2071220",
     caracteristicas: [
         "Marca: Escorial",
@@ -3926,14 +4155,14 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Eléctrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Señorial Zafiro 40 elec 30lts col. entr. sup. 330004',
-    imagen: "images/electrico/Termot_Señorial_Zafiro_40_elec_30lts_col_entr_sup_330004_1.webp",
+    imagen: "images/termotanques/Termot_Señorial_Zafiro_40_elec_30lts_col_entr_sup_330004_1.webp",
     imagenes: [
-        "images/electrico/Termot_Señorial_Zafiro_40_elec_30lts_col_entr_sup_330004_1.webp"
+        "images/termotanques/Termot_Señorial_Zafiro_40_elec_30lts_col_entr_sup_330004_1.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 43 x 41\n<strong>Capacidad (Litros):</strong> 30\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 1500\n<strong>Eficiencia energética:</strong> Clase E',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 43 x 41\n<strong>Capacidad (Litros):</strong> 30\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase E',
     codigo: "2073042",
     caracteristicas: [
         "Marca: Señorial",
@@ -3942,15 +4171,15 @@ const productos = [
     ]
     },
     {
-    categoria: "Termotanques",
-    subcategoria: "Electrico",
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
     nombre: 'Termot. Sherman 85 electrico Pie',
-    imagen: "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
+    imagen: "images/termotanques/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
     imagenes: [
-        "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
-        "images/electrico/Termot_Sherman_85_Eléctrico_TECC085ESHK2_2.webp"
+        "images/termotanques/Termot_Sherman_85_Eléctrico_TECC085ESHK2_1.webp",
+        "images/termotanques/Termot_Sherman_85_Eléctrico_TECC085ESHK2_2.webp"
     ],
-    descripcion: '<strong>Dimensiones:</strong> 51 x 45\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Potencia:</strong> 2000\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong>Eléctrico\n<strong>Dimensiones:</strong> 51 x 45\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "2073600",
     caracteristicas: [
         "Marca: Sherman",
@@ -3958,6 +4187,143 @@ const productos = [
         "Garantía: 1 año"
     ]
     },
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Ecotermo 70Lts GN Populi TE1054022',
+    imagen: "images/termotanques/Termot_Ecotermo_70Lts_GN_Populi_TE1054022_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Ecotermo_70Lts_GN_Populi_TE1054022_1.webp",
+        "images/termotanques/Termot_Ecotermo_70Lts_GN_Populi_TE1054022_2.webp",
+        "images/termotanques/Termot_Ecotermo_70Lts_GN_Populi_TE1054022_3.webp",
+        "images/termotanques/Termot_Ecotermo_70Lts_GN_Populi_TE1054022_4.webp",
+        "images/termotanques/Termot_Ecotermo_70Lts_GN_Populi_TE1054022_5.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong>Gas\n<strong>Dimensiones:</strong> 98,8 x 63\n<strong>Capacidad (Litros):</strong> 70\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2072109",
+    caracteristicas: [
+        "Marca: Ecotermo",
+        "Modelo: 2072109",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Rheem 125 elect colgar carga inferior Gris (tec125rh)',
+    imagen: "images/termotanques/Termot_Rheem_125_elect_colgar_carga_inferior_Gris_tec125rh_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Rheem_125_elect_colgar_carga_inferior_Gris_tec125rh_1.webp",
+        "images/termotanques/Termot_Rheem_125_elect_colgar_carga_inferior_Gris_tec125rh_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 115 x 51\n<strong>Capacidad (Litros):</strong> 125\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "21316",
+    caracteristicas: [
+        "Marca: Rheem",
+        "Modelo: 21316",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Rheem 80 lts colgar carga inferior gn Gris (tgnc080rh)',
+    imagen: "images/termotanques/Termot_Rheem_80_lts_colgar_carga_inferior_gn_Gris_tgnc080rh_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Rheem_80_lts_colgar_carga_inferior_gn_Gris_tgnc080rh_1.webp",
+        "images/termotanques/Termot_Rheem_80_lts_colgar_carga_inferior_gn_Gris_tgnc080rh_2.webp",
+        "images/termotanques/Termot_Rheem_80_lts_colgar_carga_inferior_gn_Gris_tgnc080rh_3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Gas\n<strong>Dimensiones:</strong> 109 x 51\n<strong>Capacidad (Litros):</strong> 80\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "13039",
+    caracteristicas: [
+        "Marca: Rheem",
+        "Modelo: 13039",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Señorial Family 120 Lts Elec entr. sup. A.rec',
+    imagen: "images/termotanques/Termot_Señorial_Family_120_Lts_Elec_entr_sup_A_rec_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Señorial_Family_120_Lts_Elec_entr_sup_A_rec_1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 124 x 41\n<strong>Capacidad (Litros):</strong> 120\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073046",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073046",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Señorial Family 50 Lts mg pie/col A.recuperacion',
+    imagen: "images/termotanques/Termot_Señorial_Family_50_Lts_mg_pie_col_A_recuperacion_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Señorial_Family_50_Lts_mg_pie_col_A_recuperacion_1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Gas\n<strong>Dimensiones:</strong> 90,5 x 36\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Ambos\n<strong>Alta recuperación:</strong> Sí\n<strong>Colgar o apoyar:</strong> Ambos\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2073098",
+    caracteristicas: [
+        "Marca: Señorial",
+        "Modelo: 2073098",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Sherman 120 lts pie 5 años carga sup.mg',
+    imagen: "images/termotanques/Termot_Sherman_120_lts_pie_5_años_carga_sup_mg_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Sherman_120_lts_pie_5_años_carga_sup_mg_1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Gas\n<strong>Dimensiones:</strong> 139 x 54,1\n<strong>Capacidad (Litros):</strong> 120\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "17119",
+    caracteristicas: [
+        "Marca: Sherman",
+        "Modelo: 17119",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Sherman 55 electrico colgar carga inferior',
+    imagen: "images/termotanques/Termot_Sherman_55_electrico_colgar_carga_inferior_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Sherman_55_electrico_colgar_carga_inferior_1.webp",
+        "images/termotanques/Termot_Sherman_55_electrico_colgar_carga_inferior_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 78 x 45,1\n<strong>Capacidad (Litros):</strong> 55\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "20920",
+    caracteristicas: [
+        "Marca: Sherman",
+        "Modelo: 20920",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Sherman 85 elect colgar',
+    imagen: "images/termotanques/Termot_Sherman_85_elect_colgar_1.webp",
+    imagenes: [
+        "images/termotanques/Termot_Sherman_85_elect_colgar_1.webp",
+        "images/termotanques/Termot_Sherman_85_elect_colgar_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 79 x 45,1\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "21204",
+    caracteristicas: [
+        "Marca: Sherman",
+        "Modelo: 21204",
+        "Garantía: 1 año"
+    ]
+},
 
 
 

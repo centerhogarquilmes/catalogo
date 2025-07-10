@@ -110,7 +110,7 @@ const categoryFields = {
         ]
     },
     "Heladeras": {
-        subcategorias: ["Cíclica", "No frost"],
+        subcategorias: [],
         folder: "heladeras",
         fields: [
             { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "185cm x 60cm x 67cm" },
@@ -250,22 +250,29 @@ const categoryFields = {
         }
     },
 
-    "Termotanques": {
-    subcategorias: ["Gas", "Eléctrico", "Dual"],
-    folders: {
-        "Gas": "gas",
-        "Eléctrico": "electrico",
-        "Dual": "dual"
-    },
-    fields: [
-        { label: "Dimensiones", name: "dimensiones", type: "text", placeholder: "Alto x ancho" },
-        { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "80" },
-        { label: "Conexiones" , name: "conexiones", type: "select" , options: ["Superior", "Inferior", "Ambos"]},
-        { label: "Alta recuperación", name: "alta_recuperacion", type: "select", options: ["No", "Sí"] },
-        { label: "Colgar o apoyar", name: "colgar_apoyar", type: "select", options: ["Colgar", "Apoyar", "Ambos"] },
-        { label: "Potencia" , name: "potencia" , type: "text" , placeholder: "1500"},
-        { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase E", "Clase D", "Clase C", "Clase B", "Clase A"] }
-    ]
+    "Termotanques y calefones": {
+        subcategorias: ["Termotanques", "Calefones"],
+        folders: {
+            "Termotanques": "termotanques",
+            "Calefones": "calefones"
+        
+        },
+        fields: {
+            "Termotanques":[
+            { label: "Tipo", name: "tipo_alimentacion", type: "select", options: ["Gas", "Eléctrico", "Dual"] },
+            { label: "Dimensiones", name: "dimensiones", type: "text", placeholder: "Alto x ancho" },
+            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "80" },
+            { label: "Conexiones" , name: "conexiones", type: "select" , options: ["Superior", "Inferior", "Ambos"]},
+            { label: "Alta recuperación", name: "alta_recuperacion", type: "select", options: ["No", "Sí"] },
+            { label: "Colgar o apoyar", name: "colgar_apoyar", type: "select", options: ["Colgar", "Apoyar", "Ambos"] },
+            { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase E", "Clase D", "Clase C", "Clase B", "Clase A"] }
+        ],
+            "Calefones":[
+            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "80" },
+            { label: "Tiraje", name: "tiraje", type: "select", options: ["Tiro balanceado", "Tiro natural"] },
+            
+        ],
+    }
 },
 
     "Hornos, Microondas y Freidoras": {

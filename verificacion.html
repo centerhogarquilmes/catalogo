@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Códigos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 600px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            resize: vertical;
+            padding: 10px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+        #csvInput {
+            margin-top: 10px;
+        }
+        #fileStatus {
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Verificar Códigos de Productos</h2>
+    <p>Ingrese los códigos separados por comas o uno por línea:</p>
+    <textarea id="codigosInput" placeholder="Ejemplo: 18079, 12345, 67890"></textarea>
+    <br>
+    <button onclick="verificarManual()">Verificar Manual</button>
+    
+    <h3>O cargar un archivo CSV:</h3>
+    <input type="file" id="csvInput" accept=".csv" onchange="procesarCSV()">
+    <div id="fileStatus"></div>
+    
+    <div id="resultado"></div>
+
+    <!-- Incluir productos.js -->
+    <script src="productos.js"></script>
+    <script>
+        function verificarManual() {
+            const input = document.getElementById('codigosInput').value;
+            const codigos = input.split(/[\n,]+/).map(c => c.trim()).filter(c => c);
+            verificarYMostrar(codigos);
+        }
+
+        function procesarCSV() {
+            const fileInput = document.getElementById('csvInput');
+            const fileStatus = document.getElementById('fileStatus');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                fileStatus.innerHTML = '<span class="error">No se seleccionó ningún archivo.</span>';
+                return;
+            }
+
+            if (!file.name.endsWith('.csv')) {
+                fileStatus.innerHTML = '<span class="error">Por favor, seleccione un archivo CSV.</span>';
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                const codigos = parsearCSV(text);
+                if (codigos.length === 0) {
+                    fileStatus.innerHTML = '<span class="error">No se encontraron códigos válidos en el archivo.</span>';
+                    return;
+                }
+                fileStatus.innerHTML = `Archivo cargado: ${codigos.length} códigos encontrados.`;
+                verificarYMostrar(codigos);
+            };
+            reader.onerror = function() {
+                fileStatus.innerHTML = '<span class="error">Error al leer el archivo.</span>';
+            };
+            reader.readAsText(file);
+        }
+
+        function parsearCSV(text) {
+            const lines = text.split('\n').map(line => line.trim()).filter(line => line);
+            if (lines.length === 0) return [];
+
+            // Asumimos que la primera línea es el encabezado
+            const headers = lines[0].split(';').map(h => h.trim());
+            const articuloIndex = headers.indexOf('Artículo') !== -1 ? headers.indexOf('Artículo') : headers.indexOf('Art�culo'); // Manejar posible error de codificación
+
+            if (articuloIndex === -1) {
+                document.getElementById('fileStatus').innerHTML = '<span class="error">No se encontró la columna "Artículo" en el CSV.</span>';
+                return [];
+            }
+
+            // Extraer códigos de las filas restantes
+            const codigos = [];
+            for (let i = 1; i < lines.length; i++) {
+                const columns = lines[i].split(';').map(c => c.trim().replace(/^"|"$/g, '')); // Eliminar comillas
+                if (columns[articuloIndex]) {
+                    codigos.push(columns[articuloIndex]);
+                }
+            }
+            return codigos.filter(c => c); // Filtrar códigos vacíos
+        }
+
+        function verificarYMostrar(codigos) {
+            // Validar entrada
+            if (!codigos.length) {
+                document.getElementById('resultado').innerHTML = 
+                    '<p class="error">Por favor, ingrese o cargue al menos un código.</p>';
+                return;
+            }
+
+            // Verificar si productos está definido
+            if (typeof productos === 'undefined') {
+                document.getElementById('resultado').innerHTML = 
+                    '<p class="error">Error: No se pudo cargar el archivo productos.js.</p>';
+                return;
+            }
+
+            // Verificar códigos
+            const resultado = verificarCodigos(codigos);
+
+            // Mostrar resultado
+            document.getElementById('resultado').innerHTML = `
+                <h3>Resultados:</h3>
+                <p><strong>Registrados (${resultado.registrados.length}):</strong> 
+                    <span class="success">${resultado.registrados.join(', ') || 'Ninguno'}</span></p>
+                <p><strong>No registrados (${resultado.noRegistrados.length}):</strong> 
+                    <span class="error">${resultado.noRegistrados.join(', ') || 'Ninguno'}</span></p>
+            `;
+        }
+
+        function verificarCodigos(codigosIngresados) {
+            const registrados = [];
+            const noRegistrados = [];
+
+            codigosIngresados.forEach(codigo => {
+                const existe = productos.some(producto => producto.codigo === codigo);
+                if (existe) {
+                    registrados.push(codigo);
+                } else {
+                    noRegistrados.push(codigo);
+                }
+            });
+
+            return { registrados, noRegistrados };
+        }
+    </script>
+</body>
+</html>
