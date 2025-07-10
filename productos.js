@@ -2503,6 +2503,115 @@ const productos = [
     ]
     },
 
+        {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Noblex N52 6.5" 2/64GB Negro',
+    imagen: "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_1.webp",
+        "images/celulares/LIBERADO_Noblex_N52_6_5_2_64GB_Negro_2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6,5"\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5000\n<strong>Red móvil:</strong> No\n<strong>Sistema operativo:</strong> Android 13 GO',
+    codigo: "2074907",
+    caracteristicas: [
+        "Marca: Noblex",
+        "Modelo: 2074907",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Motorola Moto E14 2/64GB',
+    imagen: "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_1.webp",
+        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6,5"\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5 Ah\n<strong>Red móvil:</strong> No\n<strong>Sistema operativo:</strong> Android 14 GO',
+    codigo: "2075006",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2075006",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Zte Blade A55 4/128GB 6.75" 4G (Z2450-FAL)',
+    imagen: "images/celulares/LIBERADO_Zte_Blade_A55_4_128GB_6_75_4G_Z2450_FAL_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Zte_Blade_A55_4_128GB_6_75_4G_Z2450_FAL_1.webp",
+        "images/celulares/LIBERADO_Zte_Blade_A55_4_128GB_6_75_4G_Z2450_FAL_2.webp",
+        "images/celulares/LIBERADO_Zte_Blade_A55_4_128GB_6_75_4G_Z2450_FAL_3.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6,75"\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5.2 Ah\n<strong>Red móvil:</strong> No\n<strong>Sistema operativo:</strong> Android 14 + MyOS 14',
+    codigo: "2075455",
+    caracteristicas: [
+        "Marca: ZTE",
+        "Modelo: 2075455",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Zte Blade A75 4/256GB 6.6" 5G (Z2357N-FAL)',
+    imagen: "images/celulares/LIBERADO_Zte_Blade_A75_4_256GB_6_6_5G_Z2357N_FAL_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Zte_Blade_A75_4_256GB_6_6_5G_Z2357N_FAL_1.webp",
+        "images/celulares/LIBERADO_Zte_Blade_A75_4_256GB_6_6_5G_Z2357N_FAL_2.webp",
+        "images/celulares/LIBERADO_Zte_Blade_A75_4_256GB_6_6_5G_Z2357N_FAL_3.webp",
+        "images/celulares/LIBERADO_Zte_Blade_A75_4_256GB_6_6_5G_Z2357N_FAL_4.webp",
+        "images/celulares/LIBERADO_Zte_Blade_A75_4_256GB_6_6_5G_Z2357N_FAL_5.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6,6"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 12 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5.2 Ah\n<strong>Red móvil:</strong> No\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2075454",
+    caracteristicas: [
+        "Marca: ZTE",
+        "Modelo: 2075454",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Tecno Spark 30C KL5 4/256 gb Orbit Black (PNT011019)',
+    imagen: "images/celulares/LIBERADO_Tecno_Spark_30C_KL5_4_256_gb_Orbit_Black_PNT011019_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Tecno_Spark_30C_KL5_4_256_gb_Orbit_Black_PNT011019_1.webp",
+        "images/celulares/LIBERADO_Tecno_Spark_30C_KL5_4_256_gb_Orbit_Black_PNT011019_2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6,6"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5 Ah\n<strong>Red móvil:</strong> No\n<strong>Sistema operativo:</strong> Android 14',
+    codigo: "2075451",
+    caracteristicas: [
+        "Marca: Tecno",
+        "Modelo: 2075451",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Tecno Spark 30 Pro KL7 8/128 gb Artic Glow (PNT011034)',
+    imagen: "images/celulares/LIBERADO_Tecno_Spark_30_Pro_KL7_8_128_gb_Artic_Glow_PNT011034_1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO_Tecno_Spark_30_Pro_KL7_8_128_gb_Artic_Glow_PNT011034_1.webp",
+        "images/celulares/LIBERADO_Tecno_Spark_30_Pro_KL7_8_128_gb_Artic_Glow_PNT011034_2.webp",
+        "images/celulares/LIBERADO_Tecno_Spark_30_Pro_KL7_8_128_gb_Artic_Glow_PNT011034_3.webp",
+        "images/celulares/LIBERADO_Tecno_Spark_30_Pro_KL7_8_128_gb_Artic_Glow_PNT011034_4.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 8\n<strong>Pulgadas:</strong> 6,78"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 13 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5.2 Ah\n<strong>Red móvil:</strong> No\n<strong>Sistema operativo:</strong> Android 14',
+    codigo: "2075452",
+    caracteristicas: [
+        "Marca: Tecno",
+        "Modelo: 2075452",
+        "Garantía: 1 año"
+    ]
+},
+
 
 
 
