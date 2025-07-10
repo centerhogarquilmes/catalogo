@@ -145,24 +145,37 @@
         <section class="catalog">
             <div class="search-container">
                 <div class="filter-panel">
-                    <button class="filter-toggle" aria-label="Abrir filtros">Filtros ☰</button>
-                    <div class="filters" id="filters">
-                        <h3>Filtros</h3>
-                        <div class="filter-group">
-                            <h4>Marca</h4>
-                            <select id="filter-marca">
-                                <option value="">Todas</option>
-                                <!-- Opciones generadas dinámicamente -->
-                            </select>
-                        </div>
-                        <div id="dynamic-filters">
-                            <!-- Filtros dinámicos se generan aquí -->
-                        </div>
-                        <div class="filter-buttons">
-                            <button class="clear-filters buy-btn">Limpiar</button>
-                        </div>
-                    </div>
-                </div>
+    <button class="filter-toggle" aria-label="Abrir filtros">Filtros ☰</button>
+    <div class="filters" id="filters">
+        <h3>Filtros</h3>
+        <!-- Filtro de marca -->
+        <div class="filter-group collapsible-filter">
+            <h4 class="collapsible-header">Marca</h4>
+            <div class="collapsible-content">
+                <!-- Opciones de marcas generadas dinámicamente -->
+            </div>
+        </div>
+        <!-- Filtro de ordenamiento por precio -->
+        <div class="filter-group collapsible-filter">
+            <h4 class="collapsible-header">Ordenar por precio</h4>
+            <div class="collapsible-content">
+                <label class="filter-option">
+                    <input type="radio" name="filter-orden-precio" value="menor-a-mayor" class="filter-radio"> Menor a Mayor
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="filter-orden-precio" value="mayor-a-menor" class="filter-radio"> Mayor a Menor
+                </label>
+            </div>
+        </div>
+        <!-- Filtros dinámicos -->
+        <div id="dynamic-filters">
+            <!-- Filtros dinámicos se generan aquí -->
+        </div>
+        <div class="filter-buttons">
+            <button class="clear-filters buy-btn">Limpiar</button>
+        </div>
+    </div>
+</div>
                 <div class="results">
                     <h2 id="category-title">Productos</h2>
                         <div class="view-toggle" id="view-toggle">
@@ -264,7 +277,6 @@ const atributosPorCategoria = {
         "Tipo de impresión",
         "Procesador",
         "Tamaño de pantalla (pulgadas)"
-
     ],
     "climatizacion": [
         "Potencia (W)",
@@ -275,7 +287,6 @@ const atributosPorCategoria = {
         "Inverter",
         "Tipo"
     ],
-    
     "cocinas": [
         "Tipo de uso",
         "Dimensiones",
@@ -304,7 +315,7 @@ const atributosPorCategoria = {
         "Potencia (W)"
     ],
     "termotanques y calefones": [
-        "Tipo",    
+        "Tipo",
         "Dimensiones",
         "Capacidad (Litros)",
         "Conexiones",
@@ -327,8 +338,6 @@ const atributosPorCategoria = {
         "Placas antiadherentes",
         "Funciones"
     ],
-    
-    
     "cuidado personal": [
         "Tipo de equipo",
         "Uso recomendado",
@@ -398,16 +407,33 @@ if (categoria) {
         productosFiltrados
             .map(p => p.caracteristicas.find(c => c.startsWith('Marca: '))?.replace('Marca: ', ''))
             .filter(m => m)
-    )];
+    )].sort((a, b) => a.localeCompare(b)); // Ordenar marcas alfabéticamente
 }
 
-// Poblar el selector de marcas
-const filterMarca = document.getElementById('filter-marca');
+// Poblar el filtro de marcas con checkboxes
+const filterMarcaContainer = document.querySelector('.filter-group .collapsible-content');
 marcas.forEach(marca => {
-    const option = document.createElement('option');
-    option.value = marca;
-    option.textContent = marca;
-    filterMarca.appendChild(option);
+    const label = document.createElement('label');
+    label.className = 'filter-option';
+    label.innerHTML = `
+        <input type="checkbox" name="filter-marca" value="${marca}" class="filter-checkbox"> ${marca}
+    `;
+    filterMarcaContainer.appendChild(label);
+});
+
+// Agregar evento para colapsar/desplegar el filtro de marca
+const marcaHeader = document.querySelector('.filter-group .collapsible-header');
+marcaHeader.addEventListener('click', () => {
+    marcaHeader.classList.toggle('active');
+    filterMarcaContainer.style.display = marcaHeader.classList.contains('active') ? 'block' : 'none';
+});
+
+// Agregar evento para colapsar/desplegar el filtro de orden por precio
+const precioHeader = document.querySelectorAll('.collapsible-header')[1]; // Segundo header (orden por precio)
+const precioContent = document.querySelectorAll('.collapsible-content')[1];
+precioHeader.addEventListener('click', () => {
+    precioHeader.classList.toggle('active');
+    precioContent.style.display = precioHeader.classList.contains('active') ? 'block' : 'none';
 });
 
 // Generar filtros dinámicos según la categoría y subcategoría seleccionadas
@@ -554,18 +580,33 @@ function mostrarFiltrosActivos() {
     const activeFiltersContainer = document.getElementById('active-filters');
     activeFiltersContainer.innerHTML = '';
 
-    // Marca
-    if (filterMarca.value) {
+    // Filtro de marca
+    const marcaCheckboxes = document.querySelectorAll('input[name="filter-marca"]:checked');
+    marcaCheckboxes.forEach(checkbox => {
+        const valor = checkbox.value;
         const chip = document.createElement('div');
         chip.className = 'filter-chip';
         chip.innerHTML = `
-            <span>Marca: ${filterMarca.value}</span>
-            <button data-filter="marca">×</button>
+            <span>Marca: ${valor}</span>
+            <button data-filter="marca" data-valor="${valor}">×</button>
+        `;
+        activeFiltersContainer.appendChild(chip);
+    });
+
+    // Filtro de orden por precio
+    const precioRadio = document.querySelector('input[name="filter-orden-precio"]:checked');
+    if (precioRadio) {
+        const valor = precioRadio.value === 'menor-a-mayor' ? 'Menor a Mayor' : 'Mayor a Menor';
+        const chip = document.createElement('div');
+        chip.className = 'filter-chip';
+        chip.innerHTML = `
+            <span>Orden: ${valor}</span>
+            <button data-filter="orden-precio" data-valor="${precioRadio.value}">×</button>
         `;
         activeFiltersContainer.appendChild(chip);
     }
 
-    // Filtros dinámicos (solo checkboxes)
+    // Filtros dinámicos
     const dynamicFiltersContainer = document.getElementById('dynamic-filters');
     const filterGroups = dynamicFiltersContainer.querySelectorAll('.filter-group');
     filterGroups.forEach(group => {
@@ -588,7 +629,17 @@ function mostrarFiltrosActivos() {
         button.addEventListener('click', () => {
             const filterType = button.dataset.filter;
             if (filterType === 'marca') {
-                filterMarca.value = '';
+                const valor = button.dataset.valor;
+                const checkbox = document.querySelector(`input[name="filter-marca"][value="${valor}"]`);
+                if (checkbox) {
+                    checkbox.checked = false;
+                }
+            } else if (filterType === 'orden-precio') {
+                const valor = button.dataset.valor;
+                const radio = document.querySelector(`input[name="filter-orden-precio"][value="${valor}"]`);
+                if (radio) {
+                    radio.checked = false;
+                }
             } else if (filterType === 'dynamic') {
                 const atributo = button.dataset.atributo;
                 const valor = button.dataset.valor;
@@ -602,12 +653,22 @@ function mostrarFiltrosActivos() {
     });
 }
 
-// Configurar eventos
-filterMarca.addEventListener('change', filtrarProductos);
+// Configurar eventos para los checkboxes de marca y radios de precio
+document.querySelectorAll('input[name="filter-marca"]').forEach(checkbox => {
+    checkbox.addEventListener('change', filtrarProductos);
+});
+document.querySelectorAll('input[name="filter-orden-precio"]').forEach(radio => {
+    radio.addEventListener('change', filtrarProductos);
+});
 
 // Limpiar filtros
 document.querySelector('.clear-filters').addEventListener('click', () => {
-    filterMarca.value = '';
+    document.querySelectorAll('input[name="filter-marca"]:checked').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    document.querySelectorAll('input[name="filter-orden-precio"]:checked').forEach(radio => {
+        radio.checked = false;
+    });
     const dynamicFiltersContainer = document.getElementById('dynamic-filters');
     const checkboxes = dynamicFiltersContainer.querySelectorAll('.filter-checkbox:checked');
     checkboxes.forEach(checkbox => {
@@ -617,25 +678,29 @@ document.querySelector('.clear-filters').addEventListener('click', () => {
     filtrarProductos();
 });
 
-// Función para filtrar productos
+// Función para filtrar y ordenar productos
 function filtrarProductos() {
     let productosFiltrados = productos;
 
+    // Filtrar por categoría
     if (categoria) {
         productosFiltrados = productosFiltrados.filter(producto => normalizeString(producto.categoria) === normalizeString(categoria));
     }
 
+    // Filtrar por subcategoría
     if (subcategoria) {
         productosFiltrados = productosFiltrados.filter(producto => normalizeString(producto.subcategoria) === normalizeString(subcategoria));
     }
 
-    const marca = filterMarca.value;
-    if (marca) {
+    // Filtrar por marca
+    const marcasSeleccionadas = Array.from(document.querySelectorAll('input[name="filter-marca"]:checked')).map(cb => cb.value);
+    if (marcasSeleccionadas.length > 0) {
         productosFiltrados = productosFiltrados.filter(producto => 
-            producto.caracteristicas.some(c => c === `Marca: ${marca}`)
+            producto.caracteristicas.some(c => marcasSeleccionadas.includes(c.replace('Marca: ', '')))
         );
     }
 
+    // Filtrar por atributos dinámicos
     const dynamicFiltersContainer = document.getElementById('dynamic-filters');
     const filterGroups = dynamicFiltersContainer.querySelectorAll('.filter-group');
     filterGroups.forEach(group => {
@@ -651,8 +716,27 @@ function filtrarProductos() {
         }
     });
 
+    // Ordenar por precio
+    const ordenPrecio = document.querySelector('input[name="filter-orden-precio"]:checked');
+    if (ordenPrecio) {
+        productosFiltrados.sort((a, b) => {
+            const precioA = precios && precios[a.codigo] && precios[a.codigo].precio_tarjeta !== 'No disponible' 
+                ? parseFloat(precios[a.codigo].precio_tarjeta) 
+                : Infinity;
+            const precioB = precios && precios[b.codigo] && precios[b.codigo].precio_tarjeta !== 'No disponible' 
+                ? parseFloat(precios[b.codigo].precio_tarjeta) 
+                : Infinity;
+            if (ordenPrecio.value === 'menor-a-mayor') {
+                return precioA - precioB;
+            } else {
+                return precioB - precioA;
+            }
+        });
+    }
+
     console.log(`Productos filtrados para categoría "${categoria}" y subcategoría "${subcategoria}":`, productosFiltrados.length);
 
+    // Mostrar productos
     const productGrid = document.getElementById('product-grid');
     productGrid.innerHTML = '';
     if (productosFiltrados.length === 0) {
@@ -664,12 +748,9 @@ function filtrarProductos() {
         `;
     } else {
         productosFiltrados.forEach(producto => {
-            // Obtener datos desde precios.js
             const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
             const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
             const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
-            
-            // Modificar esta línea si cambia el porcentaje de Pre. ant. imp. nac. (actualmente 0.8265)
             const precioAntesImpuestos = precioLista ? `$${(precioLista * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
             const isAgotado = datosDinamicos.stock_sucursal + datosDinamicos.stock_deposito === 0;
 
@@ -691,10 +772,12 @@ function filtrarProductos() {
         });
     }
 
+    // Actualizar URL con filtros
     const params = new URLSearchParams();
     if (categoria) params.set('nombre', categoria);
     if (subcategoria) params.set('subcategoria', subcategoria);
-    if (marca) params.set('marca', marca);
+    if (marcasSeleccionadas.length > 0) params.set('marcas', marcasSeleccionadas.join(','));
+    if (ordenPrecio) params.set('orden', ordenPrecio.value);
     history.replaceState(null, '', `categoria.html?${params.toString()}`);
 
     // Mostrar filtros activos
