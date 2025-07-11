@@ -499,3 +499,56 @@ function setupViewToggle() {
         console.warn('No se encontraron los elementos para el toggle de vista');
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.header');
+    const searchBar = document.querySelector('.search-bar');
+    let lastScrollTop = 0;
+    let headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height'));
+
+    // Función para verificar si el usuario está cerca de la barra de búsqueda
+    function isSearchBarNearTop() {
+        if (!searchBar) return false;
+        const searchBarRect = searchBar.getBoundingClientRect();
+        return searchBarRect.top <= headerHeight + 20; // Mostrar header cuando la barra de búsqueda está a 20px del borde superior
+    }
+
+    // Función para manejar el scroll
+    function handleScroll() {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        // No hacer nada si el scroll es menor a 0 (evita errores en algunos navegadores)
+        if (currentScroll < 0) return;
+
+        // Verificar si la barra de búsqueda está cerca del borde superior
+        if (isSearchBarNearTop()) {
+            header.classList.remove('hidden');
+            header.classList.add('visible');
+            return;
+        }
+
+        // Determinar la dirección del scroll
+        if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
+            // Scroll hacia abajo: ocultar el header
+            header.classList.remove('visible');
+            header.classList.add('hidden');
+        } else if (currentScroll < lastScrollTop) {
+            // Scroll hacia arriba: mostrar el header
+            header.classList.remove('hidden');
+            header.classList.add('visible');
+        }
+
+        lastScrollTop = currentScroll;
+    }
+
+    // Escuchar el evento de scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Ajustar --header-height en móviles
+    function updateHeaderHeight() {
+        headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height'));
+    }
+
+    // Actualizar la altura del header en cambios de tamaño de ventana
+    window.addEventListener('resize', updateHeaderHeight);
+});
+

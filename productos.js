@@ -1,5 +1,6 @@
 // Arreglo de productos destacados (códigos de los productos)
 const productosDestacados = [
+    "2075301", //Lavarropas Midea MF100W60/W-A1 c/frontal 6kg 1000rpm Blanco
     "2075334", // TV LED Noblex 32" DR32X7080 Android Tv
     "2075321", // TV LED Philips 43" Smart HD 43PFD6910/77 con Titan OS
     "2075334", // TV LED Noblex 32" DR32X7080 Android Tv
@@ -25,17 +26,35 @@ const productos = [
     /////---------- Cocinas ----------/////
     {
         categoria: "Cocinas",
-        nombre: "Cocina Escorial Candor Blanca, gas natural o gas envasado",
+        nombre: "Cocina Escorial Candor gn Blanca",
         imagen: "images/cocinas/cocina_escorial_candor.webp",
         imagenes: [
             "images/cocinas/cocina_escorial_candor.webp",
             "images/cocinas/cocina_escorial_candor2.webp",
             "images/cocinas/cocina_escorial_candor3.webp"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x 51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x 51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "18079",
         caracteristicas: ["Marca: Escorial", "Modelo: Candor", "Garantía: 1 año"]
     },
+    {
+    categoria: "Cocinas",
+    nombre: 'Cocina Escorial Candor ge Blanca',
+    imagen: "images/cocinas/Cocina_Escorial_Candor_ge_Blanca_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Candor_ge_Blanca_1.webp",
+        "images/cocinas/Cocina_Escorial_Candor_ge_Blanca_2.webp",
+        "images/cocinas/Cocina_Escorial_Candor_ge_Blanca_3.webp",
+        "images/cocinas/Cocina_Escorial_Candor_ge_Blanca_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 50 x 54 \n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "18080",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 18080",
+        "Garantía: 1 año"
+    ]
+},
     {
         categoria: "Cocinas",
         nombre: "Cocina Florencia 5507F 3 Hornallas",
@@ -60,13 +79,13 @@ const productos = [
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_3.webp",
             "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_4.webp"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073969",
         caracteristicas: ["Marca: Escorial", "Modelo: 5507F", "Garantía: 1 año"]
     },
     {
         categoria: "Cocinas",
-        nombre: "Cocina Escorial Candor Black",
+        nombre: "Cocina Escorial Candor Black gn",
         imagen: "images/cocinas/cocina_candor_negra.jpg",
         imagenes: [
             "images/cocinas/cocina_candor_negra.jpg",
@@ -76,13 +95,13 @@ const productos = [
             "images/cocinas/cocina_candor_negra4.jpg",
             "images/cocinas/cocina_candor_negra5.jpg"
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2072621",
         caracteristicas: ["Marca: Escorial", "Modelo: Candor Black", "Garantía: 1 año"]
     },
     {
         categoria: "Cocinas",
-        nombre: "Cocina Escorial Master Classic",
+        nombre: "Cocina Escorial Master Classic gn Blanca",
         imagen: "images/cocinas/cocina_escorial_master_classic.jpg",
         imagenes: [
             "images/cocinas/cocina_escorial_master_classic.jpg",
@@ -91,19 +110,19 @@ const productos = [
             "images/cocinas/cocina_escorial_master_classic4.jpg",
             "images/cocinas/cocina_escorial_master_classic5.jpg",
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073930",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
     {
         categoria: "Cocinas",
-        nombre: "Cocina Escorial PALACE CRISTAL LX",
+        nombre: "Cocina Escorial Palace Cristal Blanca LX gn",
         imagen: "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
         imagenes: [
             "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 85 x  51 x 52\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 85 x  51 x 52\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "15760",
         caracteristicas: ["Marca: Escorial", "Modelo: PALACE CRISTAL", "Garantía: 1 año"]
     },
@@ -119,7 +138,7 @@ const productos = [
             "images/cocinas/cocina-escorial-master-classic-ge-inox4.jpg",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural o Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2075088",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
@@ -149,7 +168,7 @@ const productos = [
             "images/cocinas/cocina-escorial-master-style-multigas-bca3.jpg",
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 93 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 93 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073910",
         caracteristicas: ["Marca: Escorial", "Modelo: Master Style", "Garantía: 1 año"]
     },
@@ -217,7 +236,7 @@ const productos = [
 
 
         ],
-        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
         codigo: "2073292",
         caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
@@ -230,7 +249,7 @@ const productos = [
         "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_2.webp",
         "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_3.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 86 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 86 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2070485",
     caracteristicas: [
         "Marca: Florencia",
@@ -248,7 +267,7 @@ const productos = [
         "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_3.webp",
         "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_4.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 50 52\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 50 52\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072493",
     caracteristicas: [
         "Marca: Escorial",
@@ -269,7 +288,7 @@ const productos = [
         "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_6.webp",
         "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_7.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072633",
     caracteristicas: [
         "Marca: Florencia",
@@ -291,7 +310,7 @@ const productos = [
         "images/cocinas/cocina_morelli_industrial_zafira_600_7.webp",
         "images/cocinas/cocina_morelli_industrial_zafira_600_8.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 60 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 60 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072699",
     caracteristicas: [
         "Marca: Morelli",
@@ -335,7 +354,7 @@ const productos = [
 },
     {
     categoria: "Cocinas",
-    nombre: 'Cocina Florencia 8638 E Electrica c/anafe 3 focos Inox',
+    nombre: 'Cocina Florencia 8638 E Eléctrica c/anafe 3 focos Inox',
     imagen: "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_1.webp",
     imagenes: [
         "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_1.webp",
@@ -344,7 +363,7 @@ const productos = [
         "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_4.webp",
         "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_5.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Electrica\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Eléctrica\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2074225",
     caracteristicas: [
         "Marca: Florencia",
@@ -369,7 +388,7 @@ const productos = [
 },
     {
     categoria: "Cocinas",
-    nombre: 'Cocina Kanji electrica negra 4 anafes 50x50x89 1300/1500w',
+    nombre: 'Cocina Kanji eléctrica negra 4 anafes 50x50x89 1300/1500w',
     imagen: "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_1.webp",
     imagenes: [
         "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_1.webp",
@@ -380,7 +399,7 @@ const productos = [
         "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_6.webp",
         "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_7.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 50 85 50\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Eléctrica\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 50 85 50\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo de gas:</strong> Eléctrica\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2075129",
     caracteristicas: [
         "Marca: Kanji",
@@ -399,7 +418,7 @@ const productos = [
         "images/cocinas/Cocina_Florencia_5416F_5516F_4.webp",
         "images/cocinas/Cocina_Florencia_5416F_5516F_5.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Domestica\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "21554",
     caracteristicas: [
         "Marca: Florencia",
@@ -860,6 +879,24 @@ const productos = [
     caracteristicas: [
         "Marca: RCA",
         "Modelo: 2075388",
+        "Garantía: 1 año"
+    ]
+},
+{
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED RCA 65" C65AND-F Smart HD Android',
+    imagen: "images/televisores/TV_LED_RCA_65_C65AND_F_Smart_HD_Android_1.webp",
+    imagenes: [
+        "images/televisores/TV_LED_RCA_65_C65AND_F_Smart_HD_Android_1.webp",
+        "images/televisores/TV_LED_RCA_65_C65AND_F_Smart_HD_Android_2.webp",
+        "images/televisores/TV_LED_RCA_65_C65AND_F_Smart_HD_Android_3.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 65\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
+    codigo: "2075463",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2075463",
         "Garantía: 1 año"
     ]
 },
