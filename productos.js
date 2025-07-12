@@ -25,7 +25,8 @@ const productos = [
 
     /////---------- Cocinas ----------/////
     {
-        categoria: "Cocinas",
+        categoria: "Cocinas y anafes",
+        subcategoria: "Cocinas",
         nombre: "Cocina Escorial Candor gn Blanca",
         imagen: "images/cocinas/cocina_escorial_candor.webp",
         imagenes: [
@@ -38,7 +39,8 @@ const productos = [
         caracteristicas: ["Marca: Escorial", "Modelo: Candor", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Escorial Candor ge Blanca',
     imagen: "images/cocinas/Cocina_Escorial_Candor_ge_Blanca_1.webp",
     imagenes: [
@@ -56,192 +58,199 @@ const productos = [
     ]
 },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Florencia 5507F 3 Hornallas",
-        imagen: "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_1.webp",
-        imagenes: [
-            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_1.webp",
-            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_2.webp",
-            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_3.webp",
-            "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_4.webp"
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x  56 x 60\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 3\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2074709",
-        caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Florencia 5507F 3 Hornallas",
+    imagen: "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_1.webp",
+        "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_2.webp",
+        "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_3.webp",
+        "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_4.webp"
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x  56 x 60\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 3\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2074709",
+    caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Escorial Master S2 Classic gn Negra",
-        imagen: "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
-        imagenes: [
-            "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
-            "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_2.webp",
-            "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_3.webp",
-            "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_4.webp"
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2073969",
-        caracteristicas: ["Marca: Escorial", "Modelo: 5507F", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Escorial Master S2 Classic gn Negra",
+    imagen: "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
+        "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_2.webp",
+        "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_3.webp",
+        "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_4.webp"
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Hornallas:</strong> 4\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2073969",
+    caracteristicas: ["Marca: Escorial", "Modelo: 5507F", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Escorial Candor Black gn",
-        imagen: "images/cocinas/cocina_candor_negra.jpg",
-        imagenes: [
-            "images/cocinas/cocina_candor_negra.jpg",
-            "images/cocinas/cocina_candor_negra1.jpg",
-            "images/cocinas/cocina_candor_negra2.jpg",
-            "images/cocinas/cocina_candor_negra3.jpg",
-            "images/cocinas/cocina_candor_negra4.jpg",
-            "images/cocinas/cocina_candor_negra5.jpg"
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2072621",
-        caracteristicas: ["Marca: Escorial", "Modelo: Candor Black", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Escorial Candor Black gn",
+    imagen: "images/cocinas/cocina_candor_negra.jpg",
+    imagenes: [
+        "images/cocinas/cocina_candor_negra.jpg",
+        "images/cocinas/cocina_candor_negra1.jpg",
+        "images/cocinas/cocina_candor_negra2.jpg",
+        "images/cocinas/cocina_candor_negra3.jpg",
+        "images/cocinas/cocina_candor_negra4.jpg",
+        "images/cocinas/cocina_candor_negra5.jpg"
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 95 x  51 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2072621",
+    caracteristicas: ["Marca: Escorial", "Modelo: Candor Black", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Escorial Master Classic gn Blanca",
-        imagen: "images/cocinas/cocina_escorial_master_classic.jpg",
-        imagenes: [
-            "images/cocinas/cocina_escorial_master_classic.jpg",
-            "images/cocinas/cocina_escorial_master_classic2.jpg",
-            "images/cocinas/cocina_escorial_master_classic3.jpg",
-            "images/cocinas/cocina_escorial_master_classic4.jpg",
-            "images/cocinas/cocina_escorial_master_classic5.jpg",
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2073930",
-        caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Escorial Master Classic gn Blanca",
+    imagen: "images/cocinas/cocina_escorial_master_classic.jpg",
+    imagenes: [
+        "images/cocinas/cocina_escorial_master_classic.jpg",
+        "images/cocinas/cocina_escorial_master_classic2.jpg",
+        "images/cocinas/cocina_escorial_master_classic3.jpg",
+        "images/cocinas/cocina_escorial_master_classic4.jpg",
+        "images/cocinas/cocina_escorial_master_classic5.jpg",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 93 x  56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2073930",
+    caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Escorial Palace Cristal Blanca LX gn",
-        imagen: "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
-        imagenes: [
-            "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Escorial Palace Cristal Blanca LX gn",
+    imagen: "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
+    imagenes: [
+        "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
 
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 85 x  51 x 52\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "15760",
-        caracteristicas: ["Marca: Escorial", "Modelo: PALACE CRISTAL", "Garantía: 1 año"]
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 85 x  51 x 52\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Tipo de gas:</strong> Natural\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "15760",
+    caracteristicas: ["Marca: Escorial", "Modelo: PALACE CRISTAL", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Escorial Master Classic ge Inox",
-        imagen: "images/cocinas/cocina-escorial-master-classic-ge-inox.jpg",
-        imagenes: [
-            "images/cocinas/cocina-escorial-master-classic-ge-inox.jpg",
-            "images/cocinas/cocina-escorial-master-classic-ge-inox1.jpg",
-            "images/cocinas/cocina-escorial-master-classic-ge-inox2.jpg",
-            "images/cocinas/cocina-escorial-master-classic-ge-inox3.jpg",
-            "images/cocinas/cocina-escorial-master-classic-ge-inox4.jpg",
-
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2075088",
-        caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Escorial Master Classic ge Inox",
+    imagen: "images/cocinas/cocina-escorial-master-classic-ge-inox.jpg",
+    imagenes: [
+        "images/cocinas/cocina-escorial-master-classic-ge-inox.jpg",
+        "images/cocinas/cocina-escorial-master-classic-ge-inox1.jpg",
+        "images/cocinas/cocina-escorial-master-classic-ge-inox2.jpg",
+        "images/cocinas/cocina-escorial-master-classic-ge-inox3.jpg",
+        "images/cocinas/cocina-escorial-master-classic-ge-inox4.jpg",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 91 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2075088",
+    caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Florencia 5518F - Inox.",
-        imagen: "images/cocinas/Cocina_Florencia_5518F _Inox_1.webp",
-        imagenes: [
-            "images/cocinas/Cocina_Florencia_5518F _Inox_1.webp",
-            "images/cocinas/Cocina_Florencia_5518F _Inox_2.webp",
-            "images/cocinas/Cocina_Florencia_5518F _Inox_3.webp",
-            "images/cocinas/Cocina_Florencia_5518F _Inox_4.webp",
-
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase AA",
-        codigo: "2071810",
-        caracteristicas: ["Marca: Florencia", "Modelo: 5518F", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Florencia 5518F - Inox.",
+    imagen: "images/cocinas/Cocina_Florencia_5518F _Inox_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5518F _Inox_1.webp",
+        "images/cocinas/Cocina_Florencia_5518F _Inox_2.webp",
+        "images/cocinas/Cocina_Florencia_5518F _Inox_3.webp",
+        "images/cocinas/Cocina_Florencia_5518F _Inox_4.webp",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 85 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase AA",
+    codigo: "2071810",
+    caracteristicas: ["Marca: Florencia", "Modelo: 5518F", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Escorial Master Style Multigas Bca.",
-        imagen: "images/cocinas/cocina-escorial-master-style-multigas-bca.jpg",
-        imagenes: [
-            "images/cocinas/cocina-escorial-master-style-multigas-bca.jpg",
-            "images/cocinas/cocina-escorial-master-style-multigas-bca1.jpg",
-            "images/cocinas/cocina-escorial-master-style-multigas-bca2.jpg",
-            "images/cocinas/cocina-escorial-master-style-multigas-bca3.jpg",
-
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 93 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2073910",
-        caracteristicas: ["Marca: Escorial", "Modelo: Master Style", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Escorial Master Style Multigas Bca.",
+    imagen: "images/cocinas/cocina-escorial-master-style-multigas-bca.jpg",
+    imagenes: [
+        "images/cocinas/cocina-escorial-master-style-multigas-bca.jpg",
+        "images/cocinas/cocina-escorial-master-style-multigas-bca1.jpg",
+        "images/cocinas/cocina-escorial-master-style-multigas-bca2.jpg",
+        "images/cocinas/cocina-escorial-master-style-multigas-bca3.jpg",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 93 x 56 x 60\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2073910",
+    caracteristicas: ["Marca: Escorial", "Modelo: Master Style", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Volcan 87643 55cm 4 horn. Blanca luz-enc.elec",
-        imagen: "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
-        imagenes: [
-            "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2073893",
-        caracteristicas: ["Marca: Volcan", "Modelo: 87643", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Volcan 87643 55cm 4 horn. Blanca luz-enc.elec",
+    imagen: "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
+    imagenes: [
+        "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2073893",
+    caracteristicas: ["Marca: Volcan", "Modelo: 87643", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Volcan 87644 55cm 4 horn. Blanca sin luz",
-        imagen: "images/cocinas/Cocina_Volcan_87644_55cm_4_horn_Blanca_sin_luz.webp",
-        imagenes: [
-            "images/cocinas/Cocina_Volcan_87644_55cm_4_horn_Blanca_sin_luz.webp",
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2074783",
-        caracteristicas: ["Marca: Volcan", "Modelo: 87644", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Volcan 87644 55cm 4 horn. Blanca sin luz",
+    imagen: "images/cocinas/Cocina_Volcan_87644_55cm_4_horn_Blanca_sin_luz.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Volcan_87644_55cm_4_horn_Blanca_sin_luz.webp",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2074783",
+    caracteristicas: ["Marca: Volcan", "Modelo: 87644", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Volcan 87673 55cm 4 horn. inox",
-        imagen: "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 1.jpg",
-        imagenes: [
-            "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 1.jpg",
-            "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 2.png",
-            "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 3.webp",
-            "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 4.webp",
-
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2073914",
-        caracteristicas: ["Marca: Volcan", "Modelo: 87673", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Volcan 87673 55cm 4 horn. inox",
+    imagen: "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 1.jpg",
+    imagenes: [
+        "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 1.jpg",
+        "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 2.png",
+        "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 3.webp",
+        "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 4.webp",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2073914",
+    caracteristicas: ["Marca: Volcan", "Modelo: 87673", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Morelli Industrial Saho Kuro 550 p/v-r/a 180001",
-        imagen: "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_180001.webp",
-        imagenes: [
-            "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_180001.webp",
-            "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800012.webp",
-            "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800013.webp",
-            "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800014.webp",
-
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2074224",
-        caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Morelli Industrial Saho Kuro 550 p/v-r/a 180001",
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_180001.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_180001.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800012.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800013.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800014.webp",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2074224",
+    caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
     {
-        categoria: "Cocinas",
-        nombre: "Cocina Morelli Industrial Jitaku/saho 820 18062 5 horn. inox",
-        imagen: "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox.webp",
-        imagenes: [
-            "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox.webp",
-            "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox2.webp",
-            "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox3.webp",
-            "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox4.webp",
-
-
-        ],
-        descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
-        codigo: "2073292",
-        caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
+    nombre: "Cocina Morelli Industrial Jitaku/saho 820 18062 5 horn. inox",
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox2.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox3.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox4.webp",
+    ],
+    descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    codigo: "2073292",
+    caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 5417/5517 FEL negra',
     imagen: "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_1.webp",
     imagenes: [
@@ -258,7 +267,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Escorial PALACE CRISTAL Negra LX GE',
     imagen: "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_1.webp",
     imagenes: [
@@ -276,7 +286,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 5538F Inox c/ enc.',
     imagen: "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_1.webp",
     imagenes: [
@@ -297,7 +308,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Morelli Industrial Zafira 600',
     imagen: "images/cocinas/cocina_morelli_industrial_zafira_600_1.webp",
     imagenes: [
@@ -319,7 +331,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Morelli Industrial Zafira 550',
     imagen: "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_1.webp",
     imagenes: [
@@ -336,7 +349,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Morelli 550 Saho 18045 acero inox',
     imagen: "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_1.webp",
     imagenes: [
@@ -353,7 +367,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 8638 E Eléctrica c/anafe 3 focos Inox',
     imagen: "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_1.webp",
     imagenes: [
@@ -372,7 +387,8 @@ const productos = [
     ]
 },
 {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Usman Industrial Carli/Plancha Doble Horno R/A P/C 4449',
     imagen: "images/cocinas/Cocina_Usman_Industrial_Carli_Plancha_Doble_Horno_R_A_P_C_4449_1.webp",
     imagenes: [
@@ -387,7 +403,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Kanji eléctrica negra 4 anafes 50x50x89 1300/1500w',
     imagen: "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_1.webp",
     imagenes: [
@@ -408,7 +425,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 5416F/5516F',
     imagen: "images/cocinas/Cocina_Florencia_5416F_5516F_1.webp",
     imagenes: [
@@ -427,7 +445,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas",
+    categoria: "Cocinas y anafes",
+    subcategoria: "Cocinas",
     nombre: 'Cocina Morelli Industrial 550 Ex Acero 16374 Multigrill',
     imagen: "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_1.webp",
     imagenes: [
@@ -441,6 +460,64 @@ const productos = [
     caracteristicas: [
         "Marca: Morelli",
         "Modelo: 2075406",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
+    /////---------- Anafes ----------/////
+
+{
+    categoria: "Cocinas y anafes",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Florencia 6747N a gas Negro rejilla fundicion',
+    imagen: "images/anafes/Anafe_Florencia_6747N_a_gas_Negro_rejilla_fundicion_1.webp",
+    imagenes: [
+        "images/anafes/Anafe_Florencia_6747N_a_gas_Negro_rejilla_fundicion_1.webp",
+        "images/anafes/Anafe_Florencia_6747N_a_gas_Negro_rejilla_fundicion_2.webp",
+        "images/anafes/Anafe_Florencia_6747N_a_gas_Negro_rejilla_fundicion_3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Gas\n<strong>Dimensiones (Anc x Pro):</strong> 60 x 55\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073336",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2073336",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas y anafes",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Florencia 6889F Elec. a Induccion Magnetica 4 focos',
+    imagen: "images/anafes/Anafe_Florencia_6889F_Elec_a_Induccion_Magnetica_4_focos_1.webp",
+    imagenes: [
+        "images/anafes/Anafe_Florencia_6889F_Elec_a_Induccion_Magnetica_4_focos_1.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Anc x Pro):</strong> 60 x 55\n<strong>Material de superficie:</strong> Vitrocerámico - Inducción\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo:</strong> Eléctrico\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074521",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2074521",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas y anafes",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Westinghouse  WH-HP2200SSD/STD Electrico 2 hornallas',
+    imagen: "images/anafes/Anafe_Westinghouse _WH-HP2200SSD_STD_Electrico_2_hornallas_1.webp",
+    imagenes: [
+        "images/anafes/Anafe_Westinghouse _WH-HP2200SSD_STD_Electrico_2_hornallas_1.webp",
+        "images/anafes/Anafe_Westinghouse _WH-HP2200SSD_STD_Electrico_2_hornallas_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Material de superficie:</strong> Chapa pintada al polvo\n<strong>Cantidad de hornallas:</strong> 2\n<strong>Dimensiones (Anc x Pro):</strong> 48 x 27,5\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073571",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2073571",
         "Garantía: 1 año"
     ]
 },
