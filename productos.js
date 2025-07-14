@@ -17,7 +17,18 @@ const productosDestacados = [
     "2075302", //TV LED ENOVA 65" smart 4K UHD Google Tv
     "2075067", //TV LED RCA 40" R40AND-F Smart c/ Android
     "2074829", //TV LED Noblex 58" DB58X7550 Android 4K
-    "2075463" //TV LED RCA 65" C65AND-F Smart HD Android
+    "2075463", //TV LED RCA 65" C65AND-F Smart HD Android
+    "2075452", //LIBERADO Tecno Spark 30 Pro KL7 8/128 gb Artic Glow (PNT011034)
+    "2075451", //LIBERADO Tecno Spark 30C KL5 4/256 gb Orbit Black (PNT011019)
+    "2075455", //LIBERADO Zte Blade A55 4/128GB 6.75" 4G (Z2450-FAL)
+    "2075185", //Tablet Enova 10" 4G LTE 4/64gb 2+5mp android 12
+    "2075454", //LIBERADO Zte Blade A75 4/256GB 6.6" 5G (Z2357N-FAL)
+    "2074804", //LIBERADO Noblex B30 6.5" 6/128GB Negro
+    "2075453", //LIBERADO Zte Blade V60 8/256GB 6.72" 4G (Z2356-FAL)
+    "2074797", //LIBERADO Noblex N62 6.5" 4/64GB Negro
+    "2074907", //LIBERADO Noblex N52 6.5" 2/64GB Negro
+
+
 
 ];
 const productos = [
@@ -4696,7 +4707,7 @@ const productos = [
         "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_4.webp",
         "images/calefactor_a_gas/Emege_Euro_2135_T_B_MG_3500_kcal_5.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 3500\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 3500\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "14691",
     caracteristicas: [
         "Marca: Emege",
@@ -4713,7 +4724,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Emege_Euro_3130_S_S_MG_3000_kcal_1.webp",
         "images/calefactor_a_gas/Calefactor_Emege_Euro_3130_S_S_MG_3000_kcal_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Gas natural',
+    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Gas natural',
     codigo: "9422",
     caracteristicas: [
         "Marca: Emege",
@@ -4730,7 +4741,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Emege_Euro_3150_S_S_MG_5000_kcal_1.webp",
         "images/calefactor_a_gas/Calefactor_Emege_Euro_3150_S_S_MG_5000_kcal_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Gas natural',
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Gas natural',
     codigo: "9421",
     caracteristicas: [
         "Marca: Emege",
@@ -4747,7 +4758,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9130SCE_multigas_3000_kcal_1.webp",
         "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9130SCE_multigas_3000_kcal_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Gas natural',
+    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Gas natural',
     codigo: "2074210",
     caracteristicas: [
         "Marca: Emege",
@@ -4763,7 +4774,7 @@ const productos = [
     imagenes: [
         "images/calefactor_a_gas/Calefactor_Emege_Patagonia_9150SCE_multigas_5000_kcal_1.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "2074211",
     caracteristicas: [
         "Marca: Emege",
@@ -4781,7 +4792,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Eskabe_S21__3_0__Marfil_2.webp",
         "images/calefactor_a_gas/Calefactor_Eskabe_S21__3_0__Marfil_3.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 3000\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "17802",
     caracteristicas: [
         "Marca: Eskabe",
@@ -4799,7 +4810,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Eskabe_S21_Minic_5_0_Aroma_Marfil_2.webp",
         "images/calefactor_a_gas/Calefactor_Eskabe_S21_Minic_5_0_Aroma_Marfil_3.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "17803",
     caracteristicas: [
         "Marca: Eskabe",
@@ -4817,7 +4828,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Eskabe_S21_MINIC_8_0_Aroma_Marfil_2.webp",
         "images/calefactor_a_gas/Calefactor_Eskabe_S21_MINIC_8_0_Aroma_Marfil_3.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 8000\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 8000\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "18626",
     caracteristicas: [
         "Marca: Eskabe",
@@ -4833,7 +4844,7 @@ const productos = [
     imagenes: [
         "images/calefactor_a_gas/Calefactor_Eskabe_T_B_4800_GN_1.webp"
     ],
-    descripcion: '<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 4800\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "2073652",
     caracteristicas: [
         "Marca: Eskabe",
@@ -4851,7 +4862,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Orbis_4024NON_2700C_S_Salida_Frente_vidrio_1.webp",
         "images/calefactor_a_gas/Calefactor_Orbis_4024NON_2700C_S_Salida_Frente_vidrio_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 2700\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 2700\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "2074293",
     caracteristicas: [
         "Marca: Orbis",
@@ -4868,7 +4879,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Orbis_4040GO_4044_S_V_4200C_Ods_Gris_1.webp",
         "images/calefactor_a_gas/Calefactor_Orbis_4040GO_4044_S_V_4200C_Ods_Gris_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 4200\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 4200\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "2069694",
     caracteristicas: [
         "Marca: Orbis",
@@ -4885,7 +4896,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Orbis_4126NON_2500C_T_B_Frente_Vidrio_1.webp",
         "images/calefactor_a_gas/Calefactor_Orbis_4126NON_2500C_T_B_Frente_Vidrio_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 2500\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 2500\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "2074304",
     caracteristicas: [
         "Marca: Orbis",
@@ -4903,7 +4914,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Orbis_4146NON_3800C_T_B_Frente_Vidrio_2.webp",
         "images/calefactor_a_gas/Calefactor_Orbis_4146NON_3800C_T_B_Frente_Vidrio_3.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 3800\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 3800\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "2074295",
     caracteristicas: [
         "Marca: Orbis",
@@ -4921,7 +4932,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Orbis_4166NON_5000C_T_B_Frente_Vidrio_2.webp",
         "images/calefactor_a_gas/Calefactor_Orbis_4166NON_5000C_T_B_Frente_Vidrio_3.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 5000\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "2074303",
     caracteristicas: [
         "Marca: Orbis",
@@ -4939,7 +4950,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Volcan_2500_42512_42516_Gris_Sin_salida_2.webp",
         "images/calefactor_a_gas/Calefactor_Volcan_2500_42512_42516_Gris_Sin_salida_3.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 2500\n<strong>Tipo:</strong> Sin salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 2500\n<strong>Sin salida:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "14554",
     caracteristicas: [
         "Marca: Volcan",
@@ -4956,7 +4967,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Volcan_T_B_2000_42312_42316_Gris_1.webp",
         "images/calefactor_a_gas/Calefactor_Volcan_T_B_2000_42312_42316_Gris_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 2000\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 2000\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "14556",
     caracteristicas: [
         "Marca: Volcan",
@@ -4973,7 +4984,7 @@ const productos = [
         "images/calefactor_a_gas/Calefactor_Volcan_T_B_3800_43712_43716_1.webp",
         "images/calefactor_a_gas/Calefactor_Volcan_T_B_3800_43712_43716_2.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 3800\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 3800\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "14201",
     caracteristicas: [
         "Marca: Volcan",
@@ -4989,7 +5000,7 @@ const productos = [
     imagenes: [
         "images/calefactor_a_gas/Calefactor_Volcan_T_B_5700_46312_6_GRIS_1.webp"
     ],
-    descripcion: '<strong>Potencia (Kcal):</strong> 5700\n<strong>Tipo:</strong> Con salida\n<strong>Tipo de gas:</strong> Multigas',
+    descripcion: '<strong>Potencia (Kcal):</strong> 5700\n<strong>Tiro balanceado:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "14202",
     caracteristicas: [
         "Marca: Volcan",

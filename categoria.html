@@ -131,7 +131,7 @@
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Sandwicheras">Sandwicheras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subCategoria=Exprimidores y jugueras">Exprimidores y Jugueras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Picadoras">Picadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños&subcategoria=Aspiradoras">Aspiradoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=Aspiradoras">Picadoras</a></li>
             </ul>
         </li>
         <li class="has-submenu">
@@ -287,12 +287,16 @@ const atributosPorCategoria = {
     ],
     "climatizacion": [
         "Potencia (W)",
+        "Tiro balanceado",
+        "Sin salida",
+        "Dimensiones (Alt x Anc)",
         "Cantidad de velas",
         "Giratoria",
         "Potencia (Kcal)",
         "Tipo de gas",
         "Inverter",
-        "Tipo"
+        "Tipo",
+        
     ],
     "cocinas y anafes": [
         "Tipo",    
@@ -354,6 +358,7 @@ const atributosPorCategoria = {
         "Potencia (W)"
     ]
 };
+
 
 // Función para parsear el campo descripción y convertirlo en un objeto de atributos
 function parsearDescripcion(descripcion) {

@@ -96,9 +96,13 @@
 // Definición de categorías, subcategorías, carpetas y campos dinámicos
 const categoryFields = {
     "Cocinas": {
-        subcategorias: [],
-        folder: "cocinas",
-        fields: [
+        subcategorias: ["Cocinas", "Anafes"],
+        folders: {
+            "Cocinas":"cocinas",
+            "Anafes":"anafes"
+        },
+        fields: {
+            "Cocinas": [
             { label: "Tipo de uso", name: "tipo_uso", type: "select", options: ["Doméstico", "Industrial"] },
             { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "85 x 56 x 60" },
             { label: "Válvula de seguridad", name: "valvula_seguridad", type: "select", options: ["Sí", "No"] },
@@ -106,9 +110,21 @@ const categoryFields = {
             { label: "Encendido eléctrico", name: "encendido_electrico", type: "checkbox" }, // Changed to checkbox
             { label: "Timer", name: "timer", type: "checkbox" }, // New checkbox field
             { label: "Rejillas de fundición", name: "rejillas_de_fundicion", type: "checkbox" }, // New checkbox field
-            { label: "Tipo de gas", name: "tipo_gas", type: "select", options: ["Envasado", "Natural", "Multigas","Eléctrico"] },
+            { label: "Tipo", name: "tipo_de_alimentacion", type: "select", options: ["Envasado", "Natural", "Multigas","Eléctrico"] },
+            { label: "Cantidad de hornallas", name: "cantidad_hornallas", type: "text", placeholder: "4" },
             { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase A", "Clase B", "Clase C"] }
-        ]
+            ],
+            "Anafes": [
+            { label: "Material de superficie", name: "material_superficie", type: "select", options: ["Vitrocerámico", "Inducción", "Chapa pintada al polvo","Gas"] },
+            { label: "Cantidad de hornallas", name: "cantidad_hornallas", type: "text", placeholder: "4" },
+            { label: "Dimensiones (Anc x Pro)", name: "dimensiones", type: "text", placeholder: "60 x 55" },
+            { label: "Encendido eléctrico", name: "encendido_electrico", type: "checkbox" }, // Changed to checkbox
+            { label: "Timer", name: "timer", type: "checkbox" }, // New checkbox field
+            { label: "Rejillas de fundición", name: "rejillas_de_fundicion", type: "checkbox" }, // New checkbox field
+            { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase A", "Clase B", "Clase C"] }
+
+            ]
+            }
     },
     "Heladeras": {
         subcategorias: [],
@@ -191,18 +207,27 @@ const categoryFields = {
         }
     },
     "Climatización": {
-        subcategorias: ["Calefacción", "Ventilación", "Aires Acondicionados"],
+        subcategorias: ["Calefacción a gas", "Calefacción eléctrica", "Ventilación", "Aires Acondicionados"],
         folders: {
-            "Calefacción": "calefaccion",
+            "Calefacción a gas": "calefaccion a gas",
+            "Calefacción eléctrica": "calefaccion eléctrica",
             "Ventilación": "ventilacion",
             "Aires Acondicionados": "aires_acondicionados"
         },
         fields: {
-            "Calefacción": [
+            "Calefacción a gas": [
+                { label: "Dimensiones (Alt x Anc)", name: "dimensiones", type: "text", placeholder: "63cm x 50cm" },
+                { label: "Tiro balanceado", name: "tiro_balanceado", type: "checkbox" }, // Changed to checkbox
+                { label: "Sin salida", name: "sin_salida", type: "checkbox" }, // Changed to checkbox
+                { label: "Potencia (Kcal)", name: "potencia", type: "text", placeholder: "2000" },
+                { label: "Tipo de gas", name: "tipo_de_gas", type: "select", options: ["Gas natural", "Multigas", "Gas envasado" ] },
+            ],
+            "Calefacción eléctrica": [
                 { label: "Tipo", name: "tipo", type: "select", options: ["Estufa", "Radiador", "Calefactor"] },
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
-                { label: "Área de cobertura (m²)", name: "cobertura", type: "text", placeholder: "20" }
+                { label: "Termostato", name: "termostato", type: "checkbox" }, // Changed to checkbox
             ],
+
             "Ventilación": [
                 { label: "Tipo", name: "tipo", type: "select", options: ["Ventilador de pie", "Ventilador de mesa", "Ventilador de pared"] },
                 { label: "Diámetro (cm)", name: "diametro", type: "text", placeholder: "40" },
@@ -304,7 +329,7 @@ const categoryFields = {
         }
     },
     "Pequeños": {
-        subcategorias: ["Batidoras", "Licuadoras", "Multiprocesadoras", "Mixers", "Pavas eléctricas", "Cafeteras", "Tostadoras", "Sandwicheras", "Exprimidores y Jugueras", "Picadoras"],
+        subcategorias: ["Batidoras", "Licuadoras", "Multiprocesadoras", "Mixers", "Pavas eléctricas", "Cafeteras", "Tostadoras", "Sandwicheras", "Exprimidores y Jugueras", "Picadoras", "Aspiradoras"],
         folders: {
             "Batidoras": "Batidoras",
             "Licuadoras": "licuadoras",
@@ -315,7 +340,8 @@ const categoryFields = {
             "Tostadoras": "tostadoras",
             "Sandwicheras": "sandwicheras",
             "Exprimidores y Jugueras": "exprimidores_jugueras",
-            "Picadoras": "picadoras"
+            "Picadoras": "picadoras",
+            "Aspiradoras": "aspiradoras"
         },
         fields: {
             "Batidoras": [
@@ -375,6 +401,13 @@ const categoryFields = {
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "500" },
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1" },
                 { label: "Cuchillas desmontables", name: "cuchillas", type: "select", options: ["Sí", "No"] }
+            ],
+            "Aspiradoras": [
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "500" },
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "2,5" },
+                { label: "Apto líquido", name: "apto_liquido", type: "checkbox" }, // New checkbox field
+                { label: "Bolsa", name: "bolsa", type: "select", options: ["Sí", "No"] },
+                { label: "Tipo de alimentación", name: "tipo_alimentacion", type: "select", options: ["Corriente eléctica", "Batería"] }
             ]
         }
     },
@@ -403,6 +436,8 @@ const categoryFields = {
             ]
         }
     }
+    
+
 };
 
 // Autenticación simple
