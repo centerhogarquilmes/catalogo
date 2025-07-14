@@ -27,6 +27,8 @@ const productosDestacados = [
     "2075453", //LIBERADO Zte Blade V60 8/256GB 6.72" 4G (Z2356-FAL)
     "2074797", //LIBERADO Noblex N62 6.5" 4/64GB Negro
     "2074907", //LIBERADO Noblex N52 6.5" 2/64GB Negro
+    "2075428", //Tablet Enova 10" Wifi 2/32gb 2+5mp android 13
+ 
 
 
 
