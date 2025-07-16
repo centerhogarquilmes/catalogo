@@ -62,10 +62,11 @@
             <nav class="nav-menu" id="nav-menu">
     <ul>
         <li class="has-submenu">
-            <a href="categoria.html?nombre=Cocinas y anafes">Cocinas y<br>anafes</a>
+            <a href="categoria.html?nombre=Cocinas, anafes y purificadores">Cocina, anafes y purificadores</a>
             <ul class="submenu">
-                <li><a href="categoria.html?nombre=Cocinas y anafes&subcategoria=Cocinas">Cocinas</a></li>
-                <li><a href="categoria.html?nombre=Cocinas y anafes&subcategoria=Anafes">Anafes</a></li>
+                <li><a href="categoria.html?nombre=Cocinas, anafes y purificadores&subcategoria=Cocinas">Cocinas</a></li>
+                <li><a href="categoria.html?nombre=Cocinas, anafes y purificadores&subcategoria=Anafes">Anafes</a></li>
+                <li><a href="categoria.html?nombre=Cocinas, anafes y purificadores&subcategoria=Purificadores">Purificadores</a></li>
             </ul>
         </li>
         <li><a href="categoria.html?nombre=Heladeras">Heladeras</a></li>
@@ -131,7 +132,7 @@
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Sandwicheras">Sandwicheras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subCategoria=Exprimidores y jugueras">Exprimidores y Jugueras</a></li>
                 <li><a href="categoria.html?nombre=Pequeños&subcategoria=Picadoras">Picadoras</a></li>
-                <li><a href="categoria.html?nombre=Pequeños&subcategoria=Aspiradoras">Picadoras</a></li>
+                <li><a href="categoria.html?nombre=Pequeños&subcategoria=Aspiradoras">Aspiradoras</a></li>
             </ul>
         </li>
         <li class="has-submenu">
@@ -140,6 +141,13 @@
                 <li><a href="categoria.html?nombre=Cuidado personal&subcategoria=Planchas de pelo">Planchas de Pelo</a></li>
                 <li><a href="categoria.html?nombre=Cuidado personal&subcategoria=Secadores de pelo">Secadores de Pelo</a></li>
                 <li><a href="categoria.html?nombre=Cuidado personal&subcategoria=Cortadoras de pelo y barba">Cortadoras de Pelo y Barba</a></li>
+            </ul>
+        </li>
+        <li class="has-submenu">
+            <a href="categoria.html?nombre=Jardín y tiempo libre">Jardín y tiempo libre</a>
+            <ul class="submenu">
+                <li><a href="categoria.html?nombre=Jardín y tiempo libre&Jardín">Jardín</a></li>
+                <li><a href="categoria.html?nombre=Jardín y tiempo libre&subcategoria=Bicicletas">Bicicletas</a></li>
             </ul>
         </li>
     </ul>
@@ -152,37 +160,37 @@
         <section class="catalog">
             <div class="search-container">
                 <div class="filter-panel">
-    <button class="filter-toggle" aria-label="Abrir filtros">Filtros ☰</button>
-    <div class="filters" id="filters">
-        <h3>Filtros</h3>
-        <!-- Filtro de marca -->
-        <div class="filter-group collapsible-filter">
-            <h4 class="collapsible-header">Marca</h4>
-            <div class="collapsible-content">
-                <!-- Opciones de marcas generadas dinámicamente -->
-            </div>
-        </div>
-        <!-- Filtro de ordenamiento por precio -->
-        <div class="filter-group collapsible-filter">
-            <h4 class="collapsible-header">Ordenar por precio</h4>
-            <div class="collapsible-content">
-                <label class="filter-option">
-                    <input type="radio" name="filter-orden-precio" value="menor-a-mayor" class="filter-radio"> Menor a Mayor
-                </label>
-                <label class="filter-option">
-                    <input type="radio" name="filter-orden-precio" value="mayor-a-menor" class="filter-radio"> Mayor a Menor
-                </label>
-            </div>
-        </div>
-        <!-- Filtros dinámicos -->
-        <div id="dynamic-filters">
-            <!-- Filtros dinámicos se generan aquí -->
-        </div>
-        <div class="filter-buttons">
-            <button class="clear-filters buy-btn">Limpiar</button>
-        </div>
-    </div>
-</div>
+                    <button class="filter-toggle" aria-label="Abrir filtros">Filtros ☰</button>
+                        <div class="filters" id="filters">
+                            <h3>Filtros</h3>
+                                <!-- Filtro de marca -->
+                                <div class="filter-group collapsible-filter">
+                                    <h4 class="collapsible-header">Marca</h4>
+                                        <div class="collapsible-content">
+                                        <!-- Opciones de marcas generadas dinámicamente -->
+                                        </div>
+                                </div>
+                                <!-- Filtro de ordenamiento por precio -->
+                                <div class="filter-group collapsible-filter">
+                                    <h4 class="collapsible-header">Ordenar por precio</h4>
+                                        <div class="collapsible-content">
+                                            <label class="filter-option">
+                                                <input type="radio" name="filter-orden-precio" value="menor-a-mayor" class="filter-radio"> Menor a Mayor
+                                            </label>
+                                            <label class="filter-option">
+                                                <input type="radio" name="filter-orden-precio" value="mayor-a-menor" class="filter-radio"> Mayor a Menor
+                                            </label>
+                                        </div>
+                                </div>
+                                <!-- Filtros dinámicos -->
+                                <div id="dynamic-filters">
+                                <!-- Filtros dinámicos se generan aquí -->
+                                </div>
+                                <div class="filter-buttons">
+                                    <button class="clear-filters buy-btn">Limpiar</button>
+                                </div>
+                        </div>
+                    </div>
                 <div class="results">
                     <h2 id="category-title">Productos</h2>
                         <div class="view-toggle" id="view-toggle">
@@ -298,7 +306,7 @@ const atributosPorCategoria = {
         "Tipo",
         
     ],
-    "cocinas y anafes": [
+    "cocinas, anafes y purificadores": [
         "Tipo",    
         "Tipo de uso",
         "Dimensiones",
@@ -321,12 +329,13 @@ const atributosPorCategoria = {
         "Eficiencia energética"
     ],
     "hornos, microondas y freidoras": [
+        "Capacidad (Litros)",
         "Convector",
         "Anafes",
         "Spiedo",
         "Grill",
-        "Capacidad (litros)",
-        "Potencia (W)"
+        "Potencia (W)",
+        
     ],
     "termotanques y calefones": [
         "Tipo",

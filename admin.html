@@ -95,11 +95,12 @@
     <script>
 // Definición de categorías, subcategorías, carpetas y campos dinámicos
 const categoryFields = {
-    "Cocinas": {
-        subcategorias: ["Cocinas", "Anafes"],
+    "Cocinas, anafes y purificadores": {
+        subcategorias: ["Cocinas", "Anafes", "Purificadores"],
         folders: {
             "Cocinas":"cocinas",
-            "Anafes":"anafes"
+            "Anafes":"anafes",
+            "Purificadores": "purificadores"
         },
         fields: {
             "Cocinas": [
@@ -122,7 +123,14 @@ const categoryFields = {
             { label: "Timer", name: "timer", type: "checkbox" }, // New checkbox field
             { label: "Rejillas de fundición", name: "rejillas_de_fundicion", type: "checkbox" }, // New checkbox field
             { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase A", "Clase B", "Clase C"] }
+            ],
 
+            "Purificadores": [
+            { label: "Color", name: "color", type: "select", options: ["Blanco", "Acero", "Negro"] },
+            { label: "Funciones", name: "funciones", type: "select", options: ["Purificador y extractor", "Purificador", "Extractor"] },
+            { label: "Cantidad de motores", name: "cantidad_motores", type: "select", options: ["1", "2"] },
+            { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "60 x 55" },
+            { label: "Luz", name: "luz", type: "checkbox" }, // New checkbox field
             ]
             }
     },
@@ -266,7 +274,7 @@ const categoryFields = {
             "Secarropas": [
                 { label: "Capacidad (kg)", name: "capacidad", type: "text", placeholder: "7" },
                 { label: "Tipo de secado", name: "tipo_secado", type: "select", options: ["Centrifugado", "Calor"] },
-                { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+                { label: "Velocidad de centrifugado (RPM)", name: "centrifugado", type: "text", placeholder: "2800" },
             ],
             "Planchas": [
                 { label: "Tipo", name: "tipo", type: "select", options: ["Plancha a vapor", "Plancha en seco"] },
@@ -435,7 +443,36 @@ const categoryFields = {
                 { label: "Cuchillas", name: "cuchillas", type: "text", placeholder: "Acero inoxidable" }
             ]
         }
-    }
+    },
+        "Jardín y espacio libre": {
+        subcategorias: ["Jardín", "Bicicletas"],
+        folders: {
+            "Jardín":"jardín",
+            "Bicicletas":"bicicletas"
+        },
+        fields: {
+            "Jardín": [
+            { label: "Tipo de uso", name: "tipo_uso", type: "select", options: ["Cortadora de césped eléctrica", "Cortadora de césped nafta", "Bordeadora eléctrica", "Desmalezadora"] },
+            { label: "Potencia (HP)", name: "potencia", type: "text", placeholder: "3/4" },
+            { label: "Cilindrada", name: "cilindrada", type: "text", placeholder: "35cc" },
+            { label: "Eléctrica", name: "electrica", type: "checkbox" }, // Changed to checkbox
+            { label: "Nafta", name: "nafta", type: "checkbox" }, // Changed to checkbox
+            { label: "Bolsa recolectora", name: "bolsa_recolectora", type: "checkbox" }, // Changed to checkbox
+            
+            ],
+            "Bicicletas": [
+            { label: "Estilo", name: "estilo", type: "select", options: ["Touring", "Mountain Bike", "BMX", "Playera"] },
+            { label: "Material", name: "material", type: "text", placeholder: "Material" },
+            { label: "Rodado", name: "rodado", type: "text", placeholder: "Rodado" },
+            { label: "Tipo de frenos", name: "tipo_de_frenos", type: "select", options: ["V Brake", "Disco", "Contrapedal"] },
+            { label: "Canasto", name: "canasto", type: "checkbox" }, // Changed to checkbox
+            { label: "Portaequipaje", name: "portaequipaje", type: "checkbox" }, // New checkbox field
+            
+
+            ]
+            }
+    },
+    
     
 
 };

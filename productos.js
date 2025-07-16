@@ -38,7 +38,7 @@ const productos = [
 
     /////---------- Cocinas ----------/////
     {
-        categoria: "Cocinas y anafes",
+        categoria: "Cocinas, anafes y purificadores",
         subcategoria: "Cocinas",
         nombre: "Cocina Escorial Candor gn Blanca",
         imagen: "images/cocinas/cocina_escorial_candor.webp",
@@ -52,7 +52,7 @@ const productos = [
         caracteristicas: ["Marca: Escorial", "Modelo: Candor", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Escorial Candor ge Blanca',
     imagen: "images/cocinas/Cocina_Escorial_Candor_ge_Blanca_1.webp",
@@ -71,7 +71,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Florencia 5507F 3 Hornallas",
     imagen: "images/cocinas/Cocina_Florencia_5507F_3_Hornallas_1.webp",
@@ -86,7 +86,7 @@ const productos = [
     caracteristicas: ["Marca: Florencia", "Modelo: 5507F", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Escorial Master S2 Classic gn Negra",
     imagen: "images/cocinas/Cocina_Escorial_Master_S2_Classic_gn_Negra_1.webp",
@@ -101,7 +101,7 @@ const productos = [
     caracteristicas: ["Marca: Escorial", "Modelo: 5507F", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Escorial Candor Black gn",
     imagen: "images/cocinas/cocina_candor_negra.jpg",
@@ -118,7 +118,7 @@ const productos = [
     caracteristicas: ["Marca: Escorial", "Modelo: Candor Black", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Escorial Master Classic gn Blanca",
     imagen: "images/cocinas/cocina_escorial_master_classic.jpg",
@@ -134,7 +134,7 @@ const productos = [
     caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Escorial Palace Cristal Blanca LX gn",
     imagen: "images/cocinas/cocina-escorial-palace-cristal-lx-gn.jpg",
@@ -147,7 +147,7 @@ const productos = [
     caracteristicas: ["Marca: Escorial", "Modelo: PALACE CRISTAL", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Escorial Master Classic ge Inox",
     imagen: "images/cocinas/cocina-escorial-master-classic-ge-inox.jpg",
@@ -163,7 +163,7 @@ const productos = [
     caracteristicas: ["Marca: Escorial", "Modelo: Master Classic", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Florencia 5518F - Inox.",
     imagen: "images/cocinas/Cocina_Florencia_5518F _Inox_1.webp",
@@ -178,7 +178,7 @@ const productos = [
     caracteristicas: ["Marca: Florencia", "Modelo: 5518F", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Escorial Master Style Multigas Bca.",
     imagen: "images/cocinas/cocina-escorial-master-style-multigas-bca.jpg",
@@ -193,7 +193,7 @@ const productos = [
     caracteristicas: ["Marca: Escorial", "Modelo: Master Style", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Volcan 87643 55cm 4 horn. Blanca luz-enc.elec",
     imagen: "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
@@ -205,7 +205,7 @@ const productos = [
     caracteristicas: ["Marca: Volcan", "Modelo: 87643", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Volcan 87644 55cm 4 horn. Blanca sin luz",
     imagen: "images/cocinas/Cocina_Volcan_87644_55cm_4_horn_Blanca_sin_luz.webp",
@@ -217,7 +217,7 @@ const productos = [
     caracteristicas: ["Marca: Volcan", "Modelo: 87644", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Volcan 87673 55cm 4 horn. inox",
     imagen: "images/cocinas/Cocina Volcan 87673 55cm 4 horn inox 1.jpg",
@@ -232,7 +232,7 @@ const productos = [
     caracteristicas: ["Marca: Volcan", "Modelo: 87673", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Morelli Industrial Saho Kuro 550 p/v-r/a 180001",
     imagen: "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_180001.webp",
@@ -247,7 +247,7 @@ const productos = [
     caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Morelli Industrial Jitaku/saho 820 18062 5 horn. inox",
     imagen: "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox.webp",
@@ -262,7 +262,7 @@ const productos = [
     caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 5417/5517 FEL negra',
     imagen: "images/cocinas/Cocina_Florencia _5417_5517_FEL_facil_limpieza_negra_1.webp",
@@ -280,7 +280,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Escorial PALACE CRISTAL Negra LX GE',
     imagen: "images/cocinas/Cocina_Escorial_PALACE_CRISTAL_Negra_LX_GE_1.webp",
@@ -299,7 +299,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 5538F Inox c/ enc.',
     imagen: "images/cocinas/Cocina_Florencia_5538F_Inox_c_enc_1.webp",
@@ -321,7 +321,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Morelli Industrial Zafira 600',
     imagen: "images/cocinas/cocina_morelli_industrial_zafira_600_1.webp",
@@ -344,7 +344,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Morelli Industrial Zafira 550',
     imagen: "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_1.webp",
@@ -362,7 +362,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Morelli 550 Saho 18045 acero inox',
     imagen: "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_1.webp",
@@ -380,7 +380,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 8638 E Eléctrica c/anafe 3 focos Inox',
     imagen: "images/cocinas/Cocina_Florencia_8638_E_Electrica_c_anafe_3_focos_Inox_1.webp",
@@ -400,7 +400,7 @@ const productos = [
     ]
 },
 {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Usman Industrial Carli/Plancha Doble Horno R/A P/C 4449',
     imagen: "images/cocinas/Cocina_Usman_Industrial_Carli_Plancha_Doble_Horno_R_A_P_C_4449_1.webp",
@@ -416,7 +416,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Kanji eléctrica negra 4 anafes 50x50x89 1300/1500w',
     imagen: "images/cocinas/Cocina_Kanji_electrica_negra_4_anafes_50x50x89_1300_1500w_1.webp",
@@ -438,7 +438,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Florencia 5416F/5516F',
     imagen: "images/cocinas/Cocina_Florencia_5416F_5516F_1.webp",
@@ -458,7 +458,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Morelli Industrial 550 Ex Acero 16374 Multigrill',
     imagen: "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_1.webp",
@@ -477,7 +477,7 @@ const productos = [
     ]
 },
  {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: 'Cocina Volcan 87679 MG 55cm inox s/lux',
     imagen: "images/cocinas/Cocina_Volcan_87679_MG_55cm_inox_s_lux_1.webp",
@@ -501,7 +501,7 @@ const productos = [
     /////---------- Anafes ----------/////
 
 {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Anafes",
     nombre: 'Anafe Florencia 6747N a gas Negro rejilla fundicion',
     imagen: "images/anafes/Anafe_Florencia_6747N_a_gas_Negro_rejilla_fundicion_1.webp",
@@ -519,7 +519,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Anafes",
     nombre: 'Anafe Florencia 6889F Elec. a Induccion Magnetica 4 focos',
     imagen: "images/anafes/Anafe_Florencia_6889F_Elec_a_Induccion_Magnetica_4_focos_1.webp",
@@ -535,7 +535,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Anafes",
     nombre: 'Anafe Westinghouse  WH-HP2200SSD/STD Electrico 2 hornallas',
     imagen: "images/anafes/Anafe_Westinghouse _WH-HP2200SSD_STD_Electrico_2_hornallas_1.webp",
@@ -552,7 +552,7 @@ const productos = [
     ]
 },
  {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Anafes",
     nombre: 'Anafe Kanji HP1000BDD Electrico 1 hornalla Negro',
     imagen: "images/anafes/Anafe_Kanji_HP1000BDD_Electrico_1_hornalla_Negro_1.webp",
@@ -572,7 +572,7 @@ const productos = [
     ]
 },
 {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Anafes",
     nombre: 'Anafe Kanji KJB-EH4GL001 Vitro Emp. 4 hornallas Negro',
     imagen: "images/anafes/Anafe_Kanji_KJB_EH4GL001_Vitro_Emp_4_hornallas_Negro_1.webp",
@@ -594,7 +594,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Cocinas y anafes",
+    categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Anafes",
     nombre: 'Anafe Kanji KJH-HP2200BDD Electrico 2 hornallas Negro',
     imagen: "images/anafes/Anafe_Kanji_KJH_HP2200BDD_Electrico_2_hornallas_Negro_1.webp",
@@ -5551,6 +5551,86 @@ const productos = [
     caracteristicas: [
         "Marca: Daewoo",
         "Modelo: 2075389",
+        "Garantía: 1 año"
+    ]
+},
+{
+    categoria: "Jardín y tiempo libre",
+    subcategoria: "Jardín",
+    nombre: 'Cort. Cesped Kawi ECOR 350  PLASTICO 1/2 HP',
+    imagen: "images/jardín/Cort_Cesped_Kawi_ECOR_350_PLASTICO_1_2_HP_1.webp",
+    imagenes: [
+        "images/jardín/Cort_Cesped_Kawi_ECOR_350_PLASTICO_1_2_HP_1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Cortadora de césped eléctrica\n<strong>Potencia (HP):</strong> 1/2\n<strong>Eléctrica:</strong> Sí\n<strong>Bolsa recolectora:</strong> Sí',
+    codigo: "12638",
+    caracteristicas: [
+        "Marca: Kawi",
+        "Modelo: 12638",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Jardín y tiempo libre",
+    subcategoria: "Jardín",
+    nombre: 'Cort. Cesped Kawi ECOR 370 Plastico 3/4 HP',
+    imagen: "images/jardín/Cort_Cesped_Kawi_ECOR_370_Plastico_3_4_HP_1.webp",
+    imagenes: [
+        "images/jardín/Cort_Cesped_Kawi_ECOR_370_Plastico_3_4_HP_1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Cortadora de césped eléctrica\n<strong>Potencia (HP):</strong> 3/4\n<strong>Eléctrica:</strong> Sí\n<strong>Bolsa recolectora:</strong> Sí',
+    codigo: "12639",
+    caracteristicas: [
+        "Marca: Kawi",
+        "Modelo: 12639",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Purificadores",
+    nombre: 'Purific. Spar 3776 ancho 60cm 2 motores 3v Bios Duo',
+    imagen: "images/purificadores/Purific_Spar_3776_ancho_60cm_2_motores_3v_Bios_Duo_1.webp",
+    imagenes: [
+        "images/purificadores/Purific_Spar_3776_ancho_60cm_2_motores_3v_Bios_Duo_1.webp"
+    ],
+    descripcion: '<strong>Color:</strong> Blanco\n<strong>Funciones:</strong> Purificador y extractor\n<strong>Cantidad de motores:</strong> 2\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 15 x 60 x 52.5\n<strong>Luz:</strong> Sí',
+    codigo: "12662",
+    caracteristicas: [
+        "Marca: Spar",
+        "Modelo: 12662",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Orbis 315 BLO btra s/enc. 14l. bl. gn',
+    imagen: "images/calefones/Calefon_Orbis_315_BLO_btra_s_enc_14l_bl_gn_1.webp",
+    imagenes: [
+        "images/calefones/Calefon_Orbis_315_BLO_btra_s_enc_14l_bl_gn_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 14\n<strong>Tiraje:</strong> Tiro natural',
+    codigo: "14021",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 14021",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Volcan 315 BFV 14lts',
+    imagen: "images/calefones/Calefon_Volcan_315_BFV_14lts_1.webp",
+    imagenes: [
+        "images/calefones/Calefon_Volcan_315_BFV_14lts_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 14\n<strong>Tiraje:</strong> Tiro natural',
+    codigo: "14550",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 14550",
         "Garantía: 1 año"
     ]
 },
