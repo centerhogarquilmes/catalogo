@@ -4818,7 +4818,7 @@ const productos = [
         "images/termotanques/Termot_Sherman_55_electrico_colgar_carga_inferior_1.webp",
         "images/termotanques/Termot_Sherman_55_electrico_colgar_carga_inferior_2.webp"
     ],
-    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 78 x 45,1\n<strong>Capacidad (Litros):</strong> 55\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase C',
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 54 x 45,1\n<strong>Capacidad (Litros):</strong> 55\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase C',
     codigo: "20920",
     caracteristicas: [
         "Marca: Sherman",
@@ -5555,7 +5555,7 @@ const productos = [
     ]
 },
 {
-    categoria: "Jardín y tiempo libre",
+    categoria: "Hogar, jardín y tiempo libre",
     subcategoria: "Jardín",
     nombre: 'Cort. Cesped Kawi ECOR 350  PLASTICO 1/2 HP',
     imagen: "images/jardín/Cort_Cesped_Kawi_ECOR_350_PLASTICO_1_2_HP_1.webp",
@@ -5571,7 +5571,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Jardín y tiempo libre",
+    categoria: "Hogar, jardín y tiempo libre",
     subcategoria: "Jardín",
     nombre: 'Cort. Cesped Kawi ECOR 370 Plastico 3/4 HP',
     imagen: "images/jardín/Cort_Cesped_Kawi_ECOR_370_Plastico_3_4_HP_1.webp",
@@ -5634,7 +5634,138 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
-   
+
+
+
+
+
+
+
+
+            ////// 18 07 20 25/////
+   {
+    categoria: "Hogar, jardín y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. Lucky 190x80x17',
+    imagen: "images/colchones/Colchon_Suav_Lucky_190_80_17_1.webp",
+    imagenes: [
+        "images/colchones/Colchon_Suav_Lucky_190_80_17_1.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 1\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 80 x 17\n<strong>Espuma:</strong> Sí',
+    codigo: "14177",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 14177",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Volcan 315 BRV c/enc. 14lts',
+    imagen: "images/calefones/Calefon_Volcan_315_BRV_c_enc_14lts_1.webp",
+    imagenes: [
+        "images/calefones/Calefon_Volcan_315_BRV_c_enc_14lts_1.webp",
+        "images/calefones/Calefon_Volcan_315_BRV_c_enc_14lts_2.webp"
+    ],
+    descripcion: '<strong>Capacidad (L/h):</strong> 14\n<strong>Tiraje:</strong> Tiro natural\n<strong>Tipo de encendido:</strong> Piezoeléctrico\n<strong>Tipo de control:</strong> Perilla\n<strong>Conexiones de agua:</strong> Carga inferior\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "14551",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 14551",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, jardín y tiempo libre",
+    subcategoria: "Almohadas",
+    nombre: 'Almohada Suav. TNT  70X40',
+    imagen: "images/almohadas/Almohada_Suav_TNT_70_40_1.webp",
+    imagenes: [
+        "images/almohadas/Almohada_Suav_TNT_70_40_1.webp"
+    ],
+    descripcion: '<strong>Materiales del relleno:</strong> Fibra de poliéster\n<strong>Dimensiones (Largo x Ancho x Espesor):</strong> 70 x 14 x 40',
+    codigo: "17167",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 17167",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefacción a gas",
+    nombre: 'Calefactor Eskabe S21 T/B 2.0 Aroma Marfil',
+    imagen: "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_1.webp",
+    imagenes: [
+        "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_1.webp",
+        "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_2.webp",
+        "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_3.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc):</strong> 50 x 34,6\n<strong>Tiro balanceado:</strong> Sí\n<strong>Potencia (Kcal):</strong> 2000\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "17799",
+    caracteristicas: [
+        "Marca: Eskabe",
+        "Modelo: 17799",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Universal CU 146 14 lts.24521 ge  s/enc. c/sensor',
+    imagen: "images/calefones/Calefon_Universal_CU_146_14_lts_24521_ge_s_enc_c_sensor_1.webp",
+    imagenes: [
+        "images/calefones/Calefon_Universal_CU_146_14_lts_24521_ge_s_enc_c_sensor_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (L/h):</strong> 14\n<strong>Tiraje:</strong> Tiro natural\n<strong>Tipo de gas:</strong> Gas envasado\n<strong>Tipo de encendido:</strong> Manual\n<strong>Tipo de control:</strong> Perilla\n<strong>Conexiones de agua:</strong> Carga inferior\n<strong>Eficiencia energética:</strong> Clase E',
+    codigo: "18353",
+    caracteristicas: [
+        "Marca: Universal",
+        "Modelo: 18353",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, jardín y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. EXTRA TM 190x80x18 esp.',
+    imagen: "images/colchones/Colchon_Suav_EXTRA_TM_190_80_18_esp_1.webp",
+    imagenes: [
+        "images/colchones/Colchon_Suav_EXTRA_TM_190_80_18_esp_1.webp",
+        "images/colchones/Colchon_Suav_EXTRA_TM_190_80_18_esp_2.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 1\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 80 x 18\n<strong>Espuma:</strong> Sí',
+    codigo: "18799",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 18799",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, jardín y tiempo libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Futura Paseo R26 Dama Acero 3577 Country Full City Cruiser c/Canasto y Portaequipaje',
+    imagen: "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_1.webp",
+    imagenes: [
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_1.webp",
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_2.webp",
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_3.webp",
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_4.webp",
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_5.webp",
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_6.webp",
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_7.webp",
+        "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_8.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Touring\n<strong>Material:</strong> Acero\n<strong>Rodado:</strong> 26\n<strong>Tipo de frenos:</strong> V Brake\n<strong>Canasto:</strong> Sí\n<strong>Portaequipaje:</strong> Sí',
+    codigo: "19402",
+    caracteristicas: [
+        "Marca: Futura",
+        "Modelo: 19402",
+        "Garantía: 1 año"
+    ]
+},
     
     
     
