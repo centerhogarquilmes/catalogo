@@ -3405,3 +3405,29 @@ font-size: 1rem;
     font-size: 16px;
     line-height: 1;
 }
+
+/* Estilos para la sección de video */
+.video-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.video-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.video-container {
+    max-width: 800px; /* Ajusta el ancho máximo según el diseño */
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
+}
