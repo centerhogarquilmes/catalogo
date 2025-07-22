@@ -5478,10 +5478,10 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefacción a gas",
     nombre: 'Calefactor Volcan 4000 43512/43516 Gris Sin salida',
-    imagen: "images/calefaccion a gas/Calefactor_Volcan_4000_43512_43516_Gris_Sin_salida_1.webp",
+    imagen: "images/calefactor_a_gas/Calefactor_Volcan_4000_43512_43516_Gris_Sin_salida_1.webp",
     imagenes: [
-        "images/calefaccion a gas/Calefactor_Volcan_4000_43512_43516_Gris_Sin_salida_1.webp",
-        "images/calefaccion a gas/Calefactor_Volcan_4000_43512_43516_Gris_Sin_salida_2.webp"
+        "images/calefactor_a_gas/Calefactor_Volcan_4000_43512_43516_Gris_Sin_salida_1.webp",
+        "images/calefactor_a_gas/Calefactor_Volcan_4000_43512_43516_Gris_Sin_salida_2.webp"
     ],
     descripcion: '<strong>Dimensiones (Alt x Anc):</strong> 63 x 50\n<strong>Sin salida:</strong> Sí\n<strong>Potencia (Kcal):</strong> 4000\n<strong>Tipo de gas:</strong> Gas natural',
     codigo: "14555",
@@ -5696,11 +5696,11 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefacción a gas",
     nombre: 'Calefactor Eskabe S21 T/B 2.0 Aroma Marfil',
-    imagen: "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_1.webp",
+    imagen: "images/calefactor_a_gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_1.webp",
     imagenes: [
-        "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_1.webp",
-        "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_2.webp",
-        "images/calefaccion a gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_3.webp"
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_1.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_2.webp",
+        "images/calefactor_a_gas/Calefactor_Eskabe_S21_T_B_2_0_Aroma_Marfil_3.webp"
     ],
     descripcion: '<strong>Dimensiones (Alt x Anc):</strong> 50 x 34,6\n<strong>Tiro balanceado:</strong> Sí\n<strong>Potencia (Kcal):</strong> 2000\n<strong>Tipo de gas:</strong> Multigas',
     codigo: "17799",
