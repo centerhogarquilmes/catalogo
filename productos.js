@@ -242,7 +242,7 @@ const productos = [
         "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800013.webp",
         "images/cocinas/Cocina_Morelli_Industrial_Saho_Kuro_550_1800014.webp",
     ],
-    descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
     codigo: "2074224",
     caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
@@ -257,7 +257,7 @@ const productos = [
         "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox3.webp",
         "images/cocinas/Cocina_Morelli_Industrial_Jitaku_saho_820_18062_5_horn_puerta_vidrio_82_cm_acero_inox4.webp",
     ],
-    descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
+    descripcion: "<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones:</strong> 86 x 82 x 58\n<strong>Hornallas:</strong> 5\n<strong>Material:</strong> Acero Inoxidable\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A",
     codigo: "2073292",
     caracteristicas: ["Marca: Morelli", "Modelo: Saho Kuro 550", "Garantía: 1 año"]
     },
@@ -335,7 +335,7 @@ const productos = [
         "images/cocinas/cocina_morelli_industrial_zafira_600_7.webp",
         "images/cocinas/cocina_morelli_industrial_zafira_600_8.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 60 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 60 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072699",
     caracteristicas: [
         "Marca: Morelli",
@@ -353,7 +353,7 @@ const productos = [
         "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_2.webp",
         "images/cocinas/Cocina_Morelli_Industrial_Zafira_550_3.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072700",
     caracteristicas: [
         "Marca: Morelli",
@@ -371,7 +371,7 @@ const productos = [
         "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_2.webp",
         "images/cocinas/Cocina_Morelli_550_Saho_18045_acero_inox_3.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2072962",
     caracteristicas: [
         "Marca: Morelli",
@@ -407,7 +407,7 @@ const productos = [
     imagenes: [
         "images/cocinas/Cocina_Usman_Industrial_Carli_Plancha_Doble_Horno_R_A_P_C_4449_1.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 85 62\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 85 62\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2074513",
     caracteristicas: [
         "Marca: Usman",
@@ -468,7 +468,7 @@ const productos = [
         "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_3.webp",
         "images/cocinas/Cocina_Morelli_Industrial_550_Ex_Acero_16374_Multigrill_4.webp"
     ],
-    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 56 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Tipo de gas:</strong> Multigas\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2075406",
     caracteristicas: [
         "Marca: Morelli",
@@ -5766,12 +5766,458 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
-    
-    
-    
-   
-   
-    
+{
+    categoria: "Cuidado Personal",
+    subcategoria: "Cortadoras de Pelo y Barba",
+    nombre: 'Corta Pelo Westinghouse WHHCL603',
+    imagen: "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL603_1.webp",
+    imagenes: [
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL603_1.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL603_2.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL603_3.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL603_4.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL603_5.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL603_6.webp"
+    ],
+    descripcion: '<strong>Apto pelo:</strong> Sí\n<strong>Apto barba:</strong> Sí\n<strong>Potencia (W):</strong> 5\n<strong>Autonomía (min):</strong> 120\n<strong>Inalámbrica:</strong> Sí\n<strong>Peines guía:</strong> 3 a 12mm',
+    codigo: "2074526",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2074526",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Cortadoras de Pelo y Barba",
+    nombre: 'Corta Pelo Westinghouse WHHCL908',
+    imagen: "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL908_1.webp",
+    imagenes: [
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL908_1.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL908_2.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL908_3.webp",
+        "images/cortadoras_pelo_barba/Corta_Pelo_Westinghouse_WHHCL908_4.webp"
+    ],
+    descripcion: '<strong>Apto pelo:</strong> Sí\n<strong>Potencia (W):</strong> 9\n<strong>Peines guía:</strong> 3 a 12mm',
+    codigo: "2073402",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2073402",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Exprimidores y Jugueras",
+    nombre: 'Exprimidor Ultracomb EX 2302 25 wts',
+    imagen: "images/exprimidores_jugueras/Exprimidor_Ultracomb_EX_2302_25_wts_1.webp",
+    imagenes: [
+        "images/exprimidores_jugueras/Exprimidor_Ultracomb_EX_2302_25_wts_1.webp",
+        "images/exprimidores_jugueras/Exprimidor_Ultracomb_EX_2302_25_wts_2.webp",
+        "images/exprimidores_jugueras/Exprimidor_Ultracomb_EX_2302_25_wts_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 25\n<strong>Capacidad (Litros):</strong> 500ml\n<strong>Tipo:</strong> Exprimidor',
+    codigo: "2072616",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2072616",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, jardín y tiempo libre",
+    subcategoria: "Almohadas",
+    nombre: 'Almohada Suav. Bienestar Fibra 70x40',
+    imagen: "images/almohadas/Almohada_Suav_Bienestar_Fibra_70_40_1.webp",
+    imagenes: [
+        "images/almohadas/Almohada_Suav_Bienestar_Fibra_70_40_1.webp"
+    ],
+    descripcion: '<strong>Materiales del relleno:</strong> Fibra de poliéster\n<strong>Dimensiones (Largo x Ancho x Espesor):</strong> 70 x 40 x 40',
+    codigo: "2074475",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2074475",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Kanji de mano  KJH-BL0300HM01W Blanca',
+    imagen: "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HM01W_Blanca_1.webp",
+    imagenes: [
+        "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HM01W_Blanca_1.webp",
+        "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HM01W_Blanca_2.webp",
+        "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HM01W_Blanca_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Velocidades:</strong> 7\n<strong>Accesorios incluidos:</strong> Amasador',
+    codigo: "2075404",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075404",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Exprimidores y Jugueras",
+    nombre: 'Exprimidor Kanji JM045 40w',
+    imagen: "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_1.webp",
+    imagenes: [
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_1.webp",
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_2.webp",
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_3.webp",
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_4.webp",
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_5.webp",
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_6.webp",
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_7.webp",
+        "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_8.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 40\n<strong>Capacidad (Litros):</strong> 700ml\n<strong>Tipo:</strong> Exprimidor',
+    codigo: "2073926",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2073926",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Palace Cristal Blanca LX ge',
+    imagen: "images/cocinas/Cocina_Escorial_Palace_Cristal_Blanca_LX_ge_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Palace_Cristal_Blanca_LX_ge_1.webp",
+        "images/cocinas/Cocina_Escorial_Palace_Cristal_Blanca_LX_ge_2.webp",
+        "images/cocinas/Cocina_Escorial_Palace_Cristal_Blanca_LX_ge_3.webp",
+        "images/cocinas/Cocina_Escorial_Palace_Cristal_Blanca_LX_ge_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 51 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo:</strong> Envasado\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "15761",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 15761",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Eslabon de lujo EFM56B/56AB/NB 56cm blanca',
+    imagen: "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_1.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_2.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_3.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_4.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_5.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_6.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_7.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_8.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_9.webp",
+        "images/cocinas/Cocina_Eslabon_de_lujo_EFM56B_56AB_NB_56cm_blanca_10.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 61\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "19180",
+    caracteristicas: [
+        "Marca: Eslabon de lujo",
+        "Modelo: 19180",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Irina 900 Acero Pta Visor 3230',
+    imagen: "images/cocinas/Cocina_Usman_Industrial_Irina_900_Acero_Pta_Visor_3230_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Usman_Industrial_Irina_900_Acero_Pta_Visor_3230_1.webp",
+        "images/cocinas/Cocina_Usman_Industrial_Irina_900_Acero_Pta_Visor_3230_2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 90 x 61\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 6\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2071991",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2071991",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Irina 550 Acero Pta Visor 2220',
+    imagen: "images/cocinas/Cocina_Usman_Industrial_Irina_550_Acero_Pta_Visor_2220_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Usman_Industrial_Irina_550_Acero_Pta_Visor_2220_1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 55 x 61\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072243",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2072243",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Palace Cristal Negra LX GN',
+    imagen: "images/cocinas/Cocina_Escorial_Palace_Cristal_Negra_LX_GN_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Palace_Cristal_Negra_LX_GN_1.webp",
+        "images/cocinas/Cocina_Escorial_Palace_Cristal_Negra_LX_GN_2.webp",
+        "images/cocinas/Cocina_Escorial_Palace_Cristal_Negra_LX_GN_3.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 50 x 52\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo:</strong> Natural\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072492",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2072492",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial Acero Pta visor 55cm 16045',
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_Acero_Pta_visor_55cm_16045_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_Acero_Pta_visor_55cm_16045_1.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Acero_Pta_visor_55cm_16045_2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 55 x 65\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072701",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2072701",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial Acero Pta visor 82cm 16062',
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_Acero_Pta_visor_82cm_16062_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_Acero_Pta_visor_82cm_16062_1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 82 x 61\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 5\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072702",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2072702",
+        "Garantía: 1 año"
+    ]
+},
 
+{
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial Zafira 900 Pta visor 5 hornallas 18019',
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_Zafira_900_Pta_visor_5_hornallas_18019_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_Zafira_900_Pta_visor_5_hornallas_18019_1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 X 90 X 61\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 5\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072969",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2072969",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Master Style Multigas Black',
+    imagen: "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_1.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_2.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_3.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_4.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_5.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_6.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_7.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Black_8.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 X 56 X 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073911",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2073911",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Master Style Multigas Inox',
+    imagen: "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Inox_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Inox_1.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Inox_2.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Inox_3.webp",
+        "images/cocinas/Cocina_Escorial_Master_Style_Multigas_Inox_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 61\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073912",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2073912",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Master Classic ge Blanca',
+    imagen: "images/cocinas/Cocina_Escorial_Master_Classic_ge_Blanca_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Master_Classic_ge_Blanca_1.webp",
+        "images/cocinas/Cocina_Escorial_Master_Classic_ge_Blanca_2.webp",
+        "images/cocinas/Cocina_Escorial_Master_Classic_ge_Blanca_3.webp",
+        "images/cocinas/Cocina_Escorial_Master_Classic_ge_Blanca_4.webp",
+        "images/cocinas/Cocina_Escorial_Master_Classic_ge_Blanca_5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Envasado\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073931",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2073931",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 8637F/E Electrica Vitroceramico 3 focos Negro',
+    imagen: "images/cocinas/Cocina_Florencia_8637F_E_Electrica_Vitroceramico_3_focos_Negro_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_8637F_E_Electrica_Vitroceramico_3_focos_Negro_1.webp",
+        "images/cocinas/Cocina_Florencia_8637F_E_Electrica_Vitroceramico_3_focos_Negro_2.webp",
+        "images/cocinas/Cocina_Florencia_8637F_E_Electrica_Vitroceramico_3_focos_Negro_3.webp",
+        "images/cocinas/Cocina_Florencia_8637F_E_Electrica_Vitroceramico_3_focos_Negro_4.webp",
+        "images/cocinas/Cocina_Florencia_8637F_E_Electrica_Vitroceramico_3_focos_Negro_5.webp",
+        "images/cocinas/Cocina_Florencia_8637F_E_Electrica_Vitroceramico_3_focos_Negro_6.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo:</strong> Eléctrico\n<strong>Cantidad de hornallas:</strong> 3\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074146",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2074146",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina TELEFUNKEN EKX001V Inox 50x50 electrica',
+    imagen: "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_1.webp",
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_2.webp",
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_3.webp",
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_4.webp",
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_5.webp",
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_6.webp",
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_7.webp",
+        "images/cocinas/Cocina_TELEFUNKEN_EKX001V_Inox_50x50_electrica_8.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 50 x 52\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Tipo:</strong> Eléctrico\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075478",
+    caracteristicas: [
+        "Marca: TELEFUNKEN",
+        "Modelo: 2075478",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Drean CD5602AIO 56cm inox gas',
+    imagen: "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_1.webp",
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_2.webp",
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_3.webp",
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_4.webp",
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_5.webp",
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_6.webp",
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_7.webp",
+        "images/cocinas/Cocina_Drean_CD5602AIO_56cm_inox_gas_8.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075496",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075496",
+        "Garantía: 1 año"
+    ]
+},
+
+{
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora por aire Ultracomb FR8612 3 lts 1200w',
+    imagen: "images/freidoras/Freidora_por_aire_Ultracomb_FR8612_3_lts_1200w_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_por_aire_Ultracomb_FR8612_3_lts_1200w_1.webp",
+        "images/freidoras/Freidora_por_aire_Ultracomb_FR8612_3_lts_1200w_2.webp",
+        "images/freidoras/Freidora_por_aire_Ultracomb_FR8612_3_lts_1200w_3.webp",
+        "images/freidoras/Freidora_por_aire_Ultracomb_FR8612_3_lts_1200w_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 3\n<strong>Potencia (W):</strong> 1200',
+    codigo: "2075091",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2075091",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Philco de aire FR256PHP 6lts digital',
+    imagen: "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_1.webp",
+        "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_2.webp",
+        "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_3.webp",
+        "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_4.webp",
+        "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_5.webp",
+        "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_6.webp",
+        "images/freidoras/Freidora_Philco_de_aire_FR256PHP_6lts_digital_7.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 6\n<strong>Potencia (W):</strong> 1700',
+    codigo: "2075461",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075461",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora kanji de aire 12lts Digital',
+    imagen: "images/freidoras/Freidora_kanji_de_aire_12lts_Digital_1.webp",
+    imagenes: [
+        "images/freidoras/Freidora_kanji_de_aire_12lts_Digital_1.webp",
+        "images/freidoras/Freidora_kanji_de_aire_12lts_Digital_2.webp",
+        "images/freidoras/Freidora_kanji_de_aire_12lts_Digital_3.webp",
+        "images/freidoras/Freidora_kanji_de_aire_12lts_Digital_4.webp",
+        "images/freidoras/Freidora_kanji_de_aire_12lts_Digital_5.webp",
+        "images/freidoras/Freidora_kanji_de_aire_12lts_Digital_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 12\n<strong>Potencia (W):</strong> 2200',
+    codigo: "2075348",
+    caracteristicas: [
+        "Marca: kanji",
+        "Modelo: 2075348",
+        "Garantía: 1 año"
+    ]
+},
+  
 
 ];

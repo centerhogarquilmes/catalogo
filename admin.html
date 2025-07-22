@@ -111,6 +111,7 @@ const categoryFields = {
             { label: "Encendido eléctrico", name: "encendido_electrico", type: "checkbox" }, // Changed to checkbox
             { label: "Timer", name: "timer", type: "checkbox" }, // New checkbox field
             { label: "Rejillas de fundición", name: "rejillas_de_fundicion", type: "checkbox" }, // New checkbox field
+            { label: "Ladrillos refractarios", name: "ladrillos_refractarios", type: "checkbox" }, // Changed to checkbox
             { label: "Tipo", name: "tipo_de_alimentacion", type: "select", options: ["Envasado", "Natural", "Multigas","Eléctrico"] },
             { label: "Cantidad de hornallas", name: "cantidad_hornallas", type: "text", placeholder: "4" },
             { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase A", "Clase B", "Clase C"] }
@@ -302,8 +303,15 @@ const categoryFields = {
             { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase E", "Clase D", "Clase C", "Clase B", "Clase A"] }
         ],
             "Calefones":[
-            { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "80" },
-            { label: "Tiraje", name: "tiraje", type: "select", options: ["Tiro balanceado", "Tiro natural"] },
+            { label: "Capacidad (L/h)", name: "capacidad", type: "text", placeholder: "14" },
+            { label: "Tiraje", name: "tiraje", type: "select", options: ["Tiro natural", "Tiro balanceado"] },
+            { label: "Tipo de gas", name: "tipo_de_gas", type: "select", options: ["Gas natural", "Gas envasado", "Multigas"] },
+            { label: "Tipo de encendido", name: "encendido", type: "select", options: ["Piezoeléctrico", "Automático", "Manual"] },
+            { label: "Tipo de control", name: "tipo_de_control", type: "select", options: ["Perilla", "Botones", "Corredera"] },
+            { label: "Conexiones de agua", name: "conexiones", type: "select", options: ["Carga inferior"] },
+            { label: "Sin llama piloto", name: "sin_llama_piloto", type: "checkbox" }, // Changed to checkbox
+            { label: "Eficiencia energética", name: "eficiencia", type: "select", options: ["Clase E", "Clase D", "Clase C", "Clase B", "Clase A"] }
+
             
         ],
     }
@@ -420,11 +428,12 @@ const categoryFields = {
         }
     },
     "Cuidado Personal": {
-        subcategorias: ["Planchas de Pelo", "Secadores de Pelo", "Cortadoras de Pelo y Barba"],
+        subcategorias: ["Planchas de Pelo", "Secadores de Pelo", "Cortadoras de Pelo y Barba", "Afeitadoras"],
         folders: {
             "Planchas de Pelo": "planchas_pelo",
             "Secadores de Pelo": "secadores_pelo",
-            "Cortadoras de Pelo y Barba": "cortadoras_pelo_barba"
+            "Cortadoras de Pelo y Barba": "cortadoras_pelo_barba",
+            "Afeitadoras": "afeitadoras"
         },
         fields: {
             "Planchas de Pelo": [
@@ -438,19 +447,51 @@ const categoryFields = {
                 { label: "Niveles de calor", name: "niveles_calor", type: "text", placeholder: "3" }
             ],
             "Cortadoras de Pelo y Barba": [
-                { label: "Tipo", name: "tipo", type: "select", options: ["Cortadora de pelo", "Cortadora de barba", "Multifunción"] },
-                { label: "Autonomía (min)", name: "autonomia", type: "text", placeholder: "60" },
-                { label: "Cuchillas", name: "cuchillas", type: "text", placeholder: "Acero inoxidable" }
+                { label: "Apto pelo", name: "apto_pelo", type: "checkbox" }, // Changed to checkbox
+                { label: "Apto barba", name: "apto_barba", type: "checkbox" }, // Changed to checkbox
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "5" },
+                { label: "Autonomía (min)", name: "autonomia", type: "text", placeholder: "120" },
+                { label: "Inalámbrica", name: "inalambrica", type: "checkbox" }, // Changed to checkbox
+                { label: "Peines guía", name: "peines_guia", type: "text", placeholder: "3 a 12 mm" },
+            ],
+            "Afeitadoras": [
+                { label: "Apto pelo", name: "apto_pelo", type: "checkbox" }, // Changed to checkbox
+                { label: "Apto barba", name: "apto_barba", type: "checkbox" }, // Changed to checkbox
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "5" },
+                { label: "Autonomía (min)", name: "autonomia", type: "text", placeholder: "120" },
+                { label: "Inalámbrica", name: "inalambrica", type: "checkbox" }, // Changed to checkbox
+                { label: "Peines guía", name: "peines_guia", type: "text", placeholder: "3 a 12 mm" },
             ]
         }
     },
-        "Jardín y espacio libre": {
-        subcategorias: ["Jardín", "Bicicletas"],
+        "Hogar, jardín y tiempo libre": {
+        subcategorias: ["Colchones", "Sommiers", "Almohadas", "Jardín", "Bicicletas"],
         folders: {
+            "Colchones": "colchones",
+            "Sommiers":"sommiers",
+            "Almohadas": "almohadas",
             "Jardín":"jardín",
-            "Bicicletas":"bicicletas"
+            "Bicicletas":"bicicletas",
         },
         fields: {
+            "Colchones": [
+            { label: "Plazas", name: "plazas", type: "select", options: ["1", "1 1/2", "2", "Queen size", "King size"] },
+            { label: "Dimensiones (Largo x Ancho x Alto)", name: "dimensiones", type: "text", placeholder: "190 x 80 x 23" },
+            { label: "Resortes", name: "resortes", type: "checkbox" }, // Changed to checkbox
+            { label: "Espuma", name: "espuma", type: "checkbox" }, // Changed to checkbox
+            { label: "Pillow", name: "pillow", type: "checkbox" }, // Changed to checkbox
+            ],
+            "Sommiers": [
+            { label: "Plazas", name: "plazas", type: "select", options: ["1", "1 1/2", "2", "Queen size", "King size"] },
+            { label: "Dimensiones (Largo x Ancho x Alto)", name: "dimensiones", type: "text", placeholder: "190 x 80 x 23" },
+            { label: "Material", name: "material", type: "select", options: ["Madera", "Caño"] },            
+            { label: "Forrado", name: "forrado", type: "checkbox" }, // Changed to checkbox
+            ],
+            "Almohadas": [
+            { label: "Materiales del relleno", name: "materiales_del_relleno", type: "text", placeholder: "Fibra de poliéster" },
+            { label: "Dimensiones (Largo x Ancho x Espesor)", name: "dimensiones", type: "text", placeholder: "70 x 14 x 40" },
+            { label: "Es inteligente", name: "inteligente", type: "checkbox" }, // Changed to checkbox
+            ],
             "Jardín": [
             { label: "Tipo de uso", name: "tipo_uso", type: "select", options: ["Cortadora de césped eléctrica", "Cortadora de césped nafta", "Bordeadora eléctrica", "Desmalezadora"] },
             { label: "Potencia (HP)", name: "potencia", type: "text", placeholder: "3/4" },
