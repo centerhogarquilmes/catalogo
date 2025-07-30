@@ -3159,7 +3159,7 @@ const productos = [
 /////---------- Multiprocesadoras ----------/////
 
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Multiprocesadoras",
     nombre: 'Multiprocesadora Whitenblack WBAMWB01 650W 3v+puls. cuchilla acero',
     imagen: "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB01_650W_3v_puls_cuchilla_acero_1.webp",
@@ -3175,7 +3175,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Multiprocesadoras",
     nombre: 'Multiprocesadora Whitenblack WBAMWB02 650W + licuadora jarra 1.8lts 3v+puls. cuchilla acero',
     imagen: "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB02_650W_licuadora_jarra_1_8lts_3v_puls_cuchilla_acero_1.webp",
@@ -3194,7 +3194,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Multiprocesadoras",
     nombre: 'MultiProcesadora Atma LP8426NAP 9 en 1 650w 2vel + pulsador',
     imagen: "images/multiprocesadoras/MultiProcesadora_Atma_LP8426NAP_9_en_1_650w_2vel_pulsador_1.webp",
@@ -3213,7 +3213,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Multiprocesadoras",
     nombre: 'MultiProcesadora Electrolux FPA25 750wts 2v c/jarra licuadora 2lts',
     imagen: "images/multiprocesadoras/MultiProcesadora_Electrolux_FPA25_750wts_2v_c_jarra_licuadora_2lts_1.webp",
@@ -3230,7 +3230,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Multiprocesadoras",
     nombre: 'Procesadora Liliana AM 780 Fullprossesor 750W',
     imagen: "images/multiprocesadoras/Procesadora_Liliana_AM_780_Fullprossesor_750W_1.webp",
@@ -3248,7 +3248,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Multiprocesadoras",
     nombre: 'Procesadora Liliana AM730 Experty 700w c/jarra lic. 2lts',
     imagen: "images/multiprocesadoras/Procesadora_Liliana_AM730_Experty_700w_c_jarra_lic_2lts_1.webp",
@@ -3275,7 +3275,7 @@ const productos = [
          /////---------- pavas electricas ----------/////
 
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD469590 1lts 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD469590_1lts_2200w_1.webp",
@@ -3294,7 +3294,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD9368/90 Negra Temp Para Mate 1.7L 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_1.webp",
@@ -3313,7 +3313,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava electrica Ultracomb PE 4909 1.7Lts, 2200w',
     imagen: "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4909_1_7Lts_2200w_1.webp",
@@ -3331,7 +3331,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Kanji KJH-PE15005S Hervidora alum/plast',
     imagen: "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_1.webp",
@@ -3348,7 +3348,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Moulinex BY3975AR Mate',
     imagen: "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_1.webp",
@@ -3370,7 +3370,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Oster 4970 negra o Blanca con Regulador',
     imagen: "images/pavas_electricas/Pava_Oster_4970_negra_o_Blanca_con_Regulador_1.webp",
@@ -3387,7 +3387,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Peabody PE-KV8215S 1.7L inox',
     imagen: "images/pavas_electricas/Pava_Peabody_PE_KV8215S_1_7L_inox_1.webp",
@@ -3405,7 +3405,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Philco PEPH1182IP c/corte 1.8lts 1500w',
     imagen: "images/pavas_electricas/Pava_Philco_PEPH1182IP_c_corte_1_8lts_1500w_1.webp",
@@ -3426,7 +3426,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Whitenblack WBAPWB17 Hervidora 1.7lts 2000w',
     imagen: "images/pavas_electricas/Pava_Whitenblack_WBAPWB17_Hervidora_1_7lts_2000w_1.webp",
@@ -3445,7 +3445,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "pavas electricas",
     nombre: 'Pava Yelmo PE 3900',
     imagen: "images/pavas_electricas/Pava_Yelmo_PE_3900_1.webp",
@@ -3466,7 +3466,7 @@ const productos = [
     },
 
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Pavas eléctricas",
     nombre: 'Pava electrica Ultracomb PE 4907 2 lts cafe o mate',
     imagen: "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4907_2_lts_cafe_o_mate_1.webp",
@@ -3493,7 +3493,7 @@ const productos = [
 
 
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Atma CA8143N/P de filtro 1.25lts Negra',
     imagen: "images/cafeteras/Cafetera_Atma_CA8143N_P_de_filtro_1_25lts_Negra_1.webp",
@@ -3512,7 +3512,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800 Filtro negra 6 tazas',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800_Filtro_negra_6_tazas_1.webp",
@@ -3530,7 +3530,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800S',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800S_1.webp",
@@ -3546,7 +3546,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Moulinex FG320558 CAFECITY NEGRA ( GS )',
     imagen: "images/cafeteras/Cafetera_Moulinex_FG320558_CAFECITY_NEGRA _GS _1.webp",
@@ -3565,7 +3565,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Philips HD746100 jarra 1.2lts antigoteo',
     imagen: "images/cafeteras/Cafetera_Philips_HD746100_jarra_1_2lts_antigoteo_1.webp",
@@ -3584,7 +3584,7 @@ const productos = [
     ]
     },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Smartlife SL-CM9402 1.5Lts',
     imagen: "images/cafeteras/Cafetera_Smartlife_SL_CM9402_1_5Lts_1.webp",
@@ -3607,7 +3607,7 @@ const productos = [
     /////---------- Tostadoras ----------/////
 
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "tostadoras",
     nombre: 'Tostador Electrolux ETS11 Inox 8 niv. descongela',
     imagen: "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_1.webp",
@@ -3630,7 +3630,7 @@ const productos = [
     ]
 },
 {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "tostadoras",
     nombre: 'Tostador Kanji TM1400 para 4 panes',
     imagen: "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_2.webp",
@@ -3649,7 +3649,7 @@ const productos = [
 },
 
  {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Tostadoras",
     nombre: 'Tostador Kanji TM0800',
     imagen: "images/tostadoras/Tostador_Kanji_TM0800_1.webp",
@@ -3668,7 +3668,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Tostadoras",
     nombre: 'Tostador Philco TO20BPP Negro',
     imagen: "images/tostadoras/Tostador_Philco_TO20BPP_Negro_1.webp",
@@ -3687,7 +3687,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Tostadoras",
     nombre: 'Tostador Whitenblack WBATWB01 6niv. c/bandeja migas 700w',
     imagen: "images/tostadoras/Tostador_Whitenblack_WBATWB01_6niv_c_bandeja_migas_700w_1.webp",
@@ -3718,7 +3718,7 @@ const productos = [
 
 
  {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Yelmo BM-1608',
     imagen: "images/batidoras/Batidora_Yelmo_BM_160_1.webp",
@@ -3741,7 +3741,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Steel Home Planetaria BP/BR1200 6v. 1200w. 5 lts Blanca/Negra',
     imagen: "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
@@ -3759,7 +3759,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Moulinex QA710858 Planetaria Inspirart 500w 220v 5v',
     imagen: "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
@@ -3779,7 +3779,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Kanji de mano KJH-BL0300HMB01R con bowl 300wts 2lts',
     imagen: "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
@@ -3798,7 +3798,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Moulinex SX1505AR 220v de mano roja',
     imagen: "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
@@ -3818,7 +3818,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Atma de mano BM8738AP 300W 5 vel. c/ turbo',
     imagen: "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
@@ -3836,7 +3836,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Westinghouse planetaria WH-BL0800HB02 Gris',
     imagen: "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
@@ -3854,7 +3854,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "batidoras",
     nombre: 'Batidora Whitenblack WBABWB01 300w 5v. batidor/amasador',
     imagen: "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
@@ -3884,7 +3884,7 @@ const productos = [
 
 
 {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Liliana AL900/AL100 Jarra 1.5Lts',
     imagen: "images/licuadoras/Licuadora_Liliana_AL900_AL100_Jarra_1_5Lts_1.webp",
@@ -3900,7 +3900,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Moulinex LM2701AR Optimix Blanca 2lts 550Wts 2 Vel. + pulsador',
     imagen: "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_1.webp",
@@ -3920,7 +3920,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Yelmo LC 1009 1.5L',
     imagen: "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_1.webp",
@@ -3939,7 +3939,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Electrolux BLL19 1.5Lts 600Wts',
     imagen: "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_1.webp",
@@ -3958,7 +3958,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Black & Decker BL1001-AR 500w 2lts',
     imagen: "images/licuadoras/Licuadora_Black_&_Decker_BL1001_AR_500w_2lts_1.webp",
@@ -3976,7 +3976,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Moulinex LM270558 Optimix Plus Blender Red 2lts 220v',
     imagen: "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_1.webp",
@@ -3996,7 +3996,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Atma de vaso LV24C0AP 500w 1.25lts Celeste',
     imagen: "images/licuadoras/Licuadora_Atma_de_vasoLV24C0AP_500w_1_25lts_Celeste_1.webp",
@@ -4014,7 +4014,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Philco LV24BOPHP 1.25Lts 450W',
     imagen: "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_1.webp",
@@ -4033,7 +4033,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Atma de vaso LV24W0AP 1.25lts',
     imagen: "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_1.webp",
@@ -4052,7 +4052,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Whitenblack WBALWB15 1.5lts 2v. + pulsador',
     imagen: "images/licuadoras/Licuadora_Whitenblack_WBALWB15_1_5lts_2v_pulsador_1.webp",
@@ -4069,7 +4069,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Liliana AL340 Glasslic Al340 1.5lts 850w Jarra Vidrio',
     imagen: "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_1.webp",
@@ -4088,7 +4088,7 @@ const productos = [
     ]
 },
 {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Ultracomb LC 2203 Mixer To Go',
     imagen: "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_1.webp",
@@ -4116,7 +4116,7 @@ const productos = [
 
 
 {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Atma LMAT8528RE 600w 2v. 5 en 1 Roja',
     imagen: "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_1.webp",
@@ -4135,7 +4135,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Batidora Black & Decker Mixer HB1002-AR 500W c/ vaso',
     imagen: "images/mixers/Batidora_Black &_Decker_Mixer_HB1002_AR_500W_c_vaso_1.webp",
@@ -4153,7 +4153,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Electrolux Efficient IBA30 850w pie metalico',
     imagen: "images/mixers/Mixer_Electrolux_Efficient_IBA30_850w_pie_metalico_1.webp",
@@ -4171,7 +4171,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Electrolux EIB20 Efficient 600ml 600W 3 en 1',
     imagen: "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_1.webp",
@@ -4192,7 +4192,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Liliana AH 300 2v. 450w. vaso 900cc',
     imagen: "images/mixers/Mixer_Liliana_AH_300_2v_450w_vaso_900cc_1.webp",
@@ -4210,7 +4210,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Liliana AH150 850W Fastmix Negro 220v-240v',
     imagen: "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_1.webp",
@@ -4229,7 +4229,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Moulinex DD1238AR Turbomix Negro inox 350w 3 en 1',
     imagen: "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
@@ -4246,7 +4246,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Philips HR253050 ProMix Daily Collection 400w Turbo',
     imagen: "images/mixers/Mixer_Philips_HR253050_ProMix_Daily_Collection_400w_Turbo_1.webp",
@@ -4264,7 +4264,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Mixers",
     nombre: 'Mixer Moulinex DD12A1AR Turbomix blanco 350w pie plastico',
     imagen: "images/mixers/Mixer_Moulinex_DD12A1AR_Turbomix_blanco_350w_pie_plastico_1.webp",
@@ -4868,9 +4868,9 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefaccion electrica",
     nombre: 'Calefactor Whitenblack infrarojo WBCIWB02 500/1000W',
-    imagen: "images/estufas/Calefactor_Whitenblack_infrarojo_WBCIWB02_500_1000W_1.webp",
+    imagen: "images/calefaccion_electrica/Calefactor_Whitenblack_infrarojo_WBCIWB02_500_1000W_1.webp",
     imagenes: [
-        "images/estufas/Calefactor_Whitenblack_infrarojo_WBCIWB02_500_1000W_1.webp"
+        "images/calefaccion_electrica/Calefactor_Whitenblack_infrarojo_WBCIWB02_500_1000W_1.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 1000\n<strong>Cantidad de velas:</strong> 2',
     codigo: "2074790",
@@ -4884,9 +4884,9 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefaccion electrica",
     nombre: 'Calefactor Whitenblack WBCIWB05 infrarrojo Negro 700/1400w',
-    imagen: "images/estufas/Calefactor_Whitenblack_WBCIWB05_infrarrojo_Negro_700_1400w_1.webp",
+    imagen: "images/calefaccion_electrica/Calefactor_Whitenblack_WBCIWB05_infrarrojo_Negro_700_1400w_1.webp",
     imagenes: [
-        "images/estufas/Calefactor_Whitenblack_WBCIWB05_infrarrojo_Negro_700_1400w_1.webp"
+        "images/calefaccion_electrica/Calefactor_Whitenblack_WBCIWB05_infrarrojo_Negro_700_1400w_1.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Cantidad de velas:</strong> 3',
     codigo: "2075286",
@@ -4900,9 +4900,9 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefaccion electrica",
     nombre: 'Calefactor Whitenblack WBPVWB01 pie/pared 600/1200w',
-    imagen: "images/convectores/Calefactor_Whitenblack_WBPVWB01_pie_pared_600_1200w_1.webp",
+    imagen: "images/calefaccion_electrica/Calefactor_Whitenblack_WBPVWB01_pie_pared_600_1200w_1.webp",
     imagenes: [
-        "images/convectores/Calefactor_Whitenblack_WBPVWB01_pie_pared_600_1200w_1.webp"
+        "images/calefaccion_electrica/Calefactor_Whitenblack_WBPVWB01_pie_pared_600_1200w_1.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 1200',
     codigo: "2075284",
@@ -4916,11 +4916,11 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefaccion electrica",
     nombre: 'Calefactor Crivel E15/Q-3 Infrarrojo Fijo 1400 W',
-    imagen: "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_1.webp",
+    imagen: "images/calefaccion_electrica/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_1.webp",
     imagenes: [
-        "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_1.webp",
-        "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_2.webp",
-        "images/estufas/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_3.webp"
+        "images/calefaccion_electrica/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_1.webp",
+        "images/calefaccion_electrica/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_2.webp",
+        "images/calefaccion_electrica/Calefactor_Crivel_E15_Q_3__Fijo_1400_W_3.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Cantidad de velas:</strong> 3\n<strong>Giratoria:</strong> Sí',
     codigo: "2071916",
@@ -4934,9 +4934,9 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefaccion electrica",
     nombre: 'Calefactor Crivel/Steel home E22/Q3-Ost Oscilante Con Turbo Infrarrojo 700/1400Wts',
-    imagen: "images/estufas/Crivel_Steel_home_E22_Q3_Ost_Oscilante_Con_Turbo_700_1400Wts_1.webp",
+    imagen: "images/calefaccion_electrica/Crivel_Steel_home_E22_Q3_Ost_Oscilante_Con_Turbo_700_1400Wts_1.webp",
     imagenes: [
-        "images/estufas/Crivel_Steel_home_E22_Q3_Ost_Oscilante_Con_Turbo_700_1400Wts_1.webp"
+        "images/calefaccion_electrica/Crivel_Steel_home_E22_Q3_Ost_Oscilante_Con_Turbo_700_1400Wts_1.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Cantidad de velas:</strong> 3\n<strong>Giratoria:</strong> Sí',
     codigo: "2071918",
@@ -4951,11 +4951,11 @@ const productos = [
     categoria: "Climatización",
     subcategoria: "Calefaccion electrica",
     nombre: 'Calefactor Liliana CV027 vertical cuarzo Infrarrojo',
-    imagen: "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_1.webp",
+    imagen: "images/calefaccion_electrica/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_1.webp",
     imagenes: [
-        "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_1.webp",
-        "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_2.webp",
-        "images/estufas/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_3.webp"
+        "images/calefaccion_electrica/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_1.webp",
+        "images/calefaccion_electrica/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_2.webp",
+        "images/calefaccion_electrica/Calefactor_Liliana_CV027_vertical_cuarzo_Infrarrojo_3.webp"
     ],
     descripcion: '<strong>Potencia (W):</strong> 1200\n<strong>Cantidad de velas:</strong> 2',
     codigo: "2074413",
@@ -5555,8 +5555,8 @@ const productos = [
     ]
 },
 {
-    categoria: "Hogar, jardín y tiempo libre",
-    subcategoria: "Jardín",
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Jardin",
     nombre: 'Cort. Cesped Kawi ECOR 350  PLASTICO 1/2 HP',
     imagen: "images/jardín/Cort_Cesped_Kawi_ECOR_350_PLASTICO_1_2_HP_1.webp",
     imagenes: [
@@ -5571,8 +5571,8 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, jardín y tiempo libre",
-    subcategoria: "Jardín",
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Jardin",
     nombre: 'Cort. Cesped Kawi ECOR 370 Plastico 3/4 HP',
     imagen: "images/jardín/Cort_Cesped_Kawi_ECOR_370_Plastico_3_4_HP_1.webp",
     imagenes: [
@@ -5644,7 +5644,7 @@ const productos = [
 
             ////// 18 07 20 25/////
    {
-    categoria: "Hogar, jardín y tiempo libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Colchones",
     nombre: 'Colchon Suav. Lucky 190x80x17',
     imagen: "images/colchones/Colchon_Suav_Lucky_190_80_17_1.webp",
@@ -5677,7 +5677,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, jardín y tiempo libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Almohadas",
     nombre: 'Almohada Suav. TNT  70X40',
     imagen: "images/almohadas/Almohada_Suav_TNT_70_40_1.webp",
@@ -5727,7 +5727,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, jardín y tiempo libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Colchones",
     nombre: 'Colchon Suav. EXTRA TM 190x80x18 esp.',
     imagen: "images/colchones/Colchon_Suav_EXTRA_TM_190_80_18_esp_1.webp",
@@ -5744,7 +5744,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, jardín y tiempo libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Bicicletas",
     nombre: 'Bici. Futura Paseo R26 Dama Acero 3577 Country Full City Cruiser c/Canasto y Portaequipaje',
     imagen: "images/bicicletas/Bici_Futura_Paseo_R26_Dama_Acero_3577_Country_Full_City_Cruiser_c_Canasto_y_Portaequipaje_1.webp",
@@ -5807,7 +5807,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Exprimidores y Jugueras",
     nombre: 'Exprimidor Ultracomb EX 2302 25 wts',
     imagen: "images/exprimidores_jugueras/Exprimidor_Ultracomb_EX_2302_25_wts_1.webp",
@@ -5825,7 +5825,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, jardín y tiempo libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Almohadas",
     nombre: 'Almohada Suav. Bienestar Fibra 70x40',
     imagen: "images/almohadas/Almohada_Suav_Bienestar_Fibra_70_40_1.webp",
@@ -5841,7 +5841,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Batidoras",
     nombre: 'Batidora Kanji de mano  KJH-BL0300HM01W Blanca',
     imagen: "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HM01W_Blanca_1.webp",
@@ -5859,7 +5859,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Pequeños",
+    categoria: "pequenos",
     subcategoria: "Exprimidores y Jugueras",
     nombre: 'Exprimidor Kanji JM045 40w',
     imagen: "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_1.webp",
@@ -6218,6 +6218,517 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
-  
+
+
+
+
+
+
+ //// 25 07 2025 ////  
+
+
+     {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana ORBITAL VPRN20 20" ASPAS PLASTICA- PARRILLA MET. NEGRA',
+    imagen: "images/ventilacion/Vent_Pie_Liliana_ORBITAL_VPRN20_20_ASPAS_PLASTICA_PARRILLA_MET_NEGRA_1.webp",
+    imagenes: [
+        "images/ventilacion/Vent_Pie_Liliana_ORBITAL_VPRN20_20_ASPAS_PLASTICA_PARRILLA_MET_NEGRA_1.webp",
+        "images/ventilacion/Vent_Pie_Liliana_ORBITAL_VPRN20_20_ASPAS_PLASTICA_PARRILLA_MET_NEGRA_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Orbital:</strong> Sí',
+    codigo: "2070632",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070632",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Liliana 20" VBTR20/VVOTR20  c/Repeler cromado aspas met.',
+    imagen: "images/ventilacion/Turbo_Liliana_20_VBTR20_VVOTR20 _c_Repeler_cromado_aspas_met_1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo_Liliana_20_VBTR20_VVOTR20 _c_Repeler_cromado_aspas_met_1.webp",
+        "images/ventilacion/Turbo_Liliana_20_VBTR20_VVOTR20 _c_Repeler_cromado_aspas_met_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Mesa\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Orbital:</strong> Sí',
+    codigo: "2070712",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070712",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefacción eléctrica",
+    nombre: 'Caloventor Split Liliana WD900 CONFORTEMPO 1000/2000W',
+    imagen: "images/calefaccion_electrica/Caloventor_Split_Liliana_WD900_CONFORTEMPO_1000_2000_1.webp",
+    imagenes: [
+        "images/calefaccion_electrica/Caloventor_Split_Liliana_WD900_CONFORTEMPO_1000_2000_1.webp",
+        "images/calefaccion_electrica/Caloventor_Split_Liliana_WD900_CONFORTEMPO_1000_2000_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Caloventor\n<strong>Potencia (W):</strong> 2000\n<strong>Termostato:</strong> Sí\n<strong>Pared:</strong> Sí\n<strong>Control remoto:</strong> Sí',
+    codigo: "2070923",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070923",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Eiffel 18" E-518 90W 3 en 1',
+    imagen: "images/ventilacion/Vent_Pie_Eiffel_18_E_518_90W_3_en_1_1.webp",
+    imagenes: [
+        "images/ventilacion/Vent_Pie_Eiffel_18_E_518_90W_3_en_1_1.webp",
+        "images/ventilacion/Vent_Pie_Eiffel_18_E_518_90W_3_en_1_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> 3 en 1\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 18\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Oscilación:</strong> Sí',
+    codigo: "2074628",
+    caracteristicas: [
+        "Marca: Eiffel",
+        "Modelo: 2074628",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana ORBITAL VPRN18 18" ASPAS PLASTICA- PARRILLA MET. NEGRA',
+    imagen: "images/ventilacion/Vent_Pie_Liliana_ORBITAL_VPRN18_18_ASPAS_PLASTICA_PARRILLA_MET_NEGRA_1.webp",
+    imagenes: [
+        "images/ventilacion/Vent_Pie_Liliana_ORBITAL_VPRN18_18_ASPAS_PLASTICA_PARRILLA_MET_NEGRA_1.webp",
+        "images/ventilacion/Vent_Pie_Liliana_ORBITAL_VPRN18_18_ASPAS_PLASTICA_PARRILLA_MET_NEGRA_2.webp",
+        "images/ventilacion/Vent_Pie_Liliana_ORBITAL_VPRN18_18_ASPAS_PLASTICA_PARRILLA_MET_NEGRA_3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 75\n<strong>Pulgadas:</strong> 18\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Oscilación:</strong> Sí',
+    codigo: "2071059",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2071059",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana VVP20P 20" 5 aspas plasticas 90w',
+    imagen: "images/ventilacion/Vent_Pie_Liliana_VVP20P_20_5_aspas_plasticas_90w_1.webp",
+    imagenes: [
+        "images/ventilacion/Vent_Pie_Liliana_VVP20P_20_5_aspas_plasticas_90w_1.webp",
+        "images/ventilacion/Vent_Pie_Liliana_VVP20P_20_5_aspas_plasticas_90w_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5\n<strong>Oscilación:</strong> Sí',
+    codigo: "2072916",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2072916",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Kanji 20" KJH-FH2010 Plastic',
+    imagen: "images/ventilacion/Turbo_Kanji_20_KJH_FH2010_Plastic_1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo_Kanji_20_KJH_FH2010_Plastic_1.webp",
+        "images/ventilacion/Turbo_Kanji_20_KJH_FH2010_Plastic_2.webp",
+        "images/ventilacion/Turbo_Kanji_20_KJH_FH2010_Plastic_3.webp",
+        "images/ventilacion/Turbo_Kanji_20_KJH_FH2010_Plastic_4.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 80\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5',
+    codigo: "2074648",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2074648",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Mesa Liliana 16" VM1614/VVS0C16 ORBITAL PARR CROMADO',
+    imagen: "images/ventilacion/Vent_Mesa_Liliana_16_VM1614_VVS0C16_ORBITAL_PARR_CROMADO_1.webp",
+    imagenes: [
+        "images/ventilacion/Vent_Mesa_Liliana_16_VM1614_VVS0C16_ORBITAL_PARR_CROMADO_1.webp",
+        "images/ventilacion/Vent_Mesa_Liliana_16_VM1614_VVS0C16_ORBITAL_PARR_CROMADO_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Mesa\n<strong>Potencia (W):</strong> 65\n<strong>Pulgadas:</strong> 16\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Orbital:</strong> Sí',
+    codigo: "2070144",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070144",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Futura BMX R12 Nene Acero 2012 nacional c/pedales y estabilizadores',
+    imagen: "images/bicicletas/Bici_Futura_BMX_R12_Nene_Acero_2012_nacional_c_pedales_y_estabilizadores_1.webp",
+    imagenes: [
+        "images/bicicletas/Bici_Futura_BMX_R12_Nene_Acero_2012_nacional_c_pedales_y_estabilizadores_1.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> BMX\n<strong>Material:</strong> Acero\n<strong>Rodado:</strong> 12\n<strong>Tipo de frenos:</strong> V Brake',
+    codigo: "2070772",
+    caracteristicas: [
+        "Marca: Futura",
+        "Modelo: 2070772",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana 20" VPCD20/VPD20R Digital c/ remoto- timer',
+    imagen: "images/ventilacion/Vent_Pie_Liliana_20_VPCD20_VPD20R_Digital_c_remoto_timer_1.webp",
+    imagenes: [
+        "images/ventilacion/Vent_Pie_Liliana_20_VPCD20_VPD20R_Digital_c_remoto_timer_1.webp",
+        "images/ventilacion/Vent_Pie_Liliana_20_VPCD20_VPD20R_Digital_c_remoto_timer_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Control remoto:</strong> Sí\n<strong>Orbital:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Repelente:</strong> Sí',
+    codigo: "2071561",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2071561",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefacción eléctrica",
+    nombre: 'Caloventor Crivel Electrico De Pared 1000/2000W Timer Programable',
+    imagen: "images/calefaccion_electrica/Caloventor_Crivel_Electrico_De_Pared_1000_2000W_Timer_Programable_1.webp",
+    imagenes: [
+        "images/calefaccion_electrica/Caloventor_Crivel_Electrico_De_Pared_1000_2000W_Timer_Programable_1.webp",
+        "images/calefaccion_electrica/Caloventor_Crivel_Electrico_De_Pared_1000_2000W_Timer_Programable_2.webp",
+        "images/calefaccion_electrica/Caloventor_Crivel_Electrico_De_Pared_1000_2000W_Timer_Programable_3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Caloventor\n<strong>Potencia (W):</strong> 2000\n<strong>Termostato:</strong> Sí\n<strong>Pared:</strong> Sí\n<strong>Control remoto:</strong> Sí',
+    codigo: "2071920",
+    caracteristicas: [
+        "Marca: Crivel",
+        "Modelo: 2071920",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefacción eléctrica",
+    nombre: 'Convector Eiffel E-544 1000Wts a 1200Wts',
+    imagen: "images/calefaccion_electrica/Convector_Eiffel_E_544_1000Wts_a_1200Wts_1.webp",
+    imagenes: [
+        "images/calefaccion_electrica/Convector_Eiffel_E_544_1000Wts_a_1200Wts_1.webp",
+        "images/calefaccion_electrica/Convector_Eiffel_E_544_1000Wts_a_1200Wts_2.webp",
+        "images/calefaccion_electrica/Convector_Eiffel_E_544_1000Wts_a_1200Wts_3.webp",
+        "images/calefaccion_electrica/Convector_Eiffel_E_544_1000Wts_a_1200Wts_4.webp",
+        "images/calefaccion_electrica/Convector_Eiffel_E_544_1000Wts_a_1200Wts_5.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Convector\n<strong>Potencia (W):</strong> 1200\n<strong>Termostato:</strong> Sí',
+    codigo: "2072435",
+    caracteristicas: [
+        "Marca: Eiffel",
+        "Modelo: 2072435",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Mesa Liliana 16" VVSOP16 osc/parr-plas/aspas-plasticas',
+    imagen: "images/ventilacion/vent_mesa_liliana_16_vvsop16_osc_parr_plas_aspas_plasticas_1.webp",
+    imagenes: [
+        "images/ventilacion/vent_mesa_liliana_16_vvsop16_osc_parr_plas_aspas_plasticas_1.webp",
+        "images/ventilacion/vent_mesa_liliana_16_vvsop16_osc_parr_plas_aspas_plasticas_2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Mesa\n<strong>Potencia (W):</strong> 65\n<strong>Pulgadas:</strong> 16\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5\n<strong>Oscilación:</strong> Sí',
+    codigo: "2073543",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2073543",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Liliana 10" Reclinable VTF10P pie/pared 3 aspas',
+    imagen: "images/ventilacion/Turbo_Liliana_10_Reclinable_VTF10P_pie_pared _3_aspas_1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo_Liliana_10_Reclinable_VTF10P_pie_pared _3_aspas_1.webp",
+        "images/ventilacion/Turbo_Liliana_10_Reclinable_VTF10P_pie_pared _3_aspas_2.webp",
+        "images/ventilacion/Turbo_Liliana_10_Reclinable_VTF10P_pie_pared _3_aspas_3.webp",
+        "images/ventilacion/Turbo_Liliana_10_Reclinable_VTF10P_pie_pared _3_aspas_4.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo/Pared\n<strong>Potencia (W):</strong> 35\n<strong>Pulgadas:</strong> 10\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 3',
+    codigo: "2073545",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2073545",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
+
+////   30 07 2025  ////
+
+
+{
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Hitachi Split 6400 kw Inverter HSPE6400FCINV Neo',
+    imagen: "images/aires_acondicionados/Acond_Hitachi_Split_6400_kw_Inverter_HSPE6400FCINV_Neo_1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond_Hitachi_Split_6400_kw_Inverter_HSPE6400FCINV_Neo_1.webp",
+        "images/aires_acondicionados/Acond_Hitachi_Split_6400_kw_Inverter_HSPE6400FCINV_Neo_2.webp",
+        "images/aires_acondicionados/Acond_Hitachi_Split_6400_kw_Inverter_HSPE6400FCINV_Neo_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 6400\n<strong>Tipo:</strong> Split\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074543",
+    caracteristicas: [
+        "Marca: Hitachi",
+        "Modelo: 2074543",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, jardín y tiempo libre",
+    subcategoria: "Almohadas",
+    nombre: 'Almohada Suav. Bienestar Microesferas 70x50',
+    imagen: "images/almohadas/Almohada_Suav_Bienestar_Microesferas_70_50_1.webp",
+    imagenes: [
+        "images/almohadas/Almohada_Suav_Bienestar_Microesferas_70_50_1.webp",
+        "images/almohadas/Almohada_Suav_Bienestar_Microesferas_70_50_2.webp",
+        "images/almohadas/Almohada_Suav_Bienestar_Microesferas_70_50_3.webp"
+    ],
+    descripcion: '<strong>Materiales del relleno:</strong> Fibra de poliéster\n<strong>Dimensiones (Largo x Ancho x Espesor):</strong> 70 x 50',
+    codigo: "2074005",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2074005",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, jardín y tiempo libre",
+    subcategoria: "Almohadas",
+    nombre: 'Almohada Suav. THERMOSENSE VISCO COMUN 65X35',
+    imagen: "images/almohadas/Almohada_Suav_THERMOSENSE_VISCO_COMUN_65_35_1.webp",
+    imagenes: [
+        "images/almohadas/Almohada_Suav_THERMOSENSE_VISCO_COMUN_65_35_1.webp",
+        "images/almohadas/Almohada_Suav_THERMOSENSE_VISCO_COMUN_65_35_2.webp",
+        "images/almohadas/Almohada_Suav_THERMOSENSE_VISCO_COMUN_65_35_3.webp",
+        "images/almohadas/Almohada_Suav_THERMOSENSE_VISCO_COMUN_65_35_4.webp"
+    ],
+    descripcion: '<strong>Materiales del relleno:</strong> Fibra de poliéster\n<strong>Dimensiones (Largo x Ancho x Espesor):</strong> 65 x 35\n<strong>Es inteligente:</strong> Sí',
+    codigo: "20773",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 20773",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Candor Black ge',
+    imagen: "images/cocinas/Cocina_Escorial_Candor_Black_ge_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Candor_Black_ge_1.webp",
+        "images/cocinas/Cocina_Escorial_Candor_Black_ge_2.webp",
+        "images/cocinas/Cocina_Escorial_Candor_Black_ge_3.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 50 x 54 \n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Envasado\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072622",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2072622",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Win 55cm 4 Hornallas p/v 4004',
+    imagen: "images/cocinas/Cocina_Usman_Industrial_Win_55cm_4_Hornallas_p_v_4004_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Usman_Industrial_Win_55cm_4_Hornallas_p_v_4004_1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072651",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2072651",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5537/F Ngra. enc. electr. con Timer',
+    imagen: "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_1.webp",
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_2.webp",
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_3.webp",
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_4.webp",
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_5.webp",
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_6.webp",
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_7.webp",
+        "images/cocinas/Cocina_Florencia_5537_F_Negra_enc_electr_con_Timer_8.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072847",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2072847",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Sonic Black p/v r/a 7766',
+    imagen: "images/cocinas/Cocina_Usman_Industrial_Sonic_Black_p_v_r_a_7766_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Usman_Industrial_Sonic_Black_p_v_r_a_7766_1.webp",
+        "images/cocinas/Cocina_Usman_Industrial_Sonic_Black_p_v_r_a_7766_2.webp",
+        "images/cocinas/Cocina_Usman_Industrial_Sonic_Black_p_v_r_a_7766_3.webp",
+        "images/cocinas/Cocina_Usman_Industrial_Sonic_Black_p_v_r_a_7766_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 X 55 X 61\n<strong>Válvula de seguridad:</strong> No\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074076",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2074076",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial Ex Acero 550 p/v r/f 55cm 16090',
+    imagen: "images/cocinas/Cocina_Morelli_Industrial_Ex_Acero_550_p_v_r_f_55cm_16090_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Morelli_Industrial_Ex_Acero_550_p_v_r_f_55cm_16090_1.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Ex_Acero_550_p_v_r_f_55cm_16090_2.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Ex_Acero_550_p_v_r_f_55cm_16090_3.webp",
+        "images/cocinas/Cocina_Morelli_Industrial_Ex_Acero_550_p_v_r_f_55cm_16090_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 55 x 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074705",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2074705",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5818 Semi-Industrial Inox 56 cm multigas',
+    imagen: "images/cocinas/Cocina_Florencia_5818_Semi_Industrial_Inox_56_cm_multigas_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5818_Semi_Industrial_Inox_56_cm_multigas_1.webp",
+        "images/cocinas/Cocina_Florencia_5818_Semi_Industrial_Inox_56_cm_multigas_2.webp",
+        "images/cocinas/Cocina_Florencia_5818_Semi_Industrial_Inox_56_cm_multigas_3.webp",
+        "images/cocinas/Cocina_Florencia_5818_Semi_Industrial_Inox_56_cm_multigas_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074710",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2074710",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5838 Semi-Industrial Inox 56 cm multigas s/valvula',
+    imagen: "images/cocinas/Cocina_Florencia_5838_Semi_Industrial_Inox_56_cm_multigas_s_valvula_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5838_Semi_Industrial_Inox_56_cm_multigas_s_valvula_1.webp",
+        "images/cocinas/Cocina_Florencia_5838_Semi_Industrial_Inox_56_cm_multigas_s_valvula_2.webp",
+        "images/cocinas/Cocina_Florencia_5838_Semi_Industrial_Inox_56_cm_multigas_s_valvula_3.webp",
+        "images/cocinas/Cocina_Florencia_5838_Semi_Industrial_Inox_56_cm_multigas_s_valvula_4.webp",
+        "images/cocinas/Cocina_Florencia_5838_Semi_Industrial_Inox_56_cm_multigas_s_valvula_5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 61\n<strong>Válvula de seguridad:</strong> No\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074711",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2074711",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Master Classic gn Inox',
+    imagen: "images/cocinas/Cocina_Escorial_Master_Classic_gn_Inox_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Escorial_Master_Classic_gn_Inox_1.webp",
+        "images/cocinas/Cocina_Escorial_Master_Classic_gn_Inox_2.webp",
+        "images/cocinas/Cocina_Escorial_Master_Classic_gn_Inox_3.webp",
+        "images/cocinas/Cocina_Escorial_Master_Classic_gn_Inox_4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Natural\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075008",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2075008",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5838S Semi-Industrial c/valvula-enc-timer 56cm inox mg',
+    imagen: "images/cocinas/Cocina_Florencia_5838S_Semi_Industrial_c_valvula_enc_timer_56cm_inox_mg_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5838S_Semi_Industrial_c_valvula_enc_timer_56cm_inox_mg_1.webp",
+        "images/cocinas/Cocina_Florencia_5838S_Semi_Industrial_c_valvula_enc_timer_56cm_inox_mg_2.webp",
+        "images/cocinas/Cocina_Florencia_5838S_Semi_Industrial_c_valvula_enc_timer_56cm_inox_mg_3.webp",
+        "images/cocinas/Cocina_Florencia_5838S_Semi_Industrial_c_valvula_enc_timer_56cm_inox_mg_4.webp",
+        "images/cocinas/Cocina_Florencia_5838S_Semi_Industrial_c_valvula_enc_timer_56cm_inox_mg_5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075239",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2075239",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5818S Semi-Industrial c/valvula seg. Inox 56 cm multigas',
+    imagen: "images/cocinas/Cocina_Florencia_5818S_Semi_Industrial_c_valvula_seg_Inox_56_cm_multigas_1.webp",
+    imagenes: [
+        "images/cocinas/Cocina_Florencia_5818S_Semi_Industrial_c_valvula_seg_Inox_56_cm_multigas_1.webp",
+        "images/cocinas/Cocina_Florencia_5818S_Semi_Industrial_c_valvula_seg_Inox_56_cm_multigas_2.webp",
+        "images/cocinas/Cocina_Florencia_5818S_Semi_Industrial_c_valvula_seg_Inox_56_cm_multigas_3.webp",
+        "images/cocinas/Cocina_Florencia_5818S_Semi_Industrial_c_valvula_seg_Inox_56_cm_multigas_4.webp",
+        "images/cocinas/Cocina_Florencia_5818S_Semi_Industrial_c_valvula_seg_Inox_56_cm_multigas_5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Envasado\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075503",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2075503",
+        "Garantía: 1 año"
+    ]
+}
 
 ];
