@@ -111,6 +111,7 @@ const categoryFields = {
             { label: "Encendido eléctrico", name: "encendido_electrico", type: "checkbox" }, // Changed to checkbox
             { label: "Timer", name: "timer", type: "checkbox" }, // New checkbox field
             { label: "Rejillas de fundición", name: "rejillas_de_fundicion", type: "checkbox" }, // New checkbox field
+            { label: "Rejillas de aluminio", name: "rejillas_de_fundicion", type: "checkbox" }, // New checkbox field
             { label: "Ladrillos refractarios", name: "ladrillos_refractarios", type: "checkbox" }, // Changed to checkbox
             { label: "Tipo", name: "tipo_de_alimentacion", type: "select", options: ["Envasado", "Natural", "Multigas","Eléctrico"] },
             { label: "Cantidad de hornallas", name: "cantidad_hornallas", type: "text", placeholder: "4" },
@@ -219,7 +220,7 @@ const categoryFields = {
         subcategorias: ["Calefacción a gas", "Calefacción eléctrica", "Ventilación", "Aires Acondicionados"],
         folders: {
             "Calefacción a gas": "calefaccion a gas",
-            "Calefacción eléctrica": "calefaccion eléctrica",
+            "Calefacción eléctrica": "calefaccion_electrica",
             "Ventilación": "ventilacion",
             "Aires Acondicionados": "aires_acondicionados"
         },
@@ -232,15 +233,27 @@ const categoryFields = {
                 { label: "Tipo de gas", name: "tipo_de_gas", type: "select", options: ["Gas natural", "Multigas", "Gas envasado" ] },
             ],
             "Calefacción eléctrica": [
-                { label: "Tipo", name: "tipo", type: "select", options: ["Estufa", "Radiador", "Calefactor"] },
+                { label: "Tipo", name: "tipo", type: "text", placehoder: "Tipo de calefactor" },
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "2000" },
                 { label: "Termostato", name: "termostato", type: "checkbox" }, // Changed to checkbox
+                { label: "Pared", name: "pared", type: "checkbox" }, // Changed to checkbox
+                { label: "Control remoto", name: "control_remoto", type: "checkbox" }, // Changed to checkbox
+                { label: "Forzador de aire", name: "forzador_aire", type: "checkbox" }, // Changed to checkbox
             ],
 
             "Ventilación": [
-                { label: "Tipo", name: "tipo", type: "select", options: ["Ventilador de pie", "Ventilador de mesa", "Ventilador de pared"] },
-                { label: "Diámetro (cm)", name: "diametro", type: "text", placeholder: "40" },
-                { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" }
+                { label: "Tipo", name: "tipo", type: "text", placeholder: "Pie" },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "80" },
+                { label: "Pulgadas", name: "pulgadas", type: "text", placeholder: "18" },
+                { label: "Velocidades", name: "velocidades", type: "text", placeholder: "3" },
+                { label: "Tipo de aspas", name: "tipo_aspas", type: "text", placeholder: "Metal" },
+                { label: "Tipo de rejilla", name: "tipo_rejilla", type: "text", placeholder: "Metal" },
+                { label: "Cantidad de aspas", name: "cantidad_aspas", type: "text", placeholder: "3" },
+                { label: "Control remoto", name: "control_remoto", type: "checkbox" }, // Changed to checkbox
+                { label: "Oscilación", name: "oscilacion", type: "checkbox" }, // Changed to checkbox
+                { label: "Orbital", name: "orbital", type: "checkbox" }, // Changed to checkbox
+                { label: "Timer", name: "timer", type: "checkbox" }, // Changed to checkbox
+                { label: "Repelente", name: "repelente", type: "checkbox" }, // Changed to checkbox
             ],
             "Aires Acondicionados": [
                 { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "12000" },
@@ -464,7 +477,7 @@ const categoryFields = {
             ]
         }
     },
-        "Hogar, jardín y tiempo libre": {
+        "hogar jardin y tiempo libre": {
         subcategorias: ["Colchones", "Sommiers", "Almohadas", "Jardín", "Bicicletas"],
         folders: {
             "Colchones": "colchones",
@@ -475,14 +488,14 @@ const categoryFields = {
         },
         fields: {
             "Colchones": [
-            { label: "Plazas", name: "plazas", type: "select", options: ["1", "1 1/2", "2", "Queen size", "King size"] },
+            { label: "Plazas", name: "Plazas", type: "select", options: ["1", "1 1/2", "2", "Queen size", "King size"] },
             { label: "Dimensiones (Largo x Ancho x Alto)", name: "dimensiones", type: "text", placeholder: "190 x 80 x 23" },
             { label: "Resortes", name: "resortes", type: "checkbox" }, // Changed to checkbox
             { label: "Espuma", name: "espuma", type: "checkbox" }, // Changed to checkbox
             { label: "Pillow", name: "pillow", type: "checkbox" }, // Changed to checkbox
             ],
             "Sommiers": [
-            { label: "Plazas", name: "plazas", type: "select", options: ["1", "1 1/2", "2", "Queen size", "King size"] },
+            { label: "Plazas", name: "Plazas", type: "select", options: ["1", "1 1/2", "2", "Queen size", "King size"] },
             { label: "Dimensiones (Largo x Ancho x Alto)", name: "dimensiones", type: "text", placeholder: "190 x 80 x 23" },
             { label: "Material", name: "material", type: "select", options: ["Madera", "Caño"] },            
             { label: "Forrado", name: "forrado", type: "checkbox" }, // Changed to checkbox
@@ -490,7 +503,7 @@ const categoryFields = {
             "Almohadas": [
             { label: "Materiales del relleno", name: "materiales_del_relleno", type: "text", placeholder: "Fibra de poliéster" },
             { label: "Dimensiones (Largo x Ancho x Espesor)", name: "dimensiones", type: "text", placeholder: "70 x 14 x 40" },
-            { label: "Es inteligente", name: "inteligente", type: "checkbox" }, // Changed to checkbox
+            { label: "Inteligente", name: "inteligente", type: "checkbox" }, // Changed to checkbox
             ],
             "Jardín": [
             { label: "Tipo de uso", name: "tipo_uso", type: "select", options: ["Cortadora de césped eléctrica", "Cortadora de césped nafta", "Bordeadora eléctrica", "Desmalezadora"] },
