@@ -6729,6 +6729,225 @@ const productos = [
         "Modelo: 2075503",
         "Garantía: 1 año"
     ]
-}
+},
+
+
+
+////    01 07 2025   ////
+
+
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Philco PHCT242B ciclica Top Mount 231lts Blanca',
+    imagen: "images/heladeras/Heladera_Philco_PHCT242B_ciclica_Top_Mount231lts_Blanca_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Philco_PHCT242B_ciclica_Top_Mount231lts_Blanca_1.webp",
+        "images/heladeras/Heladera_Philco_PHCT242B_ciclica_Top_Mount231lts_Blanca_2.webp",
+        "images/heladeras/Heladera_Philco_PHCT242B_ciclica_Top_Mount231lts_Blanca_3.webp",
+        "images/heladeras/Heladera_Philco_PHCT242B_ciclica_Top_Mount231lts_Blanca_4.webp",
+        "images/heladeras/Heladera_Philco_PHCT242B_ciclica_Top_Mount231lts_Blanca_5.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 159 x 55 x 55\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 231\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075507",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075507",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras",
+    nombre: 'Heladera Eslabon de Lujo ERD36HBDIM Cíclica Blanca 336l Blanca',
+    imagen: "images/heladeras/Heladera_Eslabon_RD36HBDIM_Cíclica_Blanca_336l_Blanca_1.webp",
+    imagenes: [
+        "images/heladeras/Heladera_Eslabon_RD36HBDIM_Cíclica_Blanca_336l_Blanca_1.webp",
+        "images/heladeras/Heladera_Eslabon_RD36HBDIM_Cíclica_Blanca_336l_Blanca_2.webp",
+        "images/heladeras/Heladera_Eslabon_RD36HBDIM_Cíclica_Blanca_336l_Blanca_3.webp",
+        "images/heladeras/Heladera_Eslabon_RD36HBDIM_Cíclica_Blanca_336l_Blanca_4.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 164 x 60 x 60\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 336\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075378",
+    caracteristicas: [
+        "Marca: Eslabon de Lujo",
+        "Modelo: 2075378",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean 7 Max LTDR79SB 7kg c/s semiauto. 9 Prog.',
+    imagen: "images/lavarropas/Lavarropas_Drean_7_Max_LTDR79SB_7kg_c_s_semiauto_9_Prog_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Drean_7_Max_LTDR79SB_7kg_c_s_semiauto_9_Prog_1.webp",
+        "images/lavarropas/Lavarropas_Drean_7_Max_LTDR79SB_7kg_c_s_semiauto_9_Prog_2.webp",
+        "images/lavarropas/Lavarropas_Drean_7_Max_LTDR79SB_7kg_c_s_semiauto_9_Prog_3.webp",
+        "images/lavarropas/Lavarropas_Drean_7_Max_LTDR79SB_7kg_c_s_semiauto_9_Prog_4.webp",
+        "images/lavarropas/Lavarropas_Drean_7_Max_LTDR79SB_7kg_c_s_semiauto_9_Prog_5.webp",
+        "images/lavarropas/Lavarropas_Drean_7_Max_LTDR79SB_7kg_c_s_semiauto_9_Prog_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Semiautomático\n<strong>Tipo de carga:</strong> Superior',
+    codigo: "2075232",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075232",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean LFDR0606LB0 c/frontal 6kg 600rpm',
+    imagen: "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_1.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_2.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_3.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_4.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_5.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_6.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_7.webp",
+        "images/lavarropas/Lavarropas_Drean_LFDR0606LB0_c_frontal_6kg_600rpm_8.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 600',
+    codigo: "2075252",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075252",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Eslabon de lujo EWH07BB C/S 7kg',
+    imagen: "images/lavarropas/Lavarropas_Eslabon_de_lujo_EWH07BB_C_S_7kg_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Eslabon_de_lujo_EWH07BB_C_S_7kg_1.webp",
+        "images/lavarropas/Lavarropas_Eslabon_de_lujo_EWH07BB_C_S_7kg_2.webp",
+        "images/lavarropas/Lavarropas_Eslabon_de_lujo_EWH07BB_C_S_7kg_3.webp",
+        "images/lavarropas/Lavarropas_Eslabon_de_lujo_EWH07BB_C_S_7kg_4.webp",
+        "images/lavarropas/Lavarropas_Eslabon_de_lujo_EWH07BB_C_S_7kg_5.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 750',
+    codigo: "2074652",
+    caracteristicas: [
+        "Marca: Eslabon de lujo",
+        "Modelo: 2074652",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Midea MF200W80WB/W-A1 c/frontal 8kg 1400rpm Inverter  Wifi Blanco',
+    imagen: "images/lavarropas/Lavarropas_Midea_MF200W80WB_WA1_frontal_8kg_1400rpm_Inverter_Wifi_Blanco_1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas_Midea_MF200W80WB_WA1_frontal_8kg_1400rpm_Inverter_Wifi_Blanco_1.webp",
+        "images/lavarropas/Lavarropas_Midea_MF200W80WB_WA1_frontal_8kg_1400rpm_Inverter_Wifi_Blanco_2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2075306",
+    caracteristicas: [
+        "Marca: Midea",
+        "Modelo: 2075306",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'HORNO DE PAN Atma HPAT24WP dig 13 prog. 3 niv. 550w 900gr',
+    imagen: "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_1.webp",
+    imagenes: [
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_1.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_2.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_3.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_4.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_5.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_6.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_7.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_8.webp",
+        "images/hornos/HORNO_DE_PAN_Atma_HPAT24WP_dig_13_prog_3_niv_550w_900gr_9.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 900\n<strong>Potencia (W):</strong> 550',
+    codigo: "2075112",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075112",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'Horno de pan Liliana AFP905 Breadly 1kg 12 prog. dig',
+    imagen: "images/hornos/Horno_de_pan_Liliana_AFP905_Breadly_1kg_12_prog_dig_1.webp",
+    imagenes: [
+        "images/hornos/Horno_de_pan_Liliana_AFP905_Breadly_1kg_12_prog_dig_1.webp",
+        "images/hornos/Horno_de_pan_Liliana_AFP905_Breadly_1kg_12_prog_dig_2.webp",
+        "images/hornos/Horno_de_pan_Liliana_AFP905_Breadly_1kg_12_prog_dig_3.webp",
+        "images/hornos/Horno_de_pan_Liliana_AFP905_Breadly_1kg_12_prog_dig_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 1kg\n<strong>Potencia (W):</strong> 600',
+    codigo: "2074795",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2074795",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'Horno electrico Bgh BHE40M23N 40 lts Duo',
+    imagen: "images/hornos/Horno_electrico_Bgh_BHE40M23N_40_lts_Duo_1.webp",
+    imagenes: [
+        "images/hornos/Horno_electrico_Bgh_BHE40M23N_40_lts_Duo_1.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE40M23N_40_lts_Duo_2.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 40\n<strong>Potencia (W):</strong> 1500\n<strong>Grill:</strong> Sí',
+    codigo: "2074620",
+    caracteristicas: [
+        "Marca: Bgh",
+        "Modelo: 2074620",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'Horno electrico Bgh BHE65M19N 64 lts',
+    imagen: "images/hornos/Horno_electrico_Bgh_BHE65M19N_64_lts_1.webp",
+    imagenes: [
+        "images/hornos/Horno_electrico_Bgh_BHE65M19N_64_lts_1.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE65M19N_64_lts_2.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE65M19N_64_lts_3.webp",
+        "images/hornos/Horno_electrico_Bgh_BHE65M19N_64_lts_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 64\n<strong>Potencia (W):</strong> 2200\n<strong>Grill:</strong> Sí\n<strong>Conveccion:</strong> Sí',
+    codigo: "2073485",
+    caracteristicas: [
+        "Marca: Bgh",
+        "Modelo: 2073485",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'Horno electrico Kanji 40Lts',
+    imagen: "images/hornos/Horno_electrico_Kanji_40Lts_1.webp",
+    imagenes: [
+        "images/hornos/Horno_electrico_Kanji_40Lts_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 40\n<strong>Potencia (W):</strong> 1600\n<strong>Grill:</strong> Sí\n<strong>Conveccion:</strong> Sí',
+    codigo: "2075396",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075396",
+        "Garantía: 1 año"
+    ]
+},
 
 ];
