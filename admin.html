@@ -408,8 +408,8 @@ const categoryFields = {
             ],
             "Cafeteras": [
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "1.2" },
-                { label: "Tipo", name: "tipo", type: "select", options: ["Filtro", "Cápsulas", "Espresso"] },
-                { label: "Presión (bar)", name: "presion", type: "text", placeholder: "15" }
+                { label: "Tipo", name: "tipo", type: "select", options: ["Filtro", "Cápsulas", "Expreso"] },
+                { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "600" }
             ],
             "Tostadoras": [
                 { label: "Ranuras", name: "ranuras", type: "text", placeholder: "2" },
@@ -436,7 +436,7 @@ const categoryFields = {
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "2,5" },
                 { label: "Apto líquido", name: "apto_liquido", type: "checkbox" }, // New checkbox field
                 { label: "Bolsa", name: "bolsa", type: "select", options: ["Sí", "No"] },
-                { label: "Tipo de alimentación", name: "tipo_alimentacion", type: "select", options: ["Corriente eléctica", "Batería"] }
+                { label: "Tipo de alimentación", name: "tipo_alimentacion", type: "text", placerholder: "Tipo de alimentación" }
             ]
         }
     },
@@ -478,18 +478,20 @@ const categoryFields = {
         }
     },
         "hogar jardin y tiempo libre": {
-        subcategorias: ["Colchones", "Sommiers", "Almohadas", "Jardín", "Bicicletas"],
+        subcategorias: ["Colchones", "Sommiers", "Almohadas", "Jardín", "Bicicletas", "Piletas"],
         folders: {
             "Colchones": "colchones",
             "Sommiers":"sommiers",
             "Almohadas": "almohadas",
             "Jardín":"jardín",
             "Bicicletas":"bicicletas",
+            "Piletas":"piletas"
         },
         fields: {
             "Colchones": [
             { label: "Plazas", name: "Plazas", type: "select", options: ["1", "1 1/2", "2", "Queen size", "King size"] },
             { label: "Dimensiones (Largo x Ancho x Alto)", name: "dimensiones", type: "text", placeholder: "190 x 80 x 23" },
+            { label: "Peso maximo soportado (Kg)", name: "peso_maximo_soportado", type: "text", placeholder: "80" },
             { label: "Resortes", name: "resortes", type: "checkbox" }, // Changed to checkbox
             { label: "Espuma", name: "espuma", type: "checkbox" }, // Changed to checkbox
             { label: "Pillow", name: "pillow", type: "checkbox" }, // Changed to checkbox
@@ -521,9 +523,16 @@ const categoryFields = {
             { label: "Tipo de frenos", name: "tipo_de_frenos", type: "select", options: ["V Brake", "Disco", "Contrapedal"] },
             { label: "Canasto", name: "canasto", type: "checkbox" }, // Changed to checkbox
             { label: "Portaequipaje", name: "portaequipaje", type: "checkbox" }, // New checkbox field
-            
+            ],
 
-            ]
+            "Piletas": [
+            { label: "Capacidad de agua (L)", name: "capacidad", type: "text", placeholder: "4.600" },
+            { label: "Forma", name: "forma", type: "select", options: ["Rectangular", "Circular"] },
+            { label: "Dimensiones (Cm)", name: "dimensiones", type: "text", placeholder: "300 x 200 x 70" },
+            { label: "Inflable", name: "inflable", type: "checkbox" }, // Changed to checkbox
+            { label: "Escalera", name: "escalera", type: "checkbox" }, // Changed to checkbox
+            
+            ],
             }
     },
     

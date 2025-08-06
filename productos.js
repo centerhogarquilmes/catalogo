@@ -6949,5 +6949,446 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
+    {
+    categoria: "Pequeños",
+    subcategoria: "Pavas eléctricas",
+    nombre: 'Pava Kanji  KJH-PE15002M Mate',
+    imagen: "images/pavas_electricas/Pava_Kanji_KJHPE15002M_Mate_1.webp",
+    imagenes: [
+        "images/pavas_electricas/Pava_Kanji_KJHPE15002M_Mate_1.webp",
+        "images/pavas_electricas/Pava_Kanji_KJHPE15002M_Mate_2.webp",
+        "images/pavas_electricas/Pava_Kanji_KJHPE15002M_Mate_3.webp",
+        "images/pavas_electricas/Pava_Kanji_KJHPE15002M_Mate_4.webp",
+        "images/pavas_electricas/Pava_Kanji_KJHPE15002M_Mate_5.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 1.8\n<strong>Potencia (W):</strong> 1500\n<strong>Apagado automático:</strong> Sí\n<strong>Corte para mate:</strong> Sí',
+    codigo: "2074022",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2074022",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Westinghouse  WH-HP1200SSD/STD Electrico 1 hornalla',
+    imagen: "images/anafes/Anafe_Westinghouse_WH_HP1200SSD_STD_Electrico_1_hornalla_1.webp",
+    imagenes: [
+        "images/anafes/Anafe_Westinghouse_WH_HP1200SSD_STD_Electrico_1_hornalla_1.webp"
+    ],
+    descripcion: '<strong>Material de superficie:</strong> Chapa pintada al polvo\n<strong>Cantidad de hornallas:</strong> 1\n<strong>Dimensiones (Anc x Pro):</strong> 25x 22\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073862",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2073862",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Exprimidores y Jugueras",
+    nombre: 'Exprimidor Liliana AE920 de citricos',
+    imagen: "images/exprimidores_jugueras/Exprimidor_Liliana_AE920_de_citricos_1.webp",
+    imagenes: [
+        "images/exprimidores_jugueras/Exprimidor_Liliana_AE920_de_citricos_1.webp",
+        "images/exprimidores_jugueras/Exprimidor_Liliana_AE920_de_citricos_2.webp",
+        "images/exprimidores_jugueras/Exprimidor_Liliana_AE920_de_citricos_3.webp",
+        "images/exprimidores_jugueras/Exprimidor_Liliana_AE920_de_citricos_4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 40\n<strong>Capacidad (Litros):</strong> 1\n<strong>Tipo:</strong> Exprimidor',
+    codigo: "2070886",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070886",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Picadoras",
+    nombre: 'Picador Ultracomb PC6802 Bowl de vidrio 300 ml y 6 cuchillas inox corta y pica',
+    imagen: "images/picadoras/Picador_Ultracomb_PC6802_Bowlde_vidrio_300_ml_y_6_cuchillas_inox_corta_y_pica_1.webp",
+    imagenes: [
+        "images/picadoras/Picador_Ultracomb_PC6802_Bowlde_vidrio_300_ml_y_6_cuchillas_inox_corta_y_pica_1.webp",
+        "images/picadoras/Picador_Ultracomb_PC6802_Bowlde_vidrio_300_ml_y_6_cuchillas_inox_corta_y_pica_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 200\n<strong>Capacidad (Litros):</strong> 300ml\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075275",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2075275",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Sandwicheras",
+    nombre: 'Sandwichera Yelmo SW 1800 4 sandwich 800 wts',
+    imagen: "images/sandwicheras/Sandwichera_Yelmo_SW_18004_sandwich_800_wts_1.webp",
+    imagenes: [
+        "images/sandwicheras/Sandwichera_Yelmo_SW_18004_sandwich_800_wts_1.webp",
+        "images/sandwicheras/Sandwichera_Yelmo_SW_18004_sandwich_800_wts_2.webp",
+        "images/sandwicheras/Sandwichera_Yelmo_SW_18004_sandwich_800_wts_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 800\n<strong>Capacidad (sandwiches):</strong> 4 triangulos\n<strong>Placas antiadherentes:</strong> Sí',
+    codigo: "19500",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 19500",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Yelmo AS 3239 para auto 12V',
+    imagen: "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_1.webp",
+        "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_2.webp",
+        "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_3.webp",
+        "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_4.webp",
+        "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_5.webp",
+        "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_6.webp",
+        "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_7.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 80\n<strong>Capacidad (Litros):</strong> 395 ml\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Auto (12v)',
+    codigo: "2074798",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2074798",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Picadoras",
+    nombre: 'Picadora Philco PI23PHP mini chopper 400W',
+    imagen: "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_1.webp",
+    imagenes: [
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_1.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_2.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_3.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_4.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_5.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_6.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_7.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_8.webp",
+        "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_9.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 400\n<strong>Capacidad (Litros):</strong> 500 mL\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075035",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075035",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Pavas eléctricas",
+    nombre: 'Pava Liliana AP965/AP165 matera 1.7 lts',
+    imagen: "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_1.webp",
+    imagenes: [
+        "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_1.webp",
+        "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_2.webp",
+        "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_3.webp",
+        "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_4.webp",
+        "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_5.webp",
+        "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_6.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 1,7\n<strong>Potencia (W):</strong> 2000\n<strong>Apagado automático:</strong> Sí\n<strong>Corte para mate:</strong> Sí',
+    codigo: "2071349",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2071349",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Picadoras",
+    nombre: 'Picadora Yelmo PC5803',
+    imagen: "images/picadoras/Picadora_Yelmo_PC5803_1.webp",
+    imagenes: [
+        "images/picadoras/Picadora_Yelmo_PC5803_1.webp",
+        "images/picadoras/Picadora_Yelmo_PC5803_2.webp",
+        "images/picadoras/Picadora_Yelmo_PC5803_3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 500\n<strong>Capacidad (Litros):</strong> 1,2\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2075158",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2075158",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Picadoras",
+    nombre: 'Picador Ultracomb PC6800 Bowl de vidrio 1.2lts 600Wts',
+    imagen: "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_1.webp",
+    imagenes: [
+        "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_1.webp",
+        "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_2.webp",
+        "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_3.webp",
+        "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_4.webp",
+        "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_5.webp",
+        "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 600\n<strong>Capacidad (Litros):</strong> 1,2\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2073800",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2073800",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Atma LM8507AP de mano 600w Varilla de plastico',
+    imagen: "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_1.webp",
+        "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_2.webp",
+        "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_3.webp",
+        "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_4.webp",
+        "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_5.webp",
+        "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 600\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Vaso medidor',
+    codigo: "2075413",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075413",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Ultracomb LM-2552 600w cuchillas inox 2 vel y vaso 800ml',
+    imagen: "images/mixers/Mixer_Ultracomb_LM_2552_600w_cuchillas_inox_2_vel_y_vaso_800ml_1.webp",
+    imagenes: [
+        "images/mixers/Mixer_Ultracomb_LM_2552_600w_cuchillas_inox_2_vel_y_vaso_800ml_1.webp",
+        "images/mixers/Mixer_Ultracomb_LM_2552_600w_cuchillas_inox_2_vel_y_vaso_800ml_2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 600\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Vaso medidor',
+    codigo: "2075281",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2075281",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Cafeteras",
+    nombre: 'Cafetera Moulinex FG320058 FCM CAFE CITY ROJA ( GS )',
+    imagen: "images/cafeteras/Cafetera_Moulinex_FG320058_FCM_CAFE_CITY_ROJA_GS_1.webp",
+    imagenes: [
+        "images/cafeteras/Cafetera_Moulinex_FG320058_FCM_CAFE_CITY_ROJA_GS_1.webp",
+        "images/cafeteras/Cafetera_Moulinex_FG320058_FCM_CAFE_CITY_ROJA_GS_2.webp",
+        "images/cafeteras/Cafetera_Moulinex_FG320058_FCM_CAFE_CITY_ROJA_GS_3.webp",
+        "images/cafeteras/Cafetera_Moulinex_FG320058_FCM_CAFE_CITY_ROJA_GS_4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 600ml\n<strong>Tipo:</strong> Filtro\n<strong>Potencia (W):</strong> 650',
+    codigo: "2072849",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2072849",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
+
+
+
+
+
+/////    06 08 2025    /////
+
+
+
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Almohadas",
+    nombre: 'Almohada Suav. VISCO Cervical Thermosense 57x37x12',
+    imagen: "images/almohadas/Almohada_Suav_VISCO_Cervical_Thermosense_57x37x12_1.webp",
+    imagenes: [
+        "images/almohadas/Almohada_Suav_VISCO_Cervical_Thermosense_57x37x12_1.webp",
+        "images/almohadas/Almohada_Suav_VISCO_Cervical_Thermosense_57x37x12_2.webp",
+        "images/almohadas/Almohada_Suav_VISCO_Cervical_Thermosense_57x37x12_3.webp"
+    ],
+    descripcion: '<strong>Materiales del relleno:</strong> Fibra de poliéster\n<strong>Dimensiones (Largo x Ancho x Espesor):</strong> 57 x 37 x 12\n<strong>Inteligente:</strong> Sí',
+    codigo: "2069641",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2069641",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Atma AS9221PI de tacho 10lts 3 en 1 polvo y liquidos 1200w',
+    imagen: "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_1.webp",
+        "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_2.webp",
+        "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_3.webp",
+        "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_4.webp",
+        "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_5.webp",
+        "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1200\n<strong>Capacidad (Litros):</strong> 10\n<strong>Apto líquido:</strong> Sí\n<strong>Bolsa:</strong> Sí\n<strong>Tipo de alimentación:</strong> Corriente eléctrica',
+    codigo: "2075424 ",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075424 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Orbis 315 BBO btra c/enc. 14l. bl.',
+    imagen: "images/calefones/Calefon_Orbis_315_BBO_btra_c_enc_14l_bl_1.webp",
+    imagenes: [
+        "images/calefones/Calefon_Orbis_315_BBO_btra_c_enc_14l_bl_1.webp"
+    ],
+    descripcion: '<strong>Capacidad (L/h):</strong> 14\n<strong>Tiraje:</strong> Tiro natural\n<strong>Tipo de gas:</strong> Gas natural\n<strong>Tipo de encendido:</strong> Piezoeléctrico\n<strong>Tipo de control:</strong> Botones\n<strong>Conexiones de agua:</strong> Carga inferior\n<strong>Eficiencia energética:</strong> Clase D',
+    codigo: "14023",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 14023",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. FLOUSTAR 190x80x23 res.',
+    imagen: "images/colchones/Colchon_Suav_FLOUSTAR_190x80x23_res_1.webp",
+    imagenes: [
+        "images/colchones/Colchon_Suav_FLOUSTAR_190x80x23_res_1.webp",
+        "images/colchones/Colchon_Suav_FLOUSTAR_190x80x23_res_2.webp",
+        "images/colchones/Colchon_Suav_FLOUSTAR_190x80x23_res_3.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 1\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 80 x 23\n<strong>Peso maximo soportado (Kg):</strong> 80\n<strong>Resortes:</strong> Sí',
+    codigo: "14389",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 14389",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Sol de Verano S 300 3X2,20X0,70 4620 LTS APROX.',
+    imagen: "images/piletas/Pileta_Solde_Verano__300_3X2_20X0_70_4620_LTS_APROX_1.webp",
+    imagenes: [
+        "images/piletas/Pileta_Solde_Verano__300_3X2_20X0_70_4620_LTS_APROX_1.webp",
+        "images/piletas/Pileta_Solde_Verano__300_3X2_20X0_70_4620_LTS_APROX_2.webp",
+        "images/piletas/Pileta_Solde_Verano__300_3X2_20X0_70_4620_LTS_APROX_3.webp",
+        "images/piletas/Pileta_Solde_Verano__300_3X2_20X0_70_4620_LTS_APROX_4.webp",
+        "images/piletas/Pileta_Solde_Verano__300_3X2_20X0_70_4620_LTS_APROX_5.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 4620\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 300 x 220 x 70',
+    codigo: "14546",
+    caracteristicas: [
+        "Marca: Sol de Verano",
+        "Modelo: 14546",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Sol de Verano S 250 2,50X1,60X0,65 2700lts',
+    imagen: "images/piletas/Pileta_Sol_de_Verano_S_250_2_50X1_60X0_65_2700lts_1.webp",
+    imagenes: [
+        "images/piletas/Pileta_Sol_de_Verano_S_250_2_50X1_60X0_65_2700lts_1.webp",
+        "images/piletas/Pileta_Sol_de_Verano_S_250_2_50X1_60X0_65_2700lts_2.webp",
+        "images/piletas/Pileta_Sol_de_Verano_S_250_2_50X1_60X0_65_2700lts_3.webp",
+        "images/piletas/Pileta_Sol_de_Verano_S_250_2_50X1_60X0_65_2700lts_4.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 2700\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 250 x 160 x 65',
+    codigo: "14709",
+    caracteristicas: [
+        "Marca: Sol de Verano",
+        "Modelo: 14709",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Sol de Verano 450 4,40X2,20X0,80 7800 LTS APROX.',
+    imagen: "images/piletas/Pileta_Sol_de_Verano_450_4_40X2_20X0_80_7800_LTS_APROX_1.webp",
+    imagenes: [
+        "images/piletas/Pileta_Sol_de_Verano_450_4_40X2_20X0_80_7800_LTS_APROX_1.webp",
+        "images/piletas/Pileta_Sol_de_Verano_450_4_40X2_20X0_80_7800_LTS_APROX_2.webp",
+        "images/piletas/Pileta_Sol_de_Verano_450_4_40X2_20X0_80_7800_LTS_APROX_3.webp",
+        "images/piletas/Pileta_Sol_de_Verano_450_4_40X2_20X0_80_7800_LTS_APROX_4.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 7800\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 440 x 220 x 80',
+    codigo: "16099",
+    caracteristicas: [
+        "Marca: Sol de Verano",
+        "Modelo: 16099",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Futura Playera R26 Dama Acero 4163',
+    imagen: "images/bicicletas/Bici_Futura_Playera_R26_Dama_Acero_4163_1.webp",
+    imagenes: [
+        "images/bicicletas/Bici_Futura_Playera_R26_Dama_Acero_4163_1.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Playera\n<strong>Material:</strong> Acero\n<strong>Rodado:</strong> 26\n<strong>Tipo de frenos:</strong> V Brake\n<strong>Canasto:</strong> Sí\n<strong>Portaequipaje:</strong> Sí',
+    codigo: "19921",
+    caracteristicas: [
+        "Marca: Futura",
+        "Modelo: 19921",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Secarropas",
+    nombre: 'Secarropas Drean QV 6.5 centrifugo 6.5 kg',
+    imagen: "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_1.webp",
+    imagenes: [
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_1.webp",
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_2.webp",
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_3.webp",
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_4.webp",
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_5.webp",
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_6.webp",
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_7.webp",
+        "images/secarropas/Secarropas_Drean_QV_6_5_centrifugo_6_5_kg_8.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de secado:</strong> Centrifugado\n<strong>Velocidad de centrifugado (RPM):</strong> 2800',
+    codigo: "2069095",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2069095",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
 
 ];
