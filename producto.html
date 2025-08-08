@@ -163,7 +163,8 @@
     <!-- Product Details -->
     <main class="container product-page">
          <main class="body-padding-top"></main>
-        <!-- Modal para ampliación de imágenes -->
+        
+         <!-- Modal para ampliación de imágenes -->
         <div class="image-modal" id="image-modal" style="display: none;">
             <!-- (Tu modal sigue igual) -->
         </div>
@@ -199,6 +200,13 @@
             <h2>Características del producto</h2>
             <ul id="product-features"></ul>
         </div>
+
+                <!-- Dentro de <main class="container product-page"> -->
+        <div class="poster-info print-only">
+        <p class="slogan">¡Ofertas imperdibles en Center Hogar Quilmes!</p>
+        <p class="contact-info">Rivadavia 220, Quilmes | WhatsApp: 11 3168-0489</p>
+        </div>
+
     </main>
 
    <!-- Footer -->
@@ -252,7 +260,7 @@
 
     // Check if the product is in productosDestacados for 25% discount
     const isProductoDestacado = productosDestacados.includes(codigo);
-    const precioConDescuento = isProductoDestacado && precioLista ? precioLista * 0.75 : null;
+    const precioConDescuento = isProductoDestacado && precioLista ? precioLista * 0.74 : null;
     const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
 
     // Calculate price before national taxes (based on discounted price if applicable, otherwise original price)
@@ -265,7 +273,7 @@
         { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista / 3) },
         { cuotas: 6, texto: '6 Cuotas sin interés', precio: (precioLista / 6) },
         { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista / 9) },
-        { cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista / 12) }
+      //{ cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista / 12) }
     ] : [];
 
     const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
@@ -286,7 +294,7 @@
     if (isProductoDestacado) {
         const discountLabel = document.createElement('p');
         discountLabel.className = 'discount-label';
-        discountLabel.textContent = '25% OFF CONTADO';
+        discountLabel.textContent = '24% OFF CONTADO';
         codigoEl.insertAdjacentElement('afterend', discountLabel);
     }
 
@@ -358,7 +366,7 @@
     if (isProductoDestacado && precioTextoConDescuento) {
         const precioDescuentoEl = document.createElement('p');
         precioDescuentoEl.className = 'product-price discount-price';
-        precioDescuentoEl.textContent = 'Oferta de la semana: ' + precioTextoConDescuento;
+        precioDescuentoEl.textContent = 'Contado: ' + precioTextoConDescuento;
         preciosContainer.appendChild(precioDescuentoEl);
     }
 
@@ -374,7 +382,7 @@
             const cuotaEl = document.createElement('p');
             cuotaEl.className = `product-cuota product-cuota-${cuota.cuotas}`;
             let imgSrc, imgClass;
-            if (cuota.cuotas === 3 || cuota.cuotas === 6 || cuota.cuotas === 9 || cuota.cuotas === 12) {
+            if (cuota.cuotas === 3 || cuota.cuotas === 6 || cuota.cuotas === 9) {
                 imgSrc = 'images/tarjetas_de_credito_2.png';
                 imgClass = 'cuota-card-icon';
             }

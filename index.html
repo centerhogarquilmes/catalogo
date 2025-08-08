@@ -443,7 +443,7 @@ if (productosDestacadosFiltrados.length === 0) {
         const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
         
         // Calcular precio con 25% de descuento
-        const precioConDescuento = precioLista ? precioLista * 0.75 : null;
+        const precioConDescuento = precioLista ? precioLista * 0.74 : null;
         const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR')}` : 'Consultar precio';
         
         // Calcular precio antes de impuestos basado en el precio con descuento
@@ -457,7 +457,7 @@ if (productosDestacadosFiltrados.length === 0) {
             <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
                 ${isAgotado ? '<span class="agotado-label">Agotado</span>' : ''}
                 
-                <span class="discount-label">25% OFF</span> <!-- Nueva etiqueta de descuento -->
+                <span class="discount-label">24% OFF</span> <!-- Nueva etiqueta de descuento -->
                 <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                 <div class="text-container">
                     <h3>${producto.nombre}</h3>
