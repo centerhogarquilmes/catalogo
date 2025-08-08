@@ -237,7 +237,7 @@
 
     <!-- Script personalizado para mostrar precios y stock -->
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const nombre = urlParams.get('nombre') ? decodeURIComponent(urlParams.get('nombre')) : '';
     const imagen = urlParams.get('imagen') ? decodeURIComponent(urlParams.get('imagen')) : '';
@@ -258,22 +258,21 @@
     const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
     const precioTexto = precioLista ? `$${precioLista.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
-    // Check if the product is in productosDestacados for 25% discount
-    const isProductoDestacado = productosDestacados.includes(codigo);
-    const precioConDescuento = isProductoDestacado && precioLista ? precioLista * 0.74 : null;
+    // Aplicar 24% de descuento a TODOS los productos
+    const precioConDescuento = precioLista ? precioLista * 0.76 : null; // 24% de descuento
     const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
 
-    // Calculate price before national taxes (based on discounted price if applicable, otherwise original price)
+    // Calcular precio sin impuestos nacionales (basado en el precio con descuento)
     const precioBase = precioConDescuento || precioLista;
     const precioAnterior = precioBase ? precioBase / 1.21 : null;
     const precioAnteriorTexto = precioAnterior ? `$${precioAnterior.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
-    // Calculate installment prices based on original list price
+    // Definir cuotas (solo 9 cuotas sin interés se mostrarán, otras se mantienen comentadas para futuro)
     const cuotas = precioLista ? [
-        { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista / 3) },
-        { cuotas: 6, texto: '6 Cuotas sin interés', precio: (precioLista / 6) },
+        // { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista / 3) },
+        // { cuotas: 6, texto: '6 Cuotas sin interés', precio: (precioLista / 6) },
         { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista / 9) },
-      //{ cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista / 12) }
+        // { cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista / 12) }
     ] : [];
 
     const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
@@ -283,22 +282,20 @@
     document.getElementById('product-description').innerHTML = descripcion.replace(/\n/g, '<br>');
     document.querySelector('.stock').textContent = '';
 
-    // Insert product code
+    // Insertar código del producto
     const productName = document.getElementById('product-name');
     const codigoEl = document.createElement('p');
     codigoEl.className = 'product-code';
     codigoEl.textContent = 'Código: ' + codigo;
     productName.insertAdjacentElement('afterend', codigoEl);
 
-    // Insert discount label for highlighted products
-    if (isProductoDestacado) {
-        const discountLabel = document.createElement('p');
-        discountLabel.className = 'discount-label';
-        discountLabel.textContent = '24% OFF CONTADO';
-        codigoEl.insertAdjacentElement('afterend', discountLabel);
-    }
+    // Insertar etiqueta de descuento para TODOS los productos
+    const discountLabel = document.createElement('p');
+    discountLabel.className = 'discount-label';
+    discountLabel.textContent = '24% OFF CONTADO';
+    codigoEl.insertAdjacentElement('afterend', discountLabel);
 
-    // Insert share button
+    // Insertar botón de compartir
     const shareButton = document.createElement('button');
     shareButton.className = 'share-btn';
     shareButton.title = 'Compartir producto';
@@ -323,7 +320,7 @@
     shareButton.addEventListener('click', async () => {
         const shareData = {
             title: producto ? producto.nombre : 'Producto',
-            text: `¡Mira este producto de Center Hogar Quilmes! ${producto ? producto.nombre : ''} (Código: ${codigo})\nPrecio: ${precioTexto}${isProductoDestacado ? `\nPrecio con descuento: ${precioTextoConDescuento}` : ''}\n`,
+            text: `¡Mira este producto de Center Hogar Quilmes! ${producto ? producto.nombre : ''} (Código: ${codigo})\nPrecio: ${precioTexto}\nPrecio con descuento: ${precioTextoConDescuento}\n`,
             url: await shortenUrl(window.location.href)
         };
 
@@ -352,37 +349,37 @@
     const info = document.querySelector('.product-info');
     const before = document.querySelector('.shipping');
 
-    // Create price container
+    // Crear contenedor de precios
     const preciosContainer = document.createElement('div');
     preciosContainer.className = 'precios-container';
 
-    // Insert list price
+    // Insertar precio de lista
     const precioEl = document.createElement('p');
-    precioEl.className = `product-price ${isProductoDestacado ? 'original-price' : ''}`;
+    precioEl.className = 'product-price original-price';
     precioEl.textContent = 'Precio de lista: ' + precioTexto;
     preciosContainer.appendChild(precioEl);
 
-    // Insert discounted price if applicable
-    if (isProductoDestacado && precioTextoConDescuento) {
+    // Insertar precio con descuento
+    if (precioTextoConDescuento) {
         const precioDescuentoEl = document.createElement('p');
         precioDescuentoEl.className = 'product-price discount-price';
         precioDescuentoEl.textContent = 'Contado: ' + precioTextoConDescuento;
         preciosContainer.appendChild(precioDescuentoEl);
     }
 
-    // Insert price before taxes
+    // Insertar precio sin impuestos
     const precioAntEl = document.createElement('p');
     precioAntEl.className = 'product-price-anterior';
     precioAntEl.textContent = 'Pre.ant.imp.nac: ' + precioAnteriorTexto;
     preciosContainer.appendChild(precioAntEl);
 
-    // Insert installment prices
+    // Insertar cuotas (solo 9 cuotas)
     if (cuotas.length) {
         cuotas.forEach(cuota => {
             const cuotaEl = document.createElement('p');
             cuotaEl.className = `product-cuota product-cuota-${cuota.cuotas}`;
             let imgSrc, imgClass;
-            if (cuota.cuotas === 3 || cuota.cuotas === 6 || cuota.cuotas === 9) {
+            if (cuota.cuotas === 9) {
                 imgSrc = 'images/tarjetas_de_credito_2.png';
                 imgClass = 'cuota-card-icon';
             }
@@ -398,10 +395,10 @@
         });
     }
 
-    // Insert price container before shipping
+    // Insertar contenedor de precios antes de envío
     info.insertBefore(preciosContainer, before);
 
-    // Insert stock
+    // Insertar stock
     const stockSucEl = document.createElement('p');
     stockSucEl.className = 'product-stock-sucursal';
     stockSucEl.textContent = 'Stock en sucursal: ' + sucursalTexto;
@@ -437,7 +434,7 @@
     });
 
     const wa = document.getElementById('whatsapp-consulta');
-    const msg = `Hola, quiero un presupuesto al contado para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo})${isProductoDestacado ? ' con 25% de descuento' : ''}.`;
+    const msg = `Hola, quiero un presupuesto al contado para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}) con 24% de descuento.`;
     wa.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(msg)}`;
     const wat = document.getElementById('whatsapp-contado');
     const mssg = `Hola, quiero info acerca de ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
@@ -449,71 +446,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.body.classList.contains('product-page')) {
         let lastScrollTop = 0;
         const header = document.querySelector('.header');
+        const headerHeight = header.offsetHeight;
 
         window.addEventListener('scroll', () => {
             let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
-                header.classList.add('hidden');
+            // Scroll hacia abajo
+            if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
+                header.classList.add('partial-hidden');
                 header.classList.remove('show');
-            } else if (currentScroll < lastScrollTop) {
-                header.classList.remove('hidden');
-                header.classList.add('show');
             }
-
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        });
-    }
-});
-
-// Scroll behavior for header
-document.addEventListener('DOMContentLoaded', () => {
-    if (document.body.classList.contains('product-page')) {
-        let lastScrollTop = 0;
-        const header = document.querySelector('.header');
-
-        window.addEventListener('scroll', () => {
-            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
-                header.classList.add('hidden');
-                header.classList.remove('show');
-            } else if (currentScroll < lastScrollTop) {
-                header.classList.remove('hidden');
-                header.classList.add('show');
-            }
-
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        });
-    }
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Solo ejecutar si estamos en la página de producto
-    if (document.body.classList.contains('product-page')) {
-        let lastScrollTop = 0;
-        const header = document.querySelector('.header');
-
-        window.addEventListener('scroll', () => {
-            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            // Scroll hacia abajo: ocultar header parcialmente
-            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
-                header.classList.add('hidden');
-                header.classList.remove('show'); // Asegurar que no tenga la clase partial
-            }
-            // Scroll hacia arriba: mostrar header parcialmente
+            // Scroll hacia arriba
             else if (currentScroll < lastScrollTop) {
-                header.classList.remove('hidden'); // Quitar clase hidden
-                header.classList.add('show'); // Añadir clase partial
+                header.classList.remove('partial-hidden');
+                header.classList.add('show');
             }
 
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evitar valores negativos
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
         });
     }
 });
-
-    </script>
+</script>
 </body>
 </html>
