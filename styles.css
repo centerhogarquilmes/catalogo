@@ -13,15 +13,15 @@ body {
 }
 /* Header */
 .header {
-    background: linear-gradient(90deg, #02366e 0%, #000f1d 100%); /* Degradado de azul oscuro a azul medio */
+    background: linear-gradient(90deg, #02366e 0%, #000f1d 100%);
     padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --header-height: 60px; /* Definir altura del header */
-    
+    transition: transform 0.3s ease; /* Suavizar el movimiento */
+    --header-height: 80px; /* Altura fija para consistencia */
 }
 
 
@@ -68,13 +68,30 @@ body {
 }
 
 
+/* Contenido del header */
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; /* Para permitir posicionamiento absoluto en móvil */
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si es necesario */
-    gap: 10px; /* Espacio entre elementos */
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+/* Estado inicial del header en la página de producto */
+.product-page .header {
+    transform: translateY(0);
+}
+
+/* Header parcialmente oculto (solo muestra el buscador) */
+.product-page .header.partial-hidden {
+    transform: translateY(-110px); /* Ajusta según la altura del logo/menú */
+    transition: transform 0.3s ease;
+}
+
+/* Header completamente visible */
+.product-page .header.show {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
 }
 
 /* Logo */
