@@ -164,9 +164,14 @@
     <main class="container product-page">
          <main class="body-padding-top"></main>
         
-         <!-- Modal para ampliación de imágenes -->
-        <div class="image-modal" id="image-modal" style="display: none;">
-            <!-- (Tu modal sigue igual) -->
+        <!-- Modal para ampliación de imágenes -->
+        <div class="image-modal" id="image-modal">
+            <div class="modal-content">
+                <img id="modal-image" src="" alt="Imagen ampliada">
+                <span class="modal-close" aria-label="Cerrar modal">&times;</span>
+                <button class="modal-btn prev" aria-label="Imagen anterior">❮</button>
+                <button class="modal-btn next" aria-label="Imagen siguiente">❯</button>
+            </div>
         </div>
         <div class="product-main">
             <div class="image-container">
@@ -258,21 +263,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
     const precioTexto = precioLista ? `$${precioLista.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
-    // Aplicar 24% de descuento a TODOS los productos
-    const precioConDescuento = precioLista ? precioLista * 0.76 : null; // 24% de descuento
+    const precioConDescuento = precioLista ? precioLista * 0.76 : null;
     const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
 
-    // Calcular precio sin impuestos nacionales (basado en el precio con descuento)
     const precioBase = precioConDescuento || precioLista;
     const precioAnterior = precioBase ? precioBase / 1.21 : null;
     const precioAnteriorTexto = precioAnterior ? `$${precioAnterior.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
-    // Definir cuotas (solo 9 cuotas sin interés se mostrarán, otras se mantienen comentadas para futuro)
     const cuotas = precioLista ? [
-        // { cuotas: 3, texto: '3 Cuotas sin interés', precio: (precioLista / 3) },
-        // { cuotas: 6, texto: '6 Cuotas sin interés', precio: (precioLista / 6) },
-        { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista / 9) },
-        // { cuotas: 12, texto: '12 Cuotas sin interés', precio: (precioLista / 12) }
+        { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista / 9) }
     ] : [];
 
     const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
@@ -282,20 +281,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('product-description').innerHTML = descripcion.replace(/\n/g, '<br>');
     document.querySelector('.stock').textContent = '';
 
-    // Insertar código del producto
     const productName = document.getElementById('product-name');
     const codigoEl = document.createElement('p');
     codigoEl.className = 'product-code';
     codigoEl.textContent = 'Código: ' + codigo;
     productName.insertAdjacentElement('afterend', codigoEl);
 
-    // Insertar etiqueta de descuento para TODOS los productos
     const discountLabel = document.createElement('p');
     discountLabel.className = 'discount-label';
     discountLabel.textContent = '24% OFF CONTADO';
     codigoEl.insertAdjacentElement('afterend', discountLabel);
 
-    // Insertar botón de compartir
     const shareButton = document.createElement('button');
     shareButton.className = 'share-btn';
     shareButton.title = 'Compartir producto';
@@ -349,17 +345,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const info = document.querySelector('.product-info');
     const before = document.querySelector('.shipping');
 
-    // Crear contenedor de precios
     const preciosContainer = document.createElement('div');
     preciosContainer.className = 'precios-container';
 
-    // Insertar precio de lista
     const precioEl = document.createElement('p');
     precioEl.className = 'product-price original-price';
     precioEl.textContent = 'Precio de lista: ' + precioTexto;
     preciosContainer.appendChild(precioEl);
 
-    // Insertar precio con descuento
     if (precioTextoConDescuento) {
         const precioDescuentoEl = document.createElement('p');
         precioDescuentoEl.className = 'product-price discount-price';
@@ -367,13 +360,11 @@ document.addEventListener('DOMContentLoaded', () => {
         preciosContainer.appendChild(precioDescuentoEl);
     }
 
-    // Insertar precio sin impuestos
     const precioAntEl = document.createElement('p');
     precioAntEl.className = 'product-price-anterior';
     precioAntEl.textContent = 'Pre.ant.imp.nac: ' + precioAnteriorTexto;
     preciosContainer.appendChild(precioAntEl);
 
-    // Insertar cuotas (solo 9 cuotas)
     if (cuotas.length) {
         cuotas.forEach(cuota => {
             const cuotaEl = document.createElement('p');
@@ -395,10 +386,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Insertar contenedor de precios antes de envío
     info.insertBefore(preciosContainer, before);
 
-    // Insertar stock
     const stockSucEl = document.createElement('p');
     stockSucEl.className = 'product-stock-sucursal';
     stockSucEl.textContent = 'Stock en sucursal: ' + sucursalTexto;
@@ -420,8 +409,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = document.createElement('img');
         img.src = src;
         img.alt = (producto ? producto.nombre : 'Imagen') + ' ' + (i + 1);
-        img.className = i === 0 ? 'active' : '';
-        img.onclick = () => mainImg.src = src;
+        img.className = i === 0 ? 'thumbnail active' : 'thumbnail';
+        img.loading = 'lazy'; // Optimizar carga
         thumb.appendChild(img);
     });
 
@@ -439,6 +428,103 @@ document.addEventListener('DOMContentLoaded', () => {
     const wat = document.getElementById('whatsapp-contado');
     const mssg = `Hola, quiero info acerca de ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
     wat.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(mssg)}`;
+
+    // Modal functionality
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalClose = document.querySelector('.modal-close');
+    const modalPrev = document.querySelector('.modal-btn.prev');
+    const modalNext = document.querySelector('.modal-btn.next');
+    const mainImage = document.getElementById('main-image');
+    const thumbnailGallery = document.getElementById('thumbnail-gallery');
+    let currentImageIndex = 0;
+
+    // Obtener las imágenes dinámicamente desde el array de imágenes
+    const imageSources = imagenes;
+
+    // Función para abrir el modal
+    function openModal(index) {
+        if (index >= 0 && index < imageSources.length) {
+            currentImageIndex = index;
+            modalImage.src = imageSources[currentImageIndex];
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            updateThumbnails();
+        }
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Función para mostrar la imagen anterior
+    function showPrevImage() {
+        currentImageIndex = (currentImageIndex - 1 + imageSources.length) % imageSources.length;
+        modalImage.src = imageSources[currentImageIndex];
+        updateThumbnails();
+    }
+
+    // Función para mostrar la imagen siguiente
+    function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+        modalImage.src = imageSources[currentImageIndex];
+        updateThumbnails();
+    }
+
+    // Función para actualizar la miniatura activa y la imagen principal
+    function updateThumbnails() {
+        const thumbnails = thumbnailGallery.querySelectorAll('img');
+        thumbnails.forEach((thumb, index) => {
+            thumb.classList.toggle('active', index === currentImageIndex);
+        });
+        mainImage.src = imageSources[currentImageIndex];
+    }
+
+    // Evento para abrir el modal al hacer clic en la imagen principal
+    mainImage.addEventListener('click', () => {
+        openModal(currentImageIndex);
+    });
+
+    // Evento para abrir el modal al hacer clic en una miniatura
+    thumbnailGallery.addEventListener('click', (e) => {
+        const thumbnail = e.target.closest('img');
+        if (thumbnail) {
+            const index = Array.from(thumbnailGallery.querySelectorAll('img')).indexOf(thumbnail);
+            if (index !== -1) {
+                currentImageIndex = index;
+                openModal(index);
+            }
+        }
+    });
+
+    // Evento para cerrar el modal
+    modalClose.addEventListener('click', closeModal);
+
+    // Evento para cerrar el modal al hacer clic fuera de la imagen
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Eventos para los botones de navegación
+    modalPrev.addEventListener('click', showPrevImage);
+    modalNext.addEventListener('click', showNextImage);
+
+    // Navegación con teclas (flechas y escape)
+    document.addEventListener('keydown', (e) => {
+        if (modal.classList.contains('active')) {
+            if (e.key === 'ArrowLeft') {
+                showPrevImage();
+            } else if (e.key === 'ArrowRight') {
+                showNextImage();
+            } else if (e.key === 'Escape') {
+                closeModal();
+            }
+        }
+    });
 });
 
 // Scroll behavior for header
@@ -451,13 +537,10 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', () => {
             let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-            // Scroll hacia abajo
             if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
                 header.classList.add('partial-hidden');
                 header.classList.remove('show');
-            }
-            // Scroll hacia arriba
-            else if (currentScroll < lastScrollTop) {
+            } else if (currentScroll < lastScrollTop) {
                 header.classList.remove('partial-hidden');
                 header.classList.add('show');
             }

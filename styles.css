@@ -853,7 +853,7 @@ font-size: 0.8rem;
     .modal-close {
         position: absolute;
         top: 20px;
-        right: 30px;
+        right: -40px;
         color: #ff6200;
         font-size: 40px;
         cursor: pointer;
@@ -864,19 +864,20 @@ font-size: 0.8rem;
         top: 50%;
         width: 32px;
         height: 32px;
+        background: none; /* Eliminar fondo */
         color: #ff6200;
         border: none;
         padding: 15px;
         cursor: pointer;
-        font-size: 24px;
+        font-size: 24px; /* Tamaño de la flecha */
         border-radius: 50%;
         z-index: 2100;
     }
     .modal-btn.prev {
-        left: 150px;
+        left: -40px;
     }
     .modal-btn.next {
-        right: 150px;
+        right: -40px;
     }
     
 }
@@ -938,6 +939,7 @@ font-size: 0.8rem;
         top: 20px;
         right: 20px; /* Ajustado para mejor visibilidad en móvil */
         color: #ff6200;
+        background: none; /* Eliminar fondo */
         font-size: 30px; /* Ligeramente más pequeño para móvil */
         cursor: pointer;
         z-index: 2100;
@@ -948,6 +950,7 @@ font-size: 0.8rem;
         top: 50%;
         transform: translateY(-50%);
         color: #ff6200;
+        background: none; /* Eliminar fondo */
         border: none;
         padding: 10px;
         width: 40px; /* Ligeramente más pequeño para móvil */
@@ -956,6 +959,9 @@ font-size: 0.8rem;
         font-size: 30px;
         border-radius: 50%;
         z-index: 2100;
+    }
+    .modal-btn:hover {
+        color: #e55500; /* Naranja más oscuro al pasar el mouse */
     }
 
     .modal-btn.prev {
