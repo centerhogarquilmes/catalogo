@@ -2608,10 +2608,10 @@ const productos = [
         "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_8.webp"
     ],
     descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6.5\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>Batería:</strong> 5\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong>Android 14 GO Edition',
-    codigo: "2075006 ",
+    codigo: "2075006",
     caracteristicas: [
         "Marca: Motorola",
-        "Modelo: 2075006 ",
+        "Modelo: 2075006",
         "Garantía: 1 año"
     ]
     },
@@ -2843,23 +2843,7 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
-    {
-    categoria: "Tecnología",
-    subcategoria: "Celulares",
-    nombre: 'LIBERADO Motorola Moto E14 2/64GB',
-    imagen: "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_1.webp",
-    imagenes: [
-        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_1.webp",
-        "images/celulares/LIBERADO_Motorola_Moto_E14_2_64GB_2.webp"
-    ],
-    descripcion: '<strong>Almacenamiento (GB):</strong> 64\n<strong>RAM (GB):</strong> 2\n<strong>Pulgadas:</strong> 6,5"\n<strong>Cámara trasera:</strong> 13 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5 Ah\n<strong>Red móvil:</strong> No\n<strong>Sistema operativo:</strong> Android 14 GO',
-    codigo: "2075006",
-    caracteristicas: [
-        "Marca: Motorola",
-        "Modelo: 2075006",
-        "Garantía: 1 año"
-    ]
-},
+    
     {
     categoria: "Tecnología",
     subcategoria: "Celulares",
