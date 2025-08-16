@@ -60,7 +60,7 @@ body {
 
 /* Container */
 .container {
-    
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     margin-bottom: 0; /* Eliminar margen inferior para reducir espacio */
@@ -733,7 +733,7 @@ body {
     position: relative;
     flex: 1;
     padding-top: 100%;
-    width: 100%;
+    width: 500%;
     height: 400px;
 }
 

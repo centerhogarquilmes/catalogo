@@ -7674,4 +7674,697 @@ const productos = [
     ]
 },
 
+
+
+
+
+
+
+
+////////   13 08 2025   ////////
+
+{
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Liliana AA911 Electrico 1 hornalla 1100w',
+    imagen: "images/anafes/Anafe Liliana AA911 Electrico 1 hornalla 1100w 1.webp",
+    imagenes: [
+        "images/anafes/Anafe Liliana AA911 Electrico 1 hornalla 1100w 1.webp",
+        "images/anafes/Anafe Liliana AA911 Electrico 1 hornalla 1100w 2.webp",
+        "images/anafes/Anafe Liliana AA911 Electrico 1 hornalla 1100w 3.webp",
+        "images/anafes/Anafe Liliana AA911 Electrico 1 hornalla 1100w 4.webp"
+    ],
+    descripcion: '<strong>Material de superficie:</strong> Resistencia\n<strong>Cantidad de hornallas:</strong> 1\n<strong>Dimensiones (Anc x Pro):</strong> 22 x 20 x 7,5\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075357",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075357",
+        "Garantía: 1 año"
+    ]
+},
+
+   
+    {
+    categoria: "Pequeños",
+    subcategoria: "Batidoras",
+    nombre: 'Batidora Liliana AB902/AB102 c/ bowl gir. 3lts 5 vel.',
+    imagen: "images/batidoras/Batidora Liliana AB902AB102 c bowl gir 3lts 5 vel 1.webp",
+    imagenes: [
+        "images/batidoras/Batidora Liliana AB902AB102 c bowl gir 3lts 5 vel 1.webp",
+        "images/batidoras/Batidora Liliana AB902AB102 c bowl gir 3lts 5 vel 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 450\n<strong>Velocidades:</strong> 5\n<strong>Capacidad (Litros):</strong> 3\n<strong>Accesorios incluidos:</strong> Bowl, Amasador',
+    codigo: "2071328",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2071328",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Cafeteras",
+    nombre: 'Cafetera Kanji CM1500MC01 Multicapsula porta capsula adaptable',
+    imagen: "images/cafeteras/Cafetera Kanji CM1500MC01 Multicapsula porta capsula adaptable 1.webp",
+    imagenes: [
+        "images/cafeteras/Cafetera Kanji CM1500MC01 Multicapsula porta capsula adaptable 1.webp",
+        "images/cafeteras/Cafetera Kanji CM1500MC01 Multicapsula porta capsula adaptable 2.webp",
+        "images/cafeteras/Cafetera Kanji CM1500MC01 Multicapsula porta capsula adaptable 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 700mL\n<strong>Tipo:</strong> Cápsulas\n<strong>Potencia (W):</strong> 1500',
+    codigo: "2072196",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2072196",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Cafeteras",
+    nombre: 'Cafetera Smartlife SL-CMD1095 1.5Lts control digital c/visor',
+    imagen: "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 1.webp",
+    imagenes: [
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 1.webp",
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 2.webp",
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 3.webp",
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 4.webp",
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 5.webp",
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 6.webp",
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 7.webp",
+        "images/cafeteras/Cafetera Smartlife SL CMD1095 1 5Lts control digital c visor 8.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 1,5\n<strong>Tipo:</strong> Filtro\n<strong>Potencia (W):</strong> 900',
+    codigo: "2073215",
+    caracteristicas: [
+        "Marca: Smartlife",
+        "Modelo: 2073215",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Exprimidores y Jugueras",
+    nombre: 'Exprimidor Oster JU4176 automatico 500cc 75 watts',
+    imagen: "images/exprimidores_jugueras/Exprimidor Oster JU4176 automatico 500cc 75 watts 1.webp",
+    imagenes: [
+        "images/exprimidores_jugueras/Exprimidor Oster JU4176 automatico 500cc 75 watts 1.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU4176 automatico 500cc 75 watts 2.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU4176 automatico 500cc 75 watts 3.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU4176 automatico 500cc 75 watts 4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 75\n<strong>Capacidad (Litros):</strong> 500 mL\n<strong>Tipo:</strong> Exprimidor',
+    codigo: "2072945",
+    caracteristicas: [
+        "Marca: Oster",
+        "Modelo: 2072945",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Exprimidores y Jugueras",
+    nombre: 'Exprimidor Oster JU407B',
+    imagen: "images/exprimidores_jugueras/Exprimidor Oster JU407B 1.webp",
+    imagenes: [
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 1.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 2.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 3.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 4.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 5.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 6.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 7.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 8.webp",
+        "images/exprimidores_jugueras/Exprimidor Oster JU407B 9.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 25\n<strong>Capacidad (Litros):</strong> 1\n<strong>Tipo:</strong> Exprimidor',
+    codigo: "2073213",
+    caracteristicas: [
+        "Marca: Oster",
+        "Modelo: 2073213",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+/////////// 15 08 2025 //////////
+
+{
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Liliana LL961 2 en 1 210w Bateria',
+    imagen: "images/aspiradoras/Aspiradora Liliana LL961 2 en 1 210w Bateria 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Liliana LL961 2 en 1 210w Bateria 1.webp",
+        "images/aspiradoras/Aspiradora Liliana LL961 2 en 1 210w Bateria 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 210\n<strong>Capacidad (Litros):</strong> 400mL\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Batería',
+    codigo: "2075267",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075267",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Audio",
+    nombre: 'Auriculares Havit H201 6d Gaming Altavoz',
+    imagen: "images/audio/Auriculares Havit H201 6d Gaming Altavoz 1.webp",
+    imagenes: [
+        "images/audio/Auriculares Havit H201 6d Gaming Altavoz 1.webp",
+        "images/audio/Auriculares Havit H201 6d Gaming Altavoz 2.webp",
+        "images/audio/Auriculares Havit H201 6d Gaming Altavoz 3.webp",
+        "images/audio/Auriculares Havit H201 6d Gaming Altavoz 4.webp",
+        "images/audio/Auriculares Havit H201 6d Gaming Altavoz 5.webp",
+        "images/audio/Auriculares Havit H201 6d Gaming Altavoz 6.webp"
+    ],
+    descripcion: '<strong>Conectores 3,5:</strong> Sí\n<strong>Micrófono:</strong> Sí',
+    codigo: "2073866",
+    caracteristicas: [
+        "Marca: Havit",
+        "Modelo: 2073866",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Audio",
+    nombre: 'Autoestereo Crown Mustang DMR-3000BT Usb/am/fm/bt 52w',
+    imagen: "images/audio/Autoestereo Crown Mustang DMR 3000BT Usb am fm bt 52w 1.webp",
+    imagenes: [
+        "images/audio/Autoestereo Crown Mustang DMR 3000BT Usb am fm bt 52w 1.webp",
+        "images/audio/Autoestereo Crown Mustang DMR 3000BT Usb am fm bt 52w 3.webp",
+        "images/audio/Autoestereo Crown Mustang DMR 3000BT Usb am fm bt 52w 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 52\n<strong>Bluethoot:</strong> Sí\n<strong>Conectores 3,5:</strong> Sí\n<strong>USB:</strong> Sí\n<strong>AUX:</strong> Sí\n<strong>FM:</strong> Sí\n<strong>AM:</strong> Sí',
+    codigo: "2072649",
+    caracteristicas: [
+        "Marca: Crown",
+        "Modelo: 2072649",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Audio",
+    nombre: 'Autoestereo Crown Mustang DMK-8000BT dig+jgo parlantes 300w',
+    imagen: "images/audio/Autoestereo Crown Mustang DMK 8000BT dig jgo parlantes 300w 1.webp",
+    imagenes: [
+        "images/audio/Autoestereo Crown Mustang DMK 8000BT dig jgo parlantes 300w 1.webp",
+        "images/audio/Autoestereo Crown Mustang DMK 8000BT dig jgo parlantes 300w 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 300\n<strong>Bluethoot:</strong> Sí\n<strong>Conectores 3,5:</strong> Sí\n<strong>USB:</strong> Sí\n<strong>AUX:</strong> Sí\n<strong>FM:</strong> Sí\n<strong>AM:</strong> Sí',
+    codigo: "2075272",
+    caracteristicas: [
+        "Marca: Crown Mustang",
+        "Modelo: 2075272",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Audio",
+    nombre: 'Autoestereo Crown Mustang DMK-9000BT dig+jgo parlantes 400w',
+    imagen: "images/audio/Autoestereo Crown Mustang DMK 9000BT dig jgo parlantes 400w 1.webp",
+    imagenes: [
+        "images/audio/Autoestereo Crown Mustang DMK 9000BT dig jgo parlantes 400w 1.webp",
+        "images/audio/Autoestereo Crown Mustang DMK 9000BT dig jgo parlantes 400w 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 400\n<strong>Bluethoot:</strong> Sí\n<strong>Conectores 3,5:</strong> Sí\n<strong>USB:</strong> Sí\n<strong>AUX:</strong> Sí\n<strong>FM:</strong> Sí\n<strong>AM:</strong> Sí',
+    codigo: "2075273",
+    caracteristicas: [
+        "Marca: Crown Mustang",
+        "Modelo: 2075273",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Audio",
+    nombre: 'Auricular Smartlife HSWG902GRAY Gamer Wire',
+    imagen: "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 1.webp",
+    imagenes: [
+        "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 1.webp",
+        "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 7.webp",
+        "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 6.webp",
+        "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 5.webp",
+        "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 4.webp",
+        "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 3.webp",
+        "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 2.webp"
+    ],
+    descripcion: '<strong>Conectores 3,5:</strong> Sí\n<strong>Micrófono:</strong> Sí',
+    codigo: "2074624",
+    caracteristicas: [
+        "Marca: Smartlife",
+        "Modelo: 2074624",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, Jardín y Tiempo Libre",
+    subcategoria: "Jardín",
+    nombre: 'Bordeadora PETRI Plus 3001005 900wts',
+    imagen: "images/jardin/Bordeadora PETRI Plus 3001005 900wts 1.webp",
+    imagenes: [
+        "images/jardin/Bordeadora PETRI Plus 3001005 900wts 1.webp",
+        "images/jardin/Bordeadora PETRI Plus 3001005 900wts 2.webp",
+        "images/jardin/Bordeadora PETRI Plus 3001005 900wts 3.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Bordeadora eléctrica\n<strong>Potencia (HP):</strong> 800w\n<strong>Eléctrica:</strong> Sí',
+    codigo: "2074993",
+    caracteristicas: [
+        "Marca: PETRI",
+        "Modelo: 2074993",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Volcan 313 BRV 12 lts',
+    imagen: "images/calefones/Calefon Volcan 313 BRV 12 lts 1.webp",
+    imagenes: [
+        "images/calefones/Calefon Volcan 313 BRV 12 lts 1.webp"
+    ],
+    descripcion: '<strong>Capacidad (L/m):</strong> 12\n<strong>Tiraje:</strong> Tiro natural\n<strong>Tipo de gas:</strong> Gas natural\n<strong>Tipo de encendido:</strong> Piezoeléctrico\n<strong>Tipo de control:</strong> Perilla\n<strong>Conexiones de agua:</strong> Carga inferior\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2069927",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 2069927",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Codini Silent 4054 10KG Semiautomatico 7 Prog.',
+    imagen: "images/lavarropas/Lavarropas Codini Silent 4054 10KG Semiautomatico 7 Prog 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Codini Silent 4054 10KG Semiautomatico 7 Prog 1.webp",
+        "images/lavarropas/Lavarropas Codini Silent 4054 10KG Semiautomatico 7 Prog 2.webp",
+        "images/lavarropas/Lavarropas Codini Silent 4054 10KG Semiautomatico 7 Prog 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Semiautomático\n<strong>Tipo de carga:</strong> Superior',
+    codigo: "2071094",
+    caracteristicas: [
+        "Marca: Codini",
+        "Modelo: 2071094",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Codini 4053 Dynamics 10KG Semiautomatico 7 Prog.',
+    imagen: "images/lavarropas/Lavarropas Codini 4053 Dynamics 10KG Semiautomatico 7 Prog 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Codini 4053 Dynamics 10KG Semiautomatico 7 Prog 1.webp",
+        "images/lavarropas/Lavarropas Codini 4053 Dynamics 10KG Semiautomatico 7 Prog 2.webp",
+        "images/lavarropas/Lavarropas Codini 4053 Dynamics 10KG Semiautomatico 7 Prog 3.webp",
+        "images/lavarropas/Lavarropas Codini 4053 Dynamics 10KG Semiautomatico 7 Prog 4.webp",
+        "images/lavarropas/Lavarropas Codini 4053 Dynamics 10KG Semiautomatico 7 Prog 5.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 10\n<strong>Tipo de lavado:</strong> Semiautomático\n<strong>Tipo de carga:</strong> Superior',
+    codigo: "2071098",
+    caracteristicas: [
+        "Marca: Codini",
+        "Modelo: 2071098",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Whirlpool WWH07AB c/superior 7.5kg',
+    imagen: "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 1.webp",
+        "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 7.webp",
+        "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 6.webp",
+        "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 5.webp",
+        "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 4.webp",
+        "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 3.webp",
+        "images/lavarropas/Lavarropas Whirlpool WWH07AB c superior 7 5kg 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 750',
+    codigo: "2073411",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2073411",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavasecarropas",
+    nombre: 'Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco',
+    imagen: "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 1.webp",
+    imagenes: [
+        "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 1.webp",
+        "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 7.webp",
+        "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 6.webp",
+        "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 5.webp",
+        "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 4.webp",
+        "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 3.webp",
+        "images/lavasecarropas/Lavarropas Samsung WW10T504DAW Smart 10KG 1400rpm Blanco 2.webp"
+    ],
+    descripcion: '<strong>Capacidad lavado (kg):</strong> 10\n<strong>Capacidad secado (kg):</strong> 6\n<strong>Tipo de carga:</strong> Frontal\n<strong>Inverter:</strong> Sí\n<strong>WIFI:</strong> Sí',
+    codigo: "2074185",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074185",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco',
+    imagen: "images/lavarropas/Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco 1.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco 6.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco 5.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco 4.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco 3.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A4000EE 7 kg 1000 rpm Blanco 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2074200",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074200",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Whirlpool WNQ70AB 7kg c/frontal blanco',
+    imagen: "images/lavarropas/Lavarropas Whirlpool WNQ70AB 7kg c frontal blanco 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Whirlpool WNQ70AB 7kg c frontal blanco 1.webp",
+        "images/lavarropas/Lavarropas Whirlpool WNQ70AB 7kg c frontal blanco 5.webp",
+        "images/lavarropas/Lavarropas Whirlpool WNQ70AB 7kg c frontal blanco 4.webp",
+        "images/lavarropas/Lavarropas Whirlpool WNQ70AB 7kg c frontal blanco 3.webp",
+        "images/lavarropas/Lavarropas Whirlpool WNQ70AB 7kg c frontal blanco 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1200\n<strong>Inverter:</strong> Sí',
+    codigo: "2074342",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2074342",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WW95AA046BWUBG 9.5Kg 1400rpm Blanco Inverter',
+    imagen: "images/lavarropas/Lavarropas Samsung WW95AA046BWUBG 9 5Kg 1400rpm Blanco Inverter 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Samsung WW95AA046BWUBG 9 5Kg 1400rpm Blanco Inverter 1.webp",
+        "images/lavarropas/Lavarropas Samsung WW95AA046BWUBG 9 5Kg 1400rpm Blanco Inverter 5.webp",
+        "images/lavarropas/Lavarropas Samsung WW95AA046BWUBG 9 5Kg 1400rpm Blanco Inverter 4.webp",
+        "images/lavarropas/Lavarropas Samsung WW95AA046BWUBG 9 5Kg 1400rpm Blanco Inverter 3.webp",
+        "images/lavarropas/Lavarropas Samsung WW95AA046BWUBG 9 5Kg 1400rpm Blanco Inverter 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 9,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2074426",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074426",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WA85C5441BVUBG c/sup 8.5 kg 700 rpm Negro Inverter',
+    imagen: "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 1.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 9.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 8.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 7.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 6.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 5.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 4.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 3.webp",
+        "images/lavarropas/Lavarropas Samsung WA85 c sup 8 5 kg 700 rpm Negro Inverter 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 700\n<strong>Inverter:</strong> Sí',
+    codigo: "2074787",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074787",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Codini Ecowash 6010-B Inverter 6KG  1000rpm c/Frontal',
+    imagen: "images/lavarropas/Lavarropas Codini Ecowash 6010 B Inverter 6KG  1000rpm c Frontal 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Codini Ecowash 6010 B Inverter 6KG  1000rpm c Frontal 1.webp",
+        "images/lavarropas/Lavarropas Codini Ecowash 6010 B Inverter 6KG  1000rpm c Frontal 5.webp",
+        "images/lavarropas/Lavarropas Codini Ecowash 6010 B Inverter 6KG  1000rpm c Frontal 4.webp",
+        "images/lavarropas/Lavarropas Codini Ecowash 6010 B Inverter 6KG  1000rpm c Frontal 3.webp",
+        "images/lavarropas/Lavarropas Codini Ecowash 6010 B Inverter 6KG  1000rpm c Frontal 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2074910",
+    caracteristicas: [
+        "Marca: Codini",
+        "Modelo: 2074910",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WA75C5441BWUBG c/sup 7.5 kg Blanco Inverter',
+    imagen: "images/lavarropas/Lavarropas Samsung WA75C5441BWUBG c sup 7.5 kg Blanco Inverter 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Samsung WA75C5441BWUBG c sup 7.5 kg Blanco Inverter 1.webp",
+        "images/lavarropas/Lavarropas Samsung WA75C5441BWUBG c sup 7.5 kg Blanco Inverter 4.webp",
+        "images/lavarropas/Lavarropas Samsung WA75C5441BWUBG c sup 7.5 kg Blanco Inverter 3.webp",
+        "images/lavarropas/Lavarropas Samsung WA75C5441BWUBG c sup 7.5 kg Blanco Inverter 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 700\n<strong>Inverter:</strong> Sí',
+    codigo: "2075033",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2075033",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean LFDR0814SB0 c/frontal Ecoinverter 8kg 1400rpm',
+    imagen: "images/lavarropas/Lavarropas Drean LFDR0814SB0 c frontal Ecoinverter 8kg 1400rpm 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Drean LFDR0814SB0 c frontal Ecoinverter 8kg 1400rpm 1.webp",
+        "images/lavarropas/Lavarropas Drean LFDR0814SB0 c frontal Ecoinverter 8kg 1400rpm 4.webp",
+        "images/lavarropas/Lavarropas Drean LFDR0814SB0 c frontal Ecoinverter 8kg 1400rpm 3.webp",
+        "images/lavarropas/Lavarropas Drean LFDR0814SB0 c frontal Ecoinverter 8kg 1400rpm 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2075325",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075325",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Midea MF200W80WB/T-A1 c/frontal 8kg 1400rpm Inverter Wifi Gris',
+    imagen: "images/lavarropas/Lavarropas Midea MF200W80WB T A1 c frontal 8kg 1400rpm Inverter Wifi Gris 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Midea MF200W80WB T A1 c frontal 8kg 1400rpm Inverter Wifi Gris 1.webp",
+        "images/lavarropas/Lavarropas Midea MF200W80WB T A1 c frontal 8kg 1400rpm Inverter Wifi Gris 4.webp",
+        "images/lavarropas/Lavarropas Midea MF200W80WB T A1 c frontal 8kg 1400rpm Inverter Wifi Gris 3.webp",
+        "images/lavarropas/Lavarropas Midea MF200W80WB T A1 c frontal 8kg 1400rpm Inverter Wifi Gris 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2075373",
+    caracteristicas: [
+        "Marca: Midea",
+        "Modelo: 2075373",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean LTDR67SB Family 6 Eco 6kg c/s semiauto. 7 Prog.',
+    imagen: "images/lavarropas/Lavarropas Drean LTDR67SB Family 6 Eco 6kg c s semiauto 7 Prog 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Drean LTDR67SB Family 6 Eco 6kg c s semiauto 7 Prog 1.webp",
+        "images/lavarropas/Lavarropas Drean LTDR67SB Family 6 Eco 6kg c s semiauto 7 Prog 5.webp",
+        "images/lavarropas/Lavarropas Drean LTDR67SB Family 6 Eco 6kg c s semiauto 7 Prog 4.webp",
+        "images/lavarropas/Lavarropas Drean LTDR67SB Family 6 Eco 6kg c s semiauto 7 Prog 3.webp",
+        "images/lavarropas/Lavarropas Drean LTDR67SB Family 6 Eco 6kg c s semiauto 7 Prog 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Semiautomático\n<strong>Tipo de carga:</strong> Superior',
+    codigo: "2075422",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075422",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Kanji KJH-WMCFWT 8kg Inverter carga frontal Blanco',
+    imagen: "images/lavarropas/Lavarropas Kanji KJH WMCFWT 8kg Inverter carga frontal Blanco 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Kanji KJH WMCFWT 8kg Inverter carga frontal Blanco 1.webp",
+        "images/lavarropas/Lavarropas Kanji KJH WMCFWT 8kg Inverter carga frontal Blanco 6.webp",
+        "images/lavarropas/Lavarropas Kanji KJH WMCFWT 8kg Inverter carga frontal Blanco 5.webp",
+        "images/lavarropas/Lavarropas Kanji KJH WMCFWT 8kg Inverter carga frontal Blanco 4.webp",
+        "images/lavarropas/Lavarropas Kanji KJH WMCFWT 8kg Inverter carga frontal Blanco 3.webp",
+        "images/lavarropas/Lavarropas Kanji KJH WMCFWT 8kg Inverter carga frontal Blanco 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1200\n<strong>Inverter:</strong> Sí',
+    codigo: "2075438",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075438",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Eslabon de lujo EWH06AB c/superior 6kg',
+    imagen: "images/lavarropas/Lavarropas Eslabon de lujo EWH06AB c superior 6kg 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Eslabon de lujo EWH06AB c superior 6kg 1.webp",
+        "images/lavarropas/Lavarropas Eslabon de lujo EWH06AB c superior 6kg 5.webp",
+        "images/lavarropas/Lavarropas Eslabon de lujo EWH06AB c superior 6kg 4.webp",
+        "images/lavarropas/Lavarropas Eslabon de lujo EWH06AB c superior 6kg 3.webp",
+        "images/lavarropas/Lavarropas Eslabon de lujo EWH06AB c superior 6kg 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 750',
+    codigo: "2075545",
+    caracteristicas: [
+        "Marca: Eslabon de lujo",
+        "Modelo: 2075545",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WW70A40000S 7 kg 1000 rpm Silver Inv',
+    imagen: "images/lavarropas/Lavarropas Samsung WW70A40000S 7 kg 1000 rpm Silver Inv 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Samsung WW70A40000S 7 kg 1000 rpm Silver Inv 1.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A40000S 7 kg 1000 rpm Silver Inv 5.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A40000S 7 kg 1000 rpm Silver Inv 4.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A40000S 7 kg 1000 rpm Silver Inv 3.webp",
+        "images/lavarropas/Lavarropas Samsung WW70A40000S 7 kg 1000 rpm Silver Inv 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2074221",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074221",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WW65A40000S 6.5kg 1000 rpm Silver',
+    imagen: "images/lavarropas/Lavarropas Samsung WW65A40000S 6 5kg 1000 rpm Silver 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Samsung WW65A40000S 6 5kg 1000 rpm Silver 1.webp",
+        "images/lavarropas/Lavarropas Samsung WW65A40000S 6 5kg 1000 rpm Silver 6.webp",
+        "images/lavarropas/Lavarropas Samsung WW65A40000S 6 5kg 1000 rpm Silver 5.webp",
+        "images/lavarropas/Lavarropas Samsung WW65A40000S 6 5kg 1000 rpm Silver 4.webp",
+        "images/lavarropas/Lavarropas Samsung WW65A40000S 6 5kg 1000 rpm Silver 3.webp",
+        "images/lavarropas/Lavarropas Samsung WW65A40000S 6 5kg 1000 rpm Silver 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2074234",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074234",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco',
+    imagen: "images/lavarropas/Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco 1.webp",
+        "images/lavarropas/Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco 6.webp",
+        "images/lavarropas/Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco 5.webp",
+        "images/lavarropas/Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco 4.webp",
+        "images/lavarropas/Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco 3.webp",
+        "images/lavarropas/Lavarropas Samsung WW70AA46BW 7 kg 1400 rpm Blanco 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2074201",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074201",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c/frontal plata',
+    imagen: "images/lavarropas/Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c frontal plata 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c frontal plata 1.webp",
+        "images/lavarropas/Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c frontal plata 5.webp",
+        "images/lavarropas/Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c frontal plata 4.webp",
+        "images/lavarropas/Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c frontal plata 3.webp",
+        "images/lavarropas/Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c frontal plata 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2075483",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075483",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Philco PHLF6510B2 6.5kg 800rpm 15 prog. c/frontal Bco',
+    imagen: "images/lavarropas/Lavarropas Philco PHLF6510B2 6 5kg 800rpm 15 prog c frontal Bco 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Philco PHLF6510B2 6 5kg 800rpm 15 prog c frontal Bco 1.webp",
+        "images/lavarropas/Lavarropas Philco PHLF6510B2 6 5kg 800rpm 15 prog c frontal Bco 6.webp",
+        "images/lavarropas/Lavarropas Philco PHLF6510B2 6 5kg 800rpm 15 prog c frontal Bco 5.webp",
+        "images/lavarropas/Lavarropas Philco PHLF6510B2 6 5kg 800rpm 15 prog c frontal Bco 4.webp",
+        "images/lavarropas/Lavarropas Philco PHLF6510B2 6 5kg 800rpm 15 prog c frontal Bco 3.webp",
+        "images/lavarropas/Lavarropas Philco PHLF6510B2 6 5kg 800rpm 15 prog c frontal Bco 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 800',
+    codigo: "2075426",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075426",
+        "Garantía: 1 año"
+    ]
+},
+
+
 ];

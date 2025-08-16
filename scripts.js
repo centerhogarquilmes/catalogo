@@ -8,9 +8,43 @@ function normalizeString(input) {
     }
     return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
+
+// Generar o recuperar ID de dispositivo
+function getDeviceId() {
+    let deviceId = localStorage.getItem('deviceId');
+    if (!deviceId) {
+        deviceId = 'device_' + Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('deviceId', deviceId);
+    }
+    return deviceId;
+}
+
+// Verificar si el dispositivo está excluido
+function isDeviceExcluded() {
+    const deviceId = getDeviceId();
+    const excludedDevices = JSON.parse(localStorage.getItem('excludedDevices')) || {};
+    return !!excludedDevices[deviceId];
+}
+
 // Contador de visitas y clics por producto
 function setupTracking() {
     console.log('setupTracking ejecutado en', window.location.href);
+
+    // Registrar dispositivo único
+    const deviceId = getDeviceId();
+    let uniqueDevices = JSON.parse(localStorage.getItem('uniqueDevices')) || {};
+    if (!uniqueDevices[deviceId]) {
+        uniqueDevices[deviceId] = true;
+        localStorage.setItem('uniqueDevices', JSON.stringify(uniqueDevices));
+        console.log('Dispositivo único registrado:', deviceId);
+    }
+
+    // No registrar nada si el dispositivo está excluido
+    if (isDeviceExcluded()) {
+        console.log('Dispositivo excluido, no se registran visitas ni clics');
+        return;
+    }
+
     // Contador de visitas por página
     let visitas = JSON.parse(localStorage.getItem('visitas')) || {};
     const pagePath = window.location.pathname.split('/').pop() || 'index.html';
@@ -86,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Scripts cargado en', window.location.href);
     setupTracking();
 });
-
 
 // Funcionalidad de búsqueda
 function setupSearch() {
@@ -455,7 +488,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', adjustContentMargin);
 });
 
-
 function setupViewToggle() {
     const viewToggle = document.getElementById('view-toggle');
     const productGrid = document.getElementById('product-grid');
@@ -499,6 +531,7 @@ function setupViewToggle() {
         console.warn('No se encontraron los elementos para el toggle de vista');
     }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header');
     const searchBar = document.querySelector('.search-bar');
@@ -552,3 +585,44 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateHeaderHeight);
 });
 
+
+function cargarEstadisticas() {
+    // Ejemplo de datos ficticios o calculados
+    const ventasHoy = Math.floor(Math.random() * 20) + 1; // Simulación
+    const pedidosPendientes = Math.floor(Math.random() * 10);
+    const stockBajo = Math.floor(Math.random() * 5);
+
+    document.getElementById('ventas-hoy').textContent = ventasHoy;
+    document.getElementById('pedidos-pendientes').textContent = pedidosPendientes;
+    document.getElementById('stock-bajo').textContent = stockBajo;
+
+    // Productos más vistos
+    const visitasProductos = JSON.parse(localStorage.getItem('visitasProductos')) || {};
+    const productosOrdenados = Object.entries(visitasProductos)
+        .sort((a, b) => b[1] - a[1]) // Ordenar por visitas
+        .slice(0, 10); // Top 10
+
+    const contenedor = document.getElementById('productos-mas-vistos');
+    contenedor.innerHTML = '';
+
+    if (productosOrdenados.length === 0) {
+        contenedor.textContent = 'No hay datos de visitas todavía.';
+        return;
+    }
+
+    productosOrdenados.forEach(([nombre, visitas]) => {
+        const card = document.createElement('div');
+        card.classList.add('product-card');
+        card.innerHTML = `
+            <h4>${nombre}</h4>
+            <p>${visitas} visitas</p>
+        `;
+        contenedor.appendChild(card);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('ventas-hoy')) {
+        cargarEstadisticas();
+    }
+});
