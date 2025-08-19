@@ -328,6 +328,45 @@
         </svg>
     </button>
 
+
+        <!-- Popup Newsletter -->
+    <div class="text-center animated" id="popup_email_subscription" style="display: none;">
+        <div class="block_content">
+            <button type="button" class="close popup-close"> 
+                <i class="material-icons">X</i>
+            </button> 
+            <div class="rvnewslatterpopup-img col-sm-6">
+                <img class="image-banner-emailsub" src="images/WhatsApp Image 2025-08-19 at 12.57.21.jpeg" alt="Promos Exclusivas">
+            </div>
+            <div class="emailsub-text-wrapper col-sm-6">
+                <h3 class="title">Promos Exclusivas</h3>
+                <div class="description">Suscribite a nuestro Newsletter y obtené los mejores beneficios!</div>
+                <form id="popup-newsletter-form" action="https://formspree.io/f/mzzrnyrr" method="POST">
+                    <div class="input-group">
+                        <input type="email" id="rvemail" name="email" class="form-control" placeholder="Su e-mail" required>
+                        <input type="hidden" name="form_type" value="newsletter">
+                    </div>
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" id="js_rvsubmitnewsletter">Suscribir</button>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" id="rv_popup_hide" class="form-check-input" value="1">
+                            No mostrar esta ventana otra vez
+                        </label>
+                    </div>
+                    <div class="result_email_subscription"></div>
+                </form>
+                <div class="btn-close">
+                    <button type="button" class="btn btn-close popup-close">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Popup Newsletter -->
+
+
+
     <!-- Script -->
      <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

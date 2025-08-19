@@ -626,3 +626,103 @@ document.addEventListener('DOMContentLoaded', () => {
         cargarEstadisticas();
     }
 });
+
+
+// === Popup Newsletter ===
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup_email_subscription");
+    const closeButtons = document.querySelectorAll(".popup-close");
+    const checkboxHide = document.getElementById("rv_popup_hide");
+    const form = document.getElementById("popup-newsletter-form");
+    const resultMessage = document.querySelector(".result_email_subscription");
+    const emailInput = document.getElementById("rvemail");
+
+    // Mostrar popup inmediatamente para pruebas
+    if (popup) {
+        console.log("Popup encontrado, mostrando...");
+        setTimeout(() => {
+            popup.style.display = "flex";
+        }, 1000);
+    } else {
+        console.error("Popup no encontrado en el DOM");
+    }
+
+    // Cerrar popup
+    closeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            console.log("Cerrando popup");
+            popup.style.display = "none";
+            if (checkboxHide.checked) {
+                localStorage.setItem("hidePopup", "true");
+            }
+        });
+    });
+
+    // Validación en tiempo real del email
+    if (emailInput) {
+        emailInput.addEventListener("input", function () {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailInput.value)) {
+                resultMessage.textContent = "Por favor, ingrese un correo electrónico válido.";
+                resultMessage.style.color = "red";
+            } else {
+                resultMessage.textContent = "";
+            }
+        });
+    } else {
+        console.error("Elemento rvemail no encontrado");
+    }
+
+    // Enviar formulario a Formspree
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = emailInput.value.trim();
+
+            if (!email) {
+                resultMessage.textContent = "Por favor, ingrese un correo electrónico válido.";
+                resultMessage.style.color = "red";
+                return;
+            }
+
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    resultMessage.textContent = "¡Gracias por suscribirte! Pronto recibirás nuestras promociones.";
+                    resultMessage.style.color = "green";
+                    form.reset();
+                    setTimeout(() => {
+                        popup.style.display = "none";
+                    }, 2000);
+                    if (checkboxHide.checked) {
+                        localStorage.setItem("hidePopup", "true");
+                    }
+                    // Registrar evento en Google Analytics (opcional)
+                    if (window.gtag) {
+                        gtag('event', 'newsletter_signup', {
+                            'event_category': 'engagement',
+                            'event_label': 'Newsletter Popup'
+                        });
+                    }
+                } else {
+                    resultMessage.textContent = "Error al suscribirte. Por favor, intenta de nuevo.";
+                    resultMessage.style.color = "red";
+                }
+            })
+            .catch(error => {
+                console.error("Error en el envío:", error);
+                resultMessage.textContent = "Error de conexión. Por favor, intenta de nuevo.";
+                resultMessage.style.color = "red";
+            });
+        });
+    } else {
+        console.error("Formulario popup-newsletter-form no encontrado");
+    }
+});
+// === /Popup Newsletter ===
