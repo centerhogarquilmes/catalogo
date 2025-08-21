@@ -3804,3 +3804,47 @@ font-size: 1rem;
 /* =========================== */
 
 
+.contact-subscription {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-subscription h2 {
+    margin-bottom: 0.5rem;
+    color: #02366e;
+}
+
+.contact-subscription form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-subscription input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact-subscription button {
+    background: #02366e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-subscription button:hover {
+    background: #FF6200;
+}
+
+
+
+

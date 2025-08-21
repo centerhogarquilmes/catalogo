@@ -198,8 +198,24 @@
                     <h3>Instagram</h3>
                     <p><a href="https://www.instagram.com/centerhogarquilmes" target="_blank">@centerhogarquilmes</a></p>
                 </div>
+                
 
     </section>
+    <section class="contact-subscription">
+    <h2>Suscribite a nuestras promociones</h2>
+    <p>Recibí novedades y ofertas exclusivas en tu correo.</p>
+    <form id="contact-newsletter-form" action="https://formspree.io/f/TU_CODIGO" method="POST">
+        <input 
+            type="email" 
+            name="email" 
+            id="contactEmail" 
+            placeholder="Tu correo electrónico" 
+            required>
+        <button type="submit">Suscribirme</button>
+        <p id="contactNewsletterMessage" class="newsletter-message"></p>
+    </form>
+</section>
+
 </main>
 
     <!-- Footer -->
@@ -225,5 +241,49 @@
 
     <script src="productos.js"></script>
     <script src="scripts.js"></script>
+    <script>
+    // === Newsletter en página de Contacto ===
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-newsletter-form");
+    const contactEmail = document.getElementById("contactEmail");
+    const contactMessage = document.getElementById("contactNewsletterMessage");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = contactEmail.value.trim();
+
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                contactMessage.textContent = "Por favor, ingresa un correo válido.";
+                contactMessage.style.color = "red";
+                return;
+            }
+
+            fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    contactMessage.textContent = "¡Gracias por suscribirte! Revisa tu correo.";
+                    contactMessage.style.color = "green";
+                    contactForm.reset();
+                } else {
+                    contactMessage.textContent = "Error al suscribirte. Intenta nuevamente.";
+                    contactMessage.style.color = "red";
+                }
+            })
+            .catch(error => {
+                console.error("Error en el envío:", error);
+                contactMessage.textContent = "Hubo un problema de conexión.";
+                contactMessage.style.color = "red";
+            });
+        });
+    }
+});
+</script>
 </body>
 </html>
