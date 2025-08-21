@@ -2802,7 +2802,6 @@ font-size: 1rem;
     width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
     height: 1rem; /* Altura consistente con la fuente */
     vertical-align: middle; /* Alinear con el texto */
-    
     display: inline-block; /* Comportarse como parte del texto */
     object-fit: contain; /* Evitar distorsiones, mantener proporciones */
 }
@@ -3623,5 +3622,185 @@ font-size: 1rem;
     margin-right: 8px;
     accent-color: #0f52ba; /* hace que el checkbox sea azul */
 }
+
+/* === Chatbot Obelisquín === */
+#chatbot-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background: #fff;
+  border: 2px solid #02366e;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  z-index: 9999;
+}
+
+#chatbot-header {
+  background: #02366e;
+  color: white;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chatbot-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+#chatbot-close {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* === Estilo de mensajes del chatbot === */
+.chat-message {
+  max-width: 80%;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  clear: both;
+  display: inline-block;
+}
+
+/* Mensajes del usuario */
+.chat-user {
+  background: #FF6200;
+  color: white;
+  float: right;
+  border-bottom-right-radius: 0;
+}
+
+/* Mensajes de Obelisquín */
+.chat-bot {
+  background: #f1f1f1;
+  color: #333;
+  float: left;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ddd;
+}
+
+#chatbot-input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chatbot-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+#chatbot-send {
+  background: #FF6200;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #02366e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+/* Contenedor de mensajes con scroll */
+#chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Mensajes === */
+.message-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin: 6px 0;
+}
+
+/* Avatar de Obelisquín */
+.message-wrapper.bot img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* Burbujas */
+.chat-message {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* Usuario */
+.chat-user {
+  background: #FF6200;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+}
+
+/* Obelisquín */
+.chat-bot {
+  background: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 0;
+}
+
+/* Animación para mensajes */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.message-wrapper.bot {
+  animation: fadeInLeft 0.4s ease forwards;
+}
+
+.message-wrapper.user {
+  animation: fadeInRight 0.4s ease forwards;
+}
+
+/* =========================== */
 
 

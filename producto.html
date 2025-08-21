@@ -237,6 +237,28 @@
         </svg>
     </button>
 
+
+
+
+<!-- === Chatbot Obelisquín === -->
+<div id="chatbot-container">
+  <div id="chatbot-header">
+    <img src="images/file-removebg-preview.png" alt="Obelisquín" id="chatbot-avatar">
+    <span>Obelisquín 𓉶</span>
+    <button id="chatbot-close">&times;</button>
+  </div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input-area">
+    <input type="text" id="chatbot-input" placeholder="Escribí tu consulta...">
+    <button id="chatbot-send">Enviar</button>
+  </div>
+</div>
+
+<button id="chatbot-toggle">💬</button>
+<!-- ========================== -->
+
+
+
     <!-- Carga de datos -->
     <script src="precios.js"></script>
     <script src="productos.js"></script>
@@ -273,7 +295,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const precioAnteriorTexto = precioAnterior ? `$${precioAnterior.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
     const cuotas = precioLista ? [
-        { cuotas: 9, texto: '9 Cuotas sin interés', precio: (precioLista / 9) }
+        { cuotas: 6, texto: '6 Cuotas sin interés con Tarjetas de Banco', precio: (precioLista / 6) },
+        { cuotas: 9, texto: '9 Cuotas sin interés con Naranja X', precio: (precioLista / 9) }
     ] : [];
 
     const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
@@ -372,8 +395,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const cuotaEl = document.createElement('p');
             cuotaEl.className = `product-cuota product-cuota-${cuota.cuotas}`;
             let imgSrc, imgClass;
-            if (cuota.cuotas === 9) {
+            if (cuota.cuotas === 6) {
                 imgSrc = 'images/tarjetas_de_credito_2.png';
+                imgClass = 'cuota-card-icon';
+            }
+            if (cuota.cuotas === 9) {
+                imgSrc = 'images/naranja_x.png';
                 imgClass = 'cuota-card-icon';
             }
             cuotaEl.textContent = `${cuota.texto}: $${cuota.precio.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -551,6 +578,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
 </script>
 </body>
 </html>

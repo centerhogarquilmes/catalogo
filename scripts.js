@@ -726,3 +726,131 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 // === /Popup Newsletter ===
+
+
+// === Chatbot Obelisquín ===
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("chatbot-toggle");
+  const chatbot = document.getElementById("chatbot-container");
+  const closeBtn = document.getElementById("chatbot-close");
+  const sendBtn = document.getElementById("chatbot-send");
+  const input = document.getElementById("chatbot-input");
+  const messages = document.getElementById("chatbot-messages");
+
+  const respuestas = {
+    // Saludos //
+    "hola": "¡Hola! Soy Obelisquín 𓉶 ¿En qué puedo ayudarte?",
+    // Horarios y contactos//
+    "horario": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "horarios": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "ubicacion": "Estamos en Quilmes, Rivadavia 220, entre Lavalle y Brown.",
+    "ubicación": "Estamos en Quilmes, Rivadavia 220, entre Lavalle y Brown.",
+    "direccion": "Estamos en Quilmes, Rivadavia 220, entre Lavalle y Brown.",
+    "dirección": "Estamos en Quilmes, Rivadavia 220, entre Lavalle y Brown.",
+    "whatsapp": "Nuestro numero de WhatsApp es 1130680489. Podemos atenderte en el horario de atención al público.",
+    "WhatsApp": "Nuestro numero de WhatsApp es 1130680489. Podemos atenderte en el horario de atención al público.",
+    "telefono": "Nuestro numero de WhatsApp es 1130680489. Podemos atenderte en el horario de atención al público.",
+    "teléfono": "Nuestro numero de WhatsApp es 1130680489. Podemos atenderte en el horario de atención al público.",
+    "numero" :"Nuestro numero de WhatsApp es 1130680489. Podemos atenderte en el horario de atención al público.",
+    "número" :"Nuestro numero de WhatsApp es 1130680489. Podemos atenderte en el horario de atención al público.",
+    // Formas de pago //
+    "pago": "Aceptamos efectivo, débito, crédito y transferencias. Con qué medio de pago estás buscando?",
+    "pagar": "Aceptamos efectivo, débito, crédito y transferencias. Con qué medio de pago estás buscando?",
+    "garantia": "Todos nuestros productos tienen garantía oficial de 12 meses.",
+    "garantias": "Todos nuestros productos tienen garantía oficial de 12 meses.",
+    "garantía": "Todos nuestros productos tienen garantía oficial de 12 meses.",
+    "garantías": "Todos nuestros productos tienen garantía oficial de 12 meses.",
+    "precios": "Todos los precios estan publicados al contado y con tarjetas de crédito.",
+    "precio": "Todos los precios estan publicados al contado y con tarjetas de crédito.",
+    "contado": "Todos los precios al contado tienen un descuento. Podes hacerlo con efectivo, débito, transferencias o tarjetas de crédito en un pago. Cómo te interesa?",
+    "efectivo": "Los precios en efectivo tienen un importante descuento sobre el precio de lista.",
+    "creditos": "Te interesan las ofertas con tarjetas de crédito o de Créditos Personales?",
+    "credito": "Te interesan las ofertas con tarjetas de crédito o de Créditos Personales?",
+    "banco": "Los precios con tarjetas de crédito de cuaquier banco son el precio de lista de lista en 3 y 6  cuotas sin interes.",
+    "personales": "Los Créditos Personales se puede consultar con el DNI del interesado. Si te intresa, podrias comunicarte por WhatsApp para pedir calificación.",
+    "tarjeta":"Aceptamos todas las tarjetas de crédito de todos los bancos. La tuya es de banco o Naranja?",
+    "tarjetas":"Aceptamos todas las tarjetas de crédito de todos los bancos. La tuya es de banco o Naranja?",
+    // Envios //
+    "envio": "Los envíos se pueden programar para cuando el cliente lo desee. Pods consultar disponibilidad, precios y bonificaciones usando el WhatsApp de la sucursal.",
+    // Productos //
+
+    "lavarropas": "Claro 😎 👉 <a href='categoria.html?nombre=Lavado&subcategoria=Lavarropas' target='_blank'>Ver heladeras disponibles</a>",
+    "heladeras": "Claro 😎 👉 <a href='categoria.html?nombre=Heladeras+y+freezers&subcategoria=Heladeras' target='_blank'>Ver heladeras disponibles</a>",
+    "cocinas": "Claro 😎 👉 <a href='categoria.html?nombre=Cocinas%2C+anafes+y+purificadores&subcategoria=Cocinas' target='_blank'>Ver heladeras disponibles</a>",
+    "celulares": "Claro 😎 👉 <a href='categoria.html?nombre=Tecnologia&subcategoria=Celulares' target='_blank'>Ver heladeras disponibles</a>",
+
+  };
+
+  function agregarMensaje(texto, autor = "bot") {
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("message-wrapper");
+
+  const msg = document.createElement("div");
+  msg.classList.add("chat-message");
+
+  if (autor === "bot") {
+    wrapper.classList.add("bot");
+    msg.classList.add("chat-bot");
+    msg.innerHTML = texto; // 👈 ahora permite HTML en la respuesta
+
+    // Avatar de Obelisquín
+    const avatar = document.createElement("img");
+    avatar.src = "images/file-removebg-preview.png";
+    avatar.alt = "Obelisquín";
+    wrapper.appendChild(avatar);
+    wrapper.appendChild(msg);
+
+  } else {
+    wrapper.classList.add("user");
+    msg.classList.add("chat-user");
+    msg.textContent = texto;
+    wrapper.appendChild(msg);
+  }
+
+  messages.appendChild(wrapper);
+  messages.scrollTop = messages.scrollHeight; // Mantener scroll abajo
+}
+
+
+
+
+  function procesarConsulta(texto) {
+  const consulta = texto.toLowerCase();
+  let respuesta = "Lo siento, no entendí tu consulta. 😅";
+  for (const clave in respuestas) {
+    if (consulta.includes(clave)) {
+      respuesta = respuestas[clave];
+      break;
+    }
+  }
+
+  // Simular demora en responder
+  setTimeout(() => {
+    agregarMensaje(respuesta, "bot");
+  }, 600); // medio segundo de delay
+}
+
+
+  sendBtn.addEventListener("click", () => {
+    const texto = input.value.trim();
+    if (texto) {
+      agregarMensaje(texto, "user");
+      procesarConsulta(texto);
+      input.value = "";
+    }
+  });
+
+  input.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") sendBtn.click();
+  });
+
+  toggleBtn.addEventListener("click", () => {
+    chatbot.style.display = "flex";
+    toggleBtn.style.display = "none";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    chatbot.style.display = "none";
+    toggleBtn.style.display = "block";
+  });
+});

@@ -231,6 +231,26 @@
         </section>
     </main>
 
+
+    <!-- === Chatbot Obelisquín === -->
+<div id="chatbot-container">
+  <div id="chatbot-header">
+    <img src="images/file-removebg-preview.png" alt="Obelisquín" id="chatbot-avatar">
+    <span>Obelisquín 𓉶</span>
+    <button id="chatbot-close">&times;</button>
+  </div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input-area">
+    <input type="text" id="chatbot-input" placeholder="Escribí tu consulta...">
+    <button id="chatbot-send">Enviar</button>
+  </div>
+</div>
+
+<button id="chatbot-toggle">💬</button>
+<!-- ========================== -->
+
+
+
     <!-- Footer -->
     <footer class="footer">
     <div class="container">
@@ -857,7 +877,9 @@ updateDynamicFilters(categoria, subcategoria);
 
 // Ejecutar filtrado inicial
 filtrarProductos();
+
+
+
 </script>
 </body>
-
 </html>
