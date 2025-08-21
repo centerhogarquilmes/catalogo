@@ -756,6 +756,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const respuestas = {
     // Saludos //
     "hola": "¡Hola! Soy Obelisquín 𓉶 ¿En qué puedo ayudarte?",
+
     // Horarios y contactos//
     "horario": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
     "horarios": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
@@ -770,6 +771,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "teléfono": "Nuestro teléfono de WhatsApp es 1130680489. Podemos atenderte de 9 a 2hs.<a href='https://api.whatsapp.com/send?phone=5491131680489&text=Hola,%20tengo%20una%20consulta' target='_blank'>WhatsApp</a>",
     "numero" : "Nuestro numero de WhatsApp es 1130680489. Podemos atenderte de 9 a 2hs.<a href='https://api.whatsapp.com/send?phone=5491131680489&text=Hola,%20tengo%20una%20consulta' target='_blank'>WhatsApp</a>",
     "número" : "Nuestro numero de WhatsApp es 1130680489. Podemos atenderte de 9 a 2hs.<a href='https://api.whatsapp.com/send?phone=5491131680489&text=Hola,%20tengo%20una%20consulta' target='_blank'>WhatsApp</a>",
+
     // Formas de pago //
     "pago": "Aceptamos efectivo, débito, crédito y transferencias. Con qué medio de pago estás buscando?",
     "pagar": "Aceptamos efectivo, débito, crédito y transferencias. Con qué medio de pago estás buscando?",
@@ -788,10 +790,11 @@ document.addEventListener("DOMContentLoaded", () => {
     "personales": "Los Créditos Personales se puede consultar con el DNI del interesado. Si te intresa, podrias comunicarte por WhatsApp para pedir calificación.",
     "tarjeta":"Aceptamos todas las tarjetas de crédito de todos los bancos. La tuya es de banco o Naranja?",
     "tarjetas":"Aceptamos todas las tarjetas de crédito de todos los bancos. La tuya es de banco o Naranja?",
+
     // Envios //
     "envio": "Los envíos se pueden programar para cuando el cliente lo desee. Pods consultar disponibilidad, precios y bonificaciones usando el WhatsApp de la sucursal.",
+    
     // Productos //
-
     "lavarropas": "Acá tenes la seccion Lavarropas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Lavado&subcategoria=Lavarropas' target='_blank'>Ir a Lavarropas</a>",
     "lavarropa": "Acá tenes la seccion Lavarropas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Lavado&subcategoria=Lavarropas' target='_blank'>Ir a Lavarropas</a>",
     "heladeras": "Acá tenes la seccion Heladeras para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Heladeras+y+freezers&subcategoria=Heladeras' target='_blank'>Ir a Heladeras</a>",
@@ -809,6 +812,29 @@ document.addEventListener("DOMContentLoaded", () => {
     "tele": "Acá tenes la seccion TV para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Tv+y+audio&subcategoria=Tv' target='_blank'>Ir a TV</a>",
     "teles": "Acá tenes la seccion TV para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Tv+y+audio&subcategoria=Tv' target='_blank'>Ir a TV</a>",
     "tv": "Acá tenes la seccion TV para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Tv+y+audio&subcategoria=Tv' target='_blank'>Ir a TV</a>",
+    "termotanques": "Acá tenes la seccion Termotanques para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Termotanques+y+calefones&subcategoria=Termotanques' target='_blank'>Ir a Termotanques</a>",
+    "termotanque": "Acá tenes la seccion Termotanques para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Termotanques+y+calefones&subcategoria=Termotanques' target='_blank'>Ir a Termotanques</a>",
+    "termos": "Acá tenes la seccion Termotanques para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Termotanques+y+calefones&subcategoria=Termotanques' target='_blank'>Ir a Termotanques</a>",
+    "termo": "Acá tenes la seccion Termotanques para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Termotanques+y+calefones&subcategoria=Termotanques' target='_blank'>Ir a Termotanques</a>",
+    "calefones": "Acá tenes la seccion Calefones para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Termotanques+y+calefones&subcategoria=Calefones' target='_blank'>Ir a Calefones</a>",
+    "calefón": "Acá tenes la seccion Calefones para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Termotanques+y+calefones&subcategoria=Calefones' target='_blank'>Ir a Calefones</a>",
+    "calefon": "Acá tenes la seccion Calefones para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Termotanques+y+calefones&subcategoria=Calefones' target='_blank'>Ir a Calefones</a>",
+    "secarropas": "Acá tenes la seccion Secarropas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Lavado&subcategoria=Secarropas' target='_blank'>Ir a Secarropas</a>",
+    "secarropa": "Acá tenes la seccion Secarropas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Lavado&subcategoria=Secarropas' target='_blank'>Ir a Secarropas</a>",
+    "pavas electricas": "Acá tenes la seccion Pavas Elécticas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=pavas+electricas' target='_blank'>Ir a Pavas eléctricas</a>",
+    "pavas eléctricas": "Acá tenes la seccion Pavas Elécticas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=pavas+electricas' target='_blank'>Ir a Pavas eléctricas</a>",
+    "pavas": "Acá tenes la seccion Pavas Elécticas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=pavas+electricas' target='_blank'>Ir a Pavas eléctricas</a>",
+    "pava": "Acá tenes la seccion Pavas Elécticas para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=pavas+electricas' target='_blank'>Ir a Pavas eléctricas</a>",
+    "estufas elécticas": "Acá tenes la seccion Calefactores Eléctricos para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Climatizacion&subcategoria=Calefaccion+electrica' target='_blank'>Ir a Calefactores eléctricos</a>",
+    "estufa eléctica": "Acá tenes la seccion Calefactores Eléctricos para que veas todo lo que tenemos disponible 😎 👉 <a href='categoria.html?nombre=Climatizacion&subcategoria=Calefaccion+electrica' target='_blank'>Ir a Calefactores eléctricos</a>",
+    "estufas": "Acá tenes la seccion Calefactores Eléctricos para que veas todo lo que tenemos disponible. O preferís a gas? 😎 👉 <a href='categoria.html?nombre=Climatizacion&subcategoria=Calefaccion+electrica' target='_blank'>Ir a Calefactores eléctricos</a>",
+    "estufa": "Acá tenes la seccion Calefactores Eléctricos para que veas todo lo que tenemos disponible. O preferís a gas? 😎 👉 <a href='categoria.html?nombre=Climatizacion&subcategoria=Calefaccion+electrica' target='_blank'>Ir a Calefactores eléctricos</a>",
+    "cafeteras": "Acá tenes la seccion Cafeteras para que veas todo lo que tenemos disponible. O preferís a gas? 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=Cafeteras' target='_blank'>Ir a Cafeteras</a>",
+    "cafetera": "Acá tenes la seccion Cafeteras para que veas todo lo que tenemos disponible. O preferís a gas? 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=Cafeteras' target='_blank'>Ir a Cafeteras</a>",
+    "café": "Acá tenes la seccion Cafeteras para que veas todo lo que tenemos disponible. O preferís a gas? 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=Cafeteras' target='_blank'>Ir a Cafeteras</a>",
+    "cafe": "Acá tenes la seccion Cafeteras para que veas todo lo que tenemos disponible. O preferís a gas? 😎 👉 <a href='categoria.html?nombre=Pequeños&subcategoria=Cafeteras' target='_blank'>Ir a Cafeteras</a>",
+    "microondas": "Acá tenes la seccion Microondas para que veas todo lo que tenemos disponible. O preferís a gas? 😎 👉 <a href='categoria.html?nombre=Hornos%2C+microondas+y+freidoras&subcategoria=Microondas' target='_blank'>Ir a Microondas</a>",
+
 
   };
 
