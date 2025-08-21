@@ -637,14 +637,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const resultMessage = document.querySelector(".result_email_subscription");
     const emailInput = document.getElementById("rvemail");
 
-    // Mostrar popup inmediatamente para pruebas
-    if (popup) {
-        console.log("Popup encontrado, mostrando...");
-        setTimeout(() => {
-            popup.style.display = "flex";
-        }, 1000);
+    // ✅ Revisar si ya se marcó "no volver a mostrar" y si sigue vigente
+    const hideUntil = localStorage.getItem("hidePopupUntil");
+    const now = new Date().getTime();
+
+    if (hideUntil && now < parseInt(hideUntil)) {
+        console.log("Popup oculto hasta:", new Date(parseInt(hideUntil)).toLocaleString());
+        if (popup) popup.style.display = "none";
     } else {
-        console.error("Popup no encontrado en el DOM");
+        // Mostrar popup (ejemplo con delay de 1s)
+        if (popup) {
+            console.log("Popup encontrado, mostrando...");
+            setTimeout(() => {
+                popup.style.display = "flex";
+            }, 1000);
+        } else {
+            console.error("Popup no encontrado en el DOM");
+        }
+    }
+
+    // Función para guardar expiración de 7 días
+    function setHidePopup(days = 7) {
+        const expireDate = new Date().getTime() + days * 24 * 60 * 60 * 1000;
+        localStorage.setItem("hidePopupUntil", expireDate.toString());
+        console.log("Popup oculto hasta:", new Date(expireDate).toLocaleString());
     }
 
     // Cerrar popup
@@ -652,8 +668,8 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.addEventListener("click", () => {
             console.log("Cerrando popup");
             popup.style.display = "none";
-            if (checkboxHide.checked) {
-                localStorage.setItem("hidePopup", "true");
+            if (checkboxHide && checkboxHide.checked) {
+                setHidePopup(7); // ✅ Guardar por 7 días
             }
         });
     });
@@ -700,10 +716,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     setTimeout(() => {
                         popup.style.display = "none";
                     }, 2000);
-                    if (checkboxHide.checked) {
-                        localStorage.setItem("hidePopup", "true");
+                    if (checkboxHide && checkboxHide.checked) {
+                        setHidePopup(7); // ✅ Guardar también al enviar
                     }
-                    // Registrar evento en Google Analytics (opcional)
                     if (window.gtag) {
                         gtag('event', 'newsletter_signup', {
                             'event_category': 'engagement',
@@ -726,6 +741,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 // === /Popup Newsletter ===
+
 
 
 // === Chatbot Obelisquín ===
