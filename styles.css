@@ -13,15 +13,15 @@ body {
 }
 /* Header */
 .header {
-    background: linear-gradient(90deg, #02366e 0%, #000f1d 100%);
+    background: linear-gradient(90deg, #02366e 0%, #000f1d 100%); /* Degradado de azul oscuro a azul medio */
     padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Suavizar el movimiento */
-    --header-height: 80px; /* Altura fija para consistencia */
+    --header-height: 60px; /* Definir altura del header */
+    
 }
 
 
@@ -68,30 +68,13 @@ body {
 }
 
 
-/* Contenido del header */
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    position: relative;
-}
-/* Estado inicial del header en la página de producto */
-.product-page .header {
-    transform: translateY(0);
-}
-
-/* Header parcialmente oculto (solo muestra el buscador) */
-.product-page .header.partial-hidden {
-    transform: translateY(-110px); /* Ajusta según la altura del logo/menú */
-    transition: transform 0.3s ease;
-}
-
-/* Header completamente visible */
-.product-page .header.show {
-    transform: translateY(0);
-    transition: transform 0.3s ease;
+    position: relative; /* Para permitir posicionamiento absoluto en móvil */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si es necesario */
+    gap: 10px; /* Espacio entre elementos */
 }
 
 /* Logo */
@@ -733,7 +716,7 @@ body {
     position: relative;
     flex: 1;
     padding-top: 100%;
-    width: 500%;
+    width: 100%;
     height: 400px;
 }
 
@@ -959,9 +942,6 @@ font-size: 0.8rem;
         font-size: 30px;
         border-radius: 50%;
         z-index: 2100;
-    }
-    .modal-btn:hover {
-        color: #e55500; /* Naranja más oscuro al pasar el mouse */
     }
 
     .modal-btn.prev {
@@ -2802,6 +2782,7 @@ font-size: 1rem;
     width: 10rem; /* Tamaño más pequeño, ajustado para parecer una extensión del texto */
     height: 1rem; /* Altura consistente con la fuente */
     vertical-align: middle; /* Alinear con el texto */
+    
     display: inline-block; /* Comportarse como parte del texto */
     object-fit: contain; /* Evitar distorsiones, mantener proporciones */
 }
@@ -3843,6 +3824,34 @@ font-size: 1rem;
 
 .contact-subscription button:hover {
     background: #FF6200;
+}
+
+/* === Fix producto.html en móvil === */
+@media (max-width: 768px) {
+  .product-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container,
+  .info-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  .product-description,
+  .product-features {
+    padding: 0 10px;
+  }
 }
 
 
