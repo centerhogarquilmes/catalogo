@@ -759,6 +759,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Horarios y contactos//
     "horario": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "hora": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "dias": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "dia": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "día": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "abierto": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
+    "abren": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
     "horarios": "Nuestro horario es de Lunes a Sábado de 9 a 20 hs.",
     "ubicacion": "Estamos en Quilmes, Rivadavia 220, entre Lavalle y Brown.",
     "ubicación": "Estamos en Quilmes, Rivadavia 220, entre Lavalle y Brown.",
