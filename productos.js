@@ -956,7 +956,7 @@ const productos = [
         "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_4.webp",
         "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_5.webp"
     ],
-    descripcion: '<strong>Pulgadas:</strong> 43\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Android TV',
+    descripcion: '<strong>Pulgadas:</strong> 43"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Android TV',
     codigo: "2075335",
     caracteristicas: [
         "Marca: Noblex",
@@ -975,7 +975,7 @@ const productos = [
         "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_3.webp",
         "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_4.webp"
     ],
-    descripcion: '<strong>Pulgadas:</strong> 43\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Titan OS',
+    descripcion: '<strong>Pulgadas:</strong> 43"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Titan OS',
     codigo: "2075321",
     caracteristicas: [
         "Marca: Philips",
@@ -993,7 +993,7 @@ const productos = [
         "images/televisores/TV_LED_Philips_50_Smart_50PUD7309_77_4K_con_Titan_OS_2.webp",
         "images/televisores/TV_LED_Philips_50_Smart_50PUD7309_77_4K_con_Titan_OS_3.webp"
     ],
-    descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Titan OS',
+    descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Titan OS',
     codigo: "2075436",
     caracteristicas: [
         "Marca: Philips",
@@ -1011,7 +1011,7 @@ const productos = [
         "images/televisores/TV_LED_Philips_55_Smart_55PUD7309_77_4K_con_Titan_OS_2.webp",
         "images/televisores/TV_LED_Philips_55_Smart_55PUD7309_77_4K_con_Titan_OS_3.webp"
     ],
-    descripcion: '<strong>Pulgadas:</strong> 55\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Titan OS',
+    descripcion: '<strong>Pulgadas:</strong> 55"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Titan OS',
     codigo: "2075437",
     caracteristicas: [
         "Marca: Philips",
@@ -1027,7 +1027,7 @@ const productos = [
     imagenes: [
         "images/televisores/TV_LED_RCA_55_G55P6UHD_F_Google_4K_Smart_1.webp"
     ],
-    descripcion: '<strong>Pulgadas:</strong> 55\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+    descripcion: '<strong>Pulgadas:</strong> 55"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
     codigo: "2075207",
     caracteristicas: [
         "Marca: RCA",
@@ -1061,7 +1061,7 @@ const productos = [
         "images/televisores/TV_LED_RCA_65_C65AND_F_Smart_HD_Android_2.webp",
         "images/televisores/TV_LED_RCA_65_C65AND_F_Smart_HD_Android_3.webp"
     ],
-    descripcion: '<strong>Pulgadas:</strong> 65\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
+    descripcion: '<strong>Pulgadas:</strong> 65"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
     codigo: "2075463",
     caracteristicas: [
         "Marca: RCA",
@@ -7695,7 +7695,7 @@ const productos = [
         "images/televisores/TV_LED_RCA_50_X_C50AND_F_Ultra_HD_4K_Android_3.webp",
         "images/televisores/TV_LED_RCA_50_X_C50AND_F_Ultra_HD_4K_Android_4.webp"
     ],
-    descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
+    descripcion: '<strong>Pulgadas:</strong> 50"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Android TV',
     codigo: "2072581",
     caracteristicas: [
         "Marca: RCA",
