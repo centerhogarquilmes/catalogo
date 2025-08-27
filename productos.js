@@ -8616,4 +8616,118 @@ const productos = [
 },
 
 
+///   25 08 2025   ///
+
+{
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'Horno electrico Ultracomb UC36S 36 lts 1200w',
+    imagen: "images/hornos/Horno electrico Ultracomb UC36S 36 lts 1200w 1.webp",
+    imagenes: [
+        "images/hornos/Horno electrico Ultracomb UC36S 36 lts 1200w 1.webp",
+        "images/hornos/Horno electrico Ultracomb UC36S 36 lts 1200w 2.webp",
+        "images/hornos/Horno electrico Ultracomb UC36S 36 lts 1200w 3.webp",
+        "images/hornos/Horno electrico Ultracomb UC36S 36 lts 1200w 4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 36\n<strong>Potencia (W):</strong> 1200',
+    codigo: "2074550",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2074550",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'Horno electrico Kanji KJH-HE600013600RAC 60 lts c/anafes 2000w',
+    imagen: "images/hornos/Horno electrico Kanji KJH HE600013600RAC 60 lts c anafes 2000w 1.webp",
+    imagenes: [
+        "images/hornos/Horno electrico Kanji KJH HE600013600RAC 60 lts c anafes 2000w 1.webp",
+        "images/hornos/Horno electrico Kanji KJH HE600013600RAC 60 lts c anafes 2000w 2.webp",
+        "images/hornos/Horno electrico Kanji KJH HE600013600RAC 60 lts c anafes 2000w 3.webp",
+        "images/hornos/Horno electrico Kanji KJH HE600013600RAC 60 lts c anafes 2000w 4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 60\n<strong>Potencia (W):</strong> 2000\n<strong>Anafes:</strong> Sí\n<strong>Spiedo:</strong> Sí\n<strong>Conveccion:</strong> Sí',
+    codigo: "2075420",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075420",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Hornos",
+    nombre: 'Horno electrico Kanji 70Lts KJH-HE70SL 2000w Acero',
+    imagen: "images/hornos/Horno electrico Kanji 70Lts KJH HE70SL 2000w Acero 1.webp",
+    imagenes: [
+        "images/hornos/Horno electrico Kanji 70Lts KJH HE70SL 2000w Acero 1.webp",
+        "images/hornos/Horno electrico Kanji 70Lts KJH HE70SL 2000w Acero 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 70\n<strong>Potencia (W):</strong> 2000\n<strong>Grill:</strong> Sí',
+    codigo: "2075524",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075524",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Picadoras",
+    nombre: 'Picadora Moulinex AD6021AR 750W 300Gr. picadora 1.2.3 + licuadora',
+    imagen: "images/picadoras/Picadora Moulinex AD6021AR 750W 300Gr picadora 1 2 3  licuadora 1.webp",
+    imagenes: [
+        "images/picadoras/Picadora Moulinex AD6021AR 750W 300Gr picadora 1 2 3  licuadora 1.webp",
+        "images/picadoras/Picadora Moulinex AD6021AR 750W 300Gr picadora 1 2 3  licuadora 2.webp",
+        "images/picadoras/Picadora Moulinex AD6021AR 750W 300Gr picadora 1 2 3  licuadora 3.webp",
+        "images/picadoras/Picadora Moulinex AD6021AR 750W 300Gr picadora 1 2 3  licuadora 4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 750\n<strong>Capacidad (Litros):</strong> 300mL, Licuadora 1L\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2071585",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2071585",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Ultracomb LM-2555 800ml 1200w batidor/picador/bowl',
+    imagen: "images/mixers/Mixer Ultracomb LM 2555 800ml 1200w batidor picador bowl 1.webp",
+    imagenes: [
+        "images/mixers/Mixer Ultracomb LM 2555 800ml 1200w batidor picador bowl 1.webp",
+        "images/mixers/Mixer Ultracomb LM 2555 800ml 1200w batidor picador bowl 2.webp",
+        "images/mixers/Mixer Ultracomb LM 2555 800ml 1200w batidor picador bowl 3.webp",
+        "images/mixers/Mixer Ultracomb LM 2555 800ml 1200w batidor picador bowl 4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1200\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Vaso medidor, Batidor, Bowl picador',
+    codigo: "2075200",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2075200",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Mixers",
+    nombre: 'Mixer Philco LMPH8507NP 3 en 1 600w turbo acero inox Negra',
+    imagen: "images/mixers/Mixer Philco LMPH8507NP 3 en 1 600w turbo acero inox Negra 1.webp",
+    imagenes: [
+        "images/mixers/Mixer Philco LMPH8507NP 3 en 1 600w turbo acero inox Negra 1.webp",
+        "images/mixers/Mixer Philco LMPH8507NP 3 en 1 600w turbo acero inox Negra 2.webp",
+        "images/mixers/Mixer Philco LMPH8507NP 3 en 1 600w turbo acero inox Negra 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 600\n<strong>Velocidades:</strong> 2\n<strong>Accesorios incluidos:</strong> Vaso medidor, Batidor',
+    codigo: "2075432",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075432",
+        "Garantía: 1 año"
+    ]
+}
+
 ];

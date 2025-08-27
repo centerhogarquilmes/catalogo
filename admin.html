@@ -482,6 +482,86 @@
             border-radius: 10px;
         }
 
+        /* Estilos para el botón de colapsar/expandir */
+        
+.toggle-btn {
+    background: white;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.2s;
+}
+
+.toggle-btn:hover {
+    color: #ffffff;
+}
+
+/* Estilos para el título de la subcategoría */
+.categoria-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 8px 0;
+    transition: font-size 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+}
+
+
+/* Estilos cuando la subcategoría está colapsada */
+.categoria-block.collapsed .categoria-title {
+    font-size: 0.9em; /* Título más pequeño */
+    margin: 5px 0; /* Menos margen vertical */
+    padding: 4px 0; /* Menos padding vertical */
+}
+
+/* Ocultar el contenido de la subcategoría cuando está colapsada */
+.categoria-block.collapsed .categoria-content {
+    display: none;
+}
+
+/* Transición suave para el contenido */
+.categoria-content {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 1000px; /* Ajusta según necesidad */
+    opacity: 1;
+}
+
+.categoria-block.collapsed .categoria-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* Estilo para el botón global */
+.global-toggle-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0;
+    transition: background-color 0.2s;
+}
+
+.global-toggle-btn:hover {
+    background-color: #1557b0;
+}
+
+/* Reducir el espacio del contenedor colapsado */
+.categoria-block.collapsed {
+    margin-bottom: 5px; /* Menos espacio entre subcategorías colapsadas */
+    transition: margin-bottom 0.3s ease;
+}
+
+.categoria-block {
+    margin-bottom: 15px; /* Espacio normal cuando no está colapsado */
+    transition: margin-bottom 0.3s ease;
+}
+
     </style>
 </head>
 <body>
@@ -800,6 +880,8 @@ document.querySelectorAll('.tab-content').forEach(tab => {
 
     // Cargar códigos marcados desde localStorage
     const codigosMarcados = JSON.parse(localStorage.getItem('codigosMarcados') || '{}');
+    // Cargar estado de colapso desde localStorage
+    const collapsedState = JSON.parse(localStorage.getItem('collapsedCategories') || '{}');
 
     const totalRegistrados = Object.values(registradosPorCategoria)
         .reduce((sum, codigos) => sum + codigos.length, 0);
@@ -807,6 +889,12 @@ document.querySelectorAll('.tab-content').forEach(tab => {
         .reduce((sum, codigos) => sum + codigos.length, 0);
 
     let resultadoHTML = '<h3>Resultados:</h3>';
+    // Botón global para colapsar/expandir todas las categorías
+    resultadoHTML += `
+        <button class="global-toggle-btn" onclick="toggleAllCategories()">
+            Colapsar Todas las Categorías
+        </button>
+    `;
 
     // Códigos registrados
     resultadoHTML += `<p><strong>Registrados (${totalRegistrados}):</strong></p>`;
@@ -814,18 +902,26 @@ document.querySelectorAll('.tab-content').forEach(tab => {
         resultadoHTML += '<p class="success">Ninguno</p>';
     } else {
         for (const [categoria, codigos] of Object.keys(registradosPorCategoria).sort().map(key => [key, registradosPorCategoria[key]])) {
+            const isCollapsed = collapsedState[categoria] || false;
             resultadoHTML += `
-                <div class="categoria-block">
-                    <h4 class="categoria-title">${categoria}</h4>
-                    <table border="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-                        <tr><th style="width: 10%;">Marcar</th><th>Códigos</th><th style="width: 15%;">Cantidad</th></tr>
-                        <tr>
-                            <td></td>
-                            <td><span class="success"><div class="codigo-container">${codigos.map(c => `
-                                <div class="codigo-item">${c}</div>`).join('')}</div></span></td>
-                            <td>${codigos.length}</td>
-                        </tr>
-                    </table>
+                <div class="categoria-block ${isCollapsed ? 'collapsed' : ''}" data-categoria="${categoria}">
+                    <h4 class="categoria-title">
+                        ${categoria}
+                        <button class="toggle-btn" onclick="toggleCategory('${categoria}')">
+                            ${isCollapsed ? 'Mostrar' : 'Ocultar'}
+                        </button>
+                    </h4>
+                    <div class="categoria-content">
+                        <table border="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                            <tr><th style="width: 10%;">Marcar</th><th>Códigos</th><th style="width: 15%;">Cantidad</th></tr>
+                            <tr>
+                                <td></td>
+                                <td><span class="success"><div class="codigo-container">${codigos.map(c => `
+                                    <div class="codigo-item">${c}</div>`).join('')}</div></span></td>
+                                <td>${codigos.length}</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>`;
         }
     }
@@ -836,29 +932,35 @@ document.querySelectorAll('.tab-content').forEach(tab => {
         resultadoHTML += '<p class="error">Ninguno</p>';
     } else {
         for (const [categoria, codigos] of Object.keys(noRegistradosPorCategoria).sort().map(key => [key, noRegistradosPorCategoria[key]])) {
+            const isCollapsed = collapsedState[categoria] || false;
             resultadoHTML += `
-                <div class="categoria-block">
-                    <h4 class="categoria-title">${categoria}</h4>
-                    <table border="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-                        <tr><th style="width: 10%;">Marcar</th><th>Códigos</th><th style="width: 15%;">Cantidad</th></tr>
-                        <tr class="highlight">
-                            <td></td>
-                            <td><span class="error"><div class="codigo-container">${codigos.map(c => `
-                                <div class="codigo-item">
-                                    <input type="checkbox" class="codigo-checkbox" data-codigo="${c}" ${codigosMarcados[c] ? 'checked' : ''}>
-                                    <span style="margin-left: 5px;">${c}</span>
-                                </div>`).join('')}</div></span></td>
-                            <td>${codigos.length}</td>
-                        </tr>
-                    </table>
+                <div class="categoria-block ${isCollapsed ? 'collapsed' : ''}" data-categoria="${categoria}">
+                    <h4 class="categoria-title">
+                        ${categoria}
+                        <button class="toggle-btn" onclick="toggleCategory('${categoria}')">
+                            ${isCollapsed ? 'Mostrar' : 'Ocultar'}
+                        </button>
+                    </h4>
+                    <div class="categoria-content">
+                        <table border="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                            <tr><th style="width: 10%;">Marcar</th><th>Códigos</th><th style="width: 15%;">Cantidad</th></tr>
+                            <tr class="highlight">
+                                <td></td>
+                                <td><span class="error"><div class="codigo-container">${codigos.map(c => `
+                                    <div class="codigo-item">
+                                        <input type="checkbox" class="codigo-checkbox" data-codigo="${c}" ${codigosMarcados[c] ? 'checked' : ''}>
+                                        <span style="margin-left: 5px;">${c}</span>
+                                    </div>`).join('')}</div></span></td>
+                                <td>${codigos.length}</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>`;
         }
     }
 
     document.getElementById('resultado').innerHTML = resultadoHTML;
 
-
-    
     // Añadir manejador para los checkboxes
     document.querySelectorAll('.codigo-checkbox').forEach(checkbox => {
         checkbox.addEventListener('change', (e) => {
@@ -868,6 +970,44 @@ document.querySelectorAll('.tab-content').forEach(tab => {
             localStorage.setItem('codigosMarcados', JSON.stringify(codigosMarcados));
         });
     });
+}
+
+// Función para alternar la visibilidad de una categoría
+function toggleCategory(categoria) {
+    const block = document.querySelector(`.categoria-block[data-categoria="${categoria}"]`);
+    const isCollapsed = block.classList.toggle('collapsed');
+    const button = block.querySelector('.toggle-btn');
+    button.textContent = isCollapsed ? 'Mostrar' : 'Ocultar';
+
+    // Guardar el estado de colapso en localStorage
+    const collapsedState = JSON.parse(localStorage.getItem('collapsedCategories') || '{}');
+    collapsedState[categoria] = isCollapsed;
+    localStorage.setItem('collapsedCategories', JSON.stringify(collapsedState));
+}
+
+// Función para colapsar o expandir todas las categorías
+function toggleAllCategories() {
+    const blocks = document.querySelectorAll('.categoria-block');
+    const allCollapsed = Array.from(blocks).every(block => block.classList.contains('collapsed'));
+    const collapsedState = JSON.parse(localStorage.getItem('collapsedCategories') || '{}');
+
+    blocks.forEach(block => {
+        const categoria = block.dataset.categoria;
+        if (allCollapsed) {
+            block.classList.remove('collapsed');
+            block.querySelector('.toggle-btn').textContent = 'Ocultar';
+            collapsedState[categoria] = false;
+        } else {
+            block.classList.add('collapsed');
+            block.querySelector('.toggle-btn').textContent = 'Mostrar';
+            collapsedState[categoria] = true;
+        }
+    });
+
+    localStorage.setItem('collapsedCategories', JSON.stringify(collapsedState));
+    document.querySelector('.global-toggle-btn').textContent = allCollapsed 
+        ? 'Colapsar Todas las Categorías' 
+        : 'Expandir Todas las Categorías';
 }
 
 
@@ -913,10 +1053,23 @@ document.querySelectorAll('.tab-content').forEach(tab => {
                 ]
             }
         },
-        "Heladeras": {
-            subcategorias: [],
-            folder: "heladeras",
-            fields: [
+        "Heladeras y freezers":  {
+            subcategorias: ["Heladeras", "Freezers"],
+            folders: {
+                "Heladeras": "heladeras",
+                "Freezers": "freezers",
+            },
+            fields: {
+                "Heladeras":[
+                { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "185cm x 60cm x 67cm" },
+                { label: "Tipo de tecnología", name: "tecnologia", type: "select", options: ["Cíclica", "No frost"] },
+                { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "300" },
+                { label: "Freezer", name: "freezer", type: "select", options: ["Sí", "No"] },
+                { label: "Dispenser de agua", name: "dispenser", type: "checkbox" },
+                { label: "Inverter", name: "inverter", type: "checkbox" },
+                { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
+            ],
+                "Freezers":[
                 { label: "Dimensiones (Alt x Anc x Pro)", name: "dimensiones", type: "text", placeholder: "185cm x 60cm x 67cm" },
                 { label: "Tipo de tecnología", name: "tecnologia", type: "select", options: ["Cíclica", "No frost"] },
                 { label: "Capacidad (Litros)", name: "capacidad", type: "text", placeholder: "300" },
@@ -925,6 +1078,7 @@ document.querySelectorAll('.tab-content').forEach(tab => {
                 { label: "Inverter", name: "inverter", type: "checkbox" },
                 { label: "Eficiencia energética", name: "eficiencia", type: "text", placeholder: "Clase A" }
             ]
+            }
         },
         "Tv y Audio": {
             subcategorias: ["Tv", "Audio"],
@@ -1247,12 +1401,10 @@ document.querySelectorAll('.tab-content').forEach(tab => {
                     { label: "Peines guía", name: "peines_guia", type: "text", placeholder: "3 a 12 mm" }
                 ],
                 "Afeitadoras": [
-                    { label: "Apto pelo", name: "apto_pelo", type: "checkbox" },
-                    { label: "Apto barba", name: "apto_barba", type: "checkbox" },
-                    { label: "Potencia (W)", name: "potencia", type: "text", placeholder: "5" },
-                    { label: "Autonomía (min)", name: "autonomia", type: "text", placeholder: "120" },
+                    { label: "Tipos de cabezales", name: "tipos_de_cabezales", type: "select", options: ["Rotativo", "Lineal"] },
+                    { label: "Autonomía (min)", name: "autonomia", type: "text", placeholder: "75" },
+                    { label: "Patillera", name: "patillera", type: "checkbox" },
                     { label: "Inalámbrica", name: "inalambrica", type: "checkbox" },
-                    { label: "Peines guía", name: "peines_guia", type: "text", placeholder: "3 a 12 mm" }
                 ]
             }
         },
