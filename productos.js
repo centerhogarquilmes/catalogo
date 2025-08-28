@@ -8832,7 +8832,7 @@ const productos = [
         "images/colchones/Colchon Suav Rockstar 190x100x24 25 esp 3.webp",
         "images/colchones/Colchon Suav Rockstar 190x100x24 25 esp 2.webp"
     ],
-    descripcion: '<strong>Plazas:</strong> 2\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 100 x 25\n<strong>Peso máximo soportado (Kg):</strong> 110Kg\n<strong>Espuma:</strong> Sí',
+    descripcion: '<strong>Plazas:</strong> 1 1/2\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 100 x 25\n<strong>Peso máximo soportado (Kg):</strong> 110Kg\n<strong>Espuma:</strong> Sí',
     codigo: "2073334",
     caracteristicas: [
         "Marca: Suavestar",
