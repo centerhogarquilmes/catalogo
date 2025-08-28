@@ -173,6 +173,7 @@ body {
         max-height: calc(100vh - var(--header-height));
         overflow-y: auto;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        align-items: center;
     }
 
     .nav-menu.active {
@@ -189,6 +190,58 @@ body {
     .product-page-body .product-page {
         margin-top: 20px;
     }
+
+    .nav-menu {
+        width: 100%;
+        max-height: 70px; 
+    }
+
+    .nav-menu ul {
+        display: flex;
+        justify-content: center; /* Centra el menú en el header */
+        align-items: center;
+        align-items: flex-start; /* 🔹 alinea el contenido arriba */
+        width: 100%;
+        
+    }
+
+    .nav-menu ul li {
+    flex: 1; /* cada ítem ocupa el mismo ancho */
+    text-align: center; /* texto centrado horizontalmente */
+    margin-top: 0;
+    display: flex;           /* 🔹 para controlar alineación interna */
+    align-items: flex-start; /* 🔹 empuja el texto hacia arriba */
+    justify-content: center; /* centra solo horizontalmente */
+}
+
+
+    .nav-menu ul li a {
+    display: block;
+    padding: 1px 0;  /* 🔹 menos padding para que no agrande el header */
+    line-height: 1.2; /* 🔹 compacta un poco el interlineado */
+}
+/* Estilos generales de los submenús */
+.nav-menu ul li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #02366e;
+    min-width: 200px;
+    z-index: 999;
+}
+
+/* 🔹 Para los submenús de los últimos elementos */
+.nav-menu ul li:last-child .submenu {
+    right: 0;   /* alinéalo con el borde derecho del li */
+    left: auto; /* anula el alineado por defecto */
+}
+
+
+
+}
+
+
+    
     
     
     
