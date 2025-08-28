@@ -6750,7 +6750,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, jardín y tiempo libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Almohadas",
     nombre: 'Almohada Suav. Bienestar Microesferas 70x50',
     imagen: "images/almohadas/Almohada_Suav_Bienestar_Microesferas_70_50_1.webp",
@@ -6768,7 +6768,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, jardín y tiempo libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Almohadas",
     nombre: 'Almohada Suav. THERMOSENSE VISCO COMUN 65X35',
     imagen: "images/almohadas/Almohada_Suav_THERMOSENSE_VISCO_COMUN_65_35_1.webp",
@@ -8173,14 +8173,16 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, Jardín y Tiempo Libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Jardín",
     nombre: 'Bordeadora PETRI Plus 3001005 900wts',
-    imagen: "images/jardin/Bordeadora PETRI Plus 3001005 900wts 1.webp",
+    imagen: "images/jardín/Bordeadora PETRI Plus 3001005 900wts 1.webp",
     imagenes: [
-        "images/jardin/Bordeadora PETRI Plus 3001005 900wts 1.webp",
-        "images/jardin/Bordeadora PETRI Plus 3001005 900wts 2.webp",
-        "images/jardin/Bordeadora PETRI Plus 3001005 900wts 3.webp"
+        "images/jardín/Bordeadora PETRI Plus 3001005 900wts 1.webp",
+        "images/jardín/Bordeadora PETRI Plus 3001005 900wts 2.webp",
+        "images/jardín/Bordeadora PETRI Plus 3001005 900wts 3.webp",
+        "images/jardín/Bordeadora PETRI Plus 3001005 900wts 4.webp",
+        "images/jardín/Bordeadora PETRI Plus 3001005 900wts 5.webp"
     ],
     descripcion: '<strong>Tipo de uso:</strong> Bordeadora eléctrica\n<strong>Potencia (HP):</strong> 800w\n<strong>Eléctrica:</strong> Sí',
     codigo: "2074993",
@@ -8728,6 +8730,205 @@ const productos = [
         "Modelo: 2075432",
         "Garantía: 1 año"
     ]
-}
+},
 
+
+
+
+////    28 08 2025    ////
+
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Afeitadoras",
+    nombre: 'Afeitadora Philco AE5105PP Electrica',
+    imagen: "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 1.webp",
+    imagenes: [
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 1.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 2.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 3.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 4.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 5.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 6.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 7.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 8.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 9.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 10.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 11.webp",
+        "images/afeitadoras/Afeitadora Philco AE5105PP Electrica 12.webp"
+    ],
+    descripcion: '<strong>Patillera:</strong> Sí\n<strong>Tipos de cabezales:</strong> Rotativo\n<strong>Autonomía (min):</strong> 75\n<strong>Inalámbrica:</strong> Sí',
+    codigo: "2074755",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2074755",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Ultracomb AS-6061 Robot filtro',
+    imagen: "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 1.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 2.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 3.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 4.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 5.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 6.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 7.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 6061 Robot filtro 8.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 20\n<strong>Capacidad (Litros):</strong> 650mL\n<strong>Bolsa:</strong> Sí\n<strong>Tipo de alimentación:</strong> Batería',
+    codigo: "2075274",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2075274",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. AQUARELA 190x80X21 res.',
+    imagen: "images/colchones/Colchon Suav AQUARELA 190x80X21 res 1.webp",
+    imagenes: [
+        "images/colchones/Colchon Suav AQUARELA 190x80X21 res 1.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 1\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 80 x 21\n<strong>Peso máximo soportado (Kg):</strong> 100Kg\n<strong>Resortes:</strong> Sí',
+    codigo: "15261",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 15261",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. Stress Free Rollpack 190x140x25 esp.',
+    imagen: "images/colchones/Colchon Suav Stress Free Rollpack 190x140x25 esp 1.webp",
+    imagenes: [
+        "images/colchones/Colchon Suav Stress Free Rollpack 190x140x25 esp 1.webp",
+        "images/colchones/Colchon Suav Stress Free Rollpack 190x140x25 esp 4.webp",
+        "images/colchones/Colchon Suav Stress Free Rollpack 190x140x25 esp 3.webp",
+        "images/colchones/Colchon Suav Stress Free Rollpack 190x140x25 esp 2.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 2\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 140 x 25\n<strong>Peso máximo soportado (Kg):</strong> 100Kg\n<strong>Espuma:</strong> Sí',
+    codigo: "2073302",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2073302",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. Rockstar 190x100x24/25 esp.',
+    imagen: "images/colchones/Colchon Suav Rockstar 190x100x24 25 esp 1.webp",
+    imagenes: [
+        "images/colchones/Colchon Suav Rockstar 190x100x24 25 esp 1.webp",
+        "images/colchones/Colchon Suav Rockstar 190x100x24 25 esp 3.webp",
+        "images/colchones/Colchon Suav Rockstar 190x100x24 25 esp 2.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 2\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 100 x 25\n<strong>Peso máximo soportado (Kg):</strong> 110Kg\n<strong>Espuma:</strong> Sí',
+    codigo: "2073334",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2073334",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. Rockstar PT 190x80x30 esp.',
+    imagen: "images/colchones/Colchon Suav Rockstar PT 190x80x30 esp 1.webp",
+    imagenes: [
+        "images/colchones/Colchon Suav Rockstar PT 190x80x30 esp 1.webp",
+        "images/colchones/Colchon Suav Rockstar PT 190x80x30 esp 2.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 1\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 100 x 30\n<strong>Peso máximo soportado (Kg):</strong> 110Kg\n<strong>Espuma:</strong> Sí\n<strong>Pillow:</strong> Sí',
+    codigo: "2073595",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2073595",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. Lujo 20 190x140x20 esp.',
+    imagen: "images/colchones/Colchon Suav Lujo 20 190x140x20 esp 1.webp",
+    imagenes: [
+        "images/colchones/Colchon Suav Lujo 20 190x140x20 esp 1.webp",
+        "images/colchones/Colchon Suav Lujo 20 190x140x20 esp 3.webp",
+        "images/colchones/Colchon Suav Lujo 20 190x140x20 esp 2.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 2\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 140 x 20\n<strong>Peso máximo soportado (Kg):</strong> 85Kg\n<strong>Espuma:</strong> Sí',
+    codigo: "2075026",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2075026",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. Lujo 20 190x80x20 esp.',
+    imagen: "images/colchones/Colchon Suav Lujo 20 190x80x20 esp 1.webp",
+    imagenes: [
+        "images/colchones/Colchon Suav Lujo 20 190x80x20 esp 1.webp",
+        "images/colchones/Colchon Suav Lujo 20 190x80x20 esp 3.webp",
+        "images/colchones/Colchon Suav Lujo 20 190x80x20 esp 2.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 1\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 80 x 20\n<strong>Peso máximo soportado (Kg):</strong> 80\n<strong>Espuma:</strong> Sí',
+    codigo: "2075027",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 2075027",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Colchones",
+    nombre: 'Colchon Suav. EXTRA BM 190x140x18 esp.',
+    imagen: "images/colchones/Colchon Suav EXTRA BM 190x140x18 esp 1.webp",
+    imagenes: [
+        "images/colchones/Colchon Suav EXTRA BM 190x140x18 esp 1.webp",
+        "images/colchones/Colchon Suav EXTRA BM 190x140x18 esp 4.webp",
+        "images/colchones/Colchon Suav EXTRA BM 190x140x18 esp 3.webp",
+        "images/colchones/Colchon Suav EXTRA BM 190x140x18 esp 2.webp"
+    ],
+    descripcion: '<strong>Plazas:</strong> 1\n<strong>Dimensiones (Largo x Ancho x Alto):</strong> 190 x 80 x 18\n<strong>Peso máximo soportado (Kg):</strong> 65kg\n<strong>Espuma:</strong> Sí',
+    codigo: "7098",
+    caracteristicas: [
+        "Marca: Suavestar",
+        "Modelo: 7098",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Picadoras",
+    nombre: 'Picadora Moulinex AD6011AR 750W 300Gr. picadora 1.2.3',
+    imagen: "images/picadoras/Picadora Moulinex AD6011AR 750W 300Gr picadora 1 2 3 1.webp",
+    imagenes: [
+        "images/picadoras/Picadora Moulinex AD6011AR 750W 300Gr picadora 1 2 3 1.webp",
+        "images/picadoras/Picadora Moulinex AD6011AR 750W 300Gr picadora 1 2 3 4.webp",
+        "images/picadoras/Picadora Moulinex AD6011AR 750W 300Gr picadora 1 2 3 3.webp",
+        "images/picadoras/Picadora Moulinex AD6011AR 750W 300Gr picadora 1 2 3 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 750\n<strong>Capacidad (Litros):</strong> 300Gr\n<strong>Cuchillas desmontables:</strong> Sí',
+    codigo: "2071584",
+    caracteristicas: [
+        "Marca: Moulinex",
+        "Modelo: 2071584",
+        "Garantía: 1 año"
+    ]
+},
 ];
