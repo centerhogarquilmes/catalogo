@@ -804,6 +804,29 @@ function filtrarProductos() {
         }
     });
 
+    // Ordenar: primero productos con mayor stock en sucursal, luego en depósito
+productosFiltrados.sort((a, b) => {
+    const aSucursal = precios[a.codigo]?.stock_sucursal || 0;
+    const bSucursal = precios[b.codigo]?.stock_sucursal || 0;
+    const aDeposito = precios[a.codigo]?.stock_deposito || 0;
+    const bDeposito = precios[b.codigo]?.stock_deposito || 0;
+
+    // Priorizar por stock en sucursal
+    if (aSucursal !== bSucursal) {
+        return bSucursal - aSucursal; // Mayor stock sucursal primero
+    }
+
+    // Si el stock en sucursal es igual, priorizar por depósito
+    if (aDeposito !== bDeposito) {
+        return bDeposito - aDeposito; // Mayor stock depósito primero
+    }
+
+    return 0;
+});
+
+
+    
+    
     // Ordenar por precio
     const ordenPrecio = document.querySelector('input[name="filter-orden-precio"]:checked');
     if (ordenPrecio) {
