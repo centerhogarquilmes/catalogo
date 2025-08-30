@@ -196,9 +196,9 @@ const productos = [
     categoria: "Cocinas, anafes y purificadores",
     subcategoria: "Cocinas",
     nombre: "Cocina Volcan 87643 55cm 4 horn. Blanca luz-enc.elec",
-    imagen: "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
+    imagen: "images/cocinas/Cocina_Volcan_87643_55cm_4_horn_Blanca_luz_enc_elec_1.png",
     imagenes: [
-        "images/cocinas/cocina-volcan-87643-55cm-4-horn-blanca.jpg",
+        "images/cocinas/Cocina_Volcan_87643_55cm_4_horn_Blanca_luz_enc_elec_1.png",
     ],
     descripcion: "<strong>Tipo de uso:</strong> Doméstico\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Dimensiones:</strong> 86 x 56 x 58\n<strong>Hornallas:</strong> 4\n<strong>Material:</strong> Enlozado\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encencido eléctrico:</strong> Sí\n<strong>Tipo de gas:</strong> Multigas\n<strong>Eficiencia energética:</strong> Clase A",
     codigo: "2073893",
@@ -8735,6 +8735,9 @@ const productos = [
 
 
 
+
+
+
 ////    28 08 2025    ////
 
     {
@@ -8931,4 +8934,269 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
+
+
+
+////    29 08 2025    ////
+
+{
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Surrey Split 2730 kw OnOff 2348 Kcal/h',
+    imagen: "images/aires_acondicionados/Acond Surrey Split 2730 kw OnOff 2348 Kcal h 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Surrey Split 2730 kw OnOff 2348 Kcal h 1.webp",
+        "images/aires_acondicionados/Acond Surrey Split 2730 kw OnOff 2348 Kcal h 3.webp",
+        "images/aires_acondicionados/Acond Surrey Split 2730 kw OnOff 2348 Kcal h 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2730Kw\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2075137",
+    caracteristicas: [
+        "Marca: Surrey",
+        "Modelo: 2075137",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Enova Split 3400 kw 2924fg',
+    imagen: "images/aires_acondicionados/Acond Enova Split 3400 kw 2924fg 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Enova Split 3400 kw 2924fg 1.webp",
+        "images/aires_acondicionados/Acond Enova Split 3400 kw 2924fg 4.webp",
+        "images/aires_acondicionados/Acond Enova Split 3400 kw 2924fg 3.webp",
+        "images/aires_acondicionados/Acond Enova Split 3400 kw 2924fg 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3400\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074639",
+    caracteristicas: [
+        "Marca: Enova",
+        "Modelo: 2074639",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Motorola G24 4/128GB',
+    imagen: "images/celulares/LIBERADO Motorola G24 4 128GB 1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO Motorola G24 4 128GB 1.webp",
+        "images/celulares/LIBERADO Motorola G24 4 128GB 4.webp",
+        "images/celulares/LIBERADO Motorola G24 4 128GB 3.webp",
+        "images/celulares/LIBERADO Motorola G24 4 128GB 2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6,6"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5 Ah\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 14',
+    codigo: "2075385",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2075385",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Zte Blade V60 8/256GB 6.72" 4G (Z2356-FAL)',
+    imagen: "images/celulares/LIBERADO Zte Blade V60 8 256GB 6 72 4G Z2356 FAL 1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO Zte Blade V60 8 256GB 6 72 4G Z2356 FAL 1.webp",
+        "images/celulares/LIBERADO Zte Blade V60 8 256GB 6 72 4G Z2356 FAL 4.webp",
+        "images/celulares/LIBERADO Zte Blade V60 8 256GB 6 72 4G Z2356 FAL 3.webp",
+        "images/celulares/LIBERADO Zte Blade V60 8 256GB 6 72 4G Z2356 FAL 2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 256\n<strong>RAM (GB):</strong> 8\n<strong>Pulgadas:</strong> 6,72"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 8 Mpx\n<strong>NFC:</strong> Sí\n<strong>Batería:</strong> 5 Ah\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2075453",
+    caracteristicas: [
+        "Marca: Zte",
+        "Modelo: 2075453",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Samsung A26 6/128GB',
+    imagen: "images/celulares/LIBERADO Samsung A26 6 128GB 1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO Samsung A26 6 128GB 1.webp",
+        "images/celulares/LIBERADO Samsung A26 6 128GB 3.webp",
+        "images/celulares/LIBERADO Samsung A26 6 128GB 2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 6\n<strong>Pulgadas:</strong> 6,7"\n<strong>Cámara trasera:</strong>  50 Mpx\n<strong>Cámara frontal:</strong>  13 Mpx\n<strong>NFC:</strong> Sí\n<strong>Batería:</strong> 5 Ah\n<strong>Red móvil:</strong> 5G\n<strong>Sistema operativo:</strong> Android 13',
+    codigo: "2075539",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2075539",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tecnología",
+    subcategoria: "Celulares",
+    nombre: 'LIBERADO Samsung A04 4/128GB',
+    imagen: "images/celulares/LIBERADO Samsung A04 4 128GB 1.webp",
+    imagenes: [
+        "images/celulares/LIBERADO Samsung A04 4 128GB 1.webp",
+        "images/celulares/LIBERADO Samsung A04 4 128GB 3.webp",
+        "images/celulares/LIBERADO Samsung A04 4 128GB 2.webp"
+    ],
+    descripcion: '<strong>Almacenamiento (GB):</strong> 128\n<strong>RAM (GB):</strong> 4\n<strong>Pulgadas:</strong> 6,5"\n<strong>Cámara trasera:</strong> 50 Mpx\n<strong>Cámara frontal:</strong> 5 Mpx\n<strong>NFC:</strong> No\n<strong>Batería:</strong> 5 Ah\n<strong>Red móvil:</strong> 4G\n<strong>Sistema operativo:</strong> Android 12',
+    codigo: "2074193",
+    caracteristicas: [
+        "Marca: Samsung",
+        "Modelo: 2074193",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Win 85cm 5 Hornallas p/v 4006',
+    imagen: "images/cocinas/Cocina Usman Industrial Win 85cm 5 Hornallas p v 4006 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Usman Industrial Win 85cm 5 Hornallas p v 4006 1.webp",
+        "images/cocinas/Cocina Usman Industrial Win 85cm 5 Hornallas p v 4006 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 85 x 62\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 5\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072788",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2072788",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial jitaku grill 820 4 hornallas 18067',
+    imagen: "images/cocinas/Cocina Morelli Industrial jitaku grill 820 4 hornallas 18067 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Morelli Industrial jitaku grill 820 4 hornallas 18067 1.webp",
+        "images/cocinas/Cocina Morelli Industrial jitaku grill 820 4 hornallas 18067 4.webp",
+        "images/cocinas/Cocina Morelli Industrial jitaku grill 820 4 hornallas 18067 3.webp",
+        "images/cocinas/Cocina Morelli Industrial jitaku grill 820 4 hornallas 18067 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 82 x 62\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Plancha:</strong> Sí\n<strong>Carlitera:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072965",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2072965",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Escorial Master S2 Classic ge Negra',
+    imagen: "images/cocinas/Cocina Escorial Master S2 Classic ge Negra 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Escorial Master S2 Classic ge Negra 1.webp",
+        "images/cocinas/Cocina Escorial Master S2 Classic ge Negra 5.webp",
+        "images/cocinas/Cocina Escorial Master S2 Classic ge Negra 4.webp",
+        "images/cocinas/Cocina Escorial Master S2 Classic ge Negra 3.webp",
+        "images/cocinas/Cocina Escorial Master S2 Classic ge Negra 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Envasado\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073968",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2073968",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial 820 Ex Acero 16069 p/v r/fundicion liv',
+    imagen: "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16069 p v r fundicion liv 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16069 p v r fundicion liv 1.webp",
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16069 p v r fundicion liv 5.webp",
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16069 p v r fundicion liv 4.webp",
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16069 p v r fundicion liv 3.webp",
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16069 p v r fundicion liv 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 82 x 62\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 5\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074820",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2074820",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial 820 Ex Acero 16380 Multigrill Carlitera',
+    imagen: "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16380 Multigrill Carlitera 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16380 Multigrill Carlitera 1.webp",
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16380 Multigrill Carlitera 4.webp",
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16380 Multigrill Carlitera 3.webp",
+        "images/cocinas/Cocina Morelli Industrial 820 Ex Acero 16380 Multigrill Carlitera 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 82 x 62\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Plancha:</strong> Sí\n<strong>Carlitera:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074821",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2074821",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Compact 4800 4 Hornallas 80cm p/v-r/a + plancha',
+    imagen: "images/cocinas/Cocina Usman Industrial Compact 4800 4 Hornallas 80cm p v r a  plancha 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Usman Industrial Compact 4800 4 Hornallas 80cm p v r a  plancha 1.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 82 x 62\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Plancha:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074965",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2074965",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Orbis C9300 938GP4M Gris inox 55cm',
+    imagen: "images/cocinas/Cocina Orbis C9300 938GP4M Gris inox 55cm 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Orbis C9300 938GP4M Gris inox 55cm 1.webp",
+        "images/cocinas/Cocina Orbis C9300 938GP4M Gris inox 55cm 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 55 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075541",
+    caracteristicas: [
+        "Marca: Orbis",
+        "Modelo: 2075541",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5536/F bca. enc. electr. con Timer',
+    imagen: "images/cocinas/Cocina Florencia 5536 F bca enc electr con Timer 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Florencia 5536 F bca enc electr con Timer 1.webp",
+        "images/cocinas/Cocina Florencia 5536 F bca enc electr con Timer 5.webp",
+        "images/cocinas/Cocina Florencia 5536 F bca enc electr con Timer 4.webp",
+        "images/cocinas/Cocina Florencia 5536 F bca enc electr con Timer 3.webp",
+        "images/cocinas/Cocina Florencia 5536 F bca enc electr con Timer 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072764",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2072764",
+        "Garantía: 1 año"
+    ]
+},
+
 ];
