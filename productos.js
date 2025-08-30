@@ -9199,4 +9199,130 @@ const productos = [
     ]
 },
 
+
+
+
+
+////    30 08 2025   ////
+
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Gafa FGHI100B-S horizontal Inverter 117 lts',
+    imagen: "images/freezers/Freezer Gafa FGHI100B S horizontal Inverter 117 lts 1.webp",
+    imagenes: [
+        "images/freezers/Freezer Gafa FGHI100B S horizontal Inverter 117 lts 1.webp",
+        "images/freezers/Freezer Gafa FGHI100B S horizontal Inverter 117 lts 5.webp",
+        "images/freezers/Freezer Gafa FGHI100B S horizontal Inverter 117 lts 4.webp",
+        "images/freezers/Freezer Gafa FGHI100B S horizontal Inverter 117 lts 3.webp",
+        "images/freezers/Freezer Gafa FGHI100B S horizontal Inverter 117 lts 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 89 x 60 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 117\n<strong>Inverter:</strong> Sí\n<strong>Funciones:</strong> Conservar, Congelar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074052",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2074052",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Neba Trial F 402 cap 384 lts 2 puertas',
+    imagen: "images/freezers/Freezer Neba Trial F 402 cap 384 lts 2 puertas 1.webp",
+    imagenes: [
+        "images/freezers/Freezer Neba Trial F 402 cap 384 lts 2 puertas 1.webp",
+        "images/freezers/Freezer Neba Trial F 402 cap 384 lts 2 puertas 4.webp",
+        "images/freezers/Freezer Neba Trial F 402 cap 384 lts 2 puertas 3.webp",
+        "images/freezers/Freezer Neba Trial F 402 cap 384 lts 2 puertas 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 120 x 65 \n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 384\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 2\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "21407",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 21407",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Neba Trial F 400 cap 384lts',
+    imagen: "images/freezers/Freezer Neba Trial F 400 cap 384lts 1.webp",
+    imagenes: [
+        "images/freezers/Freezer Neba Trial F 400 cap 384lts 1.webp",
+        "images/freezers/Freezer Neba Trial F 400 cap 384lts 4.webp",
+        "images/freezers/Freezer Neba Trial F 400 cap 384lts 3.webp",
+        "images/freezers/Freezer Neba Trial F 400 cap 384lts 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 120 x 65 \n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 384\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "21403",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 21403",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Gafa FGHI200B-M',
+    imagen: "images/freezers/Freezer Gafa FGHI200B M 1.webp",
+    imagenes: [
+        "images/freezers/Freezer Gafa FGHI200B M 1.webp",
+        "images/freezers/Freezer Gafa FGHI200B M 4.webp",
+        "images/freezers/Freezer Gafa FGHI200B M 3.webp",
+        "images/freezers/Freezer Gafa FGHI200B M 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 89 x 86 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 205\n<strong>Funciones:</strong> Conservar, Congelar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Inverter:</strong> Sí\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074058",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2074058",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer TELEFUNKEN de pozo 120 lts FP120',
+    imagen: "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 1.webp",
+    imagenes: [
+        "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 1.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 7.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 6.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 5.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 4.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 3.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 83 x 58 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 120\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075163",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075163",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer TELEFUNKEN de pozo 50 lts',
+    imagen: "images/freezers/Freezer TELEFUNKEN de pozo 50 lts 1.webp",
+    imagenes: [
+        "images/freezers/Freezer TELEFUNKEN de pozo 50 lts 1.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 50 lts 4.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 50 lts 3.webp",
+        "images/freezers/Freezer TELEFUNKEN de pozo 50 lts 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 62 x 45 x 43\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 50\n<strong>Funciones:</strong> Conservar, Congelar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075107",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075107",
+        "Garantía: 1 año"
+    ]
+},
+
+
 ];
