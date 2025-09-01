@@ -1,33 +1,18 @@
 // Arreglo de productos destacados (códigos de los productos)
 const productosDestacados = [
-    "2075301", //Lavarropas Midea MF100W60/W-A1 c/frontal 6kg 1000rpm Blanco
-    "2075334", //TV LED Noblex 32" DR32X7080 Android Tv
-    "2075321", //TV LED Philips 43" Smart HD 43PFD6910/77 con Titan OS
-    "2075334", //TV LED Noblex 32" DR32X7080 Android Tv
-    "14202", //Calefactor Volcan T/B 5700 46312/6 GRIS
-    "2075320",  // TV LED Philips 32" Smart HD 32PHD6910/77 con Titan OS
+    "2074711", //Cocina Florencia 5838 Semi-Industrial Inox 56 cm multigas s/valvula
+    "2074136", //Heladera Philco PHCT341B ciclica 340Lts Blanca
+    "2075483", //Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c/frontal plata
+    "2073936", //Horno electrico Ultracomb UC-45CN 45lts
+    "2075258", //Heladera Philco PHCT302X Top Mount 298Lts Inox ciclica
     "2075207", //TV LED RCA 55" G55P6UHD-F Google 4K Smart
-    "2075435", //TV LED Aoc 43" 43S5135/77G Smart tv Roku
-    "2075434", //TV LED Aoc 32" 32S5135/77G Smart tv Roku
-    "2074860", //TV LED ENOVA 75" smart 4K UHD Android
-    "2075285", //TV LED Noblex 50" DR50X8580 Smart Google tv
     "2075388", //TV LED RCA 55" QL55TH200-F QLED Google 4K Smart
-    "2073755", //TV LED ENOVA 32" smart HD Android
-    "2075302", //TV LED ENOVA 65" smart 4K UHD Google Tv
-    "2075302", //TV LED ENOVA 65" smart 4K UHD Google Tv
     "2075067", //TV LED RCA 40" R40AND-F Smart c/ Android
-    "2074829", //TV LED Noblex 58" DB58X7550 Android 4K
-    "2075463", //TV LED RCA 65" C65AND-F Smart HD Android
     "2075452", //LIBERADO Tecno Spark 30 Pro KL7 8/128 gb Artic Glow (PNT011034)
     "2075451", //LIBERADO Tecno Spark 30C KL5 4/256 gb Orbit Black (PNT011019)
-    "2075455", //LIBERADO Zte Blade A55 4/128GB 6.75" 4G (Z2450-FAL)
-    "2075185", //Tablet Enova 10" 4G LTE 4/64gb 2+5mp android 12
-    "2075454", //LIBERADO Zte Blade A75 4/256GB 6.6" 5G (Z2357N-FAL)
-    "2074804", //LIBERADO Noblex B30 6.5" 6/128GB Negro
-    "2075453", //LIBERADO Zte Blade V60 8/256GB 6.72" 4G (Z2356-FAL)
-    "2074797", //LIBERADO Noblex N62 6.5" 4/64GB Negro
-    "2074907", //LIBERADO Noblex N52 6.5" 2/64GB Negro
-    "2075428", //Tablet Enova 10" Wifi 2/32gb 2+5mp android 13
+    
+    
+    
  
 
 
