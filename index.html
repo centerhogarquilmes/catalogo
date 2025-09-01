@@ -493,22 +493,26 @@ productosDestacados.forEach(codigo => {
     }
 });
 
-if (productosDestacadosFiltrados.length === 0) {
+if (productosDestacados.length === 0) {
     productGrid.innerHTML = '<p>No se encontraron productos destacados.</p>';
 } else {
-    productosDestacadosFiltrados.forEach(producto => {
+    productosDestacados.forEach(codigo => {
+        const producto = productos.find(p => p.codigo === codigo);
+        if (!producto) {
+            console.warn(`El código ${codigo} en productosDestacados no coincide con ningún producto.`);
+            return;
+        }
+
         // Obtener datos desde precios.js
         const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
         const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
         const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
-        
-        // Calcular precio con 25% de descuento
+
         const precioConDescuento = precioLista ? precioLista * 0.79 : null;
         const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR')}` : 'Consultar precio';
-        
-        // Calcular precio antes de impuestos basado en el precio con descuento
+
         const precioAntesImpuestos = precioConDescuento ? `$${(precioConDescuento * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
-        
+
         const isAgotado = datosDinamicos.stock_sucursal + datosDinamicos.stock_deposito === 0;
 
         const card = document.createElement('div');
@@ -516,8 +520,7 @@ if (productosDestacadosFiltrados.length === 0) {
         card.innerHTML = `
             <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
                 ${isAgotado ? '<span class="agotado-label">Agotado</span>' : ''}
-                
-                <span class="discount-label">21% OFF</span> <!-- Nueva etiqueta de descuento -->
+                <span class="discount-label">21% OFF</span>
                 <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                 <div class="text-container">
                     <h3>${producto.nombre}</h3>
@@ -531,6 +534,30 @@ if (productosDestacadosFiltrados.length === 0) {
         productGrid.appendChild(card);
     });
 }
+
+ // Función para mostrar destacados respetando el orden del array
+  function mostrarDestacados() {
+    const contenedor = document.getElementById("destacados-container");
+
+    productosDestacados.forEach(codigo => {
+      // Buscar el producto completo en el array productos
+      const producto = productos.find(p => p.codigo === codigo);
+      if (producto) {
+        const item = document.createElement("div");
+        item.classList.add("producto-item");
+        item.innerHTML = `
+          <a href="producto.html?codigo=${producto.codigo}">
+            <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
+            <h3>${producto.nombre}</h3>
+          </a>
+        `;
+        contenedor.appendChild(item);
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", mostrarDestacados);
+
 // Inicializar Owl Carousel para categorías
 $(document).ready(function(){
     $("#categs-slider").owlCarousel({
