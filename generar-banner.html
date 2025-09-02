@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Banners</title>
+  <script src="productos.js"></script>
+  <script src="precios.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: #f4f4f4;
+    }
+    .tabs {
+      margin: 20px 0;
+    }
+    .tab-btn {
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background: #00254a;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .tab-btn.active {
+      background: #ff6200;
+    }
+    .preview {
+      position: relative;
+      width: 1200px;
+      height: 500px;
+      margin: 20px auto;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      background: linear-gradient(75deg, #ffffff 45%, #00254a 35%);
+    }
+    .preview.active { display: flex; }
+    .preview img.product {
+      max-height: 100%;
+      max-width: 45%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    .info { text-align: left; max-width: 50%; }
+    .info h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+      -webkit-text-stroke: 1.2px #000000 !important;
+    }
+    .info p {
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #ffffff;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    }
+    .logo {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 70px;
+      opacity: 0.9;
+    }
+    /* estilos de lista */
+    .descripcion-lista {
+      margin: 12px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    .descripcion-lista li {
+      margin-bottom: 6px;
+      padding-left: 28px;
+      position: relative;
+      font-size: 1rem;
+      color: #ffffff;
+      text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+    }
+    .descripcion-lista li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #1bc324;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+    }
+    /* precios */
+    .cuotas-numero { font-size: 1.5rem; font-weight: 800; color: #ff6200b6; }
+    .cuotas-texto { font-size: 1.2rem; font-weight: 400; color: #ff6200b6; }
+    .cuotas-precio { font-size: 2rem; font-weight: 900; color: #ff6200; }
+    .texto-lista-tachado { font-size: 1rem; color: #ffffff70; text-decoration: line-through; }
+    .texto-contado { font-size: 1.5rem; font-weight: 800; color: #ff00009f; }
+    .texto-precio-contado { font-size: 2rem; font-weight: 900; color: #ff0000; }
+
+    .preview img.product {
+  flex: 1 1 45%;
+  min-width: 350px; /* asegura que no quede tan finita */
+  max-width: 50%;
+  object-fit: contain;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Generador de Banner para Carrusel</h1>
+  <input type="text" id="codigo" placeholder="Ingresá código de producto">
+  <button onclick="generarPreview()">Generar Ambas Versiones</button>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="mostrarTab('preview-cuotas')">6 Cuotas sin interés</button>
+    <button class="tab-btn" onclick="mostrarTab('preview-contado')">Precio contado</button>
+  </div>
+
+  <!-- PREVIEW CUOTAS -->
+  <div id="preview-cuotas" class="preview active">
+    <img id="preview-img-cuotas" class="product" src="" alt="Producto">
+    <div class="info">
+      <h2 id="preview-nombre-cuotas"></h2>
+      <div id="preview-descripcion-cuotas"></div>
+      <p id="preview-precio-cuotas"></p>
+    </div>
+    <img src="images/logo_trans.png" alt="Logo" class="logo">
+  </div>
+  <button onclick="descargarImagen('preview-cuotas')">Descargar WEBP (Cuotas)</button>
+
+  <!-- PREVIEW CONTADO -->
+  <div id="preview-contado" class="preview">
+    <img id="preview-img-contado" class="product" src="" alt="Producto">
+    <div class="info">
+      <h2 id="preview-nombre-contado"></h2>
+      <div id="preview-descripcion-contado"></div>
+      <p id="preview-precio-contado"></p>
+    </div>
+    <img src="images/logo_trans.png" alt="Logo" class="logo">
+  </div>
+  <button onclick="descargarImagen('preview-contado')">Descargar WEBP (Contado)</button>
+
+  <script>
+    let productoActual = null;
+
+    function formatearDescripcion(texto) {
+      if (!texto) return '';
+      const partes = texto.split(/<br\s*\/?>|;|\n/).map(p => p.trim()).filter(p => p);
+      return `<ul class="descripcion-lista">` + partes.map(p => `<li>${p}</li>`).join('') + `</ul>`;
+    }
+
+    function generarPreview() {
+      const codigo = document.getElementById("codigo").value.trim();
+      const producto = productos.find(p => p.codigo === codigo);
+      if (!producto) { alert("No se encontró el producto"); return; }
+
+      const datos = precios[codigo] || { precio_tarjeta: 'No disponible' };
+      const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
+      const cuotas6 = precioLista ? precioLista / 6 : null;
+      const precioConDescuento = precioLista ? precioLista * 0.79 : null;
+
+      productoActual = codigo;
+
+      // --- llenar versión cuotas ---
+      document.getElementById("preview-img-cuotas").src = producto.imagen;
+      document.getElementById("preview-nombre-cuotas").textContent = producto.nombre;
+      document.getElementById("preview-descripcion-cuotas").innerHTML = formatearDescripcion(producto.descripcion);
+      document.getElementById("preview-precio-cuotas").innerHTML = cuotas6
+        ? `<span class="cuotas-numero">6 cuotas</span> <span class="cuotas-texto">sin interés de</span><br>
+           <span class="cuotas-precio">$${cuotas6.toLocaleString('es-AR', { minimumFractionDigits: 2 })}</span>`
+        : 'Consultar financiación';
+
+      // --- llenar versión contado ---
+      document.getElementById("preview-img-contado").src = producto.imagen;
+      document.getElementById("preview-nombre-contado").textContent = producto.nombre;
+      document.getElementById("preview-descripcion-contado").innerHTML = formatearDescripcion(producto.descripcion);
+      document.getElementById("preview-precio-contado").innerHTML = precioConDescuento
+        ? `<span class="texto-lista-tachado">Precio de lista $${precioLista.toLocaleString('es-AR')}</span><br>
+           <span class="texto-contado">Contado:</span>
+           <span class="texto-precio-contado">$${precioConDescuento.toLocaleString('es-AR')}</span>`
+        : 'Consultar precio contado';
+    }
+
+    function mostrarTab(id) {
+      document.querySelectorAll('.preview').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function descargarImagen(id) {
+      const banner = document.getElementById(id);
+      html2canvas(banner, { backgroundColor: null }).then(canvas => {
+        const link = document.createElement("a");
+        link.download = `${id}_${productoActual}.webp`;
+        link.href = canvas.toDataURL("image/webp", 0.9);
+        link.click();
+      });
+    }
+  </script>
+</body>
+</html>
