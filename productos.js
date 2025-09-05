@@ -709,9 +709,9 @@ const productos = [
         nombre: 'TV LED Kanji 40" (7635718719284) HD Smart Google Tv',
         imagen: "images/televisores/TV_LED_Kanji 40_7635718719284_HD_Smart_Google_Tv_3.webp",
         imagenes: [
-            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_3.webp",
-            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_2.webp",
-            "images/televisores/TV_LED_Kanji_40_7635718719284_HD_Smart_Google_Tv_1.webp"
+            "images/televisores/TV_LED_Kanji 40_7635718719284_HD_Smart_Google_Tv_3.webp",
+            "images/televisores/TV_LED_Kanji 40_7635718719284_HD_Smart_Google_Tv_2.webp",
+            "images/televisores/TV_LED_Kanji 40_7635718719284_HD_Smart_Google_Tv_1.webp"
         ],
         descripcion: '<strong>Pulgadas:</strong> 40"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Google TV',
         codigo: "2074810",

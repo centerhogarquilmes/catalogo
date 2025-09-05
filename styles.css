@@ -493,14 +493,15 @@ body {
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .carousel-btn.prev {
-    left: 30px;
+    left: 50px;
 }
 
 .carousel-btn.next {
-    right: 30px;
+    right: 50px;
 }
 
 .carousel-btn:hover {
@@ -3906,7 +3907,3 @@ font-size: 1rem;
     padding: 0 10px;
   }
 }
-
-
-
-
