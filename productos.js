@@ -9270,7 +9270,7 @@ const productos = [
     {
     categoria: "Heladeras y freezers",
     subcategoria: "Freezers",
-    nombre: 'Freezer TELEFUNKEN de pozo 120 lts FP120',
+    nombre: 'Freezer TELEFUNKEN Exhibidor de pozo 150lts FPE150',
     imagen: "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 1.webp",
     imagenes: [
         "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 1.webp",
@@ -9282,10 +9282,10 @@ const productos = [
         "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 2.webp"
     ],
     descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 83 x 58 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 120\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
-    codigo: "2075163",
+    codigo: "2075108",
     caracteristicas: [
         "Marca: Telefunken",
-        "Modelo: 2075163",
+        "Modelo: 2075108",
         "Garantía: 1 año"
     ]
 },
