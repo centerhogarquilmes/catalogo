@@ -9281,7 +9281,7 @@ const productos = [
         "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 3.webp",
         "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 2.webp"
     ],
-    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 83 x 58 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 120\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 83 x 58 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 150\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
     codigo: "2075108",
     caracteristicas: [
         "Marca: Telefunken",
