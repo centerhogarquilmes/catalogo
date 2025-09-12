@@ -60,7 +60,7 @@ body {
 
 /* Container */
 .container {
-    max-width: 1450px;
+    
     margin: 0 auto;
     padding: 0 15px;
     margin-bottom: 0; /* Eliminar margen inferior para reducir espacio */
@@ -245,7 +245,7 @@ body {
     
     
     
-}
+
 
 
 
@@ -428,7 +428,7 @@ body {
     position: relative;
     width: fit-content;
     max-width: 100%;
-    min-width: 1200px;
+    min-width: 1500px;
     margin: 0 auto;
 }
 
@@ -720,6 +720,27 @@ body {
     padding: 20px;
     border-radius: 8px;
 }
+
+
+
+/* Modificar el header solo en la página index */
+.index-page .header {
+    transform: translateY(0); /* Header visible por defecto */
+}
+
+/* Clase para ocultar el header */
+.index-page .header.hidden {
+    transform: translateY(50%); /* Mueve el header fuera de la pantalla hacia arriba */
+    transition: transform 0.3s ease;
+}
+/* Header parcialmente visible (scroll hacia arriba) */
+.index-page .header.visible {
+    transform: translateY(0%); /* Muestra solo el 40% superior del header */
+    transition: transform 0.3s ease;
+}
+
+
+
 /* Modificar el header solo en la página de producto */
 .product-page .header {
     transform: translateY(0); /* Header visible por defecto */
@@ -2867,27 +2888,11 @@ font-size: 1rem;
     }
 }
 
-.consulta-btn {
-    background: linear-gradient(90deg, #ff0000 0%, #8d0000 100%); /* Degradado de azul oscuro a azul medio */
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-    text-decoration: none !important;
-    display: inline-block;
-    transition: 1s;
-}
+
 
 .consulta-btn:hover {
     background: linear-gradient(90deg, #7a0000 0%, #3a0000 100%); /* Degradado de azul oscuro a azul medio */
-    transition: 1s;
+    transition: 5s;
     
 }
 .contado-btn {
@@ -2905,12 +2910,12 @@ font-size: 1rem;
     margin-top: 10px;
     text-decoration: none !important;
     display: inline-block;
-    transition: 1s;
+    transition:15s;
 }
 
 .contado-btn:hover {
     background: linear-gradient(90deg, #ff6200 0%, #863400 100%); /* Degradado de azul oscuro a azul medio */
-    transition: 1s;
+    transition: 15s;
 }
 
 /* Categories Carousel */
@@ -3289,27 +3294,7 @@ font-size: 1rem;
     z-index: 1;
 }
 
-/* Estilo para el precio original (tachado) */
-.product-card .original-price {
-    color: #999;
-    text-decoration: line-through;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
 
-/* Estilo para el precio con descuento (destacado) */
-.product-card .discount-price {
-    color: #ff6200;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-/* Ajuste para el precio antes de impuestos */
-.product-card .product-price-before-tax {
-    color: #666;
-    font-size: 12px;
-}
 
 /* Asegurar que las etiquetas no se superpongan */
 .product-card .offer-label {
@@ -3344,27 +3329,29 @@ font-size: 1rem;
     margin: 10px 0;
 }
 
-/* Original price (strikethrough) */
+/* Precio de lista */
 .product-info .original-price {
-    color: #999;
-    text-decoration: line-through;
-    font-size: 16px;
-    margin-bottom: 5px;
+    color: #999999;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 15px;
 }
 
-/* Discounted price (highlighted) */
+/* Precio contado */
 .product-info .discount-price {
     color: #ff0000;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    
 }
 
-/* Price before taxes */
+/* PRE.ANT.IMP.NAC: */
 .product-info .product-price-anterior {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 10px;
+    color: #6666667c;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
 /* Installment prices */
@@ -3377,7 +3364,7 @@ font-size: 1rem;
 .product-info .product-stock-sucursal,
 .product-info .product-stock-deposito {
     font-size: 14px;
-    color: #333;
+    color: #0048c4;
     margin: 5px 0;
 }
 
