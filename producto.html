@@ -452,8 +452,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const wa = document.getElementById('whatsapp-consulta');
+if (wa) {
     const msg = `Hola, quiero un presupuesto al contado para ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}) con 24% de descuento.`;
     wa.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(msg)}`;
+}
+
     const wat = document.getElementById('whatsapp-contado');
     const mssg = `Hola, quiero info acerca de ${producto ? producto.nombre : 'producto desconocido'} (Código ${codigo}).`;
     wat.href = `https://api.whatsapp.com/send?phone=5491131680489&text=${encodeURIComponent(mssg)}`;
@@ -510,6 +513,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         mainImage.src = imageSources[currentImageIndex];
     }
+    // Carrusel principal
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+
+if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + imageSources.length) % imageSources.length;
+        updateThumbnails();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+        updateThumbnails();
+    });
+}
+
 
     // Evento para abrir el modal al hacer clic en la imagen principal
     mainImage.addEventListener('click', () => {
