@@ -295,9 +295,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const precioAnteriorTexto = precioAnterior ? `$${precioAnterior.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
     const cuotas = precioLista ? [
-        { cuotas: 6, texto: '6 Cuotas sin interés con Tarjetas de Banco', precio: (precioLista / 6) },
-        { cuotas: 9, texto: '9 Cuotas sin interés con Naranja X', precio: (precioLista / 9) }
-    ] : [];
+    { 
+        cuotas: 6, 
+        texto: '6 Cuotas sin interés con todas las tarjetas', 
+        precio: (precioLista / 6) 
+    },
+    { 
+        cuotas: 9, 
+        texto: '9 Cuotas fijas con tarjeta de crédito Naranja X', 
+        precio: ((precioLista * 1.05) / 9) 
+    },
+    { 
+        cuotas: 12, 
+        texto: '12 Cuotas fijas con tarjetas de crédito de banco', 
+        precio: ((precioLista * 1.19) / 12) 
+    }
+] : [];
+
 
     const sucursalTexto = datos.stock_sucursal > 0 ? datos.stock_sucursal + ' unidades' : 'Sin stock';
     const depositoTexto = datos.stock_deposito > 0 ? datos.stock_deposito + ' unidades' : 'Sin stock';
@@ -403,6 +417,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 imgSrc = 'images/naranja_x.png';
                 imgClass = 'cuota-card-icon';
             }
+            if (cuota.cuotas === 12) {
+                imgSrc = 'images/tarjetas_de_credito.png';
+                imgClass = 'cuota-card-icon';
+            }
             cuotaEl.textContent = `${cuota.texto}: $${cuota.precio.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
             if (imgSrc) {
                 const cuotaImg = document.createElement('img');
@@ -484,6 +502,90 @@ if (wa) {
             updateThumbnails();
         }
     }
+
+    let scale = 1;
+let posX = 0, posY = 0;
+let isDragging = false;
+let startX, startY;
+
+// Función para aplicar la transformación
+function updateTransform() {
+    modalImage.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
+}
+
+// 🔹 Zoom con rueda del mouse (desktop)
+modalImage.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    const zoomIntensity = 0.1;
+    scale += e.deltaY < 0 ? zoomIntensity : -zoomIntensity;
+    scale = Math.min(Math.max(1, scale), 5); // limite entre 1x y 5x
+    updateTransform();
+});
+
+// 🔹 Drag con mouse
+modalImage.addEventListener("mousedown", (e) => {
+    if (scale <= 1) return; // no arrastrar si no hay zoom
+    isDragging = true;
+    startX = e.clientX - posX;
+    startY = e.clientY - posY;
+    modalImage.classList.add("dragging");
+});
+window.addEventListener("mouseup", () => {
+    isDragging = false;
+    modalImage.classList.remove("dragging");
+});
+window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    posX = e.clientX - startX;
+    posY = e.clientY - startY;
+    updateTransform();
+});
+
+// 🔹 Gestos táctiles (pinch zoom + arrastrar)
+let initialDistance = null;
+modalImage.addEventListener("touchstart", (e) => {
+    if (e.touches.length === 2) {
+        initialDistance = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+        );
+    } else if (e.touches.length === 1 && scale > 1) {
+        startX = e.touches[0].clientX - posX;
+        startY = e.touches[0].clientY - posY;
+    }
+}, { passive: false });
+
+modalImage.addEventListener("touchmove", (e) => {
+    if (e.touches.length === 2 && initialDistance) {
+        const newDistance = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+        );
+        const zoomChange = (newDistance - initialDistance) * 0.005;
+        scale = Math.min(Math.max(1, scale + zoomChange), 5);
+        initialDistance = newDistance;
+        updateTransform();
+    } else if (e.touches.length === 1 && scale > 1) {
+        posX = e.touches[0].clientX - startX;
+        posY = e.touches[0].clientY - startY;
+        updateTransform();
+    }
+}, { passive: false });
+
+modalImage.addEventListener("touchend", () => {
+    if (event.touches.length < 2) {
+        initialDistance = null;
+    }
+});
+
+// 🔹 Reset de zoom cuando se cambia de imagen
+function resetZoom() {
+    scale = 1;
+    posX = 0;
+    posY = 0;
+    updateTransform();
+}
+
 
     // Función para cerrar el modal
     function closeModal() {
