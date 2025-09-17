@@ -9270,7 +9270,7 @@ const productos = [
     {
     categoria: "Heladeras y freezers",
     subcategoria: "Freezers",
-    nombre: 'Freezer TELEFUNKEN Exhibidor de pozo 150lts FPE150',
+    nombre: 'Freezer TELEFUNKEN de pozo 120 lts FP120',
     imagen: "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 1.webp",
     imagenes: [
         "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 1.webp",
@@ -9281,11 +9281,11 @@ const productos = [
         "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 3.webp",
         "images/freezers/Freezer TELEFUNKEN de pozo 120 lts FP120 2.webp"
     ],
-    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 83 x 58 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 150\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
-    codigo: "2075108",
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 83 x 58 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 120\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075163",
     caracteristicas: [
         "Marca: Telefunken",
-        "Modelo: 2075108",
+        "Modelo: 2075163",
         "Garantía: 1 año"
     ]
 },
@@ -9308,6 +9308,219 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
+
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Florencia 6736B a gas 4 horn. Multigas',
+    imagen: "images/anafes/Anafe Florencia 6736B a gas 4 horn Multigas 1.webp",
+    imagenes: [
+        "images/anafes/Anafe Florencia 6736B a gas 4 horn Multigas 1.webp",
+        "images/anafes/Anafe Florencia 6736B a gas 4 horn Multigas 2.webp",
+        "images/anafes/Anafe Florencia 6736B a gas 4 horn Multigas 3.webp"
+    ],
+    descripcion: '<strong>Material de superficie:</strong> Gas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Dimensiones (Anc x Pro):</strong> 60 x 55\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072846",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2072846",
+        "Garantía: 1 año"
+    ]
+},
+
+
+/////     17 09 2025     /////
+
+
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Florencia 6738i Inox. 4 horn. Multigas',
+    imagen: "images/anafes/Anafe Florencia 6738i Inox 4 horn Multigas 1.webp",
+    imagenes: [
+        "images/anafes/Anafe Florencia 6738i Inox 4 horn Multigas 1.webp"
+    ],
+    descripcion: '<strong>Material de superficie:</strong> Gas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Dimensiones (Anc x Pro):</strong> 60 x 55\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072767",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2072767",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Florencia 6748i Inox. 4 horn. Multigas rejilla fundicion',
+    imagen: "images/anafes/Anafe Florencia 6748i Inox 4 horn Multigas rejilla fundicion 1.webp",
+    imagenes: [
+        "images/anafes/Anafe Florencia 6748i Inox 4 horn Multigas rejilla fundicion 1.webp",
+        "images/anafes/Anafe Florencia 6748i Inox 4 horn Multigas rejilla fundicion 4.webp",
+        "images/anafes/Anafe Florencia 6748i Inox 4 horn Multigas rejilla fundicion 3.webp",
+        "images/anafes/Anafe Florencia 6748i Inox 4 horn Multigas rejilla fundicion 2.webp"
+    ],
+    descripcion: '<strong>Material de superficie:</strong> Gas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Dimensiones (Anc x Pro):</strong> 60 x 55\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073177",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2073177",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Hitachi HSP2600FCECO split 2600w f/c',
+    imagen: "images/aires_acondicionados/Acond Hitachi HSP2600FCECO split 2600w fc 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Hitachi HSP2600FCECO split 2600w fc 1.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP2600FCECO split 2600w fc 5.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP2600FCECO split 2600w fc 4.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP2600FCECO split 2600w fc 3.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP2600FCECO split 2600w fc 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2600\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074439",
+    caracteristicas: [
+        "Marca: Hitachi",
+        "Modelo: 2074439",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Hitachi Split 3200 kw HSP-3200FC Eco',
+    imagen: "images/aires_acondicionados/Acond Hitachi Split 3200 kw HSP 3200FC Eco 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Hitachi Split 3200 kw HSP 3200FC Eco 1.webp",
+        "images/aires_acondicionados/Acond Hitachi Split 3200 kw HSP 3200FC Eco 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3200\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074484",
+    caracteristicas: [
+        "Marca: Hitachi",
+        "Modelo: 2074484",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Hitachi HSP5000FCECO-F-SK split F/C 5000w',
+    imagen: "images/aires_acondicionados/Acond Hitachi HSP5000FCECO-F-SK split FC 5000w 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Hitachi HSP5000FCECO-F-SK split FC 5000w 1.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP5000FCECO-F-SK split FC 5000w 4.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP5000FCECO-F-SK split FC 5000w 3.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP5000FCECO-F-SK split FC 5000w 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 5000\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072790",
+    caracteristicas: [
+        "Marca: Hitachi",
+        "Modelo: 2072790",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Hitachi HSP6100FCECO split 6100w f/c',
+    imagen: "images/aires_acondicionados/Acond Hitachi HSP6100FCECO split 6100w fc 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Hitachi HSP6100FCECO split 6100w fc 1.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP6100FCECO split 6100w fc 4.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP6100FCECO split 6100w fc 3.webp",
+        "images/aires_acondicionados/Acond Hitachi HSP6100FCECO split 6100w fc 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 6100\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074507",
+    caracteristicas: [
+        "Marca: Hitachi",
+        "Modelo: 2074507",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Morelli Industrial Saho Kuma 510 18098 51cm inox 4 horn. p/visor r/fund',
+    imagen: "images/cocinas/Cocina Morelli Industrial Saho Kuma 510 18098 51cm inox 4 horn pvisor rfund 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Morelli Industrial Saho Kuma 510 18098 51cm inox 4 horn pvisor rfund 1.webp",
+        "images/cocinas/Cocina Morelli Industrial Saho Kuma 510 18098 51cm inox 4 horn pvisor rfund 3.webp",
+        "images/cocinas/Cocina Morelli Industrial Saho Kuma 510 18098 51cm inox 4 horn pvisor rfund 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 51 x 59\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075589",
+    caracteristicas: [
+        "Marca: Morelli",
+        "Modelo: 2075589",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Drean CD5617AIO 56cm inox MG c/Air Fryer enc-elec-luz',
+    imagen: "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 1.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 10.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 9.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 8.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 7.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 6.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 5.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 4.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 3.webp",
+        "images/cocinas/Cocina Drean CD5617AIO 56cm inox MG c Air Fryer enc elec luz 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 87 x 56 x 66\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075591",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075591",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer vertical Neba FV2451 200lts',
+    imagen: "images/freezers/Freezer vertival Neba FV2451 200lts 1.webp",
+    imagenes: [
+        "images/freezers/Freezer vertival Neba FV2451 200lts 1.webp",
+        "images/freezers/Freezer vertival Neba FV2451 200lts 3.webp",
+        "images/freezers/Freezer vertival Neba FV2451 200lts 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 145 x  54 x 59\n<strong>Tipo:</strong> Vertical\n<strong>Capacidad (Litros):</strong> 200\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075617",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2075617",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Neba Trial F 250 cap. 245lts Gris',
+    imagen: "images/freezers/Freezer Neba Trial F 250 cap 245lts Gris.png",
+    imagenes: [
+        "images/freezers/Freezer Neba Trial F 250 cap 245lts Gris.png"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 100 x 75\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 245\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075615",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2075615",
+        "Garantía: 1 año"
+    ]
+},
+
+
 
 
 ];
