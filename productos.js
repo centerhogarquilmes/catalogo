@@ -1,15 +1,17 @@
 // Arreglo de productos destacados (códigos de los productos)
 const productosDestacados = [
-    "2074711", //Cocina Florencia 5838 Semi-Industrial Inox 56 cm multigas s/valvula
-    "2074136", //Heladera Philco PHCT341B ciclica 340Lts Blanca
-    "2075483", //Lavarropas Philco PHLF8014PI2 Inverter 8kg 1400 rpm c/frontal plata
-    "2073936", //Horno electrico Ultracomb UC-45CN 45lts
+    "2070632", //Vent. Pie Liliana ORBITAL VPRN20 20" ASPAS PLASTICA- PARRILLA MET. NEGRA
+    "2070712", //Turbo Liliana 20" VBTR20/VVOTR20  c/Repeler cromado aspas met.
+    "2074810", //TV LED Kanji 40" (7635718719284) HD Smart Google Tv
+    "2072568", //Vent. Pie Kanji KJH- FH-2011/FH1212 20" 95w
+    "2074048", //Turbo Liliana 22" VTFM22 parrilla cromada-3 aspas met. repeler
+    "2075005", //LIBERADO Samsung A05 4/64GB
     "2075258", //Heladera Philco PHCT302X Top Mount 298Lts Inox ciclica
-    "2075207", //TV LED RCA 55" G55P6UHD-F Google 4K Smart
-    "2075388", //TV LED RCA 55" QL55TH200-F QLED Google 4K Smart
-    "2075067", //TV LED RCA 40" R40AND-F Smart c/ Android
-    "2075452", //LIBERADO Tecno Spark 30 Pro KL7 8/128 gb Artic Glow (PNT011034)
-    "2075451", //LIBERADO Tecno Spark 30C KL5 4/256 gb Orbit Black (PNT011019)
+    "14546", //Pileta Sol de Verano S 300 3X2,20X0,70 4620 LTS APROX.
+    "2074136", //Heladera Philco PHCT341B ciclica 340Lts Blanca
+    "2075387", //Lavarropas Philco PHCS07B carga superior 5.5kg 750RPM Gris
+    "2074710", //Cocina Florencia 5818 Semi-Industrial Inox 56 cm multigas
+    "2075163", //Freezer TELEFUNKEN de pozo 120 lts FP120
     
     
     
@@ -9522,5 +9524,385 @@ const productos = [
 
 
 
+
+
+
+///     20 09 2025     ///
+
+{
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Kanji Portatil 5000 kw KJH-AA5000 Wifi',
+    imagen: "images/aires_acondicionados/Acond Kanji Portatil 5000 kw KJH AA5000 Wifi 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Kanji Portatil 5000 kw KJH AA5000 Wifi 1.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil 5000 kw KJH AA5000 Wifi 4.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil 5000 kw KJH AA5000 Wifi 3.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil 5000 kw KJH AA5000 Wifi 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 5000\n<strong>Tipo:</strong> Portátil\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074411",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2074411",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Philco Portatil 3500 kw PHP35HC7API',
+    imagen: "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 1.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 9.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 8.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 7.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 6.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 5.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 4.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 3.webp",
+        "images/aires_acondicionados/Acond Philco Portatil 3500 kw PHP35HC7API 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3500\n<strong>Tipo:</strong> Portátil\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075191",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075191",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Neba Trial F 310 cap 305 lts Gris',
+    imagen: "images/freezers/Freezer Neba Trial F 310 cap 305 lts Gris.png",
+    imagenes: [
+        "images/freezers/Freezer Neba Trial F 310 cap 305 lts Gris.png"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 100 x 65\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 305\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2075616",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2075616",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Anafes",
+    nombre: 'Anafe Florencia 6746B a gas Blanco rejilla fundicion',
+    imagen: "images/anafes/Anafe Florencia 6746B a gas Blanco rejilla fundicion 1.webp",
+    imagenes: [
+        "images/anafes/Anafe Florencia 6746B a gas Blanco rejilla fundicion 1.webp",
+        "images/anafes/Anafe Florencia 6746B a gas Blanco rejilla fundicion 3.webp",
+        "images/anafes/Anafe Florencia 6746B a gas Blanco rejilla fundicion 2.webp"
+    ],
+    descripcion: '<strong>Material de superficie:</strong> Gas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Dimensiones (Anc x Pro):</strong> 60 x 55\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073335",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2073335",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Yelmo AS 3240 recargable portatil',
+    imagen: "images/aspiradoras/Aspiradora Yelmo AS 3240 recargable portatil 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Yelmo AS 3240 recargable portatil 1.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3240 recargable portatil 2.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3240 recargable portatil 3.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3240 recargable portatil 4.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3240 recargable portatil 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 80\n<strong>Capacidad (Litros):</strong> 395 ml\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Batería',
+    codigo: "2074552",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2074552",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Electrolux Vertical STK12 con cable Power Speed',
+    imagen: "images/aspiradoras/Aspiradora Electrolux Vertical STK12 con cable Power Speed 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Electrolux Vertical STK12 con cable Power Speed 1.webp",
+        "images/aspiradoras/Aspiradora Electrolux Vertical STK12 con cable Power Speed 2.webp",
+        "images/aspiradoras/Aspiradora Electrolux Vertical STK12 con cable Power Speed 3.webp",
+        "images/aspiradoras/Aspiradora Electrolux Vertical STK12 con cable Power Speed 4.webp",
+        "images/aspiradoras/Aspiradora Electrolux Vertical STK12 con cable Power Speed 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1100\n<strong>Capacidad (Litros):</strong> 1,2\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Corriente eléctrica',
+    codigo: "2075314",
+    caracteristicas: [
+        "Marca: Electrolux",
+        "Modelo: 2075314",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Inal. Westinghouse WFVCKT31',
+    imagen: "images/aspiradoras/Aspiradora Inal Westinghouse WFVCKT31 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Inal Westinghouse WFVCKT31 1.webp",
+        "images/aspiradoras/Aspiradora Inal Westinghouse WFVCKT31 2.webp",
+        "images/aspiradoras/Aspiradora Inal Westinghouse WFVCKT31 3.webp",
+        "images/aspiradoras/Aspiradora Inal Westinghouse WFVCKT31 4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 650\n<strong>Capacidad (Litros):</strong> 900mL\n<strong>Apto líquido:</strong> Sí\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Batería',
+    codigo: "2075594",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2075594",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Kanji VC20L004 20lts liquidos y seco',
+    imagen: "images/aspiradoras/Aspiradora Kanji VC20L004 20lts liquidos y seco 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Kanji VC20L004 20lts liquidos y seco 1.webp",
+        "images/aspiradoras/Aspiradora Kanji VC20L004 20lts liquidos y seco 2.webp",
+        "images/aspiradoras/Aspiradora Kanji VC20L004 20lts liquidos y seco 3.webp",
+        "images/aspiradoras/Aspiradora Kanji VC20L004 20lts liquidos y seco 4.webp",
+        "images/aspiradoras/Aspiradora Kanji VC20L004 20lts liquidos y seco 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1300\n<strong>Capacidad (Litros):</strong> 20\n<strong>Apto líquido:</strong> Sí\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Corriente eléctrica',
+    codigo: "2075051",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075051",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Drean CD5602AN0 56cm Negra gas',
+    imagen: "images/cocinas/Cocina Drean CD5602AN0 56cm Negra gas 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Drean CD5602AN0 56cm Negra gas 1.webp",
+        "images/cocinas/Cocina Drean CD5602AN0 56cm Negra gas 4.webp",
+        "images/cocinas/Cocina Drean CD5602AN0 56cm Negra gas 3.webp",
+        "images/cocinas/Cocina Drean CD5602AN0 56cm Negra gas 2.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075600",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075600",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Drean RDA300FHRT 300 Lts Grafito No Frost',
+    imagen: "images/heladeras/Heladera Drean RDA300FHRT 300 Lts Grafito No Frost 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Drean RDA300FHRT 300 Lts Grafito No Frost 1.webp",
+        "images/heladeras/Heladera Drean RDA300FHRT 300 Lts Grafito No Frost 2.webp",
+        "images/heladeras/Heladera Drean RDA300FHRT 300 Lts Grafito No Frost 3.webp",
+        "images/heladeras/Heladera Drean RDA300FHRT 300 Lts Grafito No Frost 4.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 177 x 60 x 67\n<strong>Tipo de tecnología:</strong> No frost\n<strong>Capacidad (Litros):</strong> 292\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075567",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075567",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean Concept Neo Fuzzy 658 Gris 6.5kg',
+    imagen: "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 1.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 9.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 8.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 7.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 6.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 5.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 4.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 3.webp",
+        "images/lavarropas/Lavarropas Drean Concept Neo Fuzzy 658 Gris 6 5kg 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 800',
+    codigo: "2074835",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2074835",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Whirlpool WNQ90AB 1400 rpm 9 KG Blanco Inv. c/frontal',
+    imagen: "images/lavarropas/Lavarropas Whirlpool WNQ90AB 1400 rpm 9 KG Blanco Inv c frontal 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Whirlpool WNQ90AB 1400 rpm 9 KG Blanco Inv c frontal 1.webp",
+        "images/lavarropas/Lavarropas Whirlpool WNQ90AB 1400 rpm 9 KG Blanco Inv c frontal 2.webp",
+        "images/lavarropas/Lavarropas Whirlpool WNQ90AB 1400 rpm 9 KG Blanco Inv c frontal 3.webp",
+        "images/lavarropas/Lavarropas Whirlpool WNQ90AB 1400 rpm 9 KG Blanco Inv c frontal 4.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 9\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2074444",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2074444",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Kanji 65" QLED 4K Smart Hey Google',
+    imagen: "images/televisores/TV LED Kanji 65 QLED 4K Smart Hey Google 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Kanji 65 QLED 4K Smart Hey Google 1.webp",
+        "images/televisores/TV LED Kanji 65 QLED 4K Smart Hey Google 2.webp",
+        "images/televisores/TV LED Kanji 65 QLED 4K Smart Hey Google 3.webp",
+        "images/televisores/TV LED Kanji 65 QLED 4K Smart Hey Google 4.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 65\n<strong>Tipo de pantalla:</strong> QLED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2075194",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075194",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Motorola 32" MT3200 Smart Android',
+    imagen: "images/televisores/TV LED Motorola 32 MT3200 Smart Android 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Motorola 32 MT3200 Smart Android 1.webp",
+        "images/televisores/TV LED Motorola 32 MT3200 Smart Android 2.webp",
+        "images/televisores/TV LED Motorola 32 MT3200 Smart Android 3.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 32\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+    codigo: "2075477",
+    caracteristicas: [
+        "Marca: Motorola",
+        "Modelo: 2075477",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Eiffel 20" E-530 130W 3v. posicion regulable',
+    imagen: "images/ventilacion/Turbo Eiffel 20 E530 130W 3v posicion regulable 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Eiffel 20 E530 130W 3v posicion regulable 1.webp",
+        "images/ventilacion/Turbo Eiffel 20 E530 130W 3v posicion regulable 2.webp",
+        "images/ventilacion/Turbo Eiffel 20 E530 130W 3v posicion regulable 3.webp",
+        "images/ventilacion/Turbo Eiffel 20 E530 130W 3v posicion regulable 4.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 130\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5',
+    codigo: "2074483",
+    caracteristicas: [
+        "Marca: Eiffel",
+        "Modelo: 2074483",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Kanji 12" KJH-FH1201',
+    imagen: "images/ventilacion/Turbo Kanji 12 KJH FH1201 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Kanji 12 KJH FH1201 1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 40\n<strong>Pulgadas:</strong> 12\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5\n<strong>Timer:</strong> Sí',
+    codigo: "2074609",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2074609",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Kanji 20" KJH-FH1211',
+    imagen: "images/ventilacion/Turbo Kanji 20 KJH FH1211 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Kanji 20 KJH FH1211 1.webp",
+        "images/ventilacion/Turbo Kanji 20 KJH FH1211 2.webp",
+        "images/ventilacion/Turbo Kanji 20 KJH FH1211 3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5',
+    codigo: "2075554",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075554",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Liliana 22" VTFM22 parrilla cromada-3 aspas met. repeler',
+    imagen: "images/ventilacion/Turbo Liliana 22 VTFM22 parrilla cromada 3 aspas met repeler 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Liliana 22 VTFM22 parrilla cromada 3 aspas met repeler 1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 130\n<strong>Pulgadas:</strong> 22\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3',
+    codigo: "2074048",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2074048",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Liliana VVT20POW 20" 150w osc power',
+    imagen: "images/ventilacion/Turbo Liliana VVT20POW 20 150w osc power 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Liliana VVT20POW 20 150w osc power 1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 100\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3',
+    codigo: "2075537",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075537",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Liliana VVTC12 con Difusor',
+    imagen: "images/ventilacion/Turbo Liliana VVTC12 con Difusor 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Liliana VVTC12 con Difusor 1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 55\n<strong>Pulgadas:</strong> 12\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5',
+    codigo: "2073169",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2073169",
+        "Garantía: 1 año"
+    ]
+},
 
 ];
