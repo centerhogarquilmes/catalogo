@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Botonera Digital — Demo</title>
+  <style>
+    :root{
+      --bg:#0b0f1a;
+      --panel:#0f1724;
+      --accent:#00e5ff;
+      --accent-2:#7c4dff;
+      --glass: rgba(255,255,255,0.04);
+      --muted: rgba(255,255,255,0.6);
+      --led-on: #ff6b6b;
+      --shadow: 0 8px 20px rgba(2,6,23,0.7);
+    }
+    *{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    html,body{height:100%;margin:0;background:radial-gradient(1200px 800px at 10% 10%, rgba(124,77,255,0.08), transparent 8%), linear-gradient(180deg,var(--bg),#071025 120%);color:#e6eef6}
+    .wrap{max-width:1000px;margin:28px auto;padding:22px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:var(--shadow);border:1px solid rgba(255,255,255,0.03)}
+    header{display:flex;align-items:center;gap:16px}
+    header h1{margin:0;font-size:20px;letter-spacing:0.6px}
+    .controls{display:flex;gap:12px;margin-left:auto;align-items:center}
+    .control{display:flex;flex-direction:column;align-items:flex-end;font-size:12px;color:var(--muted)}
+    .panel{margin-top:18px;background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.008));padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .btn{
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border-radius:10px;padding:12px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;user-select:none;position:relative;border:1px solid rgba(255,255,255,0.04);
+      transition:transform .08s ease,box-shadow .12s ease;
+    }
+    .btn:active{transform:translateY(2px) scale(.995)}
+    .btn .label{font-weight:700;font-size:13px}
+    .btn .sub{font-size:11px;color:var(--muted)}
+    .btn .led{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.06);box-shadow:inset 0 -2px 4px rgba(0,0,0,0.4);}
+    .btn.playing{box-shadow:0 6px 30px rgba(0,229,255,0.08), 0 0 18px rgba(124,77,255,0.06);border-color:rgba(0,229,255,0.18)}
+    .btn.playing .led{background:var(--led-on);box-shadow:0 0 10px rgba(255,107,107,0.8)}
+    .small{font-size:12px}
+    .row{display:flex;gap:12px;align-items:center}
+    .file-input{font-size:11px}
+    input[type=file]{display:block}
+    .meta{display:flex;gap:8px;align-items:center}
+    .kbd{background:rgba(255,255,255,0.04);padding:2px 6px;border-radius:6px;font-size:12px;border:1px solid rgba(255,255,255,0.03)}
+    .footer{margin-top:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px 10px;border-radius:8px;color:var(--muted);cursor:pointer}
+    .bank{display:flex;gap:8px;align-items:center}
+    .big{grid-column:span 2}
+    .config{margin-top:12px;padding:12px;border-radius:8px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .hint{font-size:13px;color:rgba(255,255,255,0.7)}
+    @media (max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.big{grid-column:span 1}}
+    .arcade-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #222;
+  background: radial-gradient(circle at 30% 30%, #fff, transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(0,0,0,0.4), transparent 40%),
+              linear-gradient(to bottom, #ff4d4d, #b30000);
+  box-shadow: 
+    inset -5px -5px 10px rgba(0,0,0,0.6),
+    inset 5px 5px 10px rgba(255,255,255,0.4),
+    0 6px 12px rgba(0,0,0,0.8);
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.arcade-button:active {
+  transform: translateY(4px);
+  box-shadow: 
+    inset -3px -3px 8px rgba(0,0,0,0.6),
+    inset 3px 3px 8px rgba(255,255,255,0.4),
+    0 2px 6px rgba(0,0,0,0.9);
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='44' height='44'><rect width='44' height='44' rx='8' fill='%2300e5ff'/></svg>" alt="logo" style="width:44px;height:44px;border-radius:8px;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.6))">
+      <h1>Botonera digital — Panel de sonidos</h1>
+      <div class="controls">
+        <div class="control">
+          <label class="small">Volumen maestro</label>
+          <input id="masterVol" type="range" min="0" max="1" step="0.01" value="0.9">
+        </div>
+        <div class="control">
+          <label class="small">Modo</label>
+          <select id="modeSelect" title="Modo de reproducción">
+            <option value="trigger">Trigger (play mientras presionado)</option>
+            <option value="toggle">Toggle (enciende/apaga)</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="grid" id="buttonsGrid">
+        <!-- Buttons generated by JS -->
+      </div>
+
+      <div class="footer">
+        <div class="bank">
+          <label class="small">Banco:</label>
+          <select id="bankSelect"></select>
+          <button class="btn-ghost" id="addBankBtn">+ Nuevo banco</button>
+        </div>
+
+        <div style="margin-left:auto;display:flex;gap:8px">
+          <button class="btn-ghost" id="exportBtn">Exportar config</button>
+          <button class="btn-ghost" id="importBtn">Importar config</button>
+          <input id="importFile" type="file" accept="application/json" style="display:none">
+        </div>
+      </div>
+
+      <div class="config" id="instructions">
+        <div class="hint">Instrucciones rápidas: haz clic en un botón para reproducir. Haz clic en el nombre para editar el texto. Usa el icono de archivo para asignar un sonido (MP3/WAV/OGG). Puedes usar teclas del 1-9 para los primeros botones del banco. Si no asignas archivo, el botón generará un sonido corto (beep) con WebAudio.</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // ====== Configurable defaults ======
+    const DEFAULT_BUTTONS = 8; // por banco
+
+    // ===== state =====
+    const banks = [];
+    let currentBank = 0;
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const masterGain = audioCtx.createGain();
+    masterGain.gain.value = 0.9;
+    masterGain.connect(audioCtx.destination);
+
+    // create UI
+    const grid = document.getElementById('buttonsGrid');
+    const bankSelect = document.getElementById('bankSelect');
+    const masterVol = document.getElementById('masterVol');
+    const modeSelect = document.getElementById('modeSelect');
+    const addBankBtn = document.getElementById('addBankBtn');
+    const exportBtn = document.getElementById('exportBtn');
+    const importBtn = document.getElementById('importBtn');
+    const importFile = document.getElementById('importFile');
+
+    masterVol.addEventListener('input', e=>{ masterGain.gain.value = parseFloat(e.target.value); });
+
+    function createEmptyBank(name){
+      const b = {name:name||('Banco '+(banks.length+1)), buttons: [] };
+      for(let i=0;i<DEFAULT_BUTTONS;i++){
+        b.buttons.push({label:'Button '+(i+1), file:null, key: (i+1).toString(), playing:false});
+      }
+      banks.push(b);
+      return banks.length-1;
+    }
+
+    function renderBankOptions(){
+      bankSelect.innerHTML='';
+      banks.forEach((b,idx)=>{
+        const o = document.createElement('option'); o.value=idx; o.textContent=b.name; bankSelect.appendChild(o);
+      });
+      bankSelect.value = currentBank;
+    }
+
+    bankSelect.addEventListener('change', ()=>{ currentBank = parseInt(bankSelect.value); renderGrid(); });
+    addBankBtn.addEventListener('click', ()=>{ const id = createEmptyBank(); currentBank = id; renderBankOptions(); renderGrid(); });
+
+    exportBtn.addEventListener('click', ()=>{
+      const data = JSON.stringify({banks},null,2);
+      const blob = new Blob([data],{type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href=url; a.download='botonera-config.json'; a.click(); URL.revokeObjectURL(url);
+    });
+
+    importBtn.addEventListener('click', ()=> importFile.click());
+    importFile.addEventListener('change', e=>{
+      const f = e.target.files[0]; if(!f) return; const reader = new FileReader();
+      reader.onload = ev => { try{ const parsed = JSON.parse(ev.target.result); if(parsed.banks){ banks.length=0; parsed.banks.forEach(b=>banks.push(b)); currentBank=0; renderBankOptions(); renderGrid(); } else alert('JSON no válido'); }catch(err){alert('Error al leer JSON: '+err.message)} }
+      reader.readAsText(f);
+    });
+
+    // ===== create grid UI =====
+    function renderGrid(){
+      grid.innerHTML='';
+      const bank = banks[currentBank];
+      bank.buttons.forEach((btnCfg, idx)=>{
+        const el = document.createElement('div'); el.className='btn'; el.dataset.idx=idx;
+
+        const label = document.createElement('div'); label.className='label'; label.contentEditable=true; label.spellcheck=false; label.textContent = btnCfg.label || ('Button '+(idx+1));
+        label.addEventListener('input', ()=>{ btnCfg.label = label.textContent; });
+
+        const sub = document.createElement('div'); sub.className='sub';
+        sub.innerHTML = btnCfg.file ? (btnCfg.file.name || 'Sonido asignado') : '<span class="small">(sin archivo — beep)</span>';
+
+        const meta = document.createElement('div'); meta.className='meta';
+        const led = document.createElement('div'); led.className='led';
+        const kbd = document.createElement('div'); kbd.className='kbd'; kbd.textContent = btnCfg.key || '';
+
+        const fileIn = document.createElement('input'); fileIn.type='file'; fileIn.accept='audio/*'; fileIn.className='file-input';
+        fileIn.addEventListener('change', async e=>{
+          const f = e.target.files[0];
+          if(!f) return; btnCfg.file = {name:f.name, data:null};
+          // read as array buffer
+          const ab = await f.arrayBuffer(); btnCfg.file.data = ab; sub.textContent = f.name;
+        });
+
+        const assignKeyBtn = document.createElement('button'); assignKeyBtn.className='btn-ghost small'; assignKeyBtn.textContent='Asignar tecla';
+        assignKeyBtn.addEventListener('click', ()=>{ assignKeyMode(idx, assignKeyBtn); });
+
+        meta.appendChild(led); meta.appendChild(kbd); meta.appendChild(assignKeyBtn);
+
+        el.appendChild(label); el.appendChild(sub); el.appendChild(meta); el.appendChild(fileIn);
+
+        // play handling
+        function playStart(){
+          if(modeSelect.value==='toggle'){
+            if(btnCfg.playing){ stopSound(idx, el); } else { startSound(idx, el); }
+          } else { startSound(idx, el); }
+        }
+        el.addEventListener('pointerdown', async ev=>{ ev.preventDefault(); playStart(); });
+        el.addEventListener('pointerup', ()=>{ if(modeSelect.value==='trigger') stopSound(idx, el); });
+
+        grid.appendChild(el);
+      });
+
+      renderBankOptions();
+    }
+
+    // ===== Sound engine =====
+    const playingNodes = {};
+
+    function startSound(i, el){
+      const cfg = banks[currentBank].buttons[i];
+      if(cfg.file && cfg.file.data){
+        // decode and play buffer
+        audioCtx.decodeAudioData(cfg.file.data.slice(0), buffer=>{
+          const src = audioCtx.createBufferSource(); src.buffer = buffer; const gain = audioCtx.createGain(); gain.gain.value = 1; src.connect(gain); gain.connect(masterGain);
+          src.loop = false; src.start(); playingNodes[el.dataset.idx] = {src,gain}; el.classList.add('playing'); cfg.playing=true; src.onended = ()=>{ stopSound(i, el); };
+        }, err=>{ console.warn('decode err',err); beepOnce(); });
+      } else {
+        // use oscillator beep
+        const osc = audioCtx.createOscillator(); const gain = audioCtx.createGain(); gain.gain.value = 0.0001; osc.type='sine'; osc.frequency.value = 440 + Math.random()*800;
+        osc.connect(gain); gain.connect(masterGain);
+        const now = audioCtx.currentTime; gain.linearRampToValueAtTime(1.0, now + 0.005); gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+        osc.start(); osc.stop(now + 0.6);
+        playingNodes[el.dataset.idx] = {osc,gain}; el.classList.add('playing'); cfg.playing=true;
+        osc.onended = ()=> stopSound(i, el);
+      }
+    }
+
+    function stopSound(i, el){
+      const node = playingNodes[el.dataset.idx];
+      if(!node) return; try{ if(node.src) node.src.stop(); if(node.osc) node.osc.stop(); }catch(e){}
+      delete playingNodes[el.dataset.idx]; el.classList.remove('playing'); banks[currentBank].buttons[i].playing=false;
+    }
+
+    function beepOnce(){
+      const osc = audioCtx.createOscillator(); const g = audioCtx.createGain(); osc.type='triangle'; osc.frequency.value = 1200; g.gain.value = 0.0001; osc.connect(g); g.connect(masterGain);
+      const now = audioCtx.currentTime; g.linearRampToValueAtTime(0.6, now + 0.002); g.exponentialRampToValueAtTime(0.0005, now + 0.25);
+      osc.start(); osc.stop(now + 0.26);
+    }
+
+    // ===== Key binding =====
+    let assigningKey = null; // {idx, btnNode}
+    function assignKeyMode(idx, btn){
+      assigningKey = {idx, btn}; btn.textContent = 'Presiona una tecla...';
+      const handler = ev =>{
+        ev.preventDefault(); const key = ev.key.length===1? ev.key : ev.code; banks[currentBank].buttons[idx].key = key; assigningKey.btn.textContent='Asignar tecla'; renderGrid(); window.removeEventListener('keydown', handler);
+        assigningKey=null;
+      };
+      window.addEventListener('keydown', handler);
+    }
+
+    window.addEventListener('keydown', (ev)=>{
+      if(assigningKey) return; // ignore while assigning
+      const bank = banks[currentBank];
+      for(let i=0;i<bank.buttons.length;i++){
+        const k = bank.buttons[i].key;
+        if(!k) continue;
+        if(k.length===1 && ev.key===k){ triggerByIndex(i); return; }
+        if(k===ev.code){ triggerByIndex(i); return; }
+      }
+    });
+
+    function triggerByIndex(i){
+      const el = grid.querySelector(`.btn[data-idx='${i}']`);
+      if(!el) return; if(modeSelect.value==='toggle'){
+        // toggle
+        if(banks[currentBank].buttons[i].playing) stopSound(i,el); else startSound(i,el);
+      } else {
+        startSound(i,el);
+        setTimeout(()=> stopSound(i,el), 300);
+      }
+    }
+
+    // ===== Init =====
+    createEmptyBank('Banco 1'); createEmptyBank('Banco 2');
+    renderBankOptions(); renderGrid();
+
+    // resume audio context on first interaction for compatibility
+    window.addEventListener('pointerdown', ()=>{ if(audioCtx.state!=='running') audioCtx.resume(); }, {once:true});
+
+  </script>
+</body>
+</html>
