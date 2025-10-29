@@ -9905,4 +9905,195 @@ const productos = [
     ]
 },
 
+
+
+//// 29 10 2025 ////
+
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora kanji de aire KJHAF1003 2.7lts 1000w',
+    imagen: "images/freidoras/Freidora kanji de aire KJHAF1003 2 7lts 1000w 1.webp",
+    imagenes: [
+        "images/freidoras/Freidora kanji de aire KJHAF1003 2 7lts 1000w 1.webp",
+        "images/freidoras/Freidora kanji de aire KJHAF1003 2 7lts 1000w 2.webp",
+        "images/freidoras/Freidora kanji de aire KJHAF1003 2 7lts 1000w 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 2,7\n<strong>Potencia (W):</strong> 1000',
+    codigo: "2075598 ",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075598 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Gafa FGHI400B-XL 402 lts Horizontal Inverter',
+    imagen: "images/freezers/Freezer Gafa FGHI400B XL 402 lts Horizontal Inverter 1.webp",
+    imagenes: [
+        "images/freezers/Freezer Gafa FGHI400B XL 402 lts Horizontal Inverter 1.webp",
+        "images/freezers/Freezer Gafa FGHI400B XL 402 lts Horizontal Inverter 2.webp",
+        "images/freezers/Freezer Gafa FGHI400B XL 402 lts Horizontal Inverter 3.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 89 x 147 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 402\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Inverter:</strong> Sí\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2074085 ",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2074085 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer vertical Neba FV332 ciclico de acero 250 lts',
+    imagen: "images/freezers/Freezer vertical Neba FV332 ciclico de acero 250 lts 1.webp",
+    imagenes: [
+        "images/freezers/Freezer vertical Neba FV332 ciclico de acero 250 lts 1.webp",
+        "images/freezers/Freezer vertical Neba FV332 ciclico de acero 250 lts 2.webp",
+        "images/freezers/Freezer vertical Neba FV332 ciclico de acero 250 lts 3.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 175 x 59 x 60\n<strong>Tipo:</strong> Vertical\n<strong>Capacidad (Litros):</strong> 250\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075625",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2075625",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer Gafa FGHI300B-L Horizontal Inverter 280 lts Blanco',
+    imagen: "images/freezers/Freezer Gafa FGHI300B L Horizontal Inverter 280 lts Blanco 1.webp",
+    imagenes: [
+        "images/freezers/Freezer Gafa FGHI300B L Horizontal Inverter 280 lts Blanco 1.webp",
+        "images/freezers/Freezer Gafa FGHI300B L Horizontal Inverter 280 lts Blanco 2.webp",
+        "images/freezers/Freezer Gafa FGHI300B L Horizontal Inverter 280 lts Blanco 3.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 89 x 110 x 66\n<strong>Tipo:</strong> Pozo\n<strong>Capacidad (Litros):</strong> 281\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Inverter:</strong> Sí\n<strong>Con ruedas:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074057",
+    caracteristicas: [
+        "Marca: Gafa",
+        "Modelo: 2074057",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Freezers",
+    nombre: 'Freezer vertical Neba FV371 No Frost Acero 300 lts',
+    imagen: "images/freezers/Freezer vertical Neba FV371 No Frost Acero 300 lts 1.jpg",
+    imagenes: [
+        "images/freezers/Freezer vertical Neba FV371 No Frost Acero 300 lts 1.jpg",
+        "images/freezers/Freezer vertical Neba FV371 No Frost Acero 300 lts 2.jpg",
+        "images/freezers/Freezer vertical Neba FV371 No Frost Acero 300 lts 3.jpg"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 186 x 59 x 65\n<strong>Tipo:</strong> Vertical\n<strong>Capacidad (Litros):</strong> 300\n<strong>Funciones:</strong> Conservar, Congelar, Enfriar\n<strong>Cantidad de puertas:</strong> 1\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A+',
+    codigo: "2075626",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2075626",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Liliana de aire AF965 6.5lts digital 2000w 8 funciones',
+    imagen: "images/freidoras/Freidora Liliana de aire AF965 6_5lts digital 2000w 8 funciones 1.webp",
+    imagenes: [
+        "images/freidoras/Freidora Liliana de aire AF965 6_5lts digital 2000w 8 funciones 1.webp",
+        "images/freidoras/Freidora Liliana de aire AF965 6_5lts digital 2000w 8 funciones 2.webp",
+        "images/freidoras/Freidora Liliana de aire AF965 6_5lts digital 2000w 8 funciones 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 6,5\n<strong>Potencia (W):</strong> 2000',
+    codigo: "2075506",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075506",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Liliana de aire/horno AF950 11.7lts digital 1800w 11 funciones',
+    imagen: "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 1.webp",
+    imagenes: [
+        "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 1.webp",
+        "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 2.webp",
+        "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 3.webp",
+        "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 4.webp",
+        "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 5.webp",
+        "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 6.webp",
+        "images/freidoras/Freidora Liliana de aire horno AF950 11_7lts digital 1800w 11 funciones 7.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 11,7\n<strong>Potencia (W):</strong> 1800',
+    codigo: "2075365",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075365",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora por aire Yelmo FR7321 17lts 1200w',
+    imagen: "images/freidoras/Freidora por aire Yelmo FR7321 17lts 1200w 1.webp",
+    imagenes: [
+        "images/freidoras/Freidora por aire Yelmo FR7321 17lts 1200w 1.webp",
+        "images/freidoras/Freidora por aire Yelmo FR7321 17lts 1200w 2.webp",
+        "images/freidoras/Freidora por aire Yelmo FR7321 17lts 1200w 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 17\n<strong>Potencia (W):</strong> 1200',
+    codigo: "2075391",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2075391",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Ultracomb FR8300 1.5Lts 1200w Freidora y Fondue Acero',
+    imagen: "images/freidoras/Freidora Ultracomb FR8300 1_5Lts 1200w Freidora y Fondue Acero 1.webp",
+    imagenes: [
+        "images/freidoras/Freidora Ultracomb FR8300 1_5Lts 1200w Freidora y Fondue Acero 1.webp",
+        "images/freidoras/Freidora Ultracomb FR8300 1_5Lts 1200w Freidora y Fondue Acero 2.webp",
+        "images/freidoras/Freidora Ultracomb FR8300 1_5Lts 1200w Freidora y Fondue Acero 3.webp",
+        "images/freidoras/Freidora Ultracomb FR8300 1_5Lts 1200w Freidora y Fondue Acero 4.webp",
+        "images/freidoras/Freidora Ultracomb FR8300 1_5Lts 1200w Freidora y Fondue Acero 5.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 1,5\n<strong>Potencia (W):</strong> 1200',
+    codigo: "2075199",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2075199",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Ultracomb FR8301 1.5Lts',
+    imagen: "images/freidoras/Freidora Ultracomb FR8301 1_5Lts 1.webp",
+    imagenes: [
+        "images/freidoras/Freidora Ultracomb FR8301 1_5Lts 1.webp",
+        "images/freidoras/Freidora Ultracomb FR8301 1_5Lts 2.webp",
+        "images/freidoras/Freidora Ultracomb FR8301 1_5Lts 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 1,5\n<strong>Potencia (W):</strong> 1000',
+    codigo: "2073813",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2073813",
+        "Garantía: 1 año"
+    ]
+}
+
 ];
