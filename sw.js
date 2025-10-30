@@ -7,8 +7,8 @@ self.addEventListener('install', (event) => {
         '/calculadora.html',
         '/calculadora.css',
         '/calculadora.js',
-        '/images/logo-192.png',
-        '/images/logo-512.png'
+        '/images/logo_192.png',
+        '/images/logo_512.png'
       ]);
     })
   );
