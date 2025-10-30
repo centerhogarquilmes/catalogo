@@ -2,7 +2,7 @@
   "name": "Calculadora Center Hogar",
   "short_name": "Calculadora",
   "description": "Calculadora de Center Hogar",
-  "start_url": "./catalogo/calculadora.html",
+  "start_url": "/catalogo/calculadora.html",
   "display": "standalone",
   "background_color": "#e0eafc",
   "theme_color": "#667eea",
