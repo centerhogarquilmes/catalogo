@@ -179,3 +179,10 @@ button:active {
   background: #C0392B;
   transform: scale(1.1);
 }
+
+/* === FOCO EN INPUTS DE INTERÉS === */
+.interes:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+  background: #f0f8ff;
+}

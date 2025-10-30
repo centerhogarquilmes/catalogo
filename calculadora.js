@@ -119,42 +119,76 @@ function cerrarHistorial() {
   document.getElementById("modalHistorial").classList.remove('active');
 }
 
-// Teclado físico
+// === TECLADO FÍSICO - INTELIGENTE ===
 document.addEventListener("keydown", (event) => {
   const key = event.key;
+  const activeElement = document.activeElement;
+
+  // Si estamos en un input de interés → NO toques el visor
+  if (activeElement && activeElement.classList.contains('interes')) {
+    // Permitir solo números, backspace, delete, enter, flechas, etc.
+    if (
+      !isNaN(key) || 
+      key === "Backspace" || 
+      key === "Delete" || 
+      key === "Enter" || 
+      key === "ArrowLeft" || 
+      key === "ArrowRight" || 
+      key === "Tab"
+    ) {
+      return; // Deja que el input maneje la tecla
+    }
+    if (key === "." || key === ",") {
+      event.preventDefault();
+      activeElement.value += ".";
+      return;
+    }
+    event.preventDefault(); // Bloquea cualquier otra tecla
+    return;
+  }
+
+  // Si NO estamos en un input → comportamiento normal del visor
   if (key === "Enter") {
     event.preventDefault();
     operaciones();
     return;
   }
+
   if (key === "0" && event.altKey) {
     clickBoton("000");
     return;
   }
+
   if (!isNaN(key) && !event.shiftKey) {
     clickBoton(key);
     return;
   }
+
   if (["+", "-", "*", "/"].includes(key)) {
     clickBoton(key);
     return;
   }
+
   if (key === "Backspace") {
     visor.value = visor.value.slice(0, -1);
     return;
   }
+
   if (key === "Escape") {
     limpiarVisor();
     return;
   }
+
   if (key === "Delete") {
     borrar();
     return;
   }
+
   if (key === "%") {
     clickBoton("%");
     return;
   }
+
   if (key === "." || key === ",") {
     clickBoton(".");
     return;
