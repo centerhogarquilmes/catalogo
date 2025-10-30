@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Center Hogar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.webp" type="image/x-icon">
+</head>
+<body>
+  <div class="calculadora">
+    <input type="text" id="visor" readonly placeholder="0">
+
+    <div class="fila">
+      <button class="btn-ac" onclick="borrar()">AC</button>
+      <button class="btn-func" onclick="calcularDescuento()">DESC</button>
+      <button class="btn-func" onclick="abrirHistorial()">HISTORIAL</button>
+      <button class="btn-ac" onclick="limpiarVisor()">C</button>
+    </div>
+
+    <div class="fila">
+      <button class="btn-cuota" onclick="calcularCuotas(3)">3 cuotas</button>
+      <input id="interes3" class="interes" type="number" value="0">
+      <span class="porc">%</span>
+    </div>
+
+    <div class="fila">
+      <button class="btn-cuota" onclick="calcularCuotas(6)">6 cuotas</button>
+      <input id="interes6" class="interes" type="number" value="0">
+      <span class="porc">%</span>
+    </div>
+
+    <div class="fila">
+      <button class="btn-cuota" onclick="calcularCuotas(9)">9 cuotas</button>
+      <input id="interes9" class="interes" type="number" value="0">
+      <span class="porc">%</span>
+    </div>
+
+    <div class="fila">
+      <button class="btn-cuota" onclick="calcularCuotas(12)">12 cuotas</button>
+      <input id="interes12" class="interes" type="number" value="5">
+      <span class="porc">%</span>
+    </div>
+
+    <div class="fila">
+      <button onclick="clickBoton('7')">7</button>
+      <button onclick="clickBoton('8')">8</button>
+      <button onclick="clickBoton('9')">9</button>
+      <button class="btn-op" onclick="clickBoton('/')">÷</button>
+    </div>
+
+    <div class="fila">
+      <button onclick="clickBoton('4')">4</button>
+      <button onclick="clickBoton('5')">5</button>
+      <button onclick="clickBoton('6')">6</button>
+      <button class="btn-op" onclick="clickBoton('*')">×</button>
+    </div>
+
+    <div class="fila">
+      <button onclick="clickBoton('1')">1</button>
+      <button onclick="clickBoton('2')">2</button>
+      <button onclick="clickBoton('3')">3</button>
+      <button class="btn-op" onclick="clickBoton('-')">−</button>
+    </div>
+
+    <div class="fila">
+      <button onclick="clickBoton('0')">0</button>
+      <button onclick="clickBoton('000')">000</button>
+      <button class="btn-op" onclick="clickBoton('+')">+</button>
+      <button class="btn-op" onclick="operaciones()">=</button>
+    </div>
+
+    <div class="fila">
+      <button class="btn-guardar" onclick="guardarValorManual()">GUARDAR</button>
+      <button class="btn-guardar" onclick="volverValorManual()">VOLVER</button>
+    </div>
+  </div>
+
+  <!-- Modal de Historial -->
+  <div id="modalHistorial" class="modal">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarHistorial()">×</span>
+      <h2>Historial de Operaciones</h2>
+      <ul id="listaHistorial"></ul>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
