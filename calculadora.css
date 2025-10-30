@@ -1,4 +1,8 @@
 /*calculadora*/
+body {
+  background: pink !important;
+}
+
 :root{
   --bg: #F6F8FA;
   --card: rgba(255,255,255,0.7);
