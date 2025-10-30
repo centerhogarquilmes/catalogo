@@ -2,6 +2,7 @@
 const CACHE_NAME = 'calculadora-v1';
 const urlsToCache = [
   './',
+  './catalogo/',
   './calculadora.html',
   './calculadora.css',
   './calculadora.js',
