@@ -119,26 +119,58 @@ function cerrarHistorial() {
   document.getElementById("modalHistorial").classList.remove('active');
 }
 
-// === TECLADO FÍSICO - INTELIGENTE (CON DECIMALES) ===
+// === TECLADO FÍSICO - CON COPIAR/PEGAR (Ctrl+C / Ctrl+V) ===
 document.addEventListener("keydown", (event) => {
   const key = event.key;
   const activeElement = document.activeElement;
 
+  // === COPIAR con Ctrl+C ===
+  if (event.ctrlKey && key.toLowerCase() === "c") {
+    event.preventDefault();
+    if (visor.value && visor.value !== "0") {
+      navigator.clipboard.writeText(visor.value.replace(/\./g, "").replace(/,/g, ""))
+        .then(() => {
+          // Opcional: feedback visual
+          const original = visor.style.border;
+          visor.style.border = "2px solid #2ECC71";
+          setTimeout(() => visor.style.border = original, 300);
+        })
+        .catch(() => {
+          alert("No se pudo copiar. Usa un navegador moderno.");
+        });
+    }
+    return;
+  }
+
+  // === PEGAR con Ctrl+V ===
+  if (event.ctrlKey && key.toLowerCase() === "v") {
+    event.preventDefault();
+    navigator.clipboard.readText()
+      .then(text => {
+        // Limpiar: solo números, punto y coma
+        const cleaned = text.replace(/[^0-9.,]/g, "").replace(/,/g, ".");
+        if (cleaned && !isNaN(cleaned)) {
+          visor.value = formatearNumero(cleaned);
+        } else {
+          visor.value = "Error";
+          setTimeout(() => visor.value = "", 1000);
+        }
+      })
+      .catch(() => {
+        alert("No se pudo pegar. Permite acceso al portapapeles.");
+      });
+    return;
+  }
+
   // === SI ESTAMOS EN UN INPUT DE INTERÉS ===
   if (activeElement && activeElement.classList.contains('interes')) {
-
-    // Permitir números, backspace, delete, enter, flechas, tab
     if (
       !isNaN(key) || 
       ["Backspace", "Delete", "Enter", "ArrowLeft", "ArrowRight", "Tab"].includes(key)
     ) {
-      return; // Dejar que el input maneje la tecla
+      return;
     }
-
-    // Permitir punto o coma como separador decimal
     if (key === "." || key === ",") {
-      // NO usar preventDefault → dejar que el input lo maneje
-      // Solo convertir coma a punto si es necesario
       if (key === ",") {
         setTimeout(() => {
           activeElement.value = activeElement.value.replace(",", ".");
@@ -146,13 +178,11 @@ document.addEventListener("keydown", (event) => {
       }
       return;
     }
-
-    // Bloquear cualquier otra tecla (letras, símbolos, etc.)
     event.preventDefault();
     return;
   }
 
-  // === SI NO ESTAMOS EN UN INPUT → VISOR NORMAL ===
+  // === VISOR NORMAL ===
   if (key === "Enter") {
     event.preventDefault();
     operaciones();
