@@ -11,7 +11,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #00000000; /* Igual que .calculadora */
+  background: #000000; /* Igual que .calculadora */
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 
 /* === CALCULADORA COMO APP === */
 .calculadora {
-  background: #ecf0f100;
+  background: #ecf0f1;
   border-radius: 0; /* Sin bordes en modo app */
   width: 100%;
   max-width: 370px;
