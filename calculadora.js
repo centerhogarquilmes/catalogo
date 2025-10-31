@@ -119,35 +119,40 @@ function cerrarHistorial() {
   document.getElementById("modalHistorial").classList.remove('active');
 }
 
-// === TECLADO FÍSICO - INTELIGENTE ===
+// === TECLADO FÍSICO - INTELIGENTE (CON DECIMALES) ===
 document.addEventListener("keydown", (event) => {
   const key = event.key;
   const activeElement = document.activeElement;
 
-  // Si estamos en un input de interés → NO toques el visor
+  // === SI ESTAMOS EN UN INPUT DE INTERÉS ===
   if (activeElement && activeElement.classList.contains('interes')) {
-    // Permitir solo números, backspace, delete, enter, flechas, etc.
+
+    // Permitir números, backspace, delete, enter, flechas, tab
     if (
       !isNaN(key) || 
-      key === "Backspace" || 
-      key === "Delete" || 
-      key === "Enter" || 
-      key === "ArrowLeft" || 
-      key === "ArrowRight" || 
-      key === "Tab"
+      ["Backspace", "Delete", "Enter", "ArrowLeft", "ArrowRight", "Tab"].includes(key)
     ) {
-      return; // Deja que el input maneje la tecla
+      return; // Dejar que el input maneje la tecla
     }
+
+    // Permitir punto o coma como separador decimal
     if (key === "." || key === ",") {
-      event.preventDefault();
-      activeElement.value += ".";
+      // NO usar preventDefault → dejar que el input lo maneje
+      // Solo convertir coma a punto si es necesario
+      if (key === ",") {
+        setTimeout(() => {
+          activeElement.value = activeElement.value.replace(",", ".");
+        }, 0);
+      }
       return;
     }
-    event.preventDefault(); // Bloquea cualquier otra tecla
+
+    // Bloquear cualquier otra tecla (letras, símbolos, etc.)
+    event.preventDefault();
     return;
   }
 
-  // Si NO estamos en un input → comportamiento normal del visor
+  // === SI NO ESTAMOS EN UN INPUT → VISOR NORMAL ===
   if (key === "Enter") {
     event.preventDefault();
     operaciones();
