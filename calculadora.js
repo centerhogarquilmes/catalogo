@@ -1,9 +1,40 @@
 /// calculadora.js - CON PERSISTENCIA DE INTERESES ///
-const visor = document.getElementById("visor");
+
+let visor = null;
 let historial = [];
 let valorManual = null;
 
-// Cargar intereses desde LocalStorage al iniciar
+// === INICIALIZACIÓN SEGURA ===
+document.addEventListener('DOMContentLoaded', () => {
+  visor = document.getElementById("visor");
+
+  cargarIntereses();
+
+  document.querySelectorAll('.interes').forEach(input => {
+    input.addEventListener('change', guardarIntereses);
+  });
+
+  const tabGuardada = localStorage.getItem('tabActiva') || 'calculadora';
+  cambiarTab(tabGuardada);
+
+  // === LIMPIAR MENSAJE AL ESCRIBIR ===
+  const inputCodigo = document.getElementById('codigoProducto');
+  if (inputCodigo) {
+    inputCodigo.addEventListener('input', () => {
+      document.getElementById('mensajePromocion').textContent = '';
+    });
+  }
+
+  // === ASIGNAR EVENTOS A LOS BOTONES DE TABS ===
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.getAttribute('data-tab');
+      cambiarTab(tab);
+    });
+  });
+});
+
+// === CARGAR INTERESES ===
 function cargarIntereses() {
   const intereses = {
     interes3: localStorage.getItem('interes3') || '0',
@@ -11,45 +42,51 @@ function cargarIntereses() {
     interes9: localStorage.getItem('interes9') || '0',
     interes12: localStorage.getItem('interes12') || '5'
   };
-  document.getElementById('interes3').value = intereses.interes3;
-  document.getElementById('interes6').value = intereses.interes6;
-  document.getElementById('interes9').value = intereses.interes9;
-  document.getElementById('interes12').value = intereses.interes12;
+  const el3 = document.getElementById('interes3');
+  const el6 = document.getElementById('interes6');
+  const el9 = document.getElementById('interes9');
+  const el12 = document.getElementById('interes12');
+  if (el3) el3.value = intereses.interes3;
+  if (el6) el6.value = intereses.interes6;
+  if (el9) el9.value = intereses.interes9;
+  if (el12) el12.value = intereses.interes12;
 }
 
-// Guardar intereses en LocalStorage al cambiarlos
+// === GUARDAR INTERESES ===
 function guardarIntereses() {
-  localStorage.setItem('interes3', document.getElementById('interes3').value);
-  localStorage.setItem('interes6', document.getElementById('interes6').value);
-  localStorage.setItem('interes9', document.getElementById('interes9').value);
-  localStorage.setItem('interes12', document.getElementById('interes12').value);
+  localStorage.setItem('interes3', document.getElementById('interes3')?.value || '0');
+  localStorage.setItem('interes6', document.getElementById('interes6')?.value || '0');
+  localStorage.setItem('interes9', document.getElementById('interes9')?.value || '0');
+  localStorage.setItem('interes12', document.getElementById('interes12')?.value || '5');
 }
 
-// Formatear números
+// === FORMATEAR NÚMERO ===
 function formatearNumero(valor) {
   if (isNaN(valor)) return valor;
   const num = parseFloat(valor);
   return num.toLocaleString("es-AR", { maximumFractionDigits: 0 });
 }
 
+// === FUNCIONES DE CALCULADORA ===
 function clickBoton(v) {
-  visor.value += v;
+  if (visor) visor.value += v;
 }
 
 function borrar() {
-  visor.value = "";
+  if (visor) visor.value = "";
   historial = [];
 }
 
 function limpiarVisor() {
-  visor.value = "";
+  if (visor) visor.value = "";
 }
 
 function borrarUltimo() {
-  visor.value = visor.value.slice(0, -1);
+  if (visor) visor.value = visor.value.slice(0, -1);
 }
 
 function operaciones() {
+  if (!visor) return;
   try {
     const ecuacion = visor.value.replace(/\./g, "");
     const resultado = eval(ecuacion);
@@ -61,6 +98,7 @@ function operaciones() {
 }
 
 function calcularPorcentaje() {
+  if (!visor) return;
   try {
     const entrada = visor.value.replace(/\./g, "");
     let operador = '-';
@@ -82,20 +120,21 @@ function calcularPorcentaje() {
   }
 }
 
-
 function guardarValorManual() {
-  valorManual = visor.value.replace(/\./g, "");
+  if (visor) valorManual = visor.value.replace(/\./g, "");
 }
 
 function volverValorManual() {
-  if (valorManual !== null) visor.value = formatearNumero(valorManual);
+  if (valorManual !== null && visor) visor.value = formatearNumero(valorManual);
 }
 
 function calcularCuotas(num) {
+  if (!visor) return;
   try {
     const ecuacion = visor.value.replace(/\./g, "");
     const resultado = eval(ecuacion);
-    const interes = parseFloat(document.getElementById(`interes${num}`).value) || 0;
+    const interesEl = document.getElementById(`interes${num}`);
+    const interes = parseFloat(interesEl?.value) || 0;
     const montoConInteres = resultado * (1 + interes / 100);
     const cuota = montoConInteres / num;
     historial.push([`${formatearNumero(resultado)} en ${num} cuotas (${interes}%)`, cuota]);
@@ -105,10 +144,11 @@ function calcularCuotas(num) {
   }
 }
 
-// Modal de historial
+// === MODAL HISTORIAL ===
 function abrirHistorial() {
   const modal = document.getElementById("modalHistorial");
   const lista = document.getElementById("listaHistorial");
+  if (!modal || !lista) return;
   lista.innerHTML = "";
   if (historial.length === 0) {
     lista.innerHTML = "<li>Historial vacío</li>";
@@ -117,7 +157,7 @@ function abrirHistorial() {
       const li = document.createElement("li");
       li.textContent = `${i + 1}. ${expr} = ${formatearNumero(res)}`;
       li.onclick = () => {
-        visor.value = formatearNumero(res);
+        if (visor) visor.value = formatearNumero(res);
         cerrarHistorial();
       };
       lista.appendChild(li);
@@ -127,38 +167,72 @@ function abrirHistorial() {
 }
 
 function cerrarHistorial() {
-  document.getElementById("modalHistorial").classList.remove('active');
+  const modal = document.getElementById("modalHistorial");
+  if (modal) modal.classList.remove('active');
 }
 
-// === TECLADO FÍSICO - CON COPIAR/PEGAR (Ctrl+C / Ctrl+V) ===
+// === CAMBIAR TABS (con persistencia) ===
+function cambiarTab(tab) {
+  const tabs = document.querySelectorAll('.tab-content');
+  const botones = document.querySelectorAll('.tab-btn');
+  
+  tabs.forEach(t => t.classList.remove('active'));
+  botones.forEach(b => b.classList.remove('active'));
+  
+  const tabElement = document.getElementById(`tab-${tab}`);
+  const btnElement = document.querySelector(`.tab-btn[data-tab="${tab}"]`);
+  
+  if (tabElement) tabElement.classList.add('active');
+  if (btnElement) btnElement.classList.add('active');
+  
+  localStorage.setItem('tabActiva', tab);
+}
+
+// === VERIFICAR PROMOCIÓN ===
+function verificarPromocion() {
+  const input = document.getElementById('codigoProducto');
+  const mensaje = document.getElementById('mensajePromocion');
+  if (!input || !mensaje) return;
+
+  const codigo = input.value.trim().toUpperCase();
+  if (codigo === '') {
+    mensaje.textContent = 'Por favor, ingrese un código de producto.';
+    mensaje.style.color = '#E74C3C';
+    return;
+  }
+  if (productosEnPromocion.includes(codigo)) {
+    mensaje.textContent = '¡Aprobado! Este producto aplica a la promoción.';
+    mensaje.style.color = '#2ECC71';
+  } else {
+    mensaje.textContent = 'Lo sentimos, este producto no aplica a ninguna promoción.';
+    mensaje.style.color = '#E74C3C';
+  }
+}
+
+// === TECLADO FÍSICO ===
 document.addEventListener("keydown", (event) => {
+  if (!visor) return;
   const key = event.key;
   const activeElement = document.activeElement;
 
-  // === COPIAR con Ctrl+C ===
+  // Ctrl+C / Ctrl+V
   if (event.ctrlKey && key.toLowerCase() === "c") {
     event.preventDefault();
     if (visor.value && visor.value !== "0") {
       navigator.clipboard.writeText(visor.value.replace(/\./g, "").replace(/,/g, ""))
         .then(() => {
-          // Opcional: feedback visual
           const original = visor.style.border;
           visor.style.border = "2px solid #2ECC71";
           setTimeout(() => visor.style.border = original, 300);
-        })
-        .catch(() => {
-          alert("No se pudo copiar. Usa un navegador moderno.");
         });
     }
     return;
   }
 
-  // === PEGAR con Ctrl+V ===
   if (event.ctrlKey && key.toLowerCase() === "v") {
     event.preventDefault();
     navigator.clipboard.readText()
       .then(text => {
-        // Limpiar: solo números, punto y coma
         const cleaned = text.replace(/[^0-9.,]/g, "").replace(/,/g, ".");
         if (cleaned && !isNaN(cleaned)) {
           visor.value = formatearNumero(cleaned);
@@ -166,26 +240,16 @@ document.addEventListener("keydown", (event) => {
           visor.value = "Error";
           setTimeout(() => visor.value = "", 1000);
         }
-      })
-      .catch(() => {
-        alert("No se pudo pegar. Permite acceso al portapapeles.");
       });
     return;
   }
 
-  // === SI ESTAMOS EN UN INPUT DE INTERÉS ===
+  // Inputs de interés
   if (activeElement && activeElement.classList.contains('interes')) {
-    if (
-      !isNaN(key) || 
-      ["Backspace", "Delete", "Enter", "ArrowLeft", "ArrowRight", "Tab"].includes(key)
-    ) {
-      return;
-    }
+    if (!isNaN(key) || ["Backspace", "Delete", "Enter", "ArrowLeft", "ArrowRight", "Tab"].includes(key)) return;
     if (key === "." || key === ",") {
       if (key === ",") {
-        setTimeout(() => {
-          activeElement.value = activeElement.value.replace(",", ".");
-        }, 0);
+        setTimeout(() => activeElement.value = activeElement.value.replace(",", "."), 0);
       }
       return;
     }
@@ -193,58 +257,14 @@ document.addEventListener("keydown", (event) => {
     return;
   }
 
-  // === VISOR NORMAL ===
-  if (key === "Enter") {
-    event.preventDefault();
-    operaciones();
-    return;
-  }
-
-  if (key === "0" && event.altKey) {
-    clickBoton("000");
-    return;
-  }
-
-  if (!isNaN(key) && !event.shiftKey) {
-    clickBoton(key);
-    return;
-  }
-
-  if (["+", "-", "*", "/"].includes(key)) {
-    clickBoton(key);
-    return;
-  }
-
-  if (key === "Backspace") {
-    visor.value = visor.value.slice(0, -1);
-    return;
-  }
-
-  if (key === "Escape") {
-    limpiarVisor();
-    return;
-  }
-
-  if (key === "Delete") {
-    borrar();
-    return;
-  }
-
-  if (key === "%") {
-    clickBoton("%");
-    return;
-  }
-
-  if (key === "." || key === ",") {
-    clickBoton(".");
-    return;
-  }
-});
-
-// Cargar intereses al iniciar
-document.addEventListener('DOMContentLoaded', cargarIntereses);
-
-// Guardar intereses al cambiar
-document.querySelectorAll('.interes').forEach(input => {
-  input.addEventListener('change', guardarIntereses);
+  // Visor
+  if (key === "Enter") { event.preventDefault(); operaciones(); return; }
+  if (key === "0" && event.altKey) { clickBoton("000"); return; }
+  if (!isNaN(key) && !event.shiftKey) { clickBoton(key); return; }
+  if (["+", "-", "*", "/"].includes(key)) { clickBoton(key); return; }
+  if (key === "Backspace") { visor.value = visor.value.slice(0, -1); return; }
+  if (key === "Escape") { limpiarVisor(); return; }
+  if (key === "Delete") { borrar(); return; }
+  if (key === "%") { clickBoton("%"); return; }
+  if (key === "." || key === ",") { clickBoton("."); return; }
 });
