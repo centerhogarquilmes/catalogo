@@ -45,6 +45,10 @@ function limpiarVisor() {
   visor.value = "";
 }
 
+function borrarUltimo() {
+  visor.value = visor.value.slice(0, -1);
+}
+
 function operaciones() {
   try {
     const ecuacion = visor.value.replace(/\./g, "");
@@ -56,21 +60,28 @@ function operaciones() {
   }
 }
 
-function calcularDescuento() {
+function calcularPorcentaje() {
   try {
     const entrada = visor.value.replace(/\./g, "");
-    const partes = entrada.split("-");
-    if (partes.length < 2) throw new Error();
+    let operador = '-';
+    let partes = entrada.split('-');
+    if (partes.length < 2) {
+      partes = entrada.split('+');
+      if (partes.length < 2) throw new Error();
+      operador = '+';
+    }
     const valor = parseFloat(partes[0]);
     const porcentaje = parseFloat(partes[1].replace("%", ""));
     if (isNaN(valor) || isNaN(porcentaje)) throw new Error();
-    const resultado = valor * (1 - porcentaje / 100);
-    historial.push([`${formatearNumero(valor)} - ${porcentaje}%`, resultado]);
+    const factor = (operador === '+') ? (1 + porcentaje / 100) : (1 - porcentaje / 100);
+    const resultado = valor * factor;
+    historial.push([`${formatearNumero(valor)} ${operador} ${porcentaje}%`, resultado]);
     visor.value = formatearNumero(resultado);
   } catch {
     visor.value = "Error";
   }
 }
+
 
 function guardarValorManual() {
   valorManual = visor.value.replace(/\./g, "");
