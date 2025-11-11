@@ -22,6 +22,7 @@
             width: 100%;
             background: #007bff;
             padding: 10px 0;
+            z-index: 99999;
             
         }
         .tab {
@@ -156,18 +157,131 @@
             background-color: #f8d7da;
         }
 
-        .verificacion-container .categoria-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #1a73e8;
-            margin: 20px 0 10px;
-            padding: 8px;
-            background-color: #e9ecef;
-            border-radius: 6px;
-        }
-        .verificacion-container .categoria-block {
-            margin-bottom: 20px;
-        }
+        /* --- Estilos minimalistas para Verificación --- */
+/* Base general */
+.verificacion-container .categoria-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  padding: 8px 12px;
+  margin: 10px 0;
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Categoría con códigos registrados ✅ */
+.verificacion-container .categoria-block.registrados .categoria-title {
+  border-left: 4px solid #28a745;   /* Verde */
+  background: #f6fff9;
+}
+
+/* Categoría con códigos NO registrados ❌ */
+.verificacion-container .categoria-block.no-registrados .categoria-title {
+  border-left: 4px solid #dc3545;   /* Rojo */
+  background: #fff8f8;
+}
+
+.verificacion-container .categoria-title button,
+.verificacion-container .toggle-btn {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.verificacion-container .codigo-item {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 20px;
+  font-size: 13px;
+  background-color: #f1f3f4;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.verificacion-container .success .codigo-item {
+  background-color: #e6f4ea;
+  color: #137333;
+}
+
+.verificacion-container .error .codigo-item {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+
+/* Botón global más sutil */
+.global-toggle-btn {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  font-size: 14px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 10px;
+}
+.codigo-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.codigo-list li {
+  padding: 6px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.codigo-list li:last-child {
+  border-bottom: none;
+}
+
+.codigo-list.success li {
+  color: #137333;
+}
+
+.codigo-list.error li {
+  color: #c5221f;
+}
+.categoria-block {
+    margin-bottom: 15px;   /* espacio entre bloques */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.categoria-title {
+    background: #f5f5f5;
+    padding: 10px 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: sticky;
+    top: 0;                /* hace que el título se quede arriba al scrollear */
+    z-index: 1;
+}
+
+.categoria-content {
+    max-height: 400px;     /* limitar altura de listas largas */
+    overflow-y: auto;      /* scroll vertical si excede */
+    padding: 5px 15px;
+}
+
+
+
+
+
+
 
 
 
@@ -581,10 +695,12 @@
         <button onclick="verificarManual()">Verificar Manual</button>
         
         <h3>Cargar archivo CSV</h3>
-        <input type="file" id="csvInput" accept=".csv" onchange="procesarCSV()">
+        <input type="file" id="csvInput" onchange="procesarCSV(this.files[0])">
         <div id="fileStatus"></div>
         <button onclick="limpiarCodigosMarcados()">Limpiar Códigos Marcados</button>
         <div id="resultado"></div>
+        <div id="verificacionResultados"></div>
+
     </div>
 
     <div id="gestion" class="tab-content admin-container">
@@ -685,7 +801,26 @@
 
 
     <script src="productos.js"></script>
-<script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script>
+    let productosCSV = [];
+
+    // Cargar CSV de productos
+    Papa.parse("productos.csv", {
+        download: true,
+        header: true,
+        delimiter: ";",
+        complete: function(results) {
+            productosCSV = results.data.map(row => ({
+                codigo: String(row["Artículo"]).trim(),
+                nombre: String(row["Descripción"]).trim()
+            }));
+            console.log("Productos CSV cargados:", productosCSV.length);
+        }
+    });
+    </script>
+
+    <script src="scripts.js"></script>
 <script>
     // Gestión de pestañas
     function openTab(tabName) {
@@ -754,230 +889,286 @@ document.querySelectorAll('.tab-content').forEach(tab => {
         verificarYMostrar(codigos);
     }
 
-    function procesarCSV() {
-        const fileInput = document.getElementById('csvInput');
-        const fileStatus = document.getElementById('fileStatus');
-        const file = fileInput.files[0];
+    
 
-        if (!file) {
-            fileStatus.innerHTML = '<span class="error">No se seleccionó ningún archivo.</span>';
-            fileStatus.className = 'error';
-            return;
-        }
-
-        if (!file.name.endsWith('.csv')) {
-            fileStatus.innerHTML = '<span class="error">Por favor, seleccione un archivo CSV.</span>';
-            fileStatus.className = 'error';
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            csvContent = e.target.result;
-            const codigos = parsearCSV(csvContent);
-            if (codigos.length === 0) {
-                fileStatus.innerHTML = '<span class="error">No se encontraron códigos válidos en el archivo.</span>';
-                fileStatus.className = 'error';
-                return;
-            }
-            fileStatus.innerHTML = `Archivo cargado: ${codigos.length} códigos encontrados.`;
-            fileStatus.className = 'success';
-            console.log('Mapa de códigos a categorías:', codigoToCategoria);
-            verificarYMostrar(codigos);
-        };
-        reader.onerror = function() {
-            fileStatus.innerHTML = '<span class="error">Error al leer el archivo.</span>';
-            fileStatus.className = 'error';
-        };
-        reader.readAsText(file);
+    function procesarCSV(file) {
+    if (!file) {
+        console.error("No se seleccionó ningún archivo.");
+        return;
     }
 
-    function parsearCSV(text) {
-        const lines = text.split('\n').map(line => line.trim()).filter(line => line);
-        if (lines.length === 0) return [];
-
-        const headers = lines[0].split(';').map(h => h.trim().replace(/^"|"$/g, ''));
-        console.log('Encabezados del CSV:', headers);
-
-        const articuloIndex = headers.findIndex(h => 
-            h === 'Artículo' || h === 'Art�culo' || h.toLowerCase() === 'articulo' || h.toLowerCase() === 'art�culo'
-        );
-        const agrupacionIndex = headers.findIndex(h => 
-            h === 'Agrupación' || h === 'Agrupaciòn' || h === 'Agrupaci�n' || h.toLowerCase() === 'agrupacion' || h.toLowerCase() === 'agrupaciòn' || h.toLowerCase() === 'agrupaci�n'
-        );
-
-        if (articuloIndex === -1) {
-            document.getElementById('fileStatus').innerHTML = '<span class="error">No se encontró la columna "Artículo" en el CSV.</span>';
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const text = e.target.result;
+        const codigos = parsearCSV(text);
+        if (codigos.length === 0) {
+            document.getElementById('fileStatus').innerHTML = '<span class="error">No se encontraron códigos válidos en el archivo.</span>';
             document.getElementById('fileStatus').className = 'error';
-            console.warn('Columna "Artículo" no encontrada en el CSV. Encabezados:', headers);
-            return [];
+            return;
         }
-        if (agrupacionIndex === -1) {
-            document.getElementById('fileStatus').innerHTML = '<span class="error">No se encontró la columna "Agrupaciòn" en el CSV.</span>';
-            document.getElementById('fileStatus').className = 'error';
-            console.warn('Columna "Agrupaciòn" no encontrada en el CSV. Encabezados:', headers);
-            return [];
-        }
+        document.getElementById('fileStatus').innerHTML = '<span class="success">Archivo cargado correctamente.</span>';
+        document.getElementById('fileStatus').className = 'success';
 
-        const codigos = [];
-        codigoToCategoria = {};
-        for (let i = 1; i < lines.length; i++) {
-            const columns = lines[i].split(';').map(c => c.trim().replace(/^"|"$/g, ''));
-            if (columns[articuloIndex]) {
-                const codigo = columns[articuloIndex];
-                codigos.push(codigo);
-                codigoToCategoria[codigo] = columns[agrupacionIndex] ? columns[agrupacionIndex] : 'Sin categoría';
-                console.log(`Código: ${codigo}, Categoría: ${codigoToCategoria[codigo]}`);
-            }
-        }
-        console.log('Códigos extraídos:', codigos);
-        return codigos.filter(c => c);
+        // 🔎 Mostrar los productos directamente en la pestaña Verificación
+        verificarYMostrar(codigos);
+    };
+    reader.readAsText(file, "ISO-8859-1");
+}
+
+
+
+
+    // -----------------------------
+// Nuevas variables / utilidades
+// -----------------------------
+let productosCSVMap = {}; // mapa: codigoNormalizado -> nombre
+
+function normalizeCode(c) {
+    if (c === undefined || c === null) return '';
+    // pasar a string, trim, quitar comillas y ceros a la izquierda
+    return String(c).trim().replace(/^"+|"+$/g, '').replace(/^0+/, '');
+}
+
+function getNombrePorCodigo(codigo) {
+    const codNorm = normalizeCode(codigo);
+    if (!codNorm) return 'Desconocido';
+
+    // 1) buscar en el mapa generado desde el CSV
+    if (productosCSVMap && productosCSVMap[codNorm]) {
+        const n = productosCSVMap[codNorm];
+        return (n && n.trim()) ? n.trim() : 'Desconocido';
     }
 
-    function verificarCodigos(codigosIngresados) {
-    // Eliminar códigos duplicados usando un Set
-    const codigosUnicos = [...new Set(codigosIngresados)];
+    // 2) fallback: buscar en productos (productos.js)
+    if (typeof productos !== 'undefined' && Array.isArray(productos)) {
+        const prod = productos.find(p => normalizeCode(p.codigo) === codNorm);
+        if (prod) {
+            // varios nombres posibles según tu productos.js
+            return prod.nombre || prod.Nombre || prod.name || prod.title || prod.descripcion || prod.Descripcion || 'Desconocido';
+        }
+    }
+
+    return 'Desconocido';
+}
+
+// ---------------------------------
+// parsearCSV (reemplaza la anterior)
+// ---------------------------------
+function parsearCSV(text) {
+    const lines = text.split('\n').map(line => line.trim()).filter(line => line);
+    if (lines.length === 0) return [];
+
+    const headersRaw = lines[0].split(';').map(h => h.trim().replace(/^"|"$/g, ''));
+
+    // Normalizar encabezados: quitar acentos y caracteres raros
+    const normalizeHeader = h => {
+        return h
+            .normalize("NFD")                     // separar letras y tildes
+            .replace(/[\u0300-\u036f]/g, "")      // eliminar tildes
+            .replace(/[^a-zA-Z0-9 ]/g, "")        // quitar caracteres no alfanuméricos
+            .toLowerCase()
+            .trim();
+    };
+
+    const headerNorm = headersRaw.map(h => normalizeHeader(h));
+
+    // Buscar índices de columnas con nombres normalizados
+    const articuloIndex   = headerNorm.findIndex(h => h.includes('articulo'));
+    const descripcionIndex = headerNorm.findIndex(h => h.includes('descrip'));
+    const agrupacionIndex  = headerNorm.findIndex(h => h.includes('agrup'));
+
+    if (articuloIndex === -1) {
+        document.getElementById('fileStatus').innerHTML =
+            '<span class="error">No se encontró la columna "Artículo" en el CSV.</span>';
+        document.getElementById('fileStatus').className = 'error';
+        console.warn('parsearCSV: columna Artículo no encontrada. Encabezados normalizados:', headerNorm);
+        return [];
+    }
+
+    const codigos = [];
+    codigoToCategoria = {};
+    productosCSVMap = {};
+
+    for (let i = 1; i < lines.length; i++) {
+        const columns = lines[i].split(';').map(c => c.trim().replace(/^"|"$/g, ''));
+        const codigoRaw = columns[articuloIndex];
+        if (codigoRaw) {
+            const codigo = codigoRaw;
+            codigos.push(codigo);
+
+            const categoria = (agrupacionIndex !== -1) ? (columns[agrupacionIndex] || 'Sin categoría') : 'Sin categoría';
+            codigoToCategoria[codigo] = categoria;
+
+            const nombre = (descripcionIndex !== -1) ? (columns[descripcionIndex] || '') : '';
+            const key = normalizeCode(codigo);
+            productosCSVMap[key] = nombre ? nombre : '';
+        }
+    }
+
+    console.log(`parsearCSV: codigos extraídos=${codigos.length}, productosCSVMap entries=${Object.keys(productosCSVMap).length}`);
+    return codigos.filter(c => c);
+}
+
+
+// -------------------------------------------------
+// verificarCodigos: versión que normaliza al buscar
+// -------------------------------------------------
+function verificarCodigos(codigosIngresados) {
+    const codigosUnicos = [...new Set(codigosIngresados.map(c => String(c).trim()).filter(Boolean))];
     const registradosPorCategoria = {};
     const noRegistradosPorCategoria = {};
 
     codigosUnicos.forEach(codigo => {
-        const producto = productos.find(producto => producto.codigo === codigo);
+        const codigoNorm = normalizeCode(codigo);
+        let producto = undefined;
+
+        if (typeof productos !== 'undefined' && Array.isArray(productos)) {
+            producto = productos.find(p => normalizeCode(p.codigo) === codigoNorm);
+        }
+
         if (producto) {
             const categoria = producto.categoria || 'Sin categoría';
-            if (!registradosPorCategoria[categoria]) {
-                registradosPorCategoria[categoria] = [];
-            }
+            if (!registradosPorCategoria[categoria]) registradosPorCategoria[categoria] = [];
             registradosPorCategoria[categoria].push(codigo);
         } else {
-            const categoria = codigoToCategoria[codigo] || 'Sin categoría';
-            if (!noRegistradosPorCategoria[categoria]) {
-                noRegistradosPorCategoria[categoria] = [];
-            }
+            // intentar usar categoria desde el CSV (buscar por clave normalizada o sin normalizar)
+            let categoria = codigoToCategoria[codigo] || codigoToCategoria[codigoNorm] || 'Sin categoría';
+            if (!noRegistradosPorCategoria[categoria]) noRegistradosPorCategoria[categoria] = [];
             noRegistradosPorCategoria[categoria].push(codigo);
         }
     });
 
     return { registradosPorCategoria, noRegistradosPorCategoria };
 }
-   
-   
-   
-    // Funcion para verificar codigos //
-    function verificarYMostrar(codigos) {
-    if (!codigos.length) {
-        document.getElementById('resultado').innerHTML = 
-            '<p class="error">Por favor, ingrese o cargue al menos un código.</p>';
-        return;
-    }
 
-    if (typeof productos === 'undefined') {
-        document.getElementById('resultado').innerHTML = 
-            '<p class="error">Error: No se pudo cargar el archivo productos.js.</p>';
+// -------------------------------------------------
+// verificarYMostrar (usa getNombrePorCodigo)
+// -------------------------------------------------
+const codigosMarcados = JSON.parse(localStorage.getItem('codigosMarcados') || '{}');
+
+function verificarYMostrar(codigos) {
+    const container = document.getElementById("resultado"); 
+    if (!container) {
+        console.error("Contenedor resultado no encontrado");
         return;
     }
 
     const { registradosPorCategoria, noRegistradosPorCategoria } = verificarCodigos(codigos);
 
-    // Cargar códigos marcados desde localStorage
+    // Estado de checkboxes y colapsado
     const codigosMarcados = JSON.parse(localStorage.getItem('codigosMarcados') || '{}');
-    // Cargar estado de colapso desde localStorage
     const collapsedState = JSON.parse(localStorage.getItem('collapsedCategories') || '{}');
 
-    const totalRegistrados = Object.values(registradosPorCategoria)
-        .reduce((sum, codigos) => sum + codigos.length, 0);
-    const totalNoRegistrados = Object.values(noRegistradosPorCategoria)
-        .reduce((sum, codigos) => sum + codigos.length, 0);
+    // Totales
+    const totalRegistrados = Object.values(registradosPorCategoria).reduce((sum, arr) => sum + arr.length, 0);
+    const totalNoRegistrados = Object.values(noRegistradosPorCategoria).reduce((sum, arr) => sum + arr.length, 0);
 
-    let resultadoHTML = '<h3>Resultados:</h3>';
-    // Botón global para colapsar/expandir todas las categorías
-    resultadoHTML += `
-        <button class="global-toggle-btn" onclick="toggleAllCategories()">
-            Colapsar Todas las Categorías
-        </button>
-    `;
+    // Auxiliar: buscar nombre
+    function getNombrePorCodigo(codigo) {
+        const key = String(codigo).trim().replace(/^0+/, "");
+        return productosCSVMap[key] || "Desconocido";
+    }
 
-    // Códigos registrados
+   let resultadoHTML = "<h3>Resultados:</h3>";
+
+        // Botón global para colapsar/expandir todas
+        resultadoHTML += `
+            <button class="global-toggle-btn" onclick="toggleAllCategories()">
+                Colapsar todas las categorías
+            </button>
+        `;
+
+    // --- Registrados ---
     resultadoHTML += `<p><strong>Registrados (${totalRegistrados}):</strong></p>`;
     if (totalRegistrados === 0) {
         resultadoHTML += '<p class="success">Ninguno</p>';
     } else {
-        for (const [categoria, codigos] of Object.keys(registradosPorCategoria).sort().map(key => [key, registradosPorCategoria[key]])) {
+        for (const [categoria, lista] of Object.entries(registradosPorCategoria)) {
             const isCollapsed = collapsedState[categoria] || false;
             resultadoHTML += `
-                <div class="categoria-block ${isCollapsed ? 'collapsed' : ''}" data-categoria="${categoria}">
-                    <h4 class="categoria-title">
+                <div class="categoria-block registrados ${isCollapsed ? 'collapsed' : ''}" data-categoria="${categoria}">
+                    <h4 class="categoria-title" onclick="toggleCategory('${categoria}')">
                         ${categoria}
-                        <button class="toggle-btn" onclick="toggleCategory('${categoria}')">
-                            ${isCollapsed ? 'Mostrar' : 'Ocultar'}
-                        </button>
+                        <button class="toggle-btn">${isCollapsed ? '' : ''}</button>
                     </h4>
                     <div class="categoria-content">
-                        <table border="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-                            <tr><th style="width: 10%;">Marcar</th><th>Códigos</th><th style="width: 15%;">Cantidad</th></tr>
-                            <tr>
-                                <td></td>
-                                <td><span class="success"><div class="codigo-container">${codigos.map(c => `
-                                    <div class="codigo-item">${c}</div>`).join('')}</div></span></td>
-                                <td>${codigos.length}</td>
-                            </tr>
-                        </table>
+                        <ul class="codigo-list success">
+                            ${lista.map(c => {
+                                const nombre = getNombrePorCodigo(c);
+                                return `<li><span><strong>${c}</strong> - ${nombre}</span></li>`;
+                            }).join("")}
+                        </ul>
                     </div>
                 </div>`;
         }
     }
 
-    // Códigos no registrados
+    // --- No Registrados ---
     resultadoHTML += `<p><strong>No registrados (${totalNoRegistrados}):</strong></p>`;
     if (totalNoRegistrados === 0) {
         resultadoHTML += '<p class="error">Ninguno</p>';
     } else {
-        for (const [categoria, codigos] of Object.keys(noRegistradosPorCategoria).sort().map(key => [key, noRegistradosPorCategoria[key]])) {
+        for (const [categoria, lista] of Object.entries(noRegistradosPorCategoria)) {
             const isCollapsed = collapsedState[categoria] || false;
             resultadoHTML += `
-                <div class="categoria-block ${isCollapsed ? 'collapsed' : ''}" data-categoria="${categoria}">
-                    <h4 class="categoria-title">
+                <div class="categoria-block no-registrados ${isCollapsed ? 'collapsed' : ''}" data-categoria="${categoria}">
+                    <h4 class="categoria-title" onclick="toggleCategory('${categoria}')">
                         ${categoria}
-                        <button class="toggle-btn" onclick="toggleCategory('${categoria}')">
-                            ${isCollapsed ? 'Mostrar' : 'Ocultar'}
-                        </button>
+                        <button class="toggle-btn">${isCollapsed ? '' : ''}</button>
                     </h4>
                     <div class="categoria-content">
-                        <table border="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-                            <tr><th style="width: 10%;">Marcar</th><th>Códigos</th><th style="width: 15%;">Cantidad</th></tr>
-                            <tr class="highlight">
-                                <td></td>
-                                <td><span class="error"><div class="codigo-container">${codigos.map(c => `
-                                    <div class="codigo-item">
-                                        <input type="checkbox" class="codigo-checkbox" data-codigo="${c}" ${codigosMarcados[c] ? 'checked' : ''}>
-                                        <span style="margin-left: 5px;">${c}</span>
-                                    </div>`).join('')}</div></span></td>
-                                <td>${codigos.length}</td>
-                            </tr>
-                        </table>
+                        <ul class="codigo-list error">
+                            ${lista.map(c => {
+                                const nombre = getNombrePorCodigo(c);
+                                return `
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="codigo-checkbox" data-codigo="${c}" ${codigosMarcados[c] ? "checked" : ""}>
+                                            <span><strong>${c}</strong> - ${nombre}</span>
+                                        </label>
+                                    </li>`;
+                            }).join("")}
+                        </ul>
                     </div>
                 </div>`;
         }
     }
 
-    document.getElementById('resultado').innerHTML = resultadoHTML;
+    // Renderizar
+    container.innerHTML = resultadoHTML;
 
-    // Añadir manejador para los checkboxes
+    // Guardar cambios de los checkboxes
     document.querySelectorAll('.codigo-checkbox').forEach(checkbox => {
-        checkbox.addEventListener('change', (e) => {
+        checkbox.addEventListener('change', e => {
             const codigo = e.target.dataset.codigo;
-            const codigosMarcados = JSON.parse(localStorage.getItem('codigosMarcados') || '{}');
             codigosMarcados[codigo] = e.target.checked;
             localStorage.setItem('codigosMarcados', JSON.stringify(codigosMarcados));
         });
     });
 }
 
+
+    // Depuración: listar algunos códigos sin nombre si los hay (máx 20)
+    const unknowns = [];
+    const allCodigos = [].concat(...Object.values(registradosPorCategoria), ...Object.values(noRegistradosPorCategoria));
+    allCodigos.forEach(c => {
+        if (getNombrePorCodigo(c) === 'Desconocido') {
+            unknowns.push(c);
+        }
+    });
+    if (unknowns.length) {
+        console.warn('Codigos sin nombre encontrado (hasta 20):', unknowns.slice(0,20));
+    } else {
+        console.log('Todos los códigos encontraron nombre (o estaban en productos.js).');
+    }
+
+
 // Función para alternar la visibilidad de una categoría
 function toggleCategory(categoria) {
     const block = document.querySelector(`.categoria-block[data-categoria="${categoria}"]`);
     const isCollapsed = block.classList.toggle('collapsed');
     const button = block.querySelector('.toggle-btn');
-    button.textContent = isCollapsed ? 'Mostrar' : 'Ocultar';
+    button.textContent = isCollapsed ? '' : '';
 
     // Guardar el estado de colapso en localStorage
     const collapsedState = JSON.parse(localStorage.getItem('collapsedCategories') || '{}');
@@ -995,11 +1186,11 @@ function toggleAllCategories() {
         const categoria = block.dataset.categoria;
         if (allCollapsed) {
             block.classList.remove('collapsed');
-            block.querySelector('.toggle-btn').textContent = 'Ocultar';
+            block.querySelector('.toggle-btn').textContent = '';
             collapsedState[categoria] = false;
         } else {
             block.classList.add('collapsed');
-            block.querySelector('.toggle-btn').textContent = 'Mostrar';
+            block.querySelector('.toggle-btn').textContent = '';
             collapsedState[categoria] = true;
         }
     });
