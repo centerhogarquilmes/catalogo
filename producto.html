@@ -298,17 +298,22 @@ document.addEventListener('DOMContentLoaded', () => {
     { 
         cuotas: 6, 
         texto: '6 Cuotas sin interés con todas las tarjetas', 
-        precio: (precioLista / 6) 
+        texto: '6 Cuotas con 7% de descuento con tarjetas de crédito de banco',
+        precio: (precioLista * 0.93) / 6
+//      precio: (precioLista / 6)
+        
     },
-    //{ 
-//        cuotas: 9, 
-//        texto: '9 Cuotas fijas con tarjeta de crédito Naranja X', 
-//        precio: ((precioLista * 1.055) / 9) 
-//    },
+    { 
+        cuotas: 9, 
+        texto: '9 Cuotas sin interés con tarjetas de crédito de banco', 
+        precio: (precioLista / 9) 
+        //        precio: (precioLista *  / 9)
+ 
+    },
     { 
         cuotas: 12, 
         texto: '12 Cuotas fijas con tarjetas de crédito de banco', 
-        precio: ((precioLista * 1.165) / 12) 
+        precio: ((precioLista * 1.07) / 12) 
     }
 ] : [];
 
@@ -410,13 +415,13 @@ document.addEventListener('DOMContentLoaded', () => {
             cuotaEl.className = `product-cuota product-cuota-${cuota.cuotas}`;
             let imgSrc, imgClass;
             if (cuota.cuotas === 6) {
-                imgSrc = 'images/tarjetas_de_credito_2.png';
+                imgSrc = 'images/tarjetas_de_credito.png';
                 imgClass = 'cuota-card-icon';
             }
-///            if (cuota.cuotas === 9) {
-///                imgSrc = 'images/naranja_x.png';
-///                imgClass = 'cuota-card-icon';
-///            }
+            if (cuota.cuotas === 9) {
+                imgSrc = 'images/tarjetas_de_credito.png';
+                imgClass = 'cuota-card-icon';
+            }
             if (cuota.cuotas === 12) {
                 imgSrc = 'images/tarjetas_de_credito.png';
                 imgClass = 'cuota-card-icon';
