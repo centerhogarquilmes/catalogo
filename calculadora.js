@@ -268,3 +268,213 @@ document.addEventListener("keydown", (event) => {
   if (key === "%") { clickBoton("%"); return; }
   if (key === "." || key === ",") { clickBoton("."); return; }
 });
+
+
+// === FUNCIONES DE DESCUESTOS ===
+window.calcularDescuento = function() {
+  let precioLista = parseFloat(document.getElementById('precioLista').value);
+  let precioDescuento = parseFloat(document.getElementById('precioDescuento').value);
+ 
+  if (isNaN(precioLista) || isNaN(precioDescuento) || precioLista <= 0 || precioDescuento <= 0) {
+    document.getElementById('resultado').innerText = "Valores inválidos";
+    return;
+  }
+ 
+  let porcentaje = ((precioLista - precioDescuento) / precioLista) * 100;
+  document.getElementById('resultado').innerText = porcentaje.toFixed(4) + "%";
+};
+
+window.copiarResultado = function() {
+  let resultado = document.getElementById('resultado').innerText;
+  if (resultado.includes("%")) {
+    let numero = resultado.replace("%", "").trim();
+    navigator.clipboard.writeText(numero)
+      .then(() => mostrarFeedback("Descuento copiado: " + numero))
+      .catch(() => mostrarFeedback("Error al copiar"));
+  } else {
+    mostrarFeedback("Sin resultado");
+  }
+};
+
+window.calcularPagoMixto = function() {
+  let precioLista = parseFloat(document.getElementById('precioLista').value);
+  let contado = parseFloat(document.getElementById('contado').value);
+ 
+  if (isNaN(precioLista) || precioLista <= 0) return mostrarFeedback("Falta precio lista");
+  if (isNaN(contado) || contado <= 0) return mostrarFeedback("Falta pago contado");
+  if (contado >= precioLista) return mostrarFeedback("Contado no puede ser ≥ lista");
+
+  let totalContado = precioLista * 0.85;
+  let restoContado = totalContado - contado;
+  let restoLista = restoContado / 0.85;
+  let precioFinal = contado + restoLista;
+  let descuento = ((precioLista - precioFinal) / precioLista) * 100;
+
+  function f(valor) { return '$' + valor.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+
+  document.getElementById('totalContado').textContent = f(totalContado);
+  document.getElementById('restoContado').textContent = f(restoContado);
+  document.getElementById('restoLista').textContent = f(restoLista);
+  document.getElementById('precioFinal').textContent = f(precioFinal);
+  document.getElementById('descuento').textContent = descuento.toFixed(4) + '%';
+};
+
+window.copiarResultados = function() {
+  let texto = document.getElementById('descuento').textContent;
+  let numero = texto.replace('%', '').trim();
+  navigator.clipboard.writeText(numero)
+    .then(() => mostrarFeedback("Descuento copiado: " + numero))
+    .catch(() => mostrarFeedback("Error"));
+};
+
+window.calcularDesdeLista = function() {
+  let precioLista = parseFloat(document.getElementById('precioLista').value);
+  let parteLista = parseFloat(document.getElementById('parteLista').value);
+ 
+  if (isNaN(precioLista) || precioLista <= 0) return mostrarFeedback("Falta precio lista");
+  if (isNaN(parteLista) || parteLista <= 0) return mostrarFeedback("Falta parte a lista");
+  if (parteLista >= precioLista) return mostrarFeedback("Parte a lista no puede ser ≥ total");
+
+  let parteContado = (precioLista - parteLista) * 0.85;
+  let precioFinal = parteLista + parteContado;
+  let descuento = ((precioLista - precioFinal) / precioLista) * 100;
+
+  function f(valor) { return '$' + valor.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+
+  document.getElementById('totalContado2').textContent = f(precioLista * 0.85);
+  document.getElementById('parteContado').textContent = f(parteContado);
+  document.getElementById('precioFinal2').textContent = f(precioFinal);
+  document.getElementById('descuento2').textContent = descuento.toFixed(4) + '%';
+};
+
+window.copiarDescuento = function() {
+  let texto = document.getElementById('descuento2').textContent;
+  let numero = texto.replace('%', '').trim();
+  navigator.clipboard.writeText(numero)
+    .then(() => mostrarFeedback("Descuento copiado: " + numero))
+    .catch(() => mostrarFeedback("Error"));
+};
+
+// Feedback visual temporal
+function mostrarFeedback(mensaje) {
+  const feedback = document.createElement('div');
+  feedback.textContent = mensaje;
+  feedback.style.cssText = `
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+    background: #2C3E50; color: white; padding: 12px 24px; border-radius: 12px;
+    font-size: 0.9rem; z-index: 10000; animation: fade 2s forwards;
+  `;
+  document.body.appendChild(feedback);
+  setTimeout(() => feedback.remove(), 2000);
+}
+
+// Animación de feedback
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes fade {
+    0%, 100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    20%, 80% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+`;
+document.head.appendChild(style);
+
+// === COPIAR Y PEGAR EN TODOS LOS INPUTS (PC + MÓVIL) ===
+document.addEventListener("keydown", (event) => {
+  const active = document.activeElement;
+  if (!active) return;
+
+  // === Ctrl+C: Copiar desde cualquier input o visor ===
+  if (event.ctrlKey && event.key.toLowerCase() === "c") {
+    event.preventDefault();
+
+    let valor = "";
+    if (active.id === "visor" || active.tagName === "INPUT") {
+      valor = active.value || active.textContent || "";
+    }
+
+    if (valor && valor !== "0" && valor !== "—" && !valor.includes("Error")) {
+      const numero = valor.replace(/\./g, "").replace(/,/g, "").trim();
+      if (!isNaN(numero) && numero !== "") {
+        navigator.clipboard.writeText(numero)
+          .then(() => mostrarFeedback("Copiado: " + numero))
+          .catch(() => mostrarFeedback("Error al copiar"));
+        resaltarCampo(active);
+      }
+    }
+    return;
+  }
+
+  // === Ctrl+V: Pegar en visor o inputs numéricos ===
+  if (event.ctrlKey && event.key.toLowerCase() === "v") {
+    event.preventDefault();
+
+    // Solo permitir en visor o inputs numéricos
+    if (active.id === "visor" || 
+        active.tagName === "INPUT" && active.type === "number" || 
+        active.id === "codigoProducto") {
+
+      navigator.clipboard.readText()
+        .then(text => {
+          let cleaned = text.replace(/[^0-9.,]/g, "").replace(/,/g, ".");
+          if (cleaned && !isNaN(cleaned)) {
+            const numero = parseFloat(cleaned);
+            if (active.id === "visor") {
+              active.value = formatearNumero(numero);
+            } else if (active.type === "number") {
+              active.value = numero.toFixed(2);
+            } else if (active.id === "codigoProducto") {
+              active.value = text.trim().toUpperCase();
+            }
+            resaltarCampo(active);
+            mostrarFeedback("Pegado: " + numero);
+          } else {
+            mostrarFeedback("Número inválido");
+          }
+        })
+        .catch(() => mostrarFeedback("Error al pegar"));
+    }
+    return;
+  }
+});
+
+// === RESALTAR CAMPO AL COPIAR/PEGAR ===
+function resaltarCampo(el) {
+  const original = el.style.border || el.style.outline || "";
+  el.style.border = "2px solid #2ECC71";
+  el.style.outline = "none";
+  setTimeout(() => {
+    el.style.border = original;
+  }, 300);
+}
+
+// === FEEDBACK VISUAL (mismo que antes, reutilizado) ===
+function mostrarFeedback(mensaje) {
+  const existe = document.querySelector('.feedback-copiar');
+  if (existe) existe.remove();
+
+  const feedback = document.createElement('div');
+  feedback.className = 'feedback-copiar';
+  feedback.textContent = mensaje;
+  feedback.style.cssText = `
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+    background: #2C3E50; color: white; padding: 10px 20px; border-radius: 12px;
+    font-size: 0.9rem; z-index: 10000; font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    animation: fade 2s forwards;
+  `;
+  document.body.appendChild(feedback);
+  setTimeout(() => feedback.remove(), 2000);
+}
+
+// Animación
+if (!document.getElementById('style-feedback')) {
+  const style = document.createElement('style');
+  style.id = 'style-feedback';
+  style.textContent = `
+    @keyframes fade {
+      0%, 100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+      20%, 80% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+  `;
+  document.head.appendChild(style);
+}

@@ -26,9 +26,9 @@ body {
   background: #ecf0f1;
   border-radius: 0; /* Sin bordes en modo app */
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: 104vh;
-  max-height: 770px;
+  max-height: 760px;
   padding: 4px;
   box-shadow: none;
   display: flex;
@@ -314,4 +314,99 @@ button:active {
   font-size: 1.1rem;
   font-weight: bold;
   margin-top: 20px;
+}
+
+
+/* === PESTAÑA DESCUESTOS === */
+#tab-descuentos {
+  padding: 16px;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.contenedor-descuentos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.seccion {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.seccion h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: #2C3E50;
+  text-align: center;
+}
+
+.seccion h4 {
+  margin: 12px 0 8px;
+  text-align: center;
+  color: #27AE60;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.seccion label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 0.95rem;
+  color: #34495E;
+  font-weight: 500;
+}
+
+.seccion input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #DDD;
+  border-radius: 12px;
+  background: #FAFAFA;
+  text-align: right;
+}
+
+.btn-calcular {
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px;
+  background: #3498DB;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.btn-copiar {
+  width: 100%;
+  padding: 12px;
+  background: #2ECC71;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.resultados-mixtos {
+  background: #ECF0F1;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 12px 0;
+  font-size: 0.95rem;
+}
+
+.resultados-mixtos p {
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resultados-mixtos strong {
+  color: #2C3E50;
 }
