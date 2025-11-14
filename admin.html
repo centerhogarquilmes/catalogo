@@ -1203,7 +1203,7 @@ function toggleAllCategories() {
 
 
     // Código de admin.html
-    const categoryFields = {
+   window.categoryFields = {
         "Cocinas, anafes y purificadores": {
             subcategorias: ["Cocinas", "Anafes", "Purificadores"],
             folders: {
@@ -1599,7 +1599,7 @@ function toggleAllCategories() {
                 ]
             }
         },
-        "Hogar, Jardín y Tiempo Libre": {
+        "hogar jardin y tiempo libre": {
             subcategorias: ["Colchones", "Sommiers", "Almohadas", "Jardín", "Bicicletas", "Piletas"],
             folders: {
                 "Colchones": "colchones",
@@ -1655,6 +1655,61 @@ function toggleAllCategories() {
             }
         }
     };
+
+    function populateCategories() {
+    try {
+        console.log("[DEBUG] populateCategories() llamado");
+        const categoriaSelect = document.getElementById("categoria");
+        categoriaSelect.innerHTML = '<option value="" disabled selected>Selecciona una categoría</option>';
+
+        Object.keys(window.categoryFields).forEach(categoria => {
+            const option = document.createElement("option");
+            option.value = categoria;
+            option.textContent = categoria;
+            categoriaSelect.appendChild(option);
+        });
+
+        console.log("[DEBUG] populateCategories completado. Total categorías:", Object.keys(window.categoryFields).length);
+    } catch (error) {
+        console.error("[DEBUG] Error en populateCategories:", error);
+    }
+}
+
+function attachCategoryListener() {
+    const categoriaSelect = document.getElementById("categoria");
+    const subcategoriaGroup = document.getElementById("subcategoria-group");
+    const subcategoriaSelect = document.getElementById("subcategoria");
+
+    categoriaSelect.addEventListener("change", function () {
+        const categoria = this.value;
+        console.log("[DEBUG] Categoría seleccionada:", categoria);
+
+        if (window.categoryFields[categoria] && window.categoryFields[categoria].subcategorias.length > 0) {
+            subcategoriaGroup.style.display = "block";
+            subcategoriaSelect.innerHTML = '<option value="" disabled selected>Selecciona una subcategoría</option>';
+
+            window.categoryFields[categoria].subcategorias.forEach(subcat => {
+                const option = document.createElement("option");
+                option.value = subcat;
+                option.textContent = subcat;
+                subcategoriaSelect.appendChild(option);
+            });
+        } else {
+            subcategoriaGroup.style.display = "none";
+        }
+    });
+}
+
+// Inicialización segura
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("[DEBUG] DOMContentLoaded detectado");
+    if (typeof window.categoryFields !== "undefined") {
+        populateCategories();
+        attachCategoryListener();
+    } else {
+        console.error("[DEBUG] categoryFields no definido al inicializar");
+    }
+});
 
     // Agregar previsualización de imágenes
 document.getElementById('imagen').addEventListener('change', function(e) {

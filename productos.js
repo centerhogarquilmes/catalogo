@@ -10155,6 +10155,243 @@ const productos = [
         "Modelo: 2073813",
         "Garantía: 1 año"
     ]
-}
+},
 
+
+
+/// 14 11 2055
+
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Hitachi (HSPE5400FCINV) 5400W F/C Split Inverter Neo',
+    imagen: "images/aires_acondicionados/Acond Hitachi (HSPE5400FCINV) 5400W FC Split Inverter Neo 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Hitachi (HSPE5400FCINV) 5400W FC Split Inverter Neo 1.webp",
+        "images/aires_acondicionados/Acond Hitachi (HSPE5400FCINV) 5400W FC Split Inverter Neo 2.webp",
+        "images/aires_acondicionados/Acond Hitachi (HSPE5400FCINV) 5400W FC Split Inverter Neo 3.webp",
+        "images/aires_acondicionados/Acond Hitachi (HSPE5400FCINV) 5400W FC Split Inverter Neo 4.webp",
+        "images/aires_acondicionados/Acond Hitachi (HSPE5400FCINV) 5400W FC Split Inverter Neo 5.webp",
+        "images/aires_acondicionados/Acond Hitachi (HSPE5400FCINV) 5400W FC Split Inverter Neo 6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 5400\n<strong>Tipo:</strong> Split\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A++',
+    codigo: "2074534",
+    caracteristicas: [
+        "Marca: Hitachi",
+        "Modelo: 2074534",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Sol de Verano 100 BEBE 1,30X0,95X0,40 500 LTS APROX.',
+    imagen: "images/piletas/Pileta Sol de Verano 100 BEBE 1 30 x 0 95 X 0 40 500 LTS APROX 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Sol de Verano 100 BEBE 1 30 x 0 95 X 0 40 500 LTS APROX 1.webp",
+        "images/piletas/Pileta Sol de Verano 100 BEBE 1 30 x 0 95 X 0 40 500 LTS APROX 2.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 500\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 130 x 95 x 40',
+    codigo: "16098 ",
+    caracteristicas: [
+        "Marca: Sol de Verano",
+        "Modelo: 16098 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Bestway Steel Pro 4000 lts 3x2x0,66 art 56404',
+    imagen: "images/piletas/Pileta Bestway Steel Pro 4000 lts 3x2x0 66 art 56404 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Bestway Steel Pro 4000 lts 3x2x0 66 art 56404 1.webp",
+        "images/piletas/Pileta Bestway Steel Pro 4000 lts 3x2x0 66 art 56404 2.webp",
+        "images/piletas/Pileta Bestway Steel Pro 4000 lts 3x2x0 66 art 56404 3.webp",
+        "images/piletas/Pileta Bestway Steel Pro 4000 lts 3x2x0 66 art 56404 4.webp",
+        "images/piletas/Pileta Bestway Steel Pro 4000 lts 3x2x0 66 art 56404 5.webp",
+        "images/piletas/Pileta Bestway Steel Pro 4000 lts 3x2x0 66 art 56404 6.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 4000\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 300 x 200 x 66',
+    codigo: "2074090",
+    caracteristicas: [
+        "Marca: Bestway",
+        "Modelo: 2074090",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Bestway Steel Pro 2650 lts 2.56x1.70x61m art 56403',
+    imagen: "images/piletas/Pileta Bestway Steel Pro 2650 lts 2 56x1 70x61m art 56403 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Bestway Steel Pro 2650 lts 2 56x1 70x61m art 56403 1.webp",
+        "images/piletas/Pileta Bestway Steel Pro 2650 lts 2 56x1 70x61m art 56403 2.webp",
+        "images/piletas/Pileta Bestway Steel Pro 2650 lts 2 56x1 70x61m art 56403 3.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 2650\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 256 x 170 x 61',
+    codigo: "2074094",
+    caracteristicas: [
+        "Marca: Bestway",
+        "Modelo: 2074094",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Bestway Steel Pro 1500 lts 228x159x42 art 10471',
+    imagen: "images/piletas/Pileta Bestway Steel Pro 1500 lts 228x159x42 art 10471 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Bestway Steel Pro 1500 lts 228x159x42 art 10471 1.webp",
+        "images/piletas/Pileta Bestway Steel Pro 1500 lts 228x159x42 art 10471 2.webp",
+        "images/piletas/Pileta Bestway Steel Pro 1500 lts 228x159x42 art 10471 3.webp",
+        "images/piletas/Pileta Bestway Steel Pro 1500 lts 228x159x42 art 10471 4.webp",
+        "images/piletas/Pileta Bestway Steel Pro 1500 lts 228x159x42 art 10471 5.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 1500\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 228 X 159 X 42',
+    codigo: "2074087",
+    caracteristicas: [
+        "Marca: Bestway",
+        "Modelo: 2074087",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Sol de Verano S 200 2,05X1,47X0,48 1500 LTS APROX.',
+    imagen: "images/piletas/Pileta Sol de Verano S 200 2 05X1 47X0 48 1500 LTS APROX 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Sol de Verano S 200 2 05X1 47X0 48 1500 LTS APROX 1.webp",
+        "images/piletas/Pileta Sol de Verano S 200 2 05X1 47X0 48 1500 LTS APROX 2.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 1500\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 205 x 147 x 48',
+    codigo: "14545",
+    caracteristicas: [
+        "Marca: Sol de Verano",
+        "Modelo: 14545",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Sol de Verano 10 ARCO 3X0,76  APROX. 5500lts',
+    imagen: "images/piletas/Pileta Sol de Verano 10 ARCO 3X0 76  APROX 5500lts 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Sol de Verano 10 ARCO 3X0 76  APROX 5500lts 1.webp",
+        "images/piletas/Pileta Sol de Verano 10 ARCO 3X0 76  APROX 5500lts 2.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 5500\n<strong>Forma:</strong> Circular\n<strong>Dimensiones (Cm):</strong> 300 x 76',
+    codigo: "16100",
+    caracteristicas: [
+        "Marca: Sol de Verano",
+        "Modelo: 16100",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Bestway Steel Pro 1000 lts 190x130x42 art 10473',
+    imagen: "images/piletas/Pileta Bestway Steel Pro 1000 lts 190x130x42 art 10473 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Bestway Steel Pro 1000 lts 190x130x42 art 10473 1.webp",
+        "images/piletas/Pileta Bestway Steel Pro 1000 lts 190x130x42 art 10473 2.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 1000\n<strong>Forma:</strong> Rectangular\n<strong>Dimensiones (Cm):</strong> 190 x 130 x 42',
+    codigo: "2074088",
+    caracteristicas: [
+        "Marca: Bestway",
+        "Modelo: 2074088",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "hogar jardin y tiempo libre",
+    subcategoria: "Piletas",
+    nombre: 'Pileta Bestway 3 Aros fondo del mar chica 102x25 art 51008',
+    imagen: "images/piletas/Pileta Bestway 3 Aros fondo del mar chica 102x25 art 51008 1.webp",
+    imagenes: [
+        "images/piletas/Pileta Bestway 3 Aros fondo del mar chica 102x25 art 51008 1.webp",
+        "images/piletas/Pileta Bestway 3 Aros fondo del mar chica 102x25 art 51008 2.webp"
+    ],
+    descripcion: '<strong>Capacidad de agua (L):</strong> 100\n<strong>Forma:</strong> Circular\n<strong>Dimensiones (Cm):</strong> 102 x 25\n<strong>Inflable:</strong> Sí',
+    codigo: "2074095",
+    caracteristicas: [
+        "Marca: Bestway",
+        "Modelo: 2074095",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Telefunken 32" TK3225S5A atv Android',
+    imagen: "images/televisores/TV LED Telefunken 32 TK3225S5A atv Android 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Telefunken 32 TK3225S5A atv Android 1.webp",
+        "images/televisores/TV LED Telefunken 32 TK3225S5A atv Android 2.webp",
+        "images/televisores/TV LED Telefunken 32 TK3225S5A atv Android 3.webp",
+        "images/televisores/TV LED Telefunken 32 TK3225S5A atv Android 4.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 32"\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+    codigo: "2075666",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075666",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED BGH 43" Android B4318FH5/B4323FK5/B4319KK5/B4321FH5A/B4322/25FS5A smart tv',
+    imagen: "images/televisores/TV LED BGH 43 Android B4318FH5 B4323FK5 B4319KK5 B4321FH5A B4322 25FS5A smart tv 1.webp",
+    imagenes: [
+        "images/televisores/TV LED BGH 43 Android B4318FH5 B4323FK5 B4319KK5 B4321FH5A B4322 25FS5A smart tv 1.webp",
+        "images/televisores/TV LED BGH 43 Android B4318FH5 B4323FK5 B4319KK5 B4321FH5A B4322 25FS5A smart tv 2.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 43\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+    codigo: "2072725",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2072725",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED BGH 32" B3225G5A atv Android HD Frameless',
+    imagen: "images/televisores/TV LED BGH 32 B3225G5A atv Android HD Frameless 1.webp",
+    imagenes: [
+        "images/televisores/TV LED BGH 32 B3225G5A atv Android HD Frameless 1.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 32\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Android TV',
+    codigo: "2075667",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2075667",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Philco 50" PLD50US25GH Google Tv',
+    imagen: "images/televisores/TV LED Philco 50 PLD50US25GH Google Tv 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Philco 50 PLD50US25GH Google Tv 1.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2075677",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075677",
+        "Garantía: 1 año"
+    ]
+},
 ];
