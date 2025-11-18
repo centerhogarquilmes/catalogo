@@ -295,9 +295,9 @@
 
       const datos = precios[codigo] || { precio_tarjeta: 'No disponible' };
       const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
-      const cuotas6 = precioLista ? precioLista / 6 : null;
-      const precioConDescuento = precioLista ? precioLista * 0.79 : null;
-      const cuotas12 = precioLista ? (precioLista * 1.19) / 12 : null;
+      const cuotas6 = precioLista ? (precioLista * 0.93) / 6 : null;
+      const precioConDescuento = precioLista ? precioLista * 0.79  : null;
+      const cuotas12 = precioLista ? ((precioLista * 1.07) / 12)  : null;
 
       productoActual = codigo;
 
@@ -438,3 +438,4 @@ document.getElementById("tamano-texto").addEventListener("wheel", function(e) {
   </script>
 </body>
 </html>
+
