@@ -10394,4 +10394,278 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
+
+
+
+
+
+
+//  18 11 2025  //
+
+{
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Drean RZD215PVARX0 215 lts Inox ciclica estantes de vidrio/Puerta Reversible',
+    imagen: "images/heladeras/Heladera Drean RZD215PVARX0 215 lts Inox ciclica estantes de vidrio Puerta Reversible 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Drean RZD215PVARX0 215 lts Inox ciclica estantes de vidrio Puerta Reversible 1.webp",
+        "images/heladeras/Heladera Drean RZD215PVARX0 215 lts Inox ciclica estantes de vidrio Puerta Reversible 2.webp",
+        "images/heladeras/Heladera Drean RZD215PVARX0 215 lts Inox ciclica estantes de vidrio Puerta Reversible 3.webp",
+        "images/heladeras/Heladera Drean RZD215PVARX0 215 lts Inox ciclica estantes de vidrio Puerta Reversible 4.webp",
+        "images/heladeras/Heladera Drean RZD215PVARX0 215 lts Inox ciclica estantes de vidrio Puerta Reversible 5.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 141 x 55 x 55\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 215\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A++',
+    codigo: "2075687",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075687",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Telefunken TFK-RF300GE/TFK-HD300D Gris c/dispenser c/freezer 300 lts ciclica',
+    imagen: "images/heladeras/Heladera Telefunken TFK-RF300GE TFK-HD300D Gris c dispenser c freezer 300 lts ciclica 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Telefunken TFK-RF300GE TFK-HD300D Gris c dispenser c freezer 300 lts ciclica 1.webp",
+        "images/heladeras/Heladera Telefunken TFK-RF300GE TFK-HD300D Gris c dispenser c freezer 300 lts ciclica 2.webp",
+        "images/heladeras/Heladera Telefunken TFK-RF300GE TFK-HD300D Gris c dispenser c freezer 300 lts ciclica 3.webp",
+        "images/heladeras/Heladera Telefunken TFK-RF300GE TFK-HD300D Gris c dispenser c freezer 300 lts ciclica 4.webp",
+        "images/heladeras/Heladera Telefunken TFK-RF300GE TFK-HD300D Gris c dispenser c freezer 300 lts ciclica 5.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 170 x 54 x 53\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075689",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075689",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver',
+    imagen: "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 1.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 2.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 3.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 4.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 5.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 6.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 7.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 8.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFSL 6kg Inverter carga frontal Silver 9.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2075176",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075176",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Kanji KJH-WMCFWT 6kg Inverter carga frontal Blanco',
+    imagen: "images/lavarropas/Lavarropas Kanji KJH-WMCFWT 6kg Inverter carga frontal Blanco 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFWT 6kg Inverter carga frontal Blanco 1.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFWT 6kg Inverter carga frontal Blanco 2.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFWT 6kg Inverter carga frontal Blanco 3.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFWT 6kg Inverter carga frontal Blanco 4.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCFWT 6kg Inverter carga frontal Blanco 5.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1000\n<strong>Inverter:</strong> Sí',
+    codigo: "2075164",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075164",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Atma MATDGB28UAP 28lts digital c/ grill Black',
+    imagen: "images/microondas/Microondas Atma MATDGB28UAP 28lts digital c grill Black 1.webp",
+    imagenes: [
+        "images/microondas/Microondas Atma MATDGB28UAP 28lts digital c grill Black 1.webp",
+        "images/microondas/Microondas Atma MATDGB28UAP 28lts digital c grill Black 2.webp",
+        "images/microondas/Microondas Atma MATDGB28UAP 28lts digital c grill Black 3.webp",
+        "images/microondas/Microondas Atma MATDGB28UAP 28lts digital c grill Black 4.webp",
+        "images/microondas/Microondas Atma MATDGB28UAP 28lts digital c grill Black 5.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 28\n<strong>Potencia (W):</strong> 900\n<strong>Grill:</strong> Sí',
+    codigo: "2075192",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075192",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Bgh B120DB20I 20 lts digital Eco Blanco',
+    imagen: "images/microondas/Microondas Bgh B120DB20I 20 lts digital Eco Blanco 1.webp",
+    imagenes: [
+        "images/microondas/Microondas Bgh B120DB20I 20 lts digital Eco Blanco 1.webp",
+        "images/microondas/Microondas Bgh B120DB20I 20 lts digital Eco Blanco 2.webp",
+        "images/microondas/Microondas Bgh B120DB20I 20 lts digital Eco Blanco 3.webp",
+        "images/microondas/Microondas Bgh B120DB20I 20 lts digital Eco Blanco 4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 20\n<strong>Potencia (W):</strong> 700',
+    codigo: "2075374",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2075374",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas BGH B120M20I Mecanico 20lts Blanco',
+    imagen: "images/microondas/Microondas BGH B120M20I Mecanico 20lts Blanco 1.webp",
+    imagenes: [
+        "images/microondas/Microondas BGH B120M20I Mecanico 20lts Blanco 1.webp",
+        "images/microondas/Microondas BGH B120M20I Mecanico 20lts Blanco 2.webp",
+        "images/microondas/Microondas BGH B120M20I Mecanico 20lts Blanco 3.webp",
+        "images/microondas/Microondas BGH B120M20I Mecanico 20lts Blanco 4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 20\n<strong>Potencia (W):</strong> 700',
+    codigo: "2075419",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2075419",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts',
+    imagen: "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 1.webp",
+    imagenes: [
+        "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 1.webp",
+        "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 2.webp",
+        "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 3.webp",
+        "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 4.webp",
+        "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 5.webp",
+        "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 6.webp",
+        "images/microondas/Microondas BGH B223DS20I 23 Lts Digital Silver 1250wts 7.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 23\n<strong>Potencia (W):</strong> 800\n<strong>Grill:</strong> Sí',
+    codigo: "2073025",
+    caracteristicas: [
+        "Marca: BGH",
+        "Modelo: 2073025",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas H&A (kanji) 23lts MW2XNX002 analogico',
+    imagen: "images/microondas/Microondas H&A kanji 23lts MW2XNX002 analogico 1.webp",
+    imagenes: [
+        "images/microondas/Microondas H&A kanji 23lts MW2XNX002 analogico 1.webp",
+        "images/microondas/Microondas H&A kanji 23lts MW2XNX002 analogico 2.webp",
+        "images/microondas/Microondas H&A kanji 23lts MW2XNX002 analogico 3.webp",
+        "images/microondas/Microondas H&A kanji 23lts MW2XNX002 analogico 4.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 23\n<strong>Potencia (W):</strong> 1200',
+    codigo: "2075421",
+    caracteristicas: [
+        "Marca: H&A",
+        "Modelo: 2075421",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Philco MPHDW20UAP 20lts digital blanco',
+    imagen: "images/microondas/Microondas Philco MPHDW20UAP 20lts digital blanco 1.webp",
+    imagenes: [
+        "images/microondas/Microondas Philco MPHDW20UAP 20lts digital blanco 1.webp",
+        "images/microondas/Microondas Philco MPHDW20UAP 20lts digital blanco 2.webp",
+        "images/microondas/Microondas Philco MPHDW20UAP 20lts digital blanco 3.webp",
+        "images/microondas/Microondas Philco MPHDW20UAP 20lts digital blanco 4.webp",
+        "images/microondas/Microondas Philco MPHDW20UAP 20lts digital blanco 5.webp",
+        "images/microondas/Microondas Philco MPHDW20UAP 20lts digital blanco 6.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 20\n<strong>Potencia (W):</strong> 700',
+    codigo: "2075167",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075167",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Philco MPHDW23UAP 23 Lts. digital blanco',
+    imagen: "images/microondas/Microondas Philco MPHDW23UAP 23 Lts. digital blanco 1.webp",
+    imagenes: [
+        "images/microondas/Microondas Philco MPHDW23UAP 23 Lts. digital blanco 1.webp",
+        "images/microondas/Microondas Philco MPHDW23UAP 23 Lts. digital blanco 2.webp",
+        "images/microondas/Microondas Philco MPHDW23UAP 23 Lts. digital blanco 3.webp",
+        "images/microondas/Microondas Philco MPHDW23UAP 23 Lts. digital blanco 4.webp",
+        "images/microondas/Microondas Philco MPHDW23UAP 23 Lts. digital blanco 5.webp",
+        "images/microondas/Microondas Philco MPHDW23UAP 23 Lts. digital blanco 6.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 23\n<strong>Potencia (W):</strong> 900',
+    codigo: "2075168",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075168",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Philco MPHRW20AN/UAP 20lts rotativo blanco',
+    imagen: "images/microondas/Microondas Philco MPHRW20AN UAP 20lts rotativo blanco 1.webp",
+    imagenes: [
+        "images/microondas/Microondas Philco MPHRW20AN UAP 20lts rotativo blanco 1.webp",
+        "images/microondas/Microondas Philco MPHRW20AN UAP 20lts rotativo blanco 2.webp",
+        "images/microondas/Microondas Philco MPHRW20AN UAP 20lts rotativo blanco 3.webp",
+        "images/microondas/Microondas Philco MPHRW20AN UAP 20lts rotativo blanco 4.webp",
+        "images/microondas/Microondas Philco MPHRW20AN UAP 20lts rotativo blanco 5.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 20\n<strong>Potencia (W):</strong> 700',
+    codigo: "2074676",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2074676",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Microondas",
+    nombre: 'Microondas Whirlpool WMS20BS 20LTS Digital Silver',
+    imagen: "images/microondas/Microondas Whirlpool WMS20BS 20LTS Digital Silver 1.webp",
+    imagenes: [
+        "images/microondas/Microondas Whirlpool WMS20BS 20LTS Digital Silver 1.webp",
+        "images/microondas/Microondas Whirlpool WMS20BS 20LTS Digital Silver 2.webp",
+        "images/microondas/Microondas Whirlpool WMS20BS 20LTS Digital Silver 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 20\n<strong>Potencia (W):</strong> 700',
+    codigo: "2075501",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2075501",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
 ];
