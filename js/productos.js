@@ -10792,5 +10792,47 @@ const productos = [
     ]
 },
 
+    {
+    categoria: "Hogar, Jardín y Tiempo Libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Gravity Benz NV/BA MTB R29 Aluminio talle M-L',
+    imagen: "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 1.webp",
+    imagenes: [
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 1.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 2.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 3.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 4.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 5.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Mountain Bike\n<strong>Material:</strong> Aluminio\n<strong>Rodado:</strong> 29\n<strong>Tipo de frenos:</strong> Disco',
+    codigo: "2075393",
+    caracteristicas: [
+        "Marca: Gravity Benz",
+        "Modelo: 2075393",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, Jardín y Tiempo Libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Kanji MTB R29 Unisex ALuminio KJW-29ALU 21v. freno a disco suspencion c/bloqueo',
+    imagen: "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 1.webp",
+    imagenes: [
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 1.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 2.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 3.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 4.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 5.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 6.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Mountain Bike\n<strong>Material:</strong> Aluminio\n<strong>Rodado:</strong> 29\n<strong>Tipo de frenos:</strong> Disco',
+    codigo: "2075551",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075551",
+        "Garantía: 1 año"
+    ]
+},
+
 
 ];
