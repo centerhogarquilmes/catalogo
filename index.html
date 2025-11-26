@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Center Hogar Quilmes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.webp" type="image/x-icon">
@@ -390,9 +390,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="precios.js"></script>
-<script src="productos.js"></script>
-<script src="scripts.js"></script>
+<script src="js/precios.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/scripts.js"></script>
 <script>
 // Funcionalidad del carrusel
 const slides = document.querySelectorAll('.slide');
@@ -503,7 +503,7 @@ if (productosDestacados.length === 0) {
             return;
         }
 
-        // Obtener datos desde precios.js
+        // Obtener datos desde js/precios.js
         const datosDinamicos = precios && precios[producto.codigo] ? precios[producto.codigo] : { precio_tarjeta: 'No disponible', stock_sucursal: 0, stock_deposito: 0 };
         const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
         const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
@@ -585,4 +585,5 @@ $(document).ready(function(){
 </body>
 
 </html>
+
 

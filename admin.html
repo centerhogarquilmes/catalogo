@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/logo.webp" type="image/x-icon">
     <style>
         body {
@@ -678,6 +678,7 @@
 
     </style>
 </head>
+</head>
 <body>
     <!-- Pestañas de navegación -->
     <div class="tabs">
@@ -753,7 +754,7 @@
                 <div id="dynamic-fields"></div>
                 <div class="button-group"></div>
                 <button type="submit" class="btn-agregar">Agregar Producto</button>
-                <button class="btn-exportar" onclick="exportProducts()">Exportar productos.js</button>
+                <button class="btn-exportar" onclick="exportProducts()">Exportar js/productos.js</button>
                 <button class="btn-limpiar" onclick="clearProducts()">Limpiar Lista</button>
                 </div>
                 <div id="success-message" class="success-message"></div>
@@ -800,13 +801,13 @@
     <canvas id="chartVisitas"></canvas>
 
 
-    <script src="productos.js"></script>
+    <script src="js/productos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script>
     let productosCSV = [];
 
     // Cargar CSV de productos
-    Papa.parse("productos.csv", {
+    Papa.parse("Datos/productos.csv", {
         download: true,
         header: true,
         delimiter: ";",
@@ -820,7 +821,7 @@
     });
     </script>
 
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 <script>
     // Gestión de pestañas
     function openTab(tabName) {
@@ -939,11 +940,11 @@ function getNombrePorCodigo(codigo) {
         return (n && n.trim()) ? n.trim() : 'Desconocido';
     }
 
-    // 2) fallback: buscar en productos (productos.js)
+    // 2) fallback: buscar en productos (js/productos.js)
     if (typeof productos !== 'undefined' && Array.isArray(productos)) {
         const prod = productos.find(p => normalizeCode(p.codigo) === codNorm);
         if (prod) {
-            // varios nombres posibles según tu productos.js
+            // varios nombres posibles según tu js/productos.js
             return prod.nombre || prod.Nombre || prod.name || prod.title || prod.descripcion || prod.Descripcion || 'Desconocido';
         }
     }
@@ -1159,7 +1160,7 @@ function verificarYMostrar(codigos) {
     if (unknowns.length) {
         console.warn('Codigos sin nombre encontrado (hasta 20):', unknowns.slice(0,20));
     } else {
-        console.log('Todos los códigos encontraron nombre (o estaban en productos.js).');
+        console.log('Todos los códigos encontraron nombre (o estaban en js/productos.js).');
     }
 
 
@@ -2046,7 +2047,7 @@ document.getElementById('product-form').addEventListener('submit', (e) => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'productos.js';
+        a.download = 'js/productos.js';
         a.click();
         URL.revokeObjectURL(url);
     }

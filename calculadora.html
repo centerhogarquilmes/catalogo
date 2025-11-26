@@ -8,9 +8,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Calculadora Center Hogar</title>
-  <link rel="stylesheet" href="calculadora.css">
+  <link rel="stylesheet" href="css/calculadora.css">
   <link rel="icon" href="images/logo.webp" type="image/x-icon">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="js/manifest.json">
 </head>
 <body>
   <div class="calculadora">
@@ -154,12 +154,12 @@
     </div>
   </div>
 
-  <script src="productos.js"></script>
-  <script src="calculadora.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/calculadora.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
+        navigator.serviceWorker.register('js/sw.js')
           .then(reg => console.log('SW registrado:', reg))
           .catch(err => console.log('Error SW:', err));
       });

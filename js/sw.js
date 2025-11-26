@@ -2,9 +2,9 @@ const CACHE_NAME = 'calculadora-v2';
 const urlsToCache = [
   '/catalogo/',
   '/catalogo/calculadora.html',
-  '/catalogo/calculadora.css',
-  '/catalogo/calculadora.js',
-  '/catalogo/manifest.json',
+  '/catalogo/css/calculadora.css',
+  '/catalogo/js/calculadora.js',
+  '/catalogo/js/manifest.json',
   '/catalogo/images/logo_192.png',
   '/catalogo/images/logo_512.png'
 ];

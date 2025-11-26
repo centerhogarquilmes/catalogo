@@ -1,4 +1,4 @@
-/// calculadora.js - CON PERSISTENCIA DE INTERESES ///
+/// js/calculadora.js - CON PERSISTENCIA DE INTERESES ///
 
 let visor = null;
 let historial = [];

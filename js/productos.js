@@ -14,7 +14,7 @@ const productosDestacados = [
     
 ];
 
-// productos.js
+// js/productos.js
 const productosEnPromocion = [
   '2075643',  // Ejemplo de código de producto en promoción
   '2074900',

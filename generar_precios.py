@@ -2,8 +2,8 @@ import csv
 import json
 import re
 
-csv_file = "productos.csv"
-output_file = "precios.js"
+csv_file = "Datos/productos.csv"
+output_file = "js/precios.js"
 
 SUCURSAL_LOCAL = "QUILMES"
 

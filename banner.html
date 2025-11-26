@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Generador de Banners</title>
-  <script src="productos.js"></script>
-  <script src="precios.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/precios.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <style>
     body {
       font-family: 'Roboto', Arial, sans-serif;
@@ -295,9 +295,9 @@
 
       const datos = precios[codigo] || { precio_tarjeta: 'No disponible' };
       const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
-      const cuotas6 = precioLista ? (precioLista * 0.93) / 6 : null;
-      const precioConDescuento = precioLista ? precioLista * 0.79  : null;
-      const cuotas12 = precioLista ? ((precioLista * 1.07) / 12)  : null;
+      const cuotas6 = precioLista ? precioLista / 6 : null;
+      const precioConDescuento = precioLista ? precioLista * 0.79 : null;
+      const cuotas12 = precioLista ? (precioLista * 1.19) / 12 : null;
 
       productoActual = codigo;
 
@@ -438,4 +438,3 @@ document.getElementById("tamano-texto").addEventListener("wheel", function(e) {
   </script>
 </body>
 </html>
-
