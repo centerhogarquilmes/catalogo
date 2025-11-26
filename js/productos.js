@@ -10665,6 +10665,132 @@ const productos = [
     ]
 },
 
+//   26 11 2025   //
+
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Kanji Portatil KJH-AA3650 3650w F/C c/wifi',
+    imagen: "images/aires_acondicionados/Acond Kanji Portatil KJH-AA3650 3650w F C c wifi 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Kanji Portatil KJH-AA3650 3650w F C c wifi 1.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil KJH-AA3650 3650w F C c wifi 2.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil KJH-AA3650 3650w F C c wifi 3.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil KJH-AA3650 3650w F C c wifi 4.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil KJH-AA3650 3650w F C c wifi 5.webp",
+        "images/aires_acondicionados/Acond Kanji Portatil KJH-AA3650 3650w F C c wifi 6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3650\n<strong>Tipo:</strong> Portátil\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2072020",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2072020",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hornos, Microondas y Freidoras",
+    subcategoria: "Freidoras",
+    nombre: 'Freidora Westinghouse de aire WKAF406 5lts digital',
+    imagen: "images/freidoras/Freidora Westinghouse de aire WKAF406 5lts digital 1.webp",
+    imagenes: [
+        "images/freidoras/Freidora Westinghouse de aire WKAF406 5lts digital 1.webp",
+        "images/freidoras/Freidora Westinghouse de aire WKAF406 5lts digital 2.webp",
+        "images/freidoras/Freidora Westinghouse de aire WKAF406 5lts digital 3.webp",
+        "images/freidoras/Freidora Westinghouse de aire WKAF406 5lts digital 4.webp",
+        "images/freidoras/Freidora Westinghouse de aire WKAF406 5lts digital 5.webp"
+    ],
+    descripcion: '<strong>Capacidad (Litros):</strong> 5\n<strong>Potencia (W):</strong> 1400',
+    codigo: "2075196",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2075196",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Robot Westinghouse WFVCRK185',
+    imagen: "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 1.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 2.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 3.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 4.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 5.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 6.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK185 7.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1000\n<strong>Capacidad (Litros):</strong> 650mL\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Batería',
+    codigo: "2075695",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2075695",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Yelmo AS 3210 1100W 2.5lts c/bolsa',
+    imagen: "images/aspiradoras/Aspiradora Yelmo AS 3210 1100W 2 5lts c bolsa 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Yelmo AS 3210 1100W 2 5lts c bolsa 1.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3210 1100W 2 5lts c bolsa 2.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3210 1100W 2 5lts c bolsa 3.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3210 1100W 2 5lts c bolsa 4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1100\n<strong>Capacidad (Litros):</strong> 2,5\n<strong>Bolsa:</strong> Sí\n<strong>Tipo de alimentación:</strong> Corriente eléctrica',
+    codigo: "2070610",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2070610",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, Jardín y Tiempo Libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v.',
+    imagen: "images/bicicletas/Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v 1.webp",
+    imagenes: [
+        "images/bicicletas/Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v 1.webp",
+        "images/bicicletas/Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v 2.webp",
+        "images/bicicletas/Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v 3.webp",
+        "images/bicicletas/Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v 4.webp",
+        "images/bicicletas/Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v 5.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Mountain Bike\n<strong>Material:</strong> Acero\n<strong>Rodado:</strong> 29\n<strong>Tipo de frenos:</strong> V Brake',
+    codigo: "2074105",
+    caracteristicas: [
+        "Marca: Futura",
+        "Modelo: 2074105",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, Jardín y Tiempo Libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. GCA MTB R29 Hombre Aluminio Zeus 21v.',
+    imagen: "images/bicicletas/Bic GCA MTB R29 Hombre Aluminio Zeus 21v 1.webp",
+    imagenes: [
+        "images/bicicletas/Bic GCA MTB R29 Hombre Aluminio Zeus 21v 1.webp",
+        "images/bicicletas/Bic-GCA-MTB-R29-Hombre-Aluminio-Zeus-21v-2.webp",
+        "images/bicicletas/Bic-GCA-MTB-R29-Hombre-Aluminio-Zeus-21v-3.webp",
+        "images/bicicletas/Bic-GCA-MTB-R29-Hombre-Aluminio-Zeus-21v-4.webp",
+        "images/bicicletas/Bic-GCA-MTB-R29-Hombre-Aluminio-Zeus-21v-5.webp",
+        "images/bicicletas/Bic-GCA-MTB-R29-Hombre-Aluminio-Zeus-21v-6.webp",
+        "images/bicicletas/Bic-GCA-MTB-R29-Hombre-Aluminio-Zeus-21v-7.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Mountain Bike\n<strong>Material:</strong> Aluminio\n<strong>Rodado:</strong> 29\n<strong>Tipo de frenos:</strong> Disco',
+    codigo: "2074812",
+    caracteristicas: [
+        "Marca: GCA",
+        "Modelo: 2074812",
+        "Garantía: 1 año"
+    ]
+},
 
 
 ];
