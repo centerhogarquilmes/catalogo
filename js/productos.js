@@ -10750,7 +10750,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, Jardín y Tiempo Libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Bicicletas",
     nombre: 'Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v.',
     imagen: "images/bicicletas/Bici. Futura MTB R29 Hombre Acero 5300 Techno 21v 1.webp",
@@ -10770,7 +10770,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, Jardín y Tiempo Libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Bicicletas",
     nombre: 'Bici. GCA MTB R29 Hombre Aluminio Zeus 21v.',
     imagen: "images/bicicletas/Bic GCA MTB R29 Hombre Aluminio Zeus 21v 1.webp",
@@ -10793,7 +10793,7 @@ const productos = [
 },
 
     {
-    categoria: "Hogar, Jardín y Tiempo Libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Bicicletas",
     nombre: 'Bici. Gravity Benz NV/BA MTB R29 Aluminio talle M-L',
     imagen: "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 1.webp",
@@ -10813,7 +10813,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Hogar, Jardín y Tiempo Libre",
+    categoria: "hogar jardin y tiempo libre",
     subcategoria: "Bicicletas",
     nombre: 'Bici. Kanji MTB R29 Unisex ALuminio KJW-29ALU 21v. freno a disco suspencion c/bloqueo',
     imagen: "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 1.webp",
