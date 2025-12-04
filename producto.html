@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
     const precioTexto = precioLista ? `$${precioLista.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
-    const precioConDescuento = precioLista ? precioLista * 0.79 : null;
+    const precioConDescuento = precioLista ? precioLista * 0.82 : null;
     const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
 
     const precioBase = precioConDescuento || precioLista;
@@ -296,25 +296,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cuotas = precioLista ? [
     { 
+        cuotas: 3, 
+        texto: '3 Cuotas sin interés con todas las tarjetas', 
+        texto: '3 Cuotas sin interés con tarjetas de crédito de banco',
+        precio: (precioConDescuento  / 3)
+    },
+    { 
         cuotas: 6, 
         texto: '6 Cuotas sin interés con todas las tarjetas', 
         texto: '6 Cuotas con 7% de descuento con tarjetas de crédito de banco',
         precio: (precioLista * 0.93) / 6
-//      precio: (precioLista / 6)
+//        precio: (precioLista / 6)
         
     },
     { 
         cuotas: 9, 
         texto: '9 Cuotas sin interés con tarjetas de crédito de banco', 
         precio: (precioLista / 9) 
-        //        precio: (precioLista *  / 9)
  
     },
+
     { 
         cuotas: 12, 
         texto: '12 Cuotas fijas con tarjetas de crédito de banco', 
-        precio: ((precioLista * 1.07) / 12) 
+        precio: (precioLista/ 12) , //0%
+//        precio: ((precioLista * 1.07) / 12) // +7%
     }
+
 ] : [];
 
 
@@ -333,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const discountLabel = document.createElement('p');
     discountLabel.className = 'discount-label';
-    discountLabel.textContent = '21% OFF CONTADO';
+    discountLabel.textContent = '18% OFF CONTADO';
     codigoEl.insertAdjacentElement('afterend', discountLabel);
 
     const shareButton = document.createElement('button');
@@ -414,6 +422,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const cuotaEl = document.createElement('p');
             cuotaEl.className = `product-cuota product-cuota-${cuota.cuotas}`;
             let imgSrc, imgClass;
+            if (cuota.cuotas === 3) {
+                imgSrc = 'images/tarjetas_de_credito.png';
+                imgClass = 'cuota-card-icon';
+            }
             if (cuota.cuotas === 6) {
                 imgSrc = 'images/tarjetas_de_credito.png';
                 imgClass = 'cuota-card-icon';

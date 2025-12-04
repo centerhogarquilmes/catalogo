@@ -286,7 +286,7 @@
         <h2 class="video-title">Estas son nuestras ofertas de la semana!!!</h2>
         <div class="video-container">
             <video controls autoplay muted loop poster="images/poster_celulares.jpg">
-                <source src="videos/center (1).mp4" type="video/mp4">
+                <source src="videos/center.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
@@ -506,7 +506,7 @@ if (productosDestacados.length === 0) {
         const precioLista = datosDinamicos.precio_tarjeta !== 'No disponible' ? parseFloat(datosDinamicos.precio_tarjeta) : null;
         const precioTextoLista = precioLista ? `$${precioLista.toLocaleString('es-AR')}` : 'Consultar precio';
 
-        const precioConDescuento = precioLista ? precioLista * 0.79 : null;
+        const precioConDescuento = precioLista ? precioLista * 0.82 : null;
         const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR')}` : 'Consultar precio';
 
         const precioAntesImpuestos = precioConDescuento ? `$${(precioConDescuento * 0.8265).toLocaleString('es-AR', { minimumFractionDigits: 2 })}` : 'Consultar precio';
@@ -518,7 +518,7 @@ if (productosDestacados.length === 0) {
         card.innerHTML = `
             <a href="producto.html?nombre=${encodeURIComponent(producto.nombre)}&categoria=${encodeURIComponent(producto.categoria)}&subcategoria=${encodeURIComponent(producto.subcategoria || '')}&imagen=${encodeURIComponent(producto.imagen)}&imagenes=${producto.imagenes.map(img => encodeURIComponent(img)).join(',')}&descripcion=${encodeURIComponent(producto.descripcion)}&caracteristicas=${producto.caracteristicas.map(c => encodeURIComponent(c)).join(',')}">
                 ${isAgotado ? '<span class="agotado-label">Agotado</span>' : ''}
-                <span class="discount-label">21% OFF</span>
+                <span class="discount-label">18% OFF</span>
                 <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.onerror=null; this.src='images/nomedia_trans.png';">
                 <div class="text-container">
                     <h3>${producto.nombre}</h3>
@@ -576,7 +576,12 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
 </script>
 </body>
+
 </html>
+
 
