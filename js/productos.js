@@ -7,7 +7,6 @@ const productosDestacados = [
     "2074048", //Turbo Liliana 22" VTFM22 parrilla cromada-3 aspas met. repeler
     "2075005", //LIBERADO Samsung A05 4/64GB
     "14546", //Pileta Sol de Verano S 300 3X2,20X0,70 4620 LTS APROX.
-    "2074136", //Heladera Philco PHCT341B ciclica 340Lts Blanca
     "2075387", //Lavarropas Philco PHCS07B carga superior 5.5kg 750RPM Gris
     "2074710", //Cocina Florencia 5818 Semi-Industrial Inox 56 cm multigas
     "2075163", //Freezer TELEFUNKEN de pozo 120 lts FP120
