@@ -276,7 +276,7 @@ const precios = {
   },
   "2075708": {
     "stock_sucursal": 0,
-    "stock_deposito": 13,
+    "stock_deposito": 12,
     "precio_tarjeta": 13089.0
   },
   "2075691": {
@@ -326,7 +326,7 @@ const precios = {
   },
   "17167": {
     "stock_sucursal": 4,
-    "stock_deposito": 35,
+    "stock_deposito": 33,
     "precio_tarjeta": 15959.0
   },
   "20663": {
@@ -381,7 +381,7 @@ const precios = {
   },
   "2074929": {
     "stock_sucursal": 0,
-    "stock_deposito": 14,
+    "stock_deposito": 13,
     "precio_tarjeta": 18659.0
   },
   "13372": {
@@ -451,7 +451,7 @@ const precios = {
   },
   "2075516": {
     "stock_sucursal": 0,
-    "stock_deposito": 70,
+    "stock_deposito": 68,
     "precio_tarjeta": 20569.0
   },
   "2074095": {
@@ -471,7 +471,7 @@ const precios = {
   },
   "2075700": {
     "stock_sucursal": 0,
-    "stock_deposito": 19,
+    "stock_deposito": 15,
     "precio_tarjeta": 21189.0
   },
   "13975": {
@@ -716,7 +716,7 @@ const precios = {
   },
   "2073789": {
     "stock_sucursal": 0,
-    "stock_deposito": 16,
+    "stock_deposito": 15,
     "precio_tarjeta": 26899.0
   },
   "2075404": {
@@ -781,7 +781,7 @@ const precios = {
   },
   "2074678": {
     "stock_sucursal": 0,
-    "stock_deposito": 14,
+    "stock_deposito": 13,
     "precio_tarjeta": 27919.0
   },
   "2074808": {
@@ -801,7 +801,7 @@ const precios = {
   },
   "2073401": {
     "stock_sucursal": 1,
-    "stock_deposito": 14,
+    "stock_deposito": 13,
     "precio_tarjeta": 28899.0
   },
   "2075275": {
@@ -811,7 +811,7 @@ const precios = {
   },
   "2072258": {
     "stock_sucursal": 0,
-    "stock_deposito": 14,
+    "stock_deposito": 13,
     "precio_tarjeta": 28989.0
   },
   "2074716": {
@@ -861,12 +861,12 @@ const precios = {
   },
   "2074858": {
     "stock_sucursal": 1,
-    "stock_deposito": 12,
+    "stock_deposito": 10,
     "precio_tarjeta": 29989.0
   },
   "2075746": {
     "stock_sucursal": 0,
-    "stock_deposito": 9,
+    "stock_deposito": 7,
     "precio_tarjeta": 29989.0
   },
   "2072617": {
@@ -906,7 +906,7 @@ const precios = {
   },
   "2074672": {
     "stock_sucursal": 0,
-    "stock_deposito": 16,
+    "stock_deposito": 15,
     "precio_tarjeta": 30899.0
   },
   "19500": {
@@ -951,7 +951,7 @@ const precios = {
   },
   "2072975": {
     "stock_sucursal": 2,
-    "stock_deposito": 18,
+    "stock_deposito": 17,
     "precio_tarjeta": 31289.0
   },
   "2070487": {
@@ -1026,7 +1026,7 @@ const precios = {
   },
   "2075155": {
     "stock_sucursal": 0,
-    "stock_deposito": 22,
+    "stock_deposito": 20,
     "precio_tarjeta": 32599.0
   },
   "2073449": {
@@ -1046,7 +1046,7 @@ const precios = {
   },
   "2071073": {
     "stock_sucursal": 1,
-    "stock_deposito": 18,
+    "stock_deposito": 17,
     "precio_tarjeta": 32989.0
   },
   "2074790": {
@@ -1146,7 +1146,7 @@ const precios = {
   },
   "2071301": {
     "stock_sucursal": 0,
-    "stock_deposito": 21,
+    "stock_deposito": 20,
     "precio_tarjeta": 34899.0
   },
   "2071421": {
@@ -1161,7 +1161,7 @@ const precios = {
   },
   "2075729": {
     "stock_sucursal": 2,
-    "stock_deposito": 8,
+    "stock_deposito": 9,
     "precio_tarjeta": 35099.0
   },
   "2072638": {
@@ -1341,7 +1341,7 @@ const precios = {
   },
   "2075597": {
     "stock_sucursal": 0,
-    "stock_deposito": 14,
+    "stock_deposito": 13,
     "precio_tarjeta": 38989.0
   },
   "2074563": {
@@ -1401,7 +1401,7 @@ const precios = {
   },
   "2070374": {
     "stock_sucursal": 0,
-    "stock_deposito": 24,
+    "stock_deposito": 23,
     "precio_tarjeta": 39999.0
   },
   "2075177": {
@@ -1461,7 +1461,7 @@ const precios = {
   },
   "2075330": {
     "stock_sucursal": 0,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 42899.0
   },
   "2072132": {
@@ -1531,7 +1531,7 @@ const precios = {
   },
   "2074931": {
     "stock_sucursal": 0,
-    "stock_deposito": 9,
+    "stock_deposito": 13,
     "precio_tarjeta": 43149.0
   },
   "2074662": {
@@ -1576,7 +1576,7 @@ const precios = {
   },
   "2069683": {
     "stock_sucursal": 0,
-    "stock_deposito": 21,
+    "stock_deposito": 20,
     "precio_tarjeta": 43999.0
   },
   "2075297": {
@@ -1601,7 +1601,7 @@ const precios = {
   },
   "2075553": {
     "stock_sucursal": 5,
-    "stock_deposito": 12,
+    "stock_deposito": 11,
     "precio_tarjeta": 44989.0
   },
   "2075556": {
@@ -1616,7 +1616,7 @@ const precios = {
   },
   "2074712": {
     "stock_sucursal": 0,
-    "stock_deposito": 15,
+    "stock_deposito": 14,
     "precio_tarjeta": 45189.0
   },
   "2071997": {
@@ -1726,7 +1726,7 @@ const precios = {
   },
   "2070927": {
     "stock_sucursal": 0,
-    "stock_deposito": 19,
+    "stock_deposito": 17,
     "precio_tarjeta": 45989.0
   },
   "14506": {
@@ -1831,7 +1831,7 @@ const precios = {
   },
   "2075603": {
     "stock_sucursal": 0,
-    "stock_deposito": 10,
+    "stock_deposito": 9,
     "precio_tarjeta": 47899.0
   },
   "2072602": {
@@ -1876,7 +1876,7 @@ const precios = {
   },
   "2075786": {
     "stock_sucursal": 0,
-    "stock_deposito": 12,
+    "stock_deposito": 10,
     "precio_tarjeta": 48789.0
   },
   "2074100": {
@@ -1891,17 +1891,17 @@ const precios = {
   },
   "2071662": {
     "stock_sucursal": 0,
-    "stock_deposito": 14,
+    "stock_deposito": 13,
     "precio_tarjeta": 48989.0
   },
   "2074515": {
     "stock_sucursal": 0,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 48989.0
   },
   "2074697": {
     "stock_sucursal": 0,
-    "stock_deposito": 15,
+    "stock_deposito": 14,
     "precio_tarjeta": 48989.0
   },
   "2073767": {
@@ -1971,7 +1971,7 @@ const precios = {
   },
   "2075720": {
     "stock_sucursal": 0,
-    "stock_deposito": 41,
+    "stock_deposito": 40,
     "precio_tarjeta": 49599.0
   },
   "2074703": {
@@ -2011,7 +2011,7 @@ const precios = {
   },
   "2074755": {
     "stock_sucursal": 0,
-    "stock_deposito": 6,
+    "stock_deposito": 4,
     "precio_tarjeta": 49989.0
   },
   "2070885": {
@@ -2031,7 +2031,7 @@ const precios = {
   },
   "2075450": {
     "stock_sucursal": 3,
-    "stock_deposito": 42,
+    "stock_deposito": 40,
     "precio_tarjeta": 49999.0
   },
   "2074663": {
@@ -2066,7 +2066,7 @@ const precios = {
   },
   "2075510": {
     "stock_sucursal": 0,
-    "stock_deposito": 10,
+    "stock_deposito": 8,
     "precio_tarjeta": 51409.0
   },
   "2074807": {
@@ -2091,7 +2091,7 @@ const precios = {
   },
   "2074609": {
     "stock_sucursal": 2,
-    "stock_deposito": 13,
+    "stock_deposito": 11,
     "precio_tarjeta": 51989.0
   },
   "2075576": {
@@ -2126,7 +2126,7 @@ const precios = {
   },
   "2075132": {
     "stock_sucursal": 0,
-    "stock_deposito": 29,
+    "stock_deposito": 28,
     "precio_tarjeta": 52999.0
   },
   "2069051": {
@@ -2241,7 +2241,7 @@ const precios = {
   },
   "2075790": {
     "stock_sucursal": 0,
-    "stock_deposito": 15,
+    "stock_deposito": 13,
     "precio_tarjeta": 53989.0
   },
   "2073696": {
@@ -2336,7 +2336,7 @@ const precios = {
   },
   "2075066": {
     "stock_sucursal": 4,
-    "stock_deposito": 10,
+    "stock_deposito": 9,
     "precio_tarjeta": 55989.0
   },
   "2071903": {
@@ -2386,7 +2386,7 @@ const precios = {
   },
   "2071484": {
     "stock_sucursal": 2,
-    "stock_deposito": 10,
+    "stock_deposito": 9,
     "precio_tarjeta": 56989.0
   },
   "2074631": {
@@ -2481,7 +2481,7 @@ const precios = {
   },
   "2074307": {
     "stock_sucursal": 0,
-    "stock_deposito": 19,
+    "stock_deposito": 17,
     "precio_tarjeta": 58499.0
   },
   "2070489": {
@@ -2531,7 +2531,7 @@ const precios = {
   },
   "2075714": {
     "stock_sucursal": 2,
-    "stock_deposito": 90,
+    "stock_deposito": 83,
     "precio_tarjeta": 59889.0
   },
   "2070686": {
@@ -2576,7 +2576,7 @@ const precios = {
   },
   "2075748": {
     "stock_sucursal": 0,
-    "stock_deposito": 26,
+    "stock_deposito": 25,
     "precio_tarjeta": 59989.0
   },
   "2075749": {
@@ -2701,7 +2701,7 @@ const precios = {
   },
   "2075638": {
     "stock_sucursal": 0,
-    "stock_deposito": 36,
+    "stock_deposito": 33,
     "precio_tarjeta": 61989.0
   },
   "2075414": {
@@ -2766,7 +2766,7 @@ const precios = {
   },
   "2071925": {
     "stock_sucursal": 1,
-    "stock_deposito": 16,
+    "stock_deposito": 15,
     "precio_tarjeta": 62789.0
   },
   "2074567": {
@@ -2795,8 +2795,8 @@ const precios = {
     "precio_tarjeta": 62899.0
   },
   "2072620": {
-    "stock_sucursal": 5,
-    "stock_deposito": 63,
+    "stock_sucursal": 4,
+    "stock_deposito": 39,
     "precio_tarjeta": 62989.0
   },
   "2075560": {
@@ -2826,7 +2826,7 @@ const precios = {
   },
   "2075015": {
     "stock_sucursal": 0,
-    "stock_deposito": 33,
+    "stock_deposito": 24,
     "precio_tarjeta": 63989.0
   },
   "2072993": {
@@ -2876,7 +2876,7 @@ const precios = {
   },
   "2070488": {
     "stock_sucursal": 0,
-    "stock_deposito": 13,
+    "stock_deposito": 8,
     "precio_tarjeta": 64909.0
   },
   "2075268": {
@@ -2906,12 +2906,12 @@ const precios = {
   },
   "2073169": {
     "stock_sucursal": 1,
-    "stock_deposito": 16,
+    "stock_deposito": 14,
     "precio_tarjeta": 65989.0
   },
   "2075084": {
     "stock_sucursal": 0,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 65989.0
   },
   "2071473": {
@@ -2975,8 +2975,8 @@ const precios = {
     "precio_tarjeta": 67889.0
   },
   "2074628": {
-    "stock_sucursal": 5,
-    "stock_deposito": 109,
+    "stock_sucursal": 4,
+    "stock_deposito": 108,
     "precio_tarjeta": 68189.0
   },
   "2075390": {
@@ -2991,7 +2991,7 @@ const precios = {
   },
   "16845": {
     "stock_sucursal": 0,
-    "stock_deposito": 37,
+    "stock_deposito": 36,
     "precio_tarjeta": 68379.0
   },
   "2075555": {
@@ -3046,12 +3046,12 @@ const precios = {
   },
   "2070491": {
     "stock_sucursal": 0,
-    "stock_deposito": 23,
+    "stock_deposito": 17,
     "precio_tarjeta": 69869.0
   },
   "2074483": {
     "stock_sucursal": 2,
-    "stock_deposito": 59,
+    "stock_deposito": 58,
     "precio_tarjeta": 69899.0
   },
   "2075199": {
@@ -3059,12 +3059,12 @@ const precios = {
     "stock_deposito": 6,
     "precio_tarjeta": 69899.0
   },
-  "2071432": {
+  "2074043": {
     "stock_sucursal": 0,
-    "stock_deposito": 2,
+    "stock_deposito": 1,
     "precio_tarjeta": 69899.0
   },
-  "2074043": {
+  "2071432": {
     "stock_sucursal": 0,
     "stock_deposito": 1,
     "precio_tarjeta": 69899.0
@@ -3111,7 +3111,7 @@ const precios = {
   },
   "2073543": {
     "stock_sucursal": 4,
-    "stock_deposito": 27,
+    "stock_deposito": 23,
     "precio_tarjeta": 71019.0
   },
   "2074862": {
@@ -3136,7 +3136,7 @@ const precios = {
   },
   "2075515": {
     "stock_sucursal": 0,
-    "stock_deposito": 12,
+    "stock_deposito": 10,
     "precio_tarjeta": 71489.0
   },
   "2073030": {
@@ -3151,7 +3151,7 @@ const precios = {
   },
   "2075392": {
     "stock_sucursal": 3,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 71599.0
   },
   "2075002": {
@@ -3186,7 +3186,7 @@ const precios = {
   },
   "22399": {
     "stock_sucursal": 4,
-    "stock_deposito": 47,
+    "stock_deposito": 44,
     "precio_tarjeta": 73899.0
   },
   "2072786": {
@@ -3221,7 +3221,7 @@ const precios = {
   },
   "2075077": {
     "stock_sucursal": 0,
-    "stock_deposito": 17,
+    "stock_deposito": 16,
     "precio_tarjeta": 74989.0
   },
   "2075784": {
@@ -3256,7 +3256,7 @@ const precios = {
   },
   "2073079": {
     "stock_sucursal": 0,
-    "stock_deposito": 4,
+    "stock_deposito": 3,
     "precio_tarjeta": 75319.0
   },
   "2073712": {
@@ -3281,7 +3281,7 @@ const precios = {
   },
   "2072085": {
     "stock_sucursal": 2,
-    "stock_deposito": 4,
+    "stock_deposito": 3,
     "precio_tarjeta": 75329.0
   },
   "2074564": {
@@ -3311,17 +3311,17 @@ const precios = {
   },
   "2073937": {
     "stock_sucursal": 2,
-    "stock_deposito": 23,
-    "precio_tarjeta": 75899.0
-  },
-  "2074976": {
-    "stock_sucursal": 0,
-    "stock_deposito": 40,
+    "stock_deposito": 20,
     "precio_tarjeta": 75899.0
   },
   "2074148": {
     "stock_sucursal": 0,
     "stock_deposito": 2,
+    "precio_tarjeta": 75899.0
+  },
+  "2074976": {
+    "stock_sucursal": 0,
+    "stock_deposito": 19,
     "precio_tarjeta": 75899.0
   },
   "2075366": {
@@ -3346,7 +3346,7 @@ const precios = {
   },
   "2074086": {
     "stock_sucursal": 1,
-    "stock_deposito": 17,
+    "stock_deposito": 16,
     "precio_tarjeta": 76699.0
   },
   "2075234": {
@@ -3391,7 +3391,7 @@ const precios = {
   },
   "2071321": {
     "stock_sucursal": 0,
-    "stock_deposito": 15,
+    "stock_deposito": 14,
     "precio_tarjeta": 78989.0
   },
   "2074316": {
@@ -3416,7 +3416,7 @@ const precios = {
   },
   "2073510": {
     "stock_sucursal": 0,
-    "stock_deposito": 27,
+    "stock_deposito": 29,
     "precio_tarjeta": 79789.0
   },
   "2075495": {
@@ -3425,8 +3425,8 @@ const precios = {
     "precio_tarjeta": 79899.0
   },
   "2075554": {
-    "stock_sucursal": 3,
-    "stock_deposito": 53,
+    "stock_sucursal": 2,
+    "stock_deposito": 52,
     "precio_tarjeta": 79899.0
   },
   "2075482": {
@@ -3450,8 +3450,8 @@ const precios = {
     "precio_tarjeta": 79899.0
   },
   "2072568": {
-    "stock_sucursal": 5,
-    "stock_deposito": 94,
+    "stock_sucursal": 4,
+    "stock_deposito": 72,
     "precio_tarjeta": 79989.0
   },
   "2071651": {
@@ -3475,13 +3475,13 @@ const precios = {
     "precio_tarjeta": 79999.0
   },
   "2075577": {
-    "stock_sucursal": 2,
-    "stock_deposito": 3,
+    "stock_sucursal": 1,
+    "stock_deposito": 2,
     "precio_tarjeta": 79999.0
   },
   "2075706": {
     "stock_sucursal": 0,
-    "stock_deposito": 16,
+    "stock_deposito": 14,
     "precio_tarjeta": 79999.0
   },
   "2071328": {
@@ -3546,7 +3546,7 @@ const precios = {
   },
   "16098": {
     "stock_sucursal": 1,
-    "stock_deposito": 73,
+    "stock_deposito": 70,
     "precio_tarjeta": 81899.0
   },
   "2073657": {
@@ -3621,7 +3621,7 @@ const precios = {
   },
   "2075723": {
     "stock_sucursal": 0,
-    "stock_deposito": 37,
+    "stock_deposito": 31,
     "precio_tarjeta": 83999.0
   },
   "2074537": {
@@ -3685,7 +3685,7 @@ const precios = {
     "precio_tarjeta": 85789.0
   },
   "2073953": {
-    "stock_sucursal": 1,
+    "stock_sucursal": 2,
     "stock_deposito": 3,
     "precio_tarjeta": 85789.0
   },
@@ -3756,7 +3756,7 @@ const precios = {
   },
   "2070492": {
     "stock_sucursal": 0,
-    "stock_deposito": 29,
+    "stock_deposito": 24,
     "precio_tarjeta": 86739.0
   },
   "2075511": {
@@ -3885,7 +3885,7 @@ const precios = {
     "precio_tarjeta": 91899.0
   },
   "2074627": {
-    "stock_sucursal": 6,
+    "stock_sucursal": 4,
     "stock_deposito": 146,
     "precio_tarjeta": 91899.0
   },
@@ -3906,7 +3906,7 @@ const precios = {
   },
   "2070490": {
     "stock_sucursal": 0,
-    "stock_deposito": 94,
+    "stock_deposito": 88,
     "precio_tarjeta": 92889.0
   },
   "20773": {
@@ -3931,12 +3931,12 @@ const precios = {
   },
   "2075200": {
     "stock_sucursal": 0,
-    "stock_deposito": 11,
+    "stock_deposito": 9,
     "precio_tarjeta": 93899.0
   },
   "2074088": {
     "stock_sucursal": 2,
-    "stock_deposito": 17,
+    "stock_deposito": 15,
     "precio_tarjeta": 93939.0
   },
   "2071549": {
@@ -4026,7 +4026,7 @@ const precios = {
   },
   "2075713": {
     "stock_sucursal": 0,
-    "stock_deposito": 10,
+    "stock_deposito": 9,
     "precio_tarjeta": 96059.0
   },
   "2069941": {
@@ -4136,17 +4136,17 @@ const precios = {
   },
   "2075196": {
     "stock_sucursal": 0,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 98899.0
-  },
-  "2075347": {
-    "stock_sucursal": 0,
-    "stock_deposito": 14,
-    "precio_tarjeta": 99899.0
   },
   "2071648": {
     "stock_sucursal": 0,
     "stock_deposito": 1,
+    "precio_tarjeta": 99899.0
+  },
+  "2075347": {
+    "stock_sucursal": 0,
+    "stock_deposito": 13,
     "precio_tarjeta": 99899.0
   },
   "2072534": {
@@ -4176,7 +4176,7 @@ const precios = {
   },
   "2075747": {
     "stock_sucursal": 0,
-    "stock_deposito": 7,
+    "stock_deposito": 4,
     "precio_tarjeta": 99989.0
   },
   "2074452": {
@@ -4296,7 +4296,7 @@ const precios = {
   },
   "2072916": {
     "stock_sucursal": 0,
-    "stock_deposito": 241,
+    "stock_deposito": 234,
     "precio_tarjeta": 104499.0
   },
   "2072732": {
@@ -4321,7 +4321,7 @@ const precios = {
   },
   "2073867": {
     "stock_sucursal": 0,
-    "stock_deposito": 16,
+    "stock_deposito": 15,
     "precio_tarjeta": 105899.0
   },
   "2070110": {
@@ -4391,7 +4391,7 @@ const precios = {
   },
   "2075640": {
     "stock_sucursal": 0,
-    "stock_deposito": 40,
+    "stock_deposito": 37,
     "precio_tarjeta": 107789.0
   },
   "2070056": {
@@ -4541,7 +4541,7 @@ const precios = {
   },
   "2072758": {
     "stock_sucursal": 0,
-    "stock_deposito": 11,
+    "stock_deposito": 10,
     "precio_tarjeta": 115899.0
   },
   "2073002": {
@@ -4581,7 +4581,7 @@ const precios = {
   },
   "2074305": {
     "stock_sucursal": 0,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 117899.0
   },
   "2074992": {
@@ -4621,17 +4621,17 @@ const precios = {
   },
   "14177": {
     "stock_sucursal": 1,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 119879.0
   },
   "2074606": {
     "stock_sucursal": 4,
-    "stock_deposito": 22,
+    "stock_deposito": 23,
     "precio_tarjeta": 119899.0
   },
   "2075221": {
     "stock_sucursal": 2,
-    "stock_deposito": 20,
+    "stock_deposito": 19,
     "precio_tarjeta": 119899.0
   },
   "2075738": {
@@ -4663,11 +4663,6 @@ const precios = {
     "stock_sucursal": 1,
     "stock_deposito": 12,
     "precio_tarjeta": 120469.0
-  },
-  "2072018": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
-    "precio_tarjeta": 120619.0
   },
   "2075401": {
     "stock_sucursal": 0,
@@ -4751,7 +4746,7 @@ const precios = {
   },
   "2074087": {
     "stock_sucursal": 2,
-    "stock_deposito": 37,
+    "stock_deposito": 33,
     "precio_tarjeta": 125899.0
   },
   "2074003": {
@@ -4766,18 +4761,13 @@ const precios = {
   },
   "2071813": {
     "stock_sucursal": 1,
-    "stock_deposito": 12,
+    "stock_deposito": 11,
     "precio_tarjeta": 126899.0
   },
   "2074256": {
     "stock_sucursal": 0,
     "stock_deposito": 5,
     "precio_tarjeta": 126969.0
-  },
-  "2069792": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
-    "precio_tarjeta": 127009.0
   },
   "2072681": {
     "stock_sucursal": 0,
@@ -4836,7 +4826,7 @@ const precios = {
   },
   "2072453": {
     "stock_sucursal": 0,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 129899.0
   },
   "2075051": {
@@ -4886,7 +4876,7 @@ const precios = {
   },
   "14545": {
     "stock_sucursal": 2,
-    "stock_deposito": 41,
+    "stock_deposito": 35,
     "precio_tarjeta": 132949.0
   },
   "2075317": {
@@ -4985,8 +4975,8 @@ const precios = {
     "precio_tarjeta": 138569.0
   },
   "2069387": {
-    "stock_sucursal": 5,
-    "stock_deposito": 114,
+    "stock_sucursal": 4,
+    "stock_deposito": 97,
     "precio_tarjeta": 138689.0
   },
   "2075537": {
@@ -5025,8 +5015,8 @@ const precios = {
     "precio_tarjeta": 139899.0
   },
   "2075679": {
-    "stock_sucursal": 2,
-    "stock_deposito": 19,
+    "stock_sucursal": 1,
+    "stock_deposito": 18,
     "precio_tarjeta": 139899.0
   },
   "2072811": {
@@ -5231,7 +5221,7 @@ const precios = {
   },
   "2074048": {
     "stock_sucursal": 3,
-    "stock_deposito": 27,
+    "stock_deposito": 26,
     "precio_tarjeta": 152999.0
   },
   "2070550": {
@@ -5291,7 +5281,7 @@ const precios = {
   },
   "2075686": {
     "stock_sucursal": 0,
-    "stock_deposito": 21,
+    "stock_deposito": 20,
     "precio_tarjeta": 157919.0
   },
   "2073542": {
@@ -5401,7 +5391,7 @@ const precios = {
   },
   "2073924": {
     "stock_sucursal": 0,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 163989.0
   },
   "2075421": {
@@ -5421,12 +5411,12 @@ const precios = {
   },
   "2074907": {
     "stock_sucursal": 2,
-    "stock_deposito": 4,
+    "stock_deposito": 3,
     "precio_tarjeta": 165899.0
   },
   "2075698": {
     "stock_sucursal": 0,
-    "stock_deposito": 9,
+    "stock_deposito": 8,
     "precio_tarjeta": 166249.0
   },
   "2075253": {
@@ -5436,7 +5426,7 @@ const precios = {
   },
   "2074420": {
     "stock_sucursal": 0,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 166899.0
   },
   "2074540": {
@@ -5476,7 +5466,7 @@ const precios = {
   },
   "2074605": {
     "stock_sucursal": 2,
-    "stock_deposito": 11,
+    "stock_deposito": 8,
     "precio_tarjeta": 169899.0
   },
   "2075198": {
@@ -5496,7 +5486,7 @@ const precios = {
   },
   "2070749": {
     "stock_sucursal": 5,
-    "stock_deposito": 159,
+    "stock_deposito": 154,
     "precio_tarjeta": 169999.0
   },
   "2075240": {
@@ -5586,7 +5576,7 @@ const precios = {
   },
   "2073541": {
     "stock_sucursal": 5,
-    "stock_deposito": 40,
+    "stock_deposito": 37,
     "precio_tarjeta": 175999.0
   },
   "18799": {
@@ -5606,7 +5596,7 @@ const precios = {
   },
   "2074620": {
     "stock_sucursal": 1,
-    "stock_deposito": 11,
+    "stock_deposito": 10,
     "precio_tarjeta": 177899.0
   },
   "2075424": {
@@ -5716,7 +5706,7 @@ const precios = {
   },
   "2075767": {
     "stock_sucursal": 0,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 185189.0
   },
   "2075493": {
@@ -5781,7 +5771,7 @@ const precios = {
   },
   "22949": {
     "stock_sucursal": 0,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 189989.0
   },
   "2071886": {
@@ -5899,16 +5889,6 @@ const precios = {
     "stock_deposito": 5,
     "precio_tarjeta": 195159.0
   },
-  "2073711": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
-    "precio_tarjeta": 195909.0
-  },
-  "2075380": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
-    "precio_tarjeta": 196899.0
-  },
   "2074163": {
     "stock_sucursal": 0,
     "stock_deposito": 3,
@@ -5974,13 +5954,13 @@ const precios = {
     "stock_deposito": 2,
     "precio_tarjeta": 199989.0
   },
-  "2074797": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
-    "precio_tarjeta": 199989.0
-  },
   "2075428": {
     "stock_sucursal": 1,
+    "stock_deposito": 2,
+    "precio_tarjeta": 199989.0
+  },
+  "2074797": {
+    "stock_sucursal": 0,
     "stock_deposito": 1,
     "precio_tarjeta": 199989.0
   },
@@ -5996,7 +5976,7 @@ const precios = {
   },
   "2072929": {
     "stock_sucursal": 2,
-    "stock_deposito": 6,
+    "stock_deposito": 5,
     "precio_tarjeta": 199999.0
   },
   "2075316": {
@@ -6081,7 +6061,7 @@ const precios = {
   },
   "2074683": {
     "stock_sucursal": 0,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 208899.0
   },
   "2075274": {
@@ -6096,7 +6076,7 @@ const precios = {
   },
   "2072095": {
     "stock_sucursal": 1,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 209899.0
   },
   "2075776": {
@@ -6151,7 +6131,7 @@ const precios = {
   },
   "2074094": {
     "stock_sucursal": 3,
-    "stock_deposito": 29,
+    "stock_deposito": 26,
     "precio_tarjeta": 212689.0
   },
   "2072473": {
@@ -6305,8 +6285,8 @@ const precios = {
     "precio_tarjeta": 224989.0
   },
   "14709": {
-    "stock_sucursal": 4,
-    "stock_deposito": 69,
+    "stock_sucursal": 3,
+    "stock_deposito": 59,
     "precio_tarjeta": 225969.0
   },
   "2075623": {
@@ -6421,7 +6401,7 @@ const precios = {
   },
   "2072605": {
     "stock_sucursal": 0,
-    "stock_deposito": 23,
+    "stock_deposito": 22,
     "precio_tarjeta": 239899.0
   },
   "2073485": {
@@ -6441,7 +6421,7 @@ const precios = {
   },
   "2075006": {
     "stock_sucursal": 1,
-    "stock_deposito": 4,
+    "stock_deposito": 5,
     "precio_tarjeta": 239989.0
   },
   "2075574": {
@@ -6616,7 +6596,7 @@ const precios = {
   },
   "2074090": {
     "stock_sucursal": 3,
-    "stock_deposito": 71,
+    "stock_deposito": 67,
     "precio_tarjeta": 251089.0
   },
   "2075543": {
@@ -6731,7 +6711,7 @@ const precios = {
   },
   "2075246": {
     "stock_sucursal": 1,
-    "stock_deposito": 12,
+    "stock_deposito": 13,
     "precio_tarjeta": 259989.0
   },
   "14665": {
@@ -6776,7 +6756,7 @@ const precios = {
   },
   "2072594": {
     "stock_sucursal": 1,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 264089.0
   },
   "15261": {
@@ -6796,7 +6776,7 @@ const precios = {
   },
   "2075201": {
     "stock_sucursal": 1,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 266469.0
   },
   "2075446": {
@@ -6831,7 +6811,7 @@ const precios = {
   },
   "2075606": {
     "stock_sucursal": 0,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 271049.0
   },
   "22124": {
@@ -6841,7 +6821,7 @@ const precios = {
   },
   "2070793": {
     "stock_sucursal": 1,
-    "stock_deposito": 13,
+    "stock_deposito": 12,
     "precio_tarjeta": 274989.0
   },
   "2069095": {
@@ -6961,7 +6941,7 @@ const precios = {
   },
   "2075761": {
     "stock_sucursal": 0,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 283529.0
   },
   "2072767": {
@@ -6971,7 +6951,7 @@ const precios = {
   },
   "2074350": {
     "stock_sucursal": 0,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 285899.0
   },
   "2070802": {
@@ -6981,7 +6961,7 @@ const precios = {
   },
   "2071809": {
     "stock_sucursal": 1,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 285989.0
   },
   "2071448": {
@@ -7111,7 +7091,7 @@ const precios = {
   },
   "14546": {
     "stock_sucursal": 1,
-    "stock_deposito": 8,
+    "stock_deposito": 6,
     "precio_tarjeta": 297899.0
   },
   "2073017": {
@@ -7126,12 +7106,12 @@ const precios = {
   },
   "2073755": {
     "stock_sucursal": 4,
-    "stock_deposito": 38,
+    "stock_deposito": 36,
     "precio_tarjeta": 299189.0
   },
   "2074804": {
     "stock_sucursal": 2,
-    "stock_deposito": 5,
+    "stock_deposito": 6,
     "precio_tarjeta": 299989.0
   },
   "2075477": {
@@ -7171,7 +7151,7 @@ const precios = {
   },
   "2075667": {
     "stock_sucursal": 2,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 302899.0
   },
   "2074412": {
@@ -7286,7 +7266,7 @@ const precios = {
   },
   "16100": {
     "stock_sucursal": 1,
-    "stock_deposito": 18,
+    "stock_deposito": 9,
     "precio_tarjeta": 315149.0
   },
   "2075605": {
@@ -7386,7 +7366,7 @@ const precios = {
   },
   "2075571": {
     "stock_sucursal": 2,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 323899.0
   },
   "2072407": {
@@ -7461,7 +7441,7 @@ const precios = {
   },
   "12178": {
     "stock_sucursal": 0,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 329899.0
   },
   "2071085": {
@@ -7556,7 +7536,7 @@ const precios = {
   },
   "2073037": {
     "stock_sucursal": 1,
-    "stock_deposito": 1,
+    "stock_deposito": 0,
     "precio_tarjeta": 345459.0
   },
   "2070805": {
@@ -7576,12 +7556,12 @@ const precios = {
   },
   "2072596": {
     "stock_sucursal": 0,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 348889.0
   },
   "2075454": {
     "stock_sucursal": 1,
-    "stock_deposito": 6,
+    "stock_deposito": 7,
     "precio_tarjeta": 349139.0
   },
   "2074996": {
@@ -7606,7 +7586,7 @@ const precios = {
   },
   "2075248": {
     "stock_sucursal": 0,
-    "stock_deposito": 6,
+    "stock_deposito": 4,
     "precio_tarjeta": 350799.0
   },
   "2075568": {
@@ -7616,7 +7596,7 @@ const precios = {
   },
   "2070203": {
     "stock_sucursal": 1,
-    "stock_deposito": 13,
+    "stock_deposito": 12,
     "precio_tarjeta": 351289.0
   },
   "12662": {
@@ -7651,7 +7631,7 @@ const precios = {
   },
   "2075430": {
     "stock_sucursal": 0,
-    "stock_deposito": 6,
+    "stock_deposito": 5,
     "precio_tarjeta": 356469.0
   },
   "2073167": {
@@ -7776,12 +7756,12 @@ const precios = {
   },
   "19402": {
     "stock_sucursal": 1,
-    "stock_deposito": 7,
+    "stock_deposito": 12,
     "precio_tarjeta": 370719.0
   },
   "2073044": {
     "stock_sucursal": 1,
-    "stock_deposito": 11,
+    "stock_deposito": 10,
     "precio_tarjeta": 371679.0
   },
   "2075026": {
@@ -7790,7 +7770,7 @@ const precios = {
     "precio_tarjeta": 371749.0
   },
   "2069072": {
-    "stock_sucursal": 1,
+    "stock_sucursal": 0,
     "stock_deposito": 4,
     "precio_tarjeta": 371869.0
   },
@@ -7798,6 +7778,11 @@ const precios = {
     "stock_sucursal": 1,
     "stock_deposito": 1,
     "precio_tarjeta": 372129.0
+  },
+  "2073041": {
+    "stock_sucursal": 0,
+    "stock_deposito": 1,
+    "precio_tarjeta": 373379.0
   },
   "20345": {
     "stock_sucursal": 0,
@@ -7815,7 +7800,7 @@ const precios = {
     "precio_tarjeta": 377019.0
   },
   "2075163": {
-    "stock_sucursal": 1,
+    "stock_sucursal": 0,
     "stock_deposito": 14,
     "precio_tarjeta": 377989.0
   },
@@ -7856,7 +7841,7 @@ const precios = {
   },
   "2073654": {
     "stock_sucursal": 0,
-    "stock_deposito": 12,
+    "stock_deposito": 11,
     "precio_tarjeta": 383689.0
   },
   "2075618": {
@@ -7961,7 +7946,7 @@ const precios = {
   },
   "2074707": {
     "stock_sucursal": 0,
-    "stock_deposito": 1,
+    "stock_deposito": 6,
     "precio_tarjeta": 399759.0
   },
   "2072328": {
@@ -7991,7 +7976,7 @@ const precios = {
   },
   "20920": {
     "stock_sucursal": 1,
-    "stock_deposito": 11,
+    "stock_deposito": 10,
     "precio_tarjeta": 400679.0
   },
   "2072285": {
@@ -8046,7 +8031,7 @@ const precios = {
   },
   "2075735": {
     "stock_sucursal": 1,
-    "stock_deposito": 18,
+    "stock_deposito": 17,
     "precio_tarjeta": 409899.0
   },
   "2069073": {
@@ -8401,12 +8386,12 @@ const precios = {
   },
   "2074859": {
     "stock_sucursal": 1,
-    "stock_deposito": 10,
+    "stock_deposito": 9,
     "precio_tarjeta": 465899.0
   },
   "2075129": {
     "stock_sucursal": 0,
-    "stock_deposito": 11,
+    "stock_deposito": 10,
     "precio_tarjeta": 469989.0
   },
   "2075653": {
@@ -8416,7 +8401,7 @@ const precios = {
   },
   "16099": {
     "stock_sucursal": 1,
-    "stock_deposito": 8,
+    "stock_deposito": 4,
     "precio_tarjeta": 472779.0
   },
   "2075702": {
@@ -8496,7 +8481,7 @@ const precios = {
   },
   "17119": {
     "stock_sucursal": 0,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 480039.0
   },
   "16396": {
@@ -8556,7 +8541,7 @@ const precios = {
   },
   "2075736": {
     "stock_sucursal": 1,
-    "stock_deposito": 23,
+    "stock_deposito": 21,
     "precio_tarjeta": 493289.0
   },
   "2075750": {
@@ -8625,7 +8610,7 @@ const precios = {
     "precio_tarjeta": 499869.0
   },
   "21554": {
-    "stock_sucursal": 0,
+    "stock_sucursal": 1,
     "stock_deposito": 7,
     "precio_tarjeta": 499899.0
   },
@@ -8641,7 +8626,7 @@ const precios = {
   },
   "2075243": {
     "stock_sucursal": 2,
-    "stock_deposito": 77,
+    "stock_deposito": 75,
     "precio_tarjeta": 499999.0
   },
   "2073969": {
@@ -8816,7 +8801,7 @@ const precios = {
   },
   "2073322": {
     "stock_sucursal": 1,
-    "stock_deposito": 15,
+    "stock_deposito": 14,
     "precio_tarjeta": 535989.0
   },
   "2074362": {
@@ -8906,7 +8891,7 @@ const precios = {
   },
   "2075789": {
     "stock_sucursal": 1,
-    "stock_deposito": 17,
+    "stock_deposito": 13,
     "precio_tarjeta": 558689.0
   },
   "2075704": {
@@ -9031,7 +9016,7 @@ const precios = {
   },
   "2069065": {
     "stock_sucursal": 1,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 588259.0
   },
   "2075008": {
@@ -9100,7 +9085,7 @@ const precios = {
     "precio_tarjeta": 600049.0
   },
   "2075589": {
-    "stock_sucursal": 1,
+    "stock_sucursal": 2,
     "stock_deposito": 16,
     "precio_tarjeta": 600439.0
   },
@@ -9251,12 +9236,12 @@ const precios = {
   },
   "2074652": {
     "stock_sucursal": 0,
-    "stock_deposito": 4,
+    "stock_deposito": 3,
     "precio_tarjeta": 646619.0
   },
   "2075647": {
     "stock_sucursal": 0,
-    "stock_deposito": 2,
+    "stock_deposito": 1,
     "precio_tarjeta": 647699.0
   },
   "2075600": {
@@ -9267,11 +9252,6 @@ const precios = {
   "2075193": {
     "stock_sucursal": 1,
     "stock_deposito": 2,
-    "precio_tarjeta": 649899.0
-  },
-  "2075507": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
     "precio_tarjeta": 649899.0
   },
   "2075485": {
@@ -9356,7 +9336,7 @@ const precios = {
   },
   "2075406": {
     "stock_sucursal": 1,
-    "stock_deposito": 9,
+    "stock_deposito": 8,
     "precio_tarjeta": 675429.0
   },
   "2075687": {
@@ -9456,7 +9436,7 @@ const precios = {
   },
   "2074982": {
     "stock_sucursal": 0,
-    "stock_deposito": 2,
+    "stock_deposito": 1,
     "precio_tarjeta": 695899.0
   },
   "14021": {
@@ -9471,7 +9451,7 @@ const precios = {
   },
   "2075371": {
     "stock_sucursal": 2,
-    "stock_deposito": 11,
+    "stock_deposito": 10,
     "precio_tarjeta": 698749.0
   },
   "2075353": {
@@ -9486,12 +9466,17 @@ const precios = {
   },
   "2075486": {
     "stock_sucursal": 0,
-    "stock_deposito": 6,
+    "stock_deposito": 5,
     "precio_tarjeta": 699899.0
   },
   "2070427": {
     "stock_sucursal": 0,
     "stock_deposito": 1,
+    "precio_tarjeta": 699899.0
+  },
+  "2075799": {
+    "stock_sucursal": 0,
+    "stock_deposito": 30,
     "precio_tarjeta": 699899.0
   },
   "2073445": {
@@ -9551,8 +9536,8 @@ const precios = {
   },
   "2074342": {
     "stock_sucursal": 0,
-    "stock_deposito": 5,
-    "precio_tarjeta": 719489.0
+    "stock_deposito": 4,
+    "precio_tarjeta": 719399.0
   },
   "2073056": {
     "stock_sucursal": 0,
@@ -9581,7 +9566,7 @@ const precios = {
   },
   "2072020": {
     "stock_sucursal": 1,
-    "stock_deposito": 80,
+    "stock_deposito": 55,
     "precio_tarjeta": 729899.0
   },
   "2075496": {
@@ -9641,7 +9626,7 @@ const precios = {
   },
   "2075737": {
     "stock_sucursal": 1,
-    "stock_deposito": 20,
+    "stock_deposito": 21,
     "precio_tarjeta": 749899.0
   },
   "2072395": {
@@ -9681,7 +9666,7 @@ const precios = {
   },
   "21404": {
     "stock_sucursal": 1,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 766359.0
   },
   "2072400": {
@@ -9693,6 +9678,11 @@ const precios = {
     "stock_sucursal": 1,
     "stock_deposito": 8,
     "precio_tarjeta": 768989.0
+  },
+  "2075800": {
+    "stock_sucursal": 0,
+    "stock_deposito": 20,
+    "precio_tarjeta": 769839.0
   },
   "2073912": {
     "stock_sucursal": 0,
@@ -9711,7 +9701,7 @@ const precios = {
   },
   "2075727": {
     "stock_sucursal": 3,
-    "stock_deposito": 32,
+    "stock_deposito": 26,
     "precio_tarjeta": 777899.0
   },
   "2072243": {
@@ -9741,7 +9731,7 @@ const precios = {
   },
   "2075724": {
     "stock_sucursal": 2,
-    "stock_deposito": 18,
+    "stock_deposito": 16,
     "precio_tarjeta": 786899.0
   },
   "21615": {
@@ -9801,7 +9791,7 @@ const precios = {
   },
   "21405": {
     "stock_sucursal": 0,
-    "stock_deposito": 2,
+    "stock_deposito": 1,
     "precio_tarjeta": 816899.0
   },
   "2074078": {
@@ -9831,7 +9821,7 @@ const precios = {
   },
   "2074484": {
     "stock_sucursal": 0,
-    "stock_deposito": 5,
+    "stock_deposito": 3,
     "precio_tarjeta": 820899.0
   },
   "2074591": {
@@ -9866,7 +9856,7 @@ const precios = {
   },
   "2074829": {
     "stock_sucursal": 1,
-    "stock_deposito": 3,
+    "stock_deposito": 4,
     "precio_tarjeta": 830399.0
   },
   "2074921": {
@@ -9916,12 +9906,12 @@ const precios = {
   },
   "2075689": {
     "stock_sucursal": 0,
-    "stock_deposito": 6,
+    "stock_deposito": 12,
     "precio_tarjeta": 852869.0
   },
   "2075617": {
     "stock_sucursal": 0,
-    "stock_deposito": 1,
+    "stock_deposito": 2,
     "precio_tarjeta": 860189.0
   },
   "2075312": {
@@ -9931,7 +9921,7 @@ const precios = {
   },
   "2075437": {
     "stock_sucursal": 1,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 862989.0
   },
   "2073073": {
@@ -9941,7 +9931,7 @@ const precios = {
   },
   "2074411": {
     "stock_sucursal": 0,
-    "stock_deposito": 35,
+    "stock_deposito": 11,
     "precio_tarjeta": 863899.0
   },
   "13039": {
@@ -9976,7 +9966,7 @@ const precios = {
   },
   "2075645": {
     "stock_sucursal": 1,
-    "stock_deposito": 1,
+    "stock_deposito": 0,
     "precio_tarjeta": 881899.0
   },
   "2074224": {
@@ -10036,7 +10026,7 @@ const precios = {
   },
   "2075739": {
     "stock_sucursal": 1,
-    "stock_deposito": 8,
+    "stock_deposito": 7,
     "precio_tarjeta": 908719.0
   },
   "2072060": {
@@ -10091,12 +10081,12 @@ const precios = {
   },
   "2074274": {
     "stock_sucursal": 1,
-    "stock_deposito": 6,
+    "stock_deposito": 2,
     "precio_tarjeta": 928379.0
   },
   "2075153": {
     "stock_sucursal": 0,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 929369.0
   },
   "2075250": {
@@ -10126,7 +10116,7 @@ const precios = {
   },
   "2075541": {
     "stock_sucursal": 0,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 952009.0
   },
   "2074234": {
@@ -10161,18 +10151,13 @@ const precios = {
   },
   "21279": {
     "stock_sucursal": 0,
-    "stock_deposito": 4,
+    "stock_deposito": 3,
     "precio_tarjeta": 975389.0
   },
   "2074286": {
     "stock_sucursal": 0,
     "stock_deposito": 5,
     "precio_tarjeta": 976499.0
-  },
-  "2074177": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
-    "precio_tarjeta": 977469.0
   },
   "2072962": {
     "stock_sucursal": 1,
@@ -10236,7 +10221,7 @@ const precios = {
   },
   "2075337": {
     "stock_sucursal": 0,
-    "stock_deposito": 2,
+    "stock_deposito": 1,
     "precio_tarjeta": 1013579.0
   },
   "2074544": {
@@ -10247,7 +10232,7 @@ const precios = {
   "2074444": {
     "stock_sucursal": 1,
     "stock_deposito": 7,
-    "precio_tarjeta": 1019909.0
+    "precio_tarjeta": 1019899.0
   },
   "2074200": {
     "stock_sucursal": 0,
@@ -10334,11 +10319,6 @@ const precios = {
     "stock_deposito": 6,
     "precio_tarjeta": 1101379.0
   },
-  "2075130": {
-    "stock_sucursal": 0,
-    "stock_deposito": 1,
-    "precio_tarjeta": 1109899.0
-  },
   "2074513": {
     "stock_sucursal": 0,
     "stock_deposito": 3,
@@ -10376,12 +10356,12 @@ const precios = {
   },
   "2075104": {
     "stock_sucursal": 0,
-    "stock_deposito": 4,
+    "stock_deposito": 3,
     "precio_tarjeta": 1140199.0
   },
   "2075743": {
     "stock_sucursal": 2,
-    "stock_deposito": 26,
+    "stock_deposito": 22,
     "precio_tarjeta": 1144979.0
   },
   "2075639": {
@@ -10406,7 +10386,7 @@ const precios = {
   },
   "2075785": {
     "stock_sucursal": 0,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 1166459.0
   },
   "2073258": {
@@ -10441,7 +10421,7 @@ const precios = {
   },
   "2075733": {
     "stock_sucursal": 1,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 1208049.0
   },
   "2075031": {
@@ -10491,7 +10471,7 @@ const precios = {
   },
   "2072790": {
     "stock_sucursal": 1,
-    "stock_deposito": 9,
+    "stock_deposito": 8,
     "precio_tarjeta": 1279799.0
   },
   "2073311": {
@@ -10521,7 +10501,7 @@ const precios = {
   },
   "2075646": {
     "stock_sucursal": 0,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 1320719.0
   },
   "21277": {
@@ -10541,7 +10521,7 @@ const precios = {
   },
   "2075529": {
     "stock_sucursal": 1,
-    "stock_deposito": 5,
+    "stock_deposito": 3,
     "precio_tarjeta": 1339899.0
   },
   "2074426": {
@@ -10566,7 +10546,7 @@ const precios = {
   },
   "2075721": {
     "stock_sucursal": 1,
-    "stock_deposito": 11,
+    "stock_deposito": 7,
     "precio_tarjeta": 1369899.0
   },
   "2075228": {
@@ -10591,7 +10571,7 @@ const precios = {
   },
   "2075329": {
     "stock_sucursal": 0,
-    "stock_deposito": 7,
+    "stock_deposito": 6,
     "precio_tarjeta": 1399989.0
   },
   "2074851": {
@@ -10621,7 +10601,7 @@ const precios = {
   },
   "2074507": {
     "stock_sucursal": 1,
-    "stock_deposito": 5,
+    "stock_deposito": 4,
     "precio_tarjeta": 1499899.0
   },
   "2074015": {
@@ -10641,7 +10621,7 @@ const precios = {
   },
   "2075726": {
     "stock_sucursal": 1,
-    "stock_deposito": 10,
+    "stock_deposito": 8,
     "precio_tarjeta": 1565309.0
   },
   "2075030": {
@@ -10651,7 +10631,7 @@ const precios = {
   },
   "2075591": {
     "stock_sucursal": 1,
-    "stock_deposito": 3,
+    "stock_deposito": 2,
     "precio_tarjeta": 1581759.0
   },
   "2073453": {
@@ -10686,7 +10666,7 @@ const precios = {
   },
   "2073795": {
     "stock_sucursal": 0,
-    "stock_deposito": 6,
+    "stock_deposito": 5,
     "precio_tarjeta": 1780899.0
   },
   "2072969": {
