@@ -11225,6 +11225,302 @@ const productos = [
     ]
 },
 
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana  20" VPM2016 90w',
+    imagen: "images/ventilacion/Vent Pie Liliana  20 VPM2016 90w 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Liliana  20 VPM2016 90w 1.webp",
+        "images/ventilacion/Vent Pie Liliana  20 VPM2016 90w 2.webp",
+        "images/ventilacion/Vent Pie Liliana  20 VPM2016 90w 3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Orbital:</strong> Sí\n<strong>Repelente:</strong> Sí',
+    codigo: "2069387",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2069387",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Whirlpool WFX57DW inox 56cm rej. alambre',
+    imagen: "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 1.webp",
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 2.webp",
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 3.webp",
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 4.webp",
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 5.webp",
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 6.webp",
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 7.webp",
+        "images/cocinas/Cocina Whirlpool WFX57DW inox 56cm rej alambre 8.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073243",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2073243",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5526 encendido elec 56cm  c/valvula Blanca 4 hornallas',
+    imagen: "images/cocinas/Cocina Florencia 5526 encendido elec 56cm  c valvula Blanca 4 hornallas 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Florencia 5526 encendido elec 56cm  c valvula Blanca 4 hornallas 1.webp",
+        "images/cocinas/Cocina Florencia 5526 encendido elec 56cm  c valvula Blanca 4 hornallas 2.webp",
+        "images/cocinas/Cocina Florencia 5526 encendido elec 56cm  c valvula Blanca 4 hornallas 3.webp",
+        "images/cocinas/Cocina Florencia 5526 encendido elec 56cm  c valvula Blanca 4 hornallas 4.webp",
+        "images/cocinas/Cocina Florencia 5526 encendido elec 56cm  c valvula Blanca 4 hornallas 5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075703",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2075703",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5527 encendido elec 56cm  c/valvula Negra 4 hornallas',
+    imagen: "images/cocinas/Cocina Florencia 5527 encendido elec 56cm  c valvula Negra 4 hornallas 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Florencia 5527 encendido elec 56cm  c valvula Negra 4 hornallas 1.webp",
+        "images/cocinas/Cocina Florencia 5527 encendido elec 56cm  c valvula Negra 4 hornallas 2.webp",
+        "images/cocinas/Cocina Florencia 5527 encendido elec 56cm  c valvula Negra 4 hornallas 3.webp",
+        "images/cocinas/Cocina Florencia 5527 encendido elec 56cm  c valvula Negra 4 hornallas 4.webp",
+        "images/cocinas/Cocina Florencia 5527 encendido elec 56cm  c valvula Negra 4 hornallas 5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Luz en el horno:</strong> Sí\n<strong>Encendido eléctrico:</strong> Sí\n<strong>Timer:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075704",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2075704",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5507 4 hornallas 56 cm',
+    imagen: "images/cocinas/Cocina Florencia 5507 4 hornallas 56 cm 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Florencia 5507 4 hornallas 56 cm 1.webp",
+        "images/cocinas/Cocina Florencia 5507 4 hornallas 56 cm 2.webp",
+        "images/cocinas/Cocina Florencia 5507 4 hornallas 56 cm 3.webp",
+        "images/cocinas/Cocina Florencia 5507 4 hornallas 56 cm 4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075766 ",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2075766 ",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED ENOVA 43" smart tv Full HD Android/Google',
+    imagen: "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 1.webp",
+    imagenes: [
+        "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 1.webp",
+        "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 2.webp",
+        "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 3.webp",
+        "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 4.webp",
+        "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 5.webp",
+        "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 6.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 43\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2073913",
+    caracteristicas: [
+        "Marca: ENOVA",
+        "Modelo: 2073913",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Philco 55" PLD55US25GH Google Tv',
+    imagen: "images/televisores/TV LED Philco 55 PLD55US25GH Google Tv 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Philco 55 PLD55US25GH Google Tv 1.webp",
+        "images/televisores/TV LED Philco 55 PLD55US25GH Google Tv 2.webp",
+        "images/televisores/TV LED Philco 55 PLD55US25GH Google Tv 3.webp",
+        "images/televisores/TV LED Philco 55 PLD55US25GH Google Tv 4.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 55\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2075678",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075678",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Quint 43" Smart QT-43FHD89-25229 FHD Vidda',
+    imagen: "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 1.webp",
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 2.webp",
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 3.webp",
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 4.webp",
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 5.webp",
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 6.webp",
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 7.webp",
+        "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 8.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 43\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> FHD\n<strong>Sistema operativo:</strong> Vidda',
+    codigo: "2075788",
+    caracteristicas: [
+        "Marca: Quint",
+        "Modelo: 2075788",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Quint 50" Smart QT-50UHD89-25229 UHD Vidda',
+    imagen: "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 1.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 2.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 3.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 4.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 5.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 6.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 7.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 8.webp",
+        "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 9.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Vidda',
+    codigo: "2075789",
+    caracteristicas: [
+        "Marca: Quint",
+        "Modelo: 2075789",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Kanji KJH-WMCVSL6K 6.5kg gris oscuro c/superior 10 prog.',
+    imagen: "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 1.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 2.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 3.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 4.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 5.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 6.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 7.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 8.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 9.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 10.webp",
+        "images/lavarropas/Lavarropas Kanji KJH-WMCVSL6K 6 5kg gris oscuro c superior 10 prog 11.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Superior\n<strong>Velocidad de centrifugado (RPM):</strong> 800',
+    codigo: "2075243",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075243",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean LCFDR0814SG0 Gris c/frontal Ecoinverter 8kg 1400rpm',
+    imagen: "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 1.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 2.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 3.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 4.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 5.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 6.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0814SG0 Gris c frontal Ecoinverter 8kg 1400rpm 7.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 8\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 1400\n<strong>Inverter:</strong> Sí',
+    codigo: "2075338",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075338",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Secarropas",
+    nombre: 'Secarropas Codini Advance 6.1/6.5 KG Blanco',
+    imagen: "images/secarropas/Secarropas Codini Advance 6.1 6.5 KG Blanco 1.webp",
+    imagenes: [
+        "images/secarropas/Secarropas Codini Advance 6.1 6.5 KG Blanco 1.webp",
+        "images/secarropas/Secarropas Codini Advance 6.1 6.5 KG Blanco 2.webp",
+        "images/secarropas/Secarropas Codini Advance 6.1 6.5 KG Blanco 3.webp",
+        "images/secarropas/Secarropas Codini Advance 6.1 6.5 KG Blanco 4.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6,5\n<strong>Tipo de secado:</strong> Centrifugado\n<strong>Velocidad de centrifugado (RPM):</strong> 2800',
+    codigo: "2070988",
+    caracteristicas: [
+        "Marca: Codini",
+        "Modelo: 2070988",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Secarropas",
+    nombre: 'Secarropas Whirlpool WSR07SB/SC 7kg Blanco',
+    imagen: "images/secarropas/Secarropas Whirlpool WSR07SB SC 7kg Blanco 1.webp",
+    imagenes: [
+        "images/secarropas/Secarropas Whirlpool WSR07SB SC 7kg Blanco 1.webp",
+        "images/secarropas/Secarropas Whirlpool WSR07SB SC 7kg Blanco 2.webp",
+        "images/secarropas/Secarropas Whirlpool WSR07SB SC 7kg Blanco 3.webp",
+        "images/secarropas/Secarropas Whirlpool WSR07SB SC 7kg Blanco 4.webp",
+        "images/secarropas/Secarropas Whirlpool WSR07SB SC 7kg Blanco 5.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 7\n<strong>Tipo de secado:</strong> Calor',
+    codigo: "2072060",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2072060",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Secarropas",
+    nombre: 'Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c/frontal Blanco',
+    imagen: "images/secarropas/Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c frontal Blanco 1.webp",
+    imagenes: [
+        "images/secarropas/Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c frontal Blanco 1.webp",
+        "images/secarropas/Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c frontal Blanco 2.webp",
+        "images/secarropas/Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c frontal Blanco 3.webp",
+        "images/secarropas/Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c frontal Blanco 4.webp",
+        "images/secarropas/Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c frontal Blanco 5.webp",
+        "images/secarropas/Secarropas Kanji por calor KJH-DRYMCHWT4K 4KG c frontal Blanco 6.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 4\n<strong>Tipo de secado:</strong> Calor',
+    codigo: "2075492",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075492",
+        "Garantía: 1 año"
+    ]
+},
+
 
 
 
