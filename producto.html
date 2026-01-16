@@ -299,13 +299,13 @@ document.addEventListener('DOMContentLoaded', () => {
         cuotas: 3, 
         texto: '3 Cuotas sin interés con todas las tarjetas', 
         texto: '3 Cuotas sin interés con tarjetas de crédito de banco',
-        precio: (precioConDescuento  / 3)
+        precio: (precioLista * 0.88) / 3
     },
     { 
         cuotas: 6, 
         texto: '6 Cuotas sin interés con todas las tarjetas', 
-        texto: '6 Cuotas con 7% de descuento con tarjetas de crédito de banco',
-        precio: (precioLista * 0.93) / 6
+        texto: '6 Cuotas con 5% de descuento con tarjetas de crédito de banco',
+        precio: (precioLista * 0.95) / 6
 //        precio: (precioLista / 6)
         
     },
@@ -319,8 +319,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { 
         cuotas: 12, 
         texto: '12 Cuotas fijas con tarjetas de crédito de banco', 
-        precio: (precioLista/ 12) , //0%
-//        precio: ((precioLista * 1.07) / 12) // +7%
+//        precio: (precioLista/ 12) , //0%
+        precio: ((precioLista * 1.12) / 12) // +12%
     }
 
 ] : [];
