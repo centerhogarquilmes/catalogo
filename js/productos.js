@@ -10834,4 +10834,399 @@ const productos = [
 },
 
 
+
+//// 16 01 2026 ////
+
+    {
+    categoria: "Hogar, Jardín y Tiempo Libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Gravity Benz NV/BA MTB R29 Aluminio talle M-L',
+    imagen: "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 1.webp",
+    imagenes: [
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 1.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 2.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 3.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 4.webp",
+        "images/bicicletas/Bici Gravity Benz NV BA MTB R29 Aluminio talle M L 5.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Mountain Bike\n<strong>Material:</strong> Aluminio\n<strong>Rodado:</strong> 29\n<strong>Tipo de frenos:</strong> Disco',
+    codigo: "2075393",
+    caracteristicas: [
+        "Marca: Gravity Benz",
+        "Modelo: 2075393",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Hogar, Jardín y Tiempo Libre",
+    subcategoria: "Bicicletas",
+    nombre: 'Bici. Kanji MTB R29 Unisex ALuminio KJW-29ALU 21v. freno a disco suspencion c/bloqueo',
+    imagen: "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 1.webp",
+    imagenes: [
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 1.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 2.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 3.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 4.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 5.webp",
+        "images/bicicletas/Bici Kanji MTB R29 Unisex ALuminio KJW 29ALU 21v freno a disco suspencion c bloqueo 6.webp"
+    ],
+    descripcion: '<strong>Estilo:</strong> Mountain Bike\n<strong>Material:</strong> Aluminio\n<strong>Rodado:</strong> 29\n<strong>Tipo de frenos:</strong> Disco',
+    codigo: "2075551",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075551",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Usman Industrial Win Compact 52cm 4 Hornallas p/v 4777',
+    imagen: "images/cocinas/Cocina Usman Industrial Win Compact 52cm 4 Hornallas p v 4777 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Usman Industrial Win Compact 52cm 4 Hornallas p v 4777 1.webp",
+        "images/cocinas/Cocina Usman Industrial Win Compact 52cm 4 Hornallas p v 4777 2.webp",
+        "images/cocinas/Cocina Usman Industrial Win Compact 52cm 4 Hornallas p v 4777 3.webp",
+        "images/cocinas/Cocina Usman Industrial Win Compact 52cm 4 Hornallas p v 4777 4.webp",
+        "images/cocinas/Cocina Usman Industrial Win Compact 52cm 4 Hornallas p v 4777 5.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Industrial\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 52 x 53\n<strong>Válvula de seguridad:</strong> No\n<strong>Rejillas de aluminio:</strong> Sí\n<strong>Ladrillos refractarios:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2074788",
+    caracteristicas: [
+        "Marca: Usman",
+        "Modelo: 2074788",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Florencia 5506 bi gas 56cm  c/valvula Blanca 4 hornallas',
+    imagen: "images/cocinas/Cocina Florencia 5506 bi gas 56cm  c valvula Blanca 4 hornallas 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Florencia 5506 bi gas 56cm  c valvula Blanca 4 hornallas 1.webp",
+        "images/cocinas/Cocina Florencia 5506 bi gas 56cm  c valvula Blanca 4 hornallas 2.webp",
+        "images/cocinas/Cocina Florencia 5506 bi gas 56cm  c valvula Blanca 4 hornallas 3.webp",
+        "images/cocinas/Cocina Florencia 5506 bi gas 56cm  c valvula Blanca 4 hornallas 4.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 60\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075702",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2075702",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Drean CD5602AB0 56cm Blanca gas',
+    imagen: "images/cocinas/Cocina Drean CD5602AB0 56cm Blanca gas 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Drean CD5602AB0 56cm Blanca gas 1.webp",
+        "images/cocinas/Cocina Drean CD5602AB0 56cm Blanca gas 2.webp",
+        "images/cocinas/Cocina Drean CD5602AB0 56cm Blanca gas 3.webp",
+        "images/cocinas/Cocina Drean CD5602AB0 56cm Blanca gas 4.webp",
+        "images/cocinas/Cocina Drean CD5602AB0 56cm Blanca gas 5.webp",
+        "images/cocinas/Cocina Drean CD5602AB0 56cm Blanca gas 6.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 56 x 62\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075647",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075647",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Saiar 85 lts  pie electrico 7 años carga sup.',
+    imagen: "images/termotanques/Termot Saiar 85 lts  pie electrico 7 años carga sup 1.webp",
+    imagenes: [
+        "images/termotanques/Termot Saiar 85 lts  pie electrico 7 años carga sup 1.webp",
+        "images/termotanques/Termot Saiar 85 lts  pie electrico 7 años carga sup 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 82 x 45,1\n<strong>Capacidad (Litros):</strong> 85\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "17117",
+    caracteristicas: [
+        "Marca: Saiar",
+        "Modelo: 17117",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Saiar 50 lts colgar multigas carga inferior',
+    imagen: "images/termotanques/Termot Saiar 50 lts colgar multigas carga inferior 1.webp",
+    imagenes: [
+        "images/termotanques/Termot Saiar 50 lts colgar multigas carga inferior 1.webp",
+        "images/termotanques/Termot Saiar 50 lts colgar multigas carga inferior 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Gas\n<strong>Dimensiones:</strong> 67 x 45\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase B',
+    codigo: "2069068",
+    caracteristicas: [
+        "Marca: Saiar",
+        "Modelo: 2069068",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Sherman 55 electrico Pie',
+    imagen: "images/termotanques/Termot Sherman 55 electrico Pie 1.webp",
+    imagenes: [
+        "images/termotanques/Termot Sherman 55 electrico Pie 1.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 57 x 45\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2073599",
+    caracteristicas: [
+        "Marca: Sherman",
+        "Modelo: 2073599",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Philco PHTE050B2 50lts Electrico 1500w Blanco',
+    imagen: "images/termotanques/Termot. Philco PHTE050B2 50lts Electrico 1500w Blanco 1.webp",
+    imagenes: [
+        "images/termotanques/Termot. Philco PHTE050B2 50lts Electrico 1500w Blanco 1.webp",
+        "images/termotanques/Termot. Philco PHTE050B2 50lts Electrico 1500w Blanco 2.webp",
+        "images/termotanques/Termot. Philco PHTE050B2 50lts Electrico 1500w Blanco 3.webp",
+        "images/termotanques/Termot. Philco PHTE050B2 50lts Electrico 1500w Blanco 4.webp",
+        "images/termotanques/Termot. Philco PHTE050B2 50lts Electrico 1500w Blanco 5.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 54,5 x 46,5\n<strong>Capacidad (Litros):</strong> 50\n<strong>Conexiones:</strong> Inferior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Colgar\n<strong>Eficiencia energética:</strong> Clase C',
+    codigo: "2075571",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075571",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Termotanques",
+    nombre: 'Termot. Rheem 125 elec pie carga sup. Gris (tep125rh)',
+    imagen: "images/termotanques/Termot Rheem 125 elec pie carga sup Gris tep125rh 1.webp",
+    imagenes: [
+        "images/termotanques/Termot Rheem 125 elec pie carga sup Gris tep125rh 1.webp",
+        "images/termotanques/Termot Rheem 125 elec pie carga sup Gris tep125rh 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Eléctrico\n<strong>Dimensiones:</strong> 123 x 51\n<strong>Capacidad (Litros):</strong> 125\n<strong>Conexiones:</strong> Superior\n<strong>Alta recuperación:</strong> No\n<strong>Colgar o apoyar:</strong> Apoyar\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "21317",
+    caracteristicas: [
+        "Marca: Rheem",
+        "Modelo: 21317",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana 20" VPRC20/VPC20B Cromado Aspas Metalicas',
+    imagen: "images/ventilacion/Vent Pie Liliana 20 VPRC20 VPC20B Cromado Aspas Metalicas 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Liliana 20 VPRC20 VPC20B Cromado Aspas Metalicas 1.webp",
+        "images/ventilacion/Vent Pie Liliana 20 VPRC20 VPC20B Cromado Aspas Metalicas 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Oscilación:</strong> Sí\n<strong>Repelente:</strong> Sí',
+    codigo: "2070130",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070130",
+        "Garantía: 1 año"
+    ]
+},
+   
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana  24" VPHP2416 PARRILLA METALICA NEGRA',
+    imagen: "images/ventilacion/Vent Pie Liliana  24 VPHP2416 PARRILLA METALICA NEGRA 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Liliana  24 VPHP2416 PARRILLA METALICA NEGRA 1.webp",
+        "images/ventilacion/Vent Pie Liliana  24 VPHP2416 PARRILLA METALICA NEGRA 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 120\n<strong>Pulgadas:</strong> 24\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Oscilación:</strong> Sí',
+    codigo: "2070749",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070749",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pared Liliana  32" VVWTX32/VWIT32 Industrial c/ Remoto + TIMER',
+    imagen: "images/ventilacion/Vent Pared Liliana  32 VVWTX32 VWIT32 Industrial c Remoto + TIMER 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pared Liliana  32 VVWTX32 VWIT32 Industrial c Remoto + TIMER 1.webp",
+        "images/ventilacion/Vent Pared Liliana  32 VVWTX32 VWIT32 Industrial c Remoto + TIMER 2.webp",
+        "images/ventilacion/Vent Pared Liliana  32 VVWTX32 VWIT32 Industrial c Remoto + TIMER 3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pared\n<strong>Potencia (W):</strong> 280\n<strong>Pulgadas:</strong> 32\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 2\n<strong>Control remoto:</strong> Sí\n<strong>Oscilación:</strong> Sí',
+    codigo: "2070793",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2070793",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Kanji KJH- FH-2011/FH1212 20" 95w',
+    imagen: "images/ventilacion/Vent Pie Kanji KJH FH 2011 FH1212 20 95w 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Kanji KJH FH 2011 FH1212 20 95w 1.webp",
+        "images/ventilacion/Vent Pie Kanji KJH FH 2011 FH1212 20 95w 2.webp",
+        "images/ventilacion/Vent Pie Kanji KJH FH 2011 FH1212 20 95w 3.webp",
+        "images/ventilacion/Vent Pie Kanji KJH FH 2011 FH1212 20 95w 4.webp",
+        "images/ventilacion/Vent Pie Kanji KJH FH 2011 FH1212 20 95w 5.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 95\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 5\n<strong>Oscilación:</strong> Sí\n<strong>Timer:</strong> Sí',
+    codigo: "2072568",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2072568",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pared Liliana 25" VW25M aspas metal',
+    imagen: "images/ventilacion/Vent Pared Liliana 25 VW25M aspas metal 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pared Liliana 25 VW25M aspas metal 1.webp",
+        "images/ventilacion/Vent Pared Liliana 25 VW25M aspas metal 2.webp",
+        "images/ventilacion/Vent Pared Liliana 25 VW25M aspas metal 3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pared\n<strong>Potencia (W):</strong> 120\n<strong>Pulgadas:</strong> 25\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 2\n<strong>Oscilación:</strong> Sí',
+    codigo: "2072587",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2072587",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Kanji KJH-1811 / KJH-FH1209 18" 3 en 1',
+    imagen: "images/ventilacion/Vent Pie Kanji KJH1811  KJH-FH1209 18 3 en 1 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Kanji KJH1811  KJH-FH1209 18 3 en 1 1.webp",
+        "images/ventilacion/Vent Pie Kanji KJH1811  KJH-FH1209 18 3 en 1 2.webp",
+        "images/ventilacion/Vent Pie Kanji KJH1811  KJH-FH1209 18 3 en 1 3.webp",
+        "images/ventilacion/Vent Pie Kanji KJH1811  KJH-FH1209 18 3 en 1 4.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> 3 en 1\n<strong>Potencia (W):</strong> 90\n<strong>Pulgadas:</strong> 18\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Metal\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 3\n<strong>Oscilación:</strong> Sí',
+    codigo: "2072620",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2072620",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana 25" VP25M parr/metal aspas/metal osc/reclin',
+    imagen: "images/ventilacion/Vent Pie Liliana 25 VP25M parr metal aspas metal osc reclin 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Liliana 25 VP25M parr metal aspas metal osc reclin 1.webp",
+        "images/ventilacion/Vent Pie Liliana 25 VP25M parr metal aspas metal osc reclin 2.webp",
+        "images/ventilacion/Vent Pie Liliana 25 VP25M parr metal aspas metal osc reclin 3.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 120\n<strong>Pulgadas:</strong> 25\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 2\n<strong>Oscilación:</strong> Sí',
+    codigo: "2073541",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2073541",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Liliana  18" VP18P 5 aspas p/plastica',
+    imagen: "images/ventilacion/Vent Pie Liliana  18 VP18P 5 aspas p plastica 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Liliana  18 VP18P 5 aspas p plastica 1.webp",
+        "images/ventilacion/Vent Pie Liliana  18 VP18P 5 aspas p plastica 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 75\n<strong>Pulgadas:</strong> 18\n<strong>Velocidades:</strong> 3|\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5\n<strong>Oscilación:</strong> Sí',
+    codigo: "2074627",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2074627",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Vent. Pie Kanji KJH- FH-2012 20" pie cromado cont. remoto',
+    imagen: "images/ventilacion/Vent Pie Kanji KJH FH 2012 20 pie cromado cont remoto 1.webp",
+    imagenes: [
+        "images/ventilacion/Vent Pie Kanji KJH FH 2012 20 pie cromado cont remoto 1.webp",
+        "images/ventilacion/Vent Pie Kanji KJH FH 2012 20 pie cromado cont remoto 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Pie\n<strong>Potencia (W):</strong> 95\n<strong>Pulgadas:</strong> 20\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Metal\n<strong>Cantidad de aspas:</strong> 5\n<strong>Control remoto:</strong> Sí\n<strong>Oscilación:</strong> Sí\n<strong>Timer:</strong> Sí',
+    codigo: "2074606",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2074606",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Kanji 14" KJH-FH1405',
+    imagen: "images/ventilacion/Turbo Kanji 14 KJH FH1405 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Kanji 14 KJH FH1405 1.webp",
+        "images/ventilacion/Turbo Kanji 14 KJH FH1405 3.webp",
+        "images/ventilacion/Turbo Kanji 14 KJH FH1405 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 80\n<strong>Pulgadas:</strong> 14\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5',
+    codigo: "2075714",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2075714",
+        "Garantía: 1 año"
+    ]
+},
+  
+    {
+    categoria: "Climatización",
+    subcategoria: "Ventilación",
+    nombre: 'Turbo Liliana VVTF18P Reclinable 5 Aspas Plasticas 3v',
+    imagen: "images/ventilacion/Turbo Liliana VVTF18P Reclinable 5 Aspas Plasticas 3v 1.webp",
+    imagenes: [
+        "images/ventilacion/Turbo Liliana VVTF18P Reclinable 5 Aspas Plasticas 3v 1.webp",
+        "images/ventilacion/Turbo Liliana VVTF18P Reclinable 5 Aspas Plasticas 3v 3.webp",
+        "images/ventilacion/Turbo Liliana VVTF18P Reclinable 5 Aspas Plasticas 3v 2.webp"
+    ],
+    descripcion: '<strong>Tipo:</strong> Turbo\n<strong>Potencia (W):</strong> 75\n<strong>Pulgadas:</strong> 18\n<strong>Velocidades:</strong> 3\n<strong>Tipo de aspas:</strong> Plastico\n<strong>Tipo de rejilla:</strong> Plastico\n<strong>Cantidad de aspas:</strong> 5',
+    codigo: "22399",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 22399",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
+
+
 ];
