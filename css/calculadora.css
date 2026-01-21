@@ -102,7 +102,7 @@ body {
 .tab-content {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   flex: 1;
   overflow-y: auto;
 }
@@ -115,7 +115,7 @@ body {
 #visor {
   width: 100%;
   font-size: 2.2rem;
-  padding: 18px 16px;
+  padding: 7px 16px;
   text-align: right;
   border: none;
   border-radius: 12px;
@@ -409,4 +409,5 @@ button:active {
 
 .resultados-mixtos strong {
   color: #2C3E50;
+
 }
