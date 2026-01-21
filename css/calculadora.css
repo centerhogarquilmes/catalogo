@@ -102,7 +102,7 @@ body {
 .tab-content {
   display: none;
   flex-direction: column;
-  gap: 1px;
+  gap: 3px;
   flex: 1;
   overflow-y: auto;
 }
@@ -411,4 +411,5 @@ button:active {
   color: #2C3E50;
 
 }
+
 
