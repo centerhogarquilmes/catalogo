@@ -7032,7 +7032,7 @@ const productos = [
 
 
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Philco PHCT242B ciclica Top Mount 231lts Blanca',
     imagen: "images/heladeras/Heladera_Philco_PHCT242B_ciclica_Top_Mount231lts_Blanca_1.webp",
     imagenes: [
@@ -7051,7 +7051,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Eslabon de Lujo ERD36HBDIM Cíclica Blanca 336l Blanca',
     imagen: "images/heladeras/Heladera_Eslabon_RD36HBDIM_Cíclica_Blanca_336l_Blanca_1.webp",
     imagenes: [
@@ -7766,7 +7766,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Telefunken TFK-R90GE/TKF-HB90 Bajo mesada 90lts Blanca',
     imagen: "images/heladeras/Heladera_Telefunken_TFK_R90GE_TKF_HB90_Bajo_mesada_90lts_Blanca_1.webp",
     imagenes: [
@@ -7787,7 +7787,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Philco PHCT225B ciclica Top Mount 199lts Blanca',
     imagen: "images/heladeras/Heladera_Philco_PHCT225B_ciclica_Top_Mount_199lts_Blanca_1.webp",
     imagenes: [
@@ -11659,6 +11659,360 @@ const productos = [
     caracteristicas: [
         "Marca: Kanji",
         "Modelo: 2074978 ",
+        "Garantía: 1 año"
+    ]
+},
+
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Cocinas",
+    nombre: 'Cocina Siam CSI-CN50B Essential 50cm blanca multigas',
+    imagen: "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 1.webp",
+    imagenes: [
+        "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 1.webp",
+        "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 2.webp",
+        "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 3.webp",
+        "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 4.webp",
+        "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 5.webp",
+        "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 6.webp",
+        "images/cocinas/Cocina Siam CSI-CN50B Essential 50cm blanca multigas 7.webp"
+    ],
+    descripcion: '<strong>Tipo de uso:</strong> Doméstico\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 85 x 50 x 56\n<strong>Válvula de seguridad:</strong> Sí\n<strong>Rejillas de fundición:</strong> Sí\n<strong>Tipo:</strong> Multigas\n<strong>Cantidad de hornallas:</strong> 4\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075665",
+    caracteristicas: [
+        "Marca: Siam",
+        "Modelo: 2075665",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Planchas de Pelo",
+    nombre: 'Pinza Alisadora Gama ELEGANCE LED BLOOM 6213/6756/6817',
+    imagen: "images/planchas_pelo/Pinza Alisadora Gama ELEGANCE LED BLOOM 6213 6756 6817 1.webp",
+    imagenes: [
+        "images/planchas_pelo/Pinza Alisadora Gama ELEGANCE LED BLOOM 6213 6756 6817 1.webp",
+        "images/planchas_pelo/Pinza Alisadora Gama ELEGANCE LED BLOOM 6213 6756 6817 2.webp",
+        "images/planchas_pelo/Pinza Alisadora Gama ELEGANCE LED BLOOM 6213 6756 6817 3.webp"
+    ],
+    descripcion: '<strong>Material de placas:</strong> Turmalina\n<strong>Temperatura máxima (°C):</strong> 230°\n<strong>Pantalla led:</strong> Sí',
+    codigo: "2072151",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2072151",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Planchas de Pelo",
+    nombre: 'Pinza Alisadora Gama Elegance Led Bella Tourm. 0692',
+    imagen: "images/planchas_pelo/Pinza Alisadora Gama Elegance Led Bella Tourm 0692 1.webp",
+    imagenes: [
+        "images/planchas_pelo/Pinza Alisadora Gama Elegance Led Bella Tourm 0692 1.webp",
+        "images/planchas_pelo/Pinza Alisadora Gama Elegance Led Bella Tourm 0692 2.webp",
+        "images/planchas_pelo/Pinza Alisadora Gama Elegance Led Bella Tourm 0692 3.webp",
+        "images/planchas_pelo/Pinza Alisadora Gama Elegance Led Bella Tourm 0692 4.webp"
+    ],
+    descripcion: '<strong>Material de placas:</strong> Turmalina\n<strong>Temperatura máxima (°C):</strong> 230\n<strong>Pantalla led:</strong> Sí',
+    codigo: "2072660",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2072660",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Planchas de Pelo",
+    nombre: 'Pinza alisadora Gama Elegance Chia 2183',
+    imagen: "images/planchas_pelo/Pinza alisadora Gama Elegance Chia 2183 1.webp",
+    imagenes: [
+        "images/planchas_pelo/Pinza alisadora Gama Elegance Chia 2183 1.webp",
+        "images/planchas_pelo/Pinza alisadora Gama Elegance Chia 2183 2.webp",
+        "images/planchas_pelo/Pinza alisadora Gama Elegance Chia 2183 3.webp"
+    ],
+    descripcion: '<strong>Material de placas:</strong> Turmalina\n<strong>Temperatura máxima (°C):</strong> 230°\n<strong>Pantalla led:</strong> No',
+    codigo: "2073937",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2073937",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Planchas de Pelo",
+    nombre: 'Pinza Alisadora Atma PL8862NP Wide Ceramic Titanium',
+    imagen: "images/planchas_pelo/Pinza Alisadora Atma PL8862NP Wide Ceramic Titanium 1.webp",
+    imagenes: [
+        "images/planchas_pelo/Pinza Alisadora Atma PL8862NP Wide Ceramic Titanium 1.webp",
+        "images/planchas_pelo/Pinza Alisadora Atma PL8862NP Wide Ceramic Titanium 2.webp",
+        "images/planchas_pelo/Pinza Alisadora Atma PL8862NP Wide Ceramic Titanium 3.webp",
+        "images/planchas_pelo/Pinza Alisadora Atma PL8862NP Wide Ceramic Titanium 4.webp"
+    ],
+    descripcion: '<strong>Material de placas:</strong> Cerámica, Titanio\n<strong>Temperatura máxima (°C):</strong> 230°\n<strong>Pantalla led:</strong> Sí',
+    codigo: "2075066",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075066",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Planchas de Pelo",
+    nombre: 'Pinza Alisadora Atma PL8842P Tourmaline 220° dig',
+    imagen: "images/planchas_pelo/Pinza Alisadora Atma PL8842P Tourmaline 220 dig 1.webp",
+    imagenes: [
+        "images/planchas_pelo/Pinza Alisadora Atma PL8842P Tourmaline 220 dig 1.webp",
+        "images/planchas_pelo/Pinza Alisadora Atma PL8842P Tourmaline 220 dig 2.webp"
+    ],
+    descripcion: '<strong>Material de placas:</strong> Cerámica\n<strong>Temperatura máxima (°C):</strong> 220°\n<strong>Pantalla led:</strong> Sí',
+    codigo: "2075095",
+    caracteristicas: [
+        "Marca: Pinza Alisadora Atma PL8842P Tourmaline 220 dig",
+        "Modelo: 2075095",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Planchas de Pelo",
+    nombre: 'Pinza Alisadora Yelmo AP-3312 dig Tourmaline Ion 230°',
+    imagen: "images/planchas_pelo/Pinza Alisadora Yelmo AP-3312 dig Tourmaline Ion 230 1.webp",
+    imagenes: [
+        "images/planchas_pelo/Pinza Alisadora Yelmo AP-3312 dig Tourmaline Ion 230 1.webp",
+        "images/planchas_pelo/Pinza Alisadora Yelmo AP-3312 dig Tourmaline Ion 230 2.webp",
+        "images/planchas_pelo/Pinza Alisadora Yelmo AP-3312 dig Tourmaline Ion 230 3.webp",
+        "images/planchas_pelo/Pinza Alisadora Yelmo AP-3312 dig Tourmaline Ion 230 4.webp",
+        "images/planchas_pelo/Pinza Alisadora Yelmo AP-3312 dig Tourmaline Ion 230 5.webp"
+    ],
+    descripcion: '<strong>Material de placas:</strong> Cerámica\n<strong>Temperatura máxima (°C):</strong> 230°\n<strong>Pantalla led:</strong> Sí\n<strong>Apto cabello húmedo y seco:</strong> Sí',
+    codigo: "2075276",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2075276",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Planchas de Pelo",
+    nombre: 'Pinza Alisadora Revlon RVST2182REDLA2AV1',
+    imagen: "images/planchas_pelo/Pinza Alisadora Revlon RVST2182REDLA2AV1 1.webp",
+    imagenes: [
+        "images/planchas_pelo/Pinza Alisadora Revlon RVST2182REDLA2AV1 1.webp",
+        "images/planchas_pelo/Pinza Alisadora Revlon RVST2182REDLA2AV1 2.webp"
+    ],
+    descripcion: '<strong>Material de placas:</strong> Titanio\n<strong>Temperatura máxima (°C):</strong> 220°\n<strong>Pantalla led:</strong> No\n<strong>Apto cabello húmedo y seco:</strong> No',
+    codigo: "2075411",
+    caracteristicas: [
+        "Marca: Revlon",
+        "Modelo: 2075411",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador cab. Atma SP8904E/NP 1200w 2vel. compacto',
+    imagen: "images/secadores_pelo/Secador cab Atma SP8904E NP 1200w 2vel compacto 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador cab Atma SP8904E NP 1200w 2vel compacto 1.webp",
+        "images/secadores_pelo/Secador cab Atma SP8904E NP 1200w 2vel compacto 2.webp",
+        "images/secadores_pelo/Secador cab Atma SP8904E NP 1200w 2vel compacto 3.webp",
+        "images/secadores_pelo/Secador cab Atma SP8904E NP 1200w 2vel compacto 4.webp",
+        "images/secadores_pelo/Secador cab Atma SP8904E NP 1200w 2vel compacto 5.webp",
+        "images/secadores_pelo/Secador cab Atma SP8904E NP 1200w 2vel compacto 6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1200\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> No\n<strong>Plegable:</strong> No',
+    codigo: "2070532",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2070532",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Revlon + Pinza RVDR5230LA2A',
+    imagen: "images/secadores_pelo/Secador Cab  Revlon + Pinza RVDR5230LA2A 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab  Revlon + Pinza RVDR5230LA2A 1.webp",
+        "images/secadores_pelo/Secador Cab  Revlon + Pinza RVDR5230LA2A 2.webp",
+        "images/secadores_pelo/Secador Cab  Revlon + Pinza RVDR5230LA2A 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2000\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> Sí\n<strong>Plegable:</strong> No',
+    codigo: "2073470",
+    caracteristicas: [
+        "Marca: Revlon",
+        "Modelo: 2073470",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Gama Diamond Bloom 6960/6984/7004',
+    imagen: "images/secadores_pelo/Secador Cab Gama Diamond Bloom 6960 6984 7004 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Gama Diamond Bloom 6960 6984 7004 1.webp",
+        "images/secadores_pelo/Secador Cab Gama Diamond Bloom 6960 6984 7004 2.webp",
+        "images/secadores_pelo/Secador Cab Gama Diamond Bloom 6960 6984 7004 3.webp",
+        "images/secadores_pelo/Secador Cab Gama Diamond Bloom 6960 6984 7004 4.webp",
+        "images/secadores_pelo/Secador Cab Gama Diamond Bloom 6960 6984 7004 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2300\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> Sí\n<strong>Plegable:</strong> No',
+    codigo: "2073496",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2073496",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Gama Tempo STD 7630',
+    imagen: "images/secadores_pelo/Secador Cab Gama Tempo STD 7630 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Gama Tempo STD 7630 1.webp",
+        "images/secadores_pelo/Secador Cab Gama Tempo STD 7630 2.webp",
+        "images/secadores_pelo/Secador Cab Gama Tempo STD 7630 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2200\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> Sí\n<strong>Plegable:</strong> No',
+    codigo: "2073783",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2073783",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Gama Bora Coconout 1711',
+    imagen: "images/secadores_pelo/Secador Cab Gama Bora Coconout 1711 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Gama Bora Coconout 1711 1.webp",
+        "images/secadores_pelo/Secador Cab Gama Bora Coconout 1711 2.webp",
+        "images/secadores_pelo/Secador Cab Gama Bora Coconout 1711 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2200\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> Sí\n<strong>Plegable:</strong> No',
+    codigo: "2073939",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2073939",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Gama Mistral Blue Tit 220 Arg 9441',
+    imagen: "images/secadores_pelo/Secador Cab Gama Mistral Blue Tit 220 Arg 9441 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Gama Mistral Blue Tit 220 Arg 9441 1.webp",
+        "images/secadores_pelo/Secador Cab Gama Mistral Blue Tit 220 Arg 9441 2.webp",
+        "images/secadores_pelo/Secador Cab Gama Mistral Blue Tit 220 Arg 9441 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2200\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> Sí\n<strong>Plegable:</strong> No',
+    codigo: "2073954",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2073954",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Gama Eolic Ceramic Ion Arg 4330',
+    imagen: "images/secadores_pelo/Secador Cab Gama Eolic Ceramic Ion Arg 4330 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Gama Eolic Ceramic Ion Arg 4330 1.webp",
+        "images/secadores_pelo/Secador Cab Gama Eolic Ceramic Ion Arg 4330 2.webp",
+        "images/secadores_pelo/Secador Cab Gama Eolic Ceramic Ion Arg 4330 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1600\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> No\n<strong>Plegable:</strong> Sí',
+    codigo: "2074062",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2074062",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Yelmo 3620 1400W 2v.',
+    imagen: "images/secadores_pelo/Secador Cab Yelmo 3620 1400W 2v 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Yelmo 3620 1400W 2v 1.webp",
+        "images/secadores_pelo/Secador Cab Yelmo 3620 1400W 2v 2.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Velocidades:</strong> 22\n<strong>Con aire frío:</strong> No\n<strong>Plegable:</strong> Sí',
+    codigo: "2074799",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2074799",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Ultracomb 4607 2000W 2v. Tourmaline-Ion',
+    imagen: "images/secadores_pelo/Secador Cab Ultracomb 4607 2000W 2v Tourmaline-Ion 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Ultracomb 4607 2000W 2v Tourmaline-Ion 1.webp",
+        "images/secadores_pelo/Secador Cab Ultracomb 4607 2000W 2v Tourmaline-Ion 2.webp",
+        "images/secadores_pelo/Secador Cab Ultracomb 4607 2000W 2v Tourmaline-Ion 3.webp",
+        "images/secadores_pelo/Secador Cab Ultracomb 4607 2000W 2v Tourmaline-Ion 4.webp",
+        "images/secadores_pelo/Secador Cab Ultracomb 4607 2000W 2v Tourmaline-Ion 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2000\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> Sí\n<strong>Plegable:</strong> No',
+    codigo: "2074802",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2074802",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Atma SP8965P plegable',
+    imagen: "images/secadores_pelo/Secador Cab Atma SP8965P plegable 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Atma SP8965P plegable 1.webp",
+        "images/secadores_pelo/Secador Cab Atma SP8965P plegable 2.webp",
+        "images/secadores_pelo/Secador Cab Atma SP8965P plegable 3.webp",
+        "images/secadores_pelo/Secador Cab Atma SP8965P plegable 4.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1600\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> Sí\n<strong>Plegable:</strong> Sí',
+    codigo: "2075410",
+    caracteristicas: [
+        "Marca: Atma",
+        "Modelo: 2075410",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Secadores de Pelo",
+    nombre: 'Secador Cab. Ultracomb 4620 2200w plegable 2v',
+    imagen: "images/secadores_pelo/Secador Cab Ultracomb 4620 2200w plegable 2v 1.webp",
+    imagenes: [
+        "images/secadores_pelo/Secador Cab Ultracomb 4620 2200w plegable 2v 1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2200\n<strong>Velocidades:</strong> 2\n<strong>Con aire frío:</strong> No\n<strong>Plegable:</strong> Sí',
+    codigo: "2075557",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2075557",
         "Garantía: 1 año"
     ]
 },
