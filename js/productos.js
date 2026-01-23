@@ -1551,7 +1551,7 @@ const productos = [
    
     {
         
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Samsung RT29K577JS8 Silver No Fr 299lts c/disp",
         imagen: "images/heladeras/heladera_samsung_rt29_silver_no_fr_290lts_cdisp1.webp",
@@ -1564,7 +1564,7 @@ const productos = [
         caracteristicas: ["Marca: Samsung", "Modelo: RT29K577JS8", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Gafa HGNW3900P No Frost 347lts Plata c/dispenser",
         imagen: "images/heladeras/Heladera_Gafa_HGNW3900P_No_Frost_347lts_Plata_dispenser1.webp",
@@ -1578,7 +1578,7 @@ const productos = [
         caracteristicas: ["Marca: Gafa", "Modelo: HGNW3900P", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Neba A 128B Ciclica 2 frios 128 Lts Blanca",
         imagen: "images/heladeras/Heladera_Neba_A_128B_Ciclica_2_frios_128_Lts_Blanca_1.webp",
@@ -1592,7 +1592,7 @@ const productos = [
         caracteristicas: ["Marca: Neba", "Modelo: A 128B", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Neba A 280 Ciclica 2 frios 280 Lts",
         imagen: "images/heladeras/Heladera_Neba_A_280_Ciclica_2_frios_280_Lts_1.webp",
@@ -1606,7 +1606,7 @@ const productos = [
         caracteristicas: ["Marca: Gafa", "Modelo: HGNW3900P", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Neba H-300BL Top Mount 294lts Blanca",
         imagen: "images/heladeras/Heladera-Neba-H-300BL-Top-Mount-294lts-Blanca_1.webp",
@@ -1621,7 +1621,7 @@ const productos = [
         caracteristicas: ["Marca: Neba", "Modelo: H-300BL", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Philco PHCT302X Top Mount 298Lts Inox ciclica",
         imagen: "images/heladeras/Heladera_Philco_PHCT302X_Top_Mount_298Lts_Inox_ciclica_1.webp",
@@ -1637,7 +1637,7 @@ const productos = [
         caracteristicas: ["Marca: Philco", "Modelo: PHCT302X", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Philco PHCT341B ciclica 340Lts Blanca",
         imagen: "images/heladeras/Heladera_Philco_PHCT341B]_ciclica_340Lts_Blanca_1.webp",
@@ -1652,7 +1652,7 @@ const productos = [
         caracteristicas: ["Marca: Philco", "Modelo: PHCT341B", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Samsung RB31FSRNDSA 328lts Silver",
         imagen: "images/heladeras/Heladera_Samsung_RB31FSRNDSA_328lts_Silver_3.webp",
@@ -1667,7 +1667,7 @@ const productos = [
         caracteristicas: ["Marca: Samsung", "Modelo: RB31FSRNDSA", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Samsung RT32k5070S8 Silver No Fr 321lts",
         imagen: "images/heladeras/Heladera_Samsung_RT32k5070S8_Silver_No_Fr_321lts_1.webp",
@@ -1682,7 +1682,7 @@ const productos = [
         caracteristicas: ["Marca: Samsung", "Modelo: RT32k5070S8", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Samsung RT29K507JS8 Silver No Fr 290lts sin dispenser",
         imagen: "images/heladeras/Heladera_Samsung_RT29K507JS8_Silver_No_Fr_290lts_sin_dispenser_1.webp",
@@ -1697,7 +1697,7 @@ const productos = [
         caracteristicas: ["Marca: Samsung", "Modelo: RT29K507JS8", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Samsung RT32K5070WW No Fr 321lts Bl s/disp",
         imagen: "images/heladeras/Heladera_Samsung_RT32K5070WW_NoFr_321lts_Bl_s_disp_1.webp",
@@ -1712,7 +1712,7 @@ const productos = [
         caracteristicas: ["Marca: Samsung", "Modelo: RT32K5070WW", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Whirlpool WRE57CK Inverter 449lts No Frost Platinum",
         imagen: "images/heladeras/Heladera_Whirlpool_WRE57CK_Inverter_449lts_No_Frost_Platinum_1.webp",
@@ -1729,7 +1729,7 @@ const productos = [
         caracteristicas: ["Marca: Whirlpool", "Modelo: WRE57CK", "Garantía: 1 año"]
     },
     {
-        categoria: "heladeras y freezers",
+        categoria: "Heladeras y freezers",
         subcategoria: "heladeras",
         nombre: "Heladera Samsung RT42DG6730B1 No Frost (424 lts bruto) Black Dispenser Inverter",
         imagen: "images/heladeras/Heladera_Samsung_RT42DG6730B1_No_Frost_424_lts_bruto_Black_Dispenser_Inverter_1.webp",
@@ -1745,7 +1745,7 @@ const productos = [
     },
 
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     subcategoria: "heladeras",
     nombre: 'Heladera Telefunken TFK-HF50B Frigobar 50 lts Blanca/Negro',
     imagen: "images/heladeras/Heladera_Telefunken_TFK_HF50B_Frigobar_50_lts_Blanca_Negro_1.webp",
@@ -1762,7 +1762,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Neba H-240YAC Top Mount 239lts Acero',
     imagen: "images/heladeras/Heladera_Neba_H_240YAC_Top_Mount_239lts_Acero_1.webp",
     imagenes: [
@@ -1778,7 +1778,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Drean HDR280F00B/HDR280F30PB/50B/50PB blanca 277lts ciclica',
     imagen: "images/heladeras/Heladera_Drean_HDR280F00B_HDR280F30PB_50B_50PB_blanca_277lts_ciclica_1.webp",
     imagenes: [
@@ -1798,7 +1798,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     subcategoria: "heladeras",
     nombre: 'Heladera Gafa HGNF251B No Frost 262L Inverter Blanca',
     imagen: "images/heladeras/Heladera_Gafa_HGNF251B_No_Frost_262L_Inverter_Blanca_1.webp",
@@ -1818,7 +1818,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     subcategoria: "heladeras",
     nombre: 'Heladera Philco PHNT324BDI Top Mount 324Lts No Frost Inverter Blanca',
     imagen: "images/heladeras/Heladera_Philco_PHNT324BDI_Top_Mount_324Lts_No_Frost_Inverter_Blanca_1.webp",
@@ -1838,7 +1838,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Gafa HGF368AFB 334Lts Extra freezer 76lts Blanca',
     imagen: "images/heladeras/Heladera_Gafa_HGF368AFB_334Lts_Extra_freezer_76lts_Blanca_1.webp",
     imagenes: [
@@ -1856,7 +1856,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     subcategoria: "heladeras",
     nombre: 'Heladera Electrolux HENI3000P NO FROST Plata 260 lts Inverter',
     imagen: "images/heladeras/Heladera_Electrolux_HENI3000P_NO_FROST_Plata_260_lts_Inverter_1.webp",
@@ -1874,7 +1874,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     nombre: 'Heladera Telefunken EX-395 Exhibidora vertical',
     imagen: "images/heladeras/Heladera_Telefunken_EX_395_Exhibidora_vertical_1.webp",
     imagenes: [
@@ -1896,7 +1896,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     subcategoria: "heladeras",
     nombre: 'Heladera Electrolux HENI3900P No Frost Plata 353 lts Inverter',
     imagen: "images/heladeras/Heladera_Electrolux_HENI3900P_No_Frost_Plata_353_lts_Inverter_1.webp",
@@ -1914,7 +1914,7 @@ const productos = [
     ]
 },
     {
-    categoria: "heladeras y freezers",
+    categoria: "Heladeras y freezers",
     subcategoria: "heladeras",
     nombre: 'Heladera Whirlpool WRE44BK 397 lts Evox',
     imagen: "images/heladeras/Heladera_Whirlpool_WRE44BK_397_lts_Evox_1.webp",
