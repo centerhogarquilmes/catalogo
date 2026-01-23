@@ -11523,6 +11523,144 @@ const productos = [
 
 
 
+///    23 01 2026    ///
 
+{
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Neba T263 Top Mount ciclica 240lts blanca',
+    imagen: "images/heladeras/Heladera Neba T263 Top Mount ciclica 240lts blanca 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Neba T263 Top Mount ciclica 240lts blanca 1.webp",
+        "images/heladeras/Heladera Neba T263 Top Mount ciclica 240lts blanca 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 144 x 54 x 57\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 240\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075485",
+    caracteristicas: [
+        "Marca: Neba",
+        "Modelo: 2075485",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer',
+    imagen: "images/heladeras/Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer 1.webp",
+        "images/heladeras/Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer 2.webp",
+        "images/heladeras/Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer 3.webp",
+        "images/heladeras/Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer 4.webp",
+        "images/heladeras/Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer 5.webp",
+        "images/heladeras/Heladera Drean HDR320F50E Gris mate 314lts ciclica Extra freezer 6.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 179 x 56 x 69\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 314\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075645",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075645",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Telefunken TFK-260HEL Silver c/disp c/freezer 260 lts ciclica 1 puerta',
+    imagen: "images/heladeras/Heladera Telefunken TFK-260HEL Silver c disp c freezer 260 lts ciclica 1 puerta 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Telefunken TFK-260HEL Silver c disp c freezer 260 lts ciclica 1 puerta 1.webp",
+        "images/heladeras/Heladera Telefunken TFK-260HEL Silver c disp c freezer 260 lts ciclica 1 puerta 2.webp",
+        "images/heladeras/Heladera Telefunken TFK-260HEL Silver c disp c freezer 260 lts ciclica 1 puerta 3.webp",
+        "images/heladeras/Heladera Telefunken TFK-260HEL Silver c disp c freezer 260 lts ciclica 1 puerta 4.webp",
+        "images/heladeras/Heladera Telefunken TFK-260HEL Silver c disp c freezer 260 lts ciclica 1 puerta 5.webp",
+        "images/heladeras/Heladera Telefunken TFK-260HEL Silver c disp c freezer 260 lts ciclica 1 puerta 6.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 141 x 54 x 56\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 260\n<strong>Freezer:</strong> Sí\n<strong>Dispenser de agua:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075799",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075799",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. RCA RL6500FC-F-SK Split',
+    imagen: "images/aires_acondicionados/Acond RCA RL6500FC F SK 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond RCA RL6500FC F SK 1.webp",
+        "images/aires_acondicionados/Acond RCA RL6500FC F SK 2.webp",
+        "images/aires_acondicionados/Acond RCA RL6500FC F SK 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 6500\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075721",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2075721",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Tcl Taca-2650FCSD/EL4-F-SK 2650w Elite F/C  On/Off',
+    imagen: "images/aires_acondicionados/Acond Tcl Taca-2650FCSD EL4-F-SK 2650w Elite F C  On Off 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Tcl Taca-2650FCSD EL4-F-SK 2650w Elite F C  On Off 1.webp",
+        "images/aires_acondicionados/Acond Tcl Taca-2650FCSD EL4-F-SK 2650w Elite F C  On Off 2.webp",
+        "images/aires_acondicionados/Acond Tcl Taca-2650FCSD EL4-F-SK 2650w Elite F C  On Off 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2650\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075724",
+    caracteristicas: [
+        "Marca: TCL",
+        "Modelo: 2075724",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Kodak 32" Smart HD Google',
+    imagen: "images/televisores/TV LED Kodak 32 Smart HD Google 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Kodak 32 Smart HD Google 1.webp",
+        "images/televisores/TV LED Kodak 32 Smart HD Google 2.webp",
+        "images/televisores/TV LED Kodak 32 Smart HD Google 3.webp",
+        "images/televisores/TV LED Kodak 32 Smart HD Google 4.webp",
+        "images/televisores/TV LED Kodak 32 Smart HD Google 5.webp",
+        "images/televisores/TV LED Kodak 32 Smart HD Google 6.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 32\n<strong>Tipo de pantalla:</strong> LED\n<strong>Tipo de resolución:</strong> HD\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2074717",
+    caracteristicas: [
+        "Marca: Kodak",
+        "Modelo: 2074717",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Tv y Audio",
+    subcategoria: "Tv",
+    nombre: 'TV LED Kanji 50" Smart 4K QLED Google',
+    imagen: "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 1.webp",
+    imagenes: [
+        "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 1.webp",
+        "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 2.webp",
+        "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 3.webp",
+        "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 4.webp",
+        "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 5.webp",
+        "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 6.webp"
+    ],
+    descripcion: '<strong>Pulgadas:</strong> 50\n<strong>Tipo de pantalla:</strong> QLED\n<strong>Tipo de resolución:</strong> 4K\n<strong>Sistema operativo:</strong> Google TV',
+    codigo: "2074978 ",
+    caracteristicas: [
+        "Marca: Kanji",
+        "Modelo: 2074978 ",
+        "Garantía: 1 año"
+    ]
+},
 
 ];
