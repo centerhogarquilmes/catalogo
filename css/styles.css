@@ -436,6 +436,7 @@ body {
     position: relative;
     padding-top: 41.67%;
     min-height: 250px;
+    pointer-events: none;
 }
 
 .slide {
@@ -450,6 +451,7 @@ body {
 
 .slide.active {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .slide img {
