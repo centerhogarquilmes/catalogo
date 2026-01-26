@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const precioLista = datos.precio_tarjeta !== 'No disponible' ? parseFloat(datos.precio_tarjeta) : null;
     const precioTexto = precioLista ? `$${precioLista.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'Consultar precio';
 
-    const precioConDescuento = precioLista ? precioLista * 0.82 : null;
+    const precioConDescuento = precioLista ? precioLista * 0.79 : null;
     const precioTextoConDescuento = precioConDescuento ? `$${precioConDescuento.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : null;
 
     const precioBase = precioConDescuento || precioLista;
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const discountLabel = document.createElement('p');
     discountLabel.className = 'discount-label';
-    discountLabel.textContent = '18% OFF CONTADO';
+    discountLabel.textContent = '21% OFF CONTADO';
     codigoEl.insertAdjacentElement('afterend', discountLabel);
 
     const shareButton = document.createElement('button');
