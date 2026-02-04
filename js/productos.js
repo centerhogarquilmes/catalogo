@@ -951,7 +951,7 @@ const productos = [
     },
 
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Aoc 32" 32S5135/77G Smart tv Roku',
     imagen: "images/televisores/TV_LED_Aoc_32_32S5135_77G_Smart_tv_Roku_1.webp",
@@ -972,7 +972,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Aoc 43" 43S5135/77G Smart tv Roku',
     imagen: "images/televisores/TV_LED_Aoc_43_43S5135_77G_Smart_tv_Roku_1.webp",
@@ -991,7 +991,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Noblex 43" DR/DV43X7180 Smart Android',
     imagen: "images/televisores/TV_LED_Noblex_43_DR_DV43X7180_Smart_Android_1.webp",
@@ -1011,7 +1011,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Philips 43" Smart HD 43PFD6910/77 con Titan OS',
     imagen: "images/televisores/TV_LED_Philips_43_Smart_HD_43PFD6910_77_con_Titan_OS_1.webp",
@@ -1030,7 +1030,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Philips 50" Smart 50PUD7309/77 4K con Titan OS',
     imagen: "images/televisores/TV_LED_Philips_50_Smart_50PUD7309_77_4K_con_Titan_OS_1.webp",
@@ -1048,7 +1048,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Philips 55" Smart 55PUD7309/77 4K con Titan OS',
     imagen: "images/televisores/TV_LED_Philips_55_Smart_55PUD7309_77_4K_con_Titan_OS_1.webp",
@@ -1066,7 +1066,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED RCA 55" G55P6UHD-F Google 4K Smart',
     imagen: "images/televisores/TV_LED_RCA_55_G55P6UHD_F_Google_4K_Smart_1.webp",
@@ -3454,7 +3454,7 @@ const productos = [
 /////---------- Multiprocesadoras ----------/////
 
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Multiprocesadoras",
     nombre: 'Multiprocesadora Whitenblack WBAMWB01 650W 3v+puls. cuchilla acero',
     imagen: "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB01_650W_3v_puls_cuchilla_acero_1.webp",
@@ -3470,7 +3470,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Multiprocesadoras",
     nombre: 'Multiprocesadora Whitenblack WBAMWB02 650W + licuadora jarra 1.8lts 3v+puls. cuchilla acero',
     imagen: "images/multiprocesadoras/Multiprocesadora_Whitenblack_WBAMWB02_650W_licuadora_jarra_1_8lts_3v_puls_cuchilla_acero_1.webp",
@@ -3489,7 +3489,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Multiprocesadoras",
     nombre: 'MultiProcesadora Atma LP8426NAP 9 en 1 650w 2vel + pulsador',
     imagen: "images/multiprocesadoras/MultiProcesadora_Atma_LP8426NAP_9_en_1_650w_2vel_pulsador_1.webp",
@@ -3508,7 +3508,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Multiprocesadoras",
     nombre: 'MultiProcesadora Electrolux FPA25 750wts 2v c/jarra licuadora 2lts',
     imagen: "images/multiprocesadoras/MultiProcesadora_Electrolux_FPA25_750wts_2v_c_jarra_licuadora_2lts_1.webp",
@@ -3525,7 +3525,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Multiprocesadoras",
     nombre: 'Procesadora Liliana AM 780 Fullprossesor 750W',
     imagen: "images/multiprocesadoras/Procesadora_Liliana_AM_780_Fullprossesor_750W_1.webp",
@@ -3543,7 +3543,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Multiprocesadoras",
     nombre: 'Procesadora Liliana AM730 Experty 700w c/jarra lic. 2lts',
     imagen: "images/multiprocesadoras/Procesadora_Liliana_AM730_Experty_700w_c_jarra_lic_2lts_1.webp",
@@ -3570,7 +3570,7 @@ const productos = [
          /////---------- pavas electricas ----------/////
 
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD469590 1lts 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD469590_1lts_2200w_1.webp",
@@ -3589,7 +3589,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Electrica Philips HD9368/90 Negra Temp Para Mate 1.7L 2200w',
     imagen: "images/pavas_electricas/Pava_Electrica_Philips_HD9368_90_Negra_Temp_Para_Mate_17L_2200w_1.webp",
@@ -3608,7 +3608,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava electrica Ultracomb PE 4909 1.7Lts, 2200w',
     imagen: "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4909_1_7Lts_2200w_1.webp",
@@ -3626,7 +3626,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Kanji KJH-PE15005S Hervidora alum/plast',
     imagen: "images/pavas_electricas/Pava_Kanji_KJH_PE15005S_Hervidora_alum_plast_1.webp",
@@ -3643,7 +3643,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Moulinex BY3975AR Mate',
     imagen: "images/pavas_electricas/Pava_Moulinex_BY3975AR_Mate_1.webp",
@@ -3665,7 +3665,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Oster 4970 negra o Blanca con Regulador',
     imagen: "images/pavas_electricas/Pava_Oster_4970_negra_o_Blanca_con_Regulador_1.webp",
@@ -3682,7 +3682,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Peabody PE-KV8215S 1.7L inox',
     imagen: "images/pavas_electricas/Pava_Peabody_PE_KV8215S_1_7L_inox_1.webp",
@@ -3700,7 +3700,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Philco PEPH1182IP c/corte 1.8lts 1500w',
     imagen: "images/pavas_electricas/Pava_Philco_PEPH1182IP_c_corte_1_8lts_1500w_1.webp",
@@ -3721,7 +3721,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Whitenblack WBAPWB17 Hervidora 1.7lts 2000w',
     imagen: "images/pavas_electricas/Pava_Whitenblack_WBAPWB17_Hervidora_1_7lts_2000w_1.webp",
@@ -3740,7 +3740,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "pavas electricas",
     nombre: 'Pava Yelmo PE 3900',
     imagen: "images/pavas_electricas/Pava_Yelmo_PE_3900_1.webp",
@@ -3761,7 +3761,7 @@ const productos = [
     },
 
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Pavas eléctricas",
     nombre: 'Pava electrica Ultracomb PE 4907 2 lts cafe o mate',
     imagen: "images/pavas_electricas/Pava_electrica_Ultracomb_PE_4907_2_lts_cafe_o_mate_1.webp",
@@ -3788,7 +3788,7 @@ const productos = [
 
 
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Atma CA8143N/P de filtro 1.25lts Negra',
     imagen: "images/cafeteras/Cafetera_Atma_CA8143N_P_de_filtro_1_25lts_Negra_1.webp",
@@ -3807,7 +3807,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800 Filtro negra 6 tazas',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800_Filtro_negra_6_tazas_1.webp",
@@ -3825,7 +3825,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Kanji CMF0800S',
     imagen: "images/cafeteras/Cafetera_Kanji_CMF0800S_1.webp",
@@ -3841,7 +3841,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Moulinex FG320558 CAFECITY NEGRA ( GS )',
     imagen: "images/cafeteras/Cafetera_Moulinex_FG320558_CAFECITY_NEGRA _GS _1.webp",
@@ -3860,7 +3860,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Philips HD746100 jarra 1.2lts antigoteo',
     imagen: "images/cafeteras/Cafetera_Philips_HD746100_jarra_1_2lts_antigoteo_1.webp",
@@ -3879,7 +3879,7 @@ const productos = [
     ]
     },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "cafeteras",
     nombre: 'Cafetera Smartlife SL-CM9402 1.5Lts',
     imagen: "images/cafeteras/Cafetera_Smartlife_SL_CM9402_1_5Lts_1.webp",
@@ -3902,7 +3902,7 @@ const productos = [
     /////---------- Tostadoras ----------/////
 
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "tostadoras",
     nombre: 'Tostador Electrolux ETS11 Inox 8 niv. descongela',
     imagen: "images/tostadoras/Tostador_Electrolux_ETS11_Inox_8_niv_descongela_1.webp",
@@ -3925,7 +3925,7 @@ const productos = [
     ]
 },
 {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "tostadoras",
     nombre: 'Tostador Kanji TM1400 para 4 panes',
     imagen: "images/tostadoras/Tostador_Kanji_TM1400_para_4_panes_2.webp",
@@ -3944,7 +3944,7 @@ const productos = [
 },
 
  {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Tostadoras",
     nombre: 'Tostador Kanji TM0800',
     imagen: "images/tostadoras/Tostador_Kanji_TM0800_1.webp",
@@ -3963,7 +3963,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Tostadoras",
     nombre: 'Tostador Philco TO20BPP Negro',
     imagen: "images/tostadoras/Tostador_Philco_TO20BPP_Negro_1.webp",
@@ -3982,7 +3982,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Tostadoras",
     nombre: 'Tostador Whitenblack WBATWB01 6niv. c/bandeja migas 700w',
     imagen: "images/tostadoras/Tostador_Whitenblack_WBATWB01_6niv_c_bandeja_migas_700w_1.webp",
@@ -4013,7 +4013,7 @@ const productos = [
 
 
  {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Yelmo BM-1608',
     imagen: "images/batidoras/Batidora_Yelmo_BM_160_1.webp",
@@ -4036,7 +4036,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Steel Home Planetaria BP/BR1200 6v. 1200w. 5 lts Blanca/Negra',
     imagen: "images/batidoras/Batidora_Steel_Home_PlanetariaBP_BR1200_6v_1200w_5_lts_Blanca_Negra_1.webp",
@@ -4054,7 +4054,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Moulinex QA710858 Planetaria Inspirart 500w 220v 5v',
     imagen: "images/batidoras/Batidora_Moulinex_QA710858_Planetaria_Inspirart_500w_220v_5v_1.webp",
@@ -4074,7 +4074,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Kanji de mano KJH-BL0300HMB01R con bowl 300wts 2lts',
     imagen: "images/batidoras/Batidora_Kanji_de_mano_KJH_BL0300HMB01R_con_bowl_300wts_2lts_1.webp",
@@ -4093,7 +4093,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Moulinex SX1505AR 220v de mano roja',
     imagen: "images/batidoras/Batidora_Moulinex_SX1505AR_220v_de_mano_roja_1.webp",
@@ -4113,7 +4113,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Atma de mano BM8738AP 300W 5 vel. c/ turbo',
     imagen: "images/batidoras/Batidora_Atma_de_mano_BM8738AP_300W_5_vel_c_turbo_1.webp",
@@ -4131,7 +4131,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Westinghouse planetaria WH-BL0800HB02 Gris',
     imagen: "images/batidoras/Batidora_Westinghouse_planetaria_WH_BL0800HB02_Gris_1.webp",
@@ -4149,7 +4149,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "batidoras",
     nombre: 'Batidora Whitenblack WBABWB01 300w 5v. batidor/amasador',
     imagen: "images/batidoras/Batidora_Whitenblack_WBABWB01300w_5v_batidor_amasador_1.webp",
@@ -4179,7 +4179,7 @@ const productos = [
 
 
 {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Liliana AL900/AL100 Jarra 1.5Lts',
     imagen: "images/licuadoras/Licuadora_Liliana_AL900_AL100_Jarra_1_5Lts_1.webp",
@@ -4195,7 +4195,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Moulinex LM2701AR Optimix Blanca 2lts 550Wts 2 Vel. + pulsador',
     imagen: "images/licuadoras/Licuadora_Moulinex_LM2701AR_OptimixBlanca_2lts_550Wts_2_Vel_pulsador_1.webp",
@@ -4215,7 +4215,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Yelmo LC 1009 1.5L',
     imagen: "images/licuadoras/Licuadora_Yelmo_LC_1009_1_5L_1.webp",
@@ -4234,7 +4234,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Electrolux BLL19 1.5Lts 600Wts',
     imagen: "images/licuadoras/Licuadora_ElectroluxBLL19_1_5Lts_600Wts_1.webp",
@@ -4253,7 +4253,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Black & Decker BL1001-AR 500w 2lts',
     imagen: "images/licuadoras/Licuadora_Black_&_Decker_BL1001_AR_500w_2lts_1.webp",
@@ -4271,7 +4271,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Moulinex LM270558 Optimix Plus Blender Red 2lts 220v',
     imagen: "images/licuadoras/Licuadora_Moulinex_LM270558_Optimix_Plus_Blender_Red_2lts_220v_1.webp",
@@ -4291,7 +4291,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Atma de vaso LV24C0AP 500w 1.25lts Celeste',
     imagen: "images/licuadoras/Licuadora_Atma_de_vasoLV24C0AP_500w_1_25lts_Celeste_1.webp",
@@ -4309,7 +4309,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Philco LV24BOPHP 1.25Lts 450W',
     imagen: "images/licuadoras/Licuadora_Philco_LV24BOPHP_1_25Lts_450W_1.webp",
@@ -4328,7 +4328,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Atma de vaso LV24W0AP 1.25lts',
     imagen: "images/licuadoras/Licuadora_Atma_de_vaso_LV24W0AP_1_25lts_1.webp",
@@ -4347,7 +4347,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Whitenblack WBALWB15 1.5lts 2v. + pulsador',
     imagen: "images/licuadoras/Licuadora_Whitenblack_WBALWB15_1_5lts_2v_pulsador_1.webp",
@@ -4364,7 +4364,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Liliana AL340 Glasslic Al340 1.5lts 850w Jarra Vidrio',
     imagen: "images/licuadoras/Licuadora_Liliana_AL340_Glasslic_Al340_1_5lts_850w_Jarra_Vidrio_1.webp",
@@ -4383,7 +4383,7 @@ const productos = [
     ]
 },
 {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Licuadoras",
     nombre: 'Licuadora Ultracomb LC 2203 Mixer To Go',
     imagen: "images/licuadoras/Licuadora_Ultracomb_LC_2203_Mixer_To_Go_1.webp",
@@ -4411,7 +4411,7 @@ const productos = [
 
 
 {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Atma LMAT8528RE 600w 2v. 5 en 1 Roja',
     imagen: "images/mixers/Mixer_Atma_LMAT8528RE_600w_2v_5_en_1_Roja_1.webp",
@@ -4430,7 +4430,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Batidora Black & Decker Mixer HB1002-AR 500W c/ vaso',
     imagen: "images/mixers/Batidora_Black &_Decker_Mixer_HB1002_AR_500W_c_vaso_1.webp",
@@ -4448,7 +4448,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Electrolux Efficient IBA30 850w pie metalico',
     imagen: "images/mixers/Mixer_Electrolux_Efficient_IBA30_850w_pie_metalico_1.webp",
@@ -4466,7 +4466,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Electrolux EIB20 Efficient 600ml 600W 3 en 1',
     imagen: "images/mixers/Mixer_Electrolux_EIB20_Efficient_600ml_600W_3_en_1_1.webp",
@@ -4487,7 +4487,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Liliana AH 300 2v. 450w. vaso 900cc',
     imagen: "images/mixers/Mixer_Liliana_AH_300_2v_450w_vaso_900cc_1.webp",
@@ -4505,7 +4505,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Liliana AH150 850W Fastmix Negro 220v-240v',
     imagen: "images/mixers/Mixer_Liliana_AH150_850W_Fastmix_Negro_220v_240v_1.webp",
@@ -4524,7 +4524,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Moulinex DD1238AR Turbomix Negro inox 350w 3 en 1',
     imagen: "images/mixers/Mixer_Moulinex_DD1238AR_Turbomix_Negro_inox_350w_3_en_1_1.webp",
@@ -4541,7 +4541,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Philips HR253050 ProMix Daily Collection 400w Turbo',
     imagen: "images/mixers/Mixer_Philips_HR253050_ProMix_Daily_Collection_400w_Turbo_1.webp",
@@ -4559,7 +4559,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Moulinex DD12A1AR Turbomix blanco 350w pie plastico',
     imagen: "images/mixers/Mixer_Moulinex_DD12A1AR_Turbomix_blanco_350w_pie_plastico_1.webp",
@@ -6102,7 +6102,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Exprimidores y Jugueras",
     nombre: 'Exprimidor Ultracomb EX 2302 25 wts',
     imagen: "images/exprimidores_jugueras/Exprimidor_Ultracomb_EX_2302_25_wts_1.webp",
@@ -6136,7 +6136,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Batidoras",
     nombre: 'Batidora Kanji de mano  KJH-BL0300HM01W Blanca',
     imagen: "images/Batidoras/Batidora_Kanji_de_mano_KJH_BL0300HM01W_Blanca_1.webp",
@@ -6154,7 +6154,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Exprimidores y Jugueras",
     nombre: 'Exprimidor Kanji JM045 40w',
     imagen: "images/exprimidores_jugueras/Exprimidor_Kanji_JM045_40w_1.webp",
@@ -7245,7 +7245,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Pavas eléctricas",
     nombre: 'Pava Kanji  KJH-PE15002M Mate',
     imagen: "images/pavas_electricas/Pava_Kanji_KJHPE15002M_Mate_1.webp",
@@ -7281,7 +7281,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Exprimidores y Jugueras",
     nombre: 'Exprimidor Liliana AE920 de citricos',
     imagen: "images/exprimidores_jugueras/Exprimidor_Liliana_AE920_de_citricos_1.webp",
@@ -7300,7 +7300,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Picadoras",
     nombre: 'Picador Ultracomb PC6802 Bowl de vidrio 300 ml y 6 cuchillas inox corta y pica',
     imagen: "images/picadoras/Picador_Ultracomb_PC6802_Bowlde_vidrio_300_ml_y_6_cuchillas_inox_corta_y_pica_1.webp",
@@ -7317,7 +7317,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Sandwicheras",
     nombre: 'Sandwichera Yelmo SW 1800 4 sandwich 800 wts',
     imagen: "images/sandwicheras/Sandwichera_Yelmo_SW_18004_sandwich_800_wts_1.webp",
@@ -7335,7 +7335,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Aspiradoras",
     nombre: 'Aspiradora Yelmo AS 3239 para auto 12V',
     imagen: "images/aspiradoras/Aspiradora_Yelmo_AS_3239_para_auto12v_1.webp",
@@ -7357,7 +7357,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Picadoras",
     nombre: 'Picadora Philco PI23PHP mini chopper 400W',
     imagen: "images/picadoras/Picadora_Philco_PI23PHP_mini_chopper_400W_1.webp",
@@ -7381,7 +7381,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Pavas eléctricas",
     nombre: 'Pava Liliana AP965/AP165 matera 1.7 lts',
     imagen: "images/pavas_electricas/Pava_Liliana_AP965_AP165_matera_1_7_lts_1.webp",
@@ -7402,7 +7402,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Picadoras",
     nombre: 'Picadora Yelmo PC5803',
     imagen: "images/picadoras/Picadora_Yelmo_PC5803_1.webp",
@@ -7420,7 +7420,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Picadoras",
     nombre: 'Picador Ultracomb PC6800 Bowl de vidrio 1.2lts 600Wts',
     imagen: "images/picadoras/Picador_Ultracomb_PC6800_Bowl_de_vidrio_1_2lts_600Wts_1.webp",
@@ -7441,7 +7441,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Atma LM8507AP de mano 600w Varilla de plastico',
     imagen: "images/mixers/Mixer_Atma_LM8507AP_de_mano_600w_Varilla_de_plastico_1.webp",
@@ -7462,7 +7462,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Mixers",
     nombre: 'Mixer Ultracomb LM-2552 600w cuchillas inox 2 vel y vaso 800ml',
     imagen: "images/mixers/Mixer_Ultracomb_LM_2552_600w_cuchillas_inox_2_vel_y_vaso_800ml_1.webp",
@@ -7479,7 +7479,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Cafeteras",
     nombre: 'Cafetera Moulinex FG320058 FCM CAFE CITY ROJA ( GS )',
     imagen: "images/cafeteras/Cafetera_Moulinex_FG320058_FCM_CAFE_CITY_ROJA_GS_1.webp",
@@ -7530,7 +7530,7 @@ const productos = [
     ]
 },
     {
-    categoria: "pequeños",
+    categoria: "Pequeños",
     subcategoria: "Aspiradoras",
     nombre: 'Aspiradora Atma AS9221PI de tacho 10lts 3 en 1 polvo y liquidos 1200w',
     imagen: "images/aspiradoras/Aspiradora_Atma_AS9221PI_de_tacho_10lts_3_en_1_polvo_y_liquidos_1200w_1.webp",
@@ -8124,7 +8124,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Audio",
     nombre: 'Auriculares Havit H201 6d Gaming Altavoz',
     imagen: "images/audio/Auriculares Havit H201 6d Gaming Altavoz 1.webp",
@@ -8145,7 +8145,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Audio",
     nombre: 'Autoestereo Crown Mustang DMR-3000BT Usb/am/fm/bt 52w',
     imagen: "images/audio/Autoestereo Crown Mustang DMR 3000BT Usb am fm bt 52w 1.webp",
@@ -8163,7 +8163,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Audio",
     nombre: 'Autoestereo Crown Mustang DMK-8000BT dig+jgo parlantes 300w',
     imagen: "images/audio/Autoestereo Crown Mustang DMK 8000BT dig jgo parlantes 300w 1.webp",
@@ -8180,7 +8180,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Audio",
     nombre: 'Autoestereo Crown Mustang DMK-9000BT dig+jgo parlantes 400w',
     imagen: "images/audio/Autoestereo Crown Mustang DMK 9000BT dig jgo parlantes 400w 1.webp",
@@ -8197,7 +8197,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Audio",
     nombre: 'Auricular Smartlife HSWG902GRAY Gamer Wire',
     imagen: "images/audio/Auricular Smartlife HSWG902GRAY Gamer Wire 1.webp",
@@ -9826,7 +9826,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Kanji 65" QLED 4K Smart Hey Google',
     imagen: "images/televisores/TV LED Kanji 65 QLED 4K Smart Hey Google 1.webp",
@@ -9845,7 +9845,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Motorola 32" MT3200 Smart Android',
     imagen: "images/televisores/TV LED Motorola 32 MT3200 Smart Android 1.webp",
@@ -10325,7 +10325,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Telefunken 32" TK3225S5A atv Android',
     imagen: "images/televisores/TV LED Telefunken 32 TK3225S5A atv Android 1.webp",
@@ -10344,7 +10344,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED BGH 43" Android B4318FH5/B4323FK5/B4319KK5/B4321FH5A/B4322/25FS5A smart tv',
     imagen: "images/televisores/TV LED BGH 43 Android B4318FH5 B4323FK5 B4319KK5 B4321FH5A B4322 25FS5A smart tv 1.webp",
@@ -10361,7 +10361,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED BGH 32" B3225G5A atv Android HD Frameless',
     imagen: "images/televisores/TV LED BGH 32 B3225G5A atv Android HD Frameless 1.webp",
@@ -10377,7 +10377,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Philco 50" PLD50US25GH Google Tv',
     imagen: "images/televisores/TV LED Philco 50 PLD50US25GH Google Tv 1.webp",
@@ -11326,7 +11326,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED ENOVA 43" smart tv Full HD Android/Google',
     imagen: "images/televisores/TV LED ENOVA 43 smart tv Full HD Android Google 1.webp",
@@ -11347,7 +11347,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Philco 55" PLD55US25GH Google Tv',
     imagen: "images/televisores/TV LED Philco 55 PLD55US25GH Google Tv 1.webp",
@@ -11366,7 +11366,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Quint 43" Smart QT-43FHD89-25229 FHD Vidda',
     imagen: "images/televisores/TV LED Quint 43 Smart QT-43FHD89 25229 FHD Vidda 1.webp",
@@ -11389,7 +11389,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Quint 50" Smart QT-50UHD89-25229 UHD Vidda',
     imagen: "images/televisores/TV LED Quint 50 Smart QT-50UHD89-25229 UHD Vidda 1.webp",
@@ -11621,7 +11621,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Kodak 32" Smart HD Google',
     imagen: "images/televisores/TV LED Kodak 32 Smart HD Google 1.webp",
@@ -11642,7 +11642,7 @@ const productos = [
     ]
 },
     {
-    categoria: "Tv y Audio",
+    categoria: "Tv y audio",
     subcategoria: "Tv",
     nombre: 'TV LED Kanji 50" Smart 4K QLED Google',
     imagen: "images/televisores/TV LED Kanji 50 Smart 4K QLED Google 1.webp",
@@ -12016,5 +12016,356 @@ const productos = [
         "Garantía: 1 año"
     ]
 },
+////    04 02 2026    ////
+
+
+
+{
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable',
+    imagen: "images/aspiradoras/Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable 1.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable 2.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable 3.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable 4.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable 5.webp",
+        "images/aspiradoras/Aspiradora Ultracomb AS 4230 2200WTS 7lts Filtro lavable 6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2200\n<strong>Capacidad (Litros):</strong> 7\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> 220V',
+    codigo: "2070869",
+    caracteristicas: [
+        "Marca: Ultracomb",
+        "Modelo: 2070869",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Yelmo AS 3323 1400 wts',
+    imagen: "images/aspiradoras/Aspiradora Yelmo AS 3323 1400 wts 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Yelmo AS 3323 1400 wts 1.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3323 1400 wts 2.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3323 1400 wts 3.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3323 1400 wts 4.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS 3323 1400 wts 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1400\n<strong>Capacidad (Litros):</strong> 23\n<strong>Apto líquido:</strong> Sí\n<strong>Bolsa:</strong> Sí\n<strong>Tipo de alimentación:</strong> 220V',
+    codigo: "2074698",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2074698",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Yelmo AS-7070 Robot inteligente mopa smart',
+    imagen: "images/aspiradoras/Aspiradora Yelmo AS-7070 Robot inteligente mopa smart 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Yelmo AS-7070 Robot inteligente mopa smart 1.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS-7070 Robot inteligente mopa smart 2.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS-7070 Robot inteligente mopa smart 3.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS-7070 Robot inteligente mopa smart 4.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS-7070 Robot inteligente mopa smart 5.webp",
+        "images/aspiradoras/Aspiradora Yelmo AS-7070 Robot inteligente mopa smart 6.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1000\n<strong>Capacidad (Litros):</strong> 650ml\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Batería',
+    codigo: "2075561",
+    caracteristicas: [
+        "Marca: Yelmo",
+        "Modelo: 2075561",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Robot Westinghouse WFVCRK196',
+    imagen: "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK196 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK196 1.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK196 2.webp",
+        "images/aspiradoras/Aspiradora Robot Westinghouse WFVCRK196 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 1000\n<strong>Capacidad (Litros):</strong> 650ml\n<strong>Bolsa:</strong> No\n<strong>Tipo de alimentación:</strong> Batería',
+    codigo: "2075822",
+    caracteristicas: [
+        "Marca: Westinghouse",
+        "Modelo: 2075822",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Pequeños",
+    subcategoria: "Aspiradoras",
+    nombre: 'Aspiradora Liliana LLA958 Multi-Ciclónica 2.5Lts 2100wts',
+    imagen: "images/aspiradoras/Aspiradora Liliana LLA958 Multi-Ciclónica 2 5Lts 2100wts 1.webp",
+    imagenes: [
+        "images/aspiradoras/Aspiradora Liliana LLA958 Multi-Ciclónica 2 5Lts 2100wts 1.webp",
+        "images/aspiradoras/Aspiradora Liliana LLA958 Multi-Ciclónica 2 5Lts 2100wts 2.webp",
+        "images/aspiradoras/Aspiradora Liliana LLA958 Multi-Ciclónica 2 5Lts 2100wts 3.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2100\n<strong>Capacidad (Litros):</strong> 2,5\n<strong>Bolsa:</strong> Sí\n<strong>Tipo de alimentación:</strong> 220V',
+    codigo: "2075834",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2075834",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Purificadores",
+    nombre: 'Purific. Spar 3716TUR 1 motor blanco 60cm deslizante',
+    imagen: "images/purificadores/Purific Spar 3716TUR 1 motor blanco 60cm deslizante 1.webp",
+    imagenes: [
+        "images/purificadores/Purific Spar 3716TUR 1 motor blanco 60cm deslizante 1.webp",
+        "images/purificadores/Purific Spar 3716TUR 1 motor blanco 60cm deslizante 2.webp"
+    ],
+    descripcion: '<strong>Color:</strong> Blanco\n<strong>Funciones:</strong> Purificador y extractor\n<strong>Cantidad de motores:</strong> 1\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 60 X 15 X 53\n<strong>Luz:</strong> Sí',
+    codigo: "2071639",
+    caracteristicas: [
+        "Marca: Spar",
+        "Modelo: 2071639",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Purificadores",
+    nombre: 'Purific. Liliana LBKP991 Purify Motor 100w',
+    imagen: "images/purificadores/Purific Liliana LBKP991 Purify Motor 100w 1.webp",
+    imagenes: [
+        "images/purificadores/Purific Liliana LBKP991 Purify Motor 100w 1.webp",
+        "images/purificadores/Purific Liliana LBKP991 Purify Motor 100w 2.webp",
+        "images/purificadores/Purific Liliana LBKP991 Purify Motor 100w 3.webp",
+        "images/purificadores/Purific Liliana LBKP991 Purify Motor 100w 4.webp"
+    ],
+    descripcion: '<strong>Color:</strong> Acero\n<strong>Funciones:</strong> Purificador y extractor\n<strong>Cantidad de motores:</strong> 1\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 60 x 13 x 49\n<strong>Luz:</strong> Sí',
+    codigo: "2072312",
+    caracteristicas: [
+        "Marca: Liliana",
+        "Modelo: 2072312",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Purificadores",
+    nombre: 'Purific. Spar 3878 Senza Blanco/Acero s/s 2M',
+    imagen: "images/purificadores/Purific Spar 3878 Senza Blanco Acero s s 2M 1.webp",
+    imagenes: [
+        "images/purificadores/Purific Spar 3878 Senza Blanco Acero s s 2M 1.webp",
+        "images/purificadores/Purific Spar 3878 Senza Blanco Acero s s 2M 2.webp"
+    ],
+    descripcion: '<strong>Color:</strong> Blanco\n<strong>Funciones:</strong> Purificador\n<strong>Cantidad de motores:</strong> 2\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 60 x 15 x 52\n<strong>Luz:</strong> Sí',
+    codigo: "2073392",
+    caracteristicas: [
+        "Marca: Spar",
+        "Modelo: 2073392",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Purificadores",
+    nombre: 'Purific. Florencia PR60I recto inox 60cm con y sin/salida (Tianmei TF23)',
+    imagen: "images/purificadores/Purific Florencia PR60I recto inox 60cm con y sin salida Tianmei TF23 1.webp",
+    imagenes: [
+        "images/purificadores/Purific Florencia PR60I recto inox 60cm con y sin salida Tianmei TF23 1.webp"
+    ],
+    descripcion: '<strong>Color:</strong> Acero\n<strong>Funciones:</strong> Purificador y extractor\n<strong>Cantidad de motores:</strong> 1\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 60 x 10 x 48\n<strong>Luz:</strong> Sí',
+    codigo: "2075240",
+    caracteristicas: [
+        "Marca: Florencia",
+        "Modelo: 2075240",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cocinas, anafes y purificadores",
+    subcategoria: "Purificadores",
+    nombre: 'Purific. Steel Home SH-E1200B Blanco 2 motores con o sin salida',
+    imagen: "images/purificadores/Purific Steel Home SH-E1200B Blanco 2 motores con o sin salida 1.webp",
+    imagenes: [
+        "images/purificadores/Purific Steel Home SH-E1200B Blanco 2 motores con o sin salida 1.webp",
+        "images/purificadores/Purific Steel Home SH-E1200B Blanco 2 motores con o sin salida 2.webp",
+        "images/purificadores/Purific Steel Home SH-E1200B Blanco 2 motores con o sin salida 3.webp",
+        "images/purificadores/Purific Steel Home SH-E1200B Blanco 2 motores con o sin salida 4.webp",
+        "images/purificadores/Purific Steel Home SH-E1200B Blanco 2 motores con o sin salida 5.webp",
+        "images/purificadores/Purific Steel Home SH-E1200B Blanco 2 motores con o sin salida 6.webp"
+    ],
+    descripcion: '<strong>Color:</strong> Blanco\n<strong>Funciones:</strong> Purificador y extractor\n<strong>Cantidad de motores:</strong> 2\n<strong>Dimensiones (Alt x Anc x Pro):</strong> 60 x 14 x 50\n<strong>Luz:</strong> Sí',
+    codigo: "2075548",
+    caracteristicas: [
+        "Marca: Steel Home",
+        "Modelo: 2075548",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Cortadoras de Pelo y Barba",
+    nombre: 'Corta Pelo Gama GC542 5414',
+    imagen: "images/cortadoras_pelo_barba/Corta Pelo Gama GC542 5414 1.webp",
+    imagenes: [
+        "images/cortadoras_pelo_barba/Corta Pelo Gama GC542 5414 1.webp",
+        "images/cortadoras_pelo_barba/Corta Pelo Gama GC542 5414 2.webp",
+        "images/cortadoras_pelo_barba/Corta Pelo Gama GC542 5414 3.webp",
+        "images/cortadoras_pelo_barba/Corta Pelo Gama GC542 5414 4.webp",
+        "images/cortadoras_pelo_barba/Corta Pelo Gama GC542 5414 5.webp"
+    ],
+    descripcion: '<strong>Apto pelo:</strong> Sí\n<strong>Potencia (W):</strong> 8\n<strong>Autonomía (min):</strong> 45\n<strong>Inalámbrica:</strong> Sí\n<strong>Peines guía:</strong> Regulable',
+    codigo: "2071697",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2071697",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Cortadoras de Pelo y Barba",
+    nombre: 'Corta Pelo Gama GC Layer 9939 inalambrica',
+    imagen: "images/cortadoras_pelo_barba/Corta Pelo Gama GC Layer 9939 inalambrica 1.webp",
+    imagenes: [
+        "images/cortadoras_pelo_barba/Corta Pelo Gama GC Layer 9939 inalambrica 1.webp",
+        "images/cortadoras_pelo_barba/Corta Pelo Gama GC Layer 9939 inalambrica 2.webp"
+    ],
+    descripcion: '<strong>Apto pelo:</strong> Sí\n<strong>Potencia (W):</strong> 8\n<strong>Autonomía (min):</strong> 45\n<strong>Inalámbrica:</strong> Sí\n<strong>Peines guía:</strong> Regulable',
+    codigo: "2074510",
+    caracteristicas: [
+        "Marca: Gama",
+        "Modelo: 2074510",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Cuidado Personal",
+    subcategoria: "Cortadoras de Pelo y Barba",
+    nombre: 'Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo',
+    imagen: "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 1.webp",
+    imagenes: [
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 1.webp",
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 2.webp",
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 3.webp",
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 4.webp",
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 5.webp",
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 6.webp",
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 7.webp",
+        "images/cortadoras_pelo_barba/Corta pelo Philco HC8910PP cuchi ceramica 4 peines turbo 8.webp"
+    ],
+    descripcion: '<strong>Apto pelo:</strong> Sí\n<strong>Potencia (W):</strong> 8\n<strong>Autonomía (min):</strong> 60\n<strong>Inalámbrica:</strong> Sí\n<strong>Peines guía:</strong> 4',
+    codigo: "2075041",
+    caracteristicas: [
+        "Marca: Philco",
+        "Modelo: 2075041",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Whirlpool WRM39CB 340Lts No frost Blanca',
+    imagen: "images/heladeras/Heladera Whirlpool WRM39CB 340Lts No frost Blanca 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Whirlpool WRM39CB 340Lts No frost Blanca 1.webp",
+        "images/heladeras/Heladera Whirlpool WRM39CB 340Lts No frost Blanca 2.webp",
+        "images/heladeras/Heladera Whirlpool WRM39CB 340Lts No frost Blanca 3.webp",
+        "images/heladeras/Heladera Whirlpool WRM39CB 340Lts No frost Blanca 4.webp",
+        "images/heladeras/Heladera Whirlpool WRM39CB 340Lts No frost Blanca 5.webp",
+        "images/heladeras/Heladera Whirlpool WRM39CB 340Lts No frost Blanca 6.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 169 x 62 x 71\n<strong>Tipo de tecnología:</strong> No frost\n<strong>Capacidad (Litros):</strong> 340\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075289",
+    caracteristicas: [
+        "Marca: Whirlpool",
+        "Modelo: 2075289",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Heladeras y freezers",
+    subcategoria: "Heladeras",
+    nombre: 'Heladera Telefunken TFK-HD300B  Blanca c/freezer 300 lts ciclica',
+    imagen: "images/heladeras/Heladera Telefunken TFK-HD300B  Blanca c freezer 300 lts ciclica 1.webp",
+    imagenes: [
+        "images/heladeras/Heladera Telefunken TFK-HD300B  Blanca c freezer 300 lts ciclica 1.webp",
+        "images/heladeras/Heladera Telefunken TFK-HD300B  Blanca c freezer 300 lts ciclica 2.webp",
+        "images/heladeras/Heladera Telefunken TFK-HD300B  Blanca c freezer 300 lts ciclica 3.webp",
+        "images/heladeras/Heladera Telefunken TFK-HD300B  Blanca c freezer 300 lts ciclica 4.webp",
+        "images/heladeras/Heladera Telefunken TFK-HD300B  Blanca c freezer 300 lts ciclica 5.webp",
+        "images/heladeras/Heladera Telefunken TFK-HD300B  Blanca c freezer 300 lts ciclica 6.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc x Pro):</strong> 170 x 54 x 54\n<strong>Tipo de tecnología:</strong> Cíclica\n<strong>Capacidad (Litros):</strong> 300\n<strong>Freezer:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2075800",
+    caracteristicas: [
+        "Marca: Telefunken",
+        "Modelo: 2075800",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Lavado",
+    subcategoria: "Lavarropas",
+    nombre: 'Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco',
+    imagen: "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 1.webp",
+    imagenes: [
+        "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 1.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 2.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 3.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 4.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 5.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 6.webp",
+        "images/lavarropas/Lavarropas Drean LCFDR0608LB carga frontal 6kg Blanco 7.webp"
+    ],
+    descripcion: '<strong>Capacidad (kg):</strong> 6\n<strong>Tipo de lavado:</strong> Automático\n<strong>Tipo de carga:</strong> Frontal\n<strong>Velocidad de centrifugado (RPM):</strong> 800',
+    codigo: "2075827",
+    caracteristicas: [
+        "Marca: Drean",
+        "Modelo: 2075827",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. RCA Smart6400INV-F-SK Split Inverter 6400w',
+    imagen: "images/aires_acondicionados/Acond RCA Smart6400INV-F-SK Split Inverter 6400w 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond RCA Smart6400INV-F-SK Split Inverter 6400w 1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 6400\n<strong>Tipo:</strong> Split\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A++',
+    codigo: "2075831",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2075831",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. RCA RT3400INV-F-SK 3400w Inverter Split',
+    imagen: "images/aires_acondicionados/Acond  RCA RT3400INV-F-SK 3400w Inverter Split 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond  RCA RT3400INV-F-SK 3400w Inverter Split 1.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3400\n<strong>Tipo:</strong> Split\n<strong>Inverter:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A++',
+    codigo: "2075832",
+    caracteristicas: [
+        "Marca: RCA",
+        "Modelo: 2075832",
+        "Garantía: 1 año"
+    ]
+},
+
+
+
 
 ];
