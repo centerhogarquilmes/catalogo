@@ -12367,5 +12367,117 @@ const productos = [
 
 
 
+////    09 03 2026   /////
 
+{
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Alaska ALS26WCCR/AS26WCCS/ASE26WCDW 2800 F/C',
+    imagen: "images/aires_acondicionados/Acond Alaska ALS26WCCR AS26WCCS ASE26WCDW 2800 FC 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Alaska ALS26WCCR AS26WCCS ASE26WCDW 2800 FC 1.webp",
+        "images/aires_acondicionados/Acond Alaska ALS26WCCR AS26WCCS ASE26WCDW 2800 FC 2.webp",
+        "images/aires_acondicionados/Acond Alaska ALS26WCCR AS26WCCS ASE26WCDW 2800 FC 3.webp",
+        "images/aires_acondicionados/Acond Alaska ALS26WCCR AS26WCCS ASE26WCDW 2800 FC 4.webp",
+        "images/aires_acondicionados/Acond Alaska ALS26WCCR AS26WCCS ASE26WCDW 2800 FC 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 2800\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A\n<strong>Dimensiones Unidad Interior (Anc x Alt x Pro):</strong> 72,2 cm x 29 cm x 18,7 cm',
+    codigo: "2072800",
+    caracteristicas: [
+        "Marca: Alaska",
+        "Modelo: 2072800",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Aires Acondicionados",
+    nombre: 'Acond. Alaska ALS35WCCR/AS35WCCS/ASE35WCEW 3200w F/C',
+    imagen: "images/aires_acondicionados/Acond Alaska ALS35WCCR AS35WCCS ASE35WCEW 3200w FC 1.webp",
+    imagenes: [
+        "images/aires_acondicionados/Acond Alaska ALS35WCCR AS35WCCS ASE35WCEW 3200w FC 1.webp",
+        "images/aires_acondicionados/Acond Alaska ALS35WCCR AS35WCCS ASE35WCEW 3200w FC 2.webp",
+        "images/aires_acondicionados/Acond Alaska ALS35WCCR AS35WCCS ASE35WCEW 3200w FC 3.webp",
+        "images/aires_acondicionados/Acond Alaska ALS35WCCR AS35WCCS ASE35WCEW 3200w FC 4.webp",
+        "images/aires_acondicionados/Acond Alaska ALS35WCCR AS35WCCS ASE35WCEW 3200w FC 5.webp"
+    ],
+    descripcion: '<strong>Potencia (W):</strong> 3200\n<strong>Tipo:</strong> Split\n<strong>Eficiencia energética:</strong> Clase A\n<strong>Dimensiones Unidad Interior (Anc x Alt x Pro):</strong> 77,7 cm x 20 cm x 25 cm',
+    codigo: "2072823",
+    caracteristicas: [
+        "Marca: Alaska",
+        "Modelo: 2072823",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefacción a gas",
+    nombre: 'Calefactor Coppens 3000 S/ Tiraje Acero Multigas',
+    imagen: "images/calefaccion_a_gas/Calefactor Coppens 3000 S Tiraje Acero Multigas 1.webp",
+    imagenes: [
+        "images/calefaccion_a_gas/Calefactor Coppens 3000 S Tiraje Acero Multigas 1.webp",
+        "images/calefaccion_a_gas/Calefactor Coppens 3000 S Tiraje Acero Multigas 2.webp",
+        "images/calefaccion_a_gas/Calefactor Coppens 3000 S Tiraje Acero Multigas 3.webp",
+        "images/calefaccion_a_gas/Calefactor Coppens 3000 S Tiraje Acero Multigas 4.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc):</strong> 52 x 39 x 16\n<strong>Sin salida:</strong> Sí\n<strong>Potencia (Kcal):</strong> 3000\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2072717",
+    caracteristicas: [
+        "Marca: Coppens",
+        "Modelo: 2072717",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Climatización",
+    subcategoria: "Calefacción a gas",
+    nombre: 'Calefactor Eskabe S21 T/B 2900 GN',
+    imagen: "images/calefaccion_a_gas/Calefactor Eskabe S21 TB 2900 GN 1.webp",
+    imagenes: [
+        "images/calefaccion_a_gas/Calefactor Eskabe S21 TB 2900 GN 1.webp",
+        "images/calefaccion_a_gas/Calefactor Eskabe S21 TB 2900 GN 2.webp"
+    ],
+    descripcion: '<strong>Dimensiones (Alt x Anc):</strong> 58,8 x 34,6\n<strong>Tiro balanceado:</strong> Sí\n<strong>Potencia (Kcal):</strong> 2900\n<strong>Tipo de gas:</strong> Multigas',
+    codigo: "2073651",
+    caracteristicas: [
+        "Marca: Eskabe",
+        "Modelo: 2073651",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Escorial 14 lts gn t/natural encendido automatico sin llama piloto',
+    imagen: "images/calefones/Calefon Escorial 14 lts gn t natural encendido automatico sin llama piloto 1.webp",
+    imagenes: [
+        "images/calefones/Calefon Escorial 14 lts gn t natural encendido automatico sin llama piloto 1.webp",
+        "images/calefones/Calefon Escorial 14 lts gn t natural encendido automatico sin llama piloto 2.webp",
+        "images/calefones/Calefon Escorial 14 lts gn t natural encendido automatico sin llama piloto 3.webp"
+    ],
+    descripcion: '<strong>Capacidad (L/m):</strong> 14\n<strong>Tiraje:</strong> Tiro natural\n<strong>Tipo de gas:</strong> Gas natural\n<strong>Tipo de encendido:</strong> Automático\n<strong>Tipo de control:</strong> Perilla\n<strong>Conexiones de agua:</strong> Carga inferior\n<strong>Sin llama piloto:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2073618",
+    caracteristicas: [
+        "Marca: Escorial",
+        "Modelo: 2073618",
+        "Garantía: 1 año"
+    ]
+},
+    {
+    categoria: "Termotanques y calefones",
+    subcategoria: "Calefones",
+    nombre: 'Calefon Volcan 315KAV 14Lts c/ Tiraje Natural Automatico',
+    imagen: "images/calefones/Calefon Volcan 315KAV 14Lts c Tiraje Natural Automatico 1.webp",
+    imagenes: [
+        "images/calefones/Calefon Volcan 315KAV 14Lts c Tiraje Natural Automatico 1.webp",
+        "images/calefones/Calefon Volcan 315KAV 14Lts c Tiraje Natural Automatico 2.webp"
+    ],
+    descripcion: '<strong>Capacidad (L/m):</strong> 14\n<strong>Tiraje:</strong> Tiro natural\n<strong>Tipo de gas:</strong> Gas natural\n<strong>Tipo de encendido:</strong> Automático\n<strong>Tipo de control:</strong> Perilla\n<strong>Conexiones de agua:</strong> Carga inferior\n<strong>Sin llama piloto:</strong> Sí\n<strong>Eficiencia energética:</strong> Clase A',
+    codigo: "2069077",
+    caracteristicas: [
+        "Marca: Volcan",
+        "Modelo: 2069077",
+        "Garantía: 1 año"
+    ]
+}
 ];
